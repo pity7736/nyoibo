@@ -12,6 +12,7 @@ def test_entity():
     rate = Rate(value='0.25')
 
     assert rate.value == '0.25'
+    assert rate.get_value() == '0.25'
 
 
 def test_fields_must_be_private():
