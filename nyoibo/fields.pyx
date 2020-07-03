@@ -1,0 +1,3 @@
+
+cdef class StrField:
+    pass

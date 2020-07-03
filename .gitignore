@@ -1,2 +1,13 @@
+# IDEs, editors
 .idea/
+
+# py cache
 *.pyc
+
+# dist
+build/
+nyoibo.egg-info/
+*.so
+
+# coverage
+.coverage
