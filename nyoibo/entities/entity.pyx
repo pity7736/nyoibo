@@ -1,5 +1,7 @@
+from .meta_entity import MetaEntity
 
-cdef class Entity:
+
+class Entity(metaclass=MetaEntity):
 
     def __init__(self, value):
         self._value = value
