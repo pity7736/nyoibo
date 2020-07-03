@@ -1,0 +1,21 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+    - id: end-of-file-fixer
+    - id: trailing-whitespace
+    - id: flake8
+  - repo: local
+    hooks:
+      - id: radon
+        name: radon
+        entry: run_radon.sh
+        language: script
+        types: [python]
+  - repo: local
+    hooks:
+      - id: test
+        name: tests
+        entry: run_tests.sh
+        language: script
+        types: [python]
