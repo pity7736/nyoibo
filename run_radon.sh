@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-radon cc -a -s -nb
+radon cc -a -s -nb nyoibo

@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-pytest -s -vvv --cov= --cov-report term-missing tests
+pytest -s -vvv --cov=nyoibo --cov-report term-missing tests
