@@ -17,6 +17,13 @@ def test_get_value():
     assert rate.other_value == 'hello world'
 
 
+def test_get_uninitialized_value():
+    rate = Rate()
+
+    assert rate.value is None
+    assert rate.other_value is None
+
+
 def test_set_value():
     rate = Rate()
     rate.value = '0.25'
