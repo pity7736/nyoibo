@@ -20,12 +20,14 @@ class MetaEntity(type):
 
     def __new__(mcs, name, bases, namespace: Dict[str, Any]):
         getters_setters = {}
+        fields = {}
         for attr, value in namespace.items():
             if isinstance(value, StrField):
                 if not attr.startswith('_'):
                     raise PrivateField('Fields must be private')
 
                 field_name = attr.replace('_', '', 1)
+                fields[field_name] = value
                 getter = create_getter(attr=attr)
                 getters_setters[f'get_{field_name}'] = getter
                 setter = create_setter(attr=attr)
@@ -33,4 +35,5 @@ class MetaEntity(type):
                 getters_setters[field_name] = property(getter, setter)
 
         namespace.update(getters_setters)
+        namespace['_fields'] = fields
         return super().__new__(mcs, name, bases, namespace)
