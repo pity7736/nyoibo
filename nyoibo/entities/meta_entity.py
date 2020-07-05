@@ -1,7 +1,7 @@
 from typing import Dict, Any
 
 from nyoibo.exceptions import PrivateField
-from nyoibo.fields import StrField
+from nyoibo.fields import Field
 
 
 def create_getter(attr):
@@ -12,7 +12,8 @@ def create_getter(attr):
 
 def create_setter(attr):
     def setter(self, value):
-        setattr(self, attr, value)
+        field = getattr(self.__class__, attr)
+        setattr(self, attr, field.parse(value))
     return setter
 
 
@@ -22,7 +23,7 @@ class MetaEntity(type):
         getters_setters = {}
         fields = {}
         for attr, value in namespace.items():
-            if isinstance(value, StrField):
+            if isinstance(value, Field):
                 if not attr.startswith('_'):
                     raise PrivateField('Fields must be private')
 
