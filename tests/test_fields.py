@@ -1,3 +1,5 @@
+from pytest import mark
+
 from nyoibo import Entity, fields
 
 
@@ -6,13 +8,29 @@ class TestEntity(Entity):
     _value = fields.IntField()
 
 
-def test_parse_str_value():
-    entity = TestEntity(name=10)
+str_values = (
+    ('10.5', '10.5'),
+    (10, '10'),
+    (15.2, '15.2')
+)
 
-    assert entity.name == '10'
+
+@mark.parametrize('value, expected_result', str_values)
+def test_parse_str_value(value, expected_result):
+    entity = TestEntity(name=value)
+
+    assert entity.name == expected_result
 
 
-def test_parse_int_value():
-    entity = TestEntity(value='10')
+int_values = (
+    ('10', 10),
+    (10, 10),
+    (15.2, 15),
+)
 
-    assert entity.value == 10
+
+@mark.parametrize('value, expected_result', int_values)
+def test_parse_int_value(value, expected_result):
+    entity = TestEntity(value=value)
+
+    assert entity.value == expected_result
