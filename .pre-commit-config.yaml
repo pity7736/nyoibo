@@ -8,9 +8,9 @@ repos:
     - id: flake8
   - repo: local
     hooks:
-      - id: radon
-        name: radon
-        entry: run_radon.sh
+      - id: xenon
+        name: xenon
+        entry: run_xenon.sh
         language: script
         types: [python]
   - repo: local
