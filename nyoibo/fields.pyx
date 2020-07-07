@@ -17,3 +17,12 @@ cdef class StrField(Field):
 cdef class IntField(Field):
 
     _internal_type = int
+
+    cpdef public parse(self, value):
+        if isinstance(value, str):
+            value = float(value)
+
+        # I implemented super in python 2 form because cython
+        # has an issue with super without arguments
+        # https://github.com/cython/cython/issues/3726
+        return super(IntField, self).parse(value)
