@@ -1,3 +1,4 @@
+import datetime
 
 cdef class Field:
 
@@ -36,3 +37,23 @@ cdef class BoolField(Field):
         if value in ('false', 'False'):
             return False
         return super(BoolField, self).parse(value)
+
+
+cdef class DateField(Field):
+
+    _internal_type = datetime.date
+
+    cpdef public parse(self, value):
+        if isinstance(value, str):
+            return datetime.date.fromisoformat(value)
+        return super(DateField, self).parse(value)
+
+
+cdef class DatetimeField(Field):
+
+    _internal_type = datetime.datetime
+
+    cpdef public parse(self, value):
+        if isinstance(value, str):
+            return datetime.datetime.fromisoformat(value)
+        return super(DatetimeField, self).parse(value)
