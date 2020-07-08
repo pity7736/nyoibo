@@ -26,3 +26,13 @@ cdef class IntField(Field):
         # has an issue with super without arguments
         # https://github.com/cython/cython/issues/3726
         return super(IntField, self).parse(value)
+
+
+cdef class BoolField(Field):
+
+    _internal_type = bool
+
+    cpdef public parse(self, value):
+        if value in ('false', 'False'):
+            return False
+        return super(BoolField, self).parse(value)
