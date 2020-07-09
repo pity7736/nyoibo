@@ -1,4 +1,5 @@
 import datetime
+from decimal import Decimal
 
 cdef class Field:
 
@@ -57,3 +58,13 @@ cdef class DatetimeField(Field):
         if isinstance(value, str):
             return datetime.datetime.fromisoformat(value)
         return super(DatetimeField, self).parse(value)
+
+
+cdef class FloatField(Field):
+
+    _internal_type = float
+
+
+cdef class DecimalField(Field):
+
+    _internal_type = Decimal

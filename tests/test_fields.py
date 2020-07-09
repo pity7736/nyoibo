@@ -1,4 +1,5 @@
 import datetime
+from decimal import Decimal
 
 from pytest import mark
 
@@ -11,6 +12,8 @@ class TestEntity(Entity):
     _is_valid = fields.BoolField()
     _date = fields.DateField()
     _datetime = fields.DatetimeField()
+    _points = fields.FloatField()
+    _rate = fields.DecimalField()
 
 
 str_values = (
@@ -90,3 +93,31 @@ def test_parse_datetime_value(value, expected_result):
     entity = TestEntity(datetime=value)
 
     assert entity.datetime == expected_result
+
+
+float_values = (
+    (2.5, 2.5),
+    (2, 2.0),
+    ('2.5', 2.5)
+)
+
+
+@mark.parametrize('value, expected_result', float_values)
+def test_parse_float_value(value, expected_result):
+    entity = TestEntity(points=value)
+
+    assert entity.points == expected_result
+
+
+decimal_values = (
+    (Decimal('2.5'), Decimal('2.5')),
+    ('2.5', Decimal('2.5')),
+    (2, Decimal('2')),
+)
+
+
+@mark.parametrize('value, expected_result', decimal_values)
+def test_parse_decimal_values(value, expected_result):
+    entity = TestEntity(rate=value)
+
+    assert entity.rate == expected_result
