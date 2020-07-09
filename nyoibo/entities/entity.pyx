@@ -9,4 +9,6 @@ class Entity(metaclass=MetaEntity):
         cdef fields.Field field
         for key, field in self._fields.items():
             value = kwargs.get(key, None)
+            if value is None:
+                value = field.name
             setattr(self, key, value)

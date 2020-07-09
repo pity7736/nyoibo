@@ -1,9 +1,13 @@
 import datetime
 from decimal import Decimal
 
+
 cdef class Field:
 
     _internal_type = None
+
+    def __init__(self, default_value=None):
+        self.default_value = default_value
 
     cpdef public parse(self, value):
         if value is None or type(value) is self._internal_type:

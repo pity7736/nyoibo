@@ -7,6 +7,8 @@ from nyoibo.exceptions import PrivateField
 class Rate(Entity):
     _value = fields.StrField()
     _other_value = fields.StrField()
+    _default = fields.StrField(default_value='hello world')
+    _other_default = fields.IntField(default_value=1)
 
 
 def test_get_value():
@@ -37,3 +39,10 @@ def test_fields_must_be_private():
     with raises(PrivateField):
         class Example(Entity):
             value = fields.StrField()
+
+
+def test_default_values():
+    rate = Rate()
+
+    assert rate.default == 'hello world'
+    assert rate.other_default == 1

@@ -1,5 +1,6 @@
 
 cdef class Field:
+    cdef public default_value
     cpdef public parse(self, value)
 
 
