@@ -1,7 +1,7 @@
 import datetime
 from decimal import Decimal
 
-from pytest import mark, raises
+from pytest import mark
 
 from nyoibo import Entity, fields
 
@@ -14,7 +14,6 @@ class TestEntity(Entity):
     _datetime = fields.DatetimeField()
     _points = fields.FloatField()
     _rate = fields.DecimalField()
-    _private = fields.StrField(private=True)
 
 
 str_values = (
@@ -122,15 +121,3 @@ def test_parse_decimal_values(value, expected_result):
     entity = TestEntity(rate=value)
 
     assert entity.rate == expected_result
-
-
-def test_private_field():
-    entity = TestEntity(private='some value')
-    with raises(AttributeError):
-        print(entity.private)
-
-
-def test_private_field_getter():
-    entity = TestEntity(private='some value')
-    with raises(AttributeError):
-        print(entity.get_private())

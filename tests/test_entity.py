@@ -9,6 +9,7 @@ class Rate(Entity):
     _other_value = fields.StrField()
     _default = fields.StrField(default_value='hello world')
     _other_default = fields.IntField(default_value=1)
+    _private = fields.StrField(private=True)
 
 
 def test_get_value():
@@ -46,3 +47,15 @@ def test_default_values():
 
     assert rate.default == 'hello world'
     assert rate.other_default == 1
+
+
+def test_private_field():
+    entity = Rate(private='some value')
+    with raises(AttributeError):
+        print(entity.private)
+
+
+def test_private_field_getter():
+    entity = Rate(private='some value')
+    with raises(AttributeError):
+        print(entity.get_private())
