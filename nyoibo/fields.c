@@ -850,23 +850,24 @@ struct __pyx_obj_6nyoibo_6fields_Field {
 };
 
 
-/* "nyoibo/fields.pxd":9
+/* "nyoibo/fields.pyx":20
  * 
  * 
  * cdef class StrField(Field):             # <<<<<<<<<<<<<<
- *     pass
  * 
+ *     _internal_type = str
  */
 struct __pyx_obj_6nyoibo_6fields_StrField {
   struct __pyx_obj_6nyoibo_6fields_Field __pyx_base;
 };
 
 
-/* "nyoibo/fields.pxd":13
+/* "nyoibo/fields.pyx":25
  * 
  * 
  * cdef class IntField(Field):             # <<<<<<<<<<<<<<
- *     pass
+ * 
+ *     _internal_type = int
  */
 struct __pyx_obj_6nyoibo_6fields_IntField {
   struct __pyx_obj_6nyoibo_6fields_Field __pyx_base;
@@ -2027,7 +2028,6 @@ static PyObject *__pyx_pf_6nyoibo_6fields_5Field_7private___get__(struct __pyx_o
  *     cdef readonly private
  *     cdef readonly immutable             # <<<<<<<<<<<<<<
  *     cpdef public parse(self, value)
- * 
  */
 
 /* Python wrapper */
