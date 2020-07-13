@@ -10,10 +10,10 @@ if USE_CYTHON:
 else:
     ext = 'c'
 
-extensions = (
+extensions = [
     Extension('nyoibo.fields', [f'nyoibo/fields.{ext}']),
     Extension('nyoibo.entities.entity', [f'nyoibo/entities/entity.{ext}'])
-)
+]
 
 if USE_CYTHON:
     extensions = cythonize(
