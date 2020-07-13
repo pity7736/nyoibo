@@ -841,10 +841,11 @@ struct __pyx_obj_6nyoibo_6fields_Field {
   struct __pyx_vtabstruct_6nyoibo_6fields_Field *__pyx_vtab;
   PyObject *default_value;
   PyObject *private;
+  PyObject *immutable;
 };
 
 
-/* "fields.pxd":8
+/* "fields.pxd":9
  * 
  * 
  * cdef class StrField(Field):             # <<<<<<<<<<<<<<
@@ -856,7 +857,7 @@ struct __pyx_obj_6nyoibo_6fields_StrField {
 };
 
 
-/* "fields.pxd":12
+/* "fields.pxd":13
  * 
  * 
  * cdef class IntField(Field):             # <<<<<<<<<<<<<<
@@ -881,7 +882,7 @@ struct __pyx_vtabstruct_6nyoibo_6fields_Field {
 static struct __pyx_vtabstruct_6nyoibo_6fields_Field *__pyx_vtabptr_6nyoibo_6fields_Field;
 
 
-/* "fields.pxd":8
+/* "fields.pxd":9
  * 
  * 
  * cdef class StrField(Field):             # <<<<<<<<<<<<<<
@@ -895,7 +896,7 @@ struct __pyx_vtabstruct_6nyoibo_6fields_StrField {
 static struct __pyx_vtabstruct_6nyoibo_6fields_StrField *__pyx_vtabptr_6nyoibo_6fields_StrField;
 
 
-/* "fields.pxd":12
+/* "fields.pxd":13
  * 
  * 
  * cdef class IntField(Field):             # <<<<<<<<<<<<<<
@@ -1114,6 +1115,9 @@ static CYTHON_INLINE PyObject *__Pyx_CallUnboundCMethod2(__Pyx_CachedCFunction *
 #else
 #define __Pyx_CallUnboundCMethod2(cfunc, self, arg1, arg2)  __Pyx__CallUnboundCMethod2(cfunc, self, arg1, arg2)
 #endif
+
+/* PyUnicode_Unicode.proto */
+static CYTHON_INLINE PyObject* __Pyx_PyUnicode_Unicode(PyObject *obj);
 
 /* TypeImport.proto */
 #ifndef __PYX_HAVE_RT_ImportType_proto
@@ -1372,9 +1376,11 @@ extern int __pyx_module_is_main_nyoibo__entities__entity;
 int __pyx_module_is_main_nyoibo__entities__entity = 0;
 
 /* Implementation of 'nyoibo.entities.entity' */
+static const char __pyx_k_[] = "_";
 static const char __pyx_k_doc[] = "__doc__";
 static const char __pyx_k_get[] = "get";
 static const char __pyx_k_key[] = "key";
+static const char __pyx_k_None[] = "None";
 static const char __pyx_k_init[] = "__init__";
 static const char __pyx_k_main[] = "__main__";
 static const char __pyx_k_name[] = "__name__";
@@ -1398,9 +1404,11 @@ static const char __pyx_k_Entity___init[] = "Entity.__init__";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
 static const char __pyx_k_nyoibo_entities_entity[] = "nyoibo.entities.entity";
 static const char __pyx_k_nyoibo_entities_entity_pyx[] = "nyoibo/entities/entity.pyx";
+static PyObject *__pyx_n_u_;
 static PyObject *__pyx_n_s_Entity;
 static PyObject *__pyx_n_s_Entity___init;
 static PyObject *__pyx_n_s_MetaEntity;
+static PyObject *__pyx_kp_u_None;
 static PyObject *__pyx_n_s_cline_in_traceback;
 static PyObject *__pyx_n_s_doc;
 static PyObject *__pyx_n_s_field;
@@ -1426,8 +1434,8 @@ static PyObject *__pyx_n_s_test;
 static PyObject *__pyx_n_s_value;
 static PyObject *__pyx_pf_6nyoibo_8entities_6entity_6Entity___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_kwargs); /* proto */
 static __Pyx_CachedCFunction __pyx_umethod_PyDict_Type_get = {0, &__pyx_n_s_get, 0, 0, 0};
-static PyObject *__pyx_tuple_;
-static PyObject *__pyx_codeobj__2;
+static PyObject *__pyx_tuple__2;
+static PyObject *__pyx_codeobj__3;
 /* Late includes */
 
 /* "nyoibo/entities/entity.pyx":7
@@ -1568,7 +1576,7 @@ static PyObject *__pyx_pf_6nyoibo_8entities_6entity_6Entity___init__(CYTHON_UNUS
  *             value = kwargs.get(key, None)
  *             if value is None:             # <<<<<<<<<<<<<<
  *                 value = field.default_value
- *             setattr(self, key, value)
+ *             if field.immutable is True:
  */
     __pyx_t_8 = (__pyx_v_value == Py_None);
     __pyx_t_9 = (__pyx_t_8 != 0);
@@ -1578,7 +1586,8 @@ static PyObject *__pyx_pf_6nyoibo_8entities_6entity_6Entity___init__(CYTHON_UNUS
  *             value = kwargs.get(key, None)
  *             if value is None:
  *                 value = field.default_value             # <<<<<<<<<<<<<<
- *             setattr(self, key, value)
+ *             if field.immutable is True:
+ *                 key = f'_{key}'
  */
       __pyx_t_5 = __pyx_v_field->default_value;
       __Pyx_INCREF(__pyx_t_5);
@@ -1590,16 +1599,62 @@ static PyObject *__pyx_pf_6nyoibo_8entities_6entity_6Entity___init__(CYTHON_UNUS
  *             value = kwargs.get(key, None)
  *             if value is None:             # <<<<<<<<<<<<<<
  *                 value = field.default_value
- *             setattr(self, key, value)
+ *             if field.immutable is True:
  */
     }
 
     /* "nyoibo/entities/entity.pyx":14
  *             if value is None:
  *                 value = field.default_value
+ *             if field.immutable is True:             # <<<<<<<<<<<<<<
+ *                 key = f'_{key}'
+ *                 value = field.parse(value)
+ */
+    __pyx_t_9 = (__pyx_v_field->immutable == Py_True);
+    __pyx_t_8 = (__pyx_t_9 != 0);
+    if (__pyx_t_8) {
+
+      /* "nyoibo/entities/entity.pyx":15
+ *                 value = field.default_value
+ *             if field.immutable is True:
+ *                 key = f'_{key}'             # <<<<<<<<<<<<<<
+ *                 value = field.parse(value)
+ *             setattr(self, key, value)
+ */
+      __pyx_t_5 = __Pyx_PyUnicode_Unicode(__pyx_v_key); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 15, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __pyx_t_6 = __Pyx_PyUnicode_Concat(__pyx_n_u_, __pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 15, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_6);
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      __Pyx_DECREF_SET(__pyx_v_key, ((PyObject*)__pyx_t_6));
+      __pyx_t_6 = 0;
+
+      /* "nyoibo/entities/entity.pyx":16
+ *             if field.immutable is True:
+ *                 key = f'_{key}'
+ *                 value = field.parse(value)             # <<<<<<<<<<<<<<
+ *             setattr(self, key, value)
+ */
+      __pyx_t_6 = ((struct __pyx_vtabstruct_6nyoibo_6fields_Field *)__pyx_v_field->__pyx_vtab)->parse(__pyx_v_field, __pyx_v_value, 0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 16, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_6);
+      __Pyx_DECREF_SET(__pyx_v_value, __pyx_t_6);
+      __pyx_t_6 = 0;
+
+      /* "nyoibo/entities/entity.pyx":14
+ *             if value is None:
+ *                 value = field.default_value
+ *             if field.immutable is True:             # <<<<<<<<<<<<<<
+ *                 key = f'_{key}'
+ *                 value = field.parse(value)
+ */
+    }
+
+    /* "nyoibo/entities/entity.pyx":17
+ *                 key = f'_{key}'
+ *                 value = field.parse(value)
  *             setattr(self, key, value)             # <<<<<<<<<<<<<<
  */
-    __pyx_t_10 = PyObject_SetAttr(__pyx_v_self, __pyx_v_key, __pyx_v_value); if (unlikely(__pyx_t_10 == ((int)-1))) __PYX_ERR(0, 14, __pyx_L1_error)
+    __pyx_t_10 = PyObject_SetAttr(__pyx_v_self, __pyx_v_key, __pyx_v_value); if (unlikely(__pyx_t_10 == ((int)-1))) __PYX_ERR(0, 17, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
@@ -1675,9 +1730,11 @@ static struct PyModuleDef __pyx_moduledef = {
 #endif
 
 static __Pyx_StringTabEntry __pyx_string_tab[] = {
+  {&__pyx_n_u_, __pyx_k_, sizeof(__pyx_k_), 0, 1, 0, 1},
   {&__pyx_n_s_Entity, __pyx_k_Entity, sizeof(__pyx_k_Entity), 0, 0, 1, 1},
   {&__pyx_n_s_Entity___init, __pyx_k_Entity___init, sizeof(__pyx_k_Entity___init), 0, 0, 1, 1},
   {&__pyx_n_s_MetaEntity, __pyx_k_MetaEntity, sizeof(__pyx_k_MetaEntity), 0, 0, 1, 1},
+  {&__pyx_kp_u_None, __pyx_k_None, sizeof(__pyx_k_None), 0, 1, 0, 0},
   {&__pyx_n_s_cline_in_traceback, __pyx_k_cline_in_traceback, sizeof(__pyx_k_cline_in_traceback), 0, 0, 1, 1},
   {&__pyx_n_s_doc, __pyx_k_doc, sizeof(__pyx_k_doc), 0, 0, 1, 1},
   {&__pyx_n_s_field, __pyx_k_field, sizeof(__pyx_k_field), 0, 0, 1, 1},
@@ -1718,10 +1775,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         cdef str key
  *         cdef fields.Field field
  */
-  __pyx_tuple_ = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_kwargs, __pyx_n_s_key, __pyx_n_s_field, __pyx_n_s_value); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 7, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple_);
-  __Pyx_GIVEREF(__pyx_tuple_);
-  __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(1, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARKEYWORDS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple_, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_nyoibo_entities_entity_pyx, __pyx_n_s_init, 7, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(0, 7, __pyx_L1_error)
+  __pyx_tuple__2 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_kwargs, __pyx_n_s_key, __pyx_n_s_field, __pyx_n_s_value); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 7, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__2);
+  __Pyx_GIVEREF(__pyx_tuple__2);
+  __pyx_codeobj__3 = (PyObject*)__Pyx_PyCode_New(1, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARKEYWORDS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__2, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_nyoibo_entities_entity_pyx, __pyx_n_s_init, 7, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__3)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -1791,11 +1848,11 @@ static int __Pyx_modinit_type_import_code(void) {
    if (!__pyx_ptype_6nyoibo_6fields_Field) __PYX_ERR(1, 2, __pyx_L1_error)
   __pyx_vtabptr_6nyoibo_6fields_Field = (struct __pyx_vtabstruct_6nyoibo_6fields_Field*)__Pyx_GetVtable(__pyx_ptype_6nyoibo_6fields_Field->tp_dict); if (unlikely(!__pyx_vtabptr_6nyoibo_6fields_Field)) __PYX_ERR(1, 2, __pyx_L1_error)
   __pyx_ptype_6nyoibo_6fields_StrField = __Pyx_ImportType(__pyx_t_1, "nyoibo.fields", "StrField", sizeof(struct __pyx_obj_6nyoibo_6fields_StrField), __Pyx_ImportType_CheckSize_Warn);
-   if (!__pyx_ptype_6nyoibo_6fields_StrField) __PYX_ERR(1, 8, __pyx_L1_error)
-  __pyx_vtabptr_6nyoibo_6fields_StrField = (struct __pyx_vtabstruct_6nyoibo_6fields_StrField*)__Pyx_GetVtable(__pyx_ptype_6nyoibo_6fields_StrField->tp_dict); if (unlikely(!__pyx_vtabptr_6nyoibo_6fields_StrField)) __PYX_ERR(1, 8, __pyx_L1_error)
+   if (!__pyx_ptype_6nyoibo_6fields_StrField) __PYX_ERR(1, 9, __pyx_L1_error)
+  __pyx_vtabptr_6nyoibo_6fields_StrField = (struct __pyx_vtabstruct_6nyoibo_6fields_StrField*)__Pyx_GetVtable(__pyx_ptype_6nyoibo_6fields_StrField->tp_dict); if (unlikely(!__pyx_vtabptr_6nyoibo_6fields_StrField)) __PYX_ERR(1, 9, __pyx_L1_error)
   __pyx_ptype_6nyoibo_6fields_IntField = __Pyx_ImportType(__pyx_t_1, "nyoibo.fields", "IntField", sizeof(struct __pyx_obj_6nyoibo_6fields_IntField), __Pyx_ImportType_CheckSize_Warn);
-   if (!__pyx_ptype_6nyoibo_6fields_IntField) __PYX_ERR(1, 12, __pyx_L1_error)
-  __pyx_vtabptr_6nyoibo_6fields_IntField = (struct __pyx_vtabstruct_6nyoibo_6fields_IntField*)__Pyx_GetVtable(__pyx_ptype_6nyoibo_6fields_IntField->tp_dict); if (unlikely(!__pyx_vtabptr_6nyoibo_6fields_IntField)) __PYX_ERR(1, 12, __pyx_L1_error)
+   if (!__pyx_ptype_6nyoibo_6fields_IntField) __PYX_ERR(1, 13, __pyx_L1_error)
+  __pyx_vtabptr_6nyoibo_6fields_IntField = (struct __pyx_vtabstruct_6nyoibo_6fields_IntField*)__Pyx_GetVtable(__pyx_ptype_6nyoibo_6fields_IntField->tp_dict); if (unlikely(!__pyx_vtabptr_6nyoibo_6fields_IntField)) __PYX_ERR(1, 13, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_RefNannyFinishContext();
   return 0;
@@ -2067,7 +2124,7 @@ if (!__Pyx_RefNanny) {
  *         cdef str key
  *         cdef fields.Field field
  */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_6nyoibo_8entities_6entity_6Entity_1__init__, 0, __pyx_n_s_Entity___init, NULL, __pyx_n_s_nyoibo_entities_entity, __pyx_d, ((PyObject *)__pyx_codeobj__2)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 7, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_6nyoibo_8entities_6entity_6Entity_1__init__, 0, __pyx_n_s_Entity___init, NULL, __pyx_n_s_nyoibo_entities_entity, __pyx_d, ((PyObject *)__pyx_codeobj__3)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_init, __pyx_t_4) < 0) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -3064,6 +3121,13 @@ static PyObject* __Pyx_PyDict_GetItemDefault(PyObject* d, PyObject* key, PyObjec
             value = __Pyx_CallUnboundCMethod2(&__pyx_umethod_PyDict_Type_get, d, key, default_value);
     }
     return value;
+}
+
+/* PyUnicode_Unicode */
+static CYTHON_INLINE PyObject* __Pyx_PyUnicode_Unicode(PyObject *obj) {
+    if (unlikely(obj == Py_None))
+        obj = __pyx_kp_u_None;
+    return __Pyx_NewRef(obj);
 }
 
 /* TypeImport */

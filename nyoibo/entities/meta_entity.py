@@ -45,6 +45,8 @@ class MetaEntity(type):
             fields[field_name] = value
             getter = create_getter(attr=attr)
             getters_setters[f'get_{field_name}'] = getter
-            setter = create_setter(attr=attr)
-            getters_setters[f'set_{field_name}'] = setter
+            setter = None
+            if value.immutable is False:
+                setter = create_setter(attr=attr)
+                getters_setters[f'set_{field_name}'] = setter
             getters_setters[field_name] = property(getter, setter)

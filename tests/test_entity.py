@@ -10,6 +10,7 @@ class Rate(Entity):
     _default = fields.StrField(default_value='hello world')
     _other_default = fields.IntField(default_value=1)
     _private = fields.StrField(private=True)
+    _immutable = fields.StrField(immutable=True)
 
 
 def test_get_value():
@@ -59,3 +60,14 @@ def test_private_field_getter():
     entity = Rate(private='some value')
     with raises(AttributeError):
         print(entity.get_private())
+
+
+def test_immutable_field():
+    entity = Rate(immutable='some value')
+
+    assert entity.immutable == 'some value'
+    with raises(AttributeError):
+        entity.immutable = 'other value'
+
+    with raises(AttributeError):
+        entity.set_immutable('other value2')

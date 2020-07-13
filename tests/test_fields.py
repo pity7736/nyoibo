@@ -14,6 +14,7 @@ class TestEntity(Entity):
     _datetime = fields.DatetimeField()
     _points = fields.FloatField()
     _rate = fields.DecimalField()
+    _immutable = fields.StrField(immutable=True)
 
 
 str_values = (
@@ -121,3 +122,9 @@ def test_parse_decimal_values(value, expected_result):
     entity = TestEntity(rate=value)
 
     assert entity.rate == expected_result
+
+
+def test_parse_immutable_value():
+    entity = TestEntity(immutable=12345)
+
+    assert entity.immutable == '12345'
