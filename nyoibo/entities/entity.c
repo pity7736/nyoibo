@@ -833,17 +833,18 @@ struct __pyx_obj_6nyoibo_6fields_IntField;
 /* "fields.pxd":2
  * 
  * cdef class Field:             # <<<<<<<<<<<<<<
- *     cpdef public name
- *     cpdef public parse(self, value)
+ *     cdef readonly default_value
+ *     cdef readonly private
  */
 struct __pyx_obj_6nyoibo_6fields_Field {
   PyObject_HEAD
   struct __pyx_vtabstruct_6nyoibo_6fields_Field *__pyx_vtab;
-  PyObject *name;
+  PyObject *default_value;
+  PyObject *private;
 };
 
 
-/* "fields.pxd":7
+/* "fields.pxd":8
  * 
  * 
  * cdef class StrField(Field):             # <<<<<<<<<<<<<<
@@ -855,7 +856,7 @@ struct __pyx_obj_6nyoibo_6fields_StrField {
 };
 
 
-/* "fields.pxd":11
+/* "fields.pxd":12
  * 
  * 
  * cdef class IntField(Field):             # <<<<<<<<<<<<<<
@@ -870,8 +871,8 @@ struct __pyx_obj_6nyoibo_6fields_IntField {
 /* "fields.pxd":2
  * 
  * cdef class Field:             # <<<<<<<<<<<<<<
- *     cpdef public name
- *     cpdef public parse(self, value)
+ *     cdef readonly default_value
+ *     cdef readonly private
  */
 
 struct __pyx_vtabstruct_6nyoibo_6fields_Field {
@@ -880,7 +881,7 @@ struct __pyx_vtabstruct_6nyoibo_6fields_Field {
 static struct __pyx_vtabstruct_6nyoibo_6fields_Field *__pyx_vtabptr_6nyoibo_6fields_Field;
 
 
-/* "fields.pxd":7
+/* "fields.pxd":8
  * 
  * 
  * cdef class StrField(Field):             # <<<<<<<<<<<<<<
@@ -894,7 +895,7 @@ struct __pyx_vtabstruct_6nyoibo_6fields_StrField {
 static struct __pyx_vtabstruct_6nyoibo_6fields_StrField *__pyx_vtabptr_6nyoibo_6fields_StrField;
 
 
-/* "fields.pxd":11
+/* "fields.pxd":12
  * 
  * 
  * cdef class IntField(Field):             # <<<<<<<<<<<<<<
@@ -1555,7 +1556,7 @@ static PyObject *__pyx_pf_6nyoibo_8entities_6entity_6Entity___init__(CYTHON_UNUS
  *         for key, field in self._fields.items():
  *             value = kwargs.get(key, None)             # <<<<<<<<<<<<<<
  *             if value is None:
- *                 value = field.name
+ *                 value = field.default_value
  */
     __pyx_t_5 = __Pyx_PyDict_GetItemDefault(__pyx_v_kwargs, __pyx_v_key, Py_None); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 11, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
@@ -1566,7 +1567,7 @@ static PyObject *__pyx_pf_6nyoibo_8entities_6entity_6Entity___init__(CYTHON_UNUS
  *         for key, field in self._fields.items():
  *             value = kwargs.get(key, None)
  *             if value is None:             # <<<<<<<<<<<<<<
- *                 value = field.name
+ *                 value = field.default_value
  *             setattr(self, key, value)
  */
     __pyx_t_8 = (__pyx_v_value == Py_None);
@@ -1576,10 +1577,10 @@ static PyObject *__pyx_pf_6nyoibo_8entities_6entity_6Entity___init__(CYTHON_UNUS
       /* "nyoibo/entities/entity.pyx":13
  *             value = kwargs.get(key, None)
  *             if value is None:
- *                 value = field.name             # <<<<<<<<<<<<<<
+ *                 value = field.default_value             # <<<<<<<<<<<<<<
  *             setattr(self, key, value)
  */
-      __pyx_t_5 = __pyx_v_field->name;
+      __pyx_t_5 = __pyx_v_field->default_value;
       __Pyx_INCREF(__pyx_t_5);
       __Pyx_DECREF_SET(__pyx_v_value, __pyx_t_5);
       __pyx_t_5 = 0;
@@ -1588,14 +1589,14 @@ static PyObject *__pyx_pf_6nyoibo_8entities_6entity_6Entity___init__(CYTHON_UNUS
  *         for key, field in self._fields.items():
  *             value = kwargs.get(key, None)
  *             if value is None:             # <<<<<<<<<<<<<<
- *                 value = field.name
+ *                 value = field.default_value
  *             setattr(self, key, value)
  */
     }
 
     /* "nyoibo/entities/entity.pyx":14
  *             if value is None:
- *                 value = field.name
+ *                 value = field.default_value
  *             setattr(self, key, value)             # <<<<<<<<<<<<<<
  */
     __pyx_t_10 = PyObject_SetAttr(__pyx_v_self, __pyx_v_key, __pyx_v_value); if (unlikely(__pyx_t_10 == ((int)-1))) __PYX_ERR(0, 14, __pyx_L1_error)
@@ -1790,11 +1791,11 @@ static int __Pyx_modinit_type_import_code(void) {
    if (!__pyx_ptype_6nyoibo_6fields_Field) __PYX_ERR(1, 2, __pyx_L1_error)
   __pyx_vtabptr_6nyoibo_6fields_Field = (struct __pyx_vtabstruct_6nyoibo_6fields_Field*)__Pyx_GetVtable(__pyx_ptype_6nyoibo_6fields_Field->tp_dict); if (unlikely(!__pyx_vtabptr_6nyoibo_6fields_Field)) __PYX_ERR(1, 2, __pyx_L1_error)
   __pyx_ptype_6nyoibo_6fields_StrField = __Pyx_ImportType(__pyx_t_1, "nyoibo.fields", "StrField", sizeof(struct __pyx_obj_6nyoibo_6fields_StrField), __Pyx_ImportType_CheckSize_Warn);
-   if (!__pyx_ptype_6nyoibo_6fields_StrField) __PYX_ERR(1, 7, __pyx_L1_error)
-  __pyx_vtabptr_6nyoibo_6fields_StrField = (struct __pyx_vtabstruct_6nyoibo_6fields_StrField*)__Pyx_GetVtable(__pyx_ptype_6nyoibo_6fields_StrField->tp_dict); if (unlikely(!__pyx_vtabptr_6nyoibo_6fields_StrField)) __PYX_ERR(1, 7, __pyx_L1_error)
+   if (!__pyx_ptype_6nyoibo_6fields_StrField) __PYX_ERR(1, 8, __pyx_L1_error)
+  __pyx_vtabptr_6nyoibo_6fields_StrField = (struct __pyx_vtabstruct_6nyoibo_6fields_StrField*)__Pyx_GetVtable(__pyx_ptype_6nyoibo_6fields_StrField->tp_dict); if (unlikely(!__pyx_vtabptr_6nyoibo_6fields_StrField)) __PYX_ERR(1, 8, __pyx_L1_error)
   __pyx_ptype_6nyoibo_6fields_IntField = __Pyx_ImportType(__pyx_t_1, "nyoibo.fields", "IntField", sizeof(struct __pyx_obj_6nyoibo_6fields_IntField), __Pyx_ImportType_CheckSize_Warn);
-   if (!__pyx_ptype_6nyoibo_6fields_IntField) __PYX_ERR(1, 11, __pyx_L1_error)
-  __pyx_vtabptr_6nyoibo_6fields_IntField = (struct __pyx_vtabstruct_6nyoibo_6fields_IntField*)__Pyx_GetVtable(__pyx_ptype_6nyoibo_6fields_IntField->tp_dict); if (unlikely(!__pyx_vtabptr_6nyoibo_6fields_IntField)) __PYX_ERR(1, 11, __pyx_L1_error)
+   if (!__pyx_ptype_6nyoibo_6fields_IntField) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_vtabptr_6nyoibo_6fields_IntField = (struct __pyx_vtabstruct_6nyoibo_6fields_IntField*)__Pyx_GetVtable(__pyx_ptype_6nyoibo_6fields_IntField->tp_dict); if (unlikely(!__pyx_vtabptr_6nyoibo_6fields_IntField)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_RefNannyFinishContext();
   return 0;

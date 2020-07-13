@@ -1,6 +1,7 @@
 
 cdef class Field:
-    cdef public default_value
+    cdef readonly default_value
+    cdef readonly private
     cpdef public parse(self, value)
 
 

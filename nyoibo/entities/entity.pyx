@@ -10,5 +10,5 @@ class Entity(metaclass=MetaEntity):
         for key, field in self._fields.items():
             value = kwargs.get(key, None)
             if value is None:
-                value = field.name
+                value = field.default_value
             setattr(self, key, value)
