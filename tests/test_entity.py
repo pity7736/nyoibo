@@ -71,3 +71,33 @@ def test_immutable_field():
 
     with raises(AttributeError):
         entity.set_immutable('other value2')
+
+
+def test_override_getter():
+    class Getter(Entity):
+        _value = fields.IntField()
+
+        def get_value(self):
+            return self._value + 5
+
+    getter = Getter(value=5)
+
+    assert getter.value == 10
+    assert getter.get_value() == 10
+
+
+def test_override_setter():
+    class Setter(Entity):
+        _value = fields.IntField()
+
+        def set_value(self, value):
+            self._value = value + 5
+
+    setter = Setter(value=5)
+
+    assert setter.value == 10
+    assert setter.get_value() == 10
+
+    setter.value = 10
+    assert setter.value == 15
+    assert setter.get_value() == 15

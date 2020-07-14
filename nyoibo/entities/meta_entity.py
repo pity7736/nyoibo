@@ -27,11 +27,12 @@ class MetaEntity(type):
                 if not attr.startswith('_'):
                     raise PrivateField('Fields must be private')
 
-                MetaEntity.set_getters_and_setters(
+                MetaEntity._set_getters_and_setters(
                     attr,
                     fields,
                     getters_setters,
-                    value
+                    value,
+                    namespace
                 )
 
         namespace.update(getters_setters)
@@ -39,14 +40,17 @@ class MetaEntity(type):
         return super().__new__(mcs, name, bases, namespace)
 
     @staticmethod
-    def set_getters_and_setters(attr, fields, getters_setters, value):
+    def _set_getters_and_setters(attr, fields, getters_setters, value,
+                                 namespace):
         if value.private is False:
             field_name = attr.replace('_', '', 1)
             fields[field_name] = value
-            getter = create_getter(attr=attr)
-            getters_setters[f'get_{field_name}'] = getter
+            getter_name = f'get_{field_name}'
+            getter = namespace.get(getter_name) or create_getter(attr=attr)
+            getters_setters[getter_name] = getter
             setter = None
             if value.immutable is False:
-                setter = create_setter(attr=attr)
-                getters_setters[f'set_{field_name}'] = setter
+                setter_name = f'set_{field_name}'
+                setter = namespace.get(setter_name) or create_setter(attr=attr)
+                getters_setters[setter_name] = setter
             getters_setters[field_name] = property(getter, setter)
