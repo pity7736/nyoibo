@@ -40,15 +40,14 @@ class MetaEntity(type):
         return super().__new__(mcs, name, bases, namespace)
 
     @staticmethod
-    def _set_getters_and_setters(attr, getters_setters, value,
-                                 namespace):
+    def _set_getters_and_setters(attr, getters_setters, field, namespace):
         field_name = attr.replace('_', '', 1)
-        if value.private is False:
+        if field.private is False:
             getter_name = f'get_{field_name}'
             getter = namespace.get(getter_name) or create_getter(attr=attr)
             getters_setters[getter_name] = getter
             setter = None
-            if value.immutable is False:
+            if field.immutable is False:
                 setter_name = f'set_{field_name}'
                 setter = namespace.get(setter_name) or create_setter(attr=attr)
                 getters_setters[setter_name] = setter
