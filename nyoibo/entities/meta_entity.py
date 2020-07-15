@@ -42,9 +42,9 @@ class MetaEntity(type):
     @staticmethod
     def _set_getters_and_setters(attr, fields, getters_setters, value,
                                  namespace):
+        field_name = attr.replace('_', '', 1)
+        fields[attr] = value
         if value.private is False:
-            field_name = attr.replace('_', '', 1)
-            fields[field_name] = value
             getter_name = f'get_{field_name}'
             getter = namespace.get(getter_name) or create_getter(attr=attr)
             getters_setters[getter_name] = getter

@@ -101,3 +101,16 @@ def test_override_setter():
     setter.value = 10
     assert setter.value == 15
     assert setter.get_value() == 15
+
+
+def test_private_value_is_assigned():
+    class Private(Entity):
+        _add = fields.IntField(private=True)
+        _value = fields.IntField()
+
+        def get_value(self):
+            return self._add + self._value
+
+    private = Private(add=5, value=5)
+
+    assert private.value == 10
