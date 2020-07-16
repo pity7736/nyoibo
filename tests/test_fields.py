@@ -128,3 +128,13 @@ def test_parse_immutable_value():
     entity = TestEntity(immutable=12345)
 
     assert entity.immutable == '12345'
+
+
+def test_entity_field():
+    class NewEntity(Entity):
+        _test_entity = fields.EntityField(to=TestEntity)
+
+    test_entity = TestEntity()
+    new_entity = NewEntity(test_entity=test_entity)
+
+    assert new_entity.test_entity == test_entity

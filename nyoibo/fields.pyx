@@ -74,3 +74,13 @@ cdef class FloatField(Field):
 cdef class DecimalField(Field):
 
     _internal_type = Decimal
+
+
+cdef class EntityField(Field):
+
+    def __init__(self, to, *args, **kwargs):
+        super(EntityField, self).__init__(*args, **kwargs)
+        self.to = to
+
+    cpdef public parse(self, value):
+        return value
