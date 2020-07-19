@@ -6,5 +6,5 @@ cdef class Field:
     cpdef public parse(self, value)
 
 
-cdef class EntityField(Field):
+cdef class LinkField(Field):
     cdef readonly to

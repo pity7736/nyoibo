@@ -831,7 +831,7 @@ static const char *__pyx_f[] = {
 
 /*--- Type declarations ---*/
 struct __pyx_obj_6nyoibo_6fields_Field;
-struct __pyx_obj_6nyoibo_6fields_EntityField;
+struct __pyx_obj_6nyoibo_6fields_LinkField;
 struct __pyx_obj_6nyoibo_6fields_StrField;
 struct __pyx_obj_6nyoibo_6fields_IntField;
 struct __pyx_obj_6nyoibo_6fields_BoolField;
@@ -858,10 +858,10 @@ struct __pyx_obj_6nyoibo_6fields_Field {
 /* "nyoibo/fields.pxd":9
  * 
  * 
- * cdef class EntityField(Field):             # <<<<<<<<<<<<<<
+ * cdef class LinkField(Field):             # <<<<<<<<<<<<<<
  *     cdef readonly to
  */
-struct __pyx_obj_6nyoibo_6fields_EntityField {
+struct __pyx_obj_6nyoibo_6fields_LinkField {
   struct __pyx_obj_6nyoibo_6fields_Field __pyx_base;
   PyObject *to;
 };
@@ -969,15 +969,15 @@ static struct __pyx_vtabstruct_6nyoibo_6fields_Field *__pyx_vtabptr_6nyoibo_6fie
 /* "nyoibo/fields.pyx":79
  * 
  * 
- * cdef class EntityField(Field):             # <<<<<<<<<<<<<<
+ * cdef class LinkField(Field):             # <<<<<<<<<<<<<<
  * 
  *     def __init__(self, to, *args, **kwargs):
  */
 
-struct __pyx_vtabstruct_6nyoibo_6fields_EntityField {
+struct __pyx_vtabstruct_6nyoibo_6fields_LinkField {
   struct __pyx_vtabstruct_6nyoibo_6fields_Field __pyx_base;
 };
-static struct __pyx_vtabstruct_6nyoibo_6fields_EntityField *__pyx_vtabptr_6nyoibo_6fields_EntityField;
+static struct __pyx_vtabstruct_6nyoibo_6fields_LinkField *__pyx_vtabptr_6nyoibo_6fields_LinkField;
 
 
 /* "nyoibo/fields.pyx":20
@@ -1433,11 +1433,11 @@ PyObject *__pyx_f_6nyoibo_6fields_8IntField_parse(struct __pyx_obj_6nyoibo_6fiel
 PyObject *__pyx_f_6nyoibo_6fields_9BoolField_parse(struct __pyx_obj_6nyoibo_6fields_BoolField *__pyx_v_self, PyObject *__pyx_v_value, int __pyx_skip_dispatch); /* proto*/
 PyObject *__pyx_f_6nyoibo_6fields_9DateField_parse(struct __pyx_obj_6nyoibo_6fields_DateField *__pyx_v_self, PyObject *__pyx_v_value, int __pyx_skip_dispatch); /* proto*/
 PyObject *__pyx_f_6nyoibo_6fields_13DatetimeField_parse(struct __pyx_obj_6nyoibo_6fields_DatetimeField *__pyx_v_self, PyObject *__pyx_v_value, int __pyx_skip_dispatch); /* proto*/
-PyObject *__pyx_f_6nyoibo_6fields_11EntityField_parse(CYTHON_UNUSED struct __pyx_obj_6nyoibo_6fields_EntityField *__pyx_v_self, PyObject *__pyx_v_value, int __pyx_skip_dispatch); /* proto*/
+PyObject *__pyx_f_6nyoibo_6fields_9LinkField_parse(CYTHON_UNUSED struct __pyx_obj_6nyoibo_6fields_LinkField *__pyx_v_self, PyObject *__pyx_v_value, int __pyx_skip_dispatch); /* proto*/
 
 /* Module declarations from 'nyoibo.fields' */
 static PyTypeObject *__pyx_ptype_6nyoibo_6fields_Field = 0;
-static PyTypeObject *__pyx_ptype_6nyoibo_6fields_EntityField = 0;
+static PyTypeObject *__pyx_ptype_6nyoibo_6fields_LinkField = 0;
 static PyTypeObject *__pyx_ptype_6nyoibo_6fields_StrField = 0;
 static PyTypeObject *__pyx_ptype_6nyoibo_6fields_IntField = 0;
 static PyTypeObject *__pyx_ptype_6nyoibo_6fields_BoolField = 0;
@@ -1453,7 +1453,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DateField__set_state(str
 static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DatetimeField__set_state(struct __pyx_obj_6nyoibo_6fields_DatetimeField *, PyObject *); /*proto*/
 static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_FloatField__set_state(struct __pyx_obj_6nyoibo_6fields_FloatField *, PyObject *); /*proto*/
 static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DecimalField__set_state(struct __pyx_obj_6nyoibo_6fields_DecimalField *, PyObject *); /*proto*/
-static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_EntityField__set_state(struct __pyx_obj_6nyoibo_6fields_EntityField *, PyObject *); /*proto*/
+static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_LinkField__set_state(struct __pyx_obj_6nyoibo_6fields_LinkField *, PyObject *); /*proto*/
 #define __Pyx_MODULE_NAME "nyoibo.fields"
 extern int __pyx_module_is_main_nyoibo__fields;
 int __pyx_module_is_main_nyoibo__fields = 0;
@@ -1488,13 +1488,13 @@ static const char __pyx_k_pyx_type[] = "__pyx_type";
 static const char __pyx_k_setstate[] = "__setstate__";
 static const char __pyx_k_BoolField[] = "BoolField";
 static const char __pyx_k_DateField[] = "DateField";
+static const char __pyx_k_LinkField[] = "LinkField";
 static const char __pyx_k_immutable[] = "immutable";
 static const char __pyx_k_pyx_state[] = "__pyx_state";
 static const char __pyx_k_reduce_ex[] = "__reduce_ex__";
 static const char __pyx_k_FloatField[] = "FloatField";
 static const char __pyx_k_pyx_result[] = "__pyx_result";
 static const char __pyx_k_pyx_vtable[] = "__pyx_vtable__";
-static const char __pyx_k_EntityField[] = "EntityField";
 static const char __pyx_k_PickleError[] = "PickleError";
 static const char __pyx_k_DecimalField[] = "DecimalField";
 static const char __pyx_k_pyx_checksum[] = "__pyx_checksum";
@@ -1513,8 +1513,8 @@ static const char __pyx_k_pyx_unpickle_IntField[] = "__pyx_unpickle_IntField";
 static const char __pyx_k_pyx_unpickle_StrField[] = "__pyx_unpickle_StrField";
 static const char __pyx_k_pyx_unpickle_BoolField[] = "__pyx_unpickle_BoolField";
 static const char __pyx_k_pyx_unpickle_DateField[] = "__pyx_unpickle_DateField";
+static const char __pyx_k_pyx_unpickle_LinkField[] = "__pyx_unpickle_LinkField";
 static const char __pyx_k_pyx_unpickle_FloatField[] = "__pyx_unpickle_FloatField";
-static const char __pyx_k_pyx_unpickle_EntityField[] = "__pyx_unpickle_EntityField";
 static const char __pyx_k_pyx_unpickle_DecimalField[] = "__pyx_unpickle_DecimalField";
 static const char __pyx_k_pyx_unpickle_DatetimeField[] = "__pyx_unpickle_DatetimeField";
 static const char __pyx_k_Incompatible_checksums_s_vs_0x00[] = "Incompatible checksums (%s vs 0x0077a4c = (default_value, immutable, private))";
@@ -1524,13 +1524,13 @@ static PyObject *__pyx_n_s_DateField;
 static PyObject *__pyx_n_s_DatetimeField;
 static PyObject *__pyx_n_s_Decimal;
 static PyObject *__pyx_n_s_DecimalField;
-static PyObject *__pyx_n_s_EntityField;
 static PyObject *__pyx_n_u_False;
 static PyObject *__pyx_n_s_Field;
 static PyObject *__pyx_n_s_FloatField;
 static PyObject *__pyx_kp_s_Incompatible_checksums_s_vs_0x00;
 static PyObject *__pyx_kp_s_Incompatible_checksums_s_vs_0x2b;
 static PyObject *__pyx_n_s_IntField;
+static PyObject *__pyx_n_s_LinkField;
 static PyObject *__pyx_n_s_PickleError;
 static PyObject *__pyx_n_s_StrField;
 static PyObject *__pyx_n_s_cline_in_traceback;
@@ -1562,10 +1562,10 @@ static PyObject *__pyx_n_s_pyx_unpickle_BoolField;
 static PyObject *__pyx_n_s_pyx_unpickle_DateField;
 static PyObject *__pyx_n_s_pyx_unpickle_DatetimeField;
 static PyObject *__pyx_n_s_pyx_unpickle_DecimalField;
-static PyObject *__pyx_n_s_pyx_unpickle_EntityField;
 static PyObject *__pyx_n_s_pyx_unpickle_Field;
 static PyObject *__pyx_n_s_pyx_unpickle_FloatField;
 static PyObject *__pyx_n_s_pyx_unpickle_IntField;
+static PyObject *__pyx_n_s_pyx_unpickle_LinkField;
 static PyObject *__pyx_n_s_pyx_unpickle_StrField;
 static PyObject *__pyx_n_s_pyx_vtable;
 static PyObject *__pyx_n_s_reduce;
@@ -1603,11 +1603,11 @@ static PyObject *__pyx_pf_6nyoibo_6fields_10FloatField___reduce_cython__(struct 
 static PyObject *__pyx_pf_6nyoibo_6fields_10FloatField_2__setstate_cython__(struct __pyx_obj_6nyoibo_6fields_FloatField *__pyx_v_self, PyObject *__pyx_v___pyx_state); /* proto */
 static PyObject *__pyx_pf_6nyoibo_6fields_12DecimalField___reduce_cython__(struct __pyx_obj_6nyoibo_6fields_DecimalField *__pyx_v_self); /* proto */
 static PyObject *__pyx_pf_6nyoibo_6fields_12DecimalField_2__setstate_cython__(struct __pyx_obj_6nyoibo_6fields_DecimalField *__pyx_v_self, PyObject *__pyx_v___pyx_state); /* proto */
-static int __pyx_pf_6nyoibo_6fields_11EntityField___init__(struct __pyx_obj_6nyoibo_6fields_EntityField *__pyx_v_self, PyObject *__pyx_v_to, PyObject *__pyx_v_args, PyObject *__pyx_v_kwargs); /* proto */
-static PyObject *__pyx_pf_6nyoibo_6fields_11EntityField_2parse(struct __pyx_obj_6nyoibo_6fields_EntityField *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
-static PyObject *__pyx_pf_6nyoibo_6fields_11EntityField_2to___get__(struct __pyx_obj_6nyoibo_6fields_EntityField *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_6nyoibo_6fields_11EntityField_4__reduce_cython__(struct __pyx_obj_6nyoibo_6fields_EntityField *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_6nyoibo_6fields_11EntityField_6__setstate_cython__(struct __pyx_obj_6nyoibo_6fields_EntityField *__pyx_v_self, PyObject *__pyx_v___pyx_state); /* proto */
+static int __pyx_pf_6nyoibo_6fields_9LinkField___init__(struct __pyx_obj_6nyoibo_6fields_LinkField *__pyx_v_self, PyObject *__pyx_v_to, PyObject *__pyx_v_args, PyObject *__pyx_v_kwargs); /* proto */
+static PyObject *__pyx_pf_6nyoibo_6fields_9LinkField_2parse(struct __pyx_obj_6nyoibo_6fields_LinkField *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
+static PyObject *__pyx_pf_6nyoibo_6fields_9LinkField_2to___get__(struct __pyx_obj_6nyoibo_6fields_LinkField *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_6nyoibo_6fields_9LinkField_4__reduce_cython__(struct __pyx_obj_6nyoibo_6fields_LinkField *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_6nyoibo_6fields_9LinkField_6__setstate_cython__(struct __pyx_obj_6nyoibo_6fields_LinkField *__pyx_v_self, PyObject *__pyx_v___pyx_state); /* proto */
 static PyObject *__pyx_pf_6nyoibo_6fields___pyx_unpickle_Field(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state); /* proto */
 static PyObject *__pyx_pf_6nyoibo_6fields_2__pyx_unpickle_StrField(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state); /* proto */
 static PyObject *__pyx_pf_6nyoibo_6fields_4__pyx_unpickle_IntField(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state); /* proto */
@@ -1616,9 +1616,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8__pyx_unpickle_DateField(CYTHON_UNUSE
 static PyObject *__pyx_pf_6nyoibo_6fields_10__pyx_unpickle_DatetimeField(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state); /* proto */
 static PyObject *__pyx_pf_6nyoibo_6fields_12__pyx_unpickle_FloatField(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state); /* proto */
 static PyObject *__pyx_pf_6nyoibo_6fields_14__pyx_unpickle_DecimalField(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state); /* proto */
-static PyObject *__pyx_pf_6nyoibo_6fields_16__pyx_unpickle_EntityField(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state); /* proto */
+static PyObject *__pyx_pf_6nyoibo_6fields_16__pyx_unpickle_LinkField(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state); /* proto */
 static PyObject *__pyx_tp_new_6nyoibo_6fields_Field(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_6nyoibo_6fields_EntityField(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_6nyoibo_6fields_LinkField(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_6nyoibo_6fields_StrField(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_6nyoibo_6fields_IntField(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_6nyoibo_6fields_BoolField(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
@@ -5522,16 +5522,16 @@ static PyObject *__pyx_pf_6nyoibo_6fields_12DecimalField_2__setstate_cython__(st
 }
 
 /* "nyoibo/fields.pyx":81
- * cdef class EntityField(Field):
+ * cdef class LinkField(Field):
  * 
  *     def __init__(self, to, *args, **kwargs):             # <<<<<<<<<<<<<<
- *         super(EntityField, self).__init__(*args, **kwargs)
+ *         super(LinkField, self).__init__(*args, **kwargs)
  *         self.to = to
  */
 
 /* Python wrapper */
-static int __pyx_pw_6nyoibo_6fields_11EntityField_1__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static int __pyx_pw_6nyoibo_6fields_11EntityField_1__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static int __pyx_pw_6nyoibo_6fields_9LinkField_1__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static int __pyx_pw_6nyoibo_6fields_9LinkField_1__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_to = 0;
   PyObject *__pyx_v_args = 0;
   PyObject *__pyx_v_kwargs = 0;
@@ -5589,11 +5589,11 @@ static int __pyx_pw_6nyoibo_6fields_11EntityField_1__init__(PyObject *__pyx_v_se
   __pyx_L3_error:;
   __Pyx_DECREF(__pyx_v_args); __pyx_v_args = 0;
   __Pyx_DECREF(__pyx_v_kwargs); __pyx_v_kwargs = 0;
-  __Pyx_AddTraceback("nyoibo.fields.EntityField.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("nyoibo.fields.LinkField.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6nyoibo_6fields_11EntityField___init__(((struct __pyx_obj_6nyoibo_6fields_EntityField *)__pyx_v_self), __pyx_v_to, __pyx_v_args, __pyx_v_kwargs);
+  __pyx_r = __pyx_pf_6nyoibo_6fields_9LinkField___init__(((struct __pyx_obj_6nyoibo_6fields_LinkField *)__pyx_v_self), __pyx_v_to, __pyx_v_args, __pyx_v_kwargs);
 
   /* function exit code */
   __Pyx_XDECREF(__pyx_v_args);
@@ -5602,7 +5602,7 @@ static int __pyx_pw_6nyoibo_6fields_11EntityField_1__init__(PyObject *__pyx_v_se
   return __pyx_r;
 }
 
-static int __pyx_pf_6nyoibo_6fields_11EntityField___init__(struct __pyx_obj_6nyoibo_6fields_EntityField *__pyx_v_self, PyObject *__pyx_v_to, PyObject *__pyx_v_args, PyObject *__pyx_v_kwargs) {
+static int __pyx_pf_6nyoibo_6fields_9LinkField___init__(struct __pyx_obj_6nyoibo_6fields_LinkField *__pyx_v_self, PyObject *__pyx_v_to, PyObject *__pyx_v_args, PyObject *__pyx_v_kwargs) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -5615,15 +5615,15 @@ static int __pyx_pf_6nyoibo_6fields_11EntityField___init__(struct __pyx_obj_6nyo
   /* "nyoibo/fields.pyx":82
  * 
  *     def __init__(self, to, *args, **kwargs):
- *         super(EntityField, self).__init__(*args, **kwargs)             # <<<<<<<<<<<<<<
+ *         super(LinkField, self).__init__(*args, **kwargs)             # <<<<<<<<<<<<<<
  *         self.to = to
  * 
  */
   __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 82, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_INCREF(((PyObject *)__pyx_ptype_6nyoibo_6fields_EntityField));
-  __Pyx_GIVEREF(((PyObject *)__pyx_ptype_6nyoibo_6fields_EntityField));
-  PyTuple_SET_ITEM(__pyx_t_1, 0, ((PyObject *)__pyx_ptype_6nyoibo_6fields_EntityField));
+  __Pyx_INCREF(((PyObject *)__pyx_ptype_6nyoibo_6fields_LinkField));
+  __Pyx_GIVEREF(((PyObject *)__pyx_ptype_6nyoibo_6fields_LinkField));
+  PyTuple_SET_ITEM(__pyx_t_1, 0, ((PyObject *)__pyx_ptype_6nyoibo_6fields_LinkField));
   __Pyx_INCREF(((PyObject *)__pyx_v_self));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_self));
   PyTuple_SET_ITEM(__pyx_t_1, 1, ((PyObject *)__pyx_v_self));
@@ -5640,7 +5640,7 @@ static int __pyx_pf_6nyoibo_6fields_11EntityField___init__(struct __pyx_obj_6nyo
 
   /* "nyoibo/fields.pyx":83
  *     def __init__(self, to, *args, **kwargs):
- *         super(EntityField, self).__init__(*args, **kwargs)
+ *         super(LinkField, self).__init__(*args, **kwargs)
  *         self.to = to             # <<<<<<<<<<<<<<
  * 
  *     cpdef public parse(self, value):
@@ -5652,10 +5652,10 @@ static int __pyx_pf_6nyoibo_6fields_11EntityField___init__(struct __pyx_obj_6nyo
   __pyx_v_self->to = __pyx_v_to;
 
   /* "nyoibo/fields.pyx":81
- * cdef class EntityField(Field):
+ * cdef class LinkField(Field):
  * 
  *     def __init__(self, to, *args, **kwargs):             # <<<<<<<<<<<<<<
- *         super(EntityField, self).__init__(*args, **kwargs)
+ *         super(LinkField, self).__init__(*args, **kwargs)
  *         self.to = to
  */
 
@@ -5665,7 +5665,7 @@ static int __pyx_pf_6nyoibo_6fields_11EntityField___init__(struct __pyx_obj_6nyo
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("nyoibo.fields.EntityField.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("nyoibo.fields.LinkField.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
@@ -5679,8 +5679,8 @@ static int __pyx_pf_6nyoibo_6fields_11EntityField___init__(struct __pyx_obj_6nyo
  *         return value
  */
 
-static PyObject *__pyx_pw_6nyoibo_6fields_11EntityField_3parse(PyObject *__pyx_v_self, PyObject *__pyx_v_value); /*proto*/
-PyObject *__pyx_f_6nyoibo_6fields_11EntityField_parse(CYTHON_UNUSED struct __pyx_obj_6nyoibo_6fields_EntityField *__pyx_v_self, PyObject *__pyx_v_value, int __pyx_skip_dispatch) {
+static PyObject *__pyx_pw_6nyoibo_6fields_9LinkField_3parse(PyObject *__pyx_v_self, PyObject *__pyx_v_value); /*proto*/
+PyObject *__pyx_f_6nyoibo_6fields_9LinkField_parse(CYTHON_UNUSED struct __pyx_obj_6nyoibo_6fields_LinkField *__pyx_v_self, PyObject *__pyx_v_value, int __pyx_skip_dispatch) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -5702,7 +5702,7 @@ PyObject *__pyx_f_6nyoibo_6fields_11EntityField_parse(CYTHON_UNUSED struct __pyx
       #endif
       __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_parse); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 85, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)(void*)__pyx_pw_6nyoibo_6fields_11EntityField_3parse)) {
+      if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)(void*)__pyx_pw_6nyoibo_6fields_9LinkField_3parse)) {
         __Pyx_XDECREF(__pyx_r);
         __Pyx_INCREF(__pyx_t_1);
         __pyx_t_3 = __pyx_t_1; __pyx_t_4 = NULL;
@@ -5761,7 +5761,7 @@ PyObject *__pyx_f_6nyoibo_6fields_11EntityField_parse(CYTHON_UNUSED struct __pyx
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("nyoibo.fields.EntityField.parse", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("nyoibo.fields.LinkField.parse", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -5770,19 +5770,19 @@ PyObject *__pyx_f_6nyoibo_6fields_11EntityField_parse(CYTHON_UNUSED struct __pyx
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6nyoibo_6fields_11EntityField_3parse(PyObject *__pyx_v_self, PyObject *__pyx_v_value); /*proto*/
-static PyObject *__pyx_pw_6nyoibo_6fields_11EntityField_3parse(PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
+static PyObject *__pyx_pw_6nyoibo_6fields_9LinkField_3parse(PyObject *__pyx_v_self, PyObject *__pyx_v_value); /*proto*/
+static PyObject *__pyx_pw_6nyoibo_6fields_9LinkField_3parse(PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("parse (wrapper)", 0);
-  __pyx_r = __pyx_pf_6nyoibo_6fields_11EntityField_2parse(((struct __pyx_obj_6nyoibo_6fields_EntityField *)__pyx_v_self), ((PyObject *)__pyx_v_value));
+  __pyx_r = __pyx_pf_6nyoibo_6fields_9LinkField_2parse(((struct __pyx_obj_6nyoibo_6fields_LinkField *)__pyx_v_self), ((PyObject *)__pyx_v_value));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6nyoibo_6fields_11EntityField_2parse(struct __pyx_obj_6nyoibo_6fields_EntityField *__pyx_v_self, PyObject *__pyx_v_value) {
+static PyObject *__pyx_pf_6nyoibo_6fields_9LinkField_2parse(struct __pyx_obj_6nyoibo_6fields_LinkField *__pyx_v_self, PyObject *__pyx_v_value) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -5791,7 +5791,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_11EntityField_2parse(struct __pyx_obj_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("parse", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_6nyoibo_6fields_11EntityField_parse(__pyx_v_self, __pyx_v_value, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 85, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_6nyoibo_6fields_9LinkField_parse(__pyx_v_self, __pyx_v_value, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 85, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -5800,7 +5800,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_11EntityField_2parse(struct __pyx_obj_
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("nyoibo.fields.EntityField.parse", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("nyoibo.fields.LinkField.parse", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -5810,24 +5810,24 @@ static PyObject *__pyx_pf_6nyoibo_6fields_11EntityField_2parse(struct __pyx_obj_
 
 /* "nyoibo/fields.pxd":10
  * 
- * cdef class EntityField(Field):
+ * cdef class LinkField(Field):
  *     cdef readonly to             # <<<<<<<<<<<<<<
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6nyoibo_6fields_11EntityField_2to_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_6nyoibo_6fields_11EntityField_2to_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_6nyoibo_6fields_9LinkField_2to_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_6nyoibo_6fields_9LinkField_2to_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_6nyoibo_6fields_11EntityField_2to___get__(((struct __pyx_obj_6nyoibo_6fields_EntityField *)__pyx_v_self));
+  __pyx_r = __pyx_pf_6nyoibo_6fields_9LinkField_2to___get__(((struct __pyx_obj_6nyoibo_6fields_LinkField *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6nyoibo_6fields_11EntityField_2to___get__(struct __pyx_obj_6nyoibo_6fields_EntityField *__pyx_v_self) {
+static PyObject *__pyx_pf_6nyoibo_6fields_9LinkField_2to___get__(struct __pyx_obj_6nyoibo_6fields_LinkField *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__", 0);
@@ -5850,19 +5850,19 @@ static PyObject *__pyx_pf_6nyoibo_6fields_11EntityField_2to___get__(struct __pyx
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6nyoibo_6fields_11EntityField_5__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_6nyoibo_6fields_11EntityField_5__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_6nyoibo_6fields_9LinkField_5__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_6nyoibo_6fields_9LinkField_5__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__reduce_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_6nyoibo_6fields_11EntityField_4__reduce_cython__(((struct __pyx_obj_6nyoibo_6fields_EntityField *)__pyx_v_self));
+  __pyx_r = __pyx_pf_6nyoibo_6fields_9LinkField_4__reduce_cython__(((struct __pyx_obj_6nyoibo_6fields_LinkField *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6nyoibo_6fields_11EntityField_4__reduce_cython__(struct __pyx_obj_6nyoibo_6fields_EntityField *__pyx_v_self) {
+static PyObject *__pyx_pf_6nyoibo_6fields_9LinkField_4__reduce_cython__(struct __pyx_obj_6nyoibo_6fields_LinkField *__pyx_v_self) {
   PyObject *__pyx_v_state = 0;
   PyObject *__pyx_v__dict = 0;
   int __pyx_v_use_setstate;
@@ -5968,7 +5968,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_11EntityField_4__reduce_cython__(struc
  *     else:
  *         use_setstate = self.default_value is not None or self.immutable is not None or self.private is not None or self.to is not None             # <<<<<<<<<<<<<<
  *     if use_setstate:
- *         return __pyx_unpickle_EntityField, (type(self), 0x2bdffb3, None), state
+ *         return __pyx_unpickle_LinkField, (type(self), 0x2bdffb3, None), state
  */
   /*else*/ {
     __pyx_t_2 = (__pyx_v_self->__pyx_base.default_value != Py_None);
@@ -6004,7 +6004,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_11EntityField_4__reduce_cython__(struc
  *     else:
  *         use_setstate = self.default_value is not None or self.immutable is not None or self.private is not None or self.to is not None
  *     if use_setstate:             # <<<<<<<<<<<<<<
- *         return __pyx_unpickle_EntityField, (type(self), 0x2bdffb3, None), state
+ *         return __pyx_unpickle_LinkField, (type(self), 0x2bdffb3, None), state
  *     else:
  */
   __pyx_t_3 = (__pyx_v_use_setstate != 0);
@@ -6013,12 +6013,12 @@ static PyObject *__pyx_pf_6nyoibo_6fields_11EntityField_4__reduce_cython__(struc
     /* "(tree fragment)":13
  *         use_setstate = self.default_value is not None or self.immutable is not None or self.private is not None or self.to is not None
  *     if use_setstate:
- *         return __pyx_unpickle_EntityField, (type(self), 0x2bdffb3, None), state             # <<<<<<<<<<<<<<
+ *         return __pyx_unpickle_LinkField, (type(self), 0x2bdffb3, None), state             # <<<<<<<<<<<<<<
  *     else:
- *         return __pyx_unpickle_EntityField, (type(self), 0x2bdffb3, state)
+ *         return __pyx_unpickle_LinkField, (type(self), 0x2bdffb3, state)
  */
     __Pyx_XDECREF(__pyx_r);
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_pyx_unpickle_EntityField); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 13, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_pyx_unpickle_LinkField); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 13, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 13, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -6050,21 +6050,21 @@ static PyObject *__pyx_pf_6nyoibo_6fields_11EntityField_4__reduce_cython__(struc
  *     else:
  *         use_setstate = self.default_value is not None or self.immutable is not None or self.private is not None or self.to is not None
  *     if use_setstate:             # <<<<<<<<<<<<<<
- *         return __pyx_unpickle_EntityField, (type(self), 0x2bdffb3, None), state
+ *         return __pyx_unpickle_LinkField, (type(self), 0x2bdffb3, None), state
  *     else:
  */
   }
 
   /* "(tree fragment)":15
- *         return __pyx_unpickle_EntityField, (type(self), 0x2bdffb3, None), state
+ *         return __pyx_unpickle_LinkField, (type(self), 0x2bdffb3, None), state
  *     else:
- *         return __pyx_unpickle_EntityField, (type(self), 0x2bdffb3, state)             # <<<<<<<<<<<<<<
+ *         return __pyx_unpickle_LinkField, (type(self), 0x2bdffb3, state)             # <<<<<<<<<<<<<<
  * def __setstate_cython__(self, __pyx_state):
- *     __pyx_unpickle_EntityField__set_state(self, __pyx_state)
+ *     __pyx_unpickle_LinkField__set_state(self, __pyx_state)
  */
   /*else*/ {
     __Pyx_XDECREF(__pyx_r);
-    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_pyx_unpickle_EntityField); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 15, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_pyx_unpickle_LinkField); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 15, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 15, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -6101,7 +6101,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_11EntityField_4__reduce_cython__(struc
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_6);
-  __Pyx_AddTraceback("nyoibo.fields.EntityField.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("nyoibo.fields.LinkField.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_state);
@@ -6113,25 +6113,25 @@ static PyObject *__pyx_pf_6nyoibo_6fields_11EntityField_4__reduce_cython__(struc
 
 /* "(tree fragment)":16
  *     else:
- *         return __pyx_unpickle_EntityField, (type(self), 0x2bdffb3, state)
+ *         return __pyx_unpickle_LinkField, (type(self), 0x2bdffb3, state)
  * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_unpickle_EntityField__set_state(self, __pyx_state)
+ *     __pyx_unpickle_LinkField__set_state(self, __pyx_state)
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6nyoibo_6fields_11EntityField_7__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
-static PyObject *__pyx_pw_6nyoibo_6fields_11EntityField_7__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pw_6nyoibo_6fields_9LinkField_7__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
+static PyObject *__pyx_pw_6nyoibo_6fields_9LinkField_7__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__setstate_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_6nyoibo_6fields_11EntityField_6__setstate_cython__(((struct __pyx_obj_6nyoibo_6fields_EntityField *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
+  __pyx_r = __pyx_pf_6nyoibo_6fields_9LinkField_6__setstate_cython__(((struct __pyx_obj_6nyoibo_6fields_LinkField *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6nyoibo_6fields_11EntityField_6__setstate_cython__(struct __pyx_obj_6nyoibo_6fields_EntityField *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_6nyoibo_6fields_9LinkField_6__setstate_cython__(struct __pyx_obj_6nyoibo_6fields_LinkField *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -6141,20 +6141,20 @@ static PyObject *__pyx_pf_6nyoibo_6fields_11EntityField_6__setstate_cython__(str
   __Pyx_RefNannySetupContext("__setstate_cython__", 0);
 
   /* "(tree fragment)":17
- *         return __pyx_unpickle_EntityField, (type(self), 0x2bdffb3, state)
+ *         return __pyx_unpickle_LinkField, (type(self), 0x2bdffb3, state)
  * def __setstate_cython__(self, __pyx_state):
- *     __pyx_unpickle_EntityField__set_state(self, __pyx_state)             # <<<<<<<<<<<<<<
+ *     __pyx_unpickle_LinkField__set_state(self, __pyx_state)             # <<<<<<<<<<<<<<
  */
   if (!(likely(PyTuple_CheckExact(__pyx_v___pyx_state))||((__pyx_v___pyx_state) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_v___pyx_state)->tp_name), 0))) __PYX_ERR(1, 17, __pyx_L1_error)
-  __pyx_t_1 = __pyx_f_6nyoibo_6fields___pyx_unpickle_EntityField__set_state(__pyx_v_self, ((PyObject*)__pyx_v___pyx_state)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 17, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_6nyoibo_6fields___pyx_unpickle_LinkField__set_state(__pyx_v_self, ((PyObject*)__pyx_v___pyx_state)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 17, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "(tree fragment)":16
  *     else:
- *         return __pyx_unpickle_EntityField, (type(self), 0x2bdffb3, state)
+ *         return __pyx_unpickle_LinkField, (type(self), 0x2bdffb3, state)
  * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_unpickle_EntityField__set_state(self, __pyx_state)
+ *     __pyx_unpickle_LinkField__set_state(self, __pyx_state)
  */
 
   /* function exit code */
@@ -6162,7 +6162,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_11EntityField_6__setstate_cython__(str
   goto __pyx_L0;
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("nyoibo.fields.EntityField.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("nyoibo.fields.LinkField.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -9523,15 +9523,15 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DecimalField__set_state(
 }
 
 /* "(tree fragment)":1
- * def __pyx_unpickle_EntityField(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
+ * def __pyx_unpickle_LinkField(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6nyoibo_6fields_17__pyx_unpickle_EntityField(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_6nyoibo_6fields_17__pyx_unpickle_EntityField = {"__pyx_unpickle_EntityField", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_6nyoibo_6fields_17__pyx_unpickle_EntityField, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_6nyoibo_6fields_17__pyx_unpickle_EntityField(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_6nyoibo_6fields_17__pyx_unpickle_LinkField(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_6nyoibo_6fields_17__pyx_unpickle_LinkField = {"__pyx_unpickle_LinkField", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_6nyoibo_6fields_17__pyx_unpickle_LinkField, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_6nyoibo_6fields_17__pyx_unpickle_LinkField(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v___pyx_type = 0;
   long __pyx_v___pyx_checksum;
   PyObject *__pyx_v___pyx_state = 0;
@@ -9540,7 +9540,7 @@ static PyObject *__pyx_pw_6nyoibo_6fields_17__pyx_unpickle_EntityField(PyObject 
   int __pyx_clineno = 0;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
-  __Pyx_RefNannySetupContext("__pyx_unpickle_EntityField (wrapper)", 0);
+  __Pyx_RefNannySetupContext("__pyx_unpickle_LinkField (wrapper)", 0);
   {
     static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_pyx_type,&__pyx_n_s_pyx_checksum,&__pyx_n_s_pyx_state,0};
     PyObject* values[3] = {0,0,0};
@@ -9566,17 +9566,17 @@ static PyObject *__pyx_pw_6nyoibo_6fields_17__pyx_unpickle_EntityField(PyObject 
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_pyx_checksum)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__pyx_unpickle_EntityField", 1, 3, 3, 1); __PYX_ERR(1, 1, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__pyx_unpickle_LinkField", 1, 3, 3, 1); __PYX_ERR(1, 1, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_pyx_state)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__pyx_unpickle_EntityField", 1, 3, 3, 2); __PYX_ERR(1, 1, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__pyx_unpickle_LinkField", 1, 3, 3, 2); __PYX_ERR(1, 1, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__pyx_unpickle_EntityField") < 0)) __PYX_ERR(1, 1, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__pyx_unpickle_LinkField") < 0)) __PYX_ERR(1, 1, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
       goto __pyx_L5_argtuple_error;
@@ -9591,20 +9591,20 @@ static PyObject *__pyx_pw_6nyoibo_6fields_17__pyx_unpickle_EntityField(PyObject 
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__pyx_unpickle_EntityField", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 1, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__pyx_unpickle_LinkField", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 1, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("nyoibo.fields.__pyx_unpickle_EntityField", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("nyoibo.fields.__pyx_unpickle_LinkField", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6nyoibo_6fields_16__pyx_unpickle_EntityField(__pyx_self, __pyx_v___pyx_type, __pyx_v___pyx_checksum, __pyx_v___pyx_state);
+  __pyx_r = __pyx_pf_6nyoibo_6fields_16__pyx_unpickle_LinkField(__pyx_self, __pyx_v___pyx_type, __pyx_v___pyx_checksum, __pyx_v___pyx_state);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6nyoibo_6fields_16__pyx_unpickle_EntityField(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_6nyoibo_6fields_16__pyx_unpickle_LinkField(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_v___pyx_PickleError = 0;
   PyObject *__pyx_v___pyx_result = 0;
   PyObject *__pyx_r = NULL;
@@ -9618,7 +9618,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_16__pyx_unpickle_EntityField(CYTHON_UN
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
-  __Pyx_RefNannySetupContext("__pyx_unpickle_EntityField", 0);
+  __Pyx_RefNannySetupContext("__pyx_unpickle_LinkField", 0);
 
   /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
@@ -9635,7 +9635,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_16__pyx_unpickle_EntityField(CYTHON_UN
  *     if __pyx_checksum != 0x2bdffb3:
  *         from pickle import PickleError as __pyx_PickleError             # <<<<<<<<<<<<<<
  *         raise __pyx_PickleError("Incompatible checksums (%s vs 0x2bdffb3 = (default_value, immutable, private, to))" % __pyx_checksum)
- *     __pyx_result = EntityField.__new__(__pyx_type)
+ *     __pyx_result = LinkField.__new__(__pyx_type)
  */
     __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 5, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -9656,7 +9656,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_16__pyx_unpickle_EntityField(CYTHON_UN
  *     if __pyx_checksum != 0x2bdffb3:
  *         from pickle import PickleError as __pyx_PickleError
  *         raise __pyx_PickleError("Incompatible checksums (%s vs 0x2bdffb3 = (default_value, immutable, private, to))" % __pyx_checksum)             # <<<<<<<<<<<<<<
- *     __pyx_result = EntityField.__new__(__pyx_type)
+ *     __pyx_result = LinkField.__new__(__pyx_type)
  *     if __pyx_state is not None:
  */
     __pyx_t_2 = __Pyx_PyInt_From_long(__pyx_v___pyx_checksum); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 6, __pyx_L1_error)
@@ -9697,11 +9697,11 @@ static PyObject *__pyx_pf_6nyoibo_6fields_16__pyx_unpickle_EntityField(CYTHON_UN
   /* "(tree fragment)":7
  *         from pickle import PickleError as __pyx_PickleError
  *         raise __pyx_PickleError("Incompatible checksums (%s vs 0x2bdffb3 = (default_value, immutable, private, to))" % __pyx_checksum)
- *     __pyx_result = EntityField.__new__(__pyx_type)             # <<<<<<<<<<<<<<
+ *     __pyx_result = LinkField.__new__(__pyx_type)             # <<<<<<<<<<<<<<
  *     if __pyx_state is not None:
- *         __pyx_unpickle_EntityField__set_state(<EntityField> __pyx_result, __pyx_state)
+ *         __pyx_unpickle_LinkField__set_state(<LinkField> __pyx_result, __pyx_state)
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_ptype_6nyoibo_6fields_EntityField), __pyx_n_s_new); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 7, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_ptype_6nyoibo_6fields_LinkField), __pyx_n_s_new); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -9723,9 +9723,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_16__pyx_unpickle_EntityField(CYTHON_UN
 
   /* "(tree fragment)":8
  *         raise __pyx_PickleError("Incompatible checksums (%s vs 0x2bdffb3 = (default_value, immutable, private, to))" % __pyx_checksum)
- *     __pyx_result = EntityField.__new__(__pyx_type)
+ *     __pyx_result = LinkField.__new__(__pyx_type)
  *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
- *         __pyx_unpickle_EntityField__set_state(<EntityField> __pyx_result, __pyx_state)
+ *         __pyx_unpickle_LinkField__set_state(<LinkField> __pyx_result, __pyx_state)
  *     return __pyx_result
  */
   __pyx_t_1 = (__pyx_v___pyx_state != Py_None);
@@ -9733,31 +9733,31 @@ static PyObject *__pyx_pf_6nyoibo_6fields_16__pyx_unpickle_EntityField(CYTHON_UN
   if (__pyx_t_6) {
 
     /* "(tree fragment)":9
- *     __pyx_result = EntityField.__new__(__pyx_type)
+ *     __pyx_result = LinkField.__new__(__pyx_type)
  *     if __pyx_state is not None:
- *         __pyx_unpickle_EntityField__set_state(<EntityField> __pyx_result, __pyx_state)             # <<<<<<<<<<<<<<
+ *         __pyx_unpickle_LinkField__set_state(<LinkField> __pyx_result, __pyx_state)             # <<<<<<<<<<<<<<
  *     return __pyx_result
- * cdef __pyx_unpickle_EntityField__set_state(EntityField __pyx_result, tuple __pyx_state):
+ * cdef __pyx_unpickle_LinkField__set_state(LinkField __pyx_result, tuple __pyx_state):
  */
     if (!(likely(PyTuple_CheckExact(__pyx_v___pyx_state))||((__pyx_v___pyx_state) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_v___pyx_state)->tp_name), 0))) __PYX_ERR(1, 9, __pyx_L1_error)
-    __pyx_t_3 = __pyx_f_6nyoibo_6fields___pyx_unpickle_EntityField__set_state(((struct __pyx_obj_6nyoibo_6fields_EntityField *)__pyx_v___pyx_result), ((PyObject*)__pyx_v___pyx_state)); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 9, __pyx_L1_error)
+    __pyx_t_3 = __pyx_f_6nyoibo_6fields___pyx_unpickle_LinkField__set_state(((struct __pyx_obj_6nyoibo_6fields_LinkField *)__pyx_v___pyx_result), ((PyObject*)__pyx_v___pyx_state)); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 9, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
     /* "(tree fragment)":8
  *         raise __pyx_PickleError("Incompatible checksums (%s vs 0x2bdffb3 = (default_value, immutable, private, to))" % __pyx_checksum)
- *     __pyx_result = EntityField.__new__(__pyx_type)
+ *     __pyx_result = LinkField.__new__(__pyx_type)
  *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
- *         __pyx_unpickle_EntityField__set_state(<EntityField> __pyx_result, __pyx_state)
+ *         __pyx_unpickle_LinkField__set_state(<LinkField> __pyx_result, __pyx_state)
  *     return __pyx_result
  */
   }
 
   /* "(tree fragment)":10
  *     if __pyx_state is not None:
- *         __pyx_unpickle_EntityField__set_state(<EntityField> __pyx_result, __pyx_state)
+ *         __pyx_unpickle_LinkField__set_state(<LinkField> __pyx_result, __pyx_state)
  *     return __pyx_result             # <<<<<<<<<<<<<<
- * cdef __pyx_unpickle_EntityField__set_state(EntityField __pyx_result, tuple __pyx_state):
+ * cdef __pyx_unpickle_LinkField__set_state(LinkField __pyx_result, tuple __pyx_state):
  *     __pyx_result.default_value = __pyx_state[0]; __pyx_result.immutable = __pyx_state[1]; __pyx_result.private = __pyx_state[2]; __pyx_result.to = __pyx_state[3]
  */
   __Pyx_XDECREF(__pyx_r);
@@ -9766,7 +9766,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_16__pyx_unpickle_EntityField(CYTHON_UN
   goto __pyx_L0;
 
   /* "(tree fragment)":1
- * def __pyx_unpickle_EntityField(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
+ * def __pyx_unpickle_LinkField(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
  */
@@ -9777,7 +9777,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_16__pyx_unpickle_EntityField(CYTHON_UN
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("nyoibo.fields.__pyx_unpickle_EntityField", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("nyoibo.fields.__pyx_unpickle_LinkField", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v___pyx_PickleError);
@@ -9788,14 +9788,14 @@ static PyObject *__pyx_pf_6nyoibo_6fields_16__pyx_unpickle_EntityField(CYTHON_UN
 }
 
 /* "(tree fragment)":11
- *         __pyx_unpickle_EntityField__set_state(<EntityField> __pyx_result, __pyx_state)
+ *         __pyx_unpickle_LinkField__set_state(<LinkField> __pyx_result, __pyx_state)
  *     return __pyx_result
- * cdef __pyx_unpickle_EntityField__set_state(EntityField __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
+ * cdef __pyx_unpickle_LinkField__set_state(LinkField __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_result.default_value = __pyx_state[0]; __pyx_result.immutable = __pyx_state[1]; __pyx_result.private = __pyx_state[2]; __pyx_result.to = __pyx_state[3]
  *     if len(__pyx_state) > 4 and hasattr(__pyx_result, '__dict__'):
  */
 
-static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_EntityField__set_state(struct __pyx_obj_6nyoibo_6fields_EntityField *__pyx_v___pyx_result, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_LinkField__set_state(struct __pyx_obj_6nyoibo_6fields_LinkField *__pyx_v___pyx_result, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -9809,11 +9809,11 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_EntityField__set_state(s
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
-  __Pyx_RefNannySetupContext("__pyx_unpickle_EntityField__set_state", 0);
+  __Pyx_RefNannySetupContext("__pyx_unpickle_LinkField__set_state", 0);
 
   /* "(tree fragment)":12
  *     return __pyx_result
- * cdef __pyx_unpickle_EntityField__set_state(EntityField __pyx_result, tuple __pyx_state):
+ * cdef __pyx_unpickle_LinkField__set_state(LinkField __pyx_result, tuple __pyx_state):
  *     __pyx_result.default_value = __pyx_state[0]; __pyx_result.immutable = __pyx_state[1]; __pyx_result.private = __pyx_state[2]; __pyx_result.to = __pyx_state[3]             # <<<<<<<<<<<<<<
  *     if len(__pyx_state) > 4 and hasattr(__pyx_result, '__dict__'):
  *         __pyx_result.__dict__.update(__pyx_state[4])
@@ -9864,7 +9864,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_EntityField__set_state(s
   __pyx_t_1 = 0;
 
   /* "(tree fragment)":13
- * cdef __pyx_unpickle_EntityField__set_state(EntityField __pyx_result, tuple __pyx_state):
+ * cdef __pyx_unpickle_LinkField__set_state(LinkField __pyx_result, tuple __pyx_state):
  *     __pyx_result.default_value = __pyx_state[0]; __pyx_result.immutable = __pyx_state[1]; __pyx_result.private = __pyx_state[2]; __pyx_result.to = __pyx_state[3]
  *     if len(__pyx_state) > 4 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
  *         __pyx_result.__dict__.update(__pyx_state[4])
@@ -9921,7 +9921,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_EntityField__set_state(s
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "(tree fragment)":13
- * cdef __pyx_unpickle_EntityField__set_state(EntityField __pyx_result, tuple __pyx_state):
+ * cdef __pyx_unpickle_LinkField__set_state(LinkField __pyx_result, tuple __pyx_state):
  *     __pyx_result.default_value = __pyx_state[0]; __pyx_result.immutable = __pyx_state[1]; __pyx_result.private = __pyx_state[2]; __pyx_result.to = __pyx_state[3]
  *     if len(__pyx_state) > 4 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
  *         __pyx_result.__dict__.update(__pyx_state[4])
@@ -9929,9 +9929,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_EntityField__set_state(s
   }
 
   /* "(tree fragment)":11
- *         __pyx_unpickle_EntityField__set_state(<EntityField> __pyx_result, __pyx_state)
+ *         __pyx_unpickle_LinkField__set_state(<LinkField> __pyx_result, __pyx_state)
  *     return __pyx_result
- * cdef __pyx_unpickle_EntityField__set_state(EntityField __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
+ * cdef __pyx_unpickle_LinkField__set_state(LinkField __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_result.default_value = __pyx_state[0]; __pyx_result.immutable = __pyx_state[1]; __pyx_result.private = __pyx_state[2]; __pyx_result.to = __pyx_state[3]
  *     if len(__pyx_state) > 4 and hasattr(__pyx_result, '__dict__'):
  */
@@ -9944,7 +9944,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_EntityField__set_state(s
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_7);
   __Pyx_XDECREF(__pyx_t_8);
-  __Pyx_AddTraceback("nyoibo.fields.__pyx_unpickle_EntityField__set_state", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("nyoibo.fields.__pyx_unpickle_LinkField__set_state", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -10108,20 +10108,20 @@ static PyTypeObject __pyx_type_6nyoibo_6fields_Field = {
   0, /*tp_print*/
   #endif
 };
-static struct __pyx_vtabstruct_6nyoibo_6fields_EntityField __pyx_vtable_6nyoibo_6fields_EntityField;
+static struct __pyx_vtabstruct_6nyoibo_6fields_LinkField __pyx_vtable_6nyoibo_6fields_LinkField;
 
-static PyObject *__pyx_tp_new_6nyoibo_6fields_EntityField(PyTypeObject *t, PyObject *a, PyObject *k) {
-  struct __pyx_obj_6nyoibo_6fields_EntityField *p;
+static PyObject *__pyx_tp_new_6nyoibo_6fields_LinkField(PyTypeObject *t, PyObject *a, PyObject *k) {
+  struct __pyx_obj_6nyoibo_6fields_LinkField *p;
   PyObject *o = __pyx_tp_new_6nyoibo_6fields_Field(t, a, k);
   if (unlikely(!o)) return 0;
-  p = ((struct __pyx_obj_6nyoibo_6fields_EntityField *)o);
-  p->__pyx_base.__pyx_vtab = (struct __pyx_vtabstruct_6nyoibo_6fields_Field*)__pyx_vtabptr_6nyoibo_6fields_EntityField;
+  p = ((struct __pyx_obj_6nyoibo_6fields_LinkField *)o);
+  p->__pyx_base.__pyx_vtab = (struct __pyx_vtabstruct_6nyoibo_6fields_Field*)__pyx_vtabptr_6nyoibo_6fields_LinkField;
   p->to = Py_None; Py_INCREF(Py_None);
   return o;
 }
 
-static void __pyx_tp_dealloc_6nyoibo_6fields_EntityField(PyObject *o) {
-  struct __pyx_obj_6nyoibo_6fields_EntityField *p = (struct __pyx_obj_6nyoibo_6fields_EntityField *)o;
+static void __pyx_tp_dealloc_6nyoibo_6fields_LinkField(PyObject *o) {
+  struct __pyx_obj_6nyoibo_6fields_LinkField *p = (struct __pyx_obj_6nyoibo_6fields_LinkField *)o;
   #if CYTHON_USE_TP_FINALIZE
   if (unlikely(PyType_HasFeature(Py_TYPE(o), Py_TPFLAGS_HAVE_FINALIZE) && Py_TYPE(o)->tp_finalize) && !_PyGC_FINALIZED(o)) {
     if (PyObject_CallFinalizerFromDealloc(o)) return;
@@ -10133,9 +10133,9 @@ static void __pyx_tp_dealloc_6nyoibo_6fields_EntityField(PyObject *o) {
   __pyx_tp_dealloc_6nyoibo_6fields_Field(o);
 }
 
-static int __pyx_tp_traverse_6nyoibo_6fields_EntityField(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_6nyoibo_6fields_LinkField(PyObject *o, visitproc v, void *a) {
   int e;
-  struct __pyx_obj_6nyoibo_6fields_EntityField *p = (struct __pyx_obj_6nyoibo_6fields_EntityField *)o;
+  struct __pyx_obj_6nyoibo_6fields_LinkField *p = (struct __pyx_obj_6nyoibo_6fields_LinkField *)o;
   e = __pyx_tp_traverse_6nyoibo_6fields_Field(o, v, a); if (e) return e;
   if (p->to) {
     e = (*v)(p->to, a); if (e) return e;
@@ -10143,9 +10143,9 @@ static int __pyx_tp_traverse_6nyoibo_6fields_EntityField(PyObject *o, visitproc 
   return 0;
 }
 
-static int __pyx_tp_clear_6nyoibo_6fields_EntityField(PyObject *o) {
+static int __pyx_tp_clear_6nyoibo_6fields_LinkField(PyObject *o) {
   PyObject* tmp;
-  struct __pyx_obj_6nyoibo_6fields_EntityField *p = (struct __pyx_obj_6nyoibo_6fields_EntityField *)o;
+  struct __pyx_obj_6nyoibo_6fields_LinkField *p = (struct __pyx_obj_6nyoibo_6fields_LinkField *)o;
   __pyx_tp_clear_6nyoibo_6fields_Field(o);
   tmp = ((PyObject*)p->to);
   p->to = Py_None; Py_INCREF(Py_None);
@@ -10153,28 +10153,28 @@ static int __pyx_tp_clear_6nyoibo_6fields_EntityField(PyObject *o) {
   return 0;
 }
 
-static PyObject *__pyx_getprop_6nyoibo_6fields_11EntityField_to(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_6nyoibo_6fields_11EntityField_2to_1__get__(o);
+static PyObject *__pyx_getprop_6nyoibo_6fields_9LinkField_to(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_6nyoibo_6fields_9LinkField_2to_1__get__(o);
 }
 
-static PyMethodDef __pyx_methods_6nyoibo_6fields_EntityField[] = {
-  {"parse", (PyCFunction)__pyx_pw_6nyoibo_6fields_11EntityField_3parse, METH_O, 0},
-  {"__reduce_cython__", (PyCFunction)__pyx_pw_6nyoibo_6fields_11EntityField_5__reduce_cython__, METH_NOARGS, 0},
-  {"__setstate_cython__", (PyCFunction)__pyx_pw_6nyoibo_6fields_11EntityField_7__setstate_cython__, METH_O, 0},
+static PyMethodDef __pyx_methods_6nyoibo_6fields_LinkField[] = {
+  {"parse", (PyCFunction)__pyx_pw_6nyoibo_6fields_9LinkField_3parse, METH_O, 0},
+  {"__reduce_cython__", (PyCFunction)__pyx_pw_6nyoibo_6fields_9LinkField_5__reduce_cython__, METH_NOARGS, 0},
+  {"__setstate_cython__", (PyCFunction)__pyx_pw_6nyoibo_6fields_9LinkField_7__setstate_cython__, METH_O, 0},
   {0, 0, 0, 0}
 };
 
-static struct PyGetSetDef __pyx_getsets_6nyoibo_6fields_EntityField[] = {
-  {(char *)"to", __pyx_getprop_6nyoibo_6fields_11EntityField_to, 0, (char *)0, 0},
+static struct PyGetSetDef __pyx_getsets_6nyoibo_6fields_LinkField[] = {
+  {(char *)"to", __pyx_getprop_6nyoibo_6fields_9LinkField_to, 0, (char *)0, 0},
   {0, 0, 0, 0, 0}
 };
 
-static PyTypeObject __pyx_type_6nyoibo_6fields_EntityField = {
+static PyTypeObject __pyx_type_6nyoibo_6fields_LinkField = {
   PyVarObject_HEAD_INIT(0, 0)
-  "nyoibo.fields.EntityField", /*tp_name*/
-  sizeof(struct __pyx_obj_6nyoibo_6fields_EntityField), /*tp_basicsize*/
+  "nyoibo.fields.LinkField", /*tp_name*/
+  sizeof(struct __pyx_obj_6nyoibo_6fields_LinkField), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_6nyoibo_6fields_EntityField, /*tp_dealloc*/
+  __pyx_tp_dealloc_6nyoibo_6fields_LinkField, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -10201,23 +10201,23 @@ static PyTypeObject __pyx_type_6nyoibo_6fields_EntityField = {
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   0, /*tp_doc*/
-  __pyx_tp_traverse_6nyoibo_6fields_EntityField, /*tp_traverse*/
-  __pyx_tp_clear_6nyoibo_6fields_EntityField, /*tp_clear*/
+  __pyx_tp_traverse_6nyoibo_6fields_LinkField, /*tp_traverse*/
+  __pyx_tp_clear_6nyoibo_6fields_LinkField, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
   0, /*tp_iternext*/
-  __pyx_methods_6nyoibo_6fields_EntityField, /*tp_methods*/
+  __pyx_methods_6nyoibo_6fields_LinkField, /*tp_methods*/
   0, /*tp_members*/
-  __pyx_getsets_6nyoibo_6fields_EntityField, /*tp_getset*/
+  __pyx_getsets_6nyoibo_6fields_LinkField, /*tp_getset*/
   0, /*tp_base*/
   0, /*tp_dict*/
   0, /*tp_descr_get*/
   0, /*tp_descr_set*/
   0, /*tp_dictoffset*/
-  __pyx_pw_6nyoibo_6fields_11EntityField_1__init__, /*tp_init*/
+  __pyx_pw_6nyoibo_6fields_9LinkField_1__init__, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_6nyoibo_6fields_EntityField, /*tp_new*/
+  __pyx_tp_new_6nyoibo_6fields_LinkField, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -10916,13 +10916,13 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_DatetimeField, __pyx_k_DatetimeField, sizeof(__pyx_k_DatetimeField), 0, 0, 1, 1},
   {&__pyx_n_s_Decimal, __pyx_k_Decimal, sizeof(__pyx_k_Decimal), 0, 0, 1, 1},
   {&__pyx_n_s_DecimalField, __pyx_k_DecimalField, sizeof(__pyx_k_DecimalField), 0, 0, 1, 1},
-  {&__pyx_n_s_EntityField, __pyx_k_EntityField, sizeof(__pyx_k_EntityField), 0, 0, 1, 1},
   {&__pyx_n_u_False, __pyx_k_False, sizeof(__pyx_k_False), 0, 1, 0, 1},
   {&__pyx_n_s_Field, __pyx_k_Field, sizeof(__pyx_k_Field), 0, 0, 1, 1},
   {&__pyx_n_s_FloatField, __pyx_k_FloatField, sizeof(__pyx_k_FloatField), 0, 0, 1, 1},
   {&__pyx_kp_s_Incompatible_checksums_s_vs_0x00, __pyx_k_Incompatible_checksums_s_vs_0x00, sizeof(__pyx_k_Incompatible_checksums_s_vs_0x00), 0, 0, 1, 0},
   {&__pyx_kp_s_Incompatible_checksums_s_vs_0x2b, __pyx_k_Incompatible_checksums_s_vs_0x2b, sizeof(__pyx_k_Incompatible_checksums_s_vs_0x2b), 0, 0, 1, 0},
   {&__pyx_n_s_IntField, __pyx_k_IntField, sizeof(__pyx_k_IntField), 0, 0, 1, 1},
+  {&__pyx_n_s_LinkField, __pyx_k_LinkField, sizeof(__pyx_k_LinkField), 0, 0, 1, 1},
   {&__pyx_n_s_PickleError, __pyx_k_PickleError, sizeof(__pyx_k_PickleError), 0, 0, 1, 1},
   {&__pyx_n_s_StrField, __pyx_k_StrField, sizeof(__pyx_k_StrField), 0, 0, 1, 1},
   {&__pyx_n_s_cline_in_traceback, __pyx_k_cline_in_traceback, sizeof(__pyx_k_cline_in_traceback), 0, 0, 1, 1},
@@ -10954,10 +10954,10 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_pyx_unpickle_DateField, __pyx_k_pyx_unpickle_DateField, sizeof(__pyx_k_pyx_unpickle_DateField), 0, 0, 1, 1},
   {&__pyx_n_s_pyx_unpickle_DatetimeField, __pyx_k_pyx_unpickle_DatetimeField, sizeof(__pyx_k_pyx_unpickle_DatetimeField), 0, 0, 1, 1},
   {&__pyx_n_s_pyx_unpickle_DecimalField, __pyx_k_pyx_unpickle_DecimalField, sizeof(__pyx_k_pyx_unpickle_DecimalField), 0, 0, 1, 1},
-  {&__pyx_n_s_pyx_unpickle_EntityField, __pyx_k_pyx_unpickle_EntityField, sizeof(__pyx_k_pyx_unpickle_EntityField), 0, 0, 1, 1},
   {&__pyx_n_s_pyx_unpickle_Field, __pyx_k_pyx_unpickle_Field, sizeof(__pyx_k_pyx_unpickle_Field), 0, 0, 1, 1},
   {&__pyx_n_s_pyx_unpickle_FloatField, __pyx_k_pyx_unpickle_FloatField, sizeof(__pyx_k_pyx_unpickle_FloatField), 0, 0, 1, 1},
   {&__pyx_n_s_pyx_unpickle_IntField, __pyx_k_pyx_unpickle_IntField, sizeof(__pyx_k_pyx_unpickle_IntField), 0, 0, 1, 1},
+  {&__pyx_n_s_pyx_unpickle_LinkField, __pyx_k_pyx_unpickle_LinkField, sizeof(__pyx_k_pyx_unpickle_LinkField), 0, 0, 1, 1},
   {&__pyx_n_s_pyx_unpickle_StrField, __pyx_k_pyx_unpickle_StrField, sizeof(__pyx_k_pyx_unpickle_StrField), 0, 0, 1, 1},
   {&__pyx_n_s_pyx_vtable, __pyx_k_pyx_vtable, sizeof(__pyx_k_pyx_vtable), 0, 0, 1, 1},
   {&__pyx_n_s_reduce, __pyx_k_reduce, sizeof(__pyx_k_reduce), 0, 0, 1, 1},
@@ -11023,7 +11023,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__17 = PyTuple_Pack(5, __pyx_n_s_pyx_type, __pyx_n_s_pyx_checksum, __pyx_n_s_pyx_state, __pyx_n_s_pyx_PickleError, __pyx_n_s_pyx_result); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__17);
   __Pyx_GIVEREF(__pyx_tuple__17);
-  __pyx_codeobj__18 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__17, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_EntityField, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__18)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __pyx_codeobj__18 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__17, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_LinkField, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__18)) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -11092,21 +11092,21 @@ static int __Pyx_modinit_type_init_code(void) {
   if (PyObject_SetAttr(__pyx_m, __pyx_n_s_Field, (PyObject *)&__pyx_type_6nyoibo_6fields_Field) < 0) __PYX_ERR(0, 5, __pyx_L1_error)
   if (__Pyx_setup_reduce((PyObject*)&__pyx_type_6nyoibo_6fields_Field) < 0) __PYX_ERR(0, 5, __pyx_L1_error)
   __pyx_ptype_6nyoibo_6fields_Field = &__pyx_type_6nyoibo_6fields_Field;
-  __pyx_vtabptr_6nyoibo_6fields_EntityField = &__pyx_vtable_6nyoibo_6fields_EntityField;
-  __pyx_vtable_6nyoibo_6fields_EntityField.__pyx_base = *__pyx_vtabptr_6nyoibo_6fields_Field;
-  __pyx_vtable_6nyoibo_6fields_EntityField.__pyx_base.parse = (PyObject *(*)(struct __pyx_obj_6nyoibo_6fields_Field *, PyObject *, int __pyx_skip_dispatch))__pyx_f_6nyoibo_6fields_11EntityField_parse;
-  __pyx_type_6nyoibo_6fields_EntityField.tp_base = __pyx_ptype_6nyoibo_6fields_Field;
-  if (PyType_Ready(&__pyx_type_6nyoibo_6fields_EntityField) < 0) __PYX_ERR(0, 79, __pyx_L1_error)
+  __pyx_vtabptr_6nyoibo_6fields_LinkField = &__pyx_vtable_6nyoibo_6fields_LinkField;
+  __pyx_vtable_6nyoibo_6fields_LinkField.__pyx_base = *__pyx_vtabptr_6nyoibo_6fields_Field;
+  __pyx_vtable_6nyoibo_6fields_LinkField.__pyx_base.parse = (PyObject *(*)(struct __pyx_obj_6nyoibo_6fields_Field *, PyObject *, int __pyx_skip_dispatch))__pyx_f_6nyoibo_6fields_9LinkField_parse;
+  __pyx_type_6nyoibo_6fields_LinkField.tp_base = __pyx_ptype_6nyoibo_6fields_Field;
+  if (PyType_Ready(&__pyx_type_6nyoibo_6fields_LinkField) < 0) __PYX_ERR(0, 79, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
-  __pyx_type_6nyoibo_6fields_EntityField.tp_print = 0;
+  __pyx_type_6nyoibo_6fields_LinkField.tp_print = 0;
   #endif
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_6nyoibo_6fields_EntityField.tp_dictoffset && __pyx_type_6nyoibo_6fields_EntityField.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_6nyoibo_6fields_EntityField.tp_getattro = __Pyx_PyObject_GenericGetAttr;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_6nyoibo_6fields_LinkField.tp_dictoffset && __pyx_type_6nyoibo_6fields_LinkField.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_6nyoibo_6fields_LinkField.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_6nyoibo_6fields_EntityField.tp_dict, __pyx_vtabptr_6nyoibo_6fields_EntityField) < 0) __PYX_ERR(0, 79, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_EntityField, (PyObject *)&__pyx_type_6nyoibo_6fields_EntityField) < 0) __PYX_ERR(0, 79, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_6nyoibo_6fields_EntityField) < 0) __PYX_ERR(0, 79, __pyx_L1_error)
-  __pyx_ptype_6nyoibo_6fields_EntityField = &__pyx_type_6nyoibo_6fields_EntityField;
+  if (__Pyx_SetVtable(__pyx_type_6nyoibo_6fields_LinkField.tp_dict, __pyx_vtabptr_6nyoibo_6fields_LinkField) < 0) __PYX_ERR(0, 79, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_LinkField, (PyObject *)&__pyx_type_6nyoibo_6fields_LinkField) < 0) __PYX_ERR(0, 79, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_6nyoibo_6fields_LinkField) < 0) __PYX_ERR(0, 79, __pyx_L1_error)
+  __pyx_ptype_6nyoibo_6fields_LinkField = &__pyx_type_6nyoibo_6fields_LinkField;
   __pyx_vtabptr_6nyoibo_6fields_StrField = &__pyx_vtable_6nyoibo_6fields_StrField;
   __pyx_vtable_6nyoibo_6fields_StrField.__pyx_base = *__pyx_vtabptr_6nyoibo_6fields_Field;
   __pyx_type_6nyoibo_6fields_StrField.tp_base = __pyx_ptype_6nyoibo_6fields_Field;
@@ -11657,13 +11657,13 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "(tree fragment)":1
- * def __pyx_unpickle_EntityField(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
+ * def __pyx_unpickle_LinkField(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
  */
-  __pyx_t_2 = PyCFunction_NewEx(&__pyx_mdef_6nyoibo_6fields_17__pyx_unpickle_EntityField, NULL, __pyx_n_s_nyoibo_fields); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __pyx_t_2 = PyCFunction_NewEx(&__pyx_mdef_6nyoibo_6fields_17__pyx_unpickle_LinkField, NULL, __pyx_n_s_nyoibo_fields); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_pyx_unpickle_EntityField, __pyx_t_2) < 0) __PYX_ERR(1, 1, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_pyx_unpickle_LinkField, __pyx_t_2) < 0) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "nyoibo/fields.pyx":1

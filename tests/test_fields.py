@@ -132,7 +132,7 @@ def test_parse_immutable_value():
 
 def test_entity_field():
     class NewEntity(Entity):
-        _test_entity = fields.EntityField(to=TestEntity)
+        _test_entity = fields.LinkField(to=TestEntity)
 
     test_entity = TestEntity()
     new_entity = NewEntity(test_entity=test_entity)

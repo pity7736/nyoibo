@@ -76,10 +76,10 @@ cdef class DecimalField(Field):
     _internal_type = Decimal
 
 
-cdef class EntityField(Field):
+cdef class LinkField(Field):
 
     def __init__(self, to, *args, **kwargs):
-        super(EntityField, self).__init__(*args, **kwargs)
+        super(LinkField, self).__init__(*args, **kwargs)
         self.to = to
 
     cpdef public parse(self, value):
