@@ -1651,7 +1651,7 @@ static PyObject *__pyx_codeobj__18;
 /* "nyoibo/fields.pyx":9
  *     _internal_type = None
  * 
- *     def __init__(self, default_value=None, private=False, immutable=False):             # <<<<<<<<<<<<<<
+ *     def __init__(self, default_value=None, private=True, immutable=True):             # <<<<<<<<<<<<<<
  *         self.default_value = default_value
  *         self.private = private
  */
@@ -1672,8 +1672,8 @@ static int __pyx_pw_6nyoibo_6fields_5Field_1__init__(PyObject *__pyx_v_self, PyO
     static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_default_value,&__pyx_n_s_private,&__pyx_n_s_immutable,0};
     PyObject* values[3] = {0,0,0};
     values[0] = ((PyObject *)Py_None);
-    values[1] = ((PyObject *)Py_False);
-    values[2] = ((PyObject *)Py_False);
+    values[1] = ((PyObject *)Py_True);
+    values[2] = ((PyObject *)Py_True);
     if (unlikely(__pyx_kwds)) {
       Py_ssize_t kw_args;
       const Py_ssize_t pos_args = PyTuple_GET_SIZE(__pyx_args);
@@ -1748,7 +1748,7 @@ static int __pyx_pf_6nyoibo_6fields_5Field___init__(struct __pyx_obj_6nyoibo_6fi
 
   /* "nyoibo/fields.pyx":10
  * 
- *     def __init__(self, default_value=None, private=False, immutable=False):
+ *     def __init__(self, default_value=None, private=True, immutable=True):
  *         self.default_value = default_value             # <<<<<<<<<<<<<<
  *         self.private = private
  *         self.immutable = immutable
@@ -1760,7 +1760,7 @@ static int __pyx_pf_6nyoibo_6fields_5Field___init__(struct __pyx_obj_6nyoibo_6fi
   __pyx_v_self->default_value = __pyx_v_default_value;
 
   /* "nyoibo/fields.pyx":11
- *     def __init__(self, default_value=None, private=False, immutable=False):
+ *     def __init__(self, default_value=None, private=True, immutable=True):
  *         self.default_value = default_value
  *         self.private = private             # <<<<<<<<<<<<<<
  *         self.immutable = immutable
@@ -1788,7 +1788,7 @@ static int __pyx_pf_6nyoibo_6fields_5Field___init__(struct __pyx_obj_6nyoibo_6fi
   /* "nyoibo/fields.pyx":9
  *     _internal_type = None
  * 
- *     def __init__(self, default_value=None, private=False, immutable=False):             # <<<<<<<<<<<<<<
+ *     def __init__(self, default_value=None, private=True, immutable=True):             # <<<<<<<<<<<<<<
  *         self.default_value = default_value
  *         self.private = private
  */
@@ -11478,7 +11478,7 @@ if (!__Pyx_RefNanny) {
  * 
  *     _internal_type = None             # <<<<<<<<<<<<<<
  * 
- *     def __init__(self, default_value=None, private=False, immutable=False):
+ *     def __init__(self, default_value=None, private=True, immutable=True):
  */
   if (PyDict_SetItem((PyObject *)__pyx_ptype_6nyoibo_6fields_Field->tp_dict, __pyx_n_s_internal_type, Py_None) < 0) __PYX_ERR(0, 7, __pyx_L1_error)
   PyType_Modified(__pyx_ptype_6nyoibo_6fields_Field);

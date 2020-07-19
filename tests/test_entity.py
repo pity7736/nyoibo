@@ -5,12 +5,12 @@ from nyoibo.exceptions import PrivateField
 
 
 class Rate(Entity):
-    _value = fields.StrField()
-    _other_value = fields.StrField()
-    _default = fields.StrField(default_value='hello world')
-    _other_default = fields.IntField(default_value=1)
-    _private = fields.StrField(private=True)
-    _immutable = fields.StrField(immutable=True)
+    _value = fields.StrField(private=False, immutable=False)
+    _other_value = fields.StrField(private=False)
+    _default = fields.StrField(private=False, default_value='hello world')
+    _other_default = fields.IntField(private=False, default_value=1)
+    _private = fields.StrField()
+    _immutable = fields.StrField(private=False)
 
 
 def test_get_value():
@@ -75,7 +75,7 @@ def test_immutable_field():
 
 def test_override_getter():
     class Getter(Entity):
-        _value = fields.IntField()
+        _value = fields.IntField(private=False)
 
         def get_value(self):
             return self._value + 5
@@ -88,7 +88,7 @@ def test_override_getter():
 
 def test_override_setter():
     class Setter(Entity):
-        _value = fields.IntField()
+        _value = fields.IntField(private=False, immutable=False)
 
         def set_value(self, value):
             self._value = value + 5
@@ -105,8 +105,8 @@ def test_override_setter():
 
 def test_private_value_is_assigned():
     class Private(Entity):
-        _add = fields.IntField(private=True)
-        _value = fields.IntField()
+        _add = fields.IntField()
+        _value = fields.IntField(private=False)
 
         def get_value(self):
             return self._add + self._value

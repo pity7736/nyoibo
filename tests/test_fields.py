@@ -7,14 +7,14 @@ from nyoibo import Entity, fields
 
 
 class TestEntity(Entity):
-    _name = fields.StrField()
-    _value = fields.IntField()
-    _is_valid = fields.BoolField()
-    _date = fields.DateField()
-    _datetime = fields.DatetimeField()
-    _points = fields.FloatField()
-    _rate = fields.DecimalField()
-    _immutable = fields.StrField(immutable=True)
+    _name = fields.StrField(private=False)
+    _value = fields.IntField(private=False)
+    _is_valid = fields.BoolField(private=False)
+    _date = fields.DateField(private=False)
+    _datetime = fields.DatetimeField(private=False)
+    _points = fields.FloatField(private=False)
+    _rate = fields.DecimalField(private=False)
+    _immutable = fields.StrField(private=False)
 
 
 str_values = (
@@ -132,7 +132,7 @@ def test_parse_immutable_value():
 
 def test_entity_field():
     class NewEntity(Entity):
-        _test_entity = fields.LinkField(to=TestEntity)
+        _test_entity = fields.LinkField(private=False, to=TestEntity)
 
     test_entity = TestEntity()
     new_entity = NewEntity(test_entity=test_entity)
