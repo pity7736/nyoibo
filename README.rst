@@ -11,7 +11,7 @@ Nyoibo
 Nyoibo is to avoid boilerplate easily working with "private" attributes
 in python.
 
-`See full documentation <https://readthedocs.org/projects/nyoibo/>`_
+`See full documentation <https://nyoibo.readthedocs.io/en/latest/>`_
 
 Basic Usage
 -----------
