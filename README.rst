@@ -111,6 +111,13 @@ Above example with ``dataclass`` decorator:
         def do_something(self):
             return f'{self._default} world'
 
+Even this code doesn't work becasue ``__init__`` method has ``_value``,
+``_other_value`` and ``default``. Therefore the instantation will be:
+
+.. code-block:: python
+
+    example = Example(value='some value', other_value=10)
+
 
 License
 -------
