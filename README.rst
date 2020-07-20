@@ -54,7 +54,7 @@ You can do this:
     class Example(Entity):
         _value = fields.StrField()
         _other_value = fields.IntField(immutable=False)
-        _default = fields.StrField(private=False, default_value='hello')
+        _default = fields.StrField(private=True, default_value='hello')
 
         def do_something(self):
             return f'{self._default} world'
@@ -112,7 +112,7 @@ Above example with ``dataclass`` decorator:
             return f'{self._default} world'
 
 Even this code doesn't work becasue ``__init__`` method has ``_value``,
-``_other_value`` and ``default``. Therefore the instantation will be:
+``_other_value`` and ``_default``. Therefore the instantation will be:
 
 .. code-block:: python
 
