@@ -1,10 +1,10 @@
 import datetime
 from decimal import Decimal
 
-from pytest import mark
+from pytest import mark, raises
 
 from nyoibo import Entity, fields
-
+from nyoibo.exceptions import IntValueError
 
 str_values = (
     ('10.5', '10.5'),
@@ -33,6 +33,22 @@ def test_parse_int_value(value, expected_result):
     int_field = fields.IntField()
 
     assert int_field.parse(value) == expected_result
+
+
+wrong_int_values = (
+    'hi',
+    datetime.date.today(),
+    datetime.datetime.today(),
+)
+
+
+@mark.parametrize('value', wrong_int_values)
+def test_wrong_int_value(value):
+    int_field = fields.IntField()
+    with raises(IntValueError) as e:
+        int_field.parse(value)
+
+    assert str(e.value) == f'{type(value)} is not a valid value for IntField'
 
 
 bool_values = (

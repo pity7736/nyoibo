@@ -1,10 +1,12 @@
 import datetime
 from decimal import Decimal
 
+from nyoibo.exceptions import IntValueError
 
 cdef class Field:
 
     _internal_type = None
+    _value_exception = Exception
 
     def __init__(self, default_value=None, private=False, immutable=True,
                  choices=None):
@@ -30,15 +32,20 @@ cdef class StrField(Field):
 cdef class IntField(Field):
 
     _internal_type = int
+    _value_exception = IntValueError
 
     cpdef public parse(self, value):
-        if isinstance(value, str):
-            value = float(value)
-
         # I implemented super in python 2 form because cython
         # has an issue with super without arguments
         # https://github.com/cython/cython/issues/3726
-        return super(IntField, self).parse(value)
+        try:
+            if isinstance(value, str):
+                value = float(value)
+            result = super(IntField, self).parse(value)
+        except (TypeError, ValueError):
+            raise IntValueError(f'{type(value)} is not a valid value for '
+                                'IntField')
+        return result
 
 
 cdef class BoolField(Field):

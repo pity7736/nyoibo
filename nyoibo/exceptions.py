@@ -5,3 +5,7 @@ class NyoiboError(Exception):
 
 class PrivateField(NyoiboError):
     pass
+
+
+class IntValueError(NyoiboError):
+    pass
