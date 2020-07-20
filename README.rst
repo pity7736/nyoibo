@@ -116,7 +116,7 @@ Even this code doesn't work becasue ``__init__`` method has ``_value``,
 
 .. code-block:: python
 
-    example = Example(value='some value', other_value=10)
+    example = Example(_value='some value', _other_value=10)
 
 
 License
