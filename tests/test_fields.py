@@ -6,17 +6,6 @@ from pytest import mark
 from nyoibo import Entity, fields
 
 
-class TestEntity(Entity):
-    _name = fields.StrField()
-    _value = fields.IntField()
-    _is_valid = fields.BoolField()
-    _date = fields.DateField()
-    _datetime = fields.DatetimeField()
-    _points = fields.FloatField()
-    _rate = fields.DecimalField()
-    _immutable = fields.StrField()
-
-
 str_values = (
     ('10.5', '10.5'),
     (10, '10'),
@@ -26,9 +15,9 @@ str_values = (
 
 @mark.parametrize('value, expected_result', str_values)
 def test_parse_str_value(value, expected_result):
-    entity = TestEntity(name=value)
+    str_field = fields.StrField()
 
-    assert entity.name == expected_result
+    assert str_field.parse(value) == expected_result
 
 
 int_values = (
@@ -41,9 +30,9 @@ int_values = (
 
 @mark.parametrize('value, expected_result', int_values)
 def test_parse_int_value(value, expected_result):
-    entity = TestEntity(value=value)
+    int_field = fields.IntField()
 
-    assert entity.value == expected_result
+    assert int_field.parse(value) == expected_result
 
 
 bool_values = (
@@ -59,9 +48,9 @@ bool_values = (
 
 @mark.parametrize('value, expected_result', bool_values)
 def test_parse_bool_value(value, expected_result):
-    entity = TestEntity(is_valid=value)
+    bool_field = fields.BoolField()
 
-    assert entity.is_valid == expected_result
+    assert bool_field.parse(value) == expected_result
 
 
 date_values = (
@@ -72,9 +61,9 @@ date_values = (
 
 @mark.parametrize('value, expected_result', date_values)
 def test_parse_date_value(value, expected_result):
-    entity = TestEntity(date=value)
+    date_field = fields.DateField()
 
-    assert entity.date == expected_result
+    assert date_field.parse(value) == expected_result
 
 
 datetime_values = (
@@ -91,9 +80,9 @@ datetime_values = (
 
 @mark.parametrize('value, expected_result', datetime_values)
 def test_parse_datetime_value(value, expected_result):
-    entity = TestEntity(datetime=value)
+    datetime_field = fields.DatetimeField()
 
-    assert entity.datetime == expected_result
+    assert datetime_field.parse(value) == expected_result
 
 
 float_values = (
@@ -105,9 +94,9 @@ float_values = (
 
 @mark.parametrize('value, expected_result', float_values)
 def test_parse_float_value(value, expected_result):
-    entity = TestEntity(points=value)
+    float_field = fields.FloatField()
 
-    assert entity.points == expected_result
+    assert float_field.parse(value) == expected_result
 
 
 decimal_values = (
@@ -119,22 +108,16 @@ decimal_values = (
 
 @mark.parametrize('value, expected_result', decimal_values)
 def test_parse_decimal_values(value, expected_result):
-    entity = TestEntity(rate=value)
+    decimal_field = fields.DecimalField()
 
-    assert entity.rate == expected_result
-
-
-def test_parse_immutable_value():
-    entity = TestEntity(immutable=12345)
-
-    assert entity.immutable == '12345'
+    assert decimal_field.parse(value) == expected_result
 
 
-def test_entity_field():
+def test_parse_entity_field():
     class NewEntity(Entity):
-        _test_entity = fields.LinkField(to=TestEntity)
+        _value = fields.StrField()
 
-    test_entity = TestEntity()
-    new_entity = NewEntity(test_entity=test_entity)
+    link_field = fields.LinkField(to=NewEntity)
+    new_entity = NewEntity()
 
-    assert new_entity.test_entity == test_entity
+    assert link_field.parse(new_entity) == new_entity
