@@ -6,7 +6,7 @@ cdef class Field:
 
     _internal_type = None
 
-    def __init__(self, default_value=None, private=True, immutable=True):
+    def __init__(self, default_value=None, private=False, immutable=True):
         self.default_value = default_value
         self.private = private
         self.immutable = immutable

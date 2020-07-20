@@ -5,12 +5,12 @@ from nyoibo.exceptions import PrivateField
 
 
 class Rate(Entity):
-    _value = fields.StrField(private=False, immutable=False)
-    _other_value = fields.StrField(private=False)
-    _default = fields.StrField(private=False, default_value='hello world')
-    _other_default = fields.IntField(private=False, default_value=1)
-    _private = fields.StrField()
-    _immutable = fields.StrField(private=False)
+    _value = fields.StrField(immutable=False)
+    _other_value = fields.StrField()
+    _default = fields.StrField(default_value='hello world')
+    _other_default = fields.IntField(default_value=1)
+    _private = fields.StrField(private=True)
+    _immutable = fields.StrField()
 
 
 def test_get_value():
