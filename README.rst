@@ -76,13 +76,13 @@ In both cases you could use this code like this:
 Why not use dataclass decorator?
 --------------------------------
 
-`@dataclass` decorator helps to avoid to write the `__init__` method but if you
+``@dataclass`` decorator helps to avoid to write the ``__init__`` method but if you
 want to use this approach (information hidding and encapsulation), you need to
-write getters and setters anyway. Furthermore, with `nyoibo` you get extra
+write getters and setters anyway. Furthermore, with ``nyoibo`` you get extra
 features like casting to right value (due to static typing), validations
-(cooming soon), override `__init__` method and so on.
+(cooming soon), override ``__init__`` method and so on.
 
-Above example with `dataclass` decorator:
+Above example with ``dataclass`` decorator:
 
 .. code-block:: python
 
