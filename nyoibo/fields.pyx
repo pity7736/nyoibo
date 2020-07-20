@@ -6,12 +6,17 @@ cdef class Field:
 
     _internal_type = None
 
-    def __init__(self, default_value=None, private=False, immutable=True):
+    def __init__(self, default_value=None, private=False, immutable=True,
+                 choices=None):
         self.default_value = default_value
         self.private = private
         self.immutable = immutable
+        self.choices = choices
 
     cpdef public parse(self, value):
+        if value and self.choices:
+            return self.choices(value)
+
         if value is None or type(value) is self._internal_type:
             return value
         return self._internal_type(value)

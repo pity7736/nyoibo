@@ -1,7 +1,15 @@
+from enum import Enum
+
 from pytest import raises
 
 from nyoibo import Entity, fields
 from nyoibo.exceptions import PrivateField
+
+
+class Types(Enum):
+    value0 = 'value0'
+    value1 = 'value1'
+    value2 = 'value2'
 
 
 class Rate(Entity):
@@ -11,6 +19,7 @@ class Rate(Entity):
     _other_default = fields.IntField(default_value=1)
     _private = fields.StrField(private=True)
     _immutable = fields.StrField()
+    _type = fields.StrField(choices=Types)
 
 
 def test_get_value():
@@ -114,3 +123,9 @@ def test_private_value_is_assigned():
     private = Private(add=5, value=5)
 
     assert private.value == 10
+
+
+def test_choices():
+    entity = Rate(type='value0')
+
+    assert entity.type == Types.value0
