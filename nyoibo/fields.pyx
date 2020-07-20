@@ -1,7 +1,7 @@
 import datetime
 from decimal import Decimal
 
-from nyoibo.exceptions import IntValueError
+from nyoibo.exceptions import IntValueError, DateValueError
 
 cdef class Field:
 
@@ -63,9 +63,14 @@ cdef class DateField(Field):
     _internal_type = datetime.date
 
     cpdef public parse(self, value):
-        if isinstance(value, str):
-            return datetime.date.fromisoformat(value)
-        return super(DateField, self).parse(value)
+        try:
+            if isinstance(value, str):
+                return datetime.date.fromisoformat(value)
+            result = super(DateField, self).parse(value)
+        except (TypeError, ValueError):
+            raise DateValueError(f'{type(value)} is not a valid value for '
+                                 'DateField')
+        return result
 
 
 cdef class DatetimeField(Field):

@@ -4,7 +4,7 @@ from decimal import Decimal
 from pytest import mark, raises
 
 from nyoibo import Entity, fields
-from nyoibo.exceptions import IntValueError
+from nyoibo.exceptions import IntValueError, DateValueError
 
 str_values = (
     ('10.5', '10.5'),
@@ -80,6 +80,21 @@ def test_parse_date_value(value, expected_result):
     date_field = fields.DateField()
 
     assert date_field.parse(value) == expected_result
+
+
+wrong_date_values = (
+    'hi',
+    12354
+)
+
+
+@mark.parametrize('value', wrong_date_values)
+def test_wrong_date_value(value):
+    date_field = fields.DateField()
+    with raises(DateValueError) as e:
+        date_field.parse(value)
+
+    assert str(e.value) == f'{type(value)} is not a valid value for DateField'
 
 
 datetime_values = (

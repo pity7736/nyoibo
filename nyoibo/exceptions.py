@@ -9,3 +9,7 @@ class PrivateField(NyoiboError):
 
 class IntValueError(NyoiboError):
     pass
+
+
+class DateValueError(NyoiboError):
+    pass
