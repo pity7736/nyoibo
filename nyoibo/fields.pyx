@@ -1,11 +1,12 @@
 import datetime
-from decimal import Decimal
+from decimal import Decimal, InvalidOperation
 
 from nyoibo.exceptions import FieldValueError
 
 cdef class Field:
 
     _internal_type = None
+    _exceptions = (TypeError, ValueError)
 
     def __init__(self, default_value=None, private=False, immutable=True,
                  choices=None):
@@ -22,7 +23,7 @@ cdef class Field:
             if value is None or type(value) is self._internal_type:
                 return value
             return self._internal_type(value)
-        except (TypeError, ValueError):
+        except self._exceptions:
             raise FieldValueError(f'{type(value)} is not a valid value for '
                                   f'{self.__class__.__name__}')
 
@@ -69,10 +70,10 @@ cdef class DatetimeField(Field):
 
     _internal_type = datetime.datetime
 
-    cpdef public parse(self, value):
+    cdef _parse(self, value):
         if isinstance(value, str):
             return datetime.datetime.fromisoformat(value)
-        return super(DatetimeField, self).parse(value)
+        return value
 
 
 cdef class FloatField(Field):
@@ -83,6 +84,7 @@ cdef class FloatField(Field):
 cdef class DecimalField(Field):
 
     _internal_type = Decimal
+    _exceptions = (TypeError, InvalidOperation)
 
 
 cdef class LinkField(Field):
