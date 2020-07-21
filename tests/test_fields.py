@@ -4,7 +4,7 @@ from decimal import Decimal
 from pytest import mark, raises
 
 from nyoibo import Entity, fields
-from nyoibo.exceptions import IntValueError, DateValueError
+from nyoibo.exceptions import FieldValueError
 
 str_values = (
     ('10.5', '10.5'),
@@ -45,7 +45,7 @@ wrong_int_values = (
 @mark.parametrize('value', wrong_int_values)
 def test_wrong_int_value(value):
     int_field = fields.IntField()
-    with raises(IntValueError) as e:
+    with raises(FieldValueError) as e:
         int_field.parse(value)
 
     assert str(e.value) == f'{type(value)} is not a valid value for IntField'
@@ -91,7 +91,7 @@ wrong_date_values = (
 @mark.parametrize('value', wrong_date_values)
 def test_wrong_date_value(value):
     date_field = fields.DateField()
-    with raises(DateValueError) as e:
+    with raises(FieldValueError) as e:
         date_field.parse(value)
 
     assert str(e.value) == f'{type(value)} is not a valid value for DateField'

@@ -1,12 +1,11 @@
 import datetime
 from decimal import Decimal
 
-from nyoibo.exceptions import IntValueError, DateValueError
+from nyoibo.exceptions import FieldValueError
 
 cdef class Field:
 
     _internal_type = None
-    _value_exception = Exception
 
     def __init__(self, default_value=None, private=False, immutable=True,
                  choices=None):
@@ -16,12 +15,19 @@ cdef class Field:
         self.choices = choices
 
     cpdef public parse(self, value):
-        if value and self.choices:
-            return self.choices(value)
+        try:
+            value = self._parse(value)
+            if value and self.choices:
+                return self.choices(value)
+            if value is None or type(value) is self._internal_type:
+                return value
+            return self._internal_type(value)
+        except (TypeError, ValueError):
+            raise FieldValueError(f'{type(value)} is not a valid value for '
+                                  f'{self.__class__.__name__}')
 
-        if value is None or type(value) is self._internal_type:
-            return value
-        return self._internal_type(value)
+    cdef _parse(self, value):
+        return value
 
 
 cdef class StrField(Field):
@@ -32,45 +38,31 @@ cdef class StrField(Field):
 cdef class IntField(Field):
 
     _internal_type = int
-    _value_exception = IntValueError
 
-    cpdef public parse(self, value):
-        # I implemented super in python 2 form because cython
-        # has an issue with super without arguments
-        # https://github.com/cython/cython/issues/3726
-        try:
-            if isinstance(value, str):
-                value = float(value)
-            result = super(IntField, self).parse(value)
-        except (TypeError, ValueError):
-            raise IntValueError(f'{type(value)} is not a valid value for '
-                                'IntField')
-        return result
+    cdef _parse(self, value):
+        if isinstance(value, str):
+            value = float(value)
+        return value
 
 
 cdef class BoolField(Field):
 
     _internal_type = bool
 
-    cpdef public parse(self, value):
+    cdef _parse(self, value):
         if value in ('false', 'False'):
             return False
-        return super(BoolField, self).parse(value)
+        return value
 
 
 cdef class DateField(Field):
 
     _internal_type = datetime.date
 
-    cpdef public parse(self, value):
-        try:
-            if isinstance(value, str):
-                return datetime.date.fromisoformat(value)
-            result = super(DateField, self).parse(value)
-        except (TypeError, ValueError):
-            raise DateValueError(f'{type(value)} is not a valid value for '
-                                 'DateField')
-        return result
+    cdef _parse(self, value):
+        if isinstance(value, str):
+            return datetime.date.fromisoformat(value)
+        return value
 
 
 cdef class DatetimeField(Field):
