@@ -112,6 +112,24 @@ def test_override_setter():
     assert setter.get_value() == 15
 
 
+def test_override_setter_with_parsing():
+    class Setter(Entity):
+        _value = fields.IntField(private=False, immutable=False)
+
+        def set_value(self, value):
+            value = Setter._value.parse(value)
+            self._value = value + 5
+
+    setter = Setter(value=5)
+
+    assert setter.value == 10
+    assert setter.get_value() == 10
+
+    setter.value = '10'
+    assert setter.value == 15
+    assert setter.get_value() == 15
+
+
 def test_private_value_is_assigned():
     class Private(Entity):
         _add = fields.IntField()
