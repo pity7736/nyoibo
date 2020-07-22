@@ -20,7 +20,7 @@ What does "nyoibo" mean?
 Nyoibo is a mystical staff given to Son Goku by his grandfather Son Gohan.
 
 .. image:: ./nyoibo.png
-  :width: 400
+  :width: 50
   :alt: nyoibo
 
 
