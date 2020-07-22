@@ -68,7 +68,7 @@ In both cases you could use this code like this:
 Visibility
 ----------
 
-All fields are public and immutable by default, so so it will create getter,
+All fields are public and immutable by default, so it will create getter,
 property but not setter. You can change this behavior with ``private=True`` or
 ``immutable=False`` arguments on fields. Fields with ``private=True`` will not
 create getter or setter. Fields with ``immutable=False`` will create getter,
@@ -84,8 +84,8 @@ setter and property.
         _private_attr = fields.StrField(private=True)
 
 An ``Example`` instance will have ``get_attr`` method and ``attr`` property
-for ``attr``; ``get_mutable_attr``, ``set_mutable_attr`` methods and
-``mutable_attr`` properties for ``_mutable_attr``.
+for ``_attr`` field; ``get_mutable_attr``, ``set_mutable_attr`` methods and
+``mutable_attr`` properties for ``_mutable_attr`` field.
 So, you can get value from attr like this:
 
 .. code-block:: python
