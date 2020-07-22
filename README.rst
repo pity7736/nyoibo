@@ -13,8 +13,18 @@ Python.
 
 `See full documentation <https://nyoibo.readthedocs.io/en/latest/>`_
 
-Basic Usage
------------
+
+What does "nyoibo" mean?
+------------------------
+
+Nyoibo is a mystical staff given to Son Goku by his grandfather Son Gohan.
+
+.. image:: ./nyoibo.png
+  :alt: nyoibo
+
+
+Usage
+-----
 
 Instead of doing this:
 
@@ -112,7 +122,7 @@ Above example with ``dataclass`` decorator:
             return f'{self._default} world'
 
 Even this code doesn't work becasue ``__init__`` method has ``_value``,
-``_other_value`` and ``_default``. Therefore the instantation will be:
+``_other_value`` and ``_default`` arguments. Therefore the instantation will be:
 
 .. code-block:: python
 
