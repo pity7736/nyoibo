@@ -142,7 +142,7 @@ setter in ``get_{field_name}`` or ``set_{field_name}`` way. Example:
 Fields
 ------
 
-Nyoibo has several fields type (you can check all types in API reference).
+Nyoibo has several fields type (you can check all types in :ref:`fields`).
 Each field has an internal Python type and it will try to parse and cast to
 this Python type. So ``StrField`` will cast to ``str``, ``IntField`` will cast
 to ``int``, ``FloatField`` to ``float`` and so on. Let's see an example:

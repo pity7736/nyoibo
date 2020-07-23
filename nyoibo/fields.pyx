@@ -4,11 +4,29 @@ from decimal import Decimal, InvalidOperation
 from nyoibo.exceptions import FieldValueError
 
 cdef class Field:
+    """Base Field
+
+    This is the base for all field types.
+
+    Attributes:
+        _internal_type: each Field subclass must to override this attribute
+            with the internal type that field represent.
+        _exceptions (tuple): possible exception that could be raised when
+            field tries to cast to ``_internal_type``.
+
+    Args:
+        private (bool): set if field is private or not. When private=True
+            getter and setters will not be created. False by default.
+        immutable (bool): set if field is immutable or not. When immutable=True
+            setter will not be created. True by default.
+        default_value (any): default value to field.
+        choices (Enum): value to this field must be a Enum key or Enum key.
+    """
 
     _internal_type = None
     _exceptions = (TypeError, ValueError)
 
-    def __init__(self, default_value=None, private=False, immutable=True,
+    def __init__(self, private=False, immutable=True, default_value=None,
                  choices=None):
         self.default_value = default_value
         self.private = private
@@ -16,6 +34,17 @@ cdef class Field:
         self.choices = choices
 
     cpdef public parse(self, value):
+        """Parse and cast to ``_internal_type``
+
+        Args:
+            value (any): value to parse.
+
+        Returns:
+            ``_internal_type`` if the casting was successful
+
+        Raises:
+            FieldValueError: if the casting failed.
+        """
         try:
             value = self._parse(value)
             if value and self.choices:
@@ -28,15 +57,31 @@ cdef class Field:
                                   f'{self.__class__.__name__}')
 
     cdef _parse(self, value):
+        """This method is to be overriding if some Field need do some checks or
+            validations before ``parse`` is executed.
+
+        Args:
+            value (any): value to parse
+
+        Returns:
+            ``_internal_type`` if the casting was successful
+
+        Raises:
+            FieldValueError: if the casting failed.
+
+        """
         return value
 
 
 cdef class StrField(Field):
+    """Field for string values
+    """
 
     _internal_type = str
 
 
 cdef class IntField(Field):
+    """Field for integer values"""
 
     _internal_type = int
 
@@ -47,6 +92,8 @@ cdef class IntField(Field):
 
 
 cdef class BoolField(Field):
+    """Field for boolean values
+    """
 
     _internal_type = bool
 
@@ -57,6 +104,10 @@ cdef class BoolField(Field):
 
 
 cdef class DateField(Field):
+    """Field for datetime.date values
+
+    Values could be datetime.date or isoformat string.
+    """
 
     _internal_type = datetime.date
 
@@ -67,6 +118,10 @@ cdef class DateField(Field):
 
 
 cdef class DatetimeField(Field):
+    """Field for datetime.datetime values
+
+    Values could be datetime.datetime or isoformat string.
+    """
 
     _internal_type = datetime.datetime
 
@@ -77,17 +132,26 @@ cdef class DatetimeField(Field):
 
 
 cdef class FloatField(Field):
+    """Field for float values
+    """
 
     _internal_type = float
 
 
 cdef class DecimalField(Field):
+    """Field for Decimal values
+    """
 
     _internal_type = Decimal
     _exceptions = (TypeError, InvalidOperation)
 
 
 cdef class LinkField(Field):
+    """Field for link between other ``Entity``
+
+    Args:
+        to (Entity): Entity instance
+    """
 
     def __init__(self, to, *args, **kwargs):
         super(LinkField, self).__init__(*args, **kwargs)

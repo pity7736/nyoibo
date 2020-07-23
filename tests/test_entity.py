@@ -3,7 +3,7 @@ from enum import Enum
 from pytest import raises
 
 from nyoibo import Entity, fields
-from nyoibo.exceptions import PrivateField
+from nyoibo.exceptions import PrivateFieldError
 
 
 class Types(Enum):
@@ -47,7 +47,7 @@ def test_set_value():
 
 
 def test_fields_must_be_private():
-    with raises(PrivateField):
+    with raises(PrivateFieldError):
         class Example(Entity):
             value = fields.StrField()
 

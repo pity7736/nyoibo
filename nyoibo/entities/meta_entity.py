@@ -1,6 +1,6 @@
 from typing import Dict, Any
 
-from nyoibo.exceptions import PrivateField
+from nyoibo.exceptions import PrivateFieldError
 from nyoibo.fields import Field
 
 
@@ -25,7 +25,7 @@ class MetaEntity(type):
         for attr, value in namespace.items():
             if isinstance(value, Field):
                 if not attr.startswith('_'):
-                    raise PrivateField('Fields must be private')
+                    raise PrivateFieldError('Fields must be private')
 
                 fields[attr] = value
                 MetaEntity._set_getters_and_setters(

@@ -15,6 +15,10 @@ extensions = [
     Extension('nyoibo.entities.entity', [f'nyoibo/entities/entity.{ext}'])
 ]
 
+for e in extensions:
+    e.cython_directives = {"embedsignature": True}
+
+
 if USE_CYTHON:
     extensions = cythonize(
         extensions,

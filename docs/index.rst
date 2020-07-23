@@ -13,3 +13,4 @@ Contents
    :maxdepth: 2
 
    usage
+   api/index

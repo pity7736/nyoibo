@@ -3,6 +3,20 @@ from .meta_entity import MetaEntity
 
 
 class Entity(metaclass=MetaEntity):
+    """Entity.
+
+    This class must be superclass for classes that you want create getters or
+    setters.
+    All fields must starts with ``_``.
+
+    Args:
+        kwargs: values to fields.
+
+    Raises:
+        FieldValueError: if the casting failed.
+        PrivateFieldError: if a field does not start with ``_``.
+            This exception is raised when program starts.
+    """
 
     def __init__(self, **kwargs):
         cdef str key

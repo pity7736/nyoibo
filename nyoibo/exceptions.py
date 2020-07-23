@@ -3,7 +3,7 @@ class NyoiboError(Exception):
     pass
 
 
-class PrivateField(NyoiboError):
+class PrivateFieldError(NyoiboError):
     pass
 
 
