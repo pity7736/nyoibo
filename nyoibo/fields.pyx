@@ -152,6 +152,9 @@ cdef class LinkField(Field):
 
     Args:
         to (Entity): Entity instance
+
+    Raises:
+        ValueError: if ``to`` is not a subclass of :ref:`entity`
     """
 
     def __init__(self, to, *args, **kwargs):
