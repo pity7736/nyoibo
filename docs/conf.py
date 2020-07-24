@@ -15,6 +15,21 @@ import sys
 sys.path.insert(0, os.path.abspath('..'))
 
 
+init_file = os.path.join(
+    os.path.dirname(os.path.dirname(__file__)),
+    'nyoibo',
+    '__init__.py'
+)
+
+with open(init_file) as f:
+    for line in f:
+        if line.startswith('__version__ ='):
+            _, _, version = line.partition('=')
+            VERSION = version.strip(" \n'\"")
+            break
+
+print('version', VERSION)
+
 # -- Project information -----------------------------------------------------
 
 project = 'nyoibo'
@@ -22,7 +37,7 @@ copyright = '2020, Julián Cortés'
 author = 'Julián Cortés'
 
 # The full version, including alpha/beta/rc tags
-release = '0.0.1'
+release = VERSION
 
 
 # -- General configuration ---------------------------------------------------
