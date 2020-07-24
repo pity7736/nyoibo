@@ -14,6 +14,14 @@ Python.
 `See full documentation <https://nyoibo.readthedocs.io/en/latest/>`_
 
 
+Installation
+------------
+
+You can install nyoibo with pip
+
+``pip install nyoibo``
+
+
 What does "nyoibo" mean?
 ------------------------
 
