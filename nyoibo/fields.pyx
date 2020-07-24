@@ -1,6 +1,7 @@
 import datetime
 from decimal import Decimal, InvalidOperation
 
+from nyoibo.entities.meta_entity import MetaEntity
 from nyoibo.exceptions import FieldValueError
 
 cdef class Field:
@@ -154,8 +155,13 @@ cdef class LinkField(Field):
     """
 
     def __init__(self, to, *args, **kwargs):
+        if type(to) is not MetaEntity:
+            raise ValueError('to must be an Entity subclass')
         super(LinkField, self).__init__(*args, **kwargs)
         self.to = to
 
     cpdef public parse(self, value):
-        return value
+        if isinstance(value, self.to):
+            return value
+        raise FieldValueError(f'{type(value)} is not a valid value for '
+                              f'{self.__class__.__name__}')

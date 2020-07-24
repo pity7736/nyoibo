@@ -1,6 +1,7 @@
+import datetime
 from enum import Enum
 
-from pytest import raises
+from pytest import raises, mark
 
 from nyoibo import Entity, fields
 from nyoibo.exceptions import PrivateFieldError
@@ -147,3 +148,20 @@ def test_choices():
     entity = Rate(type='value0')
 
     assert entity.type == Types.value0
+
+
+wrong_link_to_values = (
+    'hi',
+    123,
+    str,
+    int,
+    datetime.date
+)
+
+
+@mark.parametrize('to', wrong_link_to_values)
+def test_link_field(to):
+    with raises(ValueError) as e:
+        class Example(Entity):
+            _value = fields.LinkField(to=to)
+    assert str(e.value) == 'to must be an Entity subclass'

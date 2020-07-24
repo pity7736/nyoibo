@@ -16,7 +16,6 @@ str_values = (
 @mark.parametrize('value, expected_result', str_values)
 def test_parse_str_value(value, expected_result):
     str_field = fields.StrField()
-
     assert str_field.parse(value) == expected_result
 
 
@@ -31,7 +30,6 @@ int_values = (
 @mark.parametrize('value, expected_result', int_values)
 def test_parse_int_value(value, expected_result):
     int_field = fields.IntField()
-
     assert int_field.parse(value) == expected_result
 
 
@@ -47,7 +45,6 @@ def test_wrong_int_value(value):
     int_field = fields.IntField()
     with raises(FieldValueError) as e:
         int_field.parse(value)
-
     assert str(e.value) == f'{type(value)} is not a valid value for IntField'
 
 
@@ -65,7 +62,6 @@ bool_values = (
 @mark.parametrize('value, expected_result', bool_values)
 def test_parse_bool_value(value, expected_result):
     bool_field = fields.BoolField()
-
     assert bool_field.parse(value) == expected_result
 
 
@@ -78,7 +74,6 @@ date_values = (
 @mark.parametrize('value, expected_result', date_values)
 def test_parse_date_value(value, expected_result):
     date_field = fields.DateField()
-
     assert date_field.parse(value) == expected_result
 
 
@@ -93,7 +88,6 @@ def test_wrong_date_value(value):
     date_field = fields.DateField()
     with raises(FieldValueError) as e:
         date_field.parse(value)
-
     assert str(e.value) == f'{type(value)} is not a valid value for DateField'
 
 
@@ -112,7 +106,6 @@ datetime_values = (
 @mark.parametrize('value, expected_result', datetime_values)
 def test_parse_datetime_value(value, expected_result):
     datetime_field = fields.DatetimeField()
-
     assert datetime_field.parse(value) == expected_result
 
 
@@ -127,7 +120,6 @@ def test_wrong_datetime_value(value):
     datetime_field = fields.DatetimeField()
     with raises(FieldValueError) as e:
         datetime_field.parse(value)
-
     assert str(e.value) == f'{type(value)} is not a valid value for ' \
                            'DatetimeField'
 
@@ -142,7 +134,6 @@ float_values = (
 @mark.parametrize('value, expected_result', float_values)
 def test_parse_float_value(value, expected_result):
     float_field = fields.FloatField()
-
     assert float_field.parse(value) == expected_result
 
 
@@ -157,7 +148,6 @@ def test_wrong_float_value(value):
     float_field = fields.FloatField()
     with raises(FieldValueError) as e:
         float_field.parse(value)
-
     assert str(e.value) == f'{type(value)} is not a valid value for FloatField'
 
 
@@ -171,7 +161,6 @@ decimal_values = (
 @mark.parametrize('value, expected_result', decimal_values)
 def test_parse_decimal_values(value, expected_result):
     decimal_field = fields.DecimalField()
-
     assert decimal_field.parse(value) == expected_result
 
 
@@ -186,12 +175,11 @@ def test_wrong_decimal_value(value):
     decimal_field = fields.DecimalField()
     with raises(FieldValueError) as e:
         decimal_field.parse(value)
-
     assert str(e.value) == f'{type(value)} is not a valid value for ' \
                            'DecimalField'
 
 
-def test_parse_entity_field():
+def test_parse_link_field():
     class NewEntity(Entity):
         _value = fields.StrField()
 
@@ -199,3 +187,21 @@ def test_parse_entity_field():
     new_entity = NewEntity()
 
     assert link_field.parse(new_entity) == new_entity
+
+
+wrong_link_values = (
+    '123',
+    123,
+    datetime.date.today()
+)
+
+
+@mark.parametrize('value', wrong_link_values)
+def test_wrong_link_value(value):
+    class Example(Entity):
+        _value = fields.StrField()
+
+    link_field = fields.LinkField(to=Example)
+    with raises(FieldValueError) as e:
+        link_field.parse(value)
+    assert str(e.value) == f'{type(value)} is not a valid value for LinkField'
