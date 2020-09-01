@@ -158,7 +158,7 @@ cdef class LinkField(Field):
     """
 
     def __init__(self, to, *args, **kwargs):
-        if type(to) is not MetaEntity:
+        if issubclass(type(to), MetaEntity) is False or type(to) is not MetaEntity:
             raise ValueError('to must be an Entity subclass')
         super(LinkField, self).__init__(*args, **kwargs)
         self.to = to
