@@ -185,8 +185,15 @@ def test_parse_link_field():
 
     link_field = fields.LinkField(to=NewEntity)
     new_entity = NewEntity()
-
     assert link_field.parse(new_entity) == new_entity
+
+
+def test_parse_none_link_field():
+    class NewEntity(Entity):
+        pass
+
+    link_field = fields.LinkField(to=NewEntity)
+    assert link_field.parse(None) is None
 
 
 wrong_link_values = (
