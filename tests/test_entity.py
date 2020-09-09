@@ -4,6 +4,7 @@ from enum import Enum
 from pytest import raises, mark
 
 from nyoibo import Entity, fields
+from nyoibo.entities.meta_entity import MetaEntity
 from nyoibo.exceptions import PrivateFieldError
 
 
@@ -160,8 +161,19 @@ wrong_link_to_values = (
 
 
 @mark.parametrize('to', wrong_link_to_values)
-def test_link_field(to):
+def test_wrong_to_in_link_field(to):
     with raises(ValueError) as e:
         class Example(Entity):
             _value = fields.LinkField(to=to)
     assert str(e.value) == 'to must be an Entity subclass'
+
+
+def test_link_to_entity_with_other_metaclass():
+    class OtherMetaEntity(MetaEntity):
+        pass
+
+    class Entity0(Entity, metaclass=OtherMetaEntity):
+        _value = fields.StrField()
+
+    class Entity1(Entity):
+        _entity0 = fields.LinkField(to=Entity0)
