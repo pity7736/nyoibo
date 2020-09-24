@@ -4,6 +4,7 @@ from decimal import Decimal, InvalidOperation
 from nyoibo.entities.meta_entity import MetaEntity
 from nyoibo.exceptions import FieldValueError
 
+
 cdef class Field:
     """Base Field
 
@@ -150,12 +151,16 @@ cdef class DecimalField(Field):
 cdef class LinkField(Field):
     """Field for link between other ``Entity``
 
+    _valid_values is useful to accept others types
+    by inheritance
+
     Args:
         to (Entity): Entity instance
 
     Raises:
         ValueError: if ``to`` is not a subclass of :ref:`entity`
     """
+    _valid_values = ()
 
     def __init__(self, to, *args, **kwargs):
         if issubclass(type(to), MetaEntity) is False:
@@ -164,7 +169,7 @@ cdef class LinkField(Field):
         self.to = to
 
     cpdef public parse(self, value):
-        if value is None or isinstance(value, self.to):
+        if value is None or isinstance(value, (self.to, *self._valid_values)):
             return value
         raise FieldValueError(f'{type(value)} is not a valid value for '
                               f'{self.__class__.__name__}')

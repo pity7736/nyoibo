@@ -29,4 +29,13 @@ class Entity(metaclass=MetaEntity):
             if field.immutable is True or field.private is True:
                 key = f'_{key}'
                 value = field.parse(value)
+            value = self._additional_value(key, field, value)
             setattr(self, key, value)
+
+    def _additional_value(self, key, field, value):
+        """additional value
+
+        This is useful if you want change the behavior
+        by inheritance.
+        """
+        return value
