@@ -17,7 +17,7 @@ Python.
 Installation
 ------------
 
-You can install nyoibo with pip
+You can install nyoibo with pip. Nyoibo requires python 3.6 or later.
 
 ``pip install nyoibo``
 
@@ -97,10 +97,10 @@ Why not use dataclass decorator?
 --------------------------------
 
 ``@dataclass`` decorator helps to avoid to write the ``__init__`` method but if you
-want to use this approach (information hidding and encapsulation), you need to
+want to use this approach (information hiding and encapsulation), you need to
 write getters and setters anyway. Furthermore, with ``nyoibo`` you get extra
 features like casting to right value (due to static typing), validations
-(cooming soon), override ``__init__`` method and so on.
+(coming soon), override ``__init__`` method and so on.
 
 Above example with ``dataclass`` decorator:
 
@@ -138,6 +138,15 @@ Even this code doesn't work becasue ``__init__`` method has ``_value``,
 
     example = Example(_value='some value', _other_value=10)
 
+
+TODO
+----
+
+- Custom validation for fields
+- Arrays fields (lists, tuples)
+- DictField
+- JsonField
+- Container field
 
 License
 -------
