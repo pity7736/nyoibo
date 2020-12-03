@@ -61,6 +61,7 @@ setup(
     ext_modules=extensions,
     url='https://github.com/pity7736/nyoibo',
     tests_require=tests_require,
+    python_requires='>=3.7',
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
@@ -70,6 +71,7 @@ setup(
         'Programming Language :: Python :: 3 :: Only',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
         'Topic :: Software Development',
         'Topic :: Utilities',
         'Typing :: Typed'
