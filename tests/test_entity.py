@@ -132,6 +132,43 @@ def test_override_setter_with_parsing():
     assert setter.get_value() == 15
 
 
+def test_set_value_from_other_field():
+    class Setter(Entity):
+        _value = fields.StrField(immutable=False)
+        _other_value = fields.StrField()
+
+        def set_value(self, value):
+            value = Setter._value.parse(value)
+            self._value = value
+            self._other_value = f'{value} world'
+
+    obj = Setter(value='hi')
+
+    assert obj.value == 'hi'
+    assert obj.other_value == 'hi world'
+
+
+def test_set_value_from_other_field_with_different_order():
+    class Setter(Entity):
+        _other_value = fields.StrField()
+        _value = fields.StrField(immutable=False)
+
+        def set_value(self, value):
+            value = Setter._value.parse(value)
+            self._value = value
+            self._other_value = f'{value} world'
+
+    obj = Setter(value='hi')
+
+    assert obj.value == 'hi'
+    assert obj.other_value == 'hi world'
+
+
+def test_set_none_to_immutable_field_if_value_is_not_passed():
+    rate = Rate()
+    assert rate.other_value is None
+
+
 def test_private_value_is_assigned():
     class Private(Entity):
         _add = fields.IntField()

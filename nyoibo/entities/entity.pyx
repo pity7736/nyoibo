@@ -28,7 +28,10 @@ class Entity(metaclass=MetaEntity):
                 value = field.default_value
             if field.immutable is True or field.private is True:
                 key = f'_{key}'
-                value = field.parse(value)
+                current_value = getattr(self, key)
+                if issubclass(type(current_value), fields.Field):
+                    current_value = None
+                value = field.parse(current_value or value)
             value = self._additional_value(key, field, value)
             setattr(self, key, value)
 
