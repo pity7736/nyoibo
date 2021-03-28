@@ -51,7 +51,7 @@ cdef class Field:
             value = self._parse(value)
             if value and self.choices:
                 return self.choices(value)
-            if value is None or type(value) is self._internal_type:
+            if value is None or isinstance(value, self._internal_type):
                 return value
             return self._internal_type(value)
         except self._exceptions:

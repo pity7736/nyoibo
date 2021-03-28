@@ -2048,7 +2048,7 @@ PyObject *__pyx_f_6nyoibo_6fields_5Field_parse(struct __pyx_obj_6nyoibo_6fields_
  *             value = self._parse(value)
  *             if value and self.choices:             # <<<<<<<<<<<<<<
  *                 return self.choices(value)
- *             if value is None or type(value) is self._internal_type:
+ *             if value is None or isinstance(value, self._internal_type):
  */
       __pyx_t_9 = __Pyx_PyObject_IsTrue(__pyx_v_value); if (unlikely(__pyx_t_9 < 0)) __PYX_ERR(0, 52, __pyx_L3_error)
       if (__pyx_t_9) {
@@ -2065,7 +2065,7 @@ PyObject *__pyx_f_6nyoibo_6fields_5Field_parse(struct __pyx_obj_6nyoibo_6fields_
  *             value = self._parse(value)
  *             if value and self.choices:
  *                 return self.choices(value)             # <<<<<<<<<<<<<<
- *             if value is None or type(value) is self._internal_type:
+ *             if value is None or isinstance(value, self._internal_type):
  *                 return value
  */
         __Pyx_XDECREF(__pyx_r);
@@ -2094,14 +2094,14 @@ PyObject *__pyx_f_6nyoibo_6fields_5Field_parse(struct __pyx_obj_6nyoibo_6fields_
  *             value = self._parse(value)
  *             if value and self.choices:             # <<<<<<<<<<<<<<
  *                 return self.choices(value)
- *             if value is None or type(value) is self._internal_type:
+ *             if value is None or isinstance(value, self._internal_type):
  */
       }
 
       /* "nyoibo/fields.pyx":54
  *             if value and self.choices:
  *                 return self.choices(value)
- *             if value is None or type(value) is self._internal_type:             # <<<<<<<<<<<<<<
+ *             if value is None or isinstance(value, self._internal_type):             # <<<<<<<<<<<<<<
  *                 return value
  *             return self._internal_type(value)
  */
@@ -2114,7 +2114,7 @@ PyObject *__pyx_f_6nyoibo_6fields_5Field_parse(struct __pyx_obj_6nyoibo_6fields_
       }
       __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_internal_type); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 54, __pyx_L3_error)
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_10 = (((PyObject *)Py_TYPE(__pyx_v_value)) == __pyx_t_1);
+      __pyx_t_10 = PyObject_IsInstance(__pyx_v_value, __pyx_t_1); if (unlikely(__pyx_t_10 == ((int)-1))) __PYX_ERR(0, 54, __pyx_L3_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __pyx_t_9 = (__pyx_t_10 != 0);
       __pyx_t_8 = __pyx_t_9;
@@ -2123,7 +2123,7 @@ PyObject *__pyx_f_6nyoibo_6fields_5Field_parse(struct __pyx_obj_6nyoibo_6fields_
 
         /* "nyoibo/fields.pyx":55
  *                 return self.choices(value)
- *             if value is None or type(value) is self._internal_type:
+ *             if value is None or isinstance(value, self._internal_type):
  *                 return value             # <<<<<<<<<<<<<<
  *             return self._internal_type(value)
  *         except self._exceptions:
@@ -2136,14 +2136,14 @@ PyObject *__pyx_f_6nyoibo_6fields_5Field_parse(struct __pyx_obj_6nyoibo_6fields_
         /* "nyoibo/fields.pyx":54
  *             if value and self.choices:
  *                 return self.choices(value)
- *             if value is None or type(value) is self._internal_type:             # <<<<<<<<<<<<<<
+ *             if value is None or isinstance(value, self._internal_type):             # <<<<<<<<<<<<<<
  *                 return value
  *             return self._internal_type(value)
  */
       }
 
       /* "nyoibo/fields.pyx":56
- *             if value is None or type(value) is self._internal_type:
+ *             if value is None or isinstance(value, self._internal_type):
  *                 return value
  *             return self._internal_type(value)             # <<<<<<<<<<<<<<
  *         except self._exceptions:
