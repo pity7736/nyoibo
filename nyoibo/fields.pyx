@@ -171,5 +171,9 @@ cdef class LinkField(Field):
     cpdef public parse(self, value):
         if value is None or isinstance(value, (self.to, *self._valid_values)):
             return value
+        if isinstance(value, dict):
+            if value:
+                return self.to(**value)
+            return None
         raise FieldValueError(f'{type(value)} is not a valid value for '
                               f'{self.__class__.__name__}')

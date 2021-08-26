@@ -214,3 +214,75 @@ def test_link_to_entity_with_other_metaclass():
 
     class Entity1(Entity):
         _entity0 = fields.LinkField(to=Entity0)
+
+
+def test_instance_entity_from_dict_with_link_field():
+    class Model0(Entity):
+        _value = fields.StrField()
+        _int_value = fields.IntField()
+
+    class Model1(Entity):
+        _link = fields.LinkField(to=Model0)
+        _name = fields.StrField()
+
+    data = {
+        'name': 'test',
+        'link': {
+            'value': 'hi world',
+            'int_value': '5',
+            'different_field': 'some value'
+        }
+    }
+    instance = Model1(**data)
+    assert instance.name == 'test'
+    assert instance.link.value == 'hi world'
+    assert instance.link.int_value == 5
+
+
+def test_instance_entity_from_dict_with_empty_link_field_data():
+    class Model0(Entity):
+        _value = fields.StrField()
+        _int_value = fields.IntField()
+
+    class Model1(Entity):
+        _link = fields.LinkField(to=Model0)
+        _name = fields.StrField()
+
+    data = {
+        'name': 'test',
+        'link': {}
+    }
+    instance = Model1(**data)
+    assert instance.name == 'test'
+    assert instance.link is None
+
+
+def test_instance_entity_from_dict_with_link_field_in_2_depth():
+    class Model0(Entity):
+        _value = fields.StrField()
+        _int_value = fields.IntField()
+
+    class Model1(Entity):
+        _link = fields.LinkField(to=Model0)
+        _name = fields.StrField()
+
+    class Model2(Entity):
+        _value = fields.StrField()
+        _link = fields.LinkField(to=Model1)
+
+    data = {
+        'value': 'some value',
+        'link': {
+            'name': 'test',
+            'link': {
+                'value': 'hi world',
+                'int_value': '5',
+                'different_field': 'some value'
+            }
+        }
+    }
+    instance = Model2(**data)
+    assert instance.value == 'some value'
+    assert instance.link.name == 'test'
+    assert instance.link.link.value == 'hi world'
+    assert instance.link.link.int_value == 5

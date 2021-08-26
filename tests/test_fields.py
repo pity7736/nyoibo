@@ -212,3 +212,33 @@ def test_wrong_link_value(value):
     with raises(FieldValueError) as e:
         link_field.parse(value)
     assert str(e.value) == f'{type(value)} is not a valid value for LinkField'
+
+
+def test_parse_link_field_from_dict():
+    class NewEntity(Entity):
+        _field0 = fields.StrField()
+        _field1 = fields.IntField()
+
+    link_field = fields.LinkField(to=NewEntity)
+    data = {
+        'field0': 'hi',
+        'field1': '10'
+    }
+    parsed = link_field.parse(data)
+    assert parsed.field0 == 'hi'
+    assert parsed.field1 == 10
+
+
+def test_parse_link_field_from_dict_with_wrong_data():
+    class NewEntity(Entity):
+        _field0 = fields.StrField()
+        _field1 = fields.IntField()
+
+    link_field = fields.LinkField(to=NewEntity)
+    data = {
+        'field32': 'hi',
+        'field2': '10'
+    }
+    parsed = link_field.parse(data)
+    assert parsed.field0 is None
+    assert parsed.field1 is None
