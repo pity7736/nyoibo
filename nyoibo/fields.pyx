@@ -177,3 +177,11 @@ cdef class LinkField(Field):
             return None
         raise FieldValueError(f'{type(value)} is not a valid value for '
                               f'{self.__class__.__name__}')
+
+
+class DictField(Field):
+    """
+    Field for dict values
+    """
+
+    _internal_type = dict

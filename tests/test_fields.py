@@ -242,3 +242,12 @@ def test_parse_link_field_from_dict_with_wrong_data():
     parsed = link_field.parse(data)
     assert parsed.field0 is None
     assert parsed.field1 is None
+
+
+def test_parse_dict_field():
+    field = fields.DictField()
+    data = {
+        'name': 'Julian',
+        'gender': 'male'
+    }
+    assert field.parse(data) == data
