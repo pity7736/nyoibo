@@ -33,6 +33,11 @@ jobs:
     docker:
       - image: circleci/python:3.9
 
+  test-python-3.10:
+    <<: *template
+    docker:
+      - image: circleci/python:3.10
+
 
 workflows:
   version: 2
