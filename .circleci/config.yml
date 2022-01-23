@@ -46,3 +46,4 @@ workflows:
       - test-python-3.7
       - test-python-3.8
       - test-python-3.9
+      - test-python-3.10
