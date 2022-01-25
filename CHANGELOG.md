@@ -1,7 +1,21 @@
 <a name="v0.3.0"></a>
-## [v0.3.0](https://github.com/pity7736/nyoibo/compare/v0.2.1...v0.3.0) (2021-08-27)
+## [v0.3.0](https://github.com/pity7736/nyoibo/compare/v0.2.1...v0.3.0) (2022-01-24)
+
+### Bug Fixes
+- **ci:** add python3.10 job to jobs ([99ef290](https://github.com/pity7736/nyoibo/commit/99ef2902018f95e2cb7990e0930d18b4116c531a))
+
+### Build
+- version 0.3.0 ([95e4a01](https://github.com/pity7736/nyoibo/commit/95e4a0109e9b5d85460beaecad63c81a98fb49e7))
+
+### Chore
+- **changelog:** use git-autochangelog ([a7cefd9](https://github.com/pity7736/nyoibo/commit/a7cefd94ecec0cefa94b250c0743596c79fbd769))
+- update requirements for python3.10 support ([e9f7d57](https://github.com/pity7736/nyoibo/commit/e9f7d573797a56ca0032a156a0f42b0e6175a73e))
+
+### CI
+- test on python 3.10 ([211c408](https://github.com/pity7736/nyoibo/commit/211c4089ec12d628e9341834acfb2e2798610d37))
 
 ### Features
+- **fields:** add DictField ([6ccc132](https://github.com/pity7736/nyoibo/commit/6ccc132e5ff9ec5ab01d2e0f34cd4733bbe04158))
 - parse LinkField from dict ([8809589](https://github.com/pity7736/nyoibo/commit/8809589e5d961539ef9faede8dcd16f0b0dedc2f))
 
 
