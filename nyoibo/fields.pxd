@@ -4,6 +4,7 @@ cdef class Field:
     cdef readonly private
     cdef readonly immutable
     cdef readonly choices
+    cdef readonly required
     cpdef public parse(self, value)
     cdef _parse(self, value)
 

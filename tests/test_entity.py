@@ -5,7 +5,7 @@ from pytest import raises, mark
 
 from nyoibo import Entity, fields
 from nyoibo.entities.meta_entity import MetaEntity
-from nyoibo.exceptions import PrivateFieldError
+from nyoibo.exceptions import PrivateFieldError, RequiredValueError
 
 
 class Types(Enum):
@@ -286,3 +286,11 @@ def test_instance_entity_from_dict_with_link_field_in_2_depth():
     assert instance.link.name == 'test'
     assert instance.link.link.value == 'hi world'
     assert instance.link.link.int_value == 5
+
+
+def test_with_required_field():
+    class Model(Entity):
+        _value = fields.StrField(required=True)
+
+    with raises(RequiredValueError):
+        Model()

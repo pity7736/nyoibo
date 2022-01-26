@@ -2,8 +2,7 @@ import datetime
 from decimal import Decimal, InvalidOperation
 
 from nyoibo.entities.meta_entity import MetaEntity
-from nyoibo.exceptions import FieldValueError
-
+from nyoibo.exceptions import FieldValueError, RequiredValueError
 
 cdef class Field:
     """Base Field
@@ -29,11 +28,12 @@ cdef class Field:
     _exceptions = (TypeError, ValueError)
 
     def __init__(self, private=False, immutable=True, default_value=None,
-                 choices=None):
+                 choices=None, required=False):
         self.default_value = default_value
         self.private = private
         self.immutable = immutable
         self.choices = choices
+        self.required = required
 
     cpdef public parse(self, value):
         """Parse and cast to ``_internal_type``
@@ -51,7 +51,11 @@ cdef class Field:
             value = self._parse(value)
             if value and self.choices:
                 return self.choices(value)
-            if value is None or isinstance(value, self._internal_type):
+            if isinstance(value, self._internal_type):
+                return value
+            if value is None:
+                if self.required is True:
+                    raise RequiredValueError('value is required')
                 return value
             return self._internal_type(value)
         except self._exceptions:

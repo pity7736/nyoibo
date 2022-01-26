@@ -9,3 +9,7 @@ class PrivateFieldError(NyoiboError):
 
 class FieldValueError(NyoiboError):
     pass
+
+
+class RequiredValueError(FieldValueError):
+    pass
