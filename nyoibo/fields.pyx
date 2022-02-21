@@ -18,20 +18,21 @@ cdef class Field:
     Args:
         private (bool): set if field is private or not. When private=True
             getter and setters will not be created. False by default.
-        immutable (bool): set if field is immutable or not. When immutable=True
-            setter will not be created. True by default.
+        mutable (bool): set if field is mutable or not. When mutable=False
+            setter will not be created. False by default.
         default_value (any): default value to field.
         choices (Enum): value to this field must be a Enum key or Enum key.
+        required (bool): validate if value is not None. False by default.
     """
 
     _internal_type = None
     _exceptions = (TypeError, ValueError)
 
-    def __init__(self, private=False, immutable=True, default_value=None,
+    def __init__(self, private=False, mutable=False, default_value=None,
                  choices=None, required=False):
         self.default_value = default_value
         self.private = private
-        self.immutable = immutable
+        self.mutable = mutable
         self.choices = choices
         self.required = required
 
@@ -46,6 +47,7 @@ cdef class Field:
 
         Raises:
             FieldValueError: if the casting failed.
+            RequiredValueError: if a field has required = True and value is None
         """
         try:
             value = self._parse(value)

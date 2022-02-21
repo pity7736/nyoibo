@@ -19,14 +19,14 @@ def test_additional_value():
     assert instance.int_value == 2
 
 
-immutable_params = (
-    True,
-    False
+mutable_params = (
+    False,
+    True
 )
 
 
-@mark.parametrize('immutable', immutable_params)
-def test_additional_value_with_different_object_type(immutable):
+@mark.parametrize('mutable', mutable_params)
+def test_additional_value_with_different_object_type(mutable):
     class Model0(Entity):
         _value = fields.StrField()
 
@@ -43,7 +43,7 @@ def test_additional_value_with_different_object_type(immutable):
         _valid_values = (Related,)
 
     class Model1(Entity):
-        _model0 = ExtendedLinkField(to=Model0, immutable=immutable)
+        _model0 = ExtendedLinkField(to=Model0, mutable=mutable)
 
         def _additional_value(self, key, field, value):
             if isinstance(field, ExtendedLinkField):

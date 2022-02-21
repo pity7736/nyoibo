@@ -15,7 +15,7 @@ class Types(Enum):
 
 
 class Rate(Entity):
-    _value = fields.StrField(immutable=False)
+    _value = fields.StrField(mutable=True)
     _other_value = fields.StrField()
     _default = fields.StrField(default_value='hello world')
     _other_default = fields.IntField(default_value=1)
@@ -99,7 +99,7 @@ def test_override_getter():
 
 def test_override_setter():
     class Setter(Entity):
-        _value = fields.IntField(private=False, immutable=False)
+        _value = fields.IntField(private=False, mutable=True)
 
         def set_value(self, value):
             self._value = value + 5
@@ -116,7 +116,7 @@ def test_override_setter():
 
 def test_override_setter_with_parsing():
     class Setter(Entity):
-        _value = fields.IntField(private=False, immutable=False)
+        _value = fields.IntField(private=False, mutable=True)
 
         def set_value(self, value):
             value = Setter._value.parse(value)
@@ -134,7 +134,7 @@ def test_override_setter_with_parsing():
 
 def test_set_value_from_other_field():
     class Setter(Entity):
-        _value = fields.StrField(immutable=False)
+        _value = fields.StrField(mutable=True)
         _other_value = fields.StrField()
 
         def set_value(self, value):
@@ -151,7 +151,7 @@ def test_set_value_from_other_field():
 def test_set_value_from_other_field_with_different_order():
     class Setter(Entity):
         _other_value = fields.StrField()
-        _value = fields.StrField(immutable=False)
+        _value = fields.StrField(mutable=True)
 
         def set_value(self, value):
             value = Setter._value.parse(value)

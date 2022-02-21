@@ -47,7 +47,7 @@ class MetaEntity(type):
             getter = namespace.get(getter_name) or create_getter(attr=attr)
             getters_setters[getter_name] = getter
             setter = None
-            if field.immutable is False:
+            if field.mutable is True:
                 setter_name = f'set_{field_name}'
                 setter = namespace.get(setter_name) or create_setter(attr=attr)
                 getters_setters[setter_name] = setter
