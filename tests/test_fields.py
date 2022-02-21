@@ -4,7 +4,7 @@ from decimal import Decimal
 from pytest import mark, raises
 
 from nyoibo import Entity, fields
-from nyoibo.exceptions import FieldValueError
+from nyoibo.exceptions import FieldValueError, StrLengthError
 
 str_values = (
     ('10.5', '10.5'),
@@ -251,3 +251,16 @@ def test_parse_dict_field():
         'gender': 'male'
     }
     assert field.parse(data) == data
+
+
+def test_str_max_length():
+    field = fields.StrField(max_length=10)
+    with raises(StrLengthError) as e:
+        field.parse('this is a longer string than max')
+
+    assert str(e.value) == 'length value (32) is greater than max_value (10)'
+
+
+def test_str_max_length_is_positive():
+    with raises(AssertionError):
+        fields.StrField(max_length=-1)

@@ -2,7 +2,9 @@ import datetime
 from decimal import Decimal, InvalidOperation
 
 from nyoibo.entities.meta_entity import MetaEntity
-from nyoibo.exceptions import FieldValueError, RequiredValueError
+from nyoibo.exceptions import FieldValueError, RequiredValueError, \
+    StrLengthError
+
 
 cdef class Field:
     """Base Field
@@ -29,7 +31,7 @@ cdef class Field:
     _exceptions = (TypeError, ValueError)
 
     def __init__(self, private=False, mutable=False, default_value=None,
-                 choices=None, required=False):
+                 choices=None, bint required=False):
         self.default_value = default_value
         self.private = private
         self.mutable = mutable
@@ -83,9 +85,25 @@ cdef class Field:
 
 cdef class StrField(Field):
     """Field for string values
+
+    Args:
+        max_length (int): maximum lenght for str value
+
+    Raises:
+        StrLengthError: if len(value) is > max_length
     """
 
     _internal_type = str
+
+    def __init__(self, int max_length=0, *args, **kwargs):
+        assert max_length >= 0, 'max_length must to be >= 0'
+        self.max_length = max_length
+        super().__init__(*args, **kwargs)
+
+    cdef _parse(self, value):
+        if self.max_length and len(value) > self.max_length:
+            raise StrLengthError(f'length value ({len(value)}) is greater than max_value ({self.max_length})')
+        return value
 
 
 cdef class IntField(Field):

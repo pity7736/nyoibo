@@ -13,3 +13,7 @@ class FieldValueError(NyoiboError):
 
 class RequiredValueError(FieldValueError):
     pass
+
+
+class StrLengthError(FieldValueError):
+    pass

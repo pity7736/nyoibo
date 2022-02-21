@@ -29,10 +29,7 @@ class Entity(metaclass=MetaEntity):
             if field.mutable is False or field.private is True:
                 key = f'_{key}'
                 current_value = getattr(self, key)
-                print('current value 0', current_value, type(current_value))
                 if issubclass(type(current_value), fields.Field):
-                    # raise ValueError()
-                    print('current value 1', current_value, type(current_value))
                     current_value = None
                 value = field.parse(current_value or value)
             value = self._additional_value(key, field, value)
