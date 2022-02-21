@@ -4,7 +4,8 @@ from decimal import Decimal
 from pytest import mark, raises
 
 from nyoibo import Entity, fields
-from nyoibo.exceptions import FieldValueError, StrLengthError
+from nyoibo.exceptions import FieldValueError, StrLengthError, \
+    IntMinValueError, IntMaxValueError
 
 str_values = (
     ('10.5', '10.5'),
@@ -264,3 +265,29 @@ def test_str_max_length():
 def test_str_max_length_is_positive():
     with raises(AssertionError):
         fields.StrField(max_length=-1)
+
+
+def test_int_min_value():
+    field = fields.IntField(min_value=0)
+    with raises(IntMinValueError) as e:
+        field.parse(-1)
+
+    assert str(e.value) == 'value (-1) must be >= min_value (0)'
+
+
+def test_assert_int_min_value_is_integer():
+    with raises(AssertionError):
+        fields.IntField(min_value='some value')
+
+
+def test_int_max_value():
+    field = fields.IntField(max_value=10)
+    with raises(IntMaxValueError) as e:
+        field.parse(11)
+
+    assert str(e.value) == 'value (11) must be <= max_value (10)'
+
+
+def test_assert_int_max_value_is_integer():
+    with raises(AssertionError):
+        fields.IntField(max_value='some value')

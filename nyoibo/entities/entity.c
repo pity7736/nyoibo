@@ -904,6 +904,7 @@ static const char *__pyx_f[] = {
 /*--- Type declarations ---*/
 struct __pyx_obj_6nyoibo_6fields_Field;
 struct __pyx_obj_6nyoibo_6fields_StrField;
+struct __pyx_obj_6nyoibo_6fields_IntField;
 struct __pyx_obj_6nyoibo_6fields_LinkField;
 
 /* "fields.pxd":2
@@ -919,7 +920,7 @@ struct __pyx_obj_6nyoibo_6fields_Field {
   PyObject *private;
   PyObject *mutable;
   PyObject *choices;
-  PyObject *required;
+  int required;
 };
 
 
@@ -936,8 +937,22 @@ struct __pyx_obj_6nyoibo_6fields_StrField {
 };
 
 
-/* "fields.pxd":15
- *     cdef int max_length
+/* "fields.pxd":16
+ * 
+ * 
+ * cdef class IntField(Field):             # <<<<<<<<<<<<<<
+ *     cdef min_value
+ *     cdef max_value
+ */
+struct __pyx_obj_6nyoibo_6fields_IntField {
+  struct __pyx_obj_6nyoibo_6fields_Field __pyx_base;
+  PyObject *min_value;
+  PyObject *max_value;
+};
+
+
+/* "fields.pxd":21
+ * 
  * 
  * cdef class LinkField(Field):             # <<<<<<<<<<<<<<
  *     cdef readonly to
@@ -977,8 +992,22 @@ struct __pyx_vtabstruct_6nyoibo_6fields_StrField {
 static struct __pyx_vtabstruct_6nyoibo_6fields_StrField *__pyx_vtabptr_6nyoibo_6fields_StrField;
 
 
-/* "fields.pxd":15
- *     cdef int max_length
+/* "fields.pxd":16
+ * 
+ * 
+ * cdef class IntField(Field):             # <<<<<<<<<<<<<<
+ *     cdef min_value
+ *     cdef max_value
+ */
+
+struct __pyx_vtabstruct_6nyoibo_6fields_IntField {
+  struct __pyx_vtabstruct_6nyoibo_6fields_Field __pyx_base;
+};
+static struct __pyx_vtabstruct_6nyoibo_6fields_IntField *__pyx_vtabptr_6nyoibo_6fields_IntField;
+
+
+/* "fields.pxd":21
+ * 
  * 
  * cdef class LinkField(Field):             # <<<<<<<<<<<<<<
  *     cdef readonly to
@@ -1459,6 +1488,7 @@ static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 /* Module declarations from 'nyoibo.fields' */
 static PyTypeObject *__pyx_ptype_6nyoibo_6fields_Field = 0;
 static PyTypeObject *__pyx_ptype_6nyoibo_6fields_StrField = 0;
+static PyTypeObject *__pyx_ptype_6nyoibo_6fields_IntField = 0;
 static PyTypeObject *__pyx_ptype_6nyoibo_6fields_LinkField = 0;
 
 /* Module declarations from 'nyoibo.entities.entity' */
@@ -2245,9 +2275,12 @@ static int __Pyx_modinit_type_import_code(void) {
   __pyx_ptype_6nyoibo_6fields_StrField = __Pyx_ImportType(__pyx_t_1, "nyoibo.fields", "StrField", sizeof(struct __pyx_obj_6nyoibo_6fields_StrField), __Pyx_ImportType_CheckSize_Warn);
    if (!__pyx_ptype_6nyoibo_6fields_StrField) __PYX_ERR(1, 12, __pyx_L1_error)
   __pyx_vtabptr_6nyoibo_6fields_StrField = (struct __pyx_vtabstruct_6nyoibo_6fields_StrField*)__Pyx_GetVtable(__pyx_ptype_6nyoibo_6fields_StrField->tp_dict); if (unlikely(!__pyx_vtabptr_6nyoibo_6fields_StrField)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_ptype_6nyoibo_6fields_IntField = __Pyx_ImportType(__pyx_t_1, "nyoibo.fields", "IntField", sizeof(struct __pyx_obj_6nyoibo_6fields_IntField), __Pyx_ImportType_CheckSize_Warn);
+   if (!__pyx_ptype_6nyoibo_6fields_IntField) __PYX_ERR(1, 16, __pyx_L1_error)
+  __pyx_vtabptr_6nyoibo_6fields_IntField = (struct __pyx_vtabstruct_6nyoibo_6fields_IntField*)__Pyx_GetVtable(__pyx_ptype_6nyoibo_6fields_IntField->tp_dict); if (unlikely(!__pyx_vtabptr_6nyoibo_6fields_IntField)) __PYX_ERR(1, 16, __pyx_L1_error)
   __pyx_ptype_6nyoibo_6fields_LinkField = __Pyx_ImportType(__pyx_t_1, "nyoibo.fields", "LinkField", sizeof(struct __pyx_obj_6nyoibo_6fields_LinkField), __Pyx_ImportType_CheckSize_Warn);
-   if (!__pyx_ptype_6nyoibo_6fields_LinkField) __PYX_ERR(1, 15, __pyx_L1_error)
-  __pyx_vtabptr_6nyoibo_6fields_LinkField = (struct __pyx_vtabstruct_6nyoibo_6fields_LinkField*)__Pyx_GetVtable(__pyx_ptype_6nyoibo_6fields_LinkField->tp_dict); if (unlikely(!__pyx_vtabptr_6nyoibo_6fields_LinkField)) __PYX_ERR(1, 15, __pyx_L1_error)
+   if (!__pyx_ptype_6nyoibo_6fields_LinkField) __PYX_ERR(1, 21, __pyx_L1_error)
+  __pyx_vtabptr_6nyoibo_6fields_LinkField = (struct __pyx_vtabstruct_6nyoibo_6fields_LinkField*)__Pyx_GetVtable(__pyx_ptype_6nyoibo_6fields_LinkField->tp_dict); if (unlikely(!__pyx_vtabptr_6nyoibo_6fields_LinkField)) __PYX_ERR(1, 21, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_RefNannyFinishContext();
   return 0;

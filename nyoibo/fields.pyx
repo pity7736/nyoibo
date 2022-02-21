@@ -3,8 +3,7 @@ from decimal import Decimal, InvalidOperation
 
 from nyoibo.entities.meta_entity import MetaEntity
 from nyoibo.exceptions import FieldValueError, RequiredValueError, \
-    StrLengthError
-
+    StrLengthError, IntMinValueError, IntMaxValueError
 
 cdef class Field:
     """Base Field
@@ -107,9 +106,32 @@ cdef class StrField(Field):
 
 
 cdef class IntField(Field):
-    """Field for integer values"""
+    """Field for integer values
+
+    Args:
+        min_value (int): minimum value
+        max_value (int): maximum value
+
+    Raises:
+        AssertionError: if min_value or max_value are no integer
+    """
 
     _internal_type = int
+
+    def __init__(self, min_value=None, max_value=None, *args, **kwargs):
+        assert min_value is None or isinstance(min_value, int), 'min_value must be an integer'
+        assert max_value is None or isinstance(max_value, int), 'max_value must be an integer'
+        self.min_value = min_value
+        self.max_value = max_value
+        super().__init__(*args, **kwargs)
+
+    cpdef public parse(self, value):
+        value = super(IntField, self).parse(value)
+        if self.min_value is not None and value < self.min_value:
+            raise IntMinValueError(f'value ({value}) must be >= min_value ({self.min_value})')
+        if self.max_value is not None and value > self.max_value:
+            raise IntMaxValueError(f'value ({value}) must be <= max_value ({self.max_value})')
+        return value
 
     cdef _parse(self, value):
         if isinstance(value, str):

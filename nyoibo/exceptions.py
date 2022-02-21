@@ -17,3 +17,11 @@ class RequiredValueError(FieldValueError):
 
 class StrLengthError(FieldValueError):
     pass
+
+
+class IntMinValueError(FieldValueError):
+    pass
+
+
+class IntMaxValueError(FieldValueError):
+    pass

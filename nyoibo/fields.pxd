@@ -12,5 +12,11 @@ cdef class Field:
 cdef class StrField(Field):
     cdef int max_length
 
+
+cdef class IntField(Field):
+    cdef min_value
+    cdef max_value
+
+
 cdef class LinkField(Field):
     cdef readonly to
