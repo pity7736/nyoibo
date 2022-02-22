@@ -1,4 +1,5 @@
 import datetime
+import json
 from decimal import Decimal
 
 from pytest import mark, raises
@@ -6,6 +7,7 @@ from pytest import mark, raises
 from nyoibo import Entity, fields
 from nyoibo.exceptions import FieldValueError, StrLengthError, \
     IntMinValueError, IntMaxValueError
+
 
 str_values = (
     ('10.5', '10.5'),
@@ -291,3 +293,21 @@ def test_int_max_value():
 def test_assert_int_max_value_is_integer():
     with raises(AssertionError):
         fields.IntField(max_value='some value')
+
+
+def test_parse_json_field():
+    field = fields.JSONField()
+    data = {
+        'name': 'Julian',
+        'gender': 'male'
+    }
+    assert field.parse(data) == json.dumps(data)
+
+
+def test_parse_json_field_with_invalid_data():
+    field = fields.JSONField()
+    data = datetime.date.today()
+    with raises(FieldValueError) as e:
+        field.parse(data)
+
+    assert str(e.value) == f'data {data} is not serializable'

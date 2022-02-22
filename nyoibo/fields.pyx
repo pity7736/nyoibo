@@ -1,9 +1,11 @@
 import datetime
+import json
 from decimal import Decimal, InvalidOperation
 
 from nyoibo.entities.meta_entity import MetaEntity
 from nyoibo.exceptions import FieldValueError, RequiredValueError, \
     StrLengthError, IntMinValueError, IntMaxValueError
+
 
 cdef class Field:
     """Base Field
@@ -231,3 +233,14 @@ class DictField(Field):
     """
 
     _internal_type = dict
+
+
+class JSONField(Field):
+
+    _internal_type = str
+
+    def parse(self, value):
+        try:
+            return json.dumps(value)
+        except self._exceptions:
+            raise FieldValueError(f'data {value} is not serializable')
