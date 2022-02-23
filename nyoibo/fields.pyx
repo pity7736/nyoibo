@@ -249,3 +249,8 @@ class JSONField(Field):
 class TupleField(Field):
 
     _internal_type = tuple
+
+
+class ListField(Field):
+
+    _internal_type = list

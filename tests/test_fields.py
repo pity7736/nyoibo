@@ -316,3 +316,8 @@ def test_parse_json_field_with_invalid_data():
 def test_parse_tuple_field():
     field = fields.TupleField()
     assert field.parse([1, 2, 3]) == (1, 2, 3)
+
+
+def test_parse_list_field():
+    field = fields.ListField()
+    assert field.parse((1, 2, 3)) == [1, 2, 3]

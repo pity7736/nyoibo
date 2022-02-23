@@ -1755,6 +1755,7 @@ static const char __pyx_k_DateField[] = "DateField";
 static const char __pyx_k_DictField[] = "DictField";
 static const char __pyx_k_JSONField[] = "JSONField";
 static const char __pyx_k_LinkField[] = "LinkField";
+static const char __pyx_k_ListField[] = "ListField";
 static const char __pyx_k_TypeError[] = "TypeError";
 static const char __pyx_k_max_value[] = "max_value";
 static const char __pyx_k_metaclass[] = "__metaclass__";
@@ -1841,6 +1842,7 @@ static PyObject *__pyx_n_s_InvalidOperation;
 static PyObject *__pyx_n_s_JSONField;
 static PyObject *__pyx_n_s_JSONField_parse;
 static PyObject *__pyx_n_s_LinkField;
+static PyObject *__pyx_n_s_ListField;
 static PyObject *__pyx_n_s_MetaEntity;
 static PyObject *__pyx_n_s_PickleError;
 static PyObject *__pyx_n_s_RequiredValueError;
@@ -13168,6 +13170,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_JSONField, __pyx_k_JSONField, sizeof(__pyx_k_JSONField), 0, 0, 1, 1},
   {&__pyx_n_s_JSONField_parse, __pyx_k_JSONField_parse, sizeof(__pyx_k_JSONField_parse), 0, 0, 1, 1},
   {&__pyx_n_s_LinkField, __pyx_k_LinkField, sizeof(__pyx_k_LinkField), 0, 0, 1, 1},
+  {&__pyx_n_s_ListField, __pyx_k_ListField, sizeof(__pyx_k_ListField), 0, 0, 1, 1},
   {&__pyx_n_s_MetaEntity, __pyx_k_MetaEntity, sizeof(__pyx_k_MetaEntity), 0, 0, 1, 1},
   {&__pyx_n_s_PickleError, __pyx_k_PickleError, sizeof(__pyx_k_PickleError), 0, 0, 1, 1},
   {&__pyx_n_s_RequiredValueError, __pyx_k_RequiredValueError, sizeof(__pyx_k_RequiredValueError), 0, 0, 1, 1},
@@ -14138,6 +14141,8 @@ if (!__Pyx_RefNanny) {
  * class TupleField(Field):
  * 
  *     _internal_type = tuple             # <<<<<<<<<<<<<<
+ * 
+ * 
  */
   if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_internal_type, ((PyObject *)(&PyTuple_Type))) < 0) __PYX_ERR(0, 251, __pyx_L1_error)
 
@@ -14151,6 +14156,45 @@ if (!__Pyx_RefNanny) {
   __pyx_t_4 = __Pyx_Py3ClassCreate(__pyx_t_2, __pyx_n_s_TupleField, __pyx_t_1, __pyx_t_3, NULL, 0, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 249, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_TupleField, __pyx_t_4) < 0) __PYX_ERR(0, 249, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+  /* "nyoibo/fields.pyx":254
+ * 
+ * 
+ * class ListField(Field):             # <<<<<<<<<<<<<<
+ * 
+ *     _internal_type = list
+ */
+  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 254, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_INCREF(((PyObject *)__pyx_ptype_6nyoibo_6fields_Field));
+  __Pyx_GIVEREF(((PyObject *)__pyx_ptype_6nyoibo_6fields_Field));
+  PyTuple_SET_ITEM(__pyx_t_1, 0, ((PyObject *)__pyx_ptype_6nyoibo_6fields_Field));
+  __pyx_t_2 = __Pyx_CalculateMetaclass(NULL, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 254, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = __Pyx_Py3MetaclassPrepare(__pyx_t_2, __pyx_t_1, __pyx_n_s_ListField, __pyx_n_s_ListField, (PyObject *) NULL, __pyx_n_s_nyoibo_fields, (PyObject *) NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 254, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+
+  /* "nyoibo/fields.pyx":256
+ * class ListField(Field):
+ * 
+ *     _internal_type = list             # <<<<<<<<<<<<<<
+ */
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_internal_type, ((PyObject *)(&PyList_Type))) < 0) __PYX_ERR(0, 256, __pyx_L1_error)
+
+  /* "nyoibo/fields.pyx":254
+ * 
+ * 
+ * class ListField(Field):             # <<<<<<<<<<<<<<
+ * 
+ *     _internal_type = list
+ */
+  __pyx_t_4 = __Pyx_Py3ClassCreate(__pyx_t_2, __pyx_n_s_ListField, __pyx_t_1, __pyx_t_3, NULL, 0, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 254, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_ListField, __pyx_t_4) < 0) __PYX_ERR(0, 254, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
