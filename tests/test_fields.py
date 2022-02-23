@@ -311,3 +311,8 @@ def test_parse_json_field_with_invalid_data():
         field.parse(data)
 
     assert str(e.value) == f'data {data} is not serializable'
+
+
+def test_parse_tuple_field():
+    field = fields.TupleField()
+    assert field.parse([1, 2, 3]) == (1, 2, 3)

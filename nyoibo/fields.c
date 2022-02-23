@@ -1763,6 +1763,7 @@ static const char __pyx_k_pyx_state[] = "__pyx_state";
 static const char __pyx_k_reduce_ex[] = "__reduce_ex__";
 static const char __pyx_k_FloatField[] = "FloatField";
 static const char __pyx_k_MetaEntity[] = "MetaEntity";
+static const char __pyx_k_TupleField[] = "TupleField";
 static const char __pyx_k_ValueError[] = "ValueError";
 static const char __pyx_k_exceptions[] = "_exceptions";
 static const char __pyx_k_max_length[] = "max_length";
@@ -1845,6 +1846,7 @@ static PyObject *__pyx_n_s_PickleError;
 static PyObject *__pyx_n_s_RequiredValueError;
 static PyObject *__pyx_n_s_StrField;
 static PyObject *__pyx_n_s_StrLengthError;
+static PyObject *__pyx_n_s_TupleField;
 static PyObject *__pyx_n_s_TypeError;
 static PyObject *__pyx_n_s_ValueError;
 static PyObject *__pyx_n_s_choices;
@@ -8004,6 +8006,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9JSONField_parse(CYTHON_UNUSED PyObjec
  *             return json.dumps(value)
  *         except self._exceptions:             # <<<<<<<<<<<<<<
  *             raise FieldValueError(f'data {value} is not serializable')
+ * 
  */
     __Pyx_ErrFetch(&__pyx_t_4, &__pyx_t_6, &__pyx_t_5);
     __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_exceptions); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 245, __pyx_L5_except_error)
@@ -8023,6 +8026,8 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9JSONField_parse(CYTHON_UNUSED PyObjec
  *             return json.dumps(value)
  *         except self._exceptions:
  *             raise FieldValueError(f'data {value} is not serializable')             # <<<<<<<<<<<<<<
+ * 
+ * 
  */
       __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_FieldValueError); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 246, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_9);
@@ -13168,6 +13173,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_RequiredValueError, __pyx_k_RequiredValueError, sizeof(__pyx_k_RequiredValueError), 0, 0, 1, 1},
   {&__pyx_n_s_StrField, __pyx_k_StrField, sizeof(__pyx_k_StrField), 0, 0, 1, 1},
   {&__pyx_n_s_StrLengthError, __pyx_k_StrLengthError, sizeof(__pyx_k_StrLengthError), 0, 0, 1, 1},
+  {&__pyx_n_s_TupleField, __pyx_k_TupleField, sizeof(__pyx_k_TupleField), 0, 0, 1, 1},
   {&__pyx_n_s_TypeError, __pyx_k_TypeError, sizeof(__pyx_k_TypeError), 0, 0, 1, 1},
   {&__pyx_n_s_ValueError, __pyx_k_ValueError, sizeof(__pyx_k_ValueError), 0, 0, 1, 1},
   {&__pyx_n_s_choices, __pyx_k_choices, sizeof(__pyx_k_choices), 0, 0, 1, 1},
@@ -14106,6 +14112,45 @@ if (!__Pyx_RefNanny) {
   __pyx_t_4 = __Pyx_Py3ClassCreate(__pyx_t_2, __pyx_n_s_JSONField, __pyx_t_1, __pyx_t_3, NULL, 0, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 238, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_JSONField, __pyx_t_4) < 0) __PYX_ERR(0, 238, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+  /* "nyoibo/fields.pyx":249
+ * 
+ * 
+ * class TupleField(Field):             # <<<<<<<<<<<<<<
+ * 
+ *     _internal_type = tuple
+ */
+  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 249, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_INCREF(((PyObject *)__pyx_ptype_6nyoibo_6fields_Field));
+  __Pyx_GIVEREF(((PyObject *)__pyx_ptype_6nyoibo_6fields_Field));
+  PyTuple_SET_ITEM(__pyx_t_1, 0, ((PyObject *)__pyx_ptype_6nyoibo_6fields_Field));
+  __pyx_t_2 = __Pyx_CalculateMetaclass(NULL, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 249, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = __Pyx_Py3MetaclassPrepare(__pyx_t_2, __pyx_t_1, __pyx_n_s_TupleField, __pyx_n_s_TupleField, (PyObject *) NULL, __pyx_n_s_nyoibo_fields, (PyObject *) NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 249, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+
+  /* "nyoibo/fields.pyx":251
+ * class TupleField(Field):
+ * 
+ *     _internal_type = tuple             # <<<<<<<<<<<<<<
+ */
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_internal_type, ((PyObject *)(&PyTuple_Type))) < 0) __PYX_ERR(0, 251, __pyx_L1_error)
+
+  /* "nyoibo/fields.pyx":249
+ * 
+ * 
+ * class TupleField(Field):             # <<<<<<<<<<<<<<
+ * 
+ *     _internal_type = tuple
+ */
+  __pyx_t_4 = __Pyx_Py3ClassCreate(__pyx_t_2, __pyx_n_s_TupleField, __pyx_t_1, __pyx_t_3, NULL, 0, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 249, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_TupleField, __pyx_t_4) < 0) __PYX_ERR(0, 249, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;

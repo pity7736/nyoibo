@@ -244,3 +244,8 @@ class JSONField(Field):
             return json.dumps(value)
         except self._exceptions:
             raise FieldValueError(f'data {value} is not serializable')
+
+
+class TupleField(Field):
+
+    _internal_type = tuple
