@@ -4493,7 +4493,7 @@ PyObject *__pyx_f_6nyoibo_6fields_8IntField_parse(struct __pyx_obj_6nyoibo_6fiel
 
 /* Python wrapper */
 static PyObject *__pyx_pw_6nyoibo_6fields_8IntField_3parse(PyObject *__pyx_v_self, PyObject *__pyx_v_value); /*proto*/
-static char __pyx_doc_6nyoibo_6fields_8IntField_2parse[] = "Parse and cast to integers\n        \n        Args:\n            value(any): value to cast\n\n        Returns:\n            (int) casted value\n\n        Raises:\n            IntMinValueError: if ``min_value`` was set and ``value`` is less than ``min_value``.\n            IntMaxValueError: if ``max_value`` was set and ``value`` is greater than ``max_value``.\n\n        ";
+static char __pyx_doc_6nyoibo_6fields_8IntField_2parse[] = "Parse and cast to integers\n\n        Args:\n            value(any): value to cast\n\n        Returns:\n            (int) casted value\n\n        Raises:\n            IntMinValueError: if ``min_value`` was set and ``value`` is less than ``min_value``.\n            IntMaxValueError: if ``max_value`` was set and ``value`` is greater than ``max_value``.\n\n        ";
 static PyObject *__pyx_pw_6nyoibo_6fields_8IntField_3parse(PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations

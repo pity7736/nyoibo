@@ -1,11 +1,27 @@
+<a name="v0.4.0"></a>
+## [v0.4.0](https://github.com/pity7736/nyoibo/compare/v0.3.0...v0.4.0) (2022-02-24)
+
+### Docs
+- update field docstrings ([0b82861](https://github.com/pity7736/nyoibo/commit/0b8286129ee85a7d2982cc68715aa9f10b259820))
+
+### Features
+- **fields:** add `JSONField` ([95eb1b0](https://github.com/pity7736/nyoibo/commit/95eb1b0e22789480719bf52d1267d528c7ccec7f))
+- add `ListField` ([8c2616b](https://github.com/pity7736/nyoibo/commit/8c2616b8fac10a789ad7542722d9b3aa5d30180a))
+- add `max_length` param to `StrField` ([8ab928a](https://github.com/pity7736/nyoibo/commit/8ab928a74b5f1b50138aa8c0a3644cfb0f713ec0))
+- add `min_value` and `max_value` to `IntField` ([ca610b8](https://github.com/pity7736/nyoibo/commit/ca610b8be374aa237fdc916c6e73cf3e61d2daca))
+- add `mutable` param to field ([5278cb8](https://github.com/pity7736/nyoibo/commit/5278cb8970265bf9e3a42218985519e7acf689d3))
+- add `TupleField` ([f4f6c65](https://github.com/pity7736/nyoibo/commit/f4f6c65ddf9a7d5267994668fd70decc839e64eb))
+- add required param to field ([69f7eaf](https://github.com/pity7736/nyoibo/commit/69f7eafc3e781f931cbd46c0c1229ec07d7d5636))
+
+
 <a name="v0.3.0"></a>
-## [v0.3.0](https://github.com/pity7736/nyoibo/compare/v0.2.1...v0.3.0) (2022-01-24)
+## [v0.3.0](https://github.com/pity7736/nyoibo/compare/v0.2.1...v0.3.0) (2022-01-25)
 
 ### Bug Fixes
 - **ci:** add python3.10 job to jobs ([99ef290](https://github.com/pity7736/nyoibo/commit/99ef2902018f95e2cb7990e0930d18b4116c531a))
 
 ### Build
-- version 0.3.0 ([95e4a01](https://github.com/pity7736/nyoibo/commit/95e4a0109e9b5d85460beaecad63c81a98fb49e7))
+- version 0.3.0 ([cb6cc2c](https://github.com/pity7736/nyoibo/commit/cb6cc2c39a653248cececb2331917339b2cd2dc1))
 
 ### Chore
 - **changelog:** use git-autochangelog ([a7cefd9](https://github.com/pity7736/nyoibo/commit/a7cefd94ecec0cefa94b250c0743596c79fbd769))
