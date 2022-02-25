@@ -17,7 +17,7 @@ Python.
 Installation
 ------------
 
-You can install nyoibo with pip. Nyoibo requires python 3.6 or later.
+You can install nyoibo with pip. Nyoibo requires python 3.7 or higer.
 
 ``pip install nyoibo``
 
@@ -139,14 +139,6 @@ Even this code doesn't work becasue ``__init__`` method has ``_value``,
     example = Example(_value='some value', _other_value=10)
 
 
-TODO
-----
-
-- Custom validation for fields
-- Arrays fields (lists, tuples)
-- DictField
-- JsonField
-- Container field
 
 License
 -------

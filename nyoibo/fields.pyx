@@ -13,19 +13,19 @@ cdef class Field:
     This is the base for all field types.
 
     Attributes:
-        _internal_type: each Field subclass must to override this attribute
+        _internal_type: each ``Field`` subclass must to override this attribute
             with the internal type that field represent.
         _exceptions (tuple): possible exception that could be raised when
             field tries to cast to ``_internal_type``.
 
     Args:
-        private (bool): set if field is private or not. When private=True
-            getter and setters will not be created. False by default.
-        mutable (bool): set if field is mutable or not. When mutable=False
-            setter will not be created. False by default.
+        private (bool): set if field is private or not. When ``private=True``
+            getter and setters will not be created. ``False`` by default.
+        mutable (bool): set if field is mutable or not. When ``mutable=False``
+            setter will not be created. ``False`` by default.
         default_value (any): default value to field.
-        choices (Enum): value to this field must be a Enum key or Enum key.
-        required (bool): validate if value is not None. False by default.
+        choices (Enum): value to this field must be a Enum key or Enum value.
+        required (bool): validate if value is not None. ``False`` by default.
     """
 
     _internal_type = None
@@ -91,7 +91,7 @@ cdef class StrField(Field):
         max_length (int): maximum lenght for str value
 
     Raises:
-        StrLengthError: if len(value) is > max_length
+        AssertionError: if ``max_length`` is less than 0.
     """
 
     _internal_type = str
@@ -102,6 +102,18 @@ cdef class StrField(Field):
         super().__init__(*args, **kwargs)
 
     cdef _parse(self, value):
+        """
+        Parse and cast to str
+
+        Args:
+            value (any): value to cas
+
+        Returns:
+            (str): casted value
+
+        Raises:
+            StrLengthError: if ``max_length`` was set and ``len(value)`` is greater than ``max_length``.
+        """
         if self.max_length and len(value) > self.max_length:
             raise StrLengthError(f'length value ({len(value)}) is greater than max_value ({self.max_length})')
         return value
@@ -115,7 +127,7 @@ cdef class IntField(Field):
         max_value (int): maximum value
 
     Raises:
-        AssertionError: if min_value or max_value are no integer
+        AssertionError: if ``min_value`` or ``max_value`` are no integer.
     """
 
     _internal_type = int
@@ -128,6 +140,19 @@ cdef class IntField(Field):
         super().__init__(*args, **kwargs)
 
     cpdef public parse(self, value):
+        """Parse and cast to integers
+
+        Args:
+            value(any): value to cast
+
+        Returns:
+            (int) casted value
+
+        Raises:
+            IntMinValueError: if ``min_value`` was set and ``value`` is less than ``min_value``.
+            IntMaxValueError: if ``max_value`` was set and ``value`` is greater than ``max_value``.
+
+        """
         value = super(IntField, self).parse(value)
         if self.min_value is not None and value < self.min_value:
             raise IntMinValueError(f'value ({value}) must be >= min_value ({self.min_value})')
@@ -206,7 +231,7 @@ cdef class LinkField(Field):
         to (Entity): Entity instance
 
     Raises:
-        ValueError: if ``to`` is not a subclass of :ref:`entity`
+        ValueError: if ``to`` is not a subclass of :ref:``entity``
     """
     _valid_values = ()
 
@@ -228,14 +253,15 @@ cdef class LinkField(Field):
 
 
 class DictField(Field):
-    """
-    Field for dict values
+    """Field for dict values
     """
 
     _internal_type = dict
 
 
 class JSONField(Field):
+    """Field for json values.
+    """
 
     _internal_type = str
 
@@ -247,10 +273,16 @@ class JSONField(Field):
 
 
 class TupleField(Field):
+    """
+    Field for tuple values
+    """
 
     _internal_type = tuple
 
 
 class ListField(Field):
+    """
+    Field for list values
+    """
 
     _internal_type = list

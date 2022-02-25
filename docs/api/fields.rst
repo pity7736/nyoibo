@@ -13,12 +13,15 @@ String Field
 ------------
 
 .. autoclass:: nyoibo.fields.StrField
+   :inherited-members:
    :members:
+
 
 Integer Field
 -------------
 
 .. autoclass:: nyoibo.fields.IntField
+   :inherited-members:
    :members:
 
 Boolean Field
@@ -55,4 +58,32 @@ Link Field
 ----------
 
 .. autoclass:: nyoibo.fields.LinkField
+   :members:
+
+
+Dict Field
+----------
+
+.. autoclass:: nyoibo.fields.DictField
+   :members:
+
+
+JSON Field
+----------
+
+.. autoclass:: nyoibo.fields.JSONField
+   :members:
+
+
+Tuple Field
+-----------
+
+.. autoclass:: nyoibo.fields.TupleField
+   :members:
+
+
+List Field
+----------
+
+.. autoclass:: nyoibo.fields.ListField
    :members:
