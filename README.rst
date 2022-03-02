@@ -73,7 +73,7 @@ You can do this:
 
     class Example(Entity):
         _value = fields.StrField()
-        _other_value = fields.IntField(immutable=False)
+        _other_value = fields.IntField(mutable=True)
         _default = fields.StrField(private=True, default_value='hello')
 
         def do_something(self):
@@ -99,8 +99,7 @@ Why not use dataclass decorator?
 ``@dataclass`` decorator helps to avoid to write the ``__init__`` method but if you
 want to use this approach (information hiding and encapsulation), you need to
 write getters and setters anyway. Furthermore, with ``nyoibo`` you get extra
-features like casting to right value (due to static typing), validations
-(coming soon), override ``__init__`` method and so on.
+features like casting to right value (due to static typing), validations, override ``__init__`` method and so on.
 
 Above example with ``dataclass`` decorator:
 
@@ -131,8 +130,8 @@ Above example with ``dataclass`` decorator:
         def do_something(self):
             return f'{self._default} world'
 
-Even this code doesn't work becasue ``__init__`` method has ``_value``,
-``_other_value`` and ``_default`` arguments. Therefore the instantation will be:
+Even this code doesn't work because ``__init__`` method has ``_value``,
+``_other_value`` and ``_default`` arguments. Therefore the instantiation will be:
 
 .. code-block:: python
 
