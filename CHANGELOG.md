@@ -1,5 +1,13 @@
+<a name="v0.4.1"></a>
+## [v0.4.1](https://github.com/pity7736/nyoibo/compare/v0.4.0...v0.4.1) (2022-03-01)
+
+### Docs
+- **fix:** readme ([740fee8](https://github.com/pity7736/nyoibo/commit/740fee8e76fc27e5b31a0c996fa951db9b611f2e))
+- **fix:** update usage examples ([552b84b](https://github.com/pity7736/nyoibo/commit/552b84b7009da138cddfda7048efe5b9229dd0a0))
+
+
 <a name="v0.4.0"></a>
-## [v0.4.0](https://github.com/pity7736/nyoibo/compare/v0.3.0...v0.4.0) (2022-02-24)
+## [v0.4.0](https://github.com/pity7736/nyoibo/compare/v0.3.0...v0.4.0) (2022-02-25)
 
 ### Docs
 - update field docstrings ([0b82861](https://github.com/pity7736/nyoibo/commit/0b8286129ee85a7d2982cc68715aa9f10b259820))
