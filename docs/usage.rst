@@ -45,7 +45,7 @@ You can do this:
 
     class Example(Entity):
         _value = fields.StrField()
-        _other_value = fields.IntField(immutable=False)
+        _other_value = fields.IntField(mutable=True)
         _default = fields.StrField(private=True, default_value='hello')
 
         def do_something(self):
@@ -70,8 +70,8 @@ Visibility
 
 All fields are public and immutable by default, so it will create getter,
 property but not setter. You can change this behavior with ``private=True`` or
-``immutable=False`` arguments on fields. Fields with ``private=True`` will not
-create getter or setter. Fields with ``immutable=False`` will create getter,
+``mutable=True`` arguments on fields. Fields with ``private=True`` will not
+create getter or setter. Fields with ``mutable=True`` will create getter,
 setter and property.
 
 .. code-block:: python
@@ -80,7 +80,7 @@ setter and property.
 
     class Example(Entity):
         _attr = fields.StrField()
-        _mutable_attr = fields.StrField(immutable=False)
+        _mutable_attr = fields.StrField(mutable=True)
         _private_attr = fields.StrField(private=True)
 
 An ``Example`` instance will have ``get_attr`` method and ``attr`` property
@@ -119,7 +119,7 @@ setter in ``get_{field_name}`` or ``set_{field_name}`` way. Example:
     class Example(Entity):
         _private = fields.IntField(private=True)
         _public = fields.IntField()
-        _mutable = fields.IntField(immutable=False)
+        _mutable = fields.IntField(mutable=True)
 
         def get_public(self):
             if self._private:
