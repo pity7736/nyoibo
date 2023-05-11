@@ -30,7 +30,7 @@ with open('README.rst') as f:
     readme = f.read()
 
 tests_require = [
-    'pytest==6.2.5'
+    'pytest==6.2.5',
     'pytest-cov==3.0.0'
 ]
 
