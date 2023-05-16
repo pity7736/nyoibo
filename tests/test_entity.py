@@ -294,3 +294,42 @@ def test_with_required_field():
 
     with raises(RequiredValueError):
         Model()
+
+
+def test_fields_with_aliases():
+    class MyModel(Entity):
+        _first_name = fields.StrField(alias='nombres')
+        _last_name = fields.StrField(alias='apellidos')
+
+    instance0 = MyModel(nombres='julián', apellidos='cortés')
+    instance1 = MyModel(first_name='julián', last_name='cortés')
+
+    assert instance0.first_name == 'julián'
+    assert instance0.last_name == 'cortés'
+    assert instance1.first_name == 'julián'
+    assert instance1.last_name == 'cortés'
+
+
+def test_instance_from_dict_with_aliases():
+    class MyModel(Entity):
+        _first_name = fields.StrField(alias='nombres')
+        _last_name = fields.StrField(alias='apellidos')
+
+    data = {
+        'nombres': 'julián',
+        'apellidos': 'cortés'
+    }
+    instance = MyModel(**data)
+
+    assert instance.first_name == 'julián'
+    assert instance.last_name == 'cortés'
+
+
+def test_prioritize_field_alias():
+    class MyModel(Entity):
+        _first_name = fields.StrField(alias='nombres')
+        _last_name = fields.StrField(alias='apellidos')
+
+    instance = MyModel(first_name='some name', nombres='julián')
+
+    assert instance.first_name == 'julián'

@@ -32,12 +32,13 @@ cdef class Field:
     _exceptions = (TypeError, ValueError)
 
     def __init__(self, private=False, mutable=False, default_value=None,
-                 choices=None, bint required=False):
+                 choices=None, bint required=False, alias=None):
         self.default_value = default_value
         self.private = private
         self.mutable = mutable
         self.choices = choices
         self.required = required
+        self.alias = alias
 
     cpdef public parse(self, value):
         """Parse and cast to ``_internal_type``
