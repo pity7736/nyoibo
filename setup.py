@@ -30,8 +30,8 @@ with open('README.rst') as f:
     readme = f.read()
 
 tests_require = [
-    'pytest==6.2.5',
-    'pytest-cov==3.0.0'
+    'pytest~=7.0.0',
+    'pytest-cov~=3.0.0'
 ]
 
 extensions = [
@@ -69,10 +69,9 @@ setup(
         'Natural Language :: English',
         'Operating System :: OS Independent',
         'Programming Language :: Python :: 3 :: Only',
-        'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
         'Topic :: Software Development',
         'Topic :: Utilities',
         'Typing :: Typed'
