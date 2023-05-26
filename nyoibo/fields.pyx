@@ -225,16 +225,12 @@ cdef class DecimalField(Field):
 cdef class LinkField(Field):
     """Field for link between other ``Entity``
 
-    _valid_values is useful to accept others types
-    by inheritance
-
     Args:
         to (Entity): Entity instance
 
     Raises:
         ValueError: if ``to`` is not a subclass of :ref:``entity``
     """
-    _valid_values = ()
 
     def __init__(self, to, *args, **kwargs):
         if issubclass(type(to), MetaEntity) is False:
@@ -243,7 +239,7 @@ cdef class LinkField(Field):
         self.to = to
 
     cpdef public parse(self, value):
-        if isinstance(value, (self.to, *self._valid_values)):
+        if isinstance(value, self.to):
             return value
         if value is None:
             if self.required is True:
