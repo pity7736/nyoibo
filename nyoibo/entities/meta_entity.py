@@ -22,6 +22,7 @@ class MetaEntity(type):
     def __new__(mcs, name, bases, namespace: Dict[str, Any]):
         getters_setters = {}
         fields = {}
+        mcs._set_parents_fields(bases, fields)
         for attr, value in namespace.items():
             if isinstance(value, Field):
                 if not attr.startswith('_'):
@@ -38,6 +39,12 @@ class MetaEntity(type):
         namespace.update(getters_setters)
         namespace['_fields'] = fields
         return super().__new__(mcs, name, bases, namespace)
+
+    @staticmethod
+    def _set_parents_fields(bases, fields):
+        for parent in bases:
+            for field_name, field in parent._fields.items():
+                fields[field_name] = field
 
     @staticmethod
     def _set_getters_and_setters(attr, getters_setters, field, namespace):

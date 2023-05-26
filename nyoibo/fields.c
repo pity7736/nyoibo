@@ -2015,7 +2015,7 @@ static PyObject *__pyx_n_s_valid_values;
 static PyObject *__pyx_kp_u_value;
 static PyObject *__pyx_n_s_value_2;
 static PyObject *__pyx_kp_u_value_is_required;
-static int __pyx_pf_6nyoibo_6fields_5Field___init__(struct __pyx_obj_6nyoibo_6fields_Field *__pyx_v_self, PyObject *__pyx_v_private, PyObject *__pyx_v_mutable, PyObject *__pyx_v_default_value, PyObject *__pyx_v_choices, int __pyx_v_required, PyObject *__pyx_v_alias); /* proto */
+static int __pyx_pf_6nyoibo_6fields_5Field___init__(struct __pyx_obj_6nyoibo_6fields_Field *__pyx_v_self, PyObject *__pyx_v_private, PyObject *__pyx_v_mutable, PyObject *__pyx_v_default_value, PyObject *__pyx_v_choices, PyObject *__pyx_v_required, PyObject *__pyx_v_alias); /* proto */
 static PyObject *__pyx_pf_6nyoibo_6fields_5Field_2parse(struct __pyx_obj_6nyoibo_6fields_Field *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
 static PyObject *__pyx_pf_6nyoibo_6fields_5Field_13default_value___get__(struct __pyx_obj_6nyoibo_6fields_Field *__pyx_v_self); /* proto */
 static PyObject *__pyx_pf_6nyoibo_6fields_5Field_7private___get__(struct __pyx_obj_6nyoibo_6fields_Field *__pyx_v_self); /* proto */
@@ -2109,7 +2109,7 @@ static PyObject *__pyx_codeobj__27;
  *     _exceptions = (TypeError, ValueError)
  * 
  *     def __init__(self, private=False, mutable=False, default_value=None,             # <<<<<<<<<<<<<<
- *                  choices=None, bint required=False, alias=None):
+ *                  choices=None, required=False, alias=None):
  *         self.default_value = default_value
  */
 
@@ -2120,7 +2120,7 @@ static int __pyx_pw_6nyoibo_6fields_5Field_1__init__(PyObject *__pyx_v_self, PyO
   PyObject *__pyx_v_mutable = 0;
   PyObject *__pyx_v_default_value = 0;
   PyObject *__pyx_v_choices = 0;
-  int __pyx_v_required;
+  PyObject *__pyx_v_required = 0;
   PyObject *__pyx_v_alias = 0;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -2138,11 +2138,12 @@ static int __pyx_pw_6nyoibo_6fields_5Field_1__init__(PyObject *__pyx_v_self, PyO
     /* "nyoibo/fields.pyx":35
  * 
  *     def __init__(self, private=False, mutable=False, default_value=None,
- *                  choices=None, bint required=False, alias=None):             # <<<<<<<<<<<<<<
+ *                  choices=None, required=False, alias=None):             # <<<<<<<<<<<<<<
  *         self.default_value = default_value
  *         self.private = private
  */
     values[3] = ((PyObject *)Py_None);
+    values[4] = ((PyObject *)Py_False);
     values[5] = ((PyObject *)Py_None);
     if (unlikely(__pyx_kwds)) {
       Py_ssize_t kw_args;
@@ -2226,11 +2227,7 @@ static int __pyx_pw_6nyoibo_6fields_5Field_1__init__(PyObject *__pyx_v_self, PyO
     __pyx_v_mutable = values[1];
     __pyx_v_default_value = values[2];
     __pyx_v_choices = values[3];
-    if (values[4]) {
-      __pyx_v_required = __Pyx_PyObject_IsTrue(values[4]); if (unlikely((__pyx_v_required == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 35, __pyx_L3_error)
-    } else {
-      __pyx_v_required = ((int)0);
-    }
+    __pyx_v_required = values[4];
     __pyx_v_alias = values[5];
   }
   goto __pyx_L4_argument_unpacking_done;
@@ -2247,7 +2244,7 @@ static int __pyx_pw_6nyoibo_6fields_5Field_1__init__(PyObject *__pyx_v_self, PyO
  *     _exceptions = (TypeError, ValueError)
  * 
  *     def __init__(self, private=False, mutable=False, default_value=None,             # <<<<<<<<<<<<<<
- *                  choices=None, bint required=False, alias=None):
+ *                  choices=None, required=False, alias=None):
  *         self.default_value = default_value
  */
 
@@ -2256,14 +2253,18 @@ static int __pyx_pw_6nyoibo_6fields_5Field_1__init__(PyObject *__pyx_v_self, PyO
   return __pyx_r;
 }
 
-static int __pyx_pf_6nyoibo_6fields_5Field___init__(struct __pyx_obj_6nyoibo_6fields_Field *__pyx_v_self, PyObject *__pyx_v_private, PyObject *__pyx_v_mutable, PyObject *__pyx_v_default_value, PyObject *__pyx_v_choices, int __pyx_v_required, PyObject *__pyx_v_alias) {
+static int __pyx_pf_6nyoibo_6fields_5Field___init__(struct __pyx_obj_6nyoibo_6fields_Field *__pyx_v_self, PyObject *__pyx_v_private, PyObject *__pyx_v_mutable, PyObject *__pyx_v_default_value, PyObject *__pyx_v_choices, PyObject *__pyx_v_required, PyObject *__pyx_v_alias) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
+  int __pyx_t_1;
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__init__", 0);
 
   /* "nyoibo/fields.pyx":36
  *     def __init__(self, private=False, mutable=False, default_value=None,
- *                  choices=None, bint required=False, alias=None):
+ *                  choices=None, required=False, alias=None):
  *         self.default_value = default_value             # <<<<<<<<<<<<<<
  *         self.private = private
  *         self.mutable = mutable
@@ -2275,7 +2276,7 @@ static int __pyx_pf_6nyoibo_6fields_5Field___init__(struct __pyx_obj_6nyoibo_6fi
   __pyx_v_self->default_value = __pyx_v_default_value;
 
   /* "nyoibo/fields.pyx":37
- *                  choices=None, bint required=False, alias=None):
+ *                  choices=None, required=False, alias=None):
  *         self.default_value = default_value
  *         self.private = private             # <<<<<<<<<<<<<<
  *         self.mutable = mutable
@@ -2320,7 +2321,8 @@ static int __pyx_pf_6nyoibo_6fields_5Field___init__(struct __pyx_obj_6nyoibo_6fi
  *         self.alias = alias
  * 
  */
-  __pyx_v_self->required = __pyx_v_required;
+  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_required); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 40, __pyx_L1_error)
+  __pyx_v_self->required = __pyx_t_1;
 
   /* "nyoibo/fields.pyx":41
  *         self.choices = choices
@@ -2339,12 +2341,17 @@ static int __pyx_pf_6nyoibo_6fields_5Field___init__(struct __pyx_obj_6nyoibo_6fi
  *     _exceptions = (TypeError, ValueError)
  * 
  *     def __init__(self, private=False, mutable=False, default_value=None,             # <<<<<<<<<<<<<<
- *                  choices=None, bint required=False, alias=None):
+ *                  choices=None, required=False, alias=None):
  *         self.default_value = default_value
  */
 
   /* function exit code */
   __pyx_r = 0;
+  goto __pyx_L0;
+  __pyx_L1_error:;
+  __Pyx_AddTraceback("nyoibo.fields.Field.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __pyx_r = -1;
+  __pyx_L0:;
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
