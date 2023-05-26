@@ -326,6 +326,50 @@ def test_parse_tuple_field():
     assert field.parse([1, 2, 3]) == (1, 2, 3)
 
 
+def test_parse_tuple_field_with_type():
+    field = fields.TupleField(of=int)
+    assert field.parse((1, '2', 3, 4.0)) == (1, 2, 3, 4)
+
+
+def test_parse_tuple_field_with_invalid_type():
+    field = fields.TupleField(of=int)
+    with raises(FieldValueError) as error:
+        field.parse((1, 2, 3, 'hi'))
+
+    assert str(error.value) == "type <class 'str'> of hi value is not a " \
+                               "valid type of <class 'int'>"
+
+
+def test_parse_tuple_field_with_entity_type():
+    class Person(Entity):
+        _name = fields.StrField()
+
+    field = fields.TupleField(of=Person)
+    people = (
+        Person(name='john doe'),
+        Person(name='jane')
+    )
+    assert field.parse(people) == people
+
+
+def test_parse_tuple_field_with_invalid_entity_type():
+    class Person(Entity):
+        _name = fields.StrField()
+
+    field = fields.TupleField(of=Person)
+    people = (
+        Person(name='john doe'),
+        123
+    )
+    with raises(FieldValueError):
+        field.parse(people)
+
+
 def test_parse_list_field():
     field = fields.ListField()
     assert field.parse((1, 2, 3)) == [1, 2, 3]
+
+
+def test_parse_list_field_with_type():
+    field = fields.ListField(of=int)
+    assert field.parse((1, '2', 3, 4.0)) == [1, 2, 3, 4]

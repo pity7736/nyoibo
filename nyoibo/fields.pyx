@@ -253,37 +253,62 @@ cdef class LinkField(Field):
                               f'{self.__class__.__name__}')
 
 
-class DictField(Field):
+cdef class DictField(Field):
     """Field for dict values
     """
 
     _internal_type = dict
 
 
-class JSONField(Field):
+cdef class JSONField(Field):
     """Field for json values.
     """
 
     _internal_type = str
 
-    def parse(self, value):
+    cdef _parse(self, value):
         try:
             return json.dumps(value)
         except self._exceptions:
             raise FieldValueError(f'data {value} is not serializable')
 
 
-class TupleField(Field):
+cdef class TupleField(Field):
     """
     Field for tuple values
+
+    Args:
+        of: Type of items. All items going to be cast to ``of`` type.
+
     """
 
     _internal_type = tuple
 
+    def __init__(self, of=None, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.of = of
 
-class ListField(Field):
+    cdef _parse(self, value):
+        if value and self.of:
+            items = []
+            for item in value:
+                if isinstance(item, self.of):
+                    items.append(item)
+                    continue
+                try:
+                    items.append(self.of(item))
+                except self._exceptions:
+                    raise FieldValueError(f"type {type(item)} of {item} value is not a valid type of {self.of}")
+            value = items
+        return value
+
+
+cdef class ListField(TupleField):
     """
     Field for list values
+
+    Args:
+        of: Type of items. All items going to be cast to ``of`` type.
     """
 
     _internal_type = list

@@ -21,3 +21,7 @@ cdef class IntField(Field):
 
 cdef class LinkField(Field):
     cdef readonly to
+
+
+cdef class TupleField(Field):
+    cdef readonly of
