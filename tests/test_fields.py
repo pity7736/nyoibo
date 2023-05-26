@@ -6,8 +6,7 @@ from pytest import mark, raises
 
 from nyoibo import Entity, fields
 from nyoibo.exceptions import FieldValueError, StrLengthError, \
-    IntMinValueError, IntMaxValueError
-
+    IntMinValueError, IntMaxValueError, RequiredValueError
 
 str_values = (
     ('10.5', '10.5'),
@@ -215,6 +214,15 @@ def test_wrong_link_value(value):
     with raises(FieldValueError) as e:
         link_field.parse(value)
     assert str(e.value) == f'{type(value)} is not a valid value for LinkField'
+
+
+def test_parse_required_link_field():
+    class Linked(Entity):
+        _value = fields.StrField()
+
+    link_field = fields.LinkField(to=Linked, required=True)
+    with raises(RequiredValueError):
+        link_field.parse(None)
 
 
 def test_parse_link_field_from_dict():

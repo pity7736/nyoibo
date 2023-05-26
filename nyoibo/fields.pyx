@@ -243,7 +243,11 @@ cdef class LinkField(Field):
         self.to = to
 
     cpdef public parse(self, value):
-        if value is None or isinstance(value, (self.to, *self._valid_values)):
+        if isinstance(value, (self.to, *self._valid_values)):
+            return value
+        if value is None:
+            if self.required is True:
+                raise RequiredValueError('value is required')
             return value
         if isinstance(value, dict):
             if value:
