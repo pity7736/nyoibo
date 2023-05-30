@@ -279,14 +279,20 @@ cdef class TupleField(Field):
 
     Args:
         of: Type of items. All items going to be cast to ``of`` type.
+        reverse_relationship (bool): create a reverse relation with ``of``.
 
+    Raises:
+        ValueError: if of is ``None`` and ``reverse_relationship`` is True
     """
 
     _internal_type = tuple
 
-    def __init__(self, of=None, *args, **kwargs):
+    def __init__(self, of=None, reverse_relationship=False, *args, **kwargs):
+        if reverse_relationship and of is None:
+            raise ValueError('to make a reverse relationship, `of` parameter must to be set')
         super().__init__(*args, **kwargs)
         self.of = of
+        self.reverse_relationship = reverse_relationship
 
     cdef _parse(self, value):
         if value and self.of:
@@ -312,6 +318,10 @@ cdef class ListField(TupleField):
 
     Args:
         of: Type of items. All items going to be cast to ``of`` type.
+                reverse_relationship (bool): create a reverse relation with ``of``.
+
+    Raises:
+        ValueError: if of is ``None`` and ``reverse_relationship`` is True
     """
 
     _internal_type = list

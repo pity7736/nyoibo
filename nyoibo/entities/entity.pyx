@@ -1,5 +1,6 @@
 from nyoibo cimport fields
 from .meta_entity import MetaEntity
+from ..utils import camel_to_snake_case
 
 
 class Entity(metaclass=MetaEntity):
@@ -32,4 +33,8 @@ class Entity(metaclass=MetaEntity):
                 if issubclass(type(current_value), fields.Field):
                     current_value = None
                 value = field.parse(current_value or value)
+
             setattr(self, key, value)
+            if isinstance(field, fields.TupleField) and field.reverse_relationship:
+                for subfield in value:
+                    setattr(subfield, f'_{camel_to_snake_case(self.__class__.__name__)}', self)

@@ -25,3 +25,4 @@ cdef class LinkField(Field):
 
 cdef class TupleField(Field):
     cdef readonly of
+    cdef readonly reverse_relationship

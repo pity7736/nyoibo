@@ -373,3 +373,11 @@ def test_parse_list_field():
 def test_parse_list_field_with_type():
     field = fields.ListField(of=int)
     assert field.parse((1, '2', 3, 4.0)) == [1, 2, 3, 4]
+
+
+def test_tuple_field_with_reverse_relationship():
+    with raises(ValueError) as e:
+        fields.TupleField(reverse_relationship=True)
+
+    assert str(e.value) == 'to make a reverse relationship, ' \
+                           '`of` parameter must to be set'

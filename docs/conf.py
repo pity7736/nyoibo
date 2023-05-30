@@ -38,6 +38,7 @@ author = 'Julián Cortés'
 
 # The full version, including alpha/beta/rc tags
 release = VERSION
+version = VERSION
 
 
 # -- General configuration ---------------------------------------------------

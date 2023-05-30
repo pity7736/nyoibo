@@ -344,7 +344,7 @@ def test_instance_from_dict_with_tuple_field():
 
     class Owner(Entity):
         _name = fields.StrField()
-        _licenses = fields.TupleField(of=License)
+        _licenses = fields.TupleField(of=License, reverse_relationship=True)
 
     data = {
         'name': 'test owner name',
@@ -364,3 +364,62 @@ def test_instance_from_dict_with_tuple_field():
         License(category='A1'),
         License(category='A2')
     )
+    assert owner.licenses[0].owner == owner
+    assert owner.licenses[1].owner == owner
+
+
+def test_reverse_relationship():
+    class License(Entity):
+        _category = fields.StrField()
+
+        def __eq__(self, other):
+            return self._category == other._category
+
+    class OwnerModel(Entity):
+        _name = fields.StrField()
+        _licenses = fields.TupleField(of=License, reverse_relationship=True)
+
+        def __eq__(self, other):
+            return self._name == other._name
+
+    owner = OwnerModel(
+        name='test name',
+        licenses=(
+            License(category='A1'),
+            License(category='A2')
+        )
+    )
+
+    assert owner.licenses[0].owner_model == owner
+    assert owner.licenses[1].owner_model == owner
+
+
+def test_reverse_relationship_with_private_field():
+    class License(Entity):
+        _category = fields.StrField()
+
+        def compare_owner(self, owner):
+            return self._owner == owner
+
+        def __eq__(self, other):
+            return self._category == other._category
+
+    class Owner(Entity):
+        _name = fields.StrField()
+        _licenses = fields.TupleField(
+            of=License,
+            reverse_relationship=True,
+            private=True
+        )
+
+        def __eq__(self, other):
+            return self._name == other._name
+    lic = License(category='A1')
+    owner = Owner(
+        name='test name',
+        licenses=(lic,)
+    )
+
+    assert lic.compare_owner(owner) is True
+    with raises(AttributeError):
+        lic.owner

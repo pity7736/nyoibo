@@ -1,7 +1,9 @@
 from typing import Dict, Any
 
 from nyoibo.exceptions import PrivateFieldError
-from nyoibo.fields import Field
+from nyoibo.fields import Field, TupleField
+
+from nyoibo.utils import camel_to_snake_case
 
 
 def create_getter(attr):
@@ -35,6 +37,14 @@ class MetaEntity(type):
                     value,
                     namespace
                 )
+                if isinstance(value, TupleField) and \
+                        value.reverse_relationship and value.private is False:
+                    class_name_snake_case = camel_to_snake_case(name)
+                    setattr(
+                        value.of,
+                        class_name_snake_case,
+                        property(create_getter(f'_{class_name_snake_case}'))
+                    )
 
         namespace.update(getters_setters)
         namespace['_fields'] = fields
