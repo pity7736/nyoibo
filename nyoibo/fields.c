@@ -1135,7 +1135,7 @@ struct __pyx_obj_6nyoibo_6fields_JSONField {
 };
 
 
-/* "nyoibo/fields.pyx":306
+/* "nyoibo/fields.pyx":309
  * 
  * 
  * cdef class ListField(TupleField):             # <<<<<<<<<<<<<<
@@ -1317,7 +1317,7 @@ struct __pyx_vtabstruct_6nyoibo_6fields_JSONField {
 static struct __pyx_vtabstruct_6nyoibo_6fields_JSONField *__pyx_vtabptr_6nyoibo_6fields_JSONField;
 
 
-/* "nyoibo/fields.pyx":306
+/* "nyoibo/fields.pyx":309
  * 
  * 
  * cdef class ListField(TupleField):             # <<<<<<<<<<<<<<
@@ -9411,7 +9411,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_10TupleField__parse(struct __pyx_obj_6n
  *                 if isinstance(item, self.of):
  *                     items.append(item)             # <<<<<<<<<<<<<<
  *                     continue
- *                 try:
+ *                 if isinstance(item, dict):
  */
         __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_items, __pyx_v_item); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 296, __pyx_L1_error)
 
@@ -9419,8 +9419,8 @@ static PyObject *__pyx_f_6nyoibo_6fields_10TupleField__parse(struct __pyx_obj_6n
  *                 if isinstance(item, self.of):
  *                     items.append(item)
  *                     continue             # <<<<<<<<<<<<<<
- *                 try:
- *                     items.append(self.of(item))
+ *                 if isinstance(item, dict):
+ *                     items.append(self.of(**item))
  */
         goto __pyx_L6_continue;
 
@@ -9436,169 +9436,217 @@ static PyObject *__pyx_f_6nyoibo_6fields_10TupleField__parse(struct __pyx_obj_6n
       /* "nyoibo/fields.pyx":298
  *                     items.append(item)
  *                     continue
- *                 try:             # <<<<<<<<<<<<<<
- *                     items.append(self.of(item))
- *                 except self._exceptions:
+ *                 if isinstance(item, dict):             # <<<<<<<<<<<<<<
+ *                     items.append(self.of(**item))
+ *                 else:
  */
-      {
-        __Pyx_PyThreadState_declare
-        __Pyx_PyThreadState_assign
-        __Pyx_ExceptionSave(&__pyx_t_8, &__pyx_t_9, &__pyx_t_10);
-        __Pyx_XGOTREF(__pyx_t_8);
-        __Pyx_XGOTREF(__pyx_t_9);
-        __Pyx_XGOTREF(__pyx_t_10);
-        /*try:*/ {
+      __pyx_t_2 = PyDict_Check(__pyx_v_item); 
+      __pyx_t_1 = (__pyx_t_2 != 0);
+      if (__pyx_t_1) {
 
-          /* "nyoibo/fields.pyx":299
+        /* "nyoibo/fields.pyx":299
  *                     continue
- *                 try:
- *                     items.append(self.of(item))             # <<<<<<<<<<<<<<
- *                 except self._exceptions:
- *                     raise FieldValueError(f"type {type(item)} of {item} value is not a valid type of {self.of}")
+ *                 if isinstance(item, dict):
+ *                     items.append(self.of(**item))             # <<<<<<<<<<<<<<
+ *                 else:
+ *                     try:
  */
-          __Pyx_INCREF(__pyx_v_self->of);
-          __pyx_t_11 = __pyx_v_self->of; __pyx_t_12 = NULL;
-          if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_11))) {
-            __pyx_t_12 = PyMethod_GET_SELF(__pyx_t_11);
-            if (likely(__pyx_t_12)) {
-              PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_11);
-              __Pyx_INCREF(__pyx_t_12);
-              __Pyx_INCREF(function);
-              __Pyx_DECREF_SET(__pyx_t_11, function);
-            }
-          }
-          __pyx_t_6 = (__pyx_t_12) ? __Pyx_PyObject_Call2Args(__pyx_t_11, __pyx_t_12, __pyx_v_item) : __Pyx_PyObject_CallOneArg(__pyx_t_11, __pyx_v_item);
-          __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
-          if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 299, __pyx_L9_error)
-          __Pyx_GOTREF(__pyx_t_6);
-          __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-          __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_items, __pyx_t_6); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 299, __pyx_L9_error)
-          __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-
-          /* "nyoibo/fields.pyx":298
- *                     items.append(item)
- *                     continue
- *                 try:             # <<<<<<<<<<<<<<
- *                     items.append(self.of(item))
- *                 except self._exceptions:
- */
+        if (unlikely(__pyx_v_item == Py_None)) {
+          PyErr_SetString(PyExc_TypeError, "argument after ** must be a mapping, not NoneType");
+          __PYX_ERR(0, 299, __pyx_L1_error)
         }
-        __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
-        __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
-        __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
-        goto __pyx_L16_try_end;
-        __pyx_L9_error:;
-        __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
-        __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
-        __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
-
-        /* "nyoibo/fields.pyx":300
- *                 try:
- *                     items.append(self.of(item))
- *                 except self._exceptions:             # <<<<<<<<<<<<<<
- *                     raise FieldValueError(f"type {type(item)} of {item} value is not a valid type of {self.of}")
- *             value = items
- */
-        __Pyx_ErrFetch(&__pyx_t_6, &__pyx_t_11, &__pyx_t_12);
-        __pyx_t_13 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_exceptions); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 300, __pyx_L11_except_error)
-        __Pyx_GOTREF(__pyx_t_13);
-        __pyx_t_14 = __Pyx_PyErr_GivenExceptionMatches(__pyx_t_6, __pyx_t_13);
-        __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
-        __Pyx_ErrRestore(__pyx_t_6, __pyx_t_11, __pyx_t_12);
-        __pyx_t_6 = 0; __pyx_t_11 = 0; __pyx_t_12 = 0;
-        if (__pyx_t_14) {
-          __Pyx_AddTraceback("nyoibo.fields.TupleField._parse", __pyx_clineno, __pyx_lineno, __pyx_filename);
-          if (__Pyx_GetException(&__pyx_t_12, &__pyx_t_11, &__pyx_t_6) < 0) __PYX_ERR(0, 300, __pyx_L11_except_error)
-          __Pyx_GOTREF(__pyx_t_12);
-          __Pyx_GOTREF(__pyx_t_11);
+        if (likely(PyDict_CheckExact(__pyx_v_item))) {
+          __pyx_t_6 = PyDict_Copy(__pyx_v_item); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 299, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
-
-          /* "nyoibo/fields.pyx":301
- *                     items.append(self.of(item))
- *                 except self._exceptions:
- *                     raise FieldValueError(f"type {type(item)} of {item} value is not a valid type of {self.of}")             # <<<<<<<<<<<<<<
- *             value = items
- *         return value
- */
-          __Pyx_GetModuleGlobalName(__pyx_t_15, __pyx_n_s_FieldValueError); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 301, __pyx_L11_except_error)
-          __Pyx_GOTREF(__pyx_t_15);
-          __pyx_t_16 = PyTuple_New(6); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 301, __pyx_L11_except_error)
-          __Pyx_GOTREF(__pyx_t_16);
-          __pyx_t_17 = 0;
-          __pyx_t_18 = 127;
-          __Pyx_INCREF(__pyx_kp_u_type);
-          __pyx_t_17 += 5;
-          __Pyx_GIVEREF(__pyx_kp_u_type);
-          PyTuple_SET_ITEM(__pyx_t_16, 0, __pyx_kp_u_type);
-          __pyx_t_19 = __Pyx_PyObject_FormatSimple(((PyObject *)Py_TYPE(__pyx_v_item)), __pyx_empty_unicode); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 301, __pyx_L11_except_error)
-          __Pyx_GOTREF(__pyx_t_19);
-          __pyx_t_18 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_19) > __pyx_t_18) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_19) : __pyx_t_18;
-          __pyx_t_17 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_19);
-          __Pyx_GIVEREF(__pyx_t_19);
-          PyTuple_SET_ITEM(__pyx_t_16, 1, __pyx_t_19);
-          __pyx_t_19 = 0;
-          __Pyx_INCREF(__pyx_kp_u_of_2);
-          __pyx_t_17 += 4;
-          __Pyx_GIVEREF(__pyx_kp_u_of_2);
-          PyTuple_SET_ITEM(__pyx_t_16, 2, __pyx_kp_u_of_2);
-          __pyx_t_19 = __Pyx_PyObject_FormatSimple(__pyx_v_item, __pyx_empty_unicode); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 301, __pyx_L11_except_error)
-          __Pyx_GOTREF(__pyx_t_19);
-          __pyx_t_18 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_19) > __pyx_t_18) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_19) : __pyx_t_18;
-          __pyx_t_17 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_19);
-          __Pyx_GIVEREF(__pyx_t_19);
-          PyTuple_SET_ITEM(__pyx_t_16, 3, __pyx_t_19);
-          __pyx_t_19 = 0;
-          __Pyx_INCREF(__pyx_kp_u_value_is_not_a_valid_type_of);
-          __pyx_t_17 += 30;
-          __Pyx_GIVEREF(__pyx_kp_u_value_is_not_a_valid_type_of);
-          PyTuple_SET_ITEM(__pyx_t_16, 4, __pyx_kp_u_value_is_not_a_valid_type_of);
-          __pyx_t_19 = __Pyx_PyObject_FormatSimple(__pyx_v_self->of, __pyx_empty_unicode); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 301, __pyx_L11_except_error)
-          __Pyx_GOTREF(__pyx_t_19);
-          __pyx_t_18 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_19) > __pyx_t_18) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_19) : __pyx_t_18;
-          __pyx_t_17 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_19);
-          __Pyx_GIVEREF(__pyx_t_19);
-          PyTuple_SET_ITEM(__pyx_t_16, 5, __pyx_t_19);
-          __pyx_t_19 = 0;
-          __pyx_t_19 = __Pyx_PyUnicode_Join(__pyx_t_16, 6, __pyx_t_17, __pyx_t_18); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 301, __pyx_L11_except_error)
-          __Pyx_GOTREF(__pyx_t_19);
-          __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
-          __pyx_t_16 = NULL;
-          if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_15))) {
-            __pyx_t_16 = PyMethod_GET_SELF(__pyx_t_15);
-            if (likely(__pyx_t_16)) {
-              PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_15);
-              __Pyx_INCREF(__pyx_t_16);
-              __Pyx_INCREF(function);
-              __Pyx_DECREF_SET(__pyx_t_15, function);
-            }
-          }
-          __pyx_t_13 = (__pyx_t_16) ? __Pyx_PyObject_Call2Args(__pyx_t_15, __pyx_t_16, __pyx_t_19) : __Pyx_PyObject_CallOneArg(__pyx_t_15, __pyx_t_19);
-          __Pyx_XDECREF(__pyx_t_16); __pyx_t_16 = 0;
-          __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-          if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 301, __pyx_L11_except_error)
-          __Pyx_GOTREF(__pyx_t_13);
-          __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
-          __Pyx_Raise(__pyx_t_13, 0, 0, 0);
-          __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
-          __PYX_ERR(0, 301, __pyx_L11_except_error)
+        } else {
+          __pyx_t_6 = PyObject_CallFunctionObjArgs((PyObject*)&PyDict_Type, __pyx_v_item, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 299, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_6);
         }
-        goto __pyx_L11_except_error;
-        __pyx_L11_except_error:;
+        __pyx_t_8 = __Pyx_PyObject_Call(__pyx_v_self->of, __pyx_empty_tuple, __pyx_t_6); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 299, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_8);
+        __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+        __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_items, __pyx_t_8); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 299, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
         /* "nyoibo/fields.pyx":298
  *                     items.append(item)
  *                     continue
- *                 try:             # <<<<<<<<<<<<<<
- *                     items.append(self.of(item))
- *                 except self._exceptions:
+ *                 if isinstance(item, dict):             # <<<<<<<<<<<<<<
+ *                     items.append(self.of(**item))
+ *                 else:
  */
-        __Pyx_XGIVEREF(__pyx_t_8);
-        __Pyx_XGIVEREF(__pyx_t_9);
-        __Pyx_XGIVEREF(__pyx_t_10);
-        __Pyx_ExceptionReset(__pyx_t_8, __pyx_t_9, __pyx_t_10);
-        goto __pyx_L1_error;
-        __pyx_L16_try_end:;
+        goto __pyx_L9;
       }
+
+      /* "nyoibo/fields.pyx":301
+ *                     items.append(self.of(**item))
+ *                 else:
+ *                     try:             # <<<<<<<<<<<<<<
+ *                         items.append(self.of(item))
+ *                     except self._exceptions:
+ */
+      /*else*/ {
+        {
+          __Pyx_PyThreadState_declare
+          __Pyx_PyThreadState_assign
+          __Pyx_ExceptionSave(&__pyx_t_9, &__pyx_t_10, &__pyx_t_11);
+          __Pyx_XGOTREF(__pyx_t_9);
+          __Pyx_XGOTREF(__pyx_t_10);
+          __Pyx_XGOTREF(__pyx_t_11);
+          /*try:*/ {
+
+            /* "nyoibo/fields.pyx":302
+ *                 else:
+ *                     try:
+ *                         items.append(self.of(item))             # <<<<<<<<<<<<<<
+ *                     except self._exceptions:
+ *                         raise FieldValueError(f"type {type(item)} of {item} value is not a valid type of {self.of}")
+ */
+            __Pyx_INCREF(__pyx_v_self->of);
+            __pyx_t_6 = __pyx_v_self->of; __pyx_t_12 = NULL;
+            if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_6))) {
+              __pyx_t_12 = PyMethod_GET_SELF(__pyx_t_6);
+              if (likely(__pyx_t_12)) {
+                PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_6);
+                __Pyx_INCREF(__pyx_t_12);
+                __Pyx_INCREF(function);
+                __Pyx_DECREF_SET(__pyx_t_6, function);
+              }
+            }
+            __pyx_t_8 = (__pyx_t_12) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_12, __pyx_v_item) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_v_item);
+            __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
+            if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 302, __pyx_L10_error)
+            __Pyx_GOTREF(__pyx_t_8);
+            __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+            __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_items, __pyx_t_8); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 302, __pyx_L10_error)
+            __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
+
+            /* "nyoibo/fields.pyx":301
+ *                     items.append(self.of(**item))
+ *                 else:
+ *                     try:             # <<<<<<<<<<<<<<
+ *                         items.append(self.of(item))
+ *                     except self._exceptions:
+ */
+          }
+          __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
+          __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
+          __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
+          goto __pyx_L17_try_end;
+          __pyx_L10_error:;
+          __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
+          __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
+          __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
+
+          /* "nyoibo/fields.pyx":303
+ *                     try:
+ *                         items.append(self.of(item))
+ *                     except self._exceptions:             # <<<<<<<<<<<<<<
+ *                         raise FieldValueError(f"type {type(item)} of {item} value is not a valid type of {self.of}")
+ *             value = items
+ */
+          __Pyx_ErrFetch(&__pyx_t_8, &__pyx_t_6, &__pyx_t_12);
+          __pyx_t_13 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_exceptions); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 303, __pyx_L12_except_error)
+          __Pyx_GOTREF(__pyx_t_13);
+          __pyx_t_14 = __Pyx_PyErr_GivenExceptionMatches(__pyx_t_8, __pyx_t_13);
+          __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
+          __Pyx_ErrRestore(__pyx_t_8, __pyx_t_6, __pyx_t_12);
+          __pyx_t_8 = 0; __pyx_t_6 = 0; __pyx_t_12 = 0;
+          if (__pyx_t_14) {
+            __Pyx_AddTraceback("nyoibo.fields.TupleField._parse", __pyx_clineno, __pyx_lineno, __pyx_filename);
+            if (__Pyx_GetException(&__pyx_t_12, &__pyx_t_6, &__pyx_t_8) < 0) __PYX_ERR(0, 303, __pyx_L12_except_error)
+            __Pyx_GOTREF(__pyx_t_12);
+            __Pyx_GOTREF(__pyx_t_6);
+            __Pyx_GOTREF(__pyx_t_8);
+
+            /* "nyoibo/fields.pyx":304
+ *                         items.append(self.of(item))
+ *                     except self._exceptions:
+ *                         raise FieldValueError(f"type {type(item)} of {item} value is not a valid type of {self.of}")             # <<<<<<<<<<<<<<
+ *             value = items
+ *         return value
+ */
+            __Pyx_GetModuleGlobalName(__pyx_t_15, __pyx_n_s_FieldValueError); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 304, __pyx_L12_except_error)
+            __Pyx_GOTREF(__pyx_t_15);
+            __pyx_t_16 = PyTuple_New(6); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 304, __pyx_L12_except_error)
+            __Pyx_GOTREF(__pyx_t_16);
+            __pyx_t_17 = 0;
+            __pyx_t_18 = 127;
+            __Pyx_INCREF(__pyx_kp_u_type);
+            __pyx_t_17 += 5;
+            __Pyx_GIVEREF(__pyx_kp_u_type);
+            PyTuple_SET_ITEM(__pyx_t_16, 0, __pyx_kp_u_type);
+            __pyx_t_19 = __Pyx_PyObject_FormatSimple(((PyObject *)Py_TYPE(__pyx_v_item)), __pyx_empty_unicode); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 304, __pyx_L12_except_error)
+            __Pyx_GOTREF(__pyx_t_19);
+            __pyx_t_18 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_19) > __pyx_t_18) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_19) : __pyx_t_18;
+            __pyx_t_17 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_19);
+            __Pyx_GIVEREF(__pyx_t_19);
+            PyTuple_SET_ITEM(__pyx_t_16, 1, __pyx_t_19);
+            __pyx_t_19 = 0;
+            __Pyx_INCREF(__pyx_kp_u_of_2);
+            __pyx_t_17 += 4;
+            __Pyx_GIVEREF(__pyx_kp_u_of_2);
+            PyTuple_SET_ITEM(__pyx_t_16, 2, __pyx_kp_u_of_2);
+            __pyx_t_19 = __Pyx_PyObject_FormatSimple(__pyx_v_item, __pyx_empty_unicode); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 304, __pyx_L12_except_error)
+            __Pyx_GOTREF(__pyx_t_19);
+            __pyx_t_18 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_19) > __pyx_t_18) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_19) : __pyx_t_18;
+            __pyx_t_17 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_19);
+            __Pyx_GIVEREF(__pyx_t_19);
+            PyTuple_SET_ITEM(__pyx_t_16, 3, __pyx_t_19);
+            __pyx_t_19 = 0;
+            __Pyx_INCREF(__pyx_kp_u_value_is_not_a_valid_type_of);
+            __pyx_t_17 += 30;
+            __Pyx_GIVEREF(__pyx_kp_u_value_is_not_a_valid_type_of);
+            PyTuple_SET_ITEM(__pyx_t_16, 4, __pyx_kp_u_value_is_not_a_valid_type_of);
+            __pyx_t_19 = __Pyx_PyObject_FormatSimple(__pyx_v_self->of, __pyx_empty_unicode); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 304, __pyx_L12_except_error)
+            __Pyx_GOTREF(__pyx_t_19);
+            __pyx_t_18 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_19) > __pyx_t_18) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_19) : __pyx_t_18;
+            __pyx_t_17 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_19);
+            __Pyx_GIVEREF(__pyx_t_19);
+            PyTuple_SET_ITEM(__pyx_t_16, 5, __pyx_t_19);
+            __pyx_t_19 = 0;
+            __pyx_t_19 = __Pyx_PyUnicode_Join(__pyx_t_16, 6, __pyx_t_17, __pyx_t_18); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 304, __pyx_L12_except_error)
+            __Pyx_GOTREF(__pyx_t_19);
+            __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
+            __pyx_t_16 = NULL;
+            if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_15))) {
+              __pyx_t_16 = PyMethod_GET_SELF(__pyx_t_15);
+              if (likely(__pyx_t_16)) {
+                PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_15);
+                __Pyx_INCREF(__pyx_t_16);
+                __Pyx_INCREF(function);
+                __Pyx_DECREF_SET(__pyx_t_15, function);
+              }
+            }
+            __pyx_t_13 = (__pyx_t_16) ? __Pyx_PyObject_Call2Args(__pyx_t_15, __pyx_t_16, __pyx_t_19) : __Pyx_PyObject_CallOneArg(__pyx_t_15, __pyx_t_19);
+            __Pyx_XDECREF(__pyx_t_16); __pyx_t_16 = 0;
+            __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
+            if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 304, __pyx_L12_except_error)
+            __Pyx_GOTREF(__pyx_t_13);
+            __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
+            __Pyx_Raise(__pyx_t_13, 0, 0, 0);
+            __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
+            __PYX_ERR(0, 304, __pyx_L12_except_error)
+          }
+          goto __pyx_L12_except_error;
+          __pyx_L12_except_error:;
+
+          /* "nyoibo/fields.pyx":301
+ *                     items.append(self.of(**item))
+ *                 else:
+ *                     try:             # <<<<<<<<<<<<<<
+ *                         items.append(self.of(item))
+ *                     except self._exceptions:
+ */
+          __Pyx_XGIVEREF(__pyx_t_9);
+          __Pyx_XGIVEREF(__pyx_t_10);
+          __Pyx_XGIVEREF(__pyx_t_11);
+          __Pyx_ExceptionReset(__pyx_t_9, __pyx_t_10, __pyx_t_11);
+          goto __pyx_L1_error;
+          __pyx_L17_try_end:;
+        }
+      }
+      __pyx_L9:;
 
       /* "nyoibo/fields.pyx":294
  *         if value and self.of:
@@ -9611,9 +9659,9 @@ static PyObject *__pyx_f_6nyoibo_6fields_10TupleField__parse(struct __pyx_obj_6n
     }
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "nyoibo/fields.pyx":302
- *                 except self._exceptions:
- *                     raise FieldValueError(f"type {type(item)} of {item} value is not a valid type of {self.of}")
+    /* "nyoibo/fields.pyx":305
+ *                     except self._exceptions:
+ *                         raise FieldValueError(f"type {type(item)} of {item} value is not a valid type of {self.of}")
  *             value = items             # <<<<<<<<<<<<<<
  *         return value
  * 
@@ -9630,8 +9678,8 @@ static PyObject *__pyx_f_6nyoibo_6fields_10TupleField__parse(struct __pyx_obj_6n
  */
   }
 
-  /* "nyoibo/fields.pyx":303
- *                     raise FieldValueError(f"type {type(item)} of {item} value is not a valid type of {self.of}")
+  /* "nyoibo/fields.pyx":306
+ *                         raise FieldValueError(f"type {type(item)} of {item} value is not a valid type of {self.of}")
  *             value = items
  *         return value             # <<<<<<<<<<<<<<
  * 
@@ -9654,7 +9702,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_10TupleField__parse(struct __pyx_obj_6n
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_6);
-  __Pyx_XDECREF(__pyx_t_11);
+  __Pyx_XDECREF(__pyx_t_8);
   __Pyx_XDECREF(__pyx_t_12);
   __Pyx_XDECREF(__pyx_t_13);
   __Pyx_XDECREF(__pyx_t_15);
@@ -18301,16 +18349,16 @@ static int __Pyx_modinit_type_init_code(void) {
   __pyx_vtabptr_6nyoibo_6fields_ListField = &__pyx_vtable_6nyoibo_6fields_ListField;
   __pyx_vtable_6nyoibo_6fields_ListField.__pyx_base = *__pyx_vtabptr_6nyoibo_6fields_TupleField;
   __pyx_type_6nyoibo_6fields_ListField.tp_base = __pyx_ptype_6nyoibo_6fields_TupleField;
-  if (PyType_Ready(&__pyx_type_6nyoibo_6fields_ListField) < 0) __PYX_ERR(0, 306, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_6nyoibo_6fields_ListField) < 0) __PYX_ERR(0, 309, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
   __pyx_type_6nyoibo_6fields_ListField.tp_print = 0;
   #endif
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_6nyoibo_6fields_ListField.tp_dictoffset && __pyx_type_6nyoibo_6fields_ListField.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_6nyoibo_6fields_ListField.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_6nyoibo_6fields_ListField.tp_dict, __pyx_vtabptr_6nyoibo_6fields_ListField) < 0) __PYX_ERR(0, 306, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_ListField, (PyObject *)&__pyx_type_6nyoibo_6fields_ListField) < 0) __PYX_ERR(0, 306, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_6nyoibo_6fields_ListField) < 0) __PYX_ERR(0, 306, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_6nyoibo_6fields_ListField.tp_dict, __pyx_vtabptr_6nyoibo_6fields_ListField) < 0) __PYX_ERR(0, 309, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_ListField, (PyObject *)&__pyx_type_6nyoibo_6fields_ListField) < 0) __PYX_ERR(0, 309, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_6nyoibo_6fields_ListField) < 0) __PYX_ERR(0, 309, __pyx_L1_error)
   __pyx_ptype_6nyoibo_6fields_ListField = &__pyx_type_6nyoibo_6fields_ListField;
   __Pyx_RefNannyFinishContext();
   return 0;
@@ -18819,12 +18867,12 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem((PyObject *)__pyx_ptype_6nyoibo_6fields_TupleField->tp_dict, __pyx_n_s_internal_type, ((PyObject *)(&PyTuple_Type))) < 0) __PYX_ERR(0, 285, __pyx_L1_error)
   PyType_Modified(__pyx_ptype_6nyoibo_6fields_TupleField);
 
-  /* "nyoibo/fields.pyx":314
+  /* "nyoibo/fields.pyx":317
  *     """
  * 
  *     _internal_type = list             # <<<<<<<<<<<<<<
  */
-  if (PyDict_SetItem((PyObject *)__pyx_ptype_6nyoibo_6fields_ListField->tp_dict, __pyx_n_s_internal_type, ((PyObject *)(&PyList_Type))) < 0) __PYX_ERR(0, 314, __pyx_L1_error)
+  if (PyDict_SetItem((PyObject *)__pyx_ptype_6nyoibo_6fields_ListField->tp_dict, __pyx_n_s_internal_type, ((PyObject *)(&PyList_Type))) < 0) __PYX_ERR(0, 317, __pyx_L1_error)
   PyType_Modified(__pyx_ptype_6nyoibo_6fields_ListField);
 
   /* "(tree fragment)":1

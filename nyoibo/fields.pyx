@@ -295,10 +295,13 @@ cdef class TupleField(Field):
                 if isinstance(item, self.of):
                     items.append(item)
                     continue
-                try:
-                    items.append(self.of(item))
-                except self._exceptions:
-                    raise FieldValueError(f"type {type(item)} of {item} value is not a valid type of {self.of}")
+                if isinstance(item, dict):
+                    items.append(self.of(**item))
+                else:
+                    try:
+                        items.append(self.of(item))
+                    except self._exceptions:
+                        raise FieldValueError(f"type {type(item)} of {item} value is not a valid type of {self.of}")
             value = items
         return value
 

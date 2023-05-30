@@ -333,3 +333,34 @@ def test_prioritize_field_alias():
     instance = MyModel(first_name='some name', nombres='julián')
 
     assert instance.first_name == 'julián'
+
+
+def test_instance_from_dict_with_tuple_field():
+    class License(Entity):
+        _category = fields.StrField()
+
+        def __eq__(self, other):
+            return self._category == other._category
+
+    class Owner(Entity):
+        _name = fields.StrField()
+        _licenses = fields.TupleField(of=License)
+
+    data = {
+        'name': 'test owner name',
+        'licenses': (
+            {
+                'category': 'A1'
+            },
+            {
+                'category': 'A2'
+            }
+        )
+    }
+    owner = Owner(**data)
+
+    assert owner.name == 'test owner name'
+    assert owner.licenses == (
+        License(category='A1'),
+        License(category='A2')
+    )
