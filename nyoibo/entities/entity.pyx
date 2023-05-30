@@ -1,5 +1,6 @@
 from nyoibo cimport fields
 from .meta_entity import MetaEntity
+from ..utils import camel_to_snake_case
 
 
 class Entity(metaclass=MetaEntity):
@@ -23,7 +24,7 @@ class Entity(metaclass=MetaEntity):
         cdef fields.Field field
         for key, field in self._fields.items():
             key = key.replace('_', '', 1)
-            value = kwargs.get(key, None)
+            value = kwargs.get(field.alias) or kwargs.get(key)
             if value is None:
                 value = field.default_value
             if field.mutable is False or field.private is True:
@@ -32,13 +33,8 @@ class Entity(metaclass=MetaEntity):
                 if issubclass(type(current_value), fields.Field):
                     current_value = None
                 value = field.parse(current_value or value)
-            value = self._additional_value(key, field, value)
+
             setattr(self, key, value)
-
-    def _additional_value(self, key, field, value):
-        """additional value
-
-        This is useful if you want change the behavior
-        by inheritance.
-        """
-        return value
+            if isinstance(field, fields.TupleField) and field.reverse_relationship:
+                for subfield in value:
+                    setattr(subfield, f'_{camel_to_snake_case(self.__class__.__name__)}', self)

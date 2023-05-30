@@ -6,8 +6,7 @@ from pytest import mark, raises
 
 from nyoibo import Entity, fields
 from nyoibo.exceptions import FieldValueError, StrLengthError, \
-    IntMinValueError, IntMaxValueError
-
+    IntMinValueError, IntMaxValueError, RequiredValueError
 
 str_values = (
     ('10.5', '10.5'),
@@ -217,6 +216,15 @@ def test_wrong_link_value(value):
     assert str(e.value) == f'{type(value)} is not a valid value for LinkField'
 
 
+def test_parse_required_link_field():
+    class Linked(Entity):
+        _value = fields.StrField()
+
+    link_field = fields.LinkField(to=Linked, required=True)
+    with raises(RequiredValueError):
+        link_field.parse(None)
+
+
 def test_parse_link_field_from_dict():
     class NewEntity(Entity):
         _field0 = fields.StrField()
@@ -318,6 +326,58 @@ def test_parse_tuple_field():
     assert field.parse([1, 2, 3]) == (1, 2, 3)
 
 
+def test_parse_tuple_field_with_type():
+    field = fields.TupleField(of=int)
+    assert field.parse((1, '2', 3, 4.0)) == (1, 2, 3, 4)
+
+
+def test_parse_tuple_field_with_invalid_type():
+    field = fields.TupleField(of=int)
+    with raises(FieldValueError) as error:
+        field.parse((1, 2, 3, 'hi'))
+
+    assert str(error.value) == "type <class 'str'> of hi value is not a " \
+                               "valid type of <class 'int'>"
+
+
+def test_parse_tuple_field_with_entity_type():
+    class Person(Entity):
+        _name = fields.StrField()
+
+    field = fields.TupleField(of=Person)
+    people = (
+        Person(name='john doe'),
+        Person(name='jane')
+    )
+    assert field.parse(people) == people
+
+
+def test_parse_tuple_field_with_invalid_entity_type():
+    class Person(Entity):
+        _name = fields.StrField()
+
+    field = fields.TupleField(of=Person)
+    people = (
+        Person(name='john doe'),
+        123
+    )
+    with raises(FieldValueError):
+        field.parse(people)
+
+
 def test_parse_list_field():
     field = fields.ListField()
     assert field.parse((1, 2, 3)) == [1, 2, 3]
+
+
+def test_parse_list_field_with_type():
+    field = fields.ListField(of=int)
+    assert field.parse((1, '2', 3, 4.0)) == [1, 2, 3, 4]
+
+
+def test_tuple_field_with_reverse_relationship():
+    with raises(ValueError) as e:
+        fields.TupleField(reverse_relationship=True)
+
+    assert str(e.value) == 'to make a reverse relationship, ' \
+                           '`of` parameter must to be set'

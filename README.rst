@@ -17,7 +17,7 @@ Python.
 Installation
 ------------
 
-You can install nyoibo with pip. Nyoibo requires python 3.7 or higer.
+You can install nyoibo with pip. Nyoibo requires python 3.9 or higher.
 
 ``pip install nyoibo``
 

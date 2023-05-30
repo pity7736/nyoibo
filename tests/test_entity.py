@@ -294,3 +294,132 @@ def test_with_required_field():
 
     with raises(RequiredValueError):
         Model()
+
+
+def test_fields_with_aliases():
+    class MyModel(Entity):
+        _first_name = fields.StrField(alias='nombres')
+        _last_name = fields.StrField(alias='apellidos')
+
+    instance0 = MyModel(nombres='julián', apellidos='cortés')
+    instance1 = MyModel(first_name='julián', last_name='cortés')
+
+    assert instance0.first_name == 'julián'
+    assert instance0.last_name == 'cortés'
+    assert instance1.first_name == 'julián'
+    assert instance1.last_name == 'cortés'
+
+
+def test_instance_from_dict_with_aliases():
+    class MyModel(Entity):
+        _first_name = fields.StrField(alias='nombres')
+        _last_name = fields.StrField(alias='apellidos')
+
+    data = {
+        'nombres': 'julián',
+        'apellidos': 'cortés'
+    }
+    instance = MyModel(**data)
+
+    assert instance.first_name == 'julián'
+    assert instance.last_name == 'cortés'
+
+
+def test_prioritize_field_alias():
+    class MyModel(Entity):
+        _first_name = fields.StrField(alias='nombres')
+        _last_name = fields.StrField(alias='apellidos')
+
+    instance = MyModel(first_name='some name', nombres='julián')
+
+    assert instance.first_name == 'julián'
+
+
+def test_instance_from_dict_with_tuple_field():
+    class License(Entity):
+        _category = fields.StrField()
+
+        def __eq__(self, other):
+            return self._category == other._category
+
+    class Owner(Entity):
+        _name = fields.StrField()
+        _licenses = fields.TupleField(of=License, reverse_relationship=True)
+
+    data = {
+        'name': 'test owner name',
+        'licenses': (
+            {
+                'category': 'A1'
+            },
+            {
+                'category': 'A2'
+            }
+        )
+    }
+    owner = Owner(**data)
+
+    assert owner.name == 'test owner name'
+    assert owner.licenses == (
+        License(category='A1'),
+        License(category='A2')
+    )
+    assert owner.licenses[0].owner == owner
+    assert owner.licenses[1].owner == owner
+
+
+def test_reverse_relationship():
+    class License(Entity):
+        _category = fields.StrField()
+
+        def __eq__(self, other):
+            return self._category == other._category
+
+    class OwnerModel(Entity):
+        _name = fields.StrField()
+        _licenses = fields.TupleField(of=License, reverse_relationship=True)
+
+        def __eq__(self, other):
+            return self._name == other._name
+
+    owner = OwnerModel(
+        name='test name',
+        licenses=(
+            License(category='A1'),
+            License(category='A2')
+        )
+    )
+
+    assert owner.licenses[0].owner_model == owner
+    assert owner.licenses[1].owner_model == owner
+
+
+def test_reverse_relationship_with_private_field():
+    class License(Entity):
+        _category = fields.StrField()
+
+        def compare_owner(self, owner):
+            return self._owner == owner
+
+        def __eq__(self, other):
+            return self._category == other._category
+
+    class Owner(Entity):
+        _name = fields.StrField()
+        _licenses = fields.TupleField(
+            of=License,
+            reverse_relationship=True,
+            private=True
+        )
+
+        def __eq__(self, other):
+            return self._name == other._name
+    lic = License(category='A1')
+    owner = Owner(
+        name='test name',
+        licenses=(lic,)
+    )
+
+    assert lic.compare_owner(owner) is True
+    with raises(AttributeError):
+        lic.owner

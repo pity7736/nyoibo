@@ -32,12 +32,13 @@ cdef class Field:
     _exceptions = (TypeError, ValueError)
 
     def __init__(self, private=False, mutable=False, default_value=None,
-                 choices=None, bint required=False):
+                 choices=None, required=False, alias=None):
         self.default_value = default_value
         self.private = private
         self.mutable = mutable
         self.choices = choices
         self.required = required
+        self.alias = alias
 
     cpdef public parse(self, value):
         """Parse and cast to ``_internal_type``
@@ -224,16 +225,12 @@ cdef class DecimalField(Field):
 cdef class LinkField(Field):
     """Field for link between other ``Entity``
 
-    _valid_values is useful to accept others types
-    by inheritance
-
     Args:
         to (Entity): Entity instance
 
     Raises:
         ValueError: if ``to`` is not a subclass of :ref:``entity``
     """
-    _valid_values = ()
 
     def __init__(self, to, *args, **kwargs):
         if issubclass(type(to), MetaEntity) is False:
@@ -242,7 +239,11 @@ cdef class LinkField(Field):
         self.to = to
 
     cpdef public parse(self, value):
-        if value is None or isinstance(value, (self.to, *self._valid_values)):
+        if isinstance(value, self.to):
+            return value
+        if value is None:
+            if self.required is True:
+                raise RequiredValueError('value is required')
             return value
         if isinstance(value, dict):
             if value:
@@ -252,37 +253,75 @@ cdef class LinkField(Field):
                               f'{self.__class__.__name__}')
 
 
-class DictField(Field):
+cdef class DictField(Field):
     """Field for dict values
     """
 
     _internal_type = dict
 
 
-class JSONField(Field):
+cdef class JSONField(Field):
     """Field for json values.
     """
 
     _internal_type = str
 
-    def parse(self, value):
+    cdef _parse(self, value):
         try:
             return json.dumps(value)
         except self._exceptions:
             raise FieldValueError(f'data {value} is not serializable')
 
 
-class TupleField(Field):
+cdef class TupleField(Field):
     """
     Field for tuple values
+
+    Args:
+        of: Type of items. All items going to be cast to ``of`` type.
+        reverse_relationship (bool): create a reverse relation with ``of``.
+
+    Raises:
+        ValueError: if of is ``None`` and ``reverse_relationship`` is True
     """
 
     _internal_type = tuple
 
+    def __init__(self, of=None, reverse_relationship=False, *args, **kwargs):
+        if reverse_relationship and of is None:
+            raise ValueError('to make a reverse relationship, `of` parameter must to be set')
+        super().__init__(*args, **kwargs)
+        self.of = of
+        self.reverse_relationship = reverse_relationship
 
-class ListField(Field):
+    cdef _parse(self, value):
+        if value and self.of:
+            items = []
+            for item in value:
+                if isinstance(item, self.of):
+                    items.append(item)
+                    continue
+                if isinstance(item, dict):
+                    items.append(self.of(**item))
+                else:
+                    try:
+                        items.append(self.of(item))
+                    except self._exceptions:
+                        raise FieldValueError(f"type {type(item)} of {item} value is not a valid type of {self.of}")
+            value = items
+        return value
+
+
+cdef class ListField(TupleField):
     """
     Field for list values
+
+    Args:
+        of: Type of items. All items going to be cast to ``of`` type.
+                reverse_relationship (bool): create a reverse relation with ``of``.
+
+    Raises:
+        ValueError: if of is ``None`` and ``reverse_relationship`` is True
     """
 
     _internal_type = list

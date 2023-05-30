@@ -4,6 +4,7 @@ cdef class Field:
     cdef readonly private
     cdef readonly mutable
     cdef readonly choices
+    cdef readonly alias
     cdef bint required
     cpdef public parse(self, value)
     cdef _parse(self, value)
@@ -20,3 +21,8 @@ cdef class IntField(Field):
 
 cdef class LinkField(Field):
     cdef readonly to
+
+
+cdef class TupleField(Field):
+    cdef readonly of
+    cdef readonly reverse_relationship
