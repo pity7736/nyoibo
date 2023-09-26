@@ -6,6 +6,7 @@ cdef class Field:
     cdef readonly choices
     cdef readonly alias
     cdef bint required
+    cdef str name
     cpdef public parse(self, value)
     cdef _parse(self, value)
 

@@ -39,6 +39,10 @@ cdef class Field:
         self.choices = choices
         self.required = required
         self.alias = alias
+        self.name = ''
+
+    def __set_name__(self, owner, name):
+        self.name = name.replace('_', '', 1)
 
     cpdef public parse(self, value):
         """Parse and cast to ``_internal_type``
@@ -61,7 +65,7 @@ cdef class Field:
                 return value
             if value is None:
                 if self.required is True:
-                    raise RequiredValueError('value is required')
+                    raise RequiredValueError(f'missing required value for {self.name} field')
                 return value
             return self._internal_type(value)
         except self._exceptions:

@@ -1,12 +1,14 @@
 from pytest import raises
 
-from nyoibo import fields
+from nyoibo import fields, Entity
 from nyoibo.exceptions import RequiredValueError
 
 
 def test_required_value():
-    field = fields.StrField(required=True)
-    with raises(RequiredValueError) as e:
-        field.parse(None)
+    class Model(Entity):
+        _field_name = fields.StrField(required=True)
 
-    assert str(e.value) == 'value is required'
+    with raises(RequiredValueError) as e:
+        Model()
+
+    assert str(e.value) == 'missing required value for field_name field'
