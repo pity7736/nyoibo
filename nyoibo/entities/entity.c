@@ -988,10 +988,11 @@ struct __pyx_obj_6nyoibo_6fields_Field {
   PyObject *choices;
   PyObject *alias;
   int required;
+  PyObject *name;
 };
 
 
-/* "fields.pxd":13
+/* "fields.pxd":14
  * 
  * 
  * cdef class StrField(Field):             # <<<<<<<<<<<<<<
@@ -1004,7 +1005,7 @@ struct __pyx_obj_6nyoibo_6fields_StrField {
 };
 
 
-/* "fields.pxd":17
+/* "fields.pxd":18
  * 
  * 
  * cdef class IntField(Field):             # <<<<<<<<<<<<<<
@@ -1018,7 +1019,7 @@ struct __pyx_obj_6nyoibo_6fields_IntField {
 };
 
 
-/* "fields.pxd":22
+/* "fields.pxd":23
  * 
  * 
  * cdef class LinkField(Field):             # <<<<<<<<<<<<<<
@@ -1031,7 +1032,7 @@ struct __pyx_obj_6nyoibo_6fields_LinkField {
 };
 
 
-/* "fields.pxd":26
+/* "fields.pxd":27
  * 
  * 
  * cdef class TupleField(Field):             # <<<<<<<<<<<<<<
@@ -1060,7 +1061,7 @@ struct __pyx_vtabstruct_6nyoibo_6fields_Field {
 static struct __pyx_vtabstruct_6nyoibo_6fields_Field *__pyx_vtabptr_6nyoibo_6fields_Field;
 
 
-/* "fields.pxd":13
+/* "fields.pxd":14
  * 
  * 
  * cdef class StrField(Field):             # <<<<<<<<<<<<<<
@@ -1074,7 +1075,7 @@ struct __pyx_vtabstruct_6nyoibo_6fields_StrField {
 static struct __pyx_vtabstruct_6nyoibo_6fields_StrField *__pyx_vtabptr_6nyoibo_6fields_StrField;
 
 
-/* "fields.pxd":17
+/* "fields.pxd":18
  * 
  * 
  * cdef class IntField(Field):             # <<<<<<<<<<<<<<
@@ -1088,7 +1089,7 @@ struct __pyx_vtabstruct_6nyoibo_6fields_IntField {
 static struct __pyx_vtabstruct_6nyoibo_6fields_IntField *__pyx_vtabptr_6nyoibo_6fields_IntField;
 
 
-/* "fields.pxd":22
+/* "fields.pxd":23
  * 
  * 
  * cdef class LinkField(Field):             # <<<<<<<<<<<<<<
@@ -1102,7 +1103,7 @@ struct __pyx_vtabstruct_6nyoibo_6fields_LinkField {
 static struct __pyx_vtabstruct_6nyoibo_6fields_LinkField *__pyx_vtabptr_6nyoibo_6fields_LinkField;
 
 
-/* "fields.pxd":26
+/* "fields.pxd":27
  * 
  * 
  * cdef class TupleField(Field):             # <<<<<<<<<<<<<<
@@ -2029,7 +2030,7 @@ static PyObject *__pyx_pf_6nyoibo_8entities_6entity_6Entity___init__(CYTHON_UNUS
  *                 value = field.parse(current_value or value)
  * 
  *             setattr(self, key, value)             # <<<<<<<<<<<<<<
- *             if isinstance(field, fields.TupleField) and field.reverse_relationship:
+ *             if value and isinstance(field, fields.TupleField) and field.reverse_relationship:
  *                 for subfield in value:
  */
     __pyx_t_11 = PyObject_SetAttr(__pyx_v_self, __pyx_v_key, __pyx_v_value); if (unlikely(__pyx_t_11 == ((int)-1))) __PYX_ERR(0, 37, __pyx_L1_error)
@@ -2037,10 +2038,16 @@ static PyObject *__pyx_pf_6nyoibo_8entities_6entity_6Entity___init__(CYTHON_UNUS
     /* "nyoibo/entities/entity.pyx":38
  * 
  *             setattr(self, key, value)
- *             if isinstance(field, fields.TupleField) and field.reverse_relationship:             # <<<<<<<<<<<<<<
+ *             if value and isinstance(field, fields.TupleField) and field.reverse_relationship:             # <<<<<<<<<<<<<<
  *                 for subfield in value:
  *                     setattr(subfield, f'_{camel_to_snake_case(self.__class__.__name__)}', self)
  */
+    __pyx_t_9 = __Pyx_PyObject_IsTrue(__pyx_v_value); if (unlikely(__pyx_t_9 < 0)) __PYX_ERR(0, 38, __pyx_L1_error)
+    if (__pyx_t_9) {
+    } else {
+      __pyx_t_8 = __pyx_t_9;
+      goto __pyx_L15_bool_binop_done;
+    }
     __pyx_t_9 = __Pyx_TypeCheck(((PyObject *)__pyx_v_field), __pyx_ptype_6nyoibo_6fields_TupleField); 
     __pyx_t_10 = (__pyx_t_9 != 0);
     if (__pyx_t_10) {
@@ -2058,7 +2065,7 @@ static PyObject *__pyx_pf_6nyoibo_8entities_6entity_6Entity___init__(CYTHON_UNUS
 
       /* "nyoibo/entities/entity.pyx":39
  *             setattr(self, key, value)
- *             if isinstance(field, fields.TupleField) and field.reverse_relationship:
+ *             if value and isinstance(field, fields.TupleField) and field.reverse_relationship:
  *                 for subfield in value:             # <<<<<<<<<<<<<<
  *                     setattr(subfield, f'_{camel_to_snake_case(self.__class__.__name__)}', self)
  */
@@ -2105,7 +2112,7 @@ static PyObject *__pyx_pf_6nyoibo_8entities_6entity_6Entity___init__(CYTHON_UNUS
         __pyx_t_6 = 0;
 
         /* "nyoibo/entities/entity.pyx":40
- *             if isinstance(field, fields.TupleField) and field.reverse_relationship:
+ *             if value and isinstance(field, fields.TupleField) and field.reverse_relationship:
  *                 for subfield in value:
  *                     setattr(subfield, f'_{camel_to_snake_case(self.__class__.__name__)}', self)             # <<<<<<<<<<<<<<
  */
@@ -2143,7 +2150,7 @@ static PyObject *__pyx_pf_6nyoibo_8entities_6entity_6Entity___init__(CYTHON_UNUS
 
         /* "nyoibo/entities/entity.pyx":39
  *             setattr(self, key, value)
- *             if isinstance(field, fields.TupleField) and field.reverse_relationship:
+ *             if value and isinstance(field, fields.TupleField) and field.reverse_relationship:
  *                 for subfield in value:             # <<<<<<<<<<<<<<
  *                     setattr(subfield, f'_{camel_to_snake_case(self.__class__.__name__)}', self)
  */
@@ -2153,7 +2160,7 @@ static PyObject *__pyx_pf_6nyoibo_8entities_6entity_6Entity___init__(CYTHON_UNUS
       /* "nyoibo/entities/entity.pyx":38
  * 
  *             setattr(self, key, value)
- *             if isinstance(field, fields.TupleField) and field.reverse_relationship:             # <<<<<<<<<<<<<<
+ *             if value and isinstance(field, fields.TupleField) and field.reverse_relationship:             # <<<<<<<<<<<<<<
  *                 for subfield in value:
  *                     setattr(subfield, f'_{camel_to_snake_case(self.__class__.__name__)}', self)
  */
@@ -2366,20 +2373,20 @@ static int __Pyx_modinit_type_import_code(void) {
   __pyx_vtabptr_6nyoibo_6fields_Field = (struct __pyx_vtabstruct_6nyoibo_6fields_Field*)__Pyx_GetVtable(__pyx_ptype_6nyoibo_6fields_Field->tp_dict); if (unlikely(!__pyx_vtabptr_6nyoibo_6fields_Field)) __PYX_ERR(1, 2, __pyx_L1_error)
   __pyx_ptype_6nyoibo_6fields_StrField = __Pyx_ImportType(__pyx_t_1, "nyoibo.fields", "StrField", sizeof(struct __pyx_obj_6nyoibo_6fields_StrField), __PYX_GET_STRUCT_ALIGNMENT(struct __pyx_obj_6nyoibo_6fields_StrField),
   __Pyx_ImportType_CheckSize_Warn);
-   if (!__pyx_ptype_6nyoibo_6fields_StrField) __PYX_ERR(1, 13, __pyx_L1_error)
-  __pyx_vtabptr_6nyoibo_6fields_StrField = (struct __pyx_vtabstruct_6nyoibo_6fields_StrField*)__Pyx_GetVtable(__pyx_ptype_6nyoibo_6fields_StrField->tp_dict); if (unlikely(!__pyx_vtabptr_6nyoibo_6fields_StrField)) __PYX_ERR(1, 13, __pyx_L1_error)
+   if (!__pyx_ptype_6nyoibo_6fields_StrField) __PYX_ERR(1, 14, __pyx_L1_error)
+  __pyx_vtabptr_6nyoibo_6fields_StrField = (struct __pyx_vtabstruct_6nyoibo_6fields_StrField*)__Pyx_GetVtable(__pyx_ptype_6nyoibo_6fields_StrField->tp_dict); if (unlikely(!__pyx_vtabptr_6nyoibo_6fields_StrField)) __PYX_ERR(1, 14, __pyx_L1_error)
   __pyx_ptype_6nyoibo_6fields_IntField = __Pyx_ImportType(__pyx_t_1, "nyoibo.fields", "IntField", sizeof(struct __pyx_obj_6nyoibo_6fields_IntField), __PYX_GET_STRUCT_ALIGNMENT(struct __pyx_obj_6nyoibo_6fields_IntField),
   __Pyx_ImportType_CheckSize_Warn);
-   if (!__pyx_ptype_6nyoibo_6fields_IntField) __PYX_ERR(1, 17, __pyx_L1_error)
-  __pyx_vtabptr_6nyoibo_6fields_IntField = (struct __pyx_vtabstruct_6nyoibo_6fields_IntField*)__Pyx_GetVtable(__pyx_ptype_6nyoibo_6fields_IntField->tp_dict); if (unlikely(!__pyx_vtabptr_6nyoibo_6fields_IntField)) __PYX_ERR(1, 17, __pyx_L1_error)
+   if (!__pyx_ptype_6nyoibo_6fields_IntField) __PYX_ERR(1, 18, __pyx_L1_error)
+  __pyx_vtabptr_6nyoibo_6fields_IntField = (struct __pyx_vtabstruct_6nyoibo_6fields_IntField*)__Pyx_GetVtable(__pyx_ptype_6nyoibo_6fields_IntField->tp_dict); if (unlikely(!__pyx_vtabptr_6nyoibo_6fields_IntField)) __PYX_ERR(1, 18, __pyx_L1_error)
   __pyx_ptype_6nyoibo_6fields_LinkField = __Pyx_ImportType(__pyx_t_1, "nyoibo.fields", "LinkField", sizeof(struct __pyx_obj_6nyoibo_6fields_LinkField), __PYX_GET_STRUCT_ALIGNMENT(struct __pyx_obj_6nyoibo_6fields_LinkField),
   __Pyx_ImportType_CheckSize_Warn);
-   if (!__pyx_ptype_6nyoibo_6fields_LinkField) __PYX_ERR(1, 22, __pyx_L1_error)
-  __pyx_vtabptr_6nyoibo_6fields_LinkField = (struct __pyx_vtabstruct_6nyoibo_6fields_LinkField*)__Pyx_GetVtable(__pyx_ptype_6nyoibo_6fields_LinkField->tp_dict); if (unlikely(!__pyx_vtabptr_6nyoibo_6fields_LinkField)) __PYX_ERR(1, 22, __pyx_L1_error)
+   if (!__pyx_ptype_6nyoibo_6fields_LinkField) __PYX_ERR(1, 23, __pyx_L1_error)
+  __pyx_vtabptr_6nyoibo_6fields_LinkField = (struct __pyx_vtabstruct_6nyoibo_6fields_LinkField*)__Pyx_GetVtable(__pyx_ptype_6nyoibo_6fields_LinkField->tp_dict); if (unlikely(!__pyx_vtabptr_6nyoibo_6fields_LinkField)) __PYX_ERR(1, 23, __pyx_L1_error)
   __pyx_ptype_6nyoibo_6fields_TupleField = __Pyx_ImportType(__pyx_t_1, "nyoibo.fields", "TupleField", sizeof(struct __pyx_obj_6nyoibo_6fields_TupleField), __PYX_GET_STRUCT_ALIGNMENT(struct __pyx_obj_6nyoibo_6fields_TupleField),
   __Pyx_ImportType_CheckSize_Warn);
-   if (!__pyx_ptype_6nyoibo_6fields_TupleField) __PYX_ERR(1, 26, __pyx_L1_error)
-  __pyx_vtabptr_6nyoibo_6fields_TupleField = (struct __pyx_vtabstruct_6nyoibo_6fields_TupleField*)__Pyx_GetVtable(__pyx_ptype_6nyoibo_6fields_TupleField->tp_dict); if (unlikely(!__pyx_vtabptr_6nyoibo_6fields_TupleField)) __PYX_ERR(1, 26, __pyx_L1_error)
+   if (!__pyx_ptype_6nyoibo_6fields_TupleField) __PYX_ERR(1, 27, __pyx_L1_error)
+  __pyx_vtabptr_6nyoibo_6fields_TupleField = (struct __pyx_vtabstruct_6nyoibo_6fields_TupleField*)__Pyx_GetVtable(__pyx_ptype_6nyoibo_6fields_TupleField->tp_dict); if (unlikely(!__pyx_vtabptr_6nyoibo_6fields_TupleField)) __PYX_ERR(1, 27, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_RefNannyFinishContext();
   return 0;

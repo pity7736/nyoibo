@@ -423,3 +423,14 @@ def test_reverse_relationship_with_private_field():
     assert lic.compare_owner(owner) is True
     with raises(AttributeError):
         lic.owner
+
+
+def test_reverse_relationship_with_none_value():
+    class Model0(Entity):
+        _name = fields.StrField()
+
+    class Model1(Entity):
+        _models = fields.ListField(of=Model0)
+
+    model1 = Model1()
+    assert model1.models is None
