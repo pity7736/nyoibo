@@ -69,6 +69,7 @@ def test_parse_bool_value(value, expected_result):
 
 date_values = (
     (datetime.date(2020, 7, 7), datetime.date(2020, 7, 7)),
+    (datetime.datetime(2020, 7, 7), datetime.date(2020, 7, 7)),
     ('2020-07-07', datetime.date(2020, 7, 7)),
 )
 
@@ -93,6 +94,31 @@ def test_wrong_date_value(value):
     assert str(e.value) == f'{type(value)} is not a valid value for DateField'
 
 
+date_string_formats = (
+    (
+        (),
+        '2023-10-23',
+        datetime.date(2023, 10, 23)
+    ),
+    (
+        ('%d/%m/%Y',),
+        '23/10/2023',
+        datetime.date(2023, 10, 23)
+    ),
+    (
+        ('%d/%m/%y', '%d/%m/%Y',),
+        '23/10/23',
+        datetime.date(2023, 10, 23)
+    ),
+)
+
+
+@mark.parametrize('formats, value, expected_result', date_string_formats)
+def test_date_formats(formats, value, expected_result):
+    date_field = fields.DateField(formats=formats)
+    assert date_field.parse(value) == expected_result
+
+
 datetime_values = (
     (
         datetime.datetime(2020, 7, 7, 22, 29, 30),
@@ -109,6 +135,36 @@ datetime_values = (
 def test_parse_datetime_value(value, expected_result):
     datetime_field = fields.DatetimeField()
     assert datetime_field.parse(value) == expected_result
+
+
+datetime_string_formats = (
+    (
+        (),
+        '2023-10-23',
+        datetime.datetime(2023, 10, 23, 0, 0, 0)
+    ),
+    (
+        ('%d/%m/%Y',),
+        '23/10/2023',
+        datetime.datetime(2023, 10, 23, 0, 0, 0)
+    ),
+    (
+        ('%d/%m/%y', '%d/%m/%Y',),
+        '23/10/23',
+        datetime.datetime(2023, 10, 23, 0, 0, 0)
+    ),
+    (
+        ('%d/%m/%y', '%d/%m/%Y %H:%M',),
+        '23/10/2023 22:32',
+        datetime.datetime(2023, 10, 23, 22, 32, 0)
+    ),
+)
+
+
+@mark.parametrize('formats, value, expected_result', datetime_string_formats)
+def test_datetime_formats(formats, value, expected_result):
+    date_field = fields.DatetimeField(formats=formats)
+    assert date_field.parse(value) == expected_result
 
 
 wrong_datetime_values = (

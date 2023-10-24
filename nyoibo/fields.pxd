@@ -27,3 +27,11 @@ cdef class LinkField(Field):
 cdef class TupleField(Field):
     cdef readonly of
     cdef readonly reverse_relationship
+
+
+cdef class DateField(Field):
+    cdef readonly _formats
+
+
+cdef class DatetimeField(Field):
+    cdef readonly _formats

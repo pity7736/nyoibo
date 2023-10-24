@@ -1,6 +1,7 @@
 import datetime
 import json
 from decimal import Decimal, InvalidOperation
+from typing import Iterable
 
 from nyoibo.entities.meta_entity import MetaEntity
 from nyoibo.exceptions import FieldValueError, RequiredValueError, \
@@ -184,16 +185,32 @@ cdef class BoolField(Field):
 
 
 cdef class DateField(Field):
-    """Field for datetime.date values
+    """Field for ``datetime.date`` values
 
-    Values could be datetime.date or isoformat string.
+    Values could be ``datetime.date`` or isoformat string.
+
+    Args:
+        formats(iterable): string formats  following `strptime format codes
+        <https://docs.python.org/3/library/datetime.html#strftime-and-strptime-format-codes>`_
+
     """
 
     _internal_type = datetime.date
 
+    def __init__(self, formats: Iterable[str, ...] = (), **kwargs):
+        super().__init__(**kwargs)
+        self._formats = formats
+
     cdef _parse(self, value):
         if isinstance(value, str):
+            for str_format in self._formats:
+                try:
+                    return datetime.datetime.strptime(value, str_format).date()
+                except ValueError:
+                    continue
             return datetime.date.fromisoformat(value)
+        elif isinstance(value, datetime.datetime):
+            value = value.date()
         return value
 
 
@@ -201,12 +218,26 @@ cdef class DatetimeField(Field):
     """Field for datetime.datetime values
 
     Values could be datetime.datetime or isoformat string.
+
+    Args:
+        formats(iterable): string formats  following `strptime format codes
+        <https://docs.python.org/3/library/datetime.html#strftime-and-strptime-format-codes>`_
+
     """
 
     _internal_type = datetime.datetime
 
+    def __init__(self, formats: Iterable[str, ...] = (), **kwargs):
+        super().__init__(**kwargs)
+        self._formats = formats
+
     cdef _parse(self, value):
         if isinstance(value, str):
+            for str_format in self._formats:
+                try:
+                    return datetime.datetime.strptime(value, str_format)
+                except ValueError:
+                    continue
             return datetime.datetime.fromisoformat(value)
         return value
 
