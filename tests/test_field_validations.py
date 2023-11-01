@@ -11,4 +11,5 @@ def test_required_value():
     with raises(RequiredValueError) as e:
         Model()
 
-    assert str(e.value) == 'missing required value for field_name field'
+    assert str(e.value) == ('missing required value for <field_name> field in '
+                            'model <Model>')

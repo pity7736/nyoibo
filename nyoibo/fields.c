@@ -997,10 +997,11 @@ struct __pyx_obj_6nyoibo_6fields_Field {
   PyObject *alias;
   int required;
   PyObject *name;
+  PyObject *model;
 };
 
 
-/* "nyoibo/fields.pxd":14
+/* "nyoibo/fields.pxd":15
  * 
  * 
  * cdef class StrField(Field):             # <<<<<<<<<<<<<<
@@ -1013,7 +1014,7 @@ struct __pyx_obj_6nyoibo_6fields_StrField {
 };
 
 
-/* "nyoibo/fields.pxd":18
+/* "nyoibo/fields.pxd":19
  * 
  * 
  * cdef class IntField(Field):             # <<<<<<<<<<<<<<
@@ -1027,7 +1028,7 @@ struct __pyx_obj_6nyoibo_6fields_IntField {
 };
 
 
-/* "nyoibo/fields.pxd":23
+/* "nyoibo/fields.pxd":24
  * 
  * 
  * cdef class LinkField(Field):             # <<<<<<<<<<<<<<
@@ -1040,7 +1041,7 @@ struct __pyx_obj_6nyoibo_6fields_LinkField {
 };
 
 
-/* "nyoibo/fields.pxd":27
+/* "nyoibo/fields.pxd":28
  * 
  * 
  * cdef class TupleField(Field):             # <<<<<<<<<<<<<<
@@ -1054,7 +1055,7 @@ struct __pyx_obj_6nyoibo_6fields_TupleField {
 };
 
 
-/* "nyoibo/fields.pxd":32
+/* "nyoibo/fields.pxd":33
  * 
  * 
  * cdef class DateField(Field):             # <<<<<<<<<<<<<<
@@ -1067,7 +1068,7 @@ struct __pyx_obj_6nyoibo_6fields_DateField {
 };
 
 
-/* "nyoibo/fields.pxd":36
+/* "nyoibo/fields.pxd":37
  * 
  * 
  * cdef class DatetimeField(Field):             # <<<<<<<<<<<<<<
@@ -1079,7 +1080,7 @@ struct __pyx_obj_6nyoibo_6fields_DatetimeField {
 };
 
 
-/* "nyoibo/fields.pyx":175
+/* "nyoibo/fields.pyx":179
  * 
  * 
  * cdef class BoolField(Field):             # <<<<<<<<<<<<<<
@@ -1091,7 +1092,7 @@ struct __pyx_obj_6nyoibo_6fields_BoolField {
 };
 
 
-/* "nyoibo/fields.pyx":245
+/* "nyoibo/fields.pyx":249
  * 
  * 
  * cdef class FloatField(Field):             # <<<<<<<<<<<<<<
@@ -1103,7 +1104,7 @@ struct __pyx_obj_6nyoibo_6fields_FloatField {
 };
 
 
-/* "nyoibo/fields.pyx":252
+/* "nyoibo/fields.pyx":256
  * 
  * 
  * cdef class DecimalField(Field):             # <<<<<<<<<<<<<<
@@ -1115,7 +1116,7 @@ struct __pyx_obj_6nyoibo_6fields_DecimalField {
 };
 
 
-/* "nyoibo/fields.pyx":291
+/* "nyoibo/fields.pyx":295
  * 
  * 
  * cdef class DictField(Field):             # <<<<<<<<<<<<<<
@@ -1127,7 +1128,7 @@ struct __pyx_obj_6nyoibo_6fields_DictField {
 };
 
 
-/* "nyoibo/fields.pyx":298
+/* "nyoibo/fields.pyx":302
  * 
  * 
  * cdef class JSONField(Field):             # <<<<<<<<<<<<<<
@@ -1139,7 +1140,7 @@ struct __pyx_obj_6nyoibo_6fields_JSONField {
 };
 
 
-/* "nyoibo/fields.pyx":350
+/* "nyoibo/fields.pyx":354
  * 
  * 
  * cdef class ListField(TupleField):             # <<<<<<<<<<<<<<
@@ -1167,7 +1168,7 @@ struct __pyx_vtabstruct_6nyoibo_6fields_Field {
 static struct __pyx_vtabstruct_6nyoibo_6fields_Field *__pyx_vtabptr_6nyoibo_6fields_Field;
 
 
-/* "nyoibo/fields.pyx":93
+/* "nyoibo/fields.pyx":97
  * 
  * 
  * cdef class StrField(Field):             # <<<<<<<<<<<<<<
@@ -1181,7 +1182,7 @@ struct __pyx_vtabstruct_6nyoibo_6fields_StrField {
 static struct __pyx_vtabstruct_6nyoibo_6fields_StrField *__pyx_vtabptr_6nyoibo_6fields_StrField;
 
 
-/* "nyoibo/fields.pyx":128
+/* "nyoibo/fields.pyx":132
  * 
  * 
  * cdef class IntField(Field):             # <<<<<<<<<<<<<<
@@ -1195,7 +1196,7 @@ struct __pyx_vtabstruct_6nyoibo_6fields_IntField {
 static struct __pyx_vtabstruct_6nyoibo_6fields_IntField *__pyx_vtabptr_6nyoibo_6fields_IntField;
 
 
-/* "nyoibo/fields.pyx":260
+/* "nyoibo/fields.pyx":264
  * 
  * 
  * cdef class LinkField(Field):             # <<<<<<<<<<<<<<
@@ -1209,7 +1210,7 @@ struct __pyx_vtabstruct_6nyoibo_6fields_LinkField {
 static struct __pyx_vtabstruct_6nyoibo_6fields_LinkField *__pyx_vtabptr_6nyoibo_6fields_LinkField;
 
 
-/* "nyoibo/fields.pyx":311
+/* "nyoibo/fields.pyx":315
  * 
  * 
  * cdef class TupleField(Field):             # <<<<<<<<<<<<<<
@@ -1223,7 +1224,7 @@ struct __pyx_vtabstruct_6nyoibo_6fields_TupleField {
 static struct __pyx_vtabstruct_6nyoibo_6fields_TupleField *__pyx_vtabptr_6nyoibo_6fields_TupleField;
 
 
-/* "nyoibo/fields.pyx":187
+/* "nyoibo/fields.pyx":191
  * 
  * 
  * cdef class DateField(Field):             # <<<<<<<<<<<<<<
@@ -1237,7 +1238,7 @@ struct __pyx_vtabstruct_6nyoibo_6fields_DateField {
 static struct __pyx_vtabstruct_6nyoibo_6fields_DateField *__pyx_vtabptr_6nyoibo_6fields_DateField;
 
 
-/* "nyoibo/fields.pyx":217
+/* "nyoibo/fields.pyx":221
  * 
  * 
  * cdef class DatetimeField(Field):             # <<<<<<<<<<<<<<
@@ -1251,7 +1252,7 @@ struct __pyx_vtabstruct_6nyoibo_6fields_DatetimeField {
 static struct __pyx_vtabstruct_6nyoibo_6fields_DatetimeField *__pyx_vtabptr_6nyoibo_6fields_DatetimeField;
 
 
-/* "nyoibo/fields.pyx":175
+/* "nyoibo/fields.pyx":179
  * 
  * 
  * cdef class BoolField(Field):             # <<<<<<<<<<<<<<
@@ -1265,7 +1266,7 @@ struct __pyx_vtabstruct_6nyoibo_6fields_BoolField {
 static struct __pyx_vtabstruct_6nyoibo_6fields_BoolField *__pyx_vtabptr_6nyoibo_6fields_BoolField;
 
 
-/* "nyoibo/fields.pyx":245
+/* "nyoibo/fields.pyx":249
  * 
  * 
  * cdef class FloatField(Field):             # <<<<<<<<<<<<<<
@@ -1279,7 +1280,7 @@ struct __pyx_vtabstruct_6nyoibo_6fields_FloatField {
 static struct __pyx_vtabstruct_6nyoibo_6fields_FloatField *__pyx_vtabptr_6nyoibo_6fields_FloatField;
 
 
-/* "nyoibo/fields.pyx":252
+/* "nyoibo/fields.pyx":256
  * 
  * 
  * cdef class DecimalField(Field):             # <<<<<<<<<<<<<<
@@ -1293,7 +1294,7 @@ struct __pyx_vtabstruct_6nyoibo_6fields_DecimalField {
 static struct __pyx_vtabstruct_6nyoibo_6fields_DecimalField *__pyx_vtabptr_6nyoibo_6fields_DecimalField;
 
 
-/* "nyoibo/fields.pyx":291
+/* "nyoibo/fields.pyx":295
  * 
  * 
  * cdef class DictField(Field):             # <<<<<<<<<<<<<<
@@ -1307,7 +1308,7 @@ struct __pyx_vtabstruct_6nyoibo_6fields_DictField {
 static struct __pyx_vtabstruct_6nyoibo_6fields_DictField *__pyx_vtabptr_6nyoibo_6fields_DictField;
 
 
-/* "nyoibo/fields.pyx":298
+/* "nyoibo/fields.pyx":302
  * 
  * 
  * cdef class JSONField(Field):             # <<<<<<<<<<<<<<
@@ -1321,7 +1322,7 @@ struct __pyx_vtabstruct_6nyoibo_6fields_JSONField {
 static struct __pyx_vtabstruct_6nyoibo_6fields_JSONField *__pyx_vtabptr_6nyoibo_6fields_JSONField;
 
 
-/* "nyoibo/fields.pyx":350
+/* "nyoibo/fields.pyx":354
  * 
  * 
  * cdef class ListField(TupleField):             # <<<<<<<<<<<<<<
@@ -1526,6 +1527,28 @@ static CYTHON_INLINE PyObject *__Pyx__GetModuleGlobalName(PyObject *name);
 /* PyUnicode_Unicode.proto */
 static CYTHON_INLINE PyObject* __Pyx_PyUnicode_Unicode(PyObject *obj);
 
+/* PyObjectFormatSimple.proto */
+#if CYTHON_COMPILING_IN_PYPY
+    #define __Pyx_PyObject_FormatSimple(s, f) (\
+        likely(PyUnicode_CheckExact(s)) ? (Py_INCREF(s), s) :\
+        PyObject_Format(s, f))
+#elif PY_MAJOR_VERSION < 3
+    #define __Pyx_PyObject_FormatSimple(s, f) (\
+        likely(PyUnicode_CheckExact(s)) ? (Py_INCREF(s), s) :\
+        likely(PyString_CheckExact(s)) ? PyUnicode_FromEncodedObject(s, NULL, "strict") :\
+        PyObject_Format(s, f))
+#elif CYTHON_USE_TYPE_SLOTS
+    #define __Pyx_PyObject_FormatSimple(s, f) (\
+        likely(PyUnicode_CheckExact(s)) ? (Py_INCREF(s), s) :\
+        likely(PyLong_CheckExact(s)) ? PyLong_Type.tp_str(s) :\
+        likely(PyFloat_CheckExact(s)) ? PyFloat_Type.tp_str(s) :\
+        PyObject_Format(s, f))
+#else
+    #define __Pyx_PyObject_FormatSimple(s, f) (\
+        likely(PyUnicode_CheckExact(s)) ? (Py_INCREF(s), s) :\
+        PyObject_Format(s, f))
+#endif
+
 /* IncludeStringH.proto */
 #include <string.h>
 
@@ -1607,28 +1630,6 @@ static CYTHON_INLINE int __Pyx_PyErr_GivenExceptionMatches2(PyObject *err, PyObj
 static int __Pyx__GetException(PyThreadState *tstate, PyObject **type, PyObject **value, PyObject **tb);
 #else
 static int __Pyx_GetException(PyObject **type, PyObject **value, PyObject **tb);
-#endif
-
-/* PyObjectFormatSimple.proto */
-#if CYTHON_COMPILING_IN_PYPY
-    #define __Pyx_PyObject_FormatSimple(s, f) (\
-        likely(PyUnicode_CheckExact(s)) ? (Py_INCREF(s), s) :\
-        PyObject_Format(s, f))
-#elif PY_MAJOR_VERSION < 3
-    #define __Pyx_PyObject_FormatSimple(s, f) (\
-        likely(PyUnicode_CheckExact(s)) ? (Py_INCREF(s), s) :\
-        likely(PyString_CheckExact(s)) ? PyUnicode_FromEncodedObject(s, NULL, "strict") :\
-        PyObject_Format(s, f))
-#elif CYTHON_USE_TYPE_SLOTS
-    #define __Pyx_PyObject_FormatSimple(s, f) (\
-        likely(PyUnicode_CheckExact(s)) ? (Py_INCREF(s), s) :\
-        likely(PyLong_CheckExact(s)) ? PyLong_Type.tp_str(s) :\
-        likely(PyFloat_CheckExact(s)) ? PyFloat_Type.tp_str(s) :\
-        PyObject_Format(s, f))
-#else
-    #define __Pyx_PyObject_FormatSimple(s, f) (\
-        likely(PyUnicode_CheckExact(s)) ? (Py_INCREF(s), s) :\
-        PyObject_Format(s, f))
 #endif
 
 /* PyErrExceptionMatches.proto */
@@ -1843,7 +1844,8 @@ static PyObject *__pyx_builtin_ValueError;
 static PyObject *__pyx_builtin_super;
 static const char __pyx_k_[] = "";
 static const char __pyx_k__2[] = "_";
-static const char __pyx_k__4[] = ")";
+static const char __pyx_k__4[] = ">";
+static const char __pyx_k__5[] = ")";
 static const char __pyx_k_of[] = "of";
 static const char __pyx_k_to[] = "to";
 static const char __pyx_k_new[] = "__new__";
@@ -1864,7 +1866,6 @@ static const char __pyx_k_alias[] = "alias";
 static const char __pyx_k_class[] = "__class__";
 static const char __pyx_k_dumps[] = "dumps";
 static const char __pyx_k_false[] = "false";
-static const char __pyx_k_field[] = " field";
 static const char __pyx_k_owner[] = "owner";
 static const char __pyx_k_parse[] = "parse";
 static const char __pyx_k_super[] = "super";
@@ -1922,6 +1923,7 @@ static const char __pyx_k_internal_type[] = "_internal_type";
 static const char __pyx_k_nyoibo_fields[] = "nyoibo.fields";
 static const char __pyx_k_reduce_cython[] = "__reduce_cython__";
 static const char __pyx_k_StrLengthError[] = "StrLengthError";
+static const char __pyx_k_field_in_model[] = "> field in model <";
 static const char __pyx_k_FieldValueError[] = "FieldValueError";
 static const char __pyx_k_pyx_PickleError[] = "__pyx_PickleError";
 static const char __pyx_k_setstate_cython[] = "__setstate_cython__";
@@ -1951,20 +1953,20 @@ static const char __pyx_k_pyx_unpickle_TupleField[] = "__pyx_unpickle_TupleField
 static const char __pyx_k_is_not_a_valid_value_for[] = " is not a valid value for ";
 static const char __pyx_k_is_greater_than_max_value[] = ") is greater than max_value (";
 static const char __pyx_k_pyx_unpickle_DecimalField[] = "__pyx_unpickle_DecimalField";
-static const char __pyx_k_missing_required_value_for[] = "missing required value for ";
+static const char __pyx_k_missing_required_value_for[] = "missing required value for <";
 static const char __pyx_k_pyx_unpickle_DatetimeField[] = "__pyx_unpickle_DatetimeField";
 static const char __pyx_k_nyoibo_entities_meta_entity[] = "nyoibo.entities.meta_entity";
 static const char __pyx_k_max_value_must_be_an_integer[] = "max_value must be an integer";
 static const char __pyx_k_min_value_must_be_an_integer[] = "min_value must be an integer";
 static const char __pyx_k_value_is_not_a_valid_type_of[] = " value is not a valid type of ";
 static const char __pyx_k_to_must_be_an_Entity_subclass[] = "to must be an Entity subclass";
-static const char __pyx_k_Incompatible_checksums_0x_x_vs_0[] = "Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))";
+static const char __pyx_k_Incompatible_checksums_0x_x_vs_0[] = "Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))";
 static const char __pyx_k_to_make_a_reverse_relationship_o[] = "to make a reverse relationship, `of` parameter must to be set";
-static const char __pyx_k_Incompatible_checksums_0x_x_vs_0_2[] = "Incompatible checksums (0x%x vs (0x183421a, 0xbba6a62, 0x4b7ca24) = (alias, choices, default_value, max_length, mutable, name, private, required))";
-static const char __pyx_k_Incompatible_checksums_0x_x_vs_0_3[] = "Incompatible checksums (0x%x vs (0xeb6285d, 0xd90bcf0, 0xe59ef32) = (alias, choices, default_value, max_value, min_value, mutable, name, private, required))";
-static const char __pyx_k_Incompatible_checksums_0x_x_vs_0_4[] = "Incompatible checksums (0x%x vs (0x25200a7, 0x79498e6, 0xc726fc2) = (_formats, alias, choices, default_value, mutable, name, private, required))";
-static const char __pyx_k_Incompatible_checksums_0x_x_vs_0_5[] = "Incompatible checksums (0x%x vs (0x3ae680a, 0xfc4edf3, 0x1f6ee0f) = (alias, choices, default_value, mutable, name, private, required, to))";
-static const char __pyx_k_Incompatible_checksums_0x_x_vs_0_6[] = "Incompatible checksums (0x%x vs (0x9deea8c, 0x68ca3e8, 0xe3b8e6d) = (alias, choices, default_value, mutable, name, of, private, required, reverse_relationship))";
+static const char __pyx_k_Incompatible_checksums_0x_x_vs_0_2[] = "Incompatible checksums (0x%x vs (0x1a1bf8a, 0xaeb7d82, 0x9c0431c) = (alias, choices, default_value, max_length, model, mutable, name, private, required))";
+static const char __pyx_k_Incompatible_checksums_0x_x_vs_0_3[] = "Incompatible checksums (0x%x vs (0xc2d2ae1, 0xf2369da, 0x3d9631f) = (alias, choices, default_value, max_value, min_value, model, mutable, name, private, required))";
+static const char __pyx_k_Incompatible_checksums_0x_x_vs_0_4[] = "Incompatible checksums (0x%x vs (0xd8dea5d, 0x1be7fe4, 0x2e44485) = (_formats, alias, choices, default_value, model, mutable, name, private, required))";
+static const char __pyx_k_Incompatible_checksums_0x_x_vs_0_5[] = "Incompatible checksums (0x%x vs (0x8502f27, 0xfd47d72, 0xad82ae7) = (alias, choices, default_value, model, mutable, name, private, required, to))";
+static const char __pyx_k_Incompatible_checksums_0x_x_vs_0_6[] = "Incompatible checksums (0x%x vs (0x3051edc, 0x1755c25, 0xb2c47fc) = (alias, choices, default_value, model, mutable, name, of, private, required, reverse_relationship))";
 static PyObject *__pyx_kp_u_;
 static PyObject *__pyx_n_s_BoolField;
 static PyObject *__pyx_n_s_DateField;
@@ -2001,6 +2003,7 @@ static PyObject *__pyx_n_s_TypeError;
 static PyObject *__pyx_n_s_ValueError;
 static PyObject *__pyx_n_u__2;
 static PyObject *__pyx_kp_u__4;
+static PyObject *__pyx_kp_u__5;
 static PyObject *__pyx_n_s_alias;
 static PyObject *__pyx_n_s_choices;
 static PyObject *__pyx_n_s_class;
@@ -2014,7 +2017,7 @@ static PyObject *__pyx_n_s_dict;
 static PyObject *__pyx_n_s_dumps;
 static PyObject *__pyx_n_s_exceptions;
 static PyObject *__pyx_n_u_false;
-static PyObject *__pyx_kp_u_field;
+static PyObject *__pyx_kp_u_field_in_model;
 static PyObject *__pyx_n_s_formats;
 static PyObject *__pyx_n_s_fromisoformat;
 static PyObject *__pyx_n_s_getstate;
@@ -2090,7 +2093,7 @@ static PyObject *__pyx_kp_u_value;
 static PyObject *__pyx_kp_u_value_is_not_a_valid_type_of;
 static PyObject *__pyx_kp_u_value_is_required;
 static int __pyx_pf_6nyoibo_6fields_5Field___init__(struct __pyx_obj_6nyoibo_6fields_Field *__pyx_v_self, PyObject *__pyx_v_private, PyObject *__pyx_v_mutable, PyObject *__pyx_v_default_value, PyObject *__pyx_v_choices, PyObject *__pyx_v_required, PyObject *__pyx_v_alias); /* proto */
-static PyObject *__pyx_pf_6nyoibo_6fields_5Field_2__set_name__(struct __pyx_obj_6nyoibo_6fields_Field *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v_owner, PyObject *__pyx_v_name); /* proto */
+static PyObject *__pyx_pf_6nyoibo_6fields_5Field_2__set_name__(struct __pyx_obj_6nyoibo_6fields_Field *__pyx_v_self, PyObject *__pyx_v_owner, PyObject *__pyx_v_name); /* proto */
 static PyObject *__pyx_pf_6nyoibo_6fields_5Field_4parse(struct __pyx_obj_6nyoibo_6fields_Field *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
 static PyObject *__pyx_pf_6nyoibo_6fields_5Field_13default_value___get__(struct __pyx_obj_6nyoibo_6fields_Field *__pyx_v_self); /* proto */
 static PyObject *__pyx_pf_6nyoibo_6fields_5Field_7private___get__(struct __pyx_obj_6nyoibo_6fields_Field *__pyx_v_self); /* proto */
@@ -2163,26 +2166,25 @@ static PyObject *__pyx_tp_new_6nyoibo_6fields_DictField(PyTypeObject *t, PyObjec
 static PyObject *__pyx_tp_new_6nyoibo_6fields_JSONField(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_6nyoibo_6fields_ListField(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_int_1;
-static PyObject *__pyx_int_6392596;
-static PyObject *__pyx_int_25379354;
-static PyObject *__pyx_int_32960015;
-static PyObject *__pyx_int_38928551;
-static PyObject *__pyx_int_61761546;
-static PyObject *__pyx_int_79153700;
-static PyObject *__pyx_int_109880296;
-static PyObject *__pyx_int_127178982;
-static PyObject *__pyx_int_165603980;
-static PyObject *__pyx_int_196766306;
-static PyObject *__pyx_int_208826306;
-static PyObject *__pyx_int_227589360;
-static PyObject *__pyx_int_238089073;
-static PyObject *__pyx_int_238784109;
-static PyObject *__pyx_int_240774962;
-static PyObject *__pyx_int_246818909;
-static PyObject *__pyx_int_251502590;
-static PyObject *__pyx_int_264564211;
+static PyObject *__pyx_int_24468517;
+static PyObject *__pyx_int_27377546;
+static PyObject *__pyx_int_29261796;
+static PyObject *__pyx_int_48514181;
+static PyObject *__pyx_int_50667228;
+static PyObject *__pyx_int_61408379;
+static PyObject *__pyx_int_64578335;
+static PyObject *__pyx_int_139472679;
+static PyObject *__pyx_int_163595036;
+static PyObject *__pyx_int_181938919;
+static PyObject *__pyx_int_183205250;
+static PyObject *__pyx_int_187451388;
+static PyObject *__pyx_int_188595632;
+static PyObject *__pyx_int_196406082;
+static PyObject *__pyx_int_204286689;
+static PyObject *__pyx_int_227404381;
+static PyObject *__pyx_int_253979098;
+static PyObject *__pyx_int_265583986;
 static PyObject *__pyx_tuple__3;
-static PyObject *__pyx_tuple__5;
 static PyObject *__pyx_tuple__6;
 static PyObject *__pyx_tuple__7;
 static PyObject *__pyx_tuple__8;
@@ -2192,31 +2194,32 @@ static PyObject *__pyx_tuple__11;
 static PyObject *__pyx_tuple__12;
 static PyObject *__pyx_tuple__13;
 static PyObject *__pyx_tuple__14;
-static PyObject *__pyx_tuple__16;
-static PyObject *__pyx_tuple__18;
-static PyObject *__pyx_tuple__20;
-static PyObject *__pyx_tuple__22;
-static PyObject *__pyx_tuple__24;
-static PyObject *__pyx_tuple__26;
-static PyObject *__pyx_tuple__28;
-static PyObject *__pyx_tuple__30;
-static PyObject *__pyx_tuple__32;
-static PyObject *__pyx_tuple__34;
-static PyObject *__pyx_tuple__36;
-static PyObject *__pyx_tuple__38;
-static PyObject *__pyx_codeobj__15;
-static PyObject *__pyx_codeobj__17;
-static PyObject *__pyx_codeobj__19;
-static PyObject *__pyx_codeobj__21;
-static PyObject *__pyx_codeobj__23;
-static PyObject *__pyx_codeobj__25;
-static PyObject *__pyx_codeobj__27;
-static PyObject *__pyx_codeobj__29;
-static PyObject *__pyx_codeobj__31;
-static PyObject *__pyx_codeobj__33;
-static PyObject *__pyx_codeobj__35;
-static PyObject *__pyx_codeobj__37;
-static PyObject *__pyx_codeobj__39;
+static PyObject *__pyx_tuple__15;
+static PyObject *__pyx_tuple__17;
+static PyObject *__pyx_tuple__19;
+static PyObject *__pyx_tuple__21;
+static PyObject *__pyx_tuple__23;
+static PyObject *__pyx_tuple__25;
+static PyObject *__pyx_tuple__27;
+static PyObject *__pyx_tuple__29;
+static PyObject *__pyx_tuple__31;
+static PyObject *__pyx_tuple__33;
+static PyObject *__pyx_tuple__35;
+static PyObject *__pyx_tuple__37;
+static PyObject *__pyx_tuple__39;
+static PyObject *__pyx_codeobj__16;
+static PyObject *__pyx_codeobj__18;
+static PyObject *__pyx_codeobj__20;
+static PyObject *__pyx_codeobj__22;
+static PyObject *__pyx_codeobj__24;
+static PyObject *__pyx_codeobj__26;
+static PyObject *__pyx_codeobj__28;
+static PyObject *__pyx_codeobj__30;
+static PyObject *__pyx_codeobj__32;
+static PyObject *__pyx_codeobj__34;
+static PyObject *__pyx_codeobj__36;
+static PyObject *__pyx_codeobj__38;
+static PyObject *__pyx_codeobj__40;
 /* Late includes */
 
 /* "nyoibo/fields.pyx":35
@@ -2443,7 +2446,7 @@ static int __pyx_pf_6nyoibo_6fields_5Field___init__(struct __pyx_obj_6nyoibo_6fi
  *         self.required = required
  *         self.alias = alias             # <<<<<<<<<<<<<<
  *         self.name = ''
- * 
+ *         self.model = None
  */
   __Pyx_INCREF(__pyx_v_alias);
   __Pyx_GIVEREF(__pyx_v_alias);
@@ -2455,14 +2458,27 @@ static int __pyx_pf_6nyoibo_6fields_5Field___init__(struct __pyx_obj_6nyoibo_6fi
  *         self.required = required
  *         self.alias = alias
  *         self.name = ''             # <<<<<<<<<<<<<<
+ *         self.model = None
  * 
- *     def __set_name__(self, owner, name):
  */
   __Pyx_INCREF(__pyx_kp_u_);
   __Pyx_GIVEREF(__pyx_kp_u_);
   __Pyx_GOTREF(__pyx_v_self->name);
   __Pyx_DECREF(__pyx_v_self->name);
   __pyx_v_self->name = __pyx_kp_u_;
+
+  /* "nyoibo/fields.pyx":44
+ *         self.alias = alias
+ *         self.name = ''
+ *         self.model = None             # <<<<<<<<<<<<<<
+ * 
+ *     def __set_name__(self, owner, name):
+ */
+  __Pyx_INCREF(Py_None);
+  __Pyx_GIVEREF(Py_None);
+  __Pyx_GOTREF(__pyx_v_self->model);
+  __Pyx_DECREF(__pyx_v_self->model);
+  __pyx_v_self->model = Py_None;
 
   /* "nyoibo/fields.pyx":35
  *     _exceptions = (TypeError, ValueError)
@@ -2483,18 +2499,18 @@ static int __pyx_pf_6nyoibo_6fields_5Field___init__(struct __pyx_obj_6nyoibo_6fi
   return __pyx_r;
 }
 
-/* "nyoibo/fields.pyx":45
- *         self.name = ''
+/* "nyoibo/fields.pyx":46
+ *         self.model = None
  * 
  *     def __set_name__(self, owner, name):             # <<<<<<<<<<<<<<
  *         self.name = name.replace('_', '', 1)
- * 
+ *         self.model = owner
  */
 
 /* Python wrapper */
 static PyObject *__pyx_pw_6nyoibo_6fields_5Field_3__set_name__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
 static PyObject *__pyx_pw_6nyoibo_6fields_5Field_3__set_name__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
-  CYTHON_UNUSED PyObject *__pyx_v_owner = 0;
+  PyObject *__pyx_v_owner = 0;
   PyObject *__pyx_v_name = 0;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -2525,11 +2541,11 @@ static PyObject *__pyx_pw_6nyoibo_6fields_5Field_3__set_name__(PyObject *__pyx_v
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_name)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__set_name__", 1, 2, 2, 1); __PYX_ERR(0, 45, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__set_name__", 1, 2, 2, 1); __PYX_ERR(0, 46, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__set_name__") < 0)) __PYX_ERR(0, 45, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__set_name__") < 0)) __PYX_ERR(0, 46, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -2542,7 +2558,7 @@ static PyObject *__pyx_pw_6nyoibo_6fields_5Field_3__set_name__(PyObject *__pyx_v
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__set_name__", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 45, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__set_name__", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 46, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("nyoibo.fields.Field.__set_name__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -2555,7 +2571,7 @@ static PyObject *__pyx_pw_6nyoibo_6fields_5Field_3__set_name__(PyObject *__pyx_v
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6nyoibo_6fields_5Field_2__set_name__(struct __pyx_obj_6nyoibo_6fields_Field *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v_owner, PyObject *__pyx_v_name) {
+static PyObject *__pyx_pf_6nyoibo_6fields_5Field_2__set_name__(struct __pyx_obj_6nyoibo_6fields_Field *__pyx_v_self, PyObject *__pyx_v_owner, PyObject *__pyx_v_name) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2565,31 +2581,44 @@ static PyObject *__pyx_pf_6nyoibo_6fields_5Field_2__set_name__(struct __pyx_obj_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__set_name__", 0);
 
-  /* "nyoibo/fields.pyx":46
+  /* "nyoibo/fields.pyx":47
  * 
  *     def __set_name__(self, owner, name):
  *         self.name = name.replace('_', '', 1)             # <<<<<<<<<<<<<<
+ *         self.model = owner
  * 
- *     cpdef public parse(self, value):
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_name, __pyx_n_s_replace); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 46, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_name, __pyx_n_s_replace); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 47, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__3, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 46, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__3, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 47, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (!(likely(PyUnicode_CheckExact(__pyx_t_2))||((__pyx_t_2) == Py_None)||((void)PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "unicode", Py_TYPE(__pyx_t_2)->tp_name), 0))) __PYX_ERR(0, 46, __pyx_L1_error)
+  if (!(likely(PyUnicode_CheckExact(__pyx_t_2))||((__pyx_t_2) == Py_None)||((void)PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "unicode", Py_TYPE(__pyx_t_2)->tp_name), 0))) __PYX_ERR(0, 47, __pyx_L1_error)
   __Pyx_GIVEREF(__pyx_t_2);
   __Pyx_GOTREF(__pyx_v_self->name);
   __Pyx_DECREF(__pyx_v_self->name);
   __pyx_v_self->name = ((PyObject*)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "nyoibo/fields.pyx":45
- *         self.name = ''
+  /* "nyoibo/fields.pyx":48
+ *     def __set_name__(self, owner, name):
+ *         self.name = name.replace('_', '', 1)
+ *         self.model = owner             # <<<<<<<<<<<<<<
+ * 
+ *     cpdef public parse(self, value):
+ */
+  __Pyx_INCREF(__pyx_v_owner);
+  __Pyx_GIVEREF(__pyx_v_owner);
+  __Pyx_GOTREF(__pyx_v_self->model);
+  __Pyx_DECREF(__pyx_v_self->model);
+  __pyx_v_self->model = __pyx_v_owner;
+
+  /* "nyoibo/fields.pyx":46
+ *         self.model = None
  * 
  *     def __set_name__(self, owner, name):             # <<<<<<<<<<<<<<
  *         self.name = name.replace('_', '', 1)
- * 
+ *         self.model = owner
  */
 
   /* function exit code */
@@ -2606,8 +2635,8 @@ static PyObject *__pyx_pf_6nyoibo_6fields_5Field_2__set_name__(struct __pyx_obj_
   return __pyx_r;
 }
 
-/* "nyoibo/fields.pyx":48
- *         self.name = name.replace('_', '', 1)
+/* "nyoibo/fields.pyx":50
+ *         self.model = owner
  * 
  *     cpdef public parse(self, value):             # <<<<<<<<<<<<<<
  *         """Parse and cast to ``_internal_type``
@@ -2629,8 +2658,8 @@ PyObject *__pyx_f_6nyoibo_6fields_5Field_parse(struct __pyx_obj_6nyoibo_6fields_
   int __pyx_t_9;
   Py_ssize_t __pyx_t_10;
   Py_UCS4 __pyx_t_11;
-  int __pyx_t_12;
-  PyObject *__pyx_t_13 = NULL;
+  PyObject *__pyx_t_12 = NULL;
+  int __pyx_t_13;
   PyObject *__pyx_t_14 = NULL;
   PyObject *__pyx_t_15 = NULL;
   PyObject *__pyx_t_16 = NULL;
@@ -2648,7 +2677,7 @@ PyObject *__pyx_f_6nyoibo_6fields_5Field_parse(struct __pyx_obj_6nyoibo_6fields_
     if (unlikely(!__Pyx_object_dict_version_matches(((PyObject *)__pyx_v_self), __pyx_tp_dict_version, __pyx_obj_dict_version))) {
       PY_UINT64_T __pyx_type_dict_guard = __Pyx_get_tp_dict_version(((PyObject *)__pyx_v_self));
       #endif
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_parse); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 48, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_parse); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 50, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)(void*)__pyx_pw_6nyoibo_6fields_5Field_5parse)) {
         __Pyx_XDECREF(__pyx_r);
@@ -2665,7 +2694,7 @@ PyObject *__pyx_f_6nyoibo_6fields_5Field_parse(struct __pyx_obj_6nyoibo_6fields_
         }
         __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_4, __pyx_v_value) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_value);
         __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 48, __pyx_L1_error)
+        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 50, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         __pyx_r = __pyx_t_2;
@@ -2686,7 +2715,7 @@ PyObject *__pyx_f_6nyoibo_6fields_5Field_parse(struct __pyx_obj_6nyoibo_6fields_
     #endif
   }
 
-  /* "nyoibo/fields.pyx":61
+  /* "nyoibo/fields.pyx":63
  *             RequiredValueError: if a field has required = True and value is None
  *         """
  *         try:             # <<<<<<<<<<<<<<
@@ -2702,37 +2731,37 @@ PyObject *__pyx_f_6nyoibo_6fields_5Field_parse(struct __pyx_obj_6nyoibo_6fields_
     __Pyx_XGOTREF(__pyx_t_7);
     /*try:*/ {
 
-      /* "nyoibo/fields.pyx":62
+      /* "nyoibo/fields.pyx":64
  *         """
  *         try:
  *             value = self._parse(value)             # <<<<<<<<<<<<<<
  *             if value and self.choices:
  *                 return self.choices(value)
  */
-      __pyx_t_1 = ((struct __pyx_vtabstruct_6nyoibo_6fields_Field *)__pyx_v_self->__pyx_vtab)->_parse(__pyx_v_self, __pyx_v_value); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 62, __pyx_L3_error)
+      __pyx_t_1 = ((struct __pyx_vtabstruct_6nyoibo_6fields_Field *)__pyx_v_self->__pyx_vtab)->_parse(__pyx_v_self, __pyx_v_value); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 64, __pyx_L3_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF_SET(__pyx_v_value, __pyx_t_1);
       __pyx_t_1 = 0;
 
-      /* "nyoibo/fields.pyx":63
+      /* "nyoibo/fields.pyx":65
  *         try:
  *             value = self._parse(value)
  *             if value and self.choices:             # <<<<<<<<<<<<<<
  *                 return self.choices(value)
  *             if isinstance(value, self._internal_type):
  */
-      __pyx_t_9 = __Pyx_PyObject_IsTrue(__pyx_v_value); if (unlikely(__pyx_t_9 < 0)) __PYX_ERR(0, 63, __pyx_L3_error)
+      __pyx_t_9 = __Pyx_PyObject_IsTrue(__pyx_v_value); if (unlikely(__pyx_t_9 < 0)) __PYX_ERR(0, 65, __pyx_L3_error)
       if (__pyx_t_9) {
       } else {
         __pyx_t_8 = __pyx_t_9;
         goto __pyx_L10_bool_binop_done;
       }
-      __pyx_t_9 = __Pyx_PyObject_IsTrue(__pyx_v_self->choices); if (unlikely(__pyx_t_9 < 0)) __PYX_ERR(0, 63, __pyx_L3_error)
+      __pyx_t_9 = __Pyx_PyObject_IsTrue(__pyx_v_self->choices); if (unlikely(__pyx_t_9 < 0)) __PYX_ERR(0, 65, __pyx_L3_error)
       __pyx_t_8 = __pyx_t_9;
       __pyx_L10_bool_binop_done:;
       if (__pyx_t_8) {
 
-        /* "nyoibo/fields.pyx":64
+        /* "nyoibo/fields.pyx":66
  *             value = self._parse(value)
  *             if value and self.choices:
  *                 return self.choices(value)             # <<<<<<<<<<<<<<
@@ -2753,14 +2782,14 @@ PyObject *__pyx_f_6nyoibo_6fields_5Field_parse(struct __pyx_obj_6nyoibo_6fields_
         }
         __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_3, __pyx_v_value) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_value);
         __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-        if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 64, __pyx_L3_error)
+        if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 66, __pyx_L3_error)
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         __pyx_r = __pyx_t_1;
         __pyx_t_1 = 0;
         goto __pyx_L7_try_return;
 
-        /* "nyoibo/fields.pyx":63
+        /* "nyoibo/fields.pyx":65
  *         try:
  *             value = self._parse(value)
  *             if value and self.choices:             # <<<<<<<<<<<<<<
@@ -2769,21 +2798,21 @@ PyObject *__pyx_f_6nyoibo_6fields_5Field_parse(struct __pyx_obj_6nyoibo_6fields_
  */
       }
 
-      /* "nyoibo/fields.pyx":65
+      /* "nyoibo/fields.pyx":67
  *             if value and self.choices:
  *                 return self.choices(value)
  *             if isinstance(value, self._internal_type):             # <<<<<<<<<<<<<<
  *                 return value
  *             if value is None:
  */
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_internal_type); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 65, __pyx_L3_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_internal_type); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 67, __pyx_L3_error)
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_8 = PyObject_IsInstance(__pyx_v_value, __pyx_t_1); if (unlikely(__pyx_t_8 == ((int)-1))) __PYX_ERR(0, 65, __pyx_L3_error)
+      __pyx_t_8 = PyObject_IsInstance(__pyx_v_value, __pyx_t_1); if (unlikely(__pyx_t_8 == ((int)-1))) __PYX_ERR(0, 67, __pyx_L3_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __pyx_t_9 = (__pyx_t_8 != 0);
       if (__pyx_t_9) {
 
-        /* "nyoibo/fields.pyx":66
+        /* "nyoibo/fields.pyx":68
  *                 return self.choices(value)
  *             if isinstance(value, self._internal_type):
  *                 return value             # <<<<<<<<<<<<<<
@@ -2795,7 +2824,7 @@ PyObject *__pyx_f_6nyoibo_6fields_5Field_parse(struct __pyx_obj_6nyoibo_6fields_
         __pyx_r = __pyx_v_value;
         goto __pyx_L7_try_return;
 
-        /* "nyoibo/fields.pyx":65
+        /* "nyoibo/fields.pyx":67
  *             if value and self.choices:
  *                 return self.choices(value)
  *             if isinstance(value, self._internal_type):             # <<<<<<<<<<<<<<
@@ -2804,57 +2833,79 @@ PyObject *__pyx_f_6nyoibo_6fields_5Field_parse(struct __pyx_obj_6nyoibo_6fields_
  */
       }
 
-      /* "nyoibo/fields.pyx":67
+      /* "nyoibo/fields.pyx":69
  *             if isinstance(value, self._internal_type):
  *                 return value
  *             if value is None:             # <<<<<<<<<<<<<<
  *                 if self.required is True:
- *                     raise RequiredValueError(f'missing required value for {self.name} field')
+ *                     raise RequiredValueError(
  */
       __pyx_t_9 = (__pyx_v_value == Py_None);
       __pyx_t_8 = (__pyx_t_9 != 0);
       if (__pyx_t_8) {
 
-        /* "nyoibo/fields.pyx":68
+        /* "nyoibo/fields.pyx":70
  *                 return value
  *             if value is None:
  *                 if self.required is True:             # <<<<<<<<<<<<<<
- *                     raise RequiredValueError(f'missing required value for {self.name} field')
- *                 return value
+ *                     raise RequiredValueError(
+ *                         f'missing required value for <{self.name}> field in model <{self.model.__name__}>'
  */
         __pyx_t_8 = ((__pyx_v_self->required == 1) != 0);
         if (unlikely(__pyx_t_8)) {
 
-          /* "nyoibo/fields.pyx":69
+          /* "nyoibo/fields.pyx":71
  *             if value is None:
  *                 if self.required is True:
- *                     raise RequiredValueError(f'missing required value for {self.name} field')             # <<<<<<<<<<<<<<
- *                 return value
- *             return self._internal_type(value)
+ *                     raise RequiredValueError(             # <<<<<<<<<<<<<<
+ *                         f'missing required value for <{self.name}> field in model <{self.model.__name__}>'
+ *                     )
  */
-          __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_RequiredValueError); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 69, __pyx_L3_error)
+          __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_RequiredValueError); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 71, __pyx_L3_error)
           __Pyx_GOTREF(__pyx_t_2);
-          __pyx_t_3 = PyTuple_New(3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 69, __pyx_L3_error)
+
+          /* "nyoibo/fields.pyx":72
+ *                 if self.required is True:
+ *                     raise RequiredValueError(
+ *                         f'missing required value for <{self.name}> field in model <{self.model.__name__}>'             # <<<<<<<<<<<<<<
+ *                     )
+ *                 return value
+ */
+          __pyx_t_3 = PyTuple_New(5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 72, __pyx_L3_error)
           __Pyx_GOTREF(__pyx_t_3);
           __pyx_t_10 = 0;
           __pyx_t_11 = 127;
           __Pyx_INCREF(__pyx_kp_u_missing_required_value_for);
-          __pyx_t_10 += 27;
+          __pyx_t_10 += 28;
           __Pyx_GIVEREF(__pyx_kp_u_missing_required_value_for);
           PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_kp_u_missing_required_value_for);
-          __pyx_t_4 = __Pyx_PyUnicode_Unicode(__pyx_v_self->name); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 69, __pyx_L3_error)
+          __pyx_t_4 = __Pyx_PyUnicode_Unicode(__pyx_v_self->name); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 72, __pyx_L3_error)
           __Pyx_GOTREF(__pyx_t_4);
           __pyx_t_11 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_4) > __pyx_t_11) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_4) : __pyx_t_11;
           __pyx_t_10 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_4);
           __Pyx_GIVEREF(__pyx_t_4);
           PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_t_4);
           __pyx_t_4 = 0;
-          __Pyx_INCREF(__pyx_kp_u_field);
-          __pyx_t_10 += 6;
-          __Pyx_GIVEREF(__pyx_kp_u_field);
-          PyTuple_SET_ITEM(__pyx_t_3, 2, __pyx_kp_u_field);
-          __pyx_t_4 = __Pyx_PyUnicode_Join(__pyx_t_3, 3, __pyx_t_10, __pyx_t_11); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 69, __pyx_L3_error)
+          __Pyx_INCREF(__pyx_kp_u_field_in_model);
+          __pyx_t_10 += 18;
+          __Pyx_GIVEREF(__pyx_kp_u_field_in_model);
+          PyTuple_SET_ITEM(__pyx_t_3, 2, __pyx_kp_u_field_in_model);
+          __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->model, __pyx_n_s_name_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 72, __pyx_L3_error)
           __Pyx_GOTREF(__pyx_t_4);
+          __pyx_t_12 = __Pyx_PyObject_FormatSimple(__pyx_t_4, __pyx_empty_unicode); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 72, __pyx_L3_error)
+          __Pyx_GOTREF(__pyx_t_12);
+          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+          __pyx_t_11 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_12) > __pyx_t_11) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_12) : __pyx_t_11;
+          __pyx_t_10 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_12);
+          __Pyx_GIVEREF(__pyx_t_12);
+          PyTuple_SET_ITEM(__pyx_t_3, 3, __pyx_t_12);
+          __pyx_t_12 = 0;
+          __Pyx_INCREF(__pyx_kp_u__4);
+          __pyx_t_10 += 1;
+          __Pyx_GIVEREF(__pyx_kp_u__4);
+          PyTuple_SET_ITEM(__pyx_t_3, 4, __pyx_kp_u__4);
+          __pyx_t_12 = __Pyx_PyUnicode_Join(__pyx_t_3, 5, __pyx_t_10, __pyx_t_11); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 72, __pyx_L3_error)
+          __Pyx_GOTREF(__pyx_t_12);
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
           __pyx_t_3 = NULL;
           if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_2))) {
@@ -2866,28 +2917,28 @@ PyObject *__pyx_f_6nyoibo_6fields_5Field_parse(struct __pyx_obj_6nyoibo_6fields_
               __Pyx_DECREF_SET(__pyx_t_2, function);
             }
           }
-          __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_3, __pyx_t_4) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_4);
+          __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_3, __pyx_t_12) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_12);
           __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-          if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 69, __pyx_L3_error)
+          __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
+          if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 71, __pyx_L3_error)
           __Pyx_GOTREF(__pyx_t_1);
           __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
           __Pyx_Raise(__pyx_t_1, 0, 0, 0);
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-          __PYX_ERR(0, 69, __pyx_L3_error)
+          __PYX_ERR(0, 71, __pyx_L3_error)
 
-          /* "nyoibo/fields.pyx":68
+          /* "nyoibo/fields.pyx":70
  *                 return value
  *             if value is None:
  *                 if self.required is True:             # <<<<<<<<<<<<<<
- *                     raise RequiredValueError(f'missing required value for {self.name} field')
- *                 return value
+ *                     raise RequiredValueError(
+ *                         f'missing required value for <{self.name}> field in model <{self.model.__name__}>'
  */
         }
 
-        /* "nyoibo/fields.pyx":70
- *                 if self.required is True:
- *                     raise RequiredValueError(f'missing required value for {self.name} field')
+        /* "nyoibo/fields.pyx":74
+ *                         f'missing required value for <{self.name}> field in model <{self.model.__name__}>'
+ *                     )
  *                 return value             # <<<<<<<<<<<<<<
  *             return self._internal_type(value)
  *         except self._exceptions:
@@ -2897,45 +2948,45 @@ PyObject *__pyx_f_6nyoibo_6fields_5Field_parse(struct __pyx_obj_6nyoibo_6fields_
         __pyx_r = __pyx_v_value;
         goto __pyx_L7_try_return;
 
-        /* "nyoibo/fields.pyx":67
+        /* "nyoibo/fields.pyx":69
  *             if isinstance(value, self._internal_type):
  *                 return value
  *             if value is None:             # <<<<<<<<<<<<<<
  *                 if self.required is True:
- *                     raise RequiredValueError(f'missing required value for {self.name} field')
+ *                     raise RequiredValueError(
  */
       }
 
-      /* "nyoibo/fields.pyx":71
- *                     raise RequiredValueError(f'missing required value for {self.name} field')
+      /* "nyoibo/fields.pyx":75
+ *                     )
  *                 return value
  *             return self._internal_type(value)             # <<<<<<<<<<<<<<
  *         except self._exceptions:
  *             raise FieldValueError(f'{type(value)} is not a valid value for '
  */
       __Pyx_XDECREF(__pyx_r);
-      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_internal_type); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 71, __pyx_L3_error)
+      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_internal_type); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 75, __pyx_L3_error)
       __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_4 = NULL;
+      __pyx_t_12 = NULL;
       if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
-        __pyx_t_4 = PyMethod_GET_SELF(__pyx_t_2);
-        if (likely(__pyx_t_4)) {
+        __pyx_t_12 = PyMethod_GET_SELF(__pyx_t_2);
+        if (likely(__pyx_t_12)) {
           PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
-          __Pyx_INCREF(__pyx_t_4);
+          __Pyx_INCREF(__pyx_t_12);
           __Pyx_INCREF(function);
           __Pyx_DECREF_SET(__pyx_t_2, function);
         }
       }
-      __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_4, __pyx_v_value) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_value);
-      __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 71, __pyx_L3_error)
+      __pyx_t_1 = (__pyx_t_12) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_12, __pyx_v_value) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_value);
+      __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 75, __pyx_L3_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __pyx_r = __pyx_t_1;
       __pyx_t_1 = 0;
       goto __pyx_L7_try_return;
 
-      /* "nyoibo/fields.pyx":61
+      /* "nyoibo/fields.pyx":63
  *             RequiredValueError: if a field has required = True and value is None
  *         """
  *         try:             # <<<<<<<<<<<<<<
@@ -2945,45 +2996,46 @@ PyObject *__pyx_f_6nyoibo_6fields_5Field_parse(struct __pyx_obj_6nyoibo_6fields_
     }
     __pyx_L3_error:;
     __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
+    __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
     __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "nyoibo/fields.pyx":72
+    /* "nyoibo/fields.pyx":76
  *                 return value
  *             return self._internal_type(value)
  *         except self._exceptions:             # <<<<<<<<<<<<<<
  *             raise FieldValueError(f'{type(value)} is not a valid value for '
  *                                   f'{self.__class__.__name__}')
  */
-    __Pyx_ErrFetch(&__pyx_t_1, &__pyx_t_2, &__pyx_t_4);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_exceptions); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 72, __pyx_L5_except_error)
+    __Pyx_ErrFetch(&__pyx_t_1, &__pyx_t_2, &__pyx_t_12);
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_exceptions); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 76, __pyx_L5_except_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_12 = __Pyx_PyErr_GivenExceptionMatches(__pyx_t_1, __pyx_t_3);
+    __pyx_t_13 = __Pyx_PyErr_GivenExceptionMatches(__pyx_t_1, __pyx_t_3);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __Pyx_ErrRestore(__pyx_t_1, __pyx_t_2, __pyx_t_4);
-    __pyx_t_1 = 0; __pyx_t_2 = 0; __pyx_t_4 = 0;
-    if (__pyx_t_12) {
+    __Pyx_ErrRestore(__pyx_t_1, __pyx_t_2, __pyx_t_12);
+    __pyx_t_1 = 0; __pyx_t_2 = 0; __pyx_t_12 = 0;
+    if (__pyx_t_13) {
       __Pyx_AddTraceback("nyoibo.fields.Field.parse", __pyx_clineno, __pyx_lineno, __pyx_filename);
-      if (__Pyx_GetException(&__pyx_t_4, &__pyx_t_2, &__pyx_t_1) < 0) __PYX_ERR(0, 72, __pyx_L5_except_error)
-      __Pyx_GOTREF(__pyx_t_4);
+      if (__Pyx_GetException(&__pyx_t_12, &__pyx_t_2, &__pyx_t_1) < 0) __PYX_ERR(0, 76, __pyx_L5_except_error)
+      __Pyx_GOTREF(__pyx_t_12);
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_GOTREF(__pyx_t_1);
 
-      /* "nyoibo/fields.pyx":73
+      /* "nyoibo/fields.pyx":77
  *             return self._internal_type(value)
  *         except self._exceptions:
  *             raise FieldValueError(f'{type(value)} is not a valid value for '             # <<<<<<<<<<<<<<
  *                                   f'{self.__class__.__name__}')
  * 
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_13, __pyx_n_s_FieldValueError); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 73, __pyx_L5_except_error)
-      __Pyx_GOTREF(__pyx_t_13);
-      __pyx_t_14 = PyTuple_New(3); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 73, __pyx_L5_except_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_FieldValueError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 77, __pyx_L5_except_error)
+      __Pyx_GOTREF(__pyx_t_4);
+      __pyx_t_14 = PyTuple_New(3); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 77, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_14);
       __pyx_t_10 = 0;
       __pyx_t_11 = 127;
-      __pyx_t_15 = __Pyx_PyObject_FormatSimple(((PyObject *)Py_TYPE(__pyx_v_value)), __pyx_empty_unicode); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 73, __pyx_L5_except_error)
+      __pyx_t_15 = __Pyx_PyObject_FormatSimple(((PyObject *)Py_TYPE(__pyx_v_value)), __pyx_empty_unicode); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 77, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_15);
       __pyx_t_11 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_15) > __pyx_t_11) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_15) : __pyx_t_11;
       __pyx_t_10 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_15);
@@ -2995,19 +3047,19 @@ PyObject *__pyx_f_6nyoibo_6fields_5Field_parse(struct __pyx_obj_6nyoibo_6fields_
       __Pyx_GIVEREF(__pyx_kp_u_is_not_a_valid_value_for);
       PyTuple_SET_ITEM(__pyx_t_14, 1, __pyx_kp_u_is_not_a_valid_value_for);
 
-      /* "nyoibo/fields.pyx":74
+      /* "nyoibo/fields.pyx":78
  *         except self._exceptions:
  *             raise FieldValueError(f'{type(value)} is not a valid value for '
  *                                   f'{self.__class__.__name__}')             # <<<<<<<<<<<<<<
  * 
  *     cdef _parse(self, value):
  */
-      __pyx_t_15 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_class); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 74, __pyx_L5_except_error)
+      __pyx_t_15 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_class); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 78, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_15);
-      __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_t_15, __pyx_n_s_name_2); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 74, __pyx_L5_except_error)
+      __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_t_15, __pyx_n_s_name_2); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 78, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_16);
       __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
-      __pyx_t_15 = __Pyx_PyObject_FormatSimple(__pyx_t_16, __pyx_empty_unicode); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 74, __pyx_L5_except_error)
+      __pyx_t_15 = __Pyx_PyObject_FormatSimple(__pyx_t_16, __pyx_empty_unicode); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 78, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_15);
       __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
       __pyx_t_11 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_15) > __pyx_t_11) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_15) : __pyx_t_11;
@@ -3016,40 +3068,40 @@ PyObject *__pyx_f_6nyoibo_6fields_5Field_parse(struct __pyx_obj_6nyoibo_6fields_
       PyTuple_SET_ITEM(__pyx_t_14, 2, __pyx_t_15);
       __pyx_t_15 = 0;
 
-      /* "nyoibo/fields.pyx":73
+      /* "nyoibo/fields.pyx":77
  *             return self._internal_type(value)
  *         except self._exceptions:
  *             raise FieldValueError(f'{type(value)} is not a valid value for '             # <<<<<<<<<<<<<<
  *                                   f'{self.__class__.__name__}')
  * 
  */
-      __pyx_t_15 = __Pyx_PyUnicode_Join(__pyx_t_14, 3, __pyx_t_10, __pyx_t_11); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 73, __pyx_L5_except_error)
+      __pyx_t_15 = __Pyx_PyUnicode_Join(__pyx_t_14, 3, __pyx_t_10, __pyx_t_11); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 77, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_15);
       __Pyx_DECREF(__pyx_t_14); __pyx_t_14 = 0;
       __pyx_t_14 = NULL;
-      if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_13))) {
-        __pyx_t_14 = PyMethod_GET_SELF(__pyx_t_13);
+      if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_4))) {
+        __pyx_t_14 = PyMethod_GET_SELF(__pyx_t_4);
         if (likely(__pyx_t_14)) {
-          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_13);
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_4);
           __Pyx_INCREF(__pyx_t_14);
           __Pyx_INCREF(function);
-          __Pyx_DECREF_SET(__pyx_t_13, function);
+          __Pyx_DECREF_SET(__pyx_t_4, function);
         }
       }
-      __pyx_t_3 = (__pyx_t_14) ? __Pyx_PyObject_Call2Args(__pyx_t_13, __pyx_t_14, __pyx_t_15) : __Pyx_PyObject_CallOneArg(__pyx_t_13, __pyx_t_15);
+      __pyx_t_3 = (__pyx_t_14) ? __Pyx_PyObject_Call2Args(__pyx_t_4, __pyx_t_14, __pyx_t_15) : __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_15);
       __Pyx_XDECREF(__pyx_t_14); __pyx_t_14 = 0;
       __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
-      if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 73, __pyx_L5_except_error)
+      if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 77, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
+      __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_Raise(__pyx_t_3, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-      __PYX_ERR(0, 73, __pyx_L5_except_error)
+      __PYX_ERR(0, 77, __pyx_L5_except_error)
     }
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "nyoibo/fields.pyx":61
+    /* "nyoibo/fields.pyx":63
  *             RequiredValueError: if a field has required = True and value is None
  *         """
  *         try:             # <<<<<<<<<<<<<<
@@ -3069,8 +3121,8 @@ PyObject *__pyx_f_6nyoibo_6fields_5Field_parse(struct __pyx_obj_6nyoibo_6fields_
     goto __pyx_L0;
   }
 
-  /* "nyoibo/fields.pyx":48
- *         self.name = name.replace('_', '', 1)
+  /* "nyoibo/fields.pyx":50
+ *         self.model = owner
  * 
  *     cpdef public parse(self, value):             # <<<<<<<<<<<<<<
  *         """Parse and cast to ``_internal_type``
@@ -3083,7 +3135,7 @@ PyObject *__pyx_f_6nyoibo_6fields_5Field_parse(struct __pyx_obj_6nyoibo_6fields_
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_XDECREF(__pyx_t_13);
+  __Pyx_XDECREF(__pyx_t_12);
   __Pyx_XDECREF(__pyx_t_14);
   __Pyx_XDECREF(__pyx_t_15);
   __Pyx_XDECREF(__pyx_t_16);
@@ -3119,7 +3171,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_5Field_4parse(struct __pyx_obj_6nyoibo
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("parse", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_6nyoibo_6fields_5Field_parse(__pyx_v_self, __pyx_v_value, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 48, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_6nyoibo_6fields_5Field_parse(__pyx_v_self, __pyx_v_value, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -3136,7 +3188,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_5Field_4parse(struct __pyx_obj_6nyoibo
   return __pyx_r;
 }
 
-/* "nyoibo/fields.pyx":76
+/* "nyoibo/fields.pyx":80
  *                                   f'{self.__class__.__name__}')
  * 
  *     cdef _parse(self, value):             # <<<<<<<<<<<<<<
@@ -3149,7 +3201,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_5Field__parse(CYTHON_UNUSED struct __py
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("_parse", 0);
 
-  /* "nyoibo/fields.pyx":90
+  /* "nyoibo/fields.pyx":94
  * 
  *         """
  *         return value             # <<<<<<<<<<<<<<
@@ -3161,7 +3213,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_5Field__parse(CYTHON_UNUSED struct __py
   __pyx_r = __pyx_v_value;
   goto __pyx_L0;
 
-  /* "nyoibo/fields.pyx":76
+  /* "nyoibo/fields.pyx":80
  *                                   f'{self.__class__.__name__}')
  * 
  *     cdef _parse(self, value):             # <<<<<<<<<<<<<<
@@ -3400,13 +3452,13 @@ static PyObject *__pyx_pf_6nyoibo_6fields_5Field_6__reduce_cython__(struct __pyx
   /* "(tree fragment)":5
  *     cdef object _dict
  *     cdef bint use_setstate
- *     state = (self.alias, self.choices, self.default_value, self.mutable, self.name, self.private, self.required)             # <<<<<<<<<<<<<<
+ *     state = (self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.private, self.required)             # <<<<<<<<<<<<<<
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:
  */
   __pyx_t_1 = __Pyx_PyBool_FromLong(__pyx_v_self->required); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyTuple_New(7); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 5, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(8); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_v_self->alias);
   __Pyx_GIVEREF(__pyx_v_self->alias);
@@ -3417,24 +3469,27 @@ static PyObject *__pyx_pf_6nyoibo_6fields_5Field_6__reduce_cython__(struct __pyx
   __Pyx_INCREF(__pyx_v_self->default_value);
   __Pyx_GIVEREF(__pyx_v_self->default_value);
   PyTuple_SET_ITEM(__pyx_t_2, 2, __pyx_v_self->default_value);
+  __Pyx_INCREF(__pyx_v_self->model);
+  __Pyx_GIVEREF(__pyx_v_self->model);
+  PyTuple_SET_ITEM(__pyx_t_2, 3, __pyx_v_self->model);
   __Pyx_INCREF(__pyx_v_self->mutable);
   __Pyx_GIVEREF(__pyx_v_self->mutable);
-  PyTuple_SET_ITEM(__pyx_t_2, 3, __pyx_v_self->mutable);
+  PyTuple_SET_ITEM(__pyx_t_2, 4, __pyx_v_self->mutable);
   __Pyx_INCREF(__pyx_v_self->name);
   __Pyx_GIVEREF(__pyx_v_self->name);
-  PyTuple_SET_ITEM(__pyx_t_2, 4, __pyx_v_self->name);
+  PyTuple_SET_ITEM(__pyx_t_2, 5, __pyx_v_self->name);
   __Pyx_INCREF(__pyx_v_self->private);
   __Pyx_GIVEREF(__pyx_v_self->private);
-  PyTuple_SET_ITEM(__pyx_t_2, 5, __pyx_v_self->private);
+  PyTuple_SET_ITEM(__pyx_t_2, 6, __pyx_v_self->private);
   __Pyx_GIVEREF(__pyx_t_1);
-  PyTuple_SET_ITEM(__pyx_t_2, 6, __pyx_t_1);
+  PyTuple_SET_ITEM(__pyx_t_2, 7, __pyx_t_1);
   __pyx_t_1 = 0;
   __pyx_v_state = ((PyObject*)__pyx_t_2);
   __pyx_t_2 = 0;
 
   /* "(tree fragment)":6
  *     cdef bint use_setstate
- *     state = (self.alias, self.choices, self.default_value, self.mutable, self.name, self.private, self.required)
+ *     state = (self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.private, self.required)
  *     _dict = getattr(self, '__dict__', None)             # <<<<<<<<<<<<<<
  *     if _dict is not None:
  *         state += (_dict,)
@@ -3445,7 +3500,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_5Field_6__reduce_cython__(struct __pyx
   __pyx_t_2 = 0;
 
   /* "(tree fragment)":7
- *     state = (self.alias, self.choices, self.default_value, self.mutable, self.name, self.private, self.required)
+ *     state = (self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.private, self.required)
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
@@ -3478,12 +3533,12 @@ static PyObject *__pyx_pf_6nyoibo_6fields_5Field_6__reduce_cython__(struct __pyx
  *         state += (_dict,)
  *         use_setstate = True             # <<<<<<<<<<<<<<
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  */
     __pyx_v_use_setstate = 1;
 
     /* "(tree fragment)":7
- *     state = (self.alias, self.choices, self.default_value, self.mutable, self.name, self.private, self.required)
+ *     state = (self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.private, self.required)
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
@@ -3495,9 +3550,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_5Field_6__reduce_cython__(struct __pyx
   /* "(tree fragment)":11
  *         use_setstate = True
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None             # <<<<<<<<<<<<<<
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None             # <<<<<<<<<<<<<<
  *     if use_setstate:
- *         return __pyx_unpickle_Field, (type(self), 0xefd9ffe, None), state
+ *         return __pyx_unpickle_Field, (type(self), 0xb3dbdb0, None), state
  */
   /*else*/ {
     __pyx_t_3 = (__pyx_v_self->alias != Py_None);
@@ -3521,23 +3576,30 @@ static PyObject *__pyx_pf_6nyoibo_6fields_5Field_6__reduce_cython__(struct __pyx
       __pyx_t_4 = __pyx_t_5;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_5 = (__pyx_v_self->mutable != Py_None);
+    __pyx_t_5 = (__pyx_v_self->model != Py_None);
     __pyx_t_3 = (__pyx_t_5 != 0);
     if (!__pyx_t_3) {
     } else {
       __pyx_t_4 = __pyx_t_3;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_3 = (__pyx_v_self->name != ((PyObject*)Py_None));
+    __pyx_t_3 = (__pyx_v_self->mutable != Py_None);
     __pyx_t_5 = (__pyx_t_3 != 0);
     if (!__pyx_t_5) {
     } else {
       __pyx_t_4 = __pyx_t_5;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_5 = (__pyx_v_self->private != Py_None);
+    __pyx_t_5 = (__pyx_v_self->name != ((PyObject*)Py_None));
     __pyx_t_3 = (__pyx_t_5 != 0);
-    __pyx_t_4 = __pyx_t_3;
+    if (!__pyx_t_3) {
+    } else {
+      __pyx_t_4 = __pyx_t_3;
+      goto __pyx_L4_bool_binop_done;
+    }
+    __pyx_t_3 = (__pyx_v_self->private != Py_None);
+    __pyx_t_5 = (__pyx_t_3 != 0);
+    __pyx_t_4 = __pyx_t_5;
     __pyx_L4_bool_binop_done:;
     __pyx_v_use_setstate = __pyx_t_4;
   }
@@ -3545,20 +3607,20 @@ static PyObject *__pyx_pf_6nyoibo_6fields_5Field_6__reduce_cython__(struct __pyx
 
   /* "(tree fragment)":12
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  *     if use_setstate:             # <<<<<<<<<<<<<<
- *         return __pyx_unpickle_Field, (type(self), 0xefd9ffe, None), state
+ *         return __pyx_unpickle_Field, (type(self), 0xb3dbdb0, None), state
  *     else:
  */
   __pyx_t_4 = (__pyx_v_use_setstate != 0);
   if (__pyx_t_4) {
 
     /* "(tree fragment)":13
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  *     if use_setstate:
- *         return __pyx_unpickle_Field, (type(self), 0xefd9ffe, None), state             # <<<<<<<<<<<<<<
+ *         return __pyx_unpickle_Field, (type(self), 0xb3dbdb0, None), state             # <<<<<<<<<<<<<<
  *     else:
- *         return __pyx_unpickle_Field, (type(self), 0xefd9ffe, state)
+ *         return __pyx_unpickle_Field, (type(self), 0xb3dbdb0, state)
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_pyx_unpickle_Field); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 13, __pyx_L1_error)
@@ -3568,9 +3630,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_5Field_6__reduce_cython__(struct __pyx
     __Pyx_INCREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     __Pyx_GIVEREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
-    __Pyx_INCREF(__pyx_int_251502590);
-    __Pyx_GIVEREF(__pyx_int_251502590);
-    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_251502590);
+    __Pyx_INCREF(__pyx_int_188595632);
+    __Pyx_GIVEREF(__pyx_int_188595632);
+    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_188595632);
     __Pyx_INCREF(Py_None);
     __Pyx_GIVEREF(Py_None);
     PyTuple_SET_ITEM(__pyx_t_2, 2, Py_None);
@@ -3591,17 +3653,17 @@ static PyObject *__pyx_pf_6nyoibo_6fields_5Field_6__reduce_cython__(struct __pyx
 
     /* "(tree fragment)":12
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  *     if use_setstate:             # <<<<<<<<<<<<<<
- *         return __pyx_unpickle_Field, (type(self), 0xefd9ffe, None), state
+ *         return __pyx_unpickle_Field, (type(self), 0xb3dbdb0, None), state
  *     else:
  */
   }
 
   /* "(tree fragment)":15
- *         return __pyx_unpickle_Field, (type(self), 0xefd9ffe, None), state
+ *         return __pyx_unpickle_Field, (type(self), 0xb3dbdb0, None), state
  *     else:
- *         return __pyx_unpickle_Field, (type(self), 0xefd9ffe, state)             # <<<<<<<<<<<<<<
+ *         return __pyx_unpickle_Field, (type(self), 0xb3dbdb0, state)             # <<<<<<<<<<<<<<
  * def __setstate_cython__(self, __pyx_state):
  *     __pyx_unpickle_Field__set_state(self, __pyx_state)
  */
@@ -3614,9 +3676,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_5Field_6__reduce_cython__(struct __pyx
     __Pyx_INCREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     __Pyx_GIVEREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
-    __Pyx_INCREF(__pyx_int_251502590);
-    __Pyx_GIVEREF(__pyx_int_251502590);
-    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_251502590);
+    __Pyx_INCREF(__pyx_int_188595632);
+    __Pyx_GIVEREF(__pyx_int_188595632);
+    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_188595632);
     __Pyx_INCREF(__pyx_v_state);
     __Pyx_GIVEREF(__pyx_v_state);
     PyTuple_SET_ITEM(__pyx_t_2, 2, __pyx_v_state);
@@ -3656,7 +3718,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_5Field_6__reduce_cython__(struct __pyx
 
 /* "(tree fragment)":16
  *     else:
- *         return __pyx_unpickle_Field, (type(self), 0xefd9ffe, state)
+ *         return __pyx_unpickle_Field, (type(self), 0xb3dbdb0, state)
  * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_Field__set_state(self, __pyx_state)
  */
@@ -3684,7 +3746,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_5Field_8__setstate_cython__(struct __p
   __Pyx_RefNannySetupContext("__setstate_cython__", 0);
 
   /* "(tree fragment)":17
- *         return __pyx_unpickle_Field, (type(self), 0xefd9ffe, state)
+ *         return __pyx_unpickle_Field, (type(self), 0xb3dbdb0, state)
  * def __setstate_cython__(self, __pyx_state):
  *     __pyx_unpickle_Field__set_state(self, __pyx_state)             # <<<<<<<<<<<<<<
  */
@@ -3695,7 +3757,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_5Field_8__setstate_cython__(struct __p
 
   /* "(tree fragment)":16
  *     else:
- *         return __pyx_unpickle_Field, (type(self), 0xefd9ffe, state)
+ *         return __pyx_unpickle_Field, (type(self), 0xb3dbdb0, state)
  * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_Field__set_state(self, __pyx_state)
  */
@@ -3713,7 +3775,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_5Field_8__setstate_cython__(struct __p
   return __pyx_r;
 }
 
-/* "nyoibo/fields.pyx":105
+/* "nyoibo/fields.pyx":109
  *     _internal_type = str
  * 
  *     def __init__(self, int max_length=0, *args, **kwargs):             # <<<<<<<<<<<<<<
@@ -3768,7 +3830,7 @@ static int __pyx_pw_6nyoibo_6fields_8StrField_1__init__(PyObject *__pyx_v_self, 
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t used_pos_args = (pos_args < 1) ? pos_args : 1;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, __pyx_v_kwargs, values, used_pos_args, "__init__") < 0)) __PYX_ERR(0, 105, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, __pyx_v_kwargs, values, used_pos_args, "__init__") < 0)) __PYX_ERR(0, 109, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -3779,7 +3841,7 @@ static int __pyx_pw_6nyoibo_6fields_8StrField_1__init__(PyObject *__pyx_v_self, 
       }
     }
     if (values[0]) {
-      __pyx_v_max_length = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_max_length == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 105, __pyx_L3_error)
+      __pyx_v_max_length = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_max_length == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 109, __pyx_L3_error)
     } else {
       __pyx_v_max_length = ((int)0);
     }
@@ -3812,7 +3874,7 @@ static int __pyx_pf_6nyoibo_6fields_8StrField___init__(struct __pyx_obj_6nyoibo_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "nyoibo/fields.pyx":106
+  /* "nyoibo/fields.pyx":110
  * 
  *     def __init__(self, int max_length=0, *args, **kwargs):
  *         assert max_length >= 0, 'max_length must to be >= 0'             # <<<<<<<<<<<<<<
@@ -3823,12 +3885,12 @@ static int __pyx_pf_6nyoibo_6fields_8StrField___init__(struct __pyx_obj_6nyoibo_
   if (unlikely(!Py_OptimizeFlag)) {
     if (unlikely(!((__pyx_v_max_length >= 0) != 0))) {
       PyErr_SetObject(PyExc_AssertionError, __pyx_kp_u_max_length_must_to_be_0);
-      __PYX_ERR(0, 106, __pyx_L1_error)
+      __PYX_ERR(0, 110, __pyx_L1_error)
     }
   }
   #endif
 
-  /* "nyoibo/fields.pyx":107
+  /* "nyoibo/fields.pyx":111
  *     def __init__(self, int max_length=0, *args, **kwargs):
  *         assert max_length >= 0, 'max_length must to be >= 0'
  *         self.max_length = max_length             # <<<<<<<<<<<<<<
@@ -3837,14 +3899,14 @@ static int __pyx_pf_6nyoibo_6fields_8StrField___init__(struct __pyx_obj_6nyoibo_
  */
   __pyx_v_self->max_length = __pyx_v_max_length;
 
-  /* "nyoibo/fields.pyx":108
+  /* "nyoibo/fields.pyx":112
  *         assert max_length >= 0, 'max_length must to be >= 0'
  *         self.max_length = max_length
  *         super().__init__(*args, **kwargs)             # <<<<<<<<<<<<<<
  * 
  *     cdef _parse(self, value):
  */
-  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 108, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 112, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(((PyObject *)__pyx_ptype_6nyoibo_6fields_StrField));
   __Pyx_GIVEREF(((PyObject *)__pyx_ptype_6nyoibo_6fields_StrField));
@@ -3852,21 +3914,21 @@ static int __pyx_pf_6nyoibo_6fields_8StrField___init__(struct __pyx_obj_6nyoibo_
   __Pyx_INCREF(((PyObject *)__pyx_v_self));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_self));
   PyTuple_SET_ITEM(__pyx_t_1, 1, ((PyObject *)__pyx_v_self));
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_super, __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 108, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_super, __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 112, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_init); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 108, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_init); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 112, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = PyDict_Copy(__pyx_v_kwargs); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 108, __pyx_L1_error)
+  __pyx_t_2 = PyDict_Copy(__pyx_v_kwargs); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 112, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_v_args, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 108, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_v_args, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 112, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "nyoibo/fields.pyx":105
+  /* "nyoibo/fields.pyx":109
  *     _internal_type = str
  * 
  *     def __init__(self, int max_length=0, *args, **kwargs):             # <<<<<<<<<<<<<<
@@ -3888,7 +3950,7 @@ static int __pyx_pf_6nyoibo_6fields_8StrField___init__(struct __pyx_obj_6nyoibo_
   return __pyx_r;
 }
 
-/* "nyoibo/fields.pyx":110
+/* "nyoibo/fields.pyx":114
  *         super().__init__(*args, **kwargs)
  * 
  *     cdef _parse(self, value):             # <<<<<<<<<<<<<<
@@ -3913,7 +3975,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_8StrField__parse(struct __pyx_obj_6nyoi
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_parse", 0);
 
-  /* "nyoibo/fields.pyx":123
+  /* "nyoibo/fields.pyx":127
  *             StrLengthError: if ``max_length`` was set and ``len(value)`` is greater than ``max_length``.
  *         """
  *         if self.max_length and len(value) > self.max_length:             # <<<<<<<<<<<<<<
@@ -3926,22 +3988,22 @@ static PyObject *__pyx_f_6nyoibo_6fields_8StrField__parse(struct __pyx_obj_6nyoi
     __pyx_t_1 = __pyx_t_2;
     goto __pyx_L4_bool_binop_done;
   }
-  __pyx_t_3 = PyObject_Length(__pyx_v_value); if (unlikely(__pyx_t_3 == ((Py_ssize_t)-1))) __PYX_ERR(0, 123, __pyx_L1_error)
+  __pyx_t_3 = PyObject_Length(__pyx_v_value); if (unlikely(__pyx_t_3 == ((Py_ssize_t)-1))) __PYX_ERR(0, 127, __pyx_L1_error)
   __pyx_t_2 = ((__pyx_t_3 > __pyx_v_self->max_length) != 0);
   __pyx_t_1 = __pyx_t_2;
   __pyx_L4_bool_binop_done:;
   if (unlikely(__pyx_t_1)) {
 
-    /* "nyoibo/fields.pyx":124
+    /* "nyoibo/fields.pyx":128
  *         """
  *         if self.max_length and len(value) > self.max_length:
  *             raise StrLengthError(f'length value ({len(value)}) is greater than max_value ({self.max_length})')             # <<<<<<<<<<<<<<
  *         return value
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_StrLengthError); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 124, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_StrLengthError); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 128, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_6 = PyTuple_New(5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 124, __pyx_L1_error)
+    __pyx_t_6 = PyTuple_New(5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 128, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_3 = 0;
     __pyx_t_7 = 127;
@@ -3949,8 +4011,8 @@ static PyObject *__pyx_f_6nyoibo_6fields_8StrField__parse(struct __pyx_obj_6nyoi
     __pyx_t_3 += 14;
     __Pyx_GIVEREF(__pyx_kp_u_length_value);
     PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_kp_u_length_value);
-    __pyx_t_8 = PyObject_Length(__pyx_v_value); if (unlikely(__pyx_t_8 == ((Py_ssize_t)-1))) __PYX_ERR(0, 124, __pyx_L1_error)
-    __pyx_t_9 = __Pyx_PyUnicode_From_Py_ssize_t(__pyx_t_8, 0, ' ', 'd'); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 124, __pyx_L1_error)
+    __pyx_t_8 = PyObject_Length(__pyx_v_value); if (unlikely(__pyx_t_8 == ((Py_ssize_t)-1))) __PYX_ERR(0, 128, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyUnicode_From_Py_ssize_t(__pyx_t_8, 0, ' ', 'd'); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 128, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __pyx_t_3 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_9);
     __Pyx_GIVEREF(__pyx_t_9);
@@ -3960,17 +4022,17 @@ static PyObject *__pyx_f_6nyoibo_6fields_8StrField__parse(struct __pyx_obj_6nyoi
     __pyx_t_3 += 29;
     __Pyx_GIVEREF(__pyx_kp_u_is_greater_than_max_value);
     PyTuple_SET_ITEM(__pyx_t_6, 2, __pyx_kp_u_is_greater_than_max_value);
-    __pyx_t_9 = __Pyx_PyUnicode_From_int(__pyx_v_self->max_length, 0, ' ', 'd'); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 124, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyUnicode_From_int(__pyx_v_self->max_length, 0, ' ', 'd'); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 128, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __pyx_t_3 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_9);
     __Pyx_GIVEREF(__pyx_t_9);
     PyTuple_SET_ITEM(__pyx_t_6, 3, __pyx_t_9);
     __pyx_t_9 = 0;
-    __Pyx_INCREF(__pyx_kp_u__4);
+    __Pyx_INCREF(__pyx_kp_u__5);
     __pyx_t_3 += 1;
-    __Pyx_GIVEREF(__pyx_kp_u__4);
-    PyTuple_SET_ITEM(__pyx_t_6, 4, __pyx_kp_u__4);
-    __pyx_t_9 = __Pyx_PyUnicode_Join(__pyx_t_6, 5, __pyx_t_3, __pyx_t_7); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 124, __pyx_L1_error)
+    __Pyx_GIVEREF(__pyx_kp_u__5);
+    PyTuple_SET_ITEM(__pyx_t_6, 4, __pyx_kp_u__5);
+    __pyx_t_9 = __Pyx_PyUnicode_Join(__pyx_t_6, 5, __pyx_t_3, __pyx_t_7); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 128, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_t_6 = NULL;
@@ -3986,14 +4048,14 @@ static PyObject *__pyx_f_6nyoibo_6fields_8StrField__parse(struct __pyx_obj_6nyoi
     __pyx_t_4 = (__pyx_t_6) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_6, __pyx_t_9) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_9);
     __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 124, __pyx_L1_error)
+    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 128, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_Raise(__pyx_t_4, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __PYX_ERR(0, 124, __pyx_L1_error)
+    __PYX_ERR(0, 128, __pyx_L1_error)
 
-    /* "nyoibo/fields.pyx":123
+    /* "nyoibo/fields.pyx":127
  *             StrLengthError: if ``max_length`` was set and ``len(value)`` is greater than ``max_length``.
  *         """
  *         if self.max_length and len(value) > self.max_length:             # <<<<<<<<<<<<<<
@@ -4002,7 +4064,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_8StrField__parse(struct __pyx_obj_6nyoi
  */
   }
 
-  /* "nyoibo/fields.pyx":125
+  /* "nyoibo/fields.pyx":129
  *         if self.max_length and len(value) > self.max_length:
  *             raise StrLengthError(f'length value ({len(value)}) is greater than max_value ({self.max_length})')
  *         return value             # <<<<<<<<<<<<<<
@@ -4014,7 +4076,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_8StrField__parse(struct __pyx_obj_6nyoi
   __pyx_r = __pyx_v_value;
   goto __pyx_L0;
 
-  /* "nyoibo/fields.pyx":110
+  /* "nyoibo/fields.pyx":114
  *         super().__init__(*args, **kwargs)
  * 
  *     cdef _parse(self, value):             # <<<<<<<<<<<<<<
@@ -4075,7 +4137,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8StrField_2__reduce_cython__(struct __
   /* "(tree fragment)":5
  *     cdef object _dict
  *     cdef bint use_setstate
- *     state = (self.alias, self.choices, self.default_value, self.max_length, self.mutable, self.name, self.private, self.required)             # <<<<<<<<<<<<<<
+ *     state = (self.alias, self.choices, self.default_value, self.max_length, self.model, self.mutable, self.name, self.private, self.required)             # <<<<<<<<<<<<<<
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:
  */
@@ -4083,7 +4145,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8StrField_2__reduce_cython__(struct __
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_2 = __Pyx_PyBool_FromLong(__pyx_v_self->__pyx_base.required); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyTuple_New(8); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 5, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(9); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.alias);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.alias);
@@ -4096,17 +4158,20 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8StrField_2__reduce_cython__(struct __
   PyTuple_SET_ITEM(__pyx_t_3, 2, __pyx_v_self->__pyx_base.default_value);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_3, 3, __pyx_t_1);
+  __Pyx_INCREF(__pyx_v_self->__pyx_base.model);
+  __Pyx_GIVEREF(__pyx_v_self->__pyx_base.model);
+  PyTuple_SET_ITEM(__pyx_t_3, 4, __pyx_v_self->__pyx_base.model);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.mutable);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.mutable);
-  PyTuple_SET_ITEM(__pyx_t_3, 4, __pyx_v_self->__pyx_base.mutable);
+  PyTuple_SET_ITEM(__pyx_t_3, 5, __pyx_v_self->__pyx_base.mutable);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.name);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.name);
-  PyTuple_SET_ITEM(__pyx_t_3, 5, __pyx_v_self->__pyx_base.name);
+  PyTuple_SET_ITEM(__pyx_t_3, 6, __pyx_v_self->__pyx_base.name);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.private);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.private);
-  PyTuple_SET_ITEM(__pyx_t_3, 6, __pyx_v_self->__pyx_base.private);
+  PyTuple_SET_ITEM(__pyx_t_3, 7, __pyx_v_self->__pyx_base.private);
   __Pyx_GIVEREF(__pyx_t_2);
-  PyTuple_SET_ITEM(__pyx_t_3, 7, __pyx_t_2);
+  PyTuple_SET_ITEM(__pyx_t_3, 8, __pyx_t_2);
   __pyx_t_1 = 0;
   __pyx_t_2 = 0;
   __pyx_v_state = ((PyObject*)__pyx_t_3);
@@ -4114,7 +4179,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8StrField_2__reduce_cython__(struct __
 
   /* "(tree fragment)":6
  *     cdef bint use_setstate
- *     state = (self.alias, self.choices, self.default_value, self.max_length, self.mutable, self.name, self.private, self.required)
+ *     state = (self.alias, self.choices, self.default_value, self.max_length, self.model, self.mutable, self.name, self.private, self.required)
  *     _dict = getattr(self, '__dict__', None)             # <<<<<<<<<<<<<<
  *     if _dict is not None:
  *         state += (_dict,)
@@ -4125,7 +4190,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8StrField_2__reduce_cython__(struct __
   __pyx_t_3 = 0;
 
   /* "(tree fragment)":7
- *     state = (self.alias, self.choices, self.default_value, self.max_length, self.mutable, self.name, self.private, self.required)
+ *     state = (self.alias, self.choices, self.default_value, self.max_length, self.model, self.mutable, self.name, self.private, self.required)
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
@@ -4158,12 +4223,12 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8StrField_2__reduce_cython__(struct __
  *         state += (_dict,)
  *         use_setstate = True             # <<<<<<<<<<<<<<
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  */
     __pyx_v_use_setstate = 1;
 
     /* "(tree fragment)":7
- *     state = (self.alias, self.choices, self.default_value, self.max_length, self.mutable, self.name, self.private, self.required)
+ *     state = (self.alias, self.choices, self.default_value, self.max_length, self.model, self.mutable, self.name, self.private, self.required)
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
@@ -4175,9 +4240,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8StrField_2__reduce_cython__(struct __
   /* "(tree fragment)":11
  *         use_setstate = True
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None             # <<<<<<<<<<<<<<
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None             # <<<<<<<<<<<<<<
  *     if use_setstate:
- *         return __pyx_unpickle_StrField, (type(self), 0x183421a, None), state
+ *         return __pyx_unpickle_StrField, (type(self), 0x1a1bf8a, None), state
  */
   /*else*/ {
     __pyx_t_4 = (__pyx_v_self->__pyx_base.alias != Py_None);
@@ -4201,23 +4266,30 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8StrField_2__reduce_cython__(struct __
       __pyx_t_5 = __pyx_t_6;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_6 = (__pyx_v_self->__pyx_base.mutable != Py_None);
+    __pyx_t_6 = (__pyx_v_self->__pyx_base.model != Py_None);
     __pyx_t_4 = (__pyx_t_6 != 0);
     if (!__pyx_t_4) {
     } else {
       __pyx_t_5 = __pyx_t_4;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_4 = (__pyx_v_self->__pyx_base.name != ((PyObject*)Py_None));
+    __pyx_t_4 = (__pyx_v_self->__pyx_base.mutable != Py_None);
     __pyx_t_6 = (__pyx_t_4 != 0);
     if (!__pyx_t_6) {
     } else {
       __pyx_t_5 = __pyx_t_6;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_6 = (__pyx_v_self->__pyx_base.private != Py_None);
+    __pyx_t_6 = (__pyx_v_self->__pyx_base.name != ((PyObject*)Py_None));
     __pyx_t_4 = (__pyx_t_6 != 0);
-    __pyx_t_5 = __pyx_t_4;
+    if (!__pyx_t_4) {
+    } else {
+      __pyx_t_5 = __pyx_t_4;
+      goto __pyx_L4_bool_binop_done;
+    }
+    __pyx_t_4 = (__pyx_v_self->__pyx_base.private != Py_None);
+    __pyx_t_6 = (__pyx_t_4 != 0);
+    __pyx_t_5 = __pyx_t_6;
     __pyx_L4_bool_binop_done:;
     __pyx_v_use_setstate = __pyx_t_5;
   }
@@ -4225,20 +4297,20 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8StrField_2__reduce_cython__(struct __
 
   /* "(tree fragment)":12
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  *     if use_setstate:             # <<<<<<<<<<<<<<
- *         return __pyx_unpickle_StrField, (type(self), 0x183421a, None), state
+ *         return __pyx_unpickle_StrField, (type(self), 0x1a1bf8a, None), state
  *     else:
  */
   __pyx_t_5 = (__pyx_v_use_setstate != 0);
   if (__pyx_t_5) {
 
     /* "(tree fragment)":13
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  *     if use_setstate:
- *         return __pyx_unpickle_StrField, (type(self), 0x183421a, None), state             # <<<<<<<<<<<<<<
+ *         return __pyx_unpickle_StrField, (type(self), 0x1a1bf8a, None), state             # <<<<<<<<<<<<<<
  *     else:
- *         return __pyx_unpickle_StrField, (type(self), 0x183421a, state)
+ *         return __pyx_unpickle_StrField, (type(self), 0x1a1bf8a, state)
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_pyx_unpickle_StrField); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 13, __pyx_L1_error)
@@ -4248,9 +4320,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8StrField_2__reduce_cython__(struct __
     __Pyx_INCREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     __Pyx_GIVEREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     PyTuple_SET_ITEM(__pyx_t_3, 0, ((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
-    __Pyx_INCREF(__pyx_int_25379354);
-    __Pyx_GIVEREF(__pyx_int_25379354);
-    PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_int_25379354);
+    __Pyx_INCREF(__pyx_int_27377546);
+    __Pyx_GIVEREF(__pyx_int_27377546);
+    PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_int_27377546);
     __Pyx_INCREF(Py_None);
     __Pyx_GIVEREF(Py_None);
     PyTuple_SET_ITEM(__pyx_t_3, 2, Py_None);
@@ -4271,17 +4343,17 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8StrField_2__reduce_cython__(struct __
 
     /* "(tree fragment)":12
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  *     if use_setstate:             # <<<<<<<<<<<<<<
- *         return __pyx_unpickle_StrField, (type(self), 0x183421a, None), state
+ *         return __pyx_unpickle_StrField, (type(self), 0x1a1bf8a, None), state
  *     else:
  */
   }
 
   /* "(tree fragment)":15
- *         return __pyx_unpickle_StrField, (type(self), 0x183421a, None), state
+ *         return __pyx_unpickle_StrField, (type(self), 0x1a1bf8a, None), state
  *     else:
- *         return __pyx_unpickle_StrField, (type(self), 0x183421a, state)             # <<<<<<<<<<<<<<
+ *         return __pyx_unpickle_StrField, (type(self), 0x1a1bf8a, state)             # <<<<<<<<<<<<<<
  * def __setstate_cython__(self, __pyx_state):
  *     __pyx_unpickle_StrField__set_state(self, __pyx_state)
  */
@@ -4294,9 +4366,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8StrField_2__reduce_cython__(struct __
     __Pyx_INCREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     __Pyx_GIVEREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     PyTuple_SET_ITEM(__pyx_t_3, 0, ((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
-    __Pyx_INCREF(__pyx_int_25379354);
-    __Pyx_GIVEREF(__pyx_int_25379354);
-    PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_int_25379354);
+    __Pyx_INCREF(__pyx_int_27377546);
+    __Pyx_GIVEREF(__pyx_int_27377546);
+    PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_int_27377546);
     __Pyx_INCREF(__pyx_v_state);
     __Pyx_GIVEREF(__pyx_v_state);
     PyTuple_SET_ITEM(__pyx_t_3, 2, __pyx_v_state);
@@ -4336,7 +4408,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8StrField_2__reduce_cython__(struct __
 
 /* "(tree fragment)":16
  *     else:
- *         return __pyx_unpickle_StrField, (type(self), 0x183421a, state)
+ *         return __pyx_unpickle_StrField, (type(self), 0x1a1bf8a, state)
  * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_StrField__set_state(self, __pyx_state)
  */
@@ -4364,7 +4436,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8StrField_4__setstate_cython__(struct 
   __Pyx_RefNannySetupContext("__setstate_cython__", 0);
 
   /* "(tree fragment)":17
- *         return __pyx_unpickle_StrField, (type(self), 0x183421a, state)
+ *         return __pyx_unpickle_StrField, (type(self), 0x1a1bf8a, state)
  * def __setstate_cython__(self, __pyx_state):
  *     __pyx_unpickle_StrField__set_state(self, __pyx_state)             # <<<<<<<<<<<<<<
  */
@@ -4375,7 +4447,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8StrField_4__setstate_cython__(struct 
 
   /* "(tree fragment)":16
  *     else:
- *         return __pyx_unpickle_StrField, (type(self), 0x183421a, state)
+ *         return __pyx_unpickle_StrField, (type(self), 0x1a1bf8a, state)
  * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_StrField__set_state(self, __pyx_state)
  */
@@ -4393,7 +4465,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8StrField_4__setstate_cython__(struct 
   return __pyx_r;
 }
 
-/* "nyoibo/fields.pyx":141
+/* "nyoibo/fields.pyx":145
  *     _internal_type = int
  * 
  *     def __init__(self, min_value=None, max_value=None, *args, **kwargs):             # <<<<<<<<<<<<<<
@@ -4459,7 +4531,7 @@ static int __pyx_pw_6nyoibo_6fields_8IntField_1__init__(PyObject *__pyx_v_self, 
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t used_pos_args = (pos_args < 2) ? pos_args : 2;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, __pyx_v_kwargs, values, used_pos_args, "__init__") < 0)) __PYX_ERR(0, 141, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, __pyx_v_kwargs, values, used_pos_args, "__init__") < 0)) __PYX_ERR(0, 145, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -4505,7 +4577,7 @@ static int __pyx_pf_6nyoibo_6fields_8IntField___init__(struct __pyx_obj_6nyoibo_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "nyoibo/fields.pyx":142
+  /* "nyoibo/fields.pyx":146
  * 
  *     def __init__(self, min_value=None, max_value=None, *args, **kwargs):
  *         assert min_value is None or isinstance(min_value, int), 'min_value must be an integer'             # <<<<<<<<<<<<<<
@@ -4527,12 +4599,12 @@ static int __pyx_pf_6nyoibo_6fields_8IntField___init__(struct __pyx_obj_6nyoibo_
     __pyx_L3_bool_binop_done:;
     if (unlikely(!__pyx_t_1)) {
       PyErr_SetObject(PyExc_AssertionError, __pyx_kp_u_min_value_must_be_an_integer);
-      __PYX_ERR(0, 142, __pyx_L1_error)
+      __PYX_ERR(0, 146, __pyx_L1_error)
     }
   }
   #endif
 
-  /* "nyoibo/fields.pyx":143
+  /* "nyoibo/fields.pyx":147
  *     def __init__(self, min_value=None, max_value=None, *args, **kwargs):
  *         assert min_value is None or isinstance(min_value, int), 'min_value must be an integer'
  *         assert max_value is None or isinstance(max_value, int), 'max_value must be an integer'             # <<<<<<<<<<<<<<
@@ -4554,12 +4626,12 @@ static int __pyx_pf_6nyoibo_6fields_8IntField___init__(struct __pyx_obj_6nyoibo_
     __pyx_L5_bool_binop_done:;
     if (unlikely(!__pyx_t_1)) {
       PyErr_SetObject(PyExc_AssertionError, __pyx_kp_u_max_value_must_be_an_integer);
-      __PYX_ERR(0, 143, __pyx_L1_error)
+      __PYX_ERR(0, 147, __pyx_L1_error)
     }
   }
   #endif
 
-  /* "nyoibo/fields.pyx":144
+  /* "nyoibo/fields.pyx":148
  *         assert min_value is None or isinstance(min_value, int), 'min_value must be an integer'
  *         assert max_value is None or isinstance(max_value, int), 'max_value must be an integer'
  *         self.min_value = min_value             # <<<<<<<<<<<<<<
@@ -4572,7 +4644,7 @@ static int __pyx_pf_6nyoibo_6fields_8IntField___init__(struct __pyx_obj_6nyoibo_
   __Pyx_DECREF(__pyx_v_self->min_value);
   __pyx_v_self->min_value = __pyx_v_min_value;
 
-  /* "nyoibo/fields.pyx":145
+  /* "nyoibo/fields.pyx":149
  *         assert max_value is None or isinstance(max_value, int), 'max_value must be an integer'
  *         self.min_value = min_value
  *         self.max_value = max_value             # <<<<<<<<<<<<<<
@@ -4585,14 +4657,14 @@ static int __pyx_pf_6nyoibo_6fields_8IntField___init__(struct __pyx_obj_6nyoibo_
   __Pyx_DECREF(__pyx_v_self->max_value);
   __pyx_v_self->max_value = __pyx_v_max_value;
 
-  /* "nyoibo/fields.pyx":146
+  /* "nyoibo/fields.pyx":150
  *         self.min_value = min_value
  *         self.max_value = max_value
  *         super().__init__(*args, **kwargs)             # <<<<<<<<<<<<<<
  * 
  *     cpdef public parse(self, value):
  */
-  __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 146, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 150, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_INCREF(((PyObject *)__pyx_ptype_6nyoibo_6fields_IntField));
   __Pyx_GIVEREF(((PyObject *)__pyx_ptype_6nyoibo_6fields_IntField));
@@ -4600,21 +4672,21 @@ static int __pyx_pf_6nyoibo_6fields_8IntField___init__(struct __pyx_obj_6nyoibo_
   __Pyx_INCREF(((PyObject *)__pyx_v_self));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_self));
   PyTuple_SET_ITEM(__pyx_t_4, 1, ((PyObject *)__pyx_v_self));
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_builtin_super, __pyx_t_4, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 146, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_builtin_super, __pyx_t_4, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 150, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_init); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 146, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_init); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 150, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = PyDict_Copy(__pyx_v_kwargs); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 146, __pyx_L1_error)
+  __pyx_t_5 = PyDict_Copy(__pyx_v_kwargs); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 150, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_v_args, __pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 146, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_v_args, __pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 150, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "nyoibo/fields.pyx":141
+  /* "nyoibo/fields.pyx":145
  *     _internal_type = int
  * 
  *     def __init__(self, min_value=None, max_value=None, *args, **kwargs):             # <<<<<<<<<<<<<<
@@ -4636,7 +4708,7 @@ static int __pyx_pf_6nyoibo_6fields_8IntField___init__(struct __pyx_obj_6nyoibo_
   return __pyx_r;
 }
 
-/* "nyoibo/fields.pyx":148
+/* "nyoibo/fields.pyx":152
  *         super().__init__(*args, **kwargs)
  * 
  *     cpdef public parse(self, value):             # <<<<<<<<<<<<<<
@@ -4671,7 +4743,7 @@ PyObject *__pyx_f_6nyoibo_6fields_8IntField_parse(struct __pyx_obj_6nyoibo_6fiel
     if (unlikely(!__Pyx_object_dict_version_matches(((PyObject *)__pyx_v_self), __pyx_tp_dict_version, __pyx_obj_dict_version))) {
       PY_UINT64_T __pyx_type_dict_guard = __Pyx_get_tp_dict_version(((PyObject *)__pyx_v_self));
       #endif
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_parse); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 148, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_parse); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 152, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)(void*)__pyx_pw_6nyoibo_6fields_8IntField_3parse)) {
         __Pyx_XDECREF(__pyx_r);
@@ -4688,7 +4760,7 @@ PyObject *__pyx_f_6nyoibo_6fields_8IntField_parse(struct __pyx_obj_6nyoibo_6fiel
         }
         __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_4, __pyx_v_value) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_value);
         __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 148, __pyx_L1_error)
+        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 152, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         __pyx_r = __pyx_t_2;
@@ -4709,14 +4781,14 @@ PyObject *__pyx_f_6nyoibo_6fields_8IntField_parse(struct __pyx_obj_6nyoibo_6fiel
     #endif
   }
 
-  /* "nyoibo/fields.pyx":162
+  /* "nyoibo/fields.pyx":166
  * 
  *         """
  *         value = super(IntField, self).parse(value)             # <<<<<<<<<<<<<<
  *         if self.min_value is not None and value < self.min_value:
  *             raise IntMinValueError(f'value ({value}) must be >= min_value ({self.min_value})')
  */
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 162, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 166, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(((PyObject *)__pyx_ptype_6nyoibo_6fields_IntField));
   __Pyx_GIVEREF(((PyObject *)__pyx_ptype_6nyoibo_6fields_IntField));
@@ -4724,10 +4796,10 @@ PyObject *__pyx_f_6nyoibo_6fields_8IntField_parse(struct __pyx_obj_6nyoibo_6fiel
   __Pyx_INCREF(((PyObject *)__pyx_v_self));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_self));
   PyTuple_SET_ITEM(__pyx_t_2, 1, ((PyObject *)__pyx_v_self));
-  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_super, __pyx_t_2, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 162, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_super, __pyx_t_2, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 166, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_parse); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 162, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_parse); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 166, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_3 = NULL;
@@ -4742,13 +4814,13 @@ PyObject *__pyx_f_6nyoibo_6fields_8IntField_parse(struct __pyx_obj_6nyoibo_6fiel
   }
   __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_3, __pyx_v_value) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_value);
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 162, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 166, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF_SET(__pyx_v_value, __pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "nyoibo/fields.pyx":163
+  /* "nyoibo/fields.pyx":167
  *         """
  *         value = super(IntField, self).parse(value)
  *         if self.min_value is not None and value < self.min_value:             # <<<<<<<<<<<<<<
@@ -4762,23 +4834,23 @@ PyObject *__pyx_f_6nyoibo_6fields_8IntField_parse(struct __pyx_obj_6nyoibo_6fiel
     __pyx_t_5 = __pyx_t_7;
     goto __pyx_L4_bool_binop_done;
   }
-  __pyx_t_1 = PyObject_RichCompare(__pyx_v_value, __pyx_v_self->min_value, Py_LT); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 163, __pyx_L1_error)
-  __pyx_t_7 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_7 < 0)) __PYX_ERR(0, 163, __pyx_L1_error)
+  __pyx_t_1 = PyObject_RichCompare(__pyx_v_value, __pyx_v_self->min_value, Py_LT); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 167, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_7 < 0)) __PYX_ERR(0, 167, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_5 = __pyx_t_7;
   __pyx_L4_bool_binop_done:;
   if (unlikely(__pyx_t_5)) {
 
-    /* "nyoibo/fields.pyx":164
+    /* "nyoibo/fields.pyx":168
  *         value = super(IntField, self).parse(value)
  *         if self.min_value is not None and value < self.min_value:
  *             raise IntMinValueError(f'value ({value}) must be >= min_value ({self.min_value})')             # <<<<<<<<<<<<<<
  *         if self.max_value is not None and value > self.max_value:
  *             raise IntMaxValueError(f'value ({value}) must be <= max_value ({self.max_value})')
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_IntMinValueError); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 164, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_IntMinValueError); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 168, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_3 = PyTuple_New(5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 164, __pyx_L1_error)
+    __pyx_t_3 = PyTuple_New(5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 168, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_8 = 0;
     __pyx_t_9 = 127;
@@ -4786,7 +4858,7 @@ PyObject *__pyx_f_6nyoibo_6fields_8IntField_parse(struct __pyx_obj_6nyoibo_6fiel
     __pyx_t_8 += 7;
     __Pyx_GIVEREF(__pyx_kp_u_value);
     PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_kp_u_value);
-    __pyx_t_4 = __Pyx_PyObject_FormatSimple(__pyx_v_value, __pyx_empty_unicode); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 164, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_FormatSimple(__pyx_v_value, __pyx_empty_unicode); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 168, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_9 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_4) > __pyx_t_9) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_4) : __pyx_t_9;
     __pyx_t_8 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_4);
@@ -4797,18 +4869,18 @@ PyObject *__pyx_f_6nyoibo_6fields_8IntField_parse(struct __pyx_obj_6nyoibo_6fiel
     __pyx_t_8 += 24;
     __Pyx_GIVEREF(__pyx_kp_u_must_be_min_value);
     PyTuple_SET_ITEM(__pyx_t_3, 2, __pyx_kp_u_must_be_min_value);
-    __pyx_t_4 = __Pyx_PyObject_FormatSimple(__pyx_v_self->min_value, __pyx_empty_unicode); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 164, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_FormatSimple(__pyx_v_self->min_value, __pyx_empty_unicode); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 168, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_9 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_4) > __pyx_t_9) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_4) : __pyx_t_9;
     __pyx_t_8 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_4);
     __Pyx_GIVEREF(__pyx_t_4);
     PyTuple_SET_ITEM(__pyx_t_3, 3, __pyx_t_4);
     __pyx_t_4 = 0;
-    __Pyx_INCREF(__pyx_kp_u__4);
+    __Pyx_INCREF(__pyx_kp_u__5);
     __pyx_t_8 += 1;
-    __Pyx_GIVEREF(__pyx_kp_u__4);
-    PyTuple_SET_ITEM(__pyx_t_3, 4, __pyx_kp_u__4);
-    __pyx_t_4 = __Pyx_PyUnicode_Join(__pyx_t_3, 5, __pyx_t_8, __pyx_t_9); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 164, __pyx_L1_error)
+    __Pyx_GIVEREF(__pyx_kp_u__5);
+    PyTuple_SET_ITEM(__pyx_t_3, 4, __pyx_kp_u__5);
+    __pyx_t_4 = __Pyx_PyUnicode_Join(__pyx_t_3, 5, __pyx_t_8, __pyx_t_9); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 168, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __pyx_t_3 = NULL;
@@ -4824,14 +4896,14 @@ PyObject *__pyx_f_6nyoibo_6fields_8IntField_parse(struct __pyx_obj_6nyoibo_6fiel
     __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_3, __pyx_t_4) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_4);
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 164, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 168, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 164, __pyx_L1_error)
+    __PYX_ERR(0, 168, __pyx_L1_error)
 
-    /* "nyoibo/fields.pyx":163
+    /* "nyoibo/fields.pyx":167
  *         """
  *         value = super(IntField, self).parse(value)
  *         if self.min_value is not None and value < self.min_value:             # <<<<<<<<<<<<<<
@@ -4840,7 +4912,7 @@ PyObject *__pyx_f_6nyoibo_6fields_8IntField_parse(struct __pyx_obj_6nyoibo_6fiel
  */
   }
 
-  /* "nyoibo/fields.pyx":165
+  /* "nyoibo/fields.pyx":169
  *         if self.min_value is not None and value < self.min_value:
  *             raise IntMinValueError(f'value ({value}) must be >= min_value ({self.min_value})')
  *         if self.max_value is not None and value > self.max_value:             # <<<<<<<<<<<<<<
@@ -4854,23 +4926,23 @@ PyObject *__pyx_f_6nyoibo_6fields_8IntField_parse(struct __pyx_obj_6nyoibo_6fiel
     __pyx_t_5 = __pyx_t_6;
     goto __pyx_L7_bool_binop_done;
   }
-  __pyx_t_1 = PyObject_RichCompare(__pyx_v_value, __pyx_v_self->max_value, Py_GT); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 165, __pyx_L1_error)
-  __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 165, __pyx_L1_error)
+  __pyx_t_1 = PyObject_RichCompare(__pyx_v_value, __pyx_v_self->max_value, Py_GT); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 169, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 169, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_5 = __pyx_t_6;
   __pyx_L7_bool_binop_done:;
   if (unlikely(__pyx_t_5)) {
 
-    /* "nyoibo/fields.pyx":166
+    /* "nyoibo/fields.pyx":170
  *             raise IntMinValueError(f'value ({value}) must be >= min_value ({self.min_value})')
  *         if self.max_value is not None and value > self.max_value:
  *             raise IntMaxValueError(f'value ({value}) must be <= max_value ({self.max_value})')             # <<<<<<<<<<<<<<
  *         return value
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_IntMaxValueError); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 166, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_IntMaxValueError); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 170, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_4 = PyTuple_New(5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 166, __pyx_L1_error)
+    __pyx_t_4 = PyTuple_New(5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 170, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_8 = 0;
     __pyx_t_9 = 127;
@@ -4878,7 +4950,7 @@ PyObject *__pyx_f_6nyoibo_6fields_8IntField_parse(struct __pyx_obj_6nyoibo_6fiel
     __pyx_t_8 += 7;
     __Pyx_GIVEREF(__pyx_kp_u_value);
     PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_kp_u_value);
-    __pyx_t_3 = __Pyx_PyObject_FormatSimple(__pyx_v_value, __pyx_empty_unicode); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 166, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_FormatSimple(__pyx_v_value, __pyx_empty_unicode); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 170, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_9 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_3) > __pyx_t_9) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_3) : __pyx_t_9;
     __pyx_t_8 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_3);
@@ -4889,18 +4961,18 @@ PyObject *__pyx_f_6nyoibo_6fields_8IntField_parse(struct __pyx_obj_6nyoibo_6fiel
     __pyx_t_8 += 24;
     __Pyx_GIVEREF(__pyx_kp_u_must_be_max_value);
     PyTuple_SET_ITEM(__pyx_t_4, 2, __pyx_kp_u_must_be_max_value);
-    __pyx_t_3 = __Pyx_PyObject_FormatSimple(__pyx_v_self->max_value, __pyx_empty_unicode); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 166, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_FormatSimple(__pyx_v_self->max_value, __pyx_empty_unicode); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 170, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_9 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_3) > __pyx_t_9) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_3) : __pyx_t_9;
     __pyx_t_8 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_3);
     __Pyx_GIVEREF(__pyx_t_3);
     PyTuple_SET_ITEM(__pyx_t_4, 3, __pyx_t_3);
     __pyx_t_3 = 0;
-    __Pyx_INCREF(__pyx_kp_u__4);
+    __Pyx_INCREF(__pyx_kp_u__5);
     __pyx_t_8 += 1;
-    __Pyx_GIVEREF(__pyx_kp_u__4);
-    PyTuple_SET_ITEM(__pyx_t_4, 4, __pyx_kp_u__4);
-    __pyx_t_3 = __Pyx_PyUnicode_Join(__pyx_t_4, 5, __pyx_t_8, __pyx_t_9); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 166, __pyx_L1_error)
+    __Pyx_GIVEREF(__pyx_kp_u__5);
+    PyTuple_SET_ITEM(__pyx_t_4, 4, __pyx_kp_u__5);
+    __pyx_t_3 = __Pyx_PyUnicode_Join(__pyx_t_4, 5, __pyx_t_8, __pyx_t_9); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 170, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_t_4 = NULL;
@@ -4916,14 +4988,14 @@ PyObject *__pyx_f_6nyoibo_6fields_8IntField_parse(struct __pyx_obj_6nyoibo_6fiel
     __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_4, __pyx_t_3) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 166, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 170, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 166, __pyx_L1_error)
+    __PYX_ERR(0, 170, __pyx_L1_error)
 
-    /* "nyoibo/fields.pyx":165
+    /* "nyoibo/fields.pyx":169
  *         if self.min_value is not None and value < self.min_value:
  *             raise IntMinValueError(f'value ({value}) must be >= min_value ({self.min_value})')
  *         if self.max_value is not None and value > self.max_value:             # <<<<<<<<<<<<<<
@@ -4932,7 +5004,7 @@ PyObject *__pyx_f_6nyoibo_6fields_8IntField_parse(struct __pyx_obj_6nyoibo_6fiel
  */
   }
 
-  /* "nyoibo/fields.pyx":167
+  /* "nyoibo/fields.pyx":171
  *         if self.max_value is not None and value > self.max_value:
  *             raise IntMaxValueError(f'value ({value}) must be <= max_value ({self.max_value})')
  *         return value             # <<<<<<<<<<<<<<
@@ -4944,7 +5016,7 @@ PyObject *__pyx_f_6nyoibo_6fields_8IntField_parse(struct __pyx_obj_6nyoibo_6fiel
   __pyx_r = __pyx_v_value;
   goto __pyx_L0;
 
-  /* "nyoibo/fields.pyx":148
+  /* "nyoibo/fields.pyx":152
  *         super().__init__(*args, **kwargs)
  * 
  *     cpdef public parse(self, value):             # <<<<<<<<<<<<<<
@@ -4990,7 +5062,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8IntField_2parse(struct __pyx_obj_6nyo
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("parse", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_6nyoibo_6fields_8IntField_parse(__pyx_v_self, __pyx_v_value, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 148, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_6nyoibo_6fields_8IntField_parse(__pyx_v_self, __pyx_v_value, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 152, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -5007,7 +5079,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8IntField_2parse(struct __pyx_obj_6nyo
   return __pyx_r;
 }
 
-/* "nyoibo/fields.pyx":169
+/* "nyoibo/fields.pyx":173
  *         return value
  * 
  *     cdef _parse(self, value):             # <<<<<<<<<<<<<<
@@ -5027,7 +5099,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_8IntField__parse(CYTHON_UNUSED struct _
   __Pyx_RefNannySetupContext("_parse", 0);
   __Pyx_INCREF(__pyx_v_value);
 
-  /* "nyoibo/fields.pyx":170
+  /* "nyoibo/fields.pyx":174
  * 
  *     cdef _parse(self, value):
  *         if isinstance(value, str):             # <<<<<<<<<<<<<<
@@ -5038,19 +5110,19 @@ static PyObject *__pyx_f_6nyoibo_6fields_8IntField__parse(CYTHON_UNUSED struct _
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "nyoibo/fields.pyx":171
+    /* "nyoibo/fields.pyx":175
  *     cdef _parse(self, value):
  *         if isinstance(value, str):
  *             value = float(value)             # <<<<<<<<<<<<<<
  *         return value
  * 
  */
-    __pyx_t_3 = __Pyx_PyNumber_Float(__pyx_v_value); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 171, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyNumber_Float(__pyx_v_value); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 175, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF_SET(__pyx_v_value, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "nyoibo/fields.pyx":170
+    /* "nyoibo/fields.pyx":174
  * 
  *     cdef _parse(self, value):
  *         if isinstance(value, str):             # <<<<<<<<<<<<<<
@@ -5059,7 +5131,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_8IntField__parse(CYTHON_UNUSED struct _
  */
   }
 
-  /* "nyoibo/fields.pyx":172
+  /* "nyoibo/fields.pyx":176
  *         if isinstance(value, str):
  *             value = float(value)
  *         return value             # <<<<<<<<<<<<<<
@@ -5071,7 +5143,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_8IntField__parse(CYTHON_UNUSED struct _
   __pyx_r = __pyx_v_value;
   goto __pyx_L0;
 
-  /* "nyoibo/fields.pyx":169
+  /* "nyoibo/fields.pyx":173
  *         return value
  * 
  *     cdef _parse(self, value):             # <<<<<<<<<<<<<<
@@ -5130,13 +5202,13 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8IntField_4__reduce_cython__(struct __
   /* "(tree fragment)":5
  *     cdef object _dict
  *     cdef bint use_setstate
- *     state = (self.alias, self.choices, self.default_value, self.max_value, self.min_value, self.mutable, self.name, self.private, self.required)             # <<<<<<<<<<<<<<
+ *     state = (self.alias, self.choices, self.default_value, self.max_value, self.min_value, self.model, self.mutable, self.name, self.private, self.required)             # <<<<<<<<<<<<<<
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:
  */
   __pyx_t_1 = __Pyx_PyBool_FromLong(__pyx_v_self->__pyx_base.required); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyTuple_New(9); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 5, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(10); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.alias);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.alias);
@@ -5153,24 +5225,27 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8IntField_4__reduce_cython__(struct __
   __Pyx_INCREF(__pyx_v_self->min_value);
   __Pyx_GIVEREF(__pyx_v_self->min_value);
   PyTuple_SET_ITEM(__pyx_t_2, 4, __pyx_v_self->min_value);
+  __Pyx_INCREF(__pyx_v_self->__pyx_base.model);
+  __Pyx_GIVEREF(__pyx_v_self->__pyx_base.model);
+  PyTuple_SET_ITEM(__pyx_t_2, 5, __pyx_v_self->__pyx_base.model);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.mutable);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.mutable);
-  PyTuple_SET_ITEM(__pyx_t_2, 5, __pyx_v_self->__pyx_base.mutable);
+  PyTuple_SET_ITEM(__pyx_t_2, 6, __pyx_v_self->__pyx_base.mutable);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.name);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.name);
-  PyTuple_SET_ITEM(__pyx_t_2, 6, __pyx_v_self->__pyx_base.name);
+  PyTuple_SET_ITEM(__pyx_t_2, 7, __pyx_v_self->__pyx_base.name);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.private);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.private);
-  PyTuple_SET_ITEM(__pyx_t_2, 7, __pyx_v_self->__pyx_base.private);
+  PyTuple_SET_ITEM(__pyx_t_2, 8, __pyx_v_self->__pyx_base.private);
   __Pyx_GIVEREF(__pyx_t_1);
-  PyTuple_SET_ITEM(__pyx_t_2, 8, __pyx_t_1);
+  PyTuple_SET_ITEM(__pyx_t_2, 9, __pyx_t_1);
   __pyx_t_1 = 0;
   __pyx_v_state = ((PyObject*)__pyx_t_2);
   __pyx_t_2 = 0;
 
   /* "(tree fragment)":6
  *     cdef bint use_setstate
- *     state = (self.alias, self.choices, self.default_value, self.max_value, self.min_value, self.mutable, self.name, self.private, self.required)
+ *     state = (self.alias, self.choices, self.default_value, self.max_value, self.min_value, self.model, self.mutable, self.name, self.private, self.required)
  *     _dict = getattr(self, '__dict__', None)             # <<<<<<<<<<<<<<
  *     if _dict is not None:
  *         state += (_dict,)
@@ -5181,7 +5256,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8IntField_4__reduce_cython__(struct __
   __pyx_t_2 = 0;
 
   /* "(tree fragment)":7
- *     state = (self.alias, self.choices, self.default_value, self.max_value, self.min_value, self.mutable, self.name, self.private, self.required)
+ *     state = (self.alias, self.choices, self.default_value, self.max_value, self.min_value, self.model, self.mutable, self.name, self.private, self.required)
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
@@ -5214,12 +5289,12 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8IntField_4__reduce_cython__(struct __
  *         state += (_dict,)
  *         use_setstate = True             # <<<<<<<<<<<<<<
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.max_value is not None or self.min_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.max_value is not None or self.min_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  */
     __pyx_v_use_setstate = 1;
 
     /* "(tree fragment)":7
- *     state = (self.alias, self.choices, self.default_value, self.max_value, self.min_value, self.mutable, self.name, self.private, self.required)
+ *     state = (self.alias, self.choices, self.default_value, self.max_value, self.min_value, self.model, self.mutable, self.name, self.private, self.required)
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
@@ -5231,9 +5306,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8IntField_4__reduce_cython__(struct __
   /* "(tree fragment)":11
  *         use_setstate = True
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.max_value is not None or self.min_value is not None or self.mutable is not None or self.name is not None or self.private is not None             # <<<<<<<<<<<<<<
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.max_value is not None or self.min_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None             # <<<<<<<<<<<<<<
  *     if use_setstate:
- *         return __pyx_unpickle_IntField, (type(self), 0xeb6285d, None), state
+ *         return __pyx_unpickle_IntField, (type(self), 0xc2d2ae1, None), state
  */
   /*else*/ {
     __pyx_t_3 = (__pyx_v_self->__pyx_base.alias != Py_None);
@@ -5271,23 +5346,30 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8IntField_4__reduce_cython__(struct __
       __pyx_t_4 = __pyx_t_5;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_5 = (__pyx_v_self->__pyx_base.mutable != Py_None);
+    __pyx_t_5 = (__pyx_v_self->__pyx_base.model != Py_None);
     __pyx_t_3 = (__pyx_t_5 != 0);
     if (!__pyx_t_3) {
     } else {
       __pyx_t_4 = __pyx_t_3;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_3 = (__pyx_v_self->__pyx_base.name != ((PyObject*)Py_None));
+    __pyx_t_3 = (__pyx_v_self->__pyx_base.mutable != Py_None);
     __pyx_t_5 = (__pyx_t_3 != 0);
     if (!__pyx_t_5) {
     } else {
       __pyx_t_4 = __pyx_t_5;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_5 = (__pyx_v_self->__pyx_base.private != Py_None);
+    __pyx_t_5 = (__pyx_v_self->__pyx_base.name != ((PyObject*)Py_None));
     __pyx_t_3 = (__pyx_t_5 != 0);
-    __pyx_t_4 = __pyx_t_3;
+    if (!__pyx_t_3) {
+    } else {
+      __pyx_t_4 = __pyx_t_3;
+      goto __pyx_L4_bool_binop_done;
+    }
+    __pyx_t_3 = (__pyx_v_self->__pyx_base.private != Py_None);
+    __pyx_t_5 = (__pyx_t_3 != 0);
+    __pyx_t_4 = __pyx_t_5;
     __pyx_L4_bool_binop_done:;
     __pyx_v_use_setstate = __pyx_t_4;
   }
@@ -5295,20 +5377,20 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8IntField_4__reduce_cython__(struct __
 
   /* "(tree fragment)":12
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.max_value is not None or self.min_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.max_value is not None or self.min_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  *     if use_setstate:             # <<<<<<<<<<<<<<
- *         return __pyx_unpickle_IntField, (type(self), 0xeb6285d, None), state
+ *         return __pyx_unpickle_IntField, (type(self), 0xc2d2ae1, None), state
  *     else:
  */
   __pyx_t_4 = (__pyx_v_use_setstate != 0);
   if (__pyx_t_4) {
 
     /* "(tree fragment)":13
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.max_value is not None or self.min_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.max_value is not None or self.min_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  *     if use_setstate:
- *         return __pyx_unpickle_IntField, (type(self), 0xeb6285d, None), state             # <<<<<<<<<<<<<<
+ *         return __pyx_unpickle_IntField, (type(self), 0xc2d2ae1, None), state             # <<<<<<<<<<<<<<
  *     else:
- *         return __pyx_unpickle_IntField, (type(self), 0xeb6285d, state)
+ *         return __pyx_unpickle_IntField, (type(self), 0xc2d2ae1, state)
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_pyx_unpickle_IntField); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 13, __pyx_L1_error)
@@ -5318,9 +5400,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8IntField_4__reduce_cython__(struct __
     __Pyx_INCREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     __Pyx_GIVEREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
-    __Pyx_INCREF(__pyx_int_246818909);
-    __Pyx_GIVEREF(__pyx_int_246818909);
-    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_246818909);
+    __Pyx_INCREF(__pyx_int_204286689);
+    __Pyx_GIVEREF(__pyx_int_204286689);
+    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_204286689);
     __Pyx_INCREF(Py_None);
     __Pyx_GIVEREF(Py_None);
     PyTuple_SET_ITEM(__pyx_t_2, 2, Py_None);
@@ -5341,17 +5423,17 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8IntField_4__reduce_cython__(struct __
 
     /* "(tree fragment)":12
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.max_value is not None or self.min_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.max_value is not None or self.min_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  *     if use_setstate:             # <<<<<<<<<<<<<<
- *         return __pyx_unpickle_IntField, (type(self), 0xeb6285d, None), state
+ *         return __pyx_unpickle_IntField, (type(self), 0xc2d2ae1, None), state
  *     else:
  */
   }
 
   /* "(tree fragment)":15
- *         return __pyx_unpickle_IntField, (type(self), 0xeb6285d, None), state
+ *         return __pyx_unpickle_IntField, (type(self), 0xc2d2ae1, None), state
  *     else:
- *         return __pyx_unpickle_IntField, (type(self), 0xeb6285d, state)             # <<<<<<<<<<<<<<
+ *         return __pyx_unpickle_IntField, (type(self), 0xc2d2ae1, state)             # <<<<<<<<<<<<<<
  * def __setstate_cython__(self, __pyx_state):
  *     __pyx_unpickle_IntField__set_state(self, __pyx_state)
  */
@@ -5364,9 +5446,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8IntField_4__reduce_cython__(struct __
     __Pyx_INCREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     __Pyx_GIVEREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
-    __Pyx_INCREF(__pyx_int_246818909);
-    __Pyx_GIVEREF(__pyx_int_246818909);
-    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_246818909);
+    __Pyx_INCREF(__pyx_int_204286689);
+    __Pyx_GIVEREF(__pyx_int_204286689);
+    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_204286689);
     __Pyx_INCREF(__pyx_v_state);
     __Pyx_GIVEREF(__pyx_v_state);
     PyTuple_SET_ITEM(__pyx_t_2, 2, __pyx_v_state);
@@ -5406,7 +5488,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8IntField_4__reduce_cython__(struct __
 
 /* "(tree fragment)":16
  *     else:
- *         return __pyx_unpickle_IntField, (type(self), 0xeb6285d, state)
+ *         return __pyx_unpickle_IntField, (type(self), 0xc2d2ae1, state)
  * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_IntField__set_state(self, __pyx_state)
  */
@@ -5434,7 +5516,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8IntField_6__setstate_cython__(struct 
   __Pyx_RefNannySetupContext("__setstate_cython__", 0);
 
   /* "(tree fragment)":17
- *         return __pyx_unpickle_IntField, (type(self), 0xeb6285d, state)
+ *         return __pyx_unpickle_IntField, (type(self), 0xc2d2ae1, state)
  * def __setstate_cython__(self, __pyx_state):
  *     __pyx_unpickle_IntField__set_state(self, __pyx_state)             # <<<<<<<<<<<<<<
  */
@@ -5445,7 +5527,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8IntField_6__setstate_cython__(struct 
 
   /* "(tree fragment)":16
  *     else:
- *         return __pyx_unpickle_IntField, (type(self), 0xeb6285d, state)
+ *         return __pyx_unpickle_IntField, (type(self), 0xc2d2ae1, state)
  * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_IntField__set_state(self, __pyx_state)
  */
@@ -5463,7 +5545,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8IntField_6__setstate_cython__(struct 
   return __pyx_r;
 }
 
-/* "nyoibo/fields.pyx":181
+/* "nyoibo/fields.pyx":185
  *     _internal_type = bool
  * 
  *     cdef _parse(self, value):             # <<<<<<<<<<<<<<
@@ -5482,7 +5564,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_9BoolField__parse(CYTHON_UNUSED struct 
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_parse", 0);
 
-  /* "nyoibo/fields.pyx":182
+  /* "nyoibo/fields.pyx":186
  * 
  *     cdef _parse(self, value):
  *         if value in ('false', 'False'):             # <<<<<<<<<<<<<<
@@ -5491,20 +5573,20 @@ static PyObject *__pyx_f_6nyoibo_6fields_9BoolField__parse(CYTHON_UNUSED struct 
  */
   __Pyx_INCREF(__pyx_v_value);
   __pyx_t_1 = __pyx_v_value;
-  __pyx_t_3 = (__Pyx_PyUnicode_Equals(__pyx_t_1, __pyx_n_u_false, Py_EQ)); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 182, __pyx_L1_error)
+  __pyx_t_3 = (__Pyx_PyUnicode_Equals(__pyx_t_1, __pyx_n_u_false, Py_EQ)); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 186, __pyx_L1_error)
   if (!__pyx_t_3) {
   } else {
     __pyx_t_2 = __pyx_t_3;
     goto __pyx_L4_bool_binop_done;
   }
-  __pyx_t_3 = (__Pyx_PyUnicode_Equals(__pyx_t_1, __pyx_n_u_False, Py_EQ)); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 182, __pyx_L1_error)
+  __pyx_t_3 = (__Pyx_PyUnicode_Equals(__pyx_t_1, __pyx_n_u_False, Py_EQ)); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 186, __pyx_L1_error)
   __pyx_t_2 = __pyx_t_3;
   __pyx_L4_bool_binop_done:;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_3 = (__pyx_t_2 != 0);
   if (__pyx_t_3) {
 
-    /* "nyoibo/fields.pyx":183
+    /* "nyoibo/fields.pyx":187
  *     cdef _parse(self, value):
  *         if value in ('false', 'False'):
  *             return False             # <<<<<<<<<<<<<<
@@ -5516,7 +5598,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_9BoolField__parse(CYTHON_UNUSED struct 
     __pyx_r = Py_False;
     goto __pyx_L0;
 
-    /* "nyoibo/fields.pyx":182
+    /* "nyoibo/fields.pyx":186
  * 
  *     cdef _parse(self, value):
  *         if value in ('false', 'False'):             # <<<<<<<<<<<<<<
@@ -5525,7 +5607,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_9BoolField__parse(CYTHON_UNUSED struct 
  */
   }
 
-  /* "nyoibo/fields.pyx":184
+  /* "nyoibo/fields.pyx":188
  *         if value in ('false', 'False'):
  *             return False
  *         return value             # <<<<<<<<<<<<<<
@@ -5537,7 +5619,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_9BoolField__parse(CYTHON_UNUSED struct 
   __pyx_r = __pyx_v_value;
   goto __pyx_L0;
 
-  /* "nyoibo/fields.pyx":181
+  /* "nyoibo/fields.pyx":185
  *     _internal_type = bool
  * 
  *     cdef _parse(self, value):             # <<<<<<<<<<<<<<
@@ -5595,13 +5677,13 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9BoolField___reduce_cython__(struct __
   /* "(tree fragment)":5
  *     cdef object _dict
  *     cdef bint use_setstate
- *     state = (self.alias, self.choices, self.default_value, self.mutable, self.name, self.private, self.required)             # <<<<<<<<<<<<<<
+ *     state = (self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.private, self.required)             # <<<<<<<<<<<<<<
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:
  */
   __pyx_t_1 = __Pyx_PyBool_FromLong(__pyx_v_self->__pyx_base.required); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyTuple_New(7); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 5, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(8); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.alias);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.alias);
@@ -5612,24 +5694,27 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9BoolField___reduce_cython__(struct __
   __Pyx_INCREF(__pyx_v_self->__pyx_base.default_value);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.default_value);
   PyTuple_SET_ITEM(__pyx_t_2, 2, __pyx_v_self->__pyx_base.default_value);
+  __Pyx_INCREF(__pyx_v_self->__pyx_base.model);
+  __Pyx_GIVEREF(__pyx_v_self->__pyx_base.model);
+  PyTuple_SET_ITEM(__pyx_t_2, 3, __pyx_v_self->__pyx_base.model);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.mutable);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.mutable);
-  PyTuple_SET_ITEM(__pyx_t_2, 3, __pyx_v_self->__pyx_base.mutable);
+  PyTuple_SET_ITEM(__pyx_t_2, 4, __pyx_v_self->__pyx_base.mutable);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.name);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.name);
-  PyTuple_SET_ITEM(__pyx_t_2, 4, __pyx_v_self->__pyx_base.name);
+  PyTuple_SET_ITEM(__pyx_t_2, 5, __pyx_v_self->__pyx_base.name);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.private);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.private);
-  PyTuple_SET_ITEM(__pyx_t_2, 5, __pyx_v_self->__pyx_base.private);
+  PyTuple_SET_ITEM(__pyx_t_2, 6, __pyx_v_self->__pyx_base.private);
   __Pyx_GIVEREF(__pyx_t_1);
-  PyTuple_SET_ITEM(__pyx_t_2, 6, __pyx_t_1);
+  PyTuple_SET_ITEM(__pyx_t_2, 7, __pyx_t_1);
   __pyx_t_1 = 0;
   __pyx_v_state = ((PyObject*)__pyx_t_2);
   __pyx_t_2 = 0;
 
   /* "(tree fragment)":6
  *     cdef bint use_setstate
- *     state = (self.alias, self.choices, self.default_value, self.mutable, self.name, self.private, self.required)
+ *     state = (self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.private, self.required)
  *     _dict = getattr(self, '__dict__', None)             # <<<<<<<<<<<<<<
  *     if _dict is not None:
  *         state += (_dict,)
@@ -5640,7 +5725,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9BoolField___reduce_cython__(struct __
   __pyx_t_2 = 0;
 
   /* "(tree fragment)":7
- *     state = (self.alias, self.choices, self.default_value, self.mutable, self.name, self.private, self.required)
+ *     state = (self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.private, self.required)
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
@@ -5673,12 +5758,12 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9BoolField___reduce_cython__(struct __
  *         state += (_dict,)
  *         use_setstate = True             # <<<<<<<<<<<<<<
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  */
     __pyx_v_use_setstate = 1;
 
     /* "(tree fragment)":7
- *     state = (self.alias, self.choices, self.default_value, self.mutable, self.name, self.private, self.required)
+ *     state = (self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.private, self.required)
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
@@ -5690,9 +5775,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9BoolField___reduce_cython__(struct __
   /* "(tree fragment)":11
  *         use_setstate = True
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None             # <<<<<<<<<<<<<<
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None             # <<<<<<<<<<<<<<
  *     if use_setstate:
- *         return __pyx_unpickle_BoolField, (type(self), 0xefd9ffe, None), state
+ *         return __pyx_unpickle_BoolField, (type(self), 0xb3dbdb0, None), state
  */
   /*else*/ {
     __pyx_t_3 = (__pyx_v_self->__pyx_base.alias != Py_None);
@@ -5716,23 +5801,30 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9BoolField___reduce_cython__(struct __
       __pyx_t_4 = __pyx_t_5;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_5 = (__pyx_v_self->__pyx_base.mutable != Py_None);
+    __pyx_t_5 = (__pyx_v_self->__pyx_base.model != Py_None);
     __pyx_t_3 = (__pyx_t_5 != 0);
     if (!__pyx_t_3) {
     } else {
       __pyx_t_4 = __pyx_t_3;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_3 = (__pyx_v_self->__pyx_base.name != ((PyObject*)Py_None));
+    __pyx_t_3 = (__pyx_v_self->__pyx_base.mutable != Py_None);
     __pyx_t_5 = (__pyx_t_3 != 0);
     if (!__pyx_t_5) {
     } else {
       __pyx_t_4 = __pyx_t_5;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_5 = (__pyx_v_self->__pyx_base.private != Py_None);
+    __pyx_t_5 = (__pyx_v_self->__pyx_base.name != ((PyObject*)Py_None));
     __pyx_t_3 = (__pyx_t_5 != 0);
-    __pyx_t_4 = __pyx_t_3;
+    if (!__pyx_t_3) {
+    } else {
+      __pyx_t_4 = __pyx_t_3;
+      goto __pyx_L4_bool_binop_done;
+    }
+    __pyx_t_3 = (__pyx_v_self->__pyx_base.private != Py_None);
+    __pyx_t_5 = (__pyx_t_3 != 0);
+    __pyx_t_4 = __pyx_t_5;
     __pyx_L4_bool_binop_done:;
     __pyx_v_use_setstate = __pyx_t_4;
   }
@@ -5740,20 +5832,20 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9BoolField___reduce_cython__(struct __
 
   /* "(tree fragment)":12
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  *     if use_setstate:             # <<<<<<<<<<<<<<
- *         return __pyx_unpickle_BoolField, (type(self), 0xefd9ffe, None), state
+ *         return __pyx_unpickle_BoolField, (type(self), 0xb3dbdb0, None), state
  *     else:
  */
   __pyx_t_4 = (__pyx_v_use_setstate != 0);
   if (__pyx_t_4) {
 
     /* "(tree fragment)":13
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  *     if use_setstate:
- *         return __pyx_unpickle_BoolField, (type(self), 0xefd9ffe, None), state             # <<<<<<<<<<<<<<
+ *         return __pyx_unpickle_BoolField, (type(self), 0xb3dbdb0, None), state             # <<<<<<<<<<<<<<
  *     else:
- *         return __pyx_unpickle_BoolField, (type(self), 0xefd9ffe, state)
+ *         return __pyx_unpickle_BoolField, (type(self), 0xb3dbdb0, state)
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_pyx_unpickle_BoolField); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 13, __pyx_L1_error)
@@ -5763,9 +5855,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9BoolField___reduce_cython__(struct __
     __Pyx_INCREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     __Pyx_GIVEREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
-    __Pyx_INCREF(__pyx_int_251502590);
-    __Pyx_GIVEREF(__pyx_int_251502590);
-    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_251502590);
+    __Pyx_INCREF(__pyx_int_188595632);
+    __Pyx_GIVEREF(__pyx_int_188595632);
+    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_188595632);
     __Pyx_INCREF(Py_None);
     __Pyx_GIVEREF(Py_None);
     PyTuple_SET_ITEM(__pyx_t_2, 2, Py_None);
@@ -5786,17 +5878,17 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9BoolField___reduce_cython__(struct __
 
     /* "(tree fragment)":12
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  *     if use_setstate:             # <<<<<<<<<<<<<<
- *         return __pyx_unpickle_BoolField, (type(self), 0xefd9ffe, None), state
+ *         return __pyx_unpickle_BoolField, (type(self), 0xb3dbdb0, None), state
  *     else:
  */
   }
 
   /* "(tree fragment)":15
- *         return __pyx_unpickle_BoolField, (type(self), 0xefd9ffe, None), state
+ *         return __pyx_unpickle_BoolField, (type(self), 0xb3dbdb0, None), state
  *     else:
- *         return __pyx_unpickle_BoolField, (type(self), 0xefd9ffe, state)             # <<<<<<<<<<<<<<
+ *         return __pyx_unpickle_BoolField, (type(self), 0xb3dbdb0, state)             # <<<<<<<<<<<<<<
  * def __setstate_cython__(self, __pyx_state):
  *     __pyx_unpickle_BoolField__set_state(self, __pyx_state)
  */
@@ -5809,9 +5901,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9BoolField___reduce_cython__(struct __
     __Pyx_INCREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     __Pyx_GIVEREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
-    __Pyx_INCREF(__pyx_int_251502590);
-    __Pyx_GIVEREF(__pyx_int_251502590);
-    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_251502590);
+    __Pyx_INCREF(__pyx_int_188595632);
+    __Pyx_GIVEREF(__pyx_int_188595632);
+    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_188595632);
     __Pyx_INCREF(__pyx_v_state);
     __Pyx_GIVEREF(__pyx_v_state);
     PyTuple_SET_ITEM(__pyx_t_2, 2, __pyx_v_state);
@@ -5851,7 +5943,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9BoolField___reduce_cython__(struct __
 
 /* "(tree fragment)":16
  *     else:
- *         return __pyx_unpickle_BoolField, (type(self), 0xefd9ffe, state)
+ *         return __pyx_unpickle_BoolField, (type(self), 0xb3dbdb0, state)
  * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_BoolField__set_state(self, __pyx_state)
  */
@@ -5879,7 +5971,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9BoolField_2__setstate_cython__(struct
   __Pyx_RefNannySetupContext("__setstate_cython__", 0);
 
   /* "(tree fragment)":17
- *         return __pyx_unpickle_BoolField, (type(self), 0xefd9ffe, state)
+ *         return __pyx_unpickle_BoolField, (type(self), 0xb3dbdb0, state)
  * def __setstate_cython__(self, __pyx_state):
  *     __pyx_unpickle_BoolField__set_state(self, __pyx_state)             # <<<<<<<<<<<<<<
  */
@@ -5890,7 +5982,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9BoolField_2__setstate_cython__(struct
 
   /* "(tree fragment)":16
  *     else:
- *         return __pyx_unpickle_BoolField, (type(self), 0xefd9ffe, state)
+ *         return __pyx_unpickle_BoolField, (type(self), 0xb3dbdb0, state)
  * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_BoolField__set_state(self, __pyx_state)
  */
@@ -5908,7 +6000,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9BoolField_2__setstate_cython__(struct
   return __pyx_r;
 }
 
-/* "nyoibo/fields.pyx":200
+/* "nyoibo/fields.pyx":204
  *     _internal_type = datetime.date
  * 
  *     def __init__(self, formats: Iterable[str, ...] = (), **kwargs):             # <<<<<<<<<<<<<<
@@ -5951,7 +6043,7 @@ static int __pyx_pw_6nyoibo_6fields_9DateField_1__init__(PyObject *__pyx_v_self,
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, __pyx_v_kwargs, values, pos_args, "__init__") < 0)) __PYX_ERR(0, 200, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, __pyx_v_kwargs, values, pos_args, "__init__") < 0)) __PYX_ERR(0, 204, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -5965,7 +6057,7 @@ static int __pyx_pw_6nyoibo_6fields_9DateField_1__init__(PyObject *__pyx_v_self,
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__init__", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 200, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__init__", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 204, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_DECREF(__pyx_v_kwargs); __pyx_v_kwargs = 0;
   __Pyx_AddTraceback("nyoibo.fields.DateField.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
@@ -5991,14 +6083,14 @@ static int __pyx_pf_6nyoibo_6fields_9DateField___init__(struct __pyx_obj_6nyoibo
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "nyoibo/fields.pyx":201
+  /* "nyoibo/fields.pyx":205
  * 
  *     def __init__(self, formats: Iterable[str, ...] = (), **kwargs):
  *         super().__init__(**kwargs)             # <<<<<<<<<<<<<<
  *         self._formats = formats
  * 
  */
-  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 201, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 205, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(((PyObject *)__pyx_ptype_6nyoibo_6fields_DateField));
   __Pyx_GIVEREF(((PyObject *)__pyx_ptype_6nyoibo_6fields_DateField));
@@ -6006,21 +6098,21 @@ static int __pyx_pf_6nyoibo_6fields_9DateField___init__(struct __pyx_obj_6nyoibo
   __Pyx_INCREF(((PyObject *)__pyx_v_self));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_self));
   PyTuple_SET_ITEM(__pyx_t_1, 1, ((PyObject *)__pyx_v_self));
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_super, __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 201, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_super, __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 205, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_init); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 201, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_init); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 205, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = PyDict_Copy(__pyx_v_kwargs); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 201, __pyx_L1_error)
+  __pyx_t_2 = PyDict_Copy(__pyx_v_kwargs); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 205, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 201, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 205, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "nyoibo/fields.pyx":202
+  /* "nyoibo/fields.pyx":206
  *     def __init__(self, formats: Iterable[str, ...] = (), **kwargs):
  *         super().__init__(**kwargs)
  *         self._formats = formats             # <<<<<<<<<<<<<<
@@ -6033,7 +6125,7 @@ static int __pyx_pf_6nyoibo_6fields_9DateField___init__(struct __pyx_obj_6nyoibo
   __Pyx_DECREF(__pyx_v_self->_formats);
   __pyx_v_self->_formats = __pyx_v_formats;
 
-  /* "nyoibo/fields.pyx":200
+  /* "nyoibo/fields.pyx":204
  *     _internal_type = datetime.date
  * 
  *     def __init__(self, formats: Iterable[str, ...] = (), **kwargs):             # <<<<<<<<<<<<<<
@@ -6055,7 +6147,7 @@ static int __pyx_pf_6nyoibo_6fields_9DateField___init__(struct __pyx_obj_6nyoibo
   return __pyx_r;
 }
 
-/* "nyoibo/fields.pyx":204
+/* "nyoibo/fields.pyx":208
  *         self._formats = formats
  * 
  *     cdef _parse(self, value):             # <<<<<<<<<<<<<<
@@ -6087,7 +6179,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_9DateField__parse(struct __pyx_obj_6nyo
   __Pyx_RefNannySetupContext("_parse", 0);
   __Pyx_INCREF(__pyx_v_value);
 
-  /* "nyoibo/fields.pyx":205
+  /* "nyoibo/fields.pyx":209
  * 
  *     cdef _parse(self, value):
  *         if isinstance(value, str):             # <<<<<<<<<<<<<<
@@ -6098,7 +6190,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_9DateField__parse(struct __pyx_obj_6nyo
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "nyoibo/fields.pyx":206
+    /* "nyoibo/fields.pyx":210
  *     cdef _parse(self, value):
  *         if isinstance(value, str):
  *             for str_format in self._formats:             # <<<<<<<<<<<<<<
@@ -6109,26 +6201,26 @@ static PyObject *__pyx_f_6nyoibo_6fields_9DateField__parse(struct __pyx_obj_6nyo
       __pyx_t_3 = __pyx_v_self->_formats; __Pyx_INCREF(__pyx_t_3); __pyx_t_4 = 0;
       __pyx_t_5 = NULL;
     } else {
-      __pyx_t_4 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_v_self->_formats); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 206, __pyx_L1_error)
+      __pyx_t_4 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_v_self->_formats); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 210, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_5 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 206, __pyx_L1_error)
+      __pyx_t_5 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 210, __pyx_L1_error)
     }
     for (;;) {
       if (likely(!__pyx_t_5)) {
         if (likely(PyList_CheckExact(__pyx_t_3))) {
           if (__pyx_t_4 >= PyList_GET_SIZE(__pyx_t_3)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_6 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_6); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 206, __pyx_L1_error)
+          __pyx_t_6 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_6); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 210, __pyx_L1_error)
           #else
-          __pyx_t_6 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 206, __pyx_L1_error)
+          __pyx_t_6 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 210, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
           #endif
         } else {
           if (__pyx_t_4 >= PyTuple_GET_SIZE(__pyx_t_3)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_6); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 206, __pyx_L1_error)
+          __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_6); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 210, __pyx_L1_error)
           #else
-          __pyx_t_6 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 206, __pyx_L1_error)
+          __pyx_t_6 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 210, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
           #endif
         }
@@ -6138,7 +6230,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_9DateField__parse(struct __pyx_obj_6nyo
           PyObject* exc_type = PyErr_Occurred();
           if (exc_type) {
             if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-            else __PYX_ERR(0, 206, __pyx_L1_error)
+            else __PYX_ERR(0, 210, __pyx_L1_error)
           }
           break;
         }
@@ -6147,7 +6239,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_9DateField__parse(struct __pyx_obj_6nyo
       __Pyx_XDECREF_SET(__pyx_v_str_format, __pyx_t_6);
       __pyx_t_6 = 0;
 
-      /* "nyoibo/fields.pyx":207
+      /* "nyoibo/fields.pyx":211
  *         if isinstance(value, str):
  *             for str_format in self._formats:
  *                 try:             # <<<<<<<<<<<<<<
@@ -6163,7 +6255,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_9DateField__parse(struct __pyx_obj_6nyo
         __Pyx_XGOTREF(__pyx_t_9);
         /*try:*/ {
 
-          /* "nyoibo/fields.pyx":208
+          /* "nyoibo/fields.pyx":212
  *             for str_format in self._formats:
  *                 try:
  *                     return datetime.datetime.strptime(value, str_format).date()             # <<<<<<<<<<<<<<
@@ -6171,12 +6263,12 @@ static PyObject *__pyx_f_6nyoibo_6fields_9DateField__parse(struct __pyx_obj_6nyo
  *                     continue
  */
           __Pyx_XDECREF(__pyx_r);
-          __Pyx_GetModuleGlobalName(__pyx_t_11, __pyx_n_s_datetime); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 208, __pyx_L6_error)
+          __Pyx_GetModuleGlobalName(__pyx_t_11, __pyx_n_s_datetime); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 212, __pyx_L6_error)
           __Pyx_GOTREF(__pyx_t_11);
-          __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_t_11, __pyx_n_s_datetime); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 208, __pyx_L6_error)
+          __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_t_11, __pyx_n_s_datetime); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 212, __pyx_L6_error)
           __Pyx_GOTREF(__pyx_t_12);
           __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-          __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_12, __pyx_n_s_strptime); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 208, __pyx_L6_error)
+          __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_12, __pyx_n_s_strptime); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 212, __pyx_L6_error)
           __Pyx_GOTREF(__pyx_t_11);
           __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
           __pyx_t_12 = NULL;
@@ -6194,7 +6286,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_9DateField__parse(struct __pyx_obj_6nyo
           #if CYTHON_FAST_PYCALL
           if (PyFunction_Check(__pyx_t_11)) {
             PyObject *__pyx_temp[3] = {__pyx_t_12, __pyx_v_value, __pyx_v_str_format};
-            __pyx_t_10 = __Pyx_PyFunction_FastCall(__pyx_t_11, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 208, __pyx_L6_error)
+            __pyx_t_10 = __Pyx_PyFunction_FastCall(__pyx_t_11, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 212, __pyx_L6_error)
             __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
             __Pyx_GOTREF(__pyx_t_10);
           } else
@@ -6202,13 +6294,13 @@ static PyObject *__pyx_f_6nyoibo_6fields_9DateField__parse(struct __pyx_obj_6nyo
           #if CYTHON_FAST_PYCCALL
           if (__Pyx_PyFastCFunction_Check(__pyx_t_11)) {
             PyObject *__pyx_temp[3] = {__pyx_t_12, __pyx_v_value, __pyx_v_str_format};
-            __pyx_t_10 = __Pyx_PyCFunction_FastCall(__pyx_t_11, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 208, __pyx_L6_error)
+            __pyx_t_10 = __Pyx_PyCFunction_FastCall(__pyx_t_11, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 212, __pyx_L6_error)
             __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
             __Pyx_GOTREF(__pyx_t_10);
           } else
           #endif
           {
-            __pyx_t_14 = PyTuple_New(2+__pyx_t_13); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 208, __pyx_L6_error)
+            __pyx_t_14 = PyTuple_New(2+__pyx_t_13); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 212, __pyx_L6_error)
             __Pyx_GOTREF(__pyx_t_14);
             if (__pyx_t_12) {
               __Pyx_GIVEREF(__pyx_t_12); PyTuple_SET_ITEM(__pyx_t_14, 0, __pyx_t_12); __pyx_t_12 = NULL;
@@ -6219,12 +6311,12 @@ static PyObject *__pyx_f_6nyoibo_6fields_9DateField__parse(struct __pyx_obj_6nyo
             __Pyx_INCREF(__pyx_v_str_format);
             __Pyx_GIVEREF(__pyx_v_str_format);
             PyTuple_SET_ITEM(__pyx_t_14, 1+__pyx_t_13, __pyx_v_str_format);
-            __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_11, __pyx_t_14, NULL); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 208, __pyx_L6_error)
+            __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_11, __pyx_t_14, NULL); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 212, __pyx_L6_error)
             __Pyx_GOTREF(__pyx_t_10);
             __Pyx_DECREF(__pyx_t_14); __pyx_t_14 = 0;
           }
           __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-          __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_date); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 208, __pyx_L6_error)
+          __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_date); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 212, __pyx_L6_error)
           __Pyx_GOTREF(__pyx_t_11);
           __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
           __pyx_t_10 = NULL;
@@ -6239,7 +6331,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_9DateField__parse(struct __pyx_obj_6nyo
           }
           __pyx_t_6 = (__pyx_t_10) ? __Pyx_PyObject_CallOneArg(__pyx_t_11, __pyx_t_10) : __Pyx_PyObject_CallNoArg(__pyx_t_11);
           __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
-          if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 208, __pyx_L6_error)
+          if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 212, __pyx_L6_error)
           __Pyx_GOTREF(__pyx_t_6);
           __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
           __pyx_r = __pyx_t_6;
@@ -6247,7 +6339,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_9DateField__parse(struct __pyx_obj_6nyo
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
           goto __pyx_L10_try_return;
 
-          /* "nyoibo/fields.pyx":207
+          /* "nyoibo/fields.pyx":211
  *         if isinstance(value, str):
  *             for str_format in self._formats:
  *                 try:             # <<<<<<<<<<<<<<
@@ -6262,7 +6354,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_9DateField__parse(struct __pyx_obj_6nyo
         __Pyx_XDECREF(__pyx_t_14); __pyx_t_14 = 0;
         __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-        /* "nyoibo/fields.pyx":209
+        /* "nyoibo/fields.pyx":213
  *                 try:
  *                     return datetime.datetime.strptime(value, str_format).date()
  *                 except ValueError:             # <<<<<<<<<<<<<<
@@ -6272,12 +6364,12 @@ static PyObject *__pyx_f_6nyoibo_6fields_9DateField__parse(struct __pyx_obj_6nyo
         __pyx_t_13 = __Pyx_PyErr_ExceptionMatches(__pyx_builtin_ValueError);
         if (__pyx_t_13) {
           __Pyx_AddTraceback("nyoibo.fields.DateField._parse", __pyx_clineno, __pyx_lineno, __pyx_filename);
-          if (__Pyx_GetException(&__pyx_t_6, &__pyx_t_11, &__pyx_t_10) < 0) __PYX_ERR(0, 209, __pyx_L8_except_error)
+          if (__Pyx_GetException(&__pyx_t_6, &__pyx_t_11, &__pyx_t_10) < 0) __PYX_ERR(0, 213, __pyx_L8_except_error)
           __Pyx_GOTREF(__pyx_t_6);
           __Pyx_GOTREF(__pyx_t_11);
           __Pyx_GOTREF(__pyx_t_10);
 
-          /* "nyoibo/fields.pyx":210
+          /* "nyoibo/fields.pyx":214
  *                     return datetime.datetime.strptime(value, str_format).date()
  *                 except ValueError:
  *                     continue             # <<<<<<<<<<<<<<
@@ -6294,7 +6386,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_9DateField__parse(struct __pyx_obj_6nyo
         goto __pyx_L8_except_error;
         __pyx_L8_except_error:;
 
-        /* "nyoibo/fields.pyx":207
+        /* "nyoibo/fields.pyx":211
  *         if isinstance(value, str):
  *             for str_format in self._formats:
  *                 try:             # <<<<<<<<<<<<<<
@@ -6320,7 +6412,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_9DateField__parse(struct __pyx_obj_6nyo
         goto __pyx_L0;
       }
 
-      /* "nyoibo/fields.pyx":206
+      /* "nyoibo/fields.pyx":210
  *     cdef _parse(self, value):
  *         if isinstance(value, str):
  *             for str_format in self._formats:             # <<<<<<<<<<<<<<
@@ -6331,7 +6423,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_9DateField__parse(struct __pyx_obj_6nyo
     }
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "nyoibo/fields.pyx":211
+    /* "nyoibo/fields.pyx":215
  *                 except ValueError:
  *                     continue
  *             return datetime.date.fromisoformat(value)             # <<<<<<<<<<<<<<
@@ -6339,12 +6431,12 @@ static PyObject *__pyx_f_6nyoibo_6fields_9DateField__parse(struct __pyx_obj_6nyo
  *             value = value.date()
  */
     __Pyx_XDECREF(__pyx_r);
-    __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_datetime); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 211, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_datetime); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 215, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
-    __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_date); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 211, __pyx_L1_error)
+    __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_date); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 215, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_11);
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_11, __pyx_n_s_fromisoformat); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 211, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_11, __pyx_n_s_fromisoformat); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 215, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
     __pyx_t_11 = NULL;
@@ -6359,14 +6451,14 @@ static PyObject *__pyx_f_6nyoibo_6fields_9DateField__parse(struct __pyx_obj_6nyo
     }
     __pyx_t_3 = (__pyx_t_11) ? __Pyx_PyObject_Call2Args(__pyx_t_10, __pyx_t_11, __pyx_v_value) : __Pyx_PyObject_CallOneArg(__pyx_t_10, __pyx_v_value);
     __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
-    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 211, __pyx_L1_error)
+    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 215, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     __pyx_r = __pyx_t_3;
     __pyx_t_3 = 0;
     goto __pyx_L0;
 
-    /* "nyoibo/fields.pyx":205
+    /* "nyoibo/fields.pyx":209
  * 
  *     cdef _parse(self, value):
  *         if isinstance(value, str):             # <<<<<<<<<<<<<<
@@ -6375,31 +6467,31 @@ static PyObject *__pyx_f_6nyoibo_6fields_9DateField__parse(struct __pyx_obj_6nyo
  */
   }
 
-  /* "nyoibo/fields.pyx":212
+  /* "nyoibo/fields.pyx":216
  *                     continue
  *             return datetime.date.fromisoformat(value)
  *         elif isinstance(value, datetime.datetime):             # <<<<<<<<<<<<<<
  *             value = value.date()
  *         return value
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_datetime); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 212, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_datetime); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 216, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_datetime); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 212, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_datetime); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 216, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_2 = PyObject_IsInstance(__pyx_v_value, __pyx_t_10); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 212, __pyx_L1_error)
+  __pyx_t_2 = PyObject_IsInstance(__pyx_v_value, __pyx_t_10); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 216, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
   __pyx_t_1 = (__pyx_t_2 != 0);
   if (__pyx_t_1) {
 
-    /* "nyoibo/fields.pyx":213
+    /* "nyoibo/fields.pyx":217
  *             return datetime.date.fromisoformat(value)
  *         elif isinstance(value, datetime.datetime):
  *             value = value.date()             # <<<<<<<<<<<<<<
  *         return value
  * 
  */
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_value, __pyx_n_s_date); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 213, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_value, __pyx_n_s_date); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 217, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_11 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -6413,13 +6505,13 @@ static PyObject *__pyx_f_6nyoibo_6fields_9DateField__parse(struct __pyx_obj_6nyo
     }
     __pyx_t_10 = (__pyx_t_11) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_11) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
     __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
-    if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 213, __pyx_L1_error)
+    if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 217, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF_SET(__pyx_v_value, __pyx_t_10);
     __pyx_t_10 = 0;
 
-    /* "nyoibo/fields.pyx":212
+    /* "nyoibo/fields.pyx":216
  *                     continue
  *             return datetime.date.fromisoformat(value)
  *         elif isinstance(value, datetime.datetime):             # <<<<<<<<<<<<<<
@@ -6428,7 +6520,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_9DateField__parse(struct __pyx_obj_6nyo
  */
   }
 
-  /* "nyoibo/fields.pyx":214
+  /* "nyoibo/fields.pyx":218
  *         elif isinstance(value, datetime.datetime):
  *             value = value.date()
  *         return value             # <<<<<<<<<<<<<<
@@ -6440,7 +6532,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_9DateField__parse(struct __pyx_obj_6nyo
   __pyx_r = __pyx_v_value;
   goto __pyx_L0;
 
-  /* "nyoibo/fields.pyx":204
+  /* "nyoibo/fields.pyx":208
  *         self._formats = formats
  * 
  *     cdef _parse(self, value):             # <<<<<<<<<<<<<<
@@ -6466,7 +6558,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_9DateField__parse(struct __pyx_obj_6nyo
   return __pyx_r;
 }
 
-/* "nyoibo/fields.pxd":33
+/* "nyoibo/fields.pxd":34
  * 
  * cdef class DateField(Field):
  *     cdef readonly _formats             # <<<<<<<<<<<<<<
@@ -6542,13 +6634,13 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9DateField_2__reduce_cython__(struct _
   /* "(tree fragment)":5
  *     cdef object _dict
  *     cdef bint use_setstate
- *     state = (self._formats, self.alias, self.choices, self.default_value, self.mutable, self.name, self.private, self.required)             # <<<<<<<<<<<<<<
+ *     state = (self._formats, self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.private, self.required)             # <<<<<<<<<<<<<<
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:
  */
   __pyx_t_1 = __Pyx_PyBool_FromLong(__pyx_v_self->__pyx_base.required); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyTuple_New(8); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 5, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(9); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_v_self->_formats);
   __Pyx_GIVEREF(__pyx_v_self->_formats);
@@ -6562,24 +6654,27 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9DateField_2__reduce_cython__(struct _
   __Pyx_INCREF(__pyx_v_self->__pyx_base.default_value);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.default_value);
   PyTuple_SET_ITEM(__pyx_t_2, 3, __pyx_v_self->__pyx_base.default_value);
+  __Pyx_INCREF(__pyx_v_self->__pyx_base.model);
+  __Pyx_GIVEREF(__pyx_v_self->__pyx_base.model);
+  PyTuple_SET_ITEM(__pyx_t_2, 4, __pyx_v_self->__pyx_base.model);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.mutable);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.mutable);
-  PyTuple_SET_ITEM(__pyx_t_2, 4, __pyx_v_self->__pyx_base.mutable);
+  PyTuple_SET_ITEM(__pyx_t_2, 5, __pyx_v_self->__pyx_base.mutable);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.name);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.name);
-  PyTuple_SET_ITEM(__pyx_t_2, 5, __pyx_v_self->__pyx_base.name);
+  PyTuple_SET_ITEM(__pyx_t_2, 6, __pyx_v_self->__pyx_base.name);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.private);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.private);
-  PyTuple_SET_ITEM(__pyx_t_2, 6, __pyx_v_self->__pyx_base.private);
+  PyTuple_SET_ITEM(__pyx_t_2, 7, __pyx_v_self->__pyx_base.private);
   __Pyx_GIVEREF(__pyx_t_1);
-  PyTuple_SET_ITEM(__pyx_t_2, 7, __pyx_t_1);
+  PyTuple_SET_ITEM(__pyx_t_2, 8, __pyx_t_1);
   __pyx_t_1 = 0;
   __pyx_v_state = ((PyObject*)__pyx_t_2);
   __pyx_t_2 = 0;
 
   /* "(tree fragment)":6
  *     cdef bint use_setstate
- *     state = (self._formats, self.alias, self.choices, self.default_value, self.mutable, self.name, self.private, self.required)
+ *     state = (self._formats, self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.private, self.required)
  *     _dict = getattr(self, '__dict__', None)             # <<<<<<<<<<<<<<
  *     if _dict is not None:
  *         state += (_dict,)
@@ -6590,7 +6685,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9DateField_2__reduce_cython__(struct _
   __pyx_t_2 = 0;
 
   /* "(tree fragment)":7
- *     state = (self._formats, self.alias, self.choices, self.default_value, self.mutable, self.name, self.private, self.required)
+ *     state = (self._formats, self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.private, self.required)
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
@@ -6623,12 +6718,12 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9DateField_2__reduce_cython__(struct _
  *         state += (_dict,)
  *         use_setstate = True             # <<<<<<<<<<<<<<
  *     else:
- *         use_setstate = self._formats is not None or self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self._formats is not None or self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  */
     __pyx_v_use_setstate = 1;
 
     /* "(tree fragment)":7
- *     state = (self._formats, self.alias, self.choices, self.default_value, self.mutable, self.name, self.private, self.required)
+ *     state = (self._formats, self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.private, self.required)
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
@@ -6640,9 +6735,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9DateField_2__reduce_cython__(struct _
   /* "(tree fragment)":11
  *         use_setstate = True
  *     else:
- *         use_setstate = self._formats is not None or self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None             # <<<<<<<<<<<<<<
+ *         use_setstate = self._formats is not None or self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None             # <<<<<<<<<<<<<<
  *     if use_setstate:
- *         return __pyx_unpickle_DateField, (type(self), 0x25200a7, None), state
+ *         return __pyx_unpickle_DateField, (type(self), 0xd8dea5d, None), state
  */
   /*else*/ {
     __pyx_t_3 = (__pyx_v_self->_formats != Py_None);
@@ -6673,23 +6768,30 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9DateField_2__reduce_cython__(struct _
       __pyx_t_4 = __pyx_t_3;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_3 = (__pyx_v_self->__pyx_base.mutable != Py_None);
+    __pyx_t_3 = (__pyx_v_self->__pyx_base.model != Py_None);
     __pyx_t_5 = (__pyx_t_3 != 0);
     if (!__pyx_t_5) {
     } else {
       __pyx_t_4 = __pyx_t_5;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_5 = (__pyx_v_self->__pyx_base.name != ((PyObject*)Py_None));
+    __pyx_t_5 = (__pyx_v_self->__pyx_base.mutable != Py_None);
     __pyx_t_3 = (__pyx_t_5 != 0);
     if (!__pyx_t_3) {
     } else {
       __pyx_t_4 = __pyx_t_3;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_3 = (__pyx_v_self->__pyx_base.private != Py_None);
+    __pyx_t_3 = (__pyx_v_self->__pyx_base.name != ((PyObject*)Py_None));
     __pyx_t_5 = (__pyx_t_3 != 0);
-    __pyx_t_4 = __pyx_t_5;
+    if (!__pyx_t_5) {
+    } else {
+      __pyx_t_4 = __pyx_t_5;
+      goto __pyx_L4_bool_binop_done;
+    }
+    __pyx_t_5 = (__pyx_v_self->__pyx_base.private != Py_None);
+    __pyx_t_3 = (__pyx_t_5 != 0);
+    __pyx_t_4 = __pyx_t_3;
     __pyx_L4_bool_binop_done:;
     __pyx_v_use_setstate = __pyx_t_4;
   }
@@ -6697,20 +6799,20 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9DateField_2__reduce_cython__(struct _
 
   /* "(tree fragment)":12
  *     else:
- *         use_setstate = self._formats is not None or self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self._formats is not None or self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  *     if use_setstate:             # <<<<<<<<<<<<<<
- *         return __pyx_unpickle_DateField, (type(self), 0x25200a7, None), state
+ *         return __pyx_unpickle_DateField, (type(self), 0xd8dea5d, None), state
  *     else:
  */
   __pyx_t_4 = (__pyx_v_use_setstate != 0);
   if (__pyx_t_4) {
 
     /* "(tree fragment)":13
- *         use_setstate = self._formats is not None or self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self._formats is not None or self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  *     if use_setstate:
- *         return __pyx_unpickle_DateField, (type(self), 0x25200a7, None), state             # <<<<<<<<<<<<<<
+ *         return __pyx_unpickle_DateField, (type(self), 0xd8dea5d, None), state             # <<<<<<<<<<<<<<
  *     else:
- *         return __pyx_unpickle_DateField, (type(self), 0x25200a7, state)
+ *         return __pyx_unpickle_DateField, (type(self), 0xd8dea5d, state)
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_pyx_unpickle_DateField); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 13, __pyx_L1_error)
@@ -6720,9 +6822,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9DateField_2__reduce_cython__(struct _
     __Pyx_INCREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     __Pyx_GIVEREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
-    __Pyx_INCREF(__pyx_int_38928551);
-    __Pyx_GIVEREF(__pyx_int_38928551);
-    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_38928551);
+    __Pyx_INCREF(__pyx_int_227404381);
+    __Pyx_GIVEREF(__pyx_int_227404381);
+    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_227404381);
     __Pyx_INCREF(Py_None);
     __Pyx_GIVEREF(Py_None);
     PyTuple_SET_ITEM(__pyx_t_2, 2, Py_None);
@@ -6743,17 +6845,17 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9DateField_2__reduce_cython__(struct _
 
     /* "(tree fragment)":12
  *     else:
- *         use_setstate = self._formats is not None or self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self._formats is not None or self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  *     if use_setstate:             # <<<<<<<<<<<<<<
- *         return __pyx_unpickle_DateField, (type(self), 0x25200a7, None), state
+ *         return __pyx_unpickle_DateField, (type(self), 0xd8dea5d, None), state
  *     else:
  */
   }
 
   /* "(tree fragment)":15
- *         return __pyx_unpickle_DateField, (type(self), 0x25200a7, None), state
+ *         return __pyx_unpickle_DateField, (type(self), 0xd8dea5d, None), state
  *     else:
- *         return __pyx_unpickle_DateField, (type(self), 0x25200a7, state)             # <<<<<<<<<<<<<<
+ *         return __pyx_unpickle_DateField, (type(self), 0xd8dea5d, state)             # <<<<<<<<<<<<<<
  * def __setstate_cython__(self, __pyx_state):
  *     __pyx_unpickle_DateField__set_state(self, __pyx_state)
  */
@@ -6766,9 +6868,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9DateField_2__reduce_cython__(struct _
     __Pyx_INCREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     __Pyx_GIVEREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
-    __Pyx_INCREF(__pyx_int_38928551);
-    __Pyx_GIVEREF(__pyx_int_38928551);
-    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_38928551);
+    __Pyx_INCREF(__pyx_int_227404381);
+    __Pyx_GIVEREF(__pyx_int_227404381);
+    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_227404381);
     __Pyx_INCREF(__pyx_v_state);
     __Pyx_GIVEREF(__pyx_v_state);
     PyTuple_SET_ITEM(__pyx_t_2, 2, __pyx_v_state);
@@ -6808,7 +6910,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9DateField_2__reduce_cython__(struct _
 
 /* "(tree fragment)":16
  *     else:
- *         return __pyx_unpickle_DateField, (type(self), 0x25200a7, state)
+ *         return __pyx_unpickle_DateField, (type(self), 0xd8dea5d, state)
  * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_DateField__set_state(self, __pyx_state)
  */
@@ -6836,7 +6938,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9DateField_4__setstate_cython__(struct
   __Pyx_RefNannySetupContext("__setstate_cython__", 0);
 
   /* "(tree fragment)":17
- *         return __pyx_unpickle_DateField, (type(self), 0x25200a7, state)
+ *         return __pyx_unpickle_DateField, (type(self), 0xd8dea5d, state)
  * def __setstate_cython__(self, __pyx_state):
  *     __pyx_unpickle_DateField__set_state(self, __pyx_state)             # <<<<<<<<<<<<<<
  */
@@ -6847,7 +6949,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9DateField_4__setstate_cython__(struct
 
   /* "(tree fragment)":16
  *     else:
- *         return __pyx_unpickle_DateField, (type(self), 0x25200a7, state)
+ *         return __pyx_unpickle_DateField, (type(self), 0xd8dea5d, state)
  * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_DateField__set_state(self, __pyx_state)
  */
@@ -6865,7 +6967,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9DateField_4__setstate_cython__(struct
   return __pyx_r;
 }
 
-/* "nyoibo/fields.pyx":230
+/* "nyoibo/fields.pyx":234
  *     _internal_type = datetime.datetime
  * 
  *     def __init__(self, formats: Iterable[str, ...] = (), **kwargs):             # <<<<<<<<<<<<<<
@@ -6908,7 +7010,7 @@ static int __pyx_pw_6nyoibo_6fields_13DatetimeField_1__init__(PyObject *__pyx_v_
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, __pyx_v_kwargs, values, pos_args, "__init__") < 0)) __PYX_ERR(0, 230, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, __pyx_v_kwargs, values, pos_args, "__init__") < 0)) __PYX_ERR(0, 234, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -6922,7 +7024,7 @@ static int __pyx_pw_6nyoibo_6fields_13DatetimeField_1__init__(PyObject *__pyx_v_
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__init__", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 230, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__init__", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 234, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_DECREF(__pyx_v_kwargs); __pyx_v_kwargs = 0;
   __Pyx_AddTraceback("nyoibo.fields.DatetimeField.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
@@ -6948,14 +7050,14 @@ static int __pyx_pf_6nyoibo_6fields_13DatetimeField___init__(struct __pyx_obj_6n
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "nyoibo/fields.pyx":231
+  /* "nyoibo/fields.pyx":235
  * 
  *     def __init__(self, formats: Iterable[str, ...] = (), **kwargs):
  *         super().__init__(**kwargs)             # <<<<<<<<<<<<<<
  *         self._formats = formats
  * 
  */
-  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 231, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 235, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(((PyObject *)__pyx_ptype_6nyoibo_6fields_DatetimeField));
   __Pyx_GIVEREF(((PyObject *)__pyx_ptype_6nyoibo_6fields_DatetimeField));
@@ -6963,21 +7065,21 @@ static int __pyx_pf_6nyoibo_6fields_13DatetimeField___init__(struct __pyx_obj_6n
   __Pyx_INCREF(((PyObject *)__pyx_v_self));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_self));
   PyTuple_SET_ITEM(__pyx_t_1, 1, ((PyObject *)__pyx_v_self));
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_super, __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 231, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_super, __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 235, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_init); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 231, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_init); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 235, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = PyDict_Copy(__pyx_v_kwargs); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 231, __pyx_L1_error)
+  __pyx_t_2 = PyDict_Copy(__pyx_v_kwargs); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 235, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 231, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 235, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "nyoibo/fields.pyx":232
+  /* "nyoibo/fields.pyx":236
  *     def __init__(self, formats: Iterable[str, ...] = (), **kwargs):
  *         super().__init__(**kwargs)
  *         self._formats = formats             # <<<<<<<<<<<<<<
@@ -6990,7 +7092,7 @@ static int __pyx_pf_6nyoibo_6fields_13DatetimeField___init__(struct __pyx_obj_6n
   __Pyx_DECREF(__pyx_v_self->_formats);
   __pyx_v_self->_formats = __pyx_v_formats;
 
-  /* "nyoibo/fields.pyx":230
+  /* "nyoibo/fields.pyx":234
  *     _internal_type = datetime.datetime
  * 
  *     def __init__(self, formats: Iterable[str, ...] = (), **kwargs):             # <<<<<<<<<<<<<<
@@ -7012,7 +7114,7 @@ static int __pyx_pf_6nyoibo_6fields_13DatetimeField___init__(struct __pyx_obj_6n
   return __pyx_r;
 }
 
-/* "nyoibo/fields.pyx":234
+/* "nyoibo/fields.pyx":238
  *         self._formats = formats
  * 
  *     cdef _parse(self, value):             # <<<<<<<<<<<<<<
@@ -7042,7 +7144,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_13DatetimeField__parse(struct __pyx_obj
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_parse", 0);
 
-  /* "nyoibo/fields.pyx":235
+  /* "nyoibo/fields.pyx":239
  * 
  *     cdef _parse(self, value):
  *         if isinstance(value, str):             # <<<<<<<<<<<<<<
@@ -7053,7 +7155,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_13DatetimeField__parse(struct __pyx_obj
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "nyoibo/fields.pyx":236
+    /* "nyoibo/fields.pyx":240
  *     cdef _parse(self, value):
  *         if isinstance(value, str):
  *             for str_format in self._formats:             # <<<<<<<<<<<<<<
@@ -7064,26 +7166,26 @@ static PyObject *__pyx_f_6nyoibo_6fields_13DatetimeField__parse(struct __pyx_obj
       __pyx_t_3 = __pyx_v_self->_formats; __Pyx_INCREF(__pyx_t_3); __pyx_t_4 = 0;
       __pyx_t_5 = NULL;
     } else {
-      __pyx_t_4 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_v_self->_formats); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 236, __pyx_L1_error)
+      __pyx_t_4 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_v_self->_formats); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 240, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_5 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 236, __pyx_L1_error)
+      __pyx_t_5 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 240, __pyx_L1_error)
     }
     for (;;) {
       if (likely(!__pyx_t_5)) {
         if (likely(PyList_CheckExact(__pyx_t_3))) {
           if (__pyx_t_4 >= PyList_GET_SIZE(__pyx_t_3)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_6 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_6); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 236, __pyx_L1_error)
+          __pyx_t_6 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_6); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 240, __pyx_L1_error)
           #else
-          __pyx_t_6 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 236, __pyx_L1_error)
+          __pyx_t_6 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 240, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
           #endif
         } else {
           if (__pyx_t_4 >= PyTuple_GET_SIZE(__pyx_t_3)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_6); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 236, __pyx_L1_error)
+          __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_6); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 240, __pyx_L1_error)
           #else
-          __pyx_t_6 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 236, __pyx_L1_error)
+          __pyx_t_6 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 240, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
           #endif
         }
@@ -7093,7 +7195,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_13DatetimeField__parse(struct __pyx_obj
           PyObject* exc_type = PyErr_Occurred();
           if (exc_type) {
             if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-            else __PYX_ERR(0, 236, __pyx_L1_error)
+            else __PYX_ERR(0, 240, __pyx_L1_error)
           }
           break;
         }
@@ -7102,7 +7204,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_13DatetimeField__parse(struct __pyx_obj
       __Pyx_XDECREF_SET(__pyx_v_str_format, __pyx_t_6);
       __pyx_t_6 = 0;
 
-      /* "nyoibo/fields.pyx":237
+      /* "nyoibo/fields.pyx":241
  *         if isinstance(value, str):
  *             for str_format in self._formats:
  *                 try:             # <<<<<<<<<<<<<<
@@ -7118,7 +7220,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_13DatetimeField__parse(struct __pyx_obj
         __Pyx_XGOTREF(__pyx_t_9);
         /*try:*/ {
 
-          /* "nyoibo/fields.pyx":238
+          /* "nyoibo/fields.pyx":242
  *             for str_format in self._formats:
  *                 try:
  *                     return datetime.datetime.strptime(value, str_format)             # <<<<<<<<<<<<<<
@@ -7126,12 +7228,12 @@ static PyObject *__pyx_f_6nyoibo_6fields_13DatetimeField__parse(struct __pyx_obj
  *                     continue
  */
           __Pyx_XDECREF(__pyx_r);
-          __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_datetime); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 238, __pyx_L6_error)
+          __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_datetime); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 242, __pyx_L6_error)
           __Pyx_GOTREF(__pyx_t_10);
-          __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_datetime); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 238, __pyx_L6_error)
+          __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_datetime); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 242, __pyx_L6_error)
           __Pyx_GOTREF(__pyx_t_11);
           __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-          __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_11, __pyx_n_s_strptime); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 238, __pyx_L6_error)
+          __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_11, __pyx_n_s_strptime); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 242, __pyx_L6_error)
           __Pyx_GOTREF(__pyx_t_10);
           __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
           __pyx_t_11 = NULL;
@@ -7149,7 +7251,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_13DatetimeField__parse(struct __pyx_obj
           #if CYTHON_FAST_PYCALL
           if (PyFunction_Check(__pyx_t_10)) {
             PyObject *__pyx_temp[3] = {__pyx_t_11, __pyx_v_value, __pyx_v_str_format};
-            __pyx_t_6 = __Pyx_PyFunction_FastCall(__pyx_t_10, __pyx_temp+1-__pyx_t_12, 2+__pyx_t_12); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 238, __pyx_L6_error)
+            __pyx_t_6 = __Pyx_PyFunction_FastCall(__pyx_t_10, __pyx_temp+1-__pyx_t_12, 2+__pyx_t_12); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 242, __pyx_L6_error)
             __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
             __Pyx_GOTREF(__pyx_t_6);
           } else
@@ -7157,13 +7259,13 @@ static PyObject *__pyx_f_6nyoibo_6fields_13DatetimeField__parse(struct __pyx_obj
           #if CYTHON_FAST_PYCCALL
           if (__Pyx_PyFastCFunction_Check(__pyx_t_10)) {
             PyObject *__pyx_temp[3] = {__pyx_t_11, __pyx_v_value, __pyx_v_str_format};
-            __pyx_t_6 = __Pyx_PyCFunction_FastCall(__pyx_t_10, __pyx_temp+1-__pyx_t_12, 2+__pyx_t_12); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 238, __pyx_L6_error)
+            __pyx_t_6 = __Pyx_PyCFunction_FastCall(__pyx_t_10, __pyx_temp+1-__pyx_t_12, 2+__pyx_t_12); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 242, __pyx_L6_error)
             __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
             __Pyx_GOTREF(__pyx_t_6);
           } else
           #endif
           {
-            __pyx_t_13 = PyTuple_New(2+__pyx_t_12); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 238, __pyx_L6_error)
+            __pyx_t_13 = PyTuple_New(2+__pyx_t_12); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 242, __pyx_L6_error)
             __Pyx_GOTREF(__pyx_t_13);
             if (__pyx_t_11) {
               __Pyx_GIVEREF(__pyx_t_11); PyTuple_SET_ITEM(__pyx_t_13, 0, __pyx_t_11); __pyx_t_11 = NULL;
@@ -7174,7 +7276,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_13DatetimeField__parse(struct __pyx_obj
             __Pyx_INCREF(__pyx_v_str_format);
             __Pyx_GIVEREF(__pyx_v_str_format);
             PyTuple_SET_ITEM(__pyx_t_13, 1+__pyx_t_12, __pyx_v_str_format);
-            __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_t_13, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 238, __pyx_L6_error)
+            __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_t_13, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 242, __pyx_L6_error)
             __Pyx_GOTREF(__pyx_t_6);
             __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
           }
@@ -7184,7 +7286,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_13DatetimeField__parse(struct __pyx_obj
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
           goto __pyx_L10_try_return;
 
-          /* "nyoibo/fields.pyx":237
+          /* "nyoibo/fields.pyx":241
  *         if isinstance(value, str):
  *             for str_format in self._formats:
  *                 try:             # <<<<<<<<<<<<<<
@@ -7198,7 +7300,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_13DatetimeField__parse(struct __pyx_obj
         __Pyx_XDECREF(__pyx_t_13); __pyx_t_13 = 0;
         __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-        /* "nyoibo/fields.pyx":239
+        /* "nyoibo/fields.pyx":243
  *                 try:
  *                     return datetime.datetime.strptime(value, str_format)
  *                 except ValueError:             # <<<<<<<<<<<<<<
@@ -7208,12 +7310,12 @@ static PyObject *__pyx_f_6nyoibo_6fields_13DatetimeField__parse(struct __pyx_obj
         __pyx_t_12 = __Pyx_PyErr_ExceptionMatches(__pyx_builtin_ValueError);
         if (__pyx_t_12) {
           __Pyx_AddTraceback("nyoibo.fields.DatetimeField._parse", __pyx_clineno, __pyx_lineno, __pyx_filename);
-          if (__Pyx_GetException(&__pyx_t_6, &__pyx_t_10, &__pyx_t_13) < 0) __PYX_ERR(0, 239, __pyx_L8_except_error)
+          if (__Pyx_GetException(&__pyx_t_6, &__pyx_t_10, &__pyx_t_13) < 0) __PYX_ERR(0, 243, __pyx_L8_except_error)
           __Pyx_GOTREF(__pyx_t_6);
           __Pyx_GOTREF(__pyx_t_10);
           __Pyx_GOTREF(__pyx_t_13);
 
-          /* "nyoibo/fields.pyx":240
+          /* "nyoibo/fields.pyx":244
  *                     return datetime.datetime.strptime(value, str_format)
  *                 except ValueError:
  *                     continue             # <<<<<<<<<<<<<<
@@ -7230,7 +7332,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_13DatetimeField__parse(struct __pyx_obj
         goto __pyx_L8_except_error;
         __pyx_L8_except_error:;
 
-        /* "nyoibo/fields.pyx":237
+        /* "nyoibo/fields.pyx":241
  *         if isinstance(value, str):
  *             for str_format in self._formats:
  *                 try:             # <<<<<<<<<<<<<<
@@ -7256,7 +7358,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_13DatetimeField__parse(struct __pyx_obj
         goto __pyx_L0;
       }
 
-      /* "nyoibo/fields.pyx":236
+      /* "nyoibo/fields.pyx":240
  *     cdef _parse(self, value):
  *         if isinstance(value, str):
  *             for str_format in self._formats:             # <<<<<<<<<<<<<<
@@ -7267,7 +7369,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_13DatetimeField__parse(struct __pyx_obj
     }
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "nyoibo/fields.pyx":241
+    /* "nyoibo/fields.pyx":245
  *                 except ValueError:
  *                     continue
  *             return datetime.datetime.fromisoformat(value)             # <<<<<<<<<<<<<<
@@ -7275,12 +7377,12 @@ static PyObject *__pyx_f_6nyoibo_6fields_13DatetimeField__parse(struct __pyx_obj
  * 
  */
     __Pyx_XDECREF(__pyx_r);
-    __Pyx_GetModuleGlobalName(__pyx_t_13, __pyx_n_s_datetime); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 241, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_13, __pyx_n_s_datetime); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 245, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_13);
-    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_13, __pyx_n_s_datetime); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 241, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_13, __pyx_n_s_datetime); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 245, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
-    __pyx_t_13 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_fromisoformat); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 241, __pyx_L1_error)
+    __pyx_t_13 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_fromisoformat); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 245, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_13);
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     __pyx_t_10 = NULL;
@@ -7295,14 +7397,14 @@ static PyObject *__pyx_f_6nyoibo_6fields_13DatetimeField__parse(struct __pyx_obj
     }
     __pyx_t_3 = (__pyx_t_10) ? __Pyx_PyObject_Call2Args(__pyx_t_13, __pyx_t_10, __pyx_v_value) : __Pyx_PyObject_CallOneArg(__pyx_t_13, __pyx_v_value);
     __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
-    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 241, __pyx_L1_error)
+    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 245, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
     __pyx_r = __pyx_t_3;
     __pyx_t_3 = 0;
     goto __pyx_L0;
 
-    /* "nyoibo/fields.pyx":235
+    /* "nyoibo/fields.pyx":239
  * 
  *     cdef _parse(self, value):
  *         if isinstance(value, str):             # <<<<<<<<<<<<<<
@@ -7311,7 +7413,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_13DatetimeField__parse(struct __pyx_obj
  */
   }
 
-  /* "nyoibo/fields.pyx":242
+  /* "nyoibo/fields.pyx":246
  *                     continue
  *             return datetime.datetime.fromisoformat(value)
  *         return value             # <<<<<<<<<<<<<<
@@ -7323,7 +7425,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_13DatetimeField__parse(struct __pyx_obj
   __pyx_r = __pyx_v_value;
   goto __pyx_L0;
 
-  /* "nyoibo/fields.pyx":234
+  /* "nyoibo/fields.pyx":238
  *         self._formats = formats
  * 
  *     cdef _parse(self, value):             # <<<<<<<<<<<<<<
@@ -7347,7 +7449,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_13DatetimeField__parse(struct __pyx_obj
   return __pyx_r;
 }
 
-/* "nyoibo/fields.pxd":37
+/* "nyoibo/fields.pxd":38
  * 
  * cdef class DatetimeField(Field):
  *     cdef readonly _formats             # <<<<<<<<<<<<<<
@@ -7421,13 +7523,13 @@ static PyObject *__pyx_pf_6nyoibo_6fields_13DatetimeField_2__reduce_cython__(str
   /* "(tree fragment)":5
  *     cdef object _dict
  *     cdef bint use_setstate
- *     state = (self._formats, self.alias, self.choices, self.default_value, self.mutable, self.name, self.private, self.required)             # <<<<<<<<<<<<<<
+ *     state = (self._formats, self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.private, self.required)             # <<<<<<<<<<<<<<
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:
  */
   __pyx_t_1 = __Pyx_PyBool_FromLong(__pyx_v_self->__pyx_base.required); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyTuple_New(8); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 5, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(9); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_v_self->_formats);
   __Pyx_GIVEREF(__pyx_v_self->_formats);
@@ -7441,24 +7543,27 @@ static PyObject *__pyx_pf_6nyoibo_6fields_13DatetimeField_2__reduce_cython__(str
   __Pyx_INCREF(__pyx_v_self->__pyx_base.default_value);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.default_value);
   PyTuple_SET_ITEM(__pyx_t_2, 3, __pyx_v_self->__pyx_base.default_value);
+  __Pyx_INCREF(__pyx_v_self->__pyx_base.model);
+  __Pyx_GIVEREF(__pyx_v_self->__pyx_base.model);
+  PyTuple_SET_ITEM(__pyx_t_2, 4, __pyx_v_self->__pyx_base.model);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.mutable);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.mutable);
-  PyTuple_SET_ITEM(__pyx_t_2, 4, __pyx_v_self->__pyx_base.mutable);
+  PyTuple_SET_ITEM(__pyx_t_2, 5, __pyx_v_self->__pyx_base.mutable);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.name);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.name);
-  PyTuple_SET_ITEM(__pyx_t_2, 5, __pyx_v_self->__pyx_base.name);
+  PyTuple_SET_ITEM(__pyx_t_2, 6, __pyx_v_self->__pyx_base.name);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.private);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.private);
-  PyTuple_SET_ITEM(__pyx_t_2, 6, __pyx_v_self->__pyx_base.private);
+  PyTuple_SET_ITEM(__pyx_t_2, 7, __pyx_v_self->__pyx_base.private);
   __Pyx_GIVEREF(__pyx_t_1);
-  PyTuple_SET_ITEM(__pyx_t_2, 7, __pyx_t_1);
+  PyTuple_SET_ITEM(__pyx_t_2, 8, __pyx_t_1);
   __pyx_t_1 = 0;
   __pyx_v_state = ((PyObject*)__pyx_t_2);
   __pyx_t_2 = 0;
 
   /* "(tree fragment)":6
  *     cdef bint use_setstate
- *     state = (self._formats, self.alias, self.choices, self.default_value, self.mutable, self.name, self.private, self.required)
+ *     state = (self._formats, self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.private, self.required)
  *     _dict = getattr(self, '__dict__', None)             # <<<<<<<<<<<<<<
  *     if _dict is not None:
  *         state += (_dict,)
@@ -7469,7 +7574,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_13DatetimeField_2__reduce_cython__(str
   __pyx_t_2 = 0;
 
   /* "(tree fragment)":7
- *     state = (self._formats, self.alias, self.choices, self.default_value, self.mutable, self.name, self.private, self.required)
+ *     state = (self._formats, self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.private, self.required)
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
@@ -7502,12 +7607,12 @@ static PyObject *__pyx_pf_6nyoibo_6fields_13DatetimeField_2__reduce_cython__(str
  *         state += (_dict,)
  *         use_setstate = True             # <<<<<<<<<<<<<<
  *     else:
- *         use_setstate = self._formats is not None or self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self._formats is not None or self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  */
     __pyx_v_use_setstate = 1;
 
     /* "(tree fragment)":7
- *     state = (self._formats, self.alias, self.choices, self.default_value, self.mutable, self.name, self.private, self.required)
+ *     state = (self._formats, self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.private, self.required)
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
@@ -7519,9 +7624,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_13DatetimeField_2__reduce_cython__(str
   /* "(tree fragment)":11
  *         use_setstate = True
  *     else:
- *         use_setstate = self._formats is not None or self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None             # <<<<<<<<<<<<<<
+ *         use_setstate = self._formats is not None or self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None             # <<<<<<<<<<<<<<
  *     if use_setstate:
- *         return __pyx_unpickle_DatetimeField, (type(self), 0x25200a7, None), state
+ *         return __pyx_unpickle_DatetimeField, (type(self), 0xd8dea5d, None), state
  */
   /*else*/ {
     __pyx_t_3 = (__pyx_v_self->_formats != Py_None);
@@ -7552,23 +7657,30 @@ static PyObject *__pyx_pf_6nyoibo_6fields_13DatetimeField_2__reduce_cython__(str
       __pyx_t_4 = __pyx_t_3;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_3 = (__pyx_v_self->__pyx_base.mutable != Py_None);
+    __pyx_t_3 = (__pyx_v_self->__pyx_base.model != Py_None);
     __pyx_t_5 = (__pyx_t_3 != 0);
     if (!__pyx_t_5) {
     } else {
       __pyx_t_4 = __pyx_t_5;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_5 = (__pyx_v_self->__pyx_base.name != ((PyObject*)Py_None));
+    __pyx_t_5 = (__pyx_v_self->__pyx_base.mutable != Py_None);
     __pyx_t_3 = (__pyx_t_5 != 0);
     if (!__pyx_t_3) {
     } else {
       __pyx_t_4 = __pyx_t_3;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_3 = (__pyx_v_self->__pyx_base.private != Py_None);
+    __pyx_t_3 = (__pyx_v_self->__pyx_base.name != ((PyObject*)Py_None));
     __pyx_t_5 = (__pyx_t_3 != 0);
-    __pyx_t_4 = __pyx_t_5;
+    if (!__pyx_t_5) {
+    } else {
+      __pyx_t_4 = __pyx_t_5;
+      goto __pyx_L4_bool_binop_done;
+    }
+    __pyx_t_5 = (__pyx_v_self->__pyx_base.private != Py_None);
+    __pyx_t_3 = (__pyx_t_5 != 0);
+    __pyx_t_4 = __pyx_t_3;
     __pyx_L4_bool_binop_done:;
     __pyx_v_use_setstate = __pyx_t_4;
   }
@@ -7576,20 +7688,20 @@ static PyObject *__pyx_pf_6nyoibo_6fields_13DatetimeField_2__reduce_cython__(str
 
   /* "(tree fragment)":12
  *     else:
- *         use_setstate = self._formats is not None or self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self._formats is not None or self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  *     if use_setstate:             # <<<<<<<<<<<<<<
- *         return __pyx_unpickle_DatetimeField, (type(self), 0x25200a7, None), state
+ *         return __pyx_unpickle_DatetimeField, (type(self), 0xd8dea5d, None), state
  *     else:
  */
   __pyx_t_4 = (__pyx_v_use_setstate != 0);
   if (__pyx_t_4) {
 
     /* "(tree fragment)":13
- *         use_setstate = self._formats is not None or self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self._formats is not None or self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  *     if use_setstate:
- *         return __pyx_unpickle_DatetimeField, (type(self), 0x25200a7, None), state             # <<<<<<<<<<<<<<
+ *         return __pyx_unpickle_DatetimeField, (type(self), 0xd8dea5d, None), state             # <<<<<<<<<<<<<<
  *     else:
- *         return __pyx_unpickle_DatetimeField, (type(self), 0x25200a7, state)
+ *         return __pyx_unpickle_DatetimeField, (type(self), 0xd8dea5d, state)
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_pyx_unpickle_DatetimeField); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 13, __pyx_L1_error)
@@ -7599,9 +7711,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_13DatetimeField_2__reduce_cython__(str
     __Pyx_INCREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     __Pyx_GIVEREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
-    __Pyx_INCREF(__pyx_int_38928551);
-    __Pyx_GIVEREF(__pyx_int_38928551);
-    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_38928551);
+    __Pyx_INCREF(__pyx_int_227404381);
+    __Pyx_GIVEREF(__pyx_int_227404381);
+    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_227404381);
     __Pyx_INCREF(Py_None);
     __Pyx_GIVEREF(Py_None);
     PyTuple_SET_ITEM(__pyx_t_2, 2, Py_None);
@@ -7622,17 +7734,17 @@ static PyObject *__pyx_pf_6nyoibo_6fields_13DatetimeField_2__reduce_cython__(str
 
     /* "(tree fragment)":12
  *     else:
- *         use_setstate = self._formats is not None or self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self._formats is not None or self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  *     if use_setstate:             # <<<<<<<<<<<<<<
- *         return __pyx_unpickle_DatetimeField, (type(self), 0x25200a7, None), state
+ *         return __pyx_unpickle_DatetimeField, (type(self), 0xd8dea5d, None), state
  *     else:
  */
   }
 
   /* "(tree fragment)":15
- *         return __pyx_unpickle_DatetimeField, (type(self), 0x25200a7, None), state
+ *         return __pyx_unpickle_DatetimeField, (type(self), 0xd8dea5d, None), state
  *     else:
- *         return __pyx_unpickle_DatetimeField, (type(self), 0x25200a7, state)             # <<<<<<<<<<<<<<
+ *         return __pyx_unpickle_DatetimeField, (type(self), 0xd8dea5d, state)             # <<<<<<<<<<<<<<
  * def __setstate_cython__(self, __pyx_state):
  *     __pyx_unpickle_DatetimeField__set_state(self, __pyx_state)
  */
@@ -7645,9 +7757,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_13DatetimeField_2__reduce_cython__(str
     __Pyx_INCREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     __Pyx_GIVEREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
-    __Pyx_INCREF(__pyx_int_38928551);
-    __Pyx_GIVEREF(__pyx_int_38928551);
-    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_38928551);
+    __Pyx_INCREF(__pyx_int_227404381);
+    __Pyx_GIVEREF(__pyx_int_227404381);
+    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_227404381);
     __Pyx_INCREF(__pyx_v_state);
     __Pyx_GIVEREF(__pyx_v_state);
     PyTuple_SET_ITEM(__pyx_t_2, 2, __pyx_v_state);
@@ -7687,7 +7799,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_13DatetimeField_2__reduce_cython__(str
 
 /* "(tree fragment)":16
  *     else:
- *         return __pyx_unpickle_DatetimeField, (type(self), 0x25200a7, state)
+ *         return __pyx_unpickle_DatetimeField, (type(self), 0xd8dea5d, state)
  * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_DatetimeField__set_state(self, __pyx_state)
  */
@@ -7715,7 +7827,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_13DatetimeField_4__setstate_cython__(s
   __Pyx_RefNannySetupContext("__setstate_cython__", 0);
 
   /* "(tree fragment)":17
- *         return __pyx_unpickle_DatetimeField, (type(self), 0x25200a7, state)
+ *         return __pyx_unpickle_DatetimeField, (type(self), 0xd8dea5d, state)
  * def __setstate_cython__(self, __pyx_state):
  *     __pyx_unpickle_DatetimeField__set_state(self, __pyx_state)             # <<<<<<<<<<<<<<
  */
@@ -7726,7 +7838,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_13DatetimeField_4__setstate_cython__(s
 
   /* "(tree fragment)":16
  *     else:
- *         return __pyx_unpickle_DatetimeField, (type(self), 0x25200a7, state)
+ *         return __pyx_unpickle_DatetimeField, (type(self), 0xd8dea5d, state)
  * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_DatetimeField__set_state(self, __pyx_state)
  */
@@ -7783,13 +7895,13 @@ static PyObject *__pyx_pf_6nyoibo_6fields_10FloatField___reduce_cython__(struct 
   /* "(tree fragment)":5
  *     cdef object _dict
  *     cdef bint use_setstate
- *     state = (self.alias, self.choices, self.default_value, self.mutable, self.name, self.private, self.required)             # <<<<<<<<<<<<<<
+ *     state = (self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.private, self.required)             # <<<<<<<<<<<<<<
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:
  */
   __pyx_t_1 = __Pyx_PyBool_FromLong(__pyx_v_self->__pyx_base.required); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyTuple_New(7); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 5, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(8); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.alias);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.alias);
@@ -7800,24 +7912,27 @@ static PyObject *__pyx_pf_6nyoibo_6fields_10FloatField___reduce_cython__(struct 
   __Pyx_INCREF(__pyx_v_self->__pyx_base.default_value);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.default_value);
   PyTuple_SET_ITEM(__pyx_t_2, 2, __pyx_v_self->__pyx_base.default_value);
+  __Pyx_INCREF(__pyx_v_self->__pyx_base.model);
+  __Pyx_GIVEREF(__pyx_v_self->__pyx_base.model);
+  PyTuple_SET_ITEM(__pyx_t_2, 3, __pyx_v_self->__pyx_base.model);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.mutable);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.mutable);
-  PyTuple_SET_ITEM(__pyx_t_2, 3, __pyx_v_self->__pyx_base.mutable);
+  PyTuple_SET_ITEM(__pyx_t_2, 4, __pyx_v_self->__pyx_base.mutable);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.name);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.name);
-  PyTuple_SET_ITEM(__pyx_t_2, 4, __pyx_v_self->__pyx_base.name);
+  PyTuple_SET_ITEM(__pyx_t_2, 5, __pyx_v_self->__pyx_base.name);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.private);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.private);
-  PyTuple_SET_ITEM(__pyx_t_2, 5, __pyx_v_self->__pyx_base.private);
+  PyTuple_SET_ITEM(__pyx_t_2, 6, __pyx_v_self->__pyx_base.private);
   __Pyx_GIVEREF(__pyx_t_1);
-  PyTuple_SET_ITEM(__pyx_t_2, 6, __pyx_t_1);
+  PyTuple_SET_ITEM(__pyx_t_2, 7, __pyx_t_1);
   __pyx_t_1 = 0;
   __pyx_v_state = ((PyObject*)__pyx_t_2);
   __pyx_t_2 = 0;
 
   /* "(tree fragment)":6
  *     cdef bint use_setstate
- *     state = (self.alias, self.choices, self.default_value, self.mutable, self.name, self.private, self.required)
+ *     state = (self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.private, self.required)
  *     _dict = getattr(self, '__dict__', None)             # <<<<<<<<<<<<<<
  *     if _dict is not None:
  *         state += (_dict,)
@@ -7828,7 +7943,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_10FloatField___reduce_cython__(struct 
   __pyx_t_2 = 0;
 
   /* "(tree fragment)":7
- *     state = (self.alias, self.choices, self.default_value, self.mutable, self.name, self.private, self.required)
+ *     state = (self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.private, self.required)
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
@@ -7861,12 +7976,12 @@ static PyObject *__pyx_pf_6nyoibo_6fields_10FloatField___reduce_cython__(struct 
  *         state += (_dict,)
  *         use_setstate = True             # <<<<<<<<<<<<<<
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  */
     __pyx_v_use_setstate = 1;
 
     /* "(tree fragment)":7
- *     state = (self.alias, self.choices, self.default_value, self.mutable, self.name, self.private, self.required)
+ *     state = (self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.private, self.required)
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
@@ -7878,9 +7993,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_10FloatField___reduce_cython__(struct 
   /* "(tree fragment)":11
  *         use_setstate = True
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None             # <<<<<<<<<<<<<<
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None             # <<<<<<<<<<<<<<
  *     if use_setstate:
- *         return __pyx_unpickle_FloatField, (type(self), 0xefd9ffe, None), state
+ *         return __pyx_unpickle_FloatField, (type(self), 0xb3dbdb0, None), state
  */
   /*else*/ {
     __pyx_t_3 = (__pyx_v_self->__pyx_base.alias != Py_None);
@@ -7904,23 +8019,30 @@ static PyObject *__pyx_pf_6nyoibo_6fields_10FloatField___reduce_cython__(struct 
       __pyx_t_4 = __pyx_t_5;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_5 = (__pyx_v_self->__pyx_base.mutable != Py_None);
+    __pyx_t_5 = (__pyx_v_self->__pyx_base.model != Py_None);
     __pyx_t_3 = (__pyx_t_5 != 0);
     if (!__pyx_t_3) {
     } else {
       __pyx_t_4 = __pyx_t_3;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_3 = (__pyx_v_self->__pyx_base.name != ((PyObject*)Py_None));
+    __pyx_t_3 = (__pyx_v_self->__pyx_base.mutable != Py_None);
     __pyx_t_5 = (__pyx_t_3 != 0);
     if (!__pyx_t_5) {
     } else {
       __pyx_t_4 = __pyx_t_5;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_5 = (__pyx_v_self->__pyx_base.private != Py_None);
+    __pyx_t_5 = (__pyx_v_self->__pyx_base.name != ((PyObject*)Py_None));
     __pyx_t_3 = (__pyx_t_5 != 0);
-    __pyx_t_4 = __pyx_t_3;
+    if (!__pyx_t_3) {
+    } else {
+      __pyx_t_4 = __pyx_t_3;
+      goto __pyx_L4_bool_binop_done;
+    }
+    __pyx_t_3 = (__pyx_v_self->__pyx_base.private != Py_None);
+    __pyx_t_5 = (__pyx_t_3 != 0);
+    __pyx_t_4 = __pyx_t_5;
     __pyx_L4_bool_binop_done:;
     __pyx_v_use_setstate = __pyx_t_4;
   }
@@ -7928,20 +8050,20 @@ static PyObject *__pyx_pf_6nyoibo_6fields_10FloatField___reduce_cython__(struct 
 
   /* "(tree fragment)":12
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  *     if use_setstate:             # <<<<<<<<<<<<<<
- *         return __pyx_unpickle_FloatField, (type(self), 0xefd9ffe, None), state
+ *         return __pyx_unpickle_FloatField, (type(self), 0xb3dbdb0, None), state
  *     else:
  */
   __pyx_t_4 = (__pyx_v_use_setstate != 0);
   if (__pyx_t_4) {
 
     /* "(tree fragment)":13
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  *     if use_setstate:
- *         return __pyx_unpickle_FloatField, (type(self), 0xefd9ffe, None), state             # <<<<<<<<<<<<<<
+ *         return __pyx_unpickle_FloatField, (type(self), 0xb3dbdb0, None), state             # <<<<<<<<<<<<<<
  *     else:
- *         return __pyx_unpickle_FloatField, (type(self), 0xefd9ffe, state)
+ *         return __pyx_unpickle_FloatField, (type(self), 0xb3dbdb0, state)
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_pyx_unpickle_FloatField); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 13, __pyx_L1_error)
@@ -7951,9 +8073,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_10FloatField___reduce_cython__(struct 
     __Pyx_INCREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     __Pyx_GIVEREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
-    __Pyx_INCREF(__pyx_int_251502590);
-    __Pyx_GIVEREF(__pyx_int_251502590);
-    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_251502590);
+    __Pyx_INCREF(__pyx_int_188595632);
+    __Pyx_GIVEREF(__pyx_int_188595632);
+    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_188595632);
     __Pyx_INCREF(Py_None);
     __Pyx_GIVEREF(Py_None);
     PyTuple_SET_ITEM(__pyx_t_2, 2, Py_None);
@@ -7974,17 +8096,17 @@ static PyObject *__pyx_pf_6nyoibo_6fields_10FloatField___reduce_cython__(struct 
 
     /* "(tree fragment)":12
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  *     if use_setstate:             # <<<<<<<<<<<<<<
- *         return __pyx_unpickle_FloatField, (type(self), 0xefd9ffe, None), state
+ *         return __pyx_unpickle_FloatField, (type(self), 0xb3dbdb0, None), state
  *     else:
  */
   }
 
   /* "(tree fragment)":15
- *         return __pyx_unpickle_FloatField, (type(self), 0xefd9ffe, None), state
+ *         return __pyx_unpickle_FloatField, (type(self), 0xb3dbdb0, None), state
  *     else:
- *         return __pyx_unpickle_FloatField, (type(self), 0xefd9ffe, state)             # <<<<<<<<<<<<<<
+ *         return __pyx_unpickle_FloatField, (type(self), 0xb3dbdb0, state)             # <<<<<<<<<<<<<<
  * def __setstate_cython__(self, __pyx_state):
  *     __pyx_unpickle_FloatField__set_state(self, __pyx_state)
  */
@@ -7997,9 +8119,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_10FloatField___reduce_cython__(struct 
     __Pyx_INCREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     __Pyx_GIVEREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
-    __Pyx_INCREF(__pyx_int_251502590);
-    __Pyx_GIVEREF(__pyx_int_251502590);
-    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_251502590);
+    __Pyx_INCREF(__pyx_int_188595632);
+    __Pyx_GIVEREF(__pyx_int_188595632);
+    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_188595632);
     __Pyx_INCREF(__pyx_v_state);
     __Pyx_GIVEREF(__pyx_v_state);
     PyTuple_SET_ITEM(__pyx_t_2, 2, __pyx_v_state);
@@ -8039,7 +8161,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_10FloatField___reduce_cython__(struct 
 
 /* "(tree fragment)":16
  *     else:
- *         return __pyx_unpickle_FloatField, (type(self), 0xefd9ffe, state)
+ *         return __pyx_unpickle_FloatField, (type(self), 0xb3dbdb0, state)
  * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_FloatField__set_state(self, __pyx_state)
  */
@@ -8067,7 +8189,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_10FloatField_2__setstate_cython__(stru
   __Pyx_RefNannySetupContext("__setstate_cython__", 0);
 
   /* "(tree fragment)":17
- *         return __pyx_unpickle_FloatField, (type(self), 0xefd9ffe, state)
+ *         return __pyx_unpickle_FloatField, (type(self), 0xb3dbdb0, state)
  * def __setstate_cython__(self, __pyx_state):
  *     __pyx_unpickle_FloatField__set_state(self, __pyx_state)             # <<<<<<<<<<<<<<
  */
@@ -8078,7 +8200,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_10FloatField_2__setstate_cython__(stru
 
   /* "(tree fragment)":16
  *     else:
- *         return __pyx_unpickle_FloatField, (type(self), 0xefd9ffe, state)
+ *         return __pyx_unpickle_FloatField, (type(self), 0xb3dbdb0, state)
  * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_FloatField__set_state(self, __pyx_state)
  */
@@ -8135,13 +8257,13 @@ static PyObject *__pyx_pf_6nyoibo_6fields_12DecimalField___reduce_cython__(struc
   /* "(tree fragment)":5
  *     cdef object _dict
  *     cdef bint use_setstate
- *     state = (self.alias, self.choices, self.default_value, self.mutable, self.name, self.private, self.required)             # <<<<<<<<<<<<<<
+ *     state = (self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.private, self.required)             # <<<<<<<<<<<<<<
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:
  */
   __pyx_t_1 = __Pyx_PyBool_FromLong(__pyx_v_self->__pyx_base.required); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyTuple_New(7); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 5, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(8); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.alias);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.alias);
@@ -8152,24 +8274,27 @@ static PyObject *__pyx_pf_6nyoibo_6fields_12DecimalField___reduce_cython__(struc
   __Pyx_INCREF(__pyx_v_self->__pyx_base.default_value);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.default_value);
   PyTuple_SET_ITEM(__pyx_t_2, 2, __pyx_v_self->__pyx_base.default_value);
+  __Pyx_INCREF(__pyx_v_self->__pyx_base.model);
+  __Pyx_GIVEREF(__pyx_v_self->__pyx_base.model);
+  PyTuple_SET_ITEM(__pyx_t_2, 3, __pyx_v_self->__pyx_base.model);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.mutable);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.mutable);
-  PyTuple_SET_ITEM(__pyx_t_2, 3, __pyx_v_self->__pyx_base.mutable);
+  PyTuple_SET_ITEM(__pyx_t_2, 4, __pyx_v_self->__pyx_base.mutable);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.name);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.name);
-  PyTuple_SET_ITEM(__pyx_t_2, 4, __pyx_v_self->__pyx_base.name);
+  PyTuple_SET_ITEM(__pyx_t_2, 5, __pyx_v_self->__pyx_base.name);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.private);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.private);
-  PyTuple_SET_ITEM(__pyx_t_2, 5, __pyx_v_self->__pyx_base.private);
+  PyTuple_SET_ITEM(__pyx_t_2, 6, __pyx_v_self->__pyx_base.private);
   __Pyx_GIVEREF(__pyx_t_1);
-  PyTuple_SET_ITEM(__pyx_t_2, 6, __pyx_t_1);
+  PyTuple_SET_ITEM(__pyx_t_2, 7, __pyx_t_1);
   __pyx_t_1 = 0;
   __pyx_v_state = ((PyObject*)__pyx_t_2);
   __pyx_t_2 = 0;
 
   /* "(tree fragment)":6
  *     cdef bint use_setstate
- *     state = (self.alias, self.choices, self.default_value, self.mutable, self.name, self.private, self.required)
+ *     state = (self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.private, self.required)
  *     _dict = getattr(self, '__dict__', None)             # <<<<<<<<<<<<<<
  *     if _dict is not None:
  *         state += (_dict,)
@@ -8180,7 +8305,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_12DecimalField___reduce_cython__(struc
   __pyx_t_2 = 0;
 
   /* "(tree fragment)":7
- *     state = (self.alias, self.choices, self.default_value, self.mutable, self.name, self.private, self.required)
+ *     state = (self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.private, self.required)
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
@@ -8213,12 +8338,12 @@ static PyObject *__pyx_pf_6nyoibo_6fields_12DecimalField___reduce_cython__(struc
  *         state += (_dict,)
  *         use_setstate = True             # <<<<<<<<<<<<<<
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  */
     __pyx_v_use_setstate = 1;
 
     /* "(tree fragment)":7
- *     state = (self.alias, self.choices, self.default_value, self.mutable, self.name, self.private, self.required)
+ *     state = (self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.private, self.required)
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
@@ -8230,9 +8355,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_12DecimalField___reduce_cython__(struc
   /* "(tree fragment)":11
  *         use_setstate = True
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None             # <<<<<<<<<<<<<<
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None             # <<<<<<<<<<<<<<
  *     if use_setstate:
- *         return __pyx_unpickle_DecimalField, (type(self), 0xefd9ffe, None), state
+ *         return __pyx_unpickle_DecimalField, (type(self), 0xb3dbdb0, None), state
  */
   /*else*/ {
     __pyx_t_3 = (__pyx_v_self->__pyx_base.alias != Py_None);
@@ -8256,23 +8381,30 @@ static PyObject *__pyx_pf_6nyoibo_6fields_12DecimalField___reduce_cython__(struc
       __pyx_t_4 = __pyx_t_5;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_5 = (__pyx_v_self->__pyx_base.mutable != Py_None);
+    __pyx_t_5 = (__pyx_v_self->__pyx_base.model != Py_None);
     __pyx_t_3 = (__pyx_t_5 != 0);
     if (!__pyx_t_3) {
     } else {
       __pyx_t_4 = __pyx_t_3;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_3 = (__pyx_v_self->__pyx_base.name != ((PyObject*)Py_None));
+    __pyx_t_3 = (__pyx_v_self->__pyx_base.mutable != Py_None);
     __pyx_t_5 = (__pyx_t_3 != 0);
     if (!__pyx_t_5) {
     } else {
       __pyx_t_4 = __pyx_t_5;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_5 = (__pyx_v_self->__pyx_base.private != Py_None);
+    __pyx_t_5 = (__pyx_v_self->__pyx_base.name != ((PyObject*)Py_None));
     __pyx_t_3 = (__pyx_t_5 != 0);
-    __pyx_t_4 = __pyx_t_3;
+    if (!__pyx_t_3) {
+    } else {
+      __pyx_t_4 = __pyx_t_3;
+      goto __pyx_L4_bool_binop_done;
+    }
+    __pyx_t_3 = (__pyx_v_self->__pyx_base.private != Py_None);
+    __pyx_t_5 = (__pyx_t_3 != 0);
+    __pyx_t_4 = __pyx_t_5;
     __pyx_L4_bool_binop_done:;
     __pyx_v_use_setstate = __pyx_t_4;
   }
@@ -8280,20 +8412,20 @@ static PyObject *__pyx_pf_6nyoibo_6fields_12DecimalField___reduce_cython__(struc
 
   /* "(tree fragment)":12
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  *     if use_setstate:             # <<<<<<<<<<<<<<
- *         return __pyx_unpickle_DecimalField, (type(self), 0xefd9ffe, None), state
+ *         return __pyx_unpickle_DecimalField, (type(self), 0xb3dbdb0, None), state
  *     else:
  */
   __pyx_t_4 = (__pyx_v_use_setstate != 0);
   if (__pyx_t_4) {
 
     /* "(tree fragment)":13
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  *     if use_setstate:
- *         return __pyx_unpickle_DecimalField, (type(self), 0xefd9ffe, None), state             # <<<<<<<<<<<<<<
+ *         return __pyx_unpickle_DecimalField, (type(self), 0xb3dbdb0, None), state             # <<<<<<<<<<<<<<
  *     else:
- *         return __pyx_unpickle_DecimalField, (type(self), 0xefd9ffe, state)
+ *         return __pyx_unpickle_DecimalField, (type(self), 0xb3dbdb0, state)
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_pyx_unpickle_DecimalField); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 13, __pyx_L1_error)
@@ -8303,9 +8435,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_12DecimalField___reduce_cython__(struc
     __Pyx_INCREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     __Pyx_GIVEREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
-    __Pyx_INCREF(__pyx_int_251502590);
-    __Pyx_GIVEREF(__pyx_int_251502590);
-    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_251502590);
+    __Pyx_INCREF(__pyx_int_188595632);
+    __Pyx_GIVEREF(__pyx_int_188595632);
+    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_188595632);
     __Pyx_INCREF(Py_None);
     __Pyx_GIVEREF(Py_None);
     PyTuple_SET_ITEM(__pyx_t_2, 2, Py_None);
@@ -8326,17 +8458,17 @@ static PyObject *__pyx_pf_6nyoibo_6fields_12DecimalField___reduce_cython__(struc
 
     /* "(tree fragment)":12
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  *     if use_setstate:             # <<<<<<<<<<<<<<
- *         return __pyx_unpickle_DecimalField, (type(self), 0xefd9ffe, None), state
+ *         return __pyx_unpickle_DecimalField, (type(self), 0xb3dbdb0, None), state
  *     else:
  */
   }
 
   /* "(tree fragment)":15
- *         return __pyx_unpickle_DecimalField, (type(self), 0xefd9ffe, None), state
+ *         return __pyx_unpickle_DecimalField, (type(self), 0xb3dbdb0, None), state
  *     else:
- *         return __pyx_unpickle_DecimalField, (type(self), 0xefd9ffe, state)             # <<<<<<<<<<<<<<
+ *         return __pyx_unpickle_DecimalField, (type(self), 0xb3dbdb0, state)             # <<<<<<<<<<<<<<
  * def __setstate_cython__(self, __pyx_state):
  *     __pyx_unpickle_DecimalField__set_state(self, __pyx_state)
  */
@@ -8349,9 +8481,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_12DecimalField___reduce_cython__(struc
     __Pyx_INCREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     __Pyx_GIVEREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
-    __Pyx_INCREF(__pyx_int_251502590);
-    __Pyx_GIVEREF(__pyx_int_251502590);
-    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_251502590);
+    __Pyx_INCREF(__pyx_int_188595632);
+    __Pyx_GIVEREF(__pyx_int_188595632);
+    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_188595632);
     __Pyx_INCREF(__pyx_v_state);
     __Pyx_GIVEREF(__pyx_v_state);
     PyTuple_SET_ITEM(__pyx_t_2, 2, __pyx_v_state);
@@ -8391,7 +8523,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_12DecimalField___reduce_cython__(struc
 
 /* "(tree fragment)":16
  *     else:
- *         return __pyx_unpickle_DecimalField, (type(self), 0xefd9ffe, state)
+ *         return __pyx_unpickle_DecimalField, (type(self), 0xb3dbdb0, state)
  * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_DecimalField__set_state(self, __pyx_state)
  */
@@ -8419,7 +8551,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_12DecimalField_2__setstate_cython__(st
   __Pyx_RefNannySetupContext("__setstate_cython__", 0);
 
   /* "(tree fragment)":17
- *         return __pyx_unpickle_DecimalField, (type(self), 0xefd9ffe, state)
+ *         return __pyx_unpickle_DecimalField, (type(self), 0xb3dbdb0, state)
  * def __setstate_cython__(self, __pyx_state):
  *     __pyx_unpickle_DecimalField__set_state(self, __pyx_state)             # <<<<<<<<<<<<<<
  */
@@ -8430,7 +8562,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_12DecimalField_2__setstate_cython__(st
 
   /* "(tree fragment)":16
  *     else:
- *         return __pyx_unpickle_DecimalField, (type(self), 0xefd9ffe, state)
+ *         return __pyx_unpickle_DecimalField, (type(self), 0xb3dbdb0, state)
  * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_DecimalField__set_state(self, __pyx_state)
  */
@@ -8448,7 +8580,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_12DecimalField_2__setstate_cython__(st
   return __pyx_r;
 }
 
-/* "nyoibo/fields.pyx":270
+/* "nyoibo/fields.pyx":274
  *     """
  * 
  *     def __init__(self, to, *args, **kwargs):             # <<<<<<<<<<<<<<
@@ -8501,7 +8633,7 @@ static int __pyx_pw_6nyoibo_6fields_9LinkField_1__init__(PyObject *__pyx_v_self,
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t used_pos_args = (pos_args < 1) ? pos_args : 1;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, __pyx_v_kwargs, values, used_pos_args, "__init__") < 0)) __PYX_ERR(0, 270, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, __pyx_v_kwargs, values, used_pos_args, "__init__") < 0)) __PYX_ERR(0, 274, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) < 1) {
       goto __pyx_L5_argtuple_error;
@@ -8512,7 +8644,7 @@ static int __pyx_pw_6nyoibo_6fields_9LinkField_1__init__(PyObject *__pyx_v_self,
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__init__", 0, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 270, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__init__", 0, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 274, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_DECREF(__pyx_v_args); __pyx_v_args = 0;
   __Pyx_DECREF(__pyx_v_kwargs); __pyx_v_kwargs = 0;
@@ -8542,34 +8674,34 @@ static int __pyx_pf_6nyoibo_6fields_9LinkField___init__(struct __pyx_obj_6nyoibo
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "nyoibo/fields.pyx":271
+  /* "nyoibo/fields.pyx":275
  * 
  *     def __init__(self, to, *args, **kwargs):
  *         if issubclass(type(to), MetaEntity) is False:             # <<<<<<<<<<<<<<
  *             raise ValueError('to must be an Entity subclass')
  *         super(LinkField, self).__init__(*args, **kwargs)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_MetaEntity); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 271, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_MetaEntity); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 275, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyObject_IsSubclass(((PyObject *)Py_TYPE(__pyx_v_to)), __pyx_t_1); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 271, __pyx_L1_error)
+  __pyx_t_2 = PyObject_IsSubclass(((PyObject *)Py_TYPE(__pyx_v_to)), __pyx_t_1); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 275, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_3 = ((__pyx_t_2 == 0) != 0);
   if (unlikely(__pyx_t_3)) {
 
-    /* "nyoibo/fields.pyx":272
+    /* "nyoibo/fields.pyx":276
  *     def __init__(self, to, *args, **kwargs):
  *         if issubclass(type(to), MetaEntity) is False:
  *             raise ValueError('to must be an Entity subclass')             # <<<<<<<<<<<<<<
  *         super(LinkField, self).__init__(*args, **kwargs)
  *         self.to = to
  */
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 272, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 276, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 272, __pyx_L1_error)
+    __PYX_ERR(0, 276, __pyx_L1_error)
 
-    /* "nyoibo/fields.pyx":271
+    /* "nyoibo/fields.pyx":275
  * 
  *     def __init__(self, to, *args, **kwargs):
  *         if issubclass(type(to), MetaEntity) is False:             # <<<<<<<<<<<<<<
@@ -8578,14 +8710,14 @@ static int __pyx_pf_6nyoibo_6fields_9LinkField___init__(struct __pyx_obj_6nyoibo
  */
   }
 
-  /* "nyoibo/fields.pyx":273
+  /* "nyoibo/fields.pyx":277
  *         if issubclass(type(to), MetaEntity) is False:
  *             raise ValueError('to must be an Entity subclass')
  *         super(LinkField, self).__init__(*args, **kwargs)             # <<<<<<<<<<<<<<
  *         self.to = to
  * 
  */
-  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 273, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 277, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(((PyObject *)__pyx_ptype_6nyoibo_6fields_LinkField));
   __Pyx_GIVEREF(((PyObject *)__pyx_ptype_6nyoibo_6fields_LinkField));
@@ -8593,21 +8725,21 @@ static int __pyx_pf_6nyoibo_6fields_9LinkField___init__(struct __pyx_obj_6nyoibo
   __Pyx_INCREF(((PyObject *)__pyx_v_self));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_self));
   PyTuple_SET_ITEM(__pyx_t_1, 1, ((PyObject *)__pyx_v_self));
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_super, __pyx_t_1, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 273, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_super, __pyx_t_1, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 277, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_init); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 273, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_init); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 277, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = PyDict_Copy(__pyx_v_kwargs); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 273, __pyx_L1_error)
+  __pyx_t_4 = PyDict_Copy(__pyx_v_kwargs); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 277, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_v_args, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 273, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_v_args, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 277, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "nyoibo/fields.pyx":274
+  /* "nyoibo/fields.pyx":278
  *             raise ValueError('to must be an Entity subclass')
  *         super(LinkField, self).__init__(*args, **kwargs)
  *         self.to = to             # <<<<<<<<<<<<<<
@@ -8620,7 +8752,7 @@ static int __pyx_pf_6nyoibo_6fields_9LinkField___init__(struct __pyx_obj_6nyoibo
   __Pyx_DECREF(__pyx_v_self->to);
   __pyx_v_self->to = __pyx_v_to;
 
-  /* "nyoibo/fields.pyx":270
+  /* "nyoibo/fields.pyx":274
  *     """
  * 
  *     def __init__(self, to, *args, **kwargs):             # <<<<<<<<<<<<<<
@@ -8642,7 +8774,7 @@ static int __pyx_pf_6nyoibo_6fields_9LinkField___init__(struct __pyx_obj_6nyoibo
   return __pyx_r;
 }
 
-/* "nyoibo/fields.pyx":276
+/* "nyoibo/fields.pyx":280
  *         self.to = to
  * 
  *     cpdef public parse(self, value):             # <<<<<<<<<<<<<<
@@ -8676,7 +8808,7 @@ PyObject *__pyx_f_6nyoibo_6fields_9LinkField_parse(struct __pyx_obj_6nyoibo_6fie
     if (unlikely(!__Pyx_object_dict_version_matches(((PyObject *)__pyx_v_self), __pyx_tp_dict_version, __pyx_obj_dict_version))) {
       PY_UINT64_T __pyx_type_dict_guard = __Pyx_get_tp_dict_version(((PyObject *)__pyx_v_self));
       #endif
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_parse); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 276, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_parse); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 280, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)(void*)__pyx_pw_6nyoibo_6fields_9LinkField_3parse)) {
         __Pyx_XDECREF(__pyx_r);
@@ -8693,7 +8825,7 @@ PyObject *__pyx_f_6nyoibo_6fields_9LinkField_parse(struct __pyx_obj_6nyoibo_6fie
         }
         __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_4, __pyx_v_value) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_value);
         __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 276, __pyx_L1_error)
+        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 280, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         __pyx_r = __pyx_t_2;
@@ -8714,7 +8846,7 @@ PyObject *__pyx_f_6nyoibo_6fields_9LinkField_parse(struct __pyx_obj_6nyoibo_6fie
     #endif
   }
 
-  /* "nyoibo/fields.pyx":277
+  /* "nyoibo/fields.pyx":281
  * 
  *     cpdef public parse(self, value):
  *         if isinstance(value, self.to):             # <<<<<<<<<<<<<<
@@ -8723,12 +8855,12 @@ PyObject *__pyx_f_6nyoibo_6fields_9LinkField_parse(struct __pyx_obj_6nyoibo_6fie
  */
   __pyx_t_1 = __pyx_v_self->to;
   __Pyx_INCREF(__pyx_t_1);
-  __pyx_t_5 = PyObject_IsInstance(__pyx_v_value, __pyx_t_1); if (unlikely(__pyx_t_5 == ((int)-1))) __PYX_ERR(0, 277, __pyx_L1_error)
+  __pyx_t_5 = PyObject_IsInstance(__pyx_v_value, __pyx_t_1); if (unlikely(__pyx_t_5 == ((int)-1))) __PYX_ERR(0, 281, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_6 = (__pyx_t_5 != 0);
   if (__pyx_t_6) {
 
-    /* "nyoibo/fields.pyx":278
+    /* "nyoibo/fields.pyx":282
  *     cpdef public parse(self, value):
  *         if isinstance(value, self.to):
  *             return value             # <<<<<<<<<<<<<<
@@ -8740,7 +8872,7 @@ PyObject *__pyx_f_6nyoibo_6fields_9LinkField_parse(struct __pyx_obj_6nyoibo_6fie
     __pyx_r = __pyx_v_value;
     goto __pyx_L0;
 
-    /* "nyoibo/fields.pyx":277
+    /* "nyoibo/fields.pyx":281
  * 
  *     cpdef public parse(self, value):
  *         if isinstance(value, self.to):             # <<<<<<<<<<<<<<
@@ -8749,7 +8881,7 @@ PyObject *__pyx_f_6nyoibo_6fields_9LinkField_parse(struct __pyx_obj_6nyoibo_6fie
  */
   }
 
-  /* "nyoibo/fields.pyx":279
+  /* "nyoibo/fields.pyx":283
  *         if isinstance(value, self.to):
  *             return value
  *         if value is None:             # <<<<<<<<<<<<<<
@@ -8760,7 +8892,7 @@ PyObject *__pyx_f_6nyoibo_6fields_9LinkField_parse(struct __pyx_obj_6nyoibo_6fie
   __pyx_t_5 = (__pyx_t_6 != 0);
   if (__pyx_t_5) {
 
-    /* "nyoibo/fields.pyx":280
+    /* "nyoibo/fields.pyx":284
  *             return value
  *         if value is None:
  *             if self.required is True:             # <<<<<<<<<<<<<<
@@ -8770,14 +8902,14 @@ PyObject *__pyx_f_6nyoibo_6fields_9LinkField_parse(struct __pyx_obj_6nyoibo_6fie
     __pyx_t_5 = ((__pyx_v_self->__pyx_base.required == 1) != 0);
     if (unlikely(__pyx_t_5)) {
 
-      /* "nyoibo/fields.pyx":281
+      /* "nyoibo/fields.pyx":285
  *         if value is None:
  *             if self.required is True:
  *                 raise RequiredValueError('value is required')             # <<<<<<<<<<<<<<
  *             return value
  *         if isinstance(value, dict):
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_RequiredValueError); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 281, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_RequiredValueError); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 285, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __pyx_t_3 = NULL;
       if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_2))) {
@@ -8791,14 +8923,14 @@ PyObject *__pyx_f_6nyoibo_6fields_9LinkField_parse(struct __pyx_obj_6nyoibo_6fie
       }
       __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_3, __pyx_kp_u_value_is_required) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_kp_u_value_is_required);
       __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 281, __pyx_L1_error)
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 285, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_Raise(__pyx_t_1, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      __PYX_ERR(0, 281, __pyx_L1_error)
+      __PYX_ERR(0, 285, __pyx_L1_error)
 
-      /* "nyoibo/fields.pyx":280
+      /* "nyoibo/fields.pyx":284
  *             return value
  *         if value is None:
  *             if self.required is True:             # <<<<<<<<<<<<<<
@@ -8807,7 +8939,7 @@ PyObject *__pyx_f_6nyoibo_6fields_9LinkField_parse(struct __pyx_obj_6nyoibo_6fie
  */
     }
 
-    /* "nyoibo/fields.pyx":282
+    /* "nyoibo/fields.pyx":286
  *             if self.required is True:
  *                 raise RequiredValueError('value is required')
  *             return value             # <<<<<<<<<<<<<<
@@ -8819,7 +8951,7 @@ PyObject *__pyx_f_6nyoibo_6fields_9LinkField_parse(struct __pyx_obj_6nyoibo_6fie
     __pyx_r = __pyx_v_value;
     goto __pyx_L0;
 
-    /* "nyoibo/fields.pyx":279
+    /* "nyoibo/fields.pyx":283
  *         if isinstance(value, self.to):
  *             return value
  *         if value is None:             # <<<<<<<<<<<<<<
@@ -8828,7 +8960,7 @@ PyObject *__pyx_f_6nyoibo_6fields_9LinkField_parse(struct __pyx_obj_6nyoibo_6fie
  */
   }
 
-  /* "nyoibo/fields.pyx":283
+  /* "nyoibo/fields.pyx":287
  *                 raise RequiredValueError('value is required')
  *             return value
  *         if isinstance(value, dict):             # <<<<<<<<<<<<<<
@@ -8839,17 +8971,17 @@ PyObject *__pyx_f_6nyoibo_6fields_9LinkField_parse(struct __pyx_obj_6nyoibo_6fie
   __pyx_t_6 = (__pyx_t_5 != 0);
   if (__pyx_t_6) {
 
-    /* "nyoibo/fields.pyx":284
+    /* "nyoibo/fields.pyx":288
  *             return value
  *         if isinstance(value, dict):
  *             if value:             # <<<<<<<<<<<<<<
  *                 return self.to(**value)
  *             return None
  */
-    __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_v_value); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 284, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_v_value); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 288, __pyx_L1_error)
     if (__pyx_t_6) {
 
-      /* "nyoibo/fields.pyx":285
+      /* "nyoibo/fields.pyx":289
  *         if isinstance(value, dict):
  *             if value:
  *                 return self.to(**value)             # <<<<<<<<<<<<<<
@@ -8859,23 +8991,23 @@ PyObject *__pyx_f_6nyoibo_6fields_9LinkField_parse(struct __pyx_obj_6nyoibo_6fie
       __Pyx_XDECREF(__pyx_r);
       if (unlikely(__pyx_v_value == Py_None)) {
         PyErr_SetString(PyExc_TypeError, "argument after ** must be a mapping, not NoneType");
-        __PYX_ERR(0, 285, __pyx_L1_error)
+        __PYX_ERR(0, 289, __pyx_L1_error)
       }
       if (likely(PyDict_CheckExact(__pyx_v_value))) {
-        __pyx_t_1 = PyDict_Copy(__pyx_v_value); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 285, __pyx_L1_error)
+        __pyx_t_1 = PyDict_Copy(__pyx_v_value); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 289, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
       } else {
-        __pyx_t_1 = PyObject_CallFunctionObjArgs((PyObject*)&PyDict_Type, __pyx_v_value, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 285, __pyx_L1_error)
+        __pyx_t_1 = PyObject_CallFunctionObjArgs((PyObject*)&PyDict_Type, __pyx_v_value, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 289, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
       }
-      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_v_self->to, __pyx_empty_tuple, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 285, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_v_self->to, __pyx_empty_tuple, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 289, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __pyx_r = __pyx_t_2;
       __pyx_t_2 = 0;
       goto __pyx_L0;
 
-      /* "nyoibo/fields.pyx":284
+      /* "nyoibo/fields.pyx":288
  *             return value
  *         if isinstance(value, dict):
  *             if value:             # <<<<<<<<<<<<<<
@@ -8884,7 +9016,7 @@ PyObject *__pyx_f_6nyoibo_6fields_9LinkField_parse(struct __pyx_obj_6nyoibo_6fie
  */
     }
 
-    /* "nyoibo/fields.pyx":286
+    /* "nyoibo/fields.pyx":290
  *             if value:
  *                 return self.to(**value)
  *             return None             # <<<<<<<<<<<<<<
@@ -8895,7 +9027,7 @@ PyObject *__pyx_f_6nyoibo_6fields_9LinkField_parse(struct __pyx_obj_6nyoibo_6fie
     __pyx_r = Py_None; __Pyx_INCREF(Py_None);
     goto __pyx_L0;
 
-    /* "nyoibo/fields.pyx":283
+    /* "nyoibo/fields.pyx":287
  *                 raise RequiredValueError('value is required')
  *             return value
  *         if isinstance(value, dict):             # <<<<<<<<<<<<<<
@@ -8904,20 +9036,20 @@ PyObject *__pyx_f_6nyoibo_6fields_9LinkField_parse(struct __pyx_obj_6nyoibo_6fie
  */
   }
 
-  /* "nyoibo/fields.pyx":287
+  /* "nyoibo/fields.pyx":291
  *                 return self.to(**value)
  *             return None
  *         raise FieldValueError(f'{type(value)} is not a valid value for '             # <<<<<<<<<<<<<<
  *                               f'{self.__class__.__name__}')
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_FieldValueError); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 287, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_FieldValueError); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 291, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = PyTuple_New(3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 287, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 291, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_7 = 0;
   __pyx_t_8 = 127;
-  __pyx_t_4 = __Pyx_PyObject_FormatSimple(((PyObject *)Py_TYPE(__pyx_v_value)), __pyx_empty_unicode); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 287, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_FormatSimple(((PyObject *)Py_TYPE(__pyx_v_value)), __pyx_empty_unicode); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 291, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_8 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_4) > __pyx_t_8) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_4) : __pyx_t_8;
   __pyx_t_7 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_4);
@@ -8929,19 +9061,19 @@ PyObject *__pyx_f_6nyoibo_6fields_9LinkField_parse(struct __pyx_obj_6nyoibo_6fie
   __Pyx_GIVEREF(__pyx_kp_u_is_not_a_valid_value_for);
   PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_kp_u_is_not_a_valid_value_for);
 
-  /* "nyoibo/fields.pyx":288
+  /* "nyoibo/fields.pyx":292
  *             return None
  *         raise FieldValueError(f'{type(value)} is not a valid value for '
  *                               f'{self.__class__.__name__}')             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_class); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 288, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_class); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 292, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_name_2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 288, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_name_2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 292, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyObject_FormatSimple(__pyx_t_9, __pyx_empty_unicode); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 288, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_FormatSimple(__pyx_t_9, __pyx_empty_unicode); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 292, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
   __pyx_t_8 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_4) > __pyx_t_8) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_4) : __pyx_t_8;
@@ -8950,14 +9082,14 @@ PyObject *__pyx_f_6nyoibo_6fields_9LinkField_parse(struct __pyx_obj_6nyoibo_6fie
   PyTuple_SET_ITEM(__pyx_t_3, 2, __pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "nyoibo/fields.pyx":287
+  /* "nyoibo/fields.pyx":291
  *                 return self.to(**value)
  *             return None
  *         raise FieldValueError(f'{type(value)} is not a valid value for '             # <<<<<<<<<<<<<<
  *                               f'{self.__class__.__name__}')
  * 
  */
-  __pyx_t_4 = __Pyx_PyUnicode_Join(__pyx_t_3, 3, __pyx_t_7, __pyx_t_8); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 287, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyUnicode_Join(__pyx_t_3, 3, __pyx_t_7, __pyx_t_8); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 291, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_3 = NULL;
@@ -8973,14 +9105,14 @@ PyObject *__pyx_f_6nyoibo_6fields_9LinkField_parse(struct __pyx_obj_6nyoibo_6fie
   __pyx_t_2 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_3, __pyx_t_4) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_4);
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 287, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 291, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_Raise(__pyx_t_2, 0, 0, 0);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __PYX_ERR(0, 287, __pyx_L1_error)
+  __PYX_ERR(0, 291, __pyx_L1_error)
 
-  /* "nyoibo/fields.pyx":276
+  /* "nyoibo/fields.pyx":280
  *         self.to = to
  * 
  *     cpdef public parse(self, value):             # <<<<<<<<<<<<<<
@@ -9025,7 +9157,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9LinkField_2parse(struct __pyx_obj_6ny
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("parse", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_6nyoibo_6fields_9LinkField_parse(__pyx_v_self, __pyx_v_value, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 276, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_6nyoibo_6fields_9LinkField_parse(__pyx_v_self, __pyx_v_value, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 280, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -9042,7 +9174,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9LinkField_2parse(struct __pyx_obj_6ny
   return __pyx_r;
 }
 
-/* "nyoibo/fields.pxd":24
+/* "nyoibo/fields.pxd":25
  * 
  * cdef class LinkField(Field):
  *     cdef readonly to             # <<<<<<<<<<<<<<
@@ -9118,13 +9250,13 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9LinkField_4__reduce_cython__(struct _
   /* "(tree fragment)":5
  *     cdef object _dict
  *     cdef bint use_setstate
- *     state = (self.alias, self.choices, self.default_value, self.mutable, self.name, self.private, self.required, self.to)             # <<<<<<<<<<<<<<
+ *     state = (self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.private, self.required, self.to)             # <<<<<<<<<<<<<<
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:
  */
   __pyx_t_1 = __Pyx_PyBool_FromLong(__pyx_v_self->__pyx_base.required); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyTuple_New(8); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 5, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(9); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.alias);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.alias);
@@ -9135,27 +9267,30 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9LinkField_4__reduce_cython__(struct _
   __Pyx_INCREF(__pyx_v_self->__pyx_base.default_value);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.default_value);
   PyTuple_SET_ITEM(__pyx_t_2, 2, __pyx_v_self->__pyx_base.default_value);
+  __Pyx_INCREF(__pyx_v_self->__pyx_base.model);
+  __Pyx_GIVEREF(__pyx_v_self->__pyx_base.model);
+  PyTuple_SET_ITEM(__pyx_t_2, 3, __pyx_v_self->__pyx_base.model);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.mutable);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.mutable);
-  PyTuple_SET_ITEM(__pyx_t_2, 3, __pyx_v_self->__pyx_base.mutable);
+  PyTuple_SET_ITEM(__pyx_t_2, 4, __pyx_v_self->__pyx_base.mutable);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.name);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.name);
-  PyTuple_SET_ITEM(__pyx_t_2, 4, __pyx_v_self->__pyx_base.name);
+  PyTuple_SET_ITEM(__pyx_t_2, 5, __pyx_v_self->__pyx_base.name);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.private);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.private);
-  PyTuple_SET_ITEM(__pyx_t_2, 5, __pyx_v_self->__pyx_base.private);
+  PyTuple_SET_ITEM(__pyx_t_2, 6, __pyx_v_self->__pyx_base.private);
   __Pyx_GIVEREF(__pyx_t_1);
-  PyTuple_SET_ITEM(__pyx_t_2, 6, __pyx_t_1);
+  PyTuple_SET_ITEM(__pyx_t_2, 7, __pyx_t_1);
   __Pyx_INCREF(__pyx_v_self->to);
   __Pyx_GIVEREF(__pyx_v_self->to);
-  PyTuple_SET_ITEM(__pyx_t_2, 7, __pyx_v_self->to);
+  PyTuple_SET_ITEM(__pyx_t_2, 8, __pyx_v_self->to);
   __pyx_t_1 = 0;
   __pyx_v_state = ((PyObject*)__pyx_t_2);
   __pyx_t_2 = 0;
 
   /* "(tree fragment)":6
  *     cdef bint use_setstate
- *     state = (self.alias, self.choices, self.default_value, self.mutable, self.name, self.private, self.required, self.to)
+ *     state = (self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.private, self.required, self.to)
  *     _dict = getattr(self, '__dict__', None)             # <<<<<<<<<<<<<<
  *     if _dict is not None:
  *         state += (_dict,)
@@ -9166,7 +9301,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9LinkField_4__reduce_cython__(struct _
   __pyx_t_2 = 0;
 
   /* "(tree fragment)":7
- *     state = (self.alias, self.choices, self.default_value, self.mutable, self.name, self.private, self.required, self.to)
+ *     state = (self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.private, self.required, self.to)
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
@@ -9199,12 +9334,12 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9LinkField_4__reduce_cython__(struct _
  *         state += (_dict,)
  *         use_setstate = True             # <<<<<<<<<<<<<<
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None or self.to is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None or self.to is not None
  */
     __pyx_v_use_setstate = 1;
 
     /* "(tree fragment)":7
- *     state = (self.alias, self.choices, self.default_value, self.mutable, self.name, self.private, self.required, self.to)
+ *     state = (self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.private, self.required, self.to)
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
@@ -9216,9 +9351,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9LinkField_4__reduce_cython__(struct _
   /* "(tree fragment)":11
  *         use_setstate = True
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None or self.to is not None             # <<<<<<<<<<<<<<
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None or self.to is not None             # <<<<<<<<<<<<<<
  *     if use_setstate:
- *         return __pyx_unpickle_LinkField, (type(self), 0x3ae680a, None), state
+ *         return __pyx_unpickle_LinkField, (type(self), 0x8502f27, None), state
  */
   /*else*/ {
     __pyx_t_3 = (__pyx_v_self->__pyx_base.alias != Py_None);
@@ -9242,30 +9377,37 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9LinkField_4__reduce_cython__(struct _
       __pyx_t_4 = __pyx_t_5;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_5 = (__pyx_v_self->__pyx_base.mutable != Py_None);
+    __pyx_t_5 = (__pyx_v_self->__pyx_base.model != Py_None);
     __pyx_t_3 = (__pyx_t_5 != 0);
     if (!__pyx_t_3) {
     } else {
       __pyx_t_4 = __pyx_t_3;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_3 = (__pyx_v_self->__pyx_base.name != ((PyObject*)Py_None));
+    __pyx_t_3 = (__pyx_v_self->__pyx_base.mutable != Py_None);
     __pyx_t_5 = (__pyx_t_3 != 0);
     if (!__pyx_t_5) {
     } else {
       __pyx_t_4 = __pyx_t_5;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_5 = (__pyx_v_self->__pyx_base.private != Py_None);
+    __pyx_t_5 = (__pyx_v_self->__pyx_base.name != ((PyObject*)Py_None));
     __pyx_t_3 = (__pyx_t_5 != 0);
     if (!__pyx_t_3) {
     } else {
       __pyx_t_4 = __pyx_t_3;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_3 = (__pyx_v_self->to != Py_None);
+    __pyx_t_3 = (__pyx_v_self->__pyx_base.private != Py_None);
     __pyx_t_5 = (__pyx_t_3 != 0);
-    __pyx_t_4 = __pyx_t_5;
+    if (!__pyx_t_5) {
+    } else {
+      __pyx_t_4 = __pyx_t_5;
+      goto __pyx_L4_bool_binop_done;
+    }
+    __pyx_t_5 = (__pyx_v_self->to != Py_None);
+    __pyx_t_3 = (__pyx_t_5 != 0);
+    __pyx_t_4 = __pyx_t_3;
     __pyx_L4_bool_binop_done:;
     __pyx_v_use_setstate = __pyx_t_4;
   }
@@ -9273,20 +9415,20 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9LinkField_4__reduce_cython__(struct _
 
   /* "(tree fragment)":12
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None or self.to is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None or self.to is not None
  *     if use_setstate:             # <<<<<<<<<<<<<<
- *         return __pyx_unpickle_LinkField, (type(self), 0x3ae680a, None), state
+ *         return __pyx_unpickle_LinkField, (type(self), 0x8502f27, None), state
  *     else:
  */
   __pyx_t_4 = (__pyx_v_use_setstate != 0);
   if (__pyx_t_4) {
 
     /* "(tree fragment)":13
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None or self.to is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None or self.to is not None
  *     if use_setstate:
- *         return __pyx_unpickle_LinkField, (type(self), 0x3ae680a, None), state             # <<<<<<<<<<<<<<
+ *         return __pyx_unpickle_LinkField, (type(self), 0x8502f27, None), state             # <<<<<<<<<<<<<<
  *     else:
- *         return __pyx_unpickle_LinkField, (type(self), 0x3ae680a, state)
+ *         return __pyx_unpickle_LinkField, (type(self), 0x8502f27, state)
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_pyx_unpickle_LinkField); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 13, __pyx_L1_error)
@@ -9296,9 +9438,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9LinkField_4__reduce_cython__(struct _
     __Pyx_INCREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     __Pyx_GIVEREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
-    __Pyx_INCREF(__pyx_int_61761546);
-    __Pyx_GIVEREF(__pyx_int_61761546);
-    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_61761546);
+    __Pyx_INCREF(__pyx_int_139472679);
+    __Pyx_GIVEREF(__pyx_int_139472679);
+    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_139472679);
     __Pyx_INCREF(Py_None);
     __Pyx_GIVEREF(Py_None);
     PyTuple_SET_ITEM(__pyx_t_2, 2, Py_None);
@@ -9319,17 +9461,17 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9LinkField_4__reduce_cython__(struct _
 
     /* "(tree fragment)":12
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None or self.to is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None or self.to is not None
  *     if use_setstate:             # <<<<<<<<<<<<<<
- *         return __pyx_unpickle_LinkField, (type(self), 0x3ae680a, None), state
+ *         return __pyx_unpickle_LinkField, (type(self), 0x8502f27, None), state
  *     else:
  */
   }
 
   /* "(tree fragment)":15
- *         return __pyx_unpickle_LinkField, (type(self), 0x3ae680a, None), state
+ *         return __pyx_unpickle_LinkField, (type(self), 0x8502f27, None), state
  *     else:
- *         return __pyx_unpickle_LinkField, (type(self), 0x3ae680a, state)             # <<<<<<<<<<<<<<
+ *         return __pyx_unpickle_LinkField, (type(self), 0x8502f27, state)             # <<<<<<<<<<<<<<
  * def __setstate_cython__(self, __pyx_state):
  *     __pyx_unpickle_LinkField__set_state(self, __pyx_state)
  */
@@ -9342,9 +9484,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9LinkField_4__reduce_cython__(struct _
     __Pyx_INCREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     __Pyx_GIVEREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
-    __Pyx_INCREF(__pyx_int_61761546);
-    __Pyx_GIVEREF(__pyx_int_61761546);
-    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_61761546);
+    __Pyx_INCREF(__pyx_int_139472679);
+    __Pyx_GIVEREF(__pyx_int_139472679);
+    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_139472679);
     __Pyx_INCREF(__pyx_v_state);
     __Pyx_GIVEREF(__pyx_v_state);
     PyTuple_SET_ITEM(__pyx_t_2, 2, __pyx_v_state);
@@ -9384,7 +9526,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9LinkField_4__reduce_cython__(struct _
 
 /* "(tree fragment)":16
  *     else:
- *         return __pyx_unpickle_LinkField, (type(self), 0x3ae680a, state)
+ *         return __pyx_unpickle_LinkField, (type(self), 0x8502f27, state)
  * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_LinkField__set_state(self, __pyx_state)
  */
@@ -9412,7 +9554,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9LinkField_6__setstate_cython__(struct
   __Pyx_RefNannySetupContext("__setstate_cython__", 0);
 
   /* "(tree fragment)":17
- *         return __pyx_unpickle_LinkField, (type(self), 0x3ae680a, state)
+ *         return __pyx_unpickle_LinkField, (type(self), 0x8502f27, state)
  * def __setstate_cython__(self, __pyx_state):
  *     __pyx_unpickle_LinkField__set_state(self, __pyx_state)             # <<<<<<<<<<<<<<
  */
@@ -9423,7 +9565,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9LinkField_6__setstate_cython__(struct
 
   /* "(tree fragment)":16
  *     else:
- *         return __pyx_unpickle_LinkField, (type(self), 0x3ae680a, state)
+ *         return __pyx_unpickle_LinkField, (type(self), 0x8502f27, state)
  * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_LinkField__set_state(self, __pyx_state)
  */
@@ -9480,13 +9622,13 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9DictField___reduce_cython__(struct __
   /* "(tree fragment)":5
  *     cdef object _dict
  *     cdef bint use_setstate
- *     state = (self.alias, self.choices, self.default_value, self.mutable, self.name, self.private, self.required)             # <<<<<<<<<<<<<<
+ *     state = (self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.private, self.required)             # <<<<<<<<<<<<<<
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:
  */
   __pyx_t_1 = __Pyx_PyBool_FromLong(__pyx_v_self->__pyx_base.required); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyTuple_New(7); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 5, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(8); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.alias);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.alias);
@@ -9497,24 +9639,27 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9DictField___reduce_cython__(struct __
   __Pyx_INCREF(__pyx_v_self->__pyx_base.default_value);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.default_value);
   PyTuple_SET_ITEM(__pyx_t_2, 2, __pyx_v_self->__pyx_base.default_value);
+  __Pyx_INCREF(__pyx_v_self->__pyx_base.model);
+  __Pyx_GIVEREF(__pyx_v_self->__pyx_base.model);
+  PyTuple_SET_ITEM(__pyx_t_2, 3, __pyx_v_self->__pyx_base.model);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.mutable);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.mutable);
-  PyTuple_SET_ITEM(__pyx_t_2, 3, __pyx_v_self->__pyx_base.mutable);
+  PyTuple_SET_ITEM(__pyx_t_2, 4, __pyx_v_self->__pyx_base.mutable);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.name);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.name);
-  PyTuple_SET_ITEM(__pyx_t_2, 4, __pyx_v_self->__pyx_base.name);
+  PyTuple_SET_ITEM(__pyx_t_2, 5, __pyx_v_self->__pyx_base.name);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.private);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.private);
-  PyTuple_SET_ITEM(__pyx_t_2, 5, __pyx_v_self->__pyx_base.private);
+  PyTuple_SET_ITEM(__pyx_t_2, 6, __pyx_v_self->__pyx_base.private);
   __Pyx_GIVEREF(__pyx_t_1);
-  PyTuple_SET_ITEM(__pyx_t_2, 6, __pyx_t_1);
+  PyTuple_SET_ITEM(__pyx_t_2, 7, __pyx_t_1);
   __pyx_t_1 = 0;
   __pyx_v_state = ((PyObject*)__pyx_t_2);
   __pyx_t_2 = 0;
 
   /* "(tree fragment)":6
  *     cdef bint use_setstate
- *     state = (self.alias, self.choices, self.default_value, self.mutable, self.name, self.private, self.required)
+ *     state = (self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.private, self.required)
  *     _dict = getattr(self, '__dict__', None)             # <<<<<<<<<<<<<<
  *     if _dict is not None:
  *         state += (_dict,)
@@ -9525,7 +9670,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9DictField___reduce_cython__(struct __
   __pyx_t_2 = 0;
 
   /* "(tree fragment)":7
- *     state = (self.alias, self.choices, self.default_value, self.mutable, self.name, self.private, self.required)
+ *     state = (self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.private, self.required)
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
@@ -9558,12 +9703,12 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9DictField___reduce_cython__(struct __
  *         state += (_dict,)
  *         use_setstate = True             # <<<<<<<<<<<<<<
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  */
     __pyx_v_use_setstate = 1;
 
     /* "(tree fragment)":7
- *     state = (self.alias, self.choices, self.default_value, self.mutable, self.name, self.private, self.required)
+ *     state = (self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.private, self.required)
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
@@ -9575,9 +9720,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9DictField___reduce_cython__(struct __
   /* "(tree fragment)":11
  *         use_setstate = True
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None             # <<<<<<<<<<<<<<
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None             # <<<<<<<<<<<<<<
  *     if use_setstate:
- *         return __pyx_unpickle_DictField, (type(self), 0xefd9ffe, None), state
+ *         return __pyx_unpickle_DictField, (type(self), 0xb3dbdb0, None), state
  */
   /*else*/ {
     __pyx_t_3 = (__pyx_v_self->__pyx_base.alias != Py_None);
@@ -9601,23 +9746,30 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9DictField___reduce_cython__(struct __
       __pyx_t_4 = __pyx_t_5;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_5 = (__pyx_v_self->__pyx_base.mutable != Py_None);
+    __pyx_t_5 = (__pyx_v_self->__pyx_base.model != Py_None);
     __pyx_t_3 = (__pyx_t_5 != 0);
     if (!__pyx_t_3) {
     } else {
       __pyx_t_4 = __pyx_t_3;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_3 = (__pyx_v_self->__pyx_base.name != ((PyObject*)Py_None));
+    __pyx_t_3 = (__pyx_v_self->__pyx_base.mutable != Py_None);
     __pyx_t_5 = (__pyx_t_3 != 0);
     if (!__pyx_t_5) {
     } else {
       __pyx_t_4 = __pyx_t_5;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_5 = (__pyx_v_self->__pyx_base.private != Py_None);
+    __pyx_t_5 = (__pyx_v_self->__pyx_base.name != ((PyObject*)Py_None));
     __pyx_t_3 = (__pyx_t_5 != 0);
-    __pyx_t_4 = __pyx_t_3;
+    if (!__pyx_t_3) {
+    } else {
+      __pyx_t_4 = __pyx_t_3;
+      goto __pyx_L4_bool_binop_done;
+    }
+    __pyx_t_3 = (__pyx_v_self->__pyx_base.private != Py_None);
+    __pyx_t_5 = (__pyx_t_3 != 0);
+    __pyx_t_4 = __pyx_t_5;
     __pyx_L4_bool_binop_done:;
     __pyx_v_use_setstate = __pyx_t_4;
   }
@@ -9625,20 +9777,20 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9DictField___reduce_cython__(struct __
 
   /* "(tree fragment)":12
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  *     if use_setstate:             # <<<<<<<<<<<<<<
- *         return __pyx_unpickle_DictField, (type(self), 0xefd9ffe, None), state
+ *         return __pyx_unpickle_DictField, (type(self), 0xb3dbdb0, None), state
  *     else:
  */
   __pyx_t_4 = (__pyx_v_use_setstate != 0);
   if (__pyx_t_4) {
 
     /* "(tree fragment)":13
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  *     if use_setstate:
- *         return __pyx_unpickle_DictField, (type(self), 0xefd9ffe, None), state             # <<<<<<<<<<<<<<
+ *         return __pyx_unpickle_DictField, (type(self), 0xb3dbdb0, None), state             # <<<<<<<<<<<<<<
  *     else:
- *         return __pyx_unpickle_DictField, (type(self), 0xefd9ffe, state)
+ *         return __pyx_unpickle_DictField, (type(self), 0xb3dbdb0, state)
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_pyx_unpickle_DictField); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 13, __pyx_L1_error)
@@ -9648,9 +9800,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9DictField___reduce_cython__(struct __
     __Pyx_INCREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     __Pyx_GIVEREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
-    __Pyx_INCREF(__pyx_int_251502590);
-    __Pyx_GIVEREF(__pyx_int_251502590);
-    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_251502590);
+    __Pyx_INCREF(__pyx_int_188595632);
+    __Pyx_GIVEREF(__pyx_int_188595632);
+    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_188595632);
     __Pyx_INCREF(Py_None);
     __Pyx_GIVEREF(Py_None);
     PyTuple_SET_ITEM(__pyx_t_2, 2, Py_None);
@@ -9671,17 +9823,17 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9DictField___reduce_cython__(struct __
 
     /* "(tree fragment)":12
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  *     if use_setstate:             # <<<<<<<<<<<<<<
- *         return __pyx_unpickle_DictField, (type(self), 0xefd9ffe, None), state
+ *         return __pyx_unpickle_DictField, (type(self), 0xb3dbdb0, None), state
  *     else:
  */
   }
 
   /* "(tree fragment)":15
- *         return __pyx_unpickle_DictField, (type(self), 0xefd9ffe, None), state
+ *         return __pyx_unpickle_DictField, (type(self), 0xb3dbdb0, None), state
  *     else:
- *         return __pyx_unpickle_DictField, (type(self), 0xefd9ffe, state)             # <<<<<<<<<<<<<<
+ *         return __pyx_unpickle_DictField, (type(self), 0xb3dbdb0, state)             # <<<<<<<<<<<<<<
  * def __setstate_cython__(self, __pyx_state):
  *     __pyx_unpickle_DictField__set_state(self, __pyx_state)
  */
@@ -9694,9 +9846,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9DictField___reduce_cython__(struct __
     __Pyx_INCREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     __Pyx_GIVEREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
-    __Pyx_INCREF(__pyx_int_251502590);
-    __Pyx_GIVEREF(__pyx_int_251502590);
-    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_251502590);
+    __Pyx_INCREF(__pyx_int_188595632);
+    __Pyx_GIVEREF(__pyx_int_188595632);
+    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_188595632);
     __Pyx_INCREF(__pyx_v_state);
     __Pyx_GIVEREF(__pyx_v_state);
     PyTuple_SET_ITEM(__pyx_t_2, 2, __pyx_v_state);
@@ -9736,7 +9888,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9DictField___reduce_cython__(struct __
 
 /* "(tree fragment)":16
  *     else:
- *         return __pyx_unpickle_DictField, (type(self), 0xefd9ffe, state)
+ *         return __pyx_unpickle_DictField, (type(self), 0xb3dbdb0, state)
  * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_DictField__set_state(self, __pyx_state)
  */
@@ -9764,7 +9916,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9DictField_2__setstate_cython__(struct
   __Pyx_RefNannySetupContext("__setstate_cython__", 0);
 
   /* "(tree fragment)":17
- *         return __pyx_unpickle_DictField, (type(self), 0xefd9ffe, state)
+ *         return __pyx_unpickle_DictField, (type(self), 0xb3dbdb0, state)
  * def __setstate_cython__(self, __pyx_state):
  *     __pyx_unpickle_DictField__set_state(self, __pyx_state)             # <<<<<<<<<<<<<<
  */
@@ -9775,7 +9927,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9DictField_2__setstate_cython__(struct
 
   /* "(tree fragment)":16
  *     else:
- *         return __pyx_unpickle_DictField, (type(self), 0xefd9ffe, state)
+ *         return __pyx_unpickle_DictField, (type(self), 0xb3dbdb0, state)
  * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_DictField__set_state(self, __pyx_state)
  */
@@ -9793,7 +9945,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9DictField_2__setstate_cython__(struct
   return __pyx_r;
 }
 
-/* "nyoibo/fields.pyx":304
+/* "nyoibo/fields.pyx":308
  *     _internal_type = str
  * 
  *     cdef _parse(self, value):             # <<<<<<<<<<<<<<
@@ -9822,7 +9974,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_9JSONField__parse(struct __pyx_obj_6nyo
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_parse", 0);
 
-  /* "nyoibo/fields.pyx":305
+  /* "nyoibo/fields.pyx":309
  * 
  *     cdef _parse(self, value):
  *         try:             # <<<<<<<<<<<<<<
@@ -9838,7 +9990,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_9JSONField__parse(struct __pyx_obj_6nyo
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "nyoibo/fields.pyx":306
+      /* "nyoibo/fields.pyx":310
  *     cdef _parse(self, value):
  *         try:
  *             return json.dumps(value)             # <<<<<<<<<<<<<<
@@ -9846,9 +9998,9 @@ static PyObject *__pyx_f_6nyoibo_6fields_9JSONField__parse(struct __pyx_obj_6nyo
  *             raise FieldValueError(f'data {value} is not serializable')
  */
       __Pyx_XDECREF(__pyx_r);
-      __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_json); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 306, __pyx_L3_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_json); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 310, __pyx_L3_error)
       __Pyx_GOTREF(__pyx_t_5);
-      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_dumps); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 306, __pyx_L3_error)
+      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_dumps); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 310, __pyx_L3_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       __pyx_t_5 = NULL;
@@ -9863,14 +10015,14 @@ static PyObject *__pyx_f_6nyoibo_6fields_9JSONField__parse(struct __pyx_obj_6nyo
       }
       __pyx_t_4 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_5, __pyx_v_value) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_v_value);
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-      if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 306, __pyx_L3_error)
+      if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 310, __pyx_L3_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       __pyx_r = __pyx_t_4;
       __pyx_t_4 = 0;
       goto __pyx_L7_try_return;
 
-      /* "nyoibo/fields.pyx":305
+      /* "nyoibo/fields.pyx":309
  * 
  *     cdef _parse(self, value):
  *         try:             # <<<<<<<<<<<<<<
@@ -9883,7 +10035,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_9JSONField__parse(struct __pyx_obj_6nyo
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-    /* "nyoibo/fields.pyx":307
+    /* "nyoibo/fields.pyx":311
  *         try:
  *             return json.dumps(value)
  *         except self._exceptions:             # <<<<<<<<<<<<<<
@@ -9891,7 +10043,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_9JSONField__parse(struct __pyx_obj_6nyo
  * 
  */
     __Pyx_ErrFetch(&__pyx_t_4, &__pyx_t_6, &__pyx_t_5);
-    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_exceptions); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 307, __pyx_L5_except_error)
+    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_exceptions); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 311, __pyx_L5_except_error)
     __Pyx_GOTREF(__pyx_t_7);
     __pyx_t_8 = __Pyx_PyErr_GivenExceptionMatches(__pyx_t_4, __pyx_t_7);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -9899,21 +10051,21 @@ static PyObject *__pyx_f_6nyoibo_6fields_9JSONField__parse(struct __pyx_obj_6nyo
     __pyx_t_4 = 0; __pyx_t_6 = 0; __pyx_t_5 = 0;
     if (__pyx_t_8) {
       __Pyx_AddTraceback("nyoibo.fields.JSONField._parse", __pyx_clineno, __pyx_lineno, __pyx_filename);
-      if (__Pyx_GetException(&__pyx_t_5, &__pyx_t_6, &__pyx_t_4) < 0) __PYX_ERR(0, 307, __pyx_L5_except_error)
+      if (__Pyx_GetException(&__pyx_t_5, &__pyx_t_6, &__pyx_t_4) < 0) __PYX_ERR(0, 311, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_4);
 
-      /* "nyoibo/fields.pyx":308
+      /* "nyoibo/fields.pyx":312
  *             return json.dumps(value)
  *         except self._exceptions:
  *             raise FieldValueError(f'data {value} is not serializable')             # <<<<<<<<<<<<<<
  * 
  * 
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_FieldValueError); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 308, __pyx_L5_except_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_FieldValueError); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 312, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_9);
-      __pyx_t_10 = PyTuple_New(3); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 308, __pyx_L5_except_error)
+      __pyx_t_10 = PyTuple_New(3); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 312, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_10);
       __pyx_t_11 = 0;
       __pyx_t_12 = 127;
@@ -9921,7 +10073,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_9JSONField__parse(struct __pyx_obj_6nyo
       __pyx_t_11 += 5;
       __Pyx_GIVEREF(__pyx_kp_u_data);
       PyTuple_SET_ITEM(__pyx_t_10, 0, __pyx_kp_u_data);
-      __pyx_t_13 = __Pyx_PyObject_FormatSimple(__pyx_v_value, __pyx_empty_unicode); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 308, __pyx_L5_except_error)
+      __pyx_t_13 = __Pyx_PyObject_FormatSimple(__pyx_v_value, __pyx_empty_unicode); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 312, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_13);
       __pyx_t_12 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_13) > __pyx_t_12) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_13) : __pyx_t_12;
       __pyx_t_11 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_13);
@@ -9932,7 +10084,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_9JSONField__parse(struct __pyx_obj_6nyo
       __pyx_t_11 += 20;
       __Pyx_GIVEREF(__pyx_kp_u_is_not_serializable);
       PyTuple_SET_ITEM(__pyx_t_10, 2, __pyx_kp_u_is_not_serializable);
-      __pyx_t_13 = __Pyx_PyUnicode_Join(__pyx_t_10, 3, __pyx_t_11, __pyx_t_12); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 308, __pyx_L5_except_error)
+      __pyx_t_13 = __Pyx_PyUnicode_Join(__pyx_t_10, 3, __pyx_t_11, __pyx_t_12); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 312, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_13);
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
       __pyx_t_10 = NULL;
@@ -9948,17 +10100,17 @@ static PyObject *__pyx_f_6nyoibo_6fields_9JSONField__parse(struct __pyx_obj_6nyo
       __pyx_t_7 = (__pyx_t_10) ? __Pyx_PyObject_Call2Args(__pyx_t_9, __pyx_t_10, __pyx_t_13) : __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_t_13);
       __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
       __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
-      if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 308, __pyx_L5_except_error)
+      if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 312, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
       __Pyx_Raise(__pyx_t_7, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-      __PYX_ERR(0, 308, __pyx_L5_except_error)
+      __PYX_ERR(0, 312, __pyx_L5_except_error)
     }
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "nyoibo/fields.pyx":305
+    /* "nyoibo/fields.pyx":309
  * 
  *     cdef _parse(self, value):
  *         try:             # <<<<<<<<<<<<<<
@@ -9978,7 +10130,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_9JSONField__parse(struct __pyx_obj_6nyo
     goto __pyx_L0;
   }
 
-  /* "nyoibo/fields.pyx":304
+  /* "nyoibo/fields.pyx":308
  *     _internal_type = str
  * 
  *     cdef _parse(self, value):             # <<<<<<<<<<<<<<
@@ -10042,13 +10194,13 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9JSONField___reduce_cython__(struct __
   /* "(tree fragment)":5
  *     cdef object _dict
  *     cdef bint use_setstate
- *     state = (self.alias, self.choices, self.default_value, self.mutable, self.name, self.private, self.required)             # <<<<<<<<<<<<<<
+ *     state = (self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.private, self.required)             # <<<<<<<<<<<<<<
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:
  */
   __pyx_t_1 = __Pyx_PyBool_FromLong(__pyx_v_self->__pyx_base.required); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyTuple_New(7); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 5, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(8); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.alias);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.alias);
@@ -10059,24 +10211,27 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9JSONField___reduce_cython__(struct __
   __Pyx_INCREF(__pyx_v_self->__pyx_base.default_value);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.default_value);
   PyTuple_SET_ITEM(__pyx_t_2, 2, __pyx_v_self->__pyx_base.default_value);
+  __Pyx_INCREF(__pyx_v_self->__pyx_base.model);
+  __Pyx_GIVEREF(__pyx_v_self->__pyx_base.model);
+  PyTuple_SET_ITEM(__pyx_t_2, 3, __pyx_v_self->__pyx_base.model);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.mutable);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.mutable);
-  PyTuple_SET_ITEM(__pyx_t_2, 3, __pyx_v_self->__pyx_base.mutable);
+  PyTuple_SET_ITEM(__pyx_t_2, 4, __pyx_v_self->__pyx_base.mutable);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.name);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.name);
-  PyTuple_SET_ITEM(__pyx_t_2, 4, __pyx_v_self->__pyx_base.name);
+  PyTuple_SET_ITEM(__pyx_t_2, 5, __pyx_v_self->__pyx_base.name);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.private);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.private);
-  PyTuple_SET_ITEM(__pyx_t_2, 5, __pyx_v_self->__pyx_base.private);
+  PyTuple_SET_ITEM(__pyx_t_2, 6, __pyx_v_self->__pyx_base.private);
   __Pyx_GIVEREF(__pyx_t_1);
-  PyTuple_SET_ITEM(__pyx_t_2, 6, __pyx_t_1);
+  PyTuple_SET_ITEM(__pyx_t_2, 7, __pyx_t_1);
   __pyx_t_1 = 0;
   __pyx_v_state = ((PyObject*)__pyx_t_2);
   __pyx_t_2 = 0;
 
   /* "(tree fragment)":6
  *     cdef bint use_setstate
- *     state = (self.alias, self.choices, self.default_value, self.mutable, self.name, self.private, self.required)
+ *     state = (self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.private, self.required)
  *     _dict = getattr(self, '__dict__', None)             # <<<<<<<<<<<<<<
  *     if _dict is not None:
  *         state += (_dict,)
@@ -10087,7 +10242,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9JSONField___reduce_cython__(struct __
   __pyx_t_2 = 0;
 
   /* "(tree fragment)":7
- *     state = (self.alias, self.choices, self.default_value, self.mutable, self.name, self.private, self.required)
+ *     state = (self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.private, self.required)
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
@@ -10120,12 +10275,12 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9JSONField___reduce_cython__(struct __
  *         state += (_dict,)
  *         use_setstate = True             # <<<<<<<<<<<<<<
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  */
     __pyx_v_use_setstate = 1;
 
     /* "(tree fragment)":7
- *     state = (self.alias, self.choices, self.default_value, self.mutable, self.name, self.private, self.required)
+ *     state = (self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.private, self.required)
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
@@ -10137,9 +10292,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9JSONField___reduce_cython__(struct __
   /* "(tree fragment)":11
  *         use_setstate = True
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None             # <<<<<<<<<<<<<<
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None             # <<<<<<<<<<<<<<
  *     if use_setstate:
- *         return __pyx_unpickle_JSONField, (type(self), 0xefd9ffe, None), state
+ *         return __pyx_unpickle_JSONField, (type(self), 0xb3dbdb0, None), state
  */
   /*else*/ {
     __pyx_t_3 = (__pyx_v_self->__pyx_base.alias != Py_None);
@@ -10163,23 +10318,30 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9JSONField___reduce_cython__(struct __
       __pyx_t_4 = __pyx_t_5;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_5 = (__pyx_v_self->__pyx_base.mutable != Py_None);
+    __pyx_t_5 = (__pyx_v_self->__pyx_base.model != Py_None);
     __pyx_t_3 = (__pyx_t_5 != 0);
     if (!__pyx_t_3) {
     } else {
       __pyx_t_4 = __pyx_t_3;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_3 = (__pyx_v_self->__pyx_base.name != ((PyObject*)Py_None));
+    __pyx_t_3 = (__pyx_v_self->__pyx_base.mutable != Py_None);
     __pyx_t_5 = (__pyx_t_3 != 0);
     if (!__pyx_t_5) {
     } else {
       __pyx_t_4 = __pyx_t_5;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_5 = (__pyx_v_self->__pyx_base.private != Py_None);
+    __pyx_t_5 = (__pyx_v_self->__pyx_base.name != ((PyObject*)Py_None));
     __pyx_t_3 = (__pyx_t_5 != 0);
-    __pyx_t_4 = __pyx_t_3;
+    if (!__pyx_t_3) {
+    } else {
+      __pyx_t_4 = __pyx_t_3;
+      goto __pyx_L4_bool_binop_done;
+    }
+    __pyx_t_3 = (__pyx_v_self->__pyx_base.private != Py_None);
+    __pyx_t_5 = (__pyx_t_3 != 0);
+    __pyx_t_4 = __pyx_t_5;
     __pyx_L4_bool_binop_done:;
     __pyx_v_use_setstate = __pyx_t_4;
   }
@@ -10187,20 +10349,20 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9JSONField___reduce_cython__(struct __
 
   /* "(tree fragment)":12
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  *     if use_setstate:             # <<<<<<<<<<<<<<
- *         return __pyx_unpickle_JSONField, (type(self), 0xefd9ffe, None), state
+ *         return __pyx_unpickle_JSONField, (type(self), 0xb3dbdb0, None), state
  *     else:
  */
   __pyx_t_4 = (__pyx_v_use_setstate != 0);
   if (__pyx_t_4) {
 
     /* "(tree fragment)":13
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  *     if use_setstate:
- *         return __pyx_unpickle_JSONField, (type(self), 0xefd9ffe, None), state             # <<<<<<<<<<<<<<
+ *         return __pyx_unpickle_JSONField, (type(self), 0xb3dbdb0, None), state             # <<<<<<<<<<<<<<
  *     else:
- *         return __pyx_unpickle_JSONField, (type(self), 0xefd9ffe, state)
+ *         return __pyx_unpickle_JSONField, (type(self), 0xb3dbdb0, state)
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_pyx_unpickle_JSONField); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 13, __pyx_L1_error)
@@ -10210,9 +10372,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9JSONField___reduce_cython__(struct __
     __Pyx_INCREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     __Pyx_GIVEREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
-    __Pyx_INCREF(__pyx_int_251502590);
-    __Pyx_GIVEREF(__pyx_int_251502590);
-    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_251502590);
+    __Pyx_INCREF(__pyx_int_188595632);
+    __Pyx_GIVEREF(__pyx_int_188595632);
+    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_188595632);
     __Pyx_INCREF(Py_None);
     __Pyx_GIVEREF(Py_None);
     PyTuple_SET_ITEM(__pyx_t_2, 2, Py_None);
@@ -10233,17 +10395,17 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9JSONField___reduce_cython__(struct __
 
     /* "(tree fragment)":12
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.private is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.private is not None
  *     if use_setstate:             # <<<<<<<<<<<<<<
- *         return __pyx_unpickle_JSONField, (type(self), 0xefd9ffe, None), state
+ *         return __pyx_unpickle_JSONField, (type(self), 0xb3dbdb0, None), state
  *     else:
  */
   }
 
   /* "(tree fragment)":15
- *         return __pyx_unpickle_JSONField, (type(self), 0xefd9ffe, None), state
+ *         return __pyx_unpickle_JSONField, (type(self), 0xb3dbdb0, None), state
  *     else:
- *         return __pyx_unpickle_JSONField, (type(self), 0xefd9ffe, state)             # <<<<<<<<<<<<<<
+ *         return __pyx_unpickle_JSONField, (type(self), 0xb3dbdb0, state)             # <<<<<<<<<<<<<<
  * def __setstate_cython__(self, __pyx_state):
  *     __pyx_unpickle_JSONField__set_state(self, __pyx_state)
  */
@@ -10256,9 +10418,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9JSONField___reduce_cython__(struct __
     __Pyx_INCREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     __Pyx_GIVEREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
-    __Pyx_INCREF(__pyx_int_251502590);
-    __Pyx_GIVEREF(__pyx_int_251502590);
-    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_251502590);
+    __Pyx_INCREF(__pyx_int_188595632);
+    __Pyx_GIVEREF(__pyx_int_188595632);
+    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_188595632);
     __Pyx_INCREF(__pyx_v_state);
     __Pyx_GIVEREF(__pyx_v_state);
     PyTuple_SET_ITEM(__pyx_t_2, 2, __pyx_v_state);
@@ -10298,7 +10460,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9JSONField___reduce_cython__(struct __
 
 /* "(tree fragment)":16
  *     else:
- *         return __pyx_unpickle_JSONField, (type(self), 0xefd9ffe, state)
+ *         return __pyx_unpickle_JSONField, (type(self), 0xb3dbdb0, state)
  * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_JSONField__set_state(self, __pyx_state)
  */
@@ -10326,7 +10488,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9JSONField_2__setstate_cython__(struct
   __Pyx_RefNannySetupContext("__setstate_cython__", 0);
 
   /* "(tree fragment)":17
- *         return __pyx_unpickle_JSONField, (type(self), 0xefd9ffe, state)
+ *         return __pyx_unpickle_JSONField, (type(self), 0xb3dbdb0, state)
  * def __setstate_cython__(self, __pyx_state):
  *     __pyx_unpickle_JSONField__set_state(self, __pyx_state)             # <<<<<<<<<<<<<<
  */
@@ -10337,7 +10499,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9JSONField_2__setstate_cython__(struct
 
   /* "(tree fragment)":16
  *     else:
- *         return __pyx_unpickle_JSONField, (type(self), 0xefd9ffe, state)
+ *         return __pyx_unpickle_JSONField, (type(self), 0xb3dbdb0, state)
  * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_JSONField__set_state(self, __pyx_state)
  */
@@ -10355,7 +10517,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9JSONField_2__setstate_cython__(struct
   return __pyx_r;
 }
 
-/* "nyoibo/fields.pyx":325
+/* "nyoibo/fields.pyx":329
  *     _internal_type = tuple
  * 
  *     def __init__(self, of=None, reverse_relationship=False, *args, **kwargs):             # <<<<<<<<<<<<<<
@@ -10421,7 +10583,7 @@ static int __pyx_pw_6nyoibo_6fields_10TupleField_1__init__(PyObject *__pyx_v_sel
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t used_pos_args = (pos_args < 2) ? pos_args : 2;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, __pyx_v_kwargs, values, used_pos_args, "__init__") < 0)) __PYX_ERR(0, 325, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, __pyx_v_kwargs, values, used_pos_args, "__init__") < 0)) __PYX_ERR(0, 329, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -10467,14 +10629,14 @@ static int __pyx_pf_6nyoibo_6fields_10TupleField___init__(struct __pyx_obj_6nyoi
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "nyoibo/fields.pyx":326
+  /* "nyoibo/fields.pyx":330
  * 
  *     def __init__(self, of=None, reverse_relationship=False, *args, **kwargs):
  *         if reverse_relationship and of is None:             # <<<<<<<<<<<<<<
  *             raise ValueError('to make a reverse relationship, `of` parameter must to be set')
  *         super().__init__(*args, **kwargs)
  */
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_reverse_relationship); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 326, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_reverse_relationship); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 330, __pyx_L1_error)
   if (__pyx_t_2) {
   } else {
     __pyx_t_1 = __pyx_t_2;
@@ -10486,20 +10648,20 @@ static int __pyx_pf_6nyoibo_6fields_10TupleField___init__(struct __pyx_obj_6nyoi
   __pyx_L4_bool_binop_done:;
   if (unlikely(__pyx_t_1)) {
 
-    /* "nyoibo/fields.pyx":327
+    /* "nyoibo/fields.pyx":331
  *     def __init__(self, of=None, reverse_relationship=False, *args, **kwargs):
  *         if reverse_relationship and of is None:
  *             raise ValueError('to make a reverse relationship, `of` parameter must to be set')             # <<<<<<<<<<<<<<
  *         super().__init__(*args, **kwargs)
  *         self.of = of
  */
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 327, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__7, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 331, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_Raise(__pyx_t_4, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __PYX_ERR(0, 327, __pyx_L1_error)
+    __PYX_ERR(0, 331, __pyx_L1_error)
 
-    /* "nyoibo/fields.pyx":326
+    /* "nyoibo/fields.pyx":330
  * 
  *     def __init__(self, of=None, reverse_relationship=False, *args, **kwargs):
  *         if reverse_relationship and of is None:             # <<<<<<<<<<<<<<
@@ -10508,14 +10670,14 @@ static int __pyx_pf_6nyoibo_6fields_10TupleField___init__(struct __pyx_obj_6nyoi
  */
   }
 
-  /* "nyoibo/fields.pyx":328
+  /* "nyoibo/fields.pyx":332
  *         if reverse_relationship and of is None:
  *             raise ValueError('to make a reverse relationship, `of` parameter must to be set')
  *         super().__init__(*args, **kwargs)             # <<<<<<<<<<<<<<
  *         self.of = of
  *         self.reverse_relationship = reverse_relationship
  */
-  __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 328, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 332, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_INCREF(((PyObject *)__pyx_ptype_6nyoibo_6fields_TupleField));
   __Pyx_GIVEREF(((PyObject *)__pyx_ptype_6nyoibo_6fields_TupleField));
@@ -10523,21 +10685,21 @@ static int __pyx_pf_6nyoibo_6fields_10TupleField___init__(struct __pyx_obj_6nyoi
   __Pyx_INCREF(((PyObject *)__pyx_v_self));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_self));
   PyTuple_SET_ITEM(__pyx_t_4, 1, ((PyObject *)__pyx_v_self));
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_builtin_super, __pyx_t_4, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 328, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_builtin_super, __pyx_t_4, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 332, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_init); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 328, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_init); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 332, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = PyDict_Copy(__pyx_v_kwargs); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 328, __pyx_L1_error)
+  __pyx_t_5 = PyDict_Copy(__pyx_v_kwargs); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 332, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_v_args, __pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 328, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_v_args, __pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 332, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "nyoibo/fields.pyx":329
+  /* "nyoibo/fields.pyx":333
  *             raise ValueError('to make a reverse relationship, `of` parameter must to be set')
  *         super().__init__(*args, **kwargs)
  *         self.of = of             # <<<<<<<<<<<<<<
@@ -10550,7 +10712,7 @@ static int __pyx_pf_6nyoibo_6fields_10TupleField___init__(struct __pyx_obj_6nyoi
   __Pyx_DECREF(__pyx_v_self->of);
   __pyx_v_self->of = __pyx_v_of;
 
-  /* "nyoibo/fields.pyx":330
+  /* "nyoibo/fields.pyx":334
  *         super().__init__(*args, **kwargs)
  *         self.of = of
  *         self.reverse_relationship = reverse_relationship             # <<<<<<<<<<<<<<
@@ -10563,7 +10725,7 @@ static int __pyx_pf_6nyoibo_6fields_10TupleField___init__(struct __pyx_obj_6nyoi
   __Pyx_DECREF(__pyx_v_self->reverse_relationship);
   __pyx_v_self->reverse_relationship = __pyx_v_reverse_relationship;
 
-  /* "nyoibo/fields.pyx":325
+  /* "nyoibo/fields.pyx":329
  *     _internal_type = tuple
  * 
  *     def __init__(self, of=None, reverse_relationship=False, *args, **kwargs):             # <<<<<<<<<<<<<<
@@ -10585,7 +10747,7 @@ static int __pyx_pf_6nyoibo_6fields_10TupleField___init__(struct __pyx_obj_6nyoi
   return __pyx_r;
 }
 
-/* "nyoibo/fields.pyx":332
+/* "nyoibo/fields.pyx":336
  *         self.reverse_relationship = reverse_relationship
  * 
  *     cdef _parse(self, value):             # <<<<<<<<<<<<<<
@@ -10623,37 +10785,37 @@ static PyObject *__pyx_f_6nyoibo_6fields_10TupleField__parse(struct __pyx_obj_6n
   __Pyx_RefNannySetupContext("_parse", 0);
   __Pyx_INCREF(__pyx_v_value);
 
-  /* "nyoibo/fields.pyx":333
+  /* "nyoibo/fields.pyx":337
  * 
  *     cdef _parse(self, value):
  *         if value and self.of:             # <<<<<<<<<<<<<<
  *             items = []
  *             for item in value:
  */
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_value); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 333, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_value); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 337, __pyx_L1_error)
   if (__pyx_t_2) {
   } else {
     __pyx_t_1 = __pyx_t_2;
     goto __pyx_L4_bool_binop_done;
   }
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_self->of); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 333, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_self->of); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 337, __pyx_L1_error)
   __pyx_t_1 = __pyx_t_2;
   __pyx_L4_bool_binop_done:;
   if (__pyx_t_1) {
 
-    /* "nyoibo/fields.pyx":334
+    /* "nyoibo/fields.pyx":338
  *     cdef _parse(self, value):
  *         if value and self.of:
  *             items = []             # <<<<<<<<<<<<<<
  *             for item in value:
  *                 if isinstance(item, self.of):
  */
-    __pyx_t_3 = PyList_New(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 334, __pyx_L1_error)
+    __pyx_t_3 = PyList_New(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 338, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_v_items = ((PyObject*)__pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "nyoibo/fields.pyx":335
+    /* "nyoibo/fields.pyx":339
  *         if value and self.of:
  *             items = []
  *             for item in value:             # <<<<<<<<<<<<<<
@@ -10664,26 +10826,26 @@ static PyObject *__pyx_f_6nyoibo_6fields_10TupleField__parse(struct __pyx_obj_6n
       __pyx_t_3 = __pyx_v_value; __Pyx_INCREF(__pyx_t_3); __pyx_t_4 = 0;
       __pyx_t_5 = NULL;
     } else {
-      __pyx_t_4 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_v_value); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 335, __pyx_L1_error)
+      __pyx_t_4 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_v_value); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 339, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_5 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 335, __pyx_L1_error)
+      __pyx_t_5 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 339, __pyx_L1_error)
     }
     for (;;) {
       if (likely(!__pyx_t_5)) {
         if (likely(PyList_CheckExact(__pyx_t_3))) {
           if (__pyx_t_4 >= PyList_GET_SIZE(__pyx_t_3)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_6 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_6); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 335, __pyx_L1_error)
+          __pyx_t_6 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_6); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 339, __pyx_L1_error)
           #else
-          __pyx_t_6 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 335, __pyx_L1_error)
+          __pyx_t_6 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 339, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
           #endif
         } else {
           if (__pyx_t_4 >= PyTuple_GET_SIZE(__pyx_t_3)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_6); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 335, __pyx_L1_error)
+          __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_6); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 339, __pyx_L1_error)
           #else
-          __pyx_t_6 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 335, __pyx_L1_error)
+          __pyx_t_6 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 339, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
           #endif
         }
@@ -10693,7 +10855,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_10TupleField__parse(struct __pyx_obj_6n
           PyObject* exc_type = PyErr_Occurred();
           if (exc_type) {
             if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-            else __PYX_ERR(0, 335, __pyx_L1_error)
+            else __PYX_ERR(0, 339, __pyx_L1_error)
           }
           break;
         }
@@ -10702,7 +10864,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_10TupleField__parse(struct __pyx_obj_6n
       __Pyx_XDECREF_SET(__pyx_v_item, __pyx_t_6);
       __pyx_t_6 = 0;
 
-      /* "nyoibo/fields.pyx":336
+      /* "nyoibo/fields.pyx":340
  *             items = []
  *             for item in value:
  *                 if isinstance(item, self.of):             # <<<<<<<<<<<<<<
@@ -10711,21 +10873,21 @@ static PyObject *__pyx_f_6nyoibo_6fields_10TupleField__parse(struct __pyx_obj_6n
  */
       __pyx_t_6 = __pyx_v_self->of;
       __Pyx_INCREF(__pyx_t_6);
-      __pyx_t_1 = PyObject_IsInstance(__pyx_v_item, __pyx_t_6); if (unlikely(__pyx_t_1 == ((int)-1))) __PYX_ERR(0, 336, __pyx_L1_error)
+      __pyx_t_1 = PyObject_IsInstance(__pyx_v_item, __pyx_t_6); if (unlikely(__pyx_t_1 == ((int)-1))) __PYX_ERR(0, 340, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       __pyx_t_2 = (__pyx_t_1 != 0);
       if (__pyx_t_2) {
 
-        /* "nyoibo/fields.pyx":337
+        /* "nyoibo/fields.pyx":341
  *             for item in value:
  *                 if isinstance(item, self.of):
  *                     items.append(item)             # <<<<<<<<<<<<<<
  *                     continue
  *                 if isinstance(item, dict):
  */
-        __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_items, __pyx_v_item); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 337, __pyx_L1_error)
+        __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_items, __pyx_v_item); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 341, __pyx_L1_error)
 
-        /* "nyoibo/fields.pyx":338
+        /* "nyoibo/fields.pyx":342
  *                 if isinstance(item, self.of):
  *                     items.append(item)
  *                     continue             # <<<<<<<<<<<<<<
@@ -10734,7 +10896,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_10TupleField__parse(struct __pyx_obj_6n
  */
         goto __pyx_L6_continue;
 
-        /* "nyoibo/fields.pyx":336
+        /* "nyoibo/fields.pyx":340
  *             items = []
  *             for item in value:
  *                 if isinstance(item, self.of):             # <<<<<<<<<<<<<<
@@ -10743,7 +10905,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_10TupleField__parse(struct __pyx_obj_6n
  */
       }
 
-      /* "nyoibo/fields.pyx":339
+      /* "nyoibo/fields.pyx":343
  *                     items.append(item)
  *                     continue
  *                 if isinstance(item, dict):             # <<<<<<<<<<<<<<
@@ -10754,7 +10916,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_10TupleField__parse(struct __pyx_obj_6n
       __pyx_t_1 = (__pyx_t_2 != 0);
       if (__pyx_t_1) {
 
-        /* "nyoibo/fields.pyx":340
+        /* "nyoibo/fields.pyx":344
  *                     continue
  *                 if isinstance(item, dict):
  *                     items.append(self.of(**item))             # <<<<<<<<<<<<<<
@@ -10763,22 +10925,22 @@ static PyObject *__pyx_f_6nyoibo_6fields_10TupleField__parse(struct __pyx_obj_6n
  */
         if (unlikely(__pyx_v_item == Py_None)) {
           PyErr_SetString(PyExc_TypeError, "argument after ** must be a mapping, not NoneType");
-          __PYX_ERR(0, 340, __pyx_L1_error)
+          __PYX_ERR(0, 344, __pyx_L1_error)
         }
         if (likely(PyDict_CheckExact(__pyx_v_item))) {
-          __pyx_t_6 = PyDict_Copy(__pyx_v_item); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 340, __pyx_L1_error)
+          __pyx_t_6 = PyDict_Copy(__pyx_v_item); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 344, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
         } else {
-          __pyx_t_6 = PyObject_CallFunctionObjArgs((PyObject*)&PyDict_Type, __pyx_v_item, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 340, __pyx_L1_error)
+          __pyx_t_6 = PyObject_CallFunctionObjArgs((PyObject*)&PyDict_Type, __pyx_v_item, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 344, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
         }
-        __pyx_t_8 = __Pyx_PyObject_Call(__pyx_v_self->of, __pyx_empty_tuple, __pyx_t_6); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 340, __pyx_L1_error)
+        __pyx_t_8 = __Pyx_PyObject_Call(__pyx_v_self->of, __pyx_empty_tuple, __pyx_t_6); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 344, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-        __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_items, __pyx_t_8); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 340, __pyx_L1_error)
+        __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_items, __pyx_t_8); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 344, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-        /* "nyoibo/fields.pyx":339
+        /* "nyoibo/fields.pyx":343
  *                     items.append(item)
  *                     continue
  *                 if isinstance(item, dict):             # <<<<<<<<<<<<<<
@@ -10788,7 +10950,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_10TupleField__parse(struct __pyx_obj_6n
         goto __pyx_L9;
       }
 
-      /* "nyoibo/fields.pyx":342
+      /* "nyoibo/fields.pyx":346
  *                     items.append(self.of(**item))
  *                 else:
  *                     try:             # <<<<<<<<<<<<<<
@@ -10805,7 +10967,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_10TupleField__parse(struct __pyx_obj_6n
           __Pyx_XGOTREF(__pyx_t_11);
           /*try:*/ {
 
-            /* "nyoibo/fields.pyx":343
+            /* "nyoibo/fields.pyx":347
  *                 else:
  *                     try:
  *                         items.append(self.of(item))             # <<<<<<<<<<<<<<
@@ -10825,13 +10987,13 @@ static PyObject *__pyx_f_6nyoibo_6fields_10TupleField__parse(struct __pyx_obj_6n
             }
             __pyx_t_8 = (__pyx_t_12) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_12, __pyx_v_item) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_v_item);
             __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
-            if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 343, __pyx_L10_error)
+            if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 347, __pyx_L10_error)
             __Pyx_GOTREF(__pyx_t_8);
             __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-            __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_items, __pyx_t_8); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 343, __pyx_L10_error)
+            __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_items, __pyx_t_8); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 347, __pyx_L10_error)
             __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-            /* "nyoibo/fields.pyx":342
+            /* "nyoibo/fields.pyx":346
  *                     items.append(self.of(**item))
  *                 else:
  *                     try:             # <<<<<<<<<<<<<<
@@ -10848,7 +11010,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_10TupleField__parse(struct __pyx_obj_6n
           __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
           __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-          /* "nyoibo/fields.pyx":344
+          /* "nyoibo/fields.pyx":348
  *                     try:
  *                         items.append(self.of(item))
  *                     except self._exceptions:             # <<<<<<<<<<<<<<
@@ -10856,7 +11018,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_10TupleField__parse(struct __pyx_obj_6n
  *             value = items
  */
           __Pyx_ErrFetch(&__pyx_t_8, &__pyx_t_6, &__pyx_t_12);
-          __pyx_t_13 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_exceptions); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 344, __pyx_L12_except_error)
+          __pyx_t_13 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_exceptions); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 348, __pyx_L12_except_error)
           __Pyx_GOTREF(__pyx_t_13);
           __pyx_t_14 = __Pyx_PyErr_GivenExceptionMatches(__pyx_t_8, __pyx_t_13);
           __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
@@ -10864,21 +11026,21 @@ static PyObject *__pyx_f_6nyoibo_6fields_10TupleField__parse(struct __pyx_obj_6n
           __pyx_t_8 = 0; __pyx_t_6 = 0; __pyx_t_12 = 0;
           if (__pyx_t_14) {
             __Pyx_AddTraceback("nyoibo.fields.TupleField._parse", __pyx_clineno, __pyx_lineno, __pyx_filename);
-            if (__Pyx_GetException(&__pyx_t_12, &__pyx_t_6, &__pyx_t_8) < 0) __PYX_ERR(0, 344, __pyx_L12_except_error)
+            if (__Pyx_GetException(&__pyx_t_12, &__pyx_t_6, &__pyx_t_8) < 0) __PYX_ERR(0, 348, __pyx_L12_except_error)
             __Pyx_GOTREF(__pyx_t_12);
             __Pyx_GOTREF(__pyx_t_6);
             __Pyx_GOTREF(__pyx_t_8);
 
-            /* "nyoibo/fields.pyx":345
+            /* "nyoibo/fields.pyx":349
  *                         items.append(self.of(item))
  *                     except self._exceptions:
  *                         raise FieldValueError(f"type {type(item)} of {item} value is not a valid type of {self.of}")             # <<<<<<<<<<<<<<
  *             value = items
  *         return value
  */
-            __Pyx_GetModuleGlobalName(__pyx_t_15, __pyx_n_s_FieldValueError); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 345, __pyx_L12_except_error)
+            __Pyx_GetModuleGlobalName(__pyx_t_15, __pyx_n_s_FieldValueError); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 349, __pyx_L12_except_error)
             __Pyx_GOTREF(__pyx_t_15);
-            __pyx_t_16 = PyTuple_New(6); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 345, __pyx_L12_except_error)
+            __pyx_t_16 = PyTuple_New(6); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 349, __pyx_L12_except_error)
             __Pyx_GOTREF(__pyx_t_16);
             __pyx_t_17 = 0;
             __pyx_t_18 = 127;
@@ -10886,7 +11048,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_10TupleField__parse(struct __pyx_obj_6n
             __pyx_t_17 += 5;
             __Pyx_GIVEREF(__pyx_kp_u_type);
             PyTuple_SET_ITEM(__pyx_t_16, 0, __pyx_kp_u_type);
-            __pyx_t_19 = __Pyx_PyObject_FormatSimple(((PyObject *)Py_TYPE(__pyx_v_item)), __pyx_empty_unicode); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 345, __pyx_L12_except_error)
+            __pyx_t_19 = __Pyx_PyObject_FormatSimple(((PyObject *)Py_TYPE(__pyx_v_item)), __pyx_empty_unicode); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 349, __pyx_L12_except_error)
             __Pyx_GOTREF(__pyx_t_19);
             __pyx_t_18 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_19) > __pyx_t_18) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_19) : __pyx_t_18;
             __pyx_t_17 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_19);
@@ -10897,7 +11059,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_10TupleField__parse(struct __pyx_obj_6n
             __pyx_t_17 += 4;
             __Pyx_GIVEREF(__pyx_kp_u_of_2);
             PyTuple_SET_ITEM(__pyx_t_16, 2, __pyx_kp_u_of_2);
-            __pyx_t_19 = __Pyx_PyObject_FormatSimple(__pyx_v_item, __pyx_empty_unicode); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 345, __pyx_L12_except_error)
+            __pyx_t_19 = __Pyx_PyObject_FormatSimple(__pyx_v_item, __pyx_empty_unicode); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 349, __pyx_L12_except_error)
             __Pyx_GOTREF(__pyx_t_19);
             __pyx_t_18 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_19) > __pyx_t_18) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_19) : __pyx_t_18;
             __pyx_t_17 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_19);
@@ -10908,14 +11070,14 @@ static PyObject *__pyx_f_6nyoibo_6fields_10TupleField__parse(struct __pyx_obj_6n
             __pyx_t_17 += 30;
             __Pyx_GIVEREF(__pyx_kp_u_value_is_not_a_valid_type_of);
             PyTuple_SET_ITEM(__pyx_t_16, 4, __pyx_kp_u_value_is_not_a_valid_type_of);
-            __pyx_t_19 = __Pyx_PyObject_FormatSimple(__pyx_v_self->of, __pyx_empty_unicode); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 345, __pyx_L12_except_error)
+            __pyx_t_19 = __Pyx_PyObject_FormatSimple(__pyx_v_self->of, __pyx_empty_unicode); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 349, __pyx_L12_except_error)
             __Pyx_GOTREF(__pyx_t_19);
             __pyx_t_18 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_19) > __pyx_t_18) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_19) : __pyx_t_18;
             __pyx_t_17 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_19);
             __Pyx_GIVEREF(__pyx_t_19);
             PyTuple_SET_ITEM(__pyx_t_16, 5, __pyx_t_19);
             __pyx_t_19 = 0;
-            __pyx_t_19 = __Pyx_PyUnicode_Join(__pyx_t_16, 6, __pyx_t_17, __pyx_t_18); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 345, __pyx_L12_except_error)
+            __pyx_t_19 = __Pyx_PyUnicode_Join(__pyx_t_16, 6, __pyx_t_17, __pyx_t_18); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 349, __pyx_L12_except_error)
             __Pyx_GOTREF(__pyx_t_19);
             __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
             __pyx_t_16 = NULL;
@@ -10931,17 +11093,17 @@ static PyObject *__pyx_f_6nyoibo_6fields_10TupleField__parse(struct __pyx_obj_6n
             __pyx_t_13 = (__pyx_t_16) ? __Pyx_PyObject_Call2Args(__pyx_t_15, __pyx_t_16, __pyx_t_19) : __Pyx_PyObject_CallOneArg(__pyx_t_15, __pyx_t_19);
             __Pyx_XDECREF(__pyx_t_16); __pyx_t_16 = 0;
             __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-            if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 345, __pyx_L12_except_error)
+            if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 349, __pyx_L12_except_error)
             __Pyx_GOTREF(__pyx_t_13);
             __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
             __Pyx_Raise(__pyx_t_13, 0, 0, 0);
             __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
-            __PYX_ERR(0, 345, __pyx_L12_except_error)
+            __PYX_ERR(0, 349, __pyx_L12_except_error)
           }
           goto __pyx_L12_except_error;
           __pyx_L12_except_error:;
 
-          /* "nyoibo/fields.pyx":342
+          /* "nyoibo/fields.pyx":346
  *                     items.append(self.of(**item))
  *                 else:
  *                     try:             # <<<<<<<<<<<<<<
@@ -10958,7 +11120,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_10TupleField__parse(struct __pyx_obj_6n
       }
       __pyx_L9:;
 
-      /* "nyoibo/fields.pyx":335
+      /* "nyoibo/fields.pyx":339
  *         if value and self.of:
  *             items = []
  *             for item in value:             # <<<<<<<<<<<<<<
@@ -10969,7 +11131,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_10TupleField__parse(struct __pyx_obj_6n
     }
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "nyoibo/fields.pyx":346
+    /* "nyoibo/fields.pyx":350
  *                     except self._exceptions:
  *                         raise FieldValueError(f"type {type(item)} of {item} value is not a valid type of {self.of}")
  *             value = items             # <<<<<<<<<<<<<<
@@ -10979,7 +11141,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_10TupleField__parse(struct __pyx_obj_6n
     __Pyx_INCREF(__pyx_v_items);
     __Pyx_DECREF_SET(__pyx_v_value, __pyx_v_items);
 
-    /* "nyoibo/fields.pyx":333
+    /* "nyoibo/fields.pyx":337
  * 
  *     cdef _parse(self, value):
  *         if value and self.of:             # <<<<<<<<<<<<<<
@@ -10988,7 +11150,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_10TupleField__parse(struct __pyx_obj_6n
  */
   }
 
-  /* "nyoibo/fields.pyx":347
+  /* "nyoibo/fields.pyx":351
  *                         raise FieldValueError(f"type {type(item)} of {item} value is not a valid type of {self.of}")
  *             value = items
  *         return value             # <<<<<<<<<<<<<<
@@ -11000,7 +11162,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_10TupleField__parse(struct __pyx_obj_6n
   __pyx_r = __pyx_v_value;
   goto __pyx_L0;
 
-  /* "nyoibo/fields.pyx":332
+  /* "nyoibo/fields.pyx":336
  *         self.reverse_relationship = reverse_relationship
  * 
  *     cdef _parse(self, value):             # <<<<<<<<<<<<<<
@@ -11029,7 +11191,7 @@ static PyObject *__pyx_f_6nyoibo_6fields_10TupleField__parse(struct __pyx_obj_6n
   return __pyx_r;
 }
 
-/* "nyoibo/fields.pxd":28
+/* "nyoibo/fields.pxd":29
  * 
  * cdef class TupleField(Field):
  *     cdef readonly of             # <<<<<<<<<<<<<<
@@ -11066,7 +11228,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_10TupleField_2of___get__(struct __pyx_
   return __pyx_r;
 }
 
-/* "nyoibo/fields.pxd":29
+/* "nyoibo/fields.pxd":30
  * cdef class TupleField(Field):
  *     cdef readonly of
  *     cdef readonly reverse_relationship             # <<<<<<<<<<<<<<
@@ -11142,13 +11304,13 @@ static PyObject *__pyx_pf_6nyoibo_6fields_10TupleField_2__reduce_cython__(struct
   /* "(tree fragment)":5
  *     cdef object _dict
  *     cdef bint use_setstate
- *     state = (self.alias, self.choices, self.default_value, self.mutable, self.name, self.of, self.private, self.required, self.reverse_relationship)             # <<<<<<<<<<<<<<
+ *     state = (self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.of, self.private, self.required, self.reverse_relationship)             # <<<<<<<<<<<<<<
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:
  */
   __pyx_t_1 = __Pyx_PyBool_FromLong(__pyx_v_self->__pyx_base.required); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyTuple_New(9); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 5, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(10); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.alias);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.alias);
@@ -11159,30 +11321,33 @@ static PyObject *__pyx_pf_6nyoibo_6fields_10TupleField_2__reduce_cython__(struct
   __Pyx_INCREF(__pyx_v_self->__pyx_base.default_value);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.default_value);
   PyTuple_SET_ITEM(__pyx_t_2, 2, __pyx_v_self->__pyx_base.default_value);
+  __Pyx_INCREF(__pyx_v_self->__pyx_base.model);
+  __Pyx_GIVEREF(__pyx_v_self->__pyx_base.model);
+  PyTuple_SET_ITEM(__pyx_t_2, 3, __pyx_v_self->__pyx_base.model);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.mutable);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.mutable);
-  PyTuple_SET_ITEM(__pyx_t_2, 3, __pyx_v_self->__pyx_base.mutable);
+  PyTuple_SET_ITEM(__pyx_t_2, 4, __pyx_v_self->__pyx_base.mutable);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.name);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.name);
-  PyTuple_SET_ITEM(__pyx_t_2, 4, __pyx_v_self->__pyx_base.name);
+  PyTuple_SET_ITEM(__pyx_t_2, 5, __pyx_v_self->__pyx_base.name);
   __Pyx_INCREF(__pyx_v_self->of);
   __Pyx_GIVEREF(__pyx_v_self->of);
-  PyTuple_SET_ITEM(__pyx_t_2, 5, __pyx_v_self->of);
+  PyTuple_SET_ITEM(__pyx_t_2, 6, __pyx_v_self->of);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.private);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.private);
-  PyTuple_SET_ITEM(__pyx_t_2, 6, __pyx_v_self->__pyx_base.private);
+  PyTuple_SET_ITEM(__pyx_t_2, 7, __pyx_v_self->__pyx_base.private);
   __Pyx_GIVEREF(__pyx_t_1);
-  PyTuple_SET_ITEM(__pyx_t_2, 7, __pyx_t_1);
+  PyTuple_SET_ITEM(__pyx_t_2, 8, __pyx_t_1);
   __Pyx_INCREF(__pyx_v_self->reverse_relationship);
   __Pyx_GIVEREF(__pyx_v_self->reverse_relationship);
-  PyTuple_SET_ITEM(__pyx_t_2, 8, __pyx_v_self->reverse_relationship);
+  PyTuple_SET_ITEM(__pyx_t_2, 9, __pyx_v_self->reverse_relationship);
   __pyx_t_1 = 0;
   __pyx_v_state = ((PyObject*)__pyx_t_2);
   __pyx_t_2 = 0;
 
   /* "(tree fragment)":6
  *     cdef bint use_setstate
- *     state = (self.alias, self.choices, self.default_value, self.mutable, self.name, self.of, self.private, self.required, self.reverse_relationship)
+ *     state = (self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.of, self.private, self.required, self.reverse_relationship)
  *     _dict = getattr(self, '__dict__', None)             # <<<<<<<<<<<<<<
  *     if _dict is not None:
  *         state += (_dict,)
@@ -11193,7 +11358,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_10TupleField_2__reduce_cython__(struct
   __pyx_t_2 = 0;
 
   /* "(tree fragment)":7
- *     state = (self.alias, self.choices, self.default_value, self.mutable, self.name, self.of, self.private, self.required, self.reverse_relationship)
+ *     state = (self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.of, self.private, self.required, self.reverse_relationship)
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
@@ -11226,12 +11391,12 @@ static PyObject *__pyx_pf_6nyoibo_6fields_10TupleField_2__reduce_cython__(struct
  *         state += (_dict,)
  *         use_setstate = True             # <<<<<<<<<<<<<<
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.of is not None or self.private is not None or self.reverse_relationship is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.of is not None or self.private is not None or self.reverse_relationship is not None
  */
     __pyx_v_use_setstate = 1;
 
     /* "(tree fragment)":7
- *     state = (self.alias, self.choices, self.default_value, self.mutable, self.name, self.of, self.private, self.required, self.reverse_relationship)
+ *     state = (self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.of, self.private, self.required, self.reverse_relationship)
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
@@ -11243,9 +11408,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_10TupleField_2__reduce_cython__(struct
   /* "(tree fragment)":11
  *         use_setstate = True
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.of is not None or self.private is not None or self.reverse_relationship is not None             # <<<<<<<<<<<<<<
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.of is not None or self.private is not None or self.reverse_relationship is not None             # <<<<<<<<<<<<<<
  *     if use_setstate:
- *         return __pyx_unpickle_TupleField, (type(self), 0x9deea8c, None), state
+ *         return __pyx_unpickle_TupleField, (type(self), 0x3051edc, None), state
  */
   /*else*/ {
     __pyx_t_3 = (__pyx_v_self->__pyx_base.alias != Py_None);
@@ -11269,37 +11434,44 @@ static PyObject *__pyx_pf_6nyoibo_6fields_10TupleField_2__reduce_cython__(struct
       __pyx_t_4 = __pyx_t_5;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_5 = (__pyx_v_self->__pyx_base.mutable != Py_None);
+    __pyx_t_5 = (__pyx_v_self->__pyx_base.model != Py_None);
     __pyx_t_3 = (__pyx_t_5 != 0);
     if (!__pyx_t_3) {
     } else {
       __pyx_t_4 = __pyx_t_3;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_3 = (__pyx_v_self->__pyx_base.name != ((PyObject*)Py_None));
+    __pyx_t_3 = (__pyx_v_self->__pyx_base.mutable != Py_None);
     __pyx_t_5 = (__pyx_t_3 != 0);
     if (!__pyx_t_5) {
     } else {
       __pyx_t_4 = __pyx_t_5;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_5 = (__pyx_v_self->of != Py_None);
+    __pyx_t_5 = (__pyx_v_self->__pyx_base.name != ((PyObject*)Py_None));
     __pyx_t_3 = (__pyx_t_5 != 0);
     if (!__pyx_t_3) {
     } else {
       __pyx_t_4 = __pyx_t_3;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_3 = (__pyx_v_self->__pyx_base.private != Py_None);
+    __pyx_t_3 = (__pyx_v_self->of != Py_None);
     __pyx_t_5 = (__pyx_t_3 != 0);
     if (!__pyx_t_5) {
     } else {
       __pyx_t_4 = __pyx_t_5;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_5 = (__pyx_v_self->reverse_relationship != Py_None);
+    __pyx_t_5 = (__pyx_v_self->__pyx_base.private != Py_None);
     __pyx_t_3 = (__pyx_t_5 != 0);
-    __pyx_t_4 = __pyx_t_3;
+    if (!__pyx_t_3) {
+    } else {
+      __pyx_t_4 = __pyx_t_3;
+      goto __pyx_L4_bool_binop_done;
+    }
+    __pyx_t_3 = (__pyx_v_self->reverse_relationship != Py_None);
+    __pyx_t_5 = (__pyx_t_3 != 0);
+    __pyx_t_4 = __pyx_t_5;
     __pyx_L4_bool_binop_done:;
     __pyx_v_use_setstate = __pyx_t_4;
   }
@@ -11307,20 +11479,20 @@ static PyObject *__pyx_pf_6nyoibo_6fields_10TupleField_2__reduce_cython__(struct
 
   /* "(tree fragment)":12
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.of is not None or self.private is not None or self.reverse_relationship is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.of is not None or self.private is not None or self.reverse_relationship is not None
  *     if use_setstate:             # <<<<<<<<<<<<<<
- *         return __pyx_unpickle_TupleField, (type(self), 0x9deea8c, None), state
+ *         return __pyx_unpickle_TupleField, (type(self), 0x3051edc, None), state
  *     else:
  */
   __pyx_t_4 = (__pyx_v_use_setstate != 0);
   if (__pyx_t_4) {
 
     /* "(tree fragment)":13
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.of is not None or self.private is not None or self.reverse_relationship is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.of is not None or self.private is not None or self.reverse_relationship is not None
  *     if use_setstate:
- *         return __pyx_unpickle_TupleField, (type(self), 0x9deea8c, None), state             # <<<<<<<<<<<<<<
+ *         return __pyx_unpickle_TupleField, (type(self), 0x3051edc, None), state             # <<<<<<<<<<<<<<
  *     else:
- *         return __pyx_unpickle_TupleField, (type(self), 0x9deea8c, state)
+ *         return __pyx_unpickle_TupleField, (type(self), 0x3051edc, state)
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_pyx_unpickle_TupleField); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 13, __pyx_L1_error)
@@ -11330,9 +11502,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_10TupleField_2__reduce_cython__(struct
     __Pyx_INCREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     __Pyx_GIVEREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
-    __Pyx_INCREF(__pyx_int_165603980);
-    __Pyx_GIVEREF(__pyx_int_165603980);
-    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_165603980);
+    __Pyx_INCREF(__pyx_int_50667228);
+    __Pyx_GIVEREF(__pyx_int_50667228);
+    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_50667228);
     __Pyx_INCREF(Py_None);
     __Pyx_GIVEREF(Py_None);
     PyTuple_SET_ITEM(__pyx_t_2, 2, Py_None);
@@ -11353,17 +11525,17 @@ static PyObject *__pyx_pf_6nyoibo_6fields_10TupleField_2__reduce_cython__(struct
 
     /* "(tree fragment)":12
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.of is not None or self.private is not None or self.reverse_relationship is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.of is not None or self.private is not None or self.reverse_relationship is not None
  *     if use_setstate:             # <<<<<<<<<<<<<<
- *         return __pyx_unpickle_TupleField, (type(self), 0x9deea8c, None), state
+ *         return __pyx_unpickle_TupleField, (type(self), 0x3051edc, None), state
  *     else:
  */
   }
 
   /* "(tree fragment)":15
- *         return __pyx_unpickle_TupleField, (type(self), 0x9deea8c, None), state
+ *         return __pyx_unpickle_TupleField, (type(self), 0x3051edc, None), state
  *     else:
- *         return __pyx_unpickle_TupleField, (type(self), 0x9deea8c, state)             # <<<<<<<<<<<<<<
+ *         return __pyx_unpickle_TupleField, (type(self), 0x3051edc, state)             # <<<<<<<<<<<<<<
  * def __setstate_cython__(self, __pyx_state):
  *     __pyx_unpickle_TupleField__set_state(self, __pyx_state)
  */
@@ -11376,9 +11548,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_10TupleField_2__reduce_cython__(struct
     __Pyx_INCREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     __Pyx_GIVEREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
-    __Pyx_INCREF(__pyx_int_165603980);
-    __Pyx_GIVEREF(__pyx_int_165603980);
-    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_165603980);
+    __Pyx_INCREF(__pyx_int_50667228);
+    __Pyx_GIVEREF(__pyx_int_50667228);
+    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_50667228);
     __Pyx_INCREF(__pyx_v_state);
     __Pyx_GIVEREF(__pyx_v_state);
     PyTuple_SET_ITEM(__pyx_t_2, 2, __pyx_v_state);
@@ -11418,7 +11590,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_10TupleField_2__reduce_cython__(struct
 
 /* "(tree fragment)":16
  *     else:
- *         return __pyx_unpickle_TupleField, (type(self), 0x9deea8c, state)
+ *         return __pyx_unpickle_TupleField, (type(self), 0x3051edc, state)
  * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_TupleField__set_state(self, __pyx_state)
  */
@@ -11446,7 +11618,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_10TupleField_4__setstate_cython__(stru
   __Pyx_RefNannySetupContext("__setstate_cython__", 0);
 
   /* "(tree fragment)":17
- *         return __pyx_unpickle_TupleField, (type(self), 0x9deea8c, state)
+ *         return __pyx_unpickle_TupleField, (type(self), 0x3051edc, state)
  * def __setstate_cython__(self, __pyx_state):
  *     __pyx_unpickle_TupleField__set_state(self, __pyx_state)             # <<<<<<<<<<<<<<
  */
@@ -11457,7 +11629,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_10TupleField_4__setstate_cython__(stru
 
   /* "(tree fragment)":16
  *     else:
- *         return __pyx_unpickle_TupleField, (type(self), 0x9deea8c, state)
+ *         return __pyx_unpickle_TupleField, (type(self), 0x3051edc, state)
  * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_TupleField__set_state(self, __pyx_state)
  */
@@ -11514,13 +11686,13 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9ListField___reduce_cython__(struct __
   /* "(tree fragment)":5
  *     cdef object _dict
  *     cdef bint use_setstate
- *     state = (self.alias, self.choices, self.default_value, self.mutable, self.name, self.of, self.private, self.required, self.reverse_relationship)             # <<<<<<<<<<<<<<
+ *     state = (self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.of, self.private, self.required, self.reverse_relationship)             # <<<<<<<<<<<<<<
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:
  */
   __pyx_t_1 = __Pyx_PyBool_FromLong(__pyx_v_self->__pyx_base.__pyx_base.required); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyTuple_New(9); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 5, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(10); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.__pyx_base.alias);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.__pyx_base.alias);
@@ -11531,30 +11703,33 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9ListField___reduce_cython__(struct __
   __Pyx_INCREF(__pyx_v_self->__pyx_base.__pyx_base.default_value);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.__pyx_base.default_value);
   PyTuple_SET_ITEM(__pyx_t_2, 2, __pyx_v_self->__pyx_base.__pyx_base.default_value);
+  __Pyx_INCREF(__pyx_v_self->__pyx_base.__pyx_base.model);
+  __Pyx_GIVEREF(__pyx_v_self->__pyx_base.__pyx_base.model);
+  PyTuple_SET_ITEM(__pyx_t_2, 3, __pyx_v_self->__pyx_base.__pyx_base.model);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.__pyx_base.mutable);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.__pyx_base.mutable);
-  PyTuple_SET_ITEM(__pyx_t_2, 3, __pyx_v_self->__pyx_base.__pyx_base.mutable);
+  PyTuple_SET_ITEM(__pyx_t_2, 4, __pyx_v_self->__pyx_base.__pyx_base.mutable);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.__pyx_base.name);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.__pyx_base.name);
-  PyTuple_SET_ITEM(__pyx_t_2, 4, __pyx_v_self->__pyx_base.__pyx_base.name);
+  PyTuple_SET_ITEM(__pyx_t_2, 5, __pyx_v_self->__pyx_base.__pyx_base.name);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.of);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.of);
-  PyTuple_SET_ITEM(__pyx_t_2, 5, __pyx_v_self->__pyx_base.of);
+  PyTuple_SET_ITEM(__pyx_t_2, 6, __pyx_v_self->__pyx_base.of);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.__pyx_base.private);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.__pyx_base.private);
-  PyTuple_SET_ITEM(__pyx_t_2, 6, __pyx_v_self->__pyx_base.__pyx_base.private);
+  PyTuple_SET_ITEM(__pyx_t_2, 7, __pyx_v_self->__pyx_base.__pyx_base.private);
   __Pyx_GIVEREF(__pyx_t_1);
-  PyTuple_SET_ITEM(__pyx_t_2, 7, __pyx_t_1);
+  PyTuple_SET_ITEM(__pyx_t_2, 8, __pyx_t_1);
   __Pyx_INCREF(__pyx_v_self->__pyx_base.reverse_relationship);
   __Pyx_GIVEREF(__pyx_v_self->__pyx_base.reverse_relationship);
-  PyTuple_SET_ITEM(__pyx_t_2, 8, __pyx_v_self->__pyx_base.reverse_relationship);
+  PyTuple_SET_ITEM(__pyx_t_2, 9, __pyx_v_self->__pyx_base.reverse_relationship);
   __pyx_t_1 = 0;
   __pyx_v_state = ((PyObject*)__pyx_t_2);
   __pyx_t_2 = 0;
 
   /* "(tree fragment)":6
  *     cdef bint use_setstate
- *     state = (self.alias, self.choices, self.default_value, self.mutable, self.name, self.of, self.private, self.required, self.reverse_relationship)
+ *     state = (self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.of, self.private, self.required, self.reverse_relationship)
  *     _dict = getattr(self, '__dict__', None)             # <<<<<<<<<<<<<<
  *     if _dict is not None:
  *         state += (_dict,)
@@ -11565,7 +11740,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9ListField___reduce_cython__(struct __
   __pyx_t_2 = 0;
 
   /* "(tree fragment)":7
- *     state = (self.alias, self.choices, self.default_value, self.mutable, self.name, self.of, self.private, self.required, self.reverse_relationship)
+ *     state = (self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.of, self.private, self.required, self.reverse_relationship)
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
@@ -11598,12 +11773,12 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9ListField___reduce_cython__(struct __
  *         state += (_dict,)
  *         use_setstate = True             # <<<<<<<<<<<<<<
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.of is not None or self.private is not None or self.reverse_relationship is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.of is not None or self.private is not None or self.reverse_relationship is not None
  */
     __pyx_v_use_setstate = 1;
 
     /* "(tree fragment)":7
- *     state = (self.alias, self.choices, self.default_value, self.mutable, self.name, self.of, self.private, self.required, self.reverse_relationship)
+ *     state = (self.alias, self.choices, self.default_value, self.model, self.mutable, self.name, self.of, self.private, self.required, self.reverse_relationship)
  *     _dict = getattr(self, '__dict__', None)
  *     if _dict is not None:             # <<<<<<<<<<<<<<
  *         state += (_dict,)
@@ -11615,9 +11790,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9ListField___reduce_cython__(struct __
   /* "(tree fragment)":11
  *         use_setstate = True
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.of is not None or self.private is not None or self.reverse_relationship is not None             # <<<<<<<<<<<<<<
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.of is not None or self.private is not None or self.reverse_relationship is not None             # <<<<<<<<<<<<<<
  *     if use_setstate:
- *         return __pyx_unpickle_ListField, (type(self), 0x9deea8c, None), state
+ *         return __pyx_unpickle_ListField, (type(self), 0x3051edc, None), state
  */
   /*else*/ {
     __pyx_t_3 = (__pyx_v_self->__pyx_base.__pyx_base.alias != Py_None);
@@ -11641,37 +11816,44 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9ListField___reduce_cython__(struct __
       __pyx_t_4 = __pyx_t_5;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_5 = (__pyx_v_self->__pyx_base.__pyx_base.mutable != Py_None);
+    __pyx_t_5 = (__pyx_v_self->__pyx_base.__pyx_base.model != Py_None);
     __pyx_t_3 = (__pyx_t_5 != 0);
     if (!__pyx_t_3) {
     } else {
       __pyx_t_4 = __pyx_t_3;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_3 = (__pyx_v_self->__pyx_base.__pyx_base.name != ((PyObject*)Py_None));
+    __pyx_t_3 = (__pyx_v_self->__pyx_base.__pyx_base.mutable != Py_None);
     __pyx_t_5 = (__pyx_t_3 != 0);
     if (!__pyx_t_5) {
     } else {
       __pyx_t_4 = __pyx_t_5;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_5 = (__pyx_v_self->__pyx_base.of != Py_None);
+    __pyx_t_5 = (__pyx_v_self->__pyx_base.__pyx_base.name != ((PyObject*)Py_None));
     __pyx_t_3 = (__pyx_t_5 != 0);
     if (!__pyx_t_3) {
     } else {
       __pyx_t_4 = __pyx_t_3;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_3 = (__pyx_v_self->__pyx_base.__pyx_base.private != Py_None);
+    __pyx_t_3 = (__pyx_v_self->__pyx_base.of != Py_None);
     __pyx_t_5 = (__pyx_t_3 != 0);
     if (!__pyx_t_5) {
     } else {
       __pyx_t_4 = __pyx_t_5;
       goto __pyx_L4_bool_binop_done;
     }
-    __pyx_t_5 = (__pyx_v_self->__pyx_base.reverse_relationship != Py_None);
+    __pyx_t_5 = (__pyx_v_self->__pyx_base.__pyx_base.private != Py_None);
     __pyx_t_3 = (__pyx_t_5 != 0);
-    __pyx_t_4 = __pyx_t_3;
+    if (!__pyx_t_3) {
+    } else {
+      __pyx_t_4 = __pyx_t_3;
+      goto __pyx_L4_bool_binop_done;
+    }
+    __pyx_t_3 = (__pyx_v_self->__pyx_base.reverse_relationship != Py_None);
+    __pyx_t_5 = (__pyx_t_3 != 0);
+    __pyx_t_4 = __pyx_t_5;
     __pyx_L4_bool_binop_done:;
     __pyx_v_use_setstate = __pyx_t_4;
   }
@@ -11679,20 +11861,20 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9ListField___reduce_cython__(struct __
 
   /* "(tree fragment)":12
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.of is not None or self.private is not None or self.reverse_relationship is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.of is not None or self.private is not None or self.reverse_relationship is not None
  *     if use_setstate:             # <<<<<<<<<<<<<<
- *         return __pyx_unpickle_ListField, (type(self), 0x9deea8c, None), state
+ *         return __pyx_unpickle_ListField, (type(self), 0x3051edc, None), state
  *     else:
  */
   __pyx_t_4 = (__pyx_v_use_setstate != 0);
   if (__pyx_t_4) {
 
     /* "(tree fragment)":13
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.of is not None or self.private is not None or self.reverse_relationship is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.of is not None or self.private is not None or self.reverse_relationship is not None
  *     if use_setstate:
- *         return __pyx_unpickle_ListField, (type(self), 0x9deea8c, None), state             # <<<<<<<<<<<<<<
+ *         return __pyx_unpickle_ListField, (type(self), 0x3051edc, None), state             # <<<<<<<<<<<<<<
  *     else:
- *         return __pyx_unpickle_ListField, (type(self), 0x9deea8c, state)
+ *         return __pyx_unpickle_ListField, (type(self), 0x3051edc, state)
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_pyx_unpickle_ListField); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 13, __pyx_L1_error)
@@ -11702,9 +11884,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9ListField___reduce_cython__(struct __
     __Pyx_INCREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     __Pyx_GIVEREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
-    __Pyx_INCREF(__pyx_int_165603980);
-    __Pyx_GIVEREF(__pyx_int_165603980);
-    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_165603980);
+    __Pyx_INCREF(__pyx_int_50667228);
+    __Pyx_GIVEREF(__pyx_int_50667228);
+    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_50667228);
     __Pyx_INCREF(Py_None);
     __Pyx_GIVEREF(Py_None);
     PyTuple_SET_ITEM(__pyx_t_2, 2, Py_None);
@@ -11725,17 +11907,17 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9ListField___reduce_cython__(struct __
 
     /* "(tree fragment)":12
  *     else:
- *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.mutable is not None or self.name is not None or self.of is not None or self.private is not None or self.reverse_relationship is not None
+ *         use_setstate = self.alias is not None or self.choices is not None or self.default_value is not None or self.model is not None or self.mutable is not None or self.name is not None or self.of is not None or self.private is not None or self.reverse_relationship is not None
  *     if use_setstate:             # <<<<<<<<<<<<<<
- *         return __pyx_unpickle_ListField, (type(self), 0x9deea8c, None), state
+ *         return __pyx_unpickle_ListField, (type(self), 0x3051edc, None), state
  *     else:
  */
   }
 
   /* "(tree fragment)":15
- *         return __pyx_unpickle_ListField, (type(self), 0x9deea8c, None), state
+ *         return __pyx_unpickle_ListField, (type(self), 0x3051edc, None), state
  *     else:
- *         return __pyx_unpickle_ListField, (type(self), 0x9deea8c, state)             # <<<<<<<<<<<<<<
+ *         return __pyx_unpickle_ListField, (type(self), 0x3051edc, state)             # <<<<<<<<<<<<<<
  * def __setstate_cython__(self, __pyx_state):
  *     __pyx_unpickle_ListField__set_state(self, __pyx_state)
  */
@@ -11748,9 +11930,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9ListField___reduce_cython__(struct __
     __Pyx_INCREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     __Pyx_GIVEREF(((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
     PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)Py_TYPE(((PyObject *)__pyx_v_self))));
-    __Pyx_INCREF(__pyx_int_165603980);
-    __Pyx_GIVEREF(__pyx_int_165603980);
-    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_165603980);
+    __Pyx_INCREF(__pyx_int_50667228);
+    __Pyx_GIVEREF(__pyx_int_50667228);
+    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_50667228);
     __Pyx_INCREF(__pyx_v_state);
     __Pyx_GIVEREF(__pyx_v_state);
     PyTuple_SET_ITEM(__pyx_t_2, 2, __pyx_v_state);
@@ -11790,7 +11972,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9ListField___reduce_cython__(struct __
 
 /* "(tree fragment)":16
  *     else:
- *         return __pyx_unpickle_ListField, (type(self), 0x9deea8c, state)
+ *         return __pyx_unpickle_ListField, (type(self), 0x3051edc, state)
  * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_ListField__set_state(self, __pyx_state)
  */
@@ -11818,7 +12000,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9ListField_2__setstate_cython__(struct
   __Pyx_RefNannySetupContext("__setstate_cython__", 0);
 
   /* "(tree fragment)":17
- *         return __pyx_unpickle_ListField, (type(self), 0x9deea8c, state)
+ *         return __pyx_unpickle_ListField, (type(self), 0x3051edc, state)
  * def __setstate_cython__(self, __pyx_state):
  *     __pyx_unpickle_ListField__set_state(self, __pyx_state)             # <<<<<<<<<<<<<<
  */
@@ -11829,7 +12011,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_9ListField_2__setstate_cython__(struct
 
   /* "(tree fragment)":16
  *     else:
- *         return __pyx_unpickle_ListField, (type(self), 0x9deea8c, state)
+ *         return __pyx_unpickle_ListField, (type(self), 0x3051edc, state)
  * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_ListField__set_state(self, __pyx_state)
  */
@@ -11948,22 +12130,22 @@ static PyObject *__pyx_pf_6nyoibo_6fields___pyx_unpickle_Field(CYTHON_UNUSED PyO
   /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0xefd9ffe, 0x0618b14, 0xe30f371):             # <<<<<<<<<<<<<<
+ *     if __pyx_checksum not in (0xb3dbdb0, 0x3a9047b, 0xbb4eb42):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  */
   __pyx_t_1 = __Pyx_PyInt_From_long(__pyx_v___pyx_checksum); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = (__Pyx_PySequence_ContainsTF(__pyx_t_1, __pyx_tuple__7, Py_NE)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 4, __pyx_L1_error)
+  __pyx_t_2 = (__Pyx_PySequence_ContainsTF(__pyx_t_1, __pyx_tuple__8, Py_NE)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 4, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_3 = (__pyx_t_2 != 0);
   if (__pyx_t_3) {
 
     /* "(tree fragment)":5
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0xefd9ffe, 0x0618b14, 0xe30f371):
+ *     if __pyx_checksum not in (0xb3dbdb0, 0x3a9047b, 0xbb4eb42):
  *         from pickle import PickleError as __pyx_PickleError             # <<<<<<<<<<<<<<
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = Field.__new__(__pyx_type)
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 5, __pyx_L1_error)
@@ -11982,9 +12164,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields___pyx_unpickle_Field(CYTHON_UNUSED PyO
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "(tree fragment)":6
- *     if __pyx_checksum not in (0xefd9ffe, 0x0618b14, 0xe30f371):
+ *     if __pyx_checksum not in (0xb3dbdb0, 0x3a9047b, 0xbb4eb42):
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)             # <<<<<<<<<<<<<<
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)             # <<<<<<<<<<<<<<
  *     __pyx_result = Field.__new__(__pyx_type)
  *     if __pyx_state is not None:
  */
@@ -12017,15 +12199,15 @@ static PyObject *__pyx_pf_6nyoibo_6fields___pyx_unpickle_Field(CYTHON_UNUSED PyO
     /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0xefd9ffe, 0x0618b14, 0xe30f371):             # <<<<<<<<<<<<<<
+ *     if __pyx_checksum not in (0xb3dbdb0, 0x3a9047b, 0xbb4eb42):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  */
   }
 
   /* "(tree fragment)":7
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = Field.__new__(__pyx_type)             # <<<<<<<<<<<<<<
  *     if __pyx_state is not None:
  *         __pyx_unpickle_Field__set_state(<Field> __pyx_result, __pyx_state)
@@ -12051,7 +12233,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields___pyx_unpickle_Field(CYTHON_UNUSED PyO
   __pyx_t_4 = 0;
 
   /* "(tree fragment)":8
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = Field.__new__(__pyx_type)
  *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_Field__set_state(<Field> __pyx_result, __pyx_state)
@@ -12074,7 +12256,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields___pyx_unpickle_Field(CYTHON_UNUSED PyO
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "(tree fragment)":8
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = Field.__new__(__pyx_type)
  *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_Field__set_state(<Field> __pyx_result, __pyx_state)
@@ -12087,7 +12269,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields___pyx_unpickle_Field(CYTHON_UNUSED PyO
  *         __pyx_unpickle_Field__set_state(<Field> __pyx_result, __pyx_state)
  *     return __pyx_result             # <<<<<<<<<<<<<<
  * cdef __pyx_unpickle_Field__set_state(Field __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v___pyx_result);
@@ -12120,8 +12302,8 @@ static PyObject *__pyx_pf_6nyoibo_6fields___pyx_unpickle_Field(CYTHON_UNUSED PyO
  *         __pyx_unpickle_Field__set_state(<Field> __pyx_result, __pyx_state)
  *     return __pyx_result
  * cdef __pyx_unpickle_Field__set_state(Field __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
  */
 
 static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_Field__set_state(struct __pyx_obj_6nyoibo_6fields_Field *__pyx_v___pyx_result, PyObject *__pyx_v___pyx_state) {
@@ -12143,9 +12325,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_Field__set_state(struct 
   /* "(tree fragment)":12
  *     return __pyx_result
  * cdef __pyx_unpickle_Field__set_state(Field __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]             # <<<<<<<<<<<<<<
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):
- *         __pyx_result.__dict__.update(__pyx_state[7])
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]             # <<<<<<<<<<<<<<
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
+ *         __pyx_result.__dict__.update(__pyx_state[8])
  */
   if (unlikely(__pyx_v___pyx_state == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
@@ -12187,6 +12369,17 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_Field__set_state(struct 
   __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 3, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
+  __Pyx_GOTREF(__pyx_v___pyx_result->model);
+  __Pyx_DECREF(__pyx_v___pyx_result->model);
+  __pyx_v___pyx_result->model = __pyx_t_1;
+  __pyx_t_1 = 0;
+  if (unlikely(__pyx_v___pyx_state == Py_None)) {
+    PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
+    __PYX_ERR(1, 12, __pyx_L1_error)
+  }
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 4, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_GIVEREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_v___pyx_result->mutable);
   __Pyx_DECREF(__pyx_v___pyx_result->mutable);
   __pyx_v___pyx_result->mutable = __pyx_t_1;
@@ -12195,7 +12388,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_Field__set_state(struct 
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 4, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 5, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (!(likely(PyUnicode_CheckExact(__pyx_t_1))||((__pyx_t_1) == Py_None)||((void)PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "unicode", Py_TYPE(__pyx_t_1)->tp_name), 0))) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GIVEREF(__pyx_t_1);
@@ -12207,7 +12400,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_Field__set_state(struct 
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 5, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 6, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_v___pyx_result->private);
@@ -12218,7 +12411,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_Field__set_state(struct 
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 6, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 7, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely((__pyx_t_2 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -12226,16 +12419,16 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_Field__set_state(struct 
 
   /* "(tree fragment)":13
  * cdef __pyx_unpickle_Field__set_state(Field __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
- *         __pyx_result.__dict__.update(__pyx_state[7])
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
+ *         __pyx_result.__dict__.update(__pyx_state[8])
  */
   if (unlikely(__pyx_v___pyx_state == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "object of type 'NoneType' has no len()");
     __PYX_ERR(1, 13, __pyx_L1_error)
   }
   __pyx_t_3 = PyTuple_GET_SIZE(__pyx_v___pyx_state); if (unlikely(__pyx_t_3 == ((Py_ssize_t)-1))) __PYX_ERR(1, 13, __pyx_L1_error)
-  __pyx_t_4 = ((__pyx_t_3 > 7) != 0);
+  __pyx_t_4 = ((__pyx_t_3 > 8) != 0);
   if (__pyx_t_4) {
   } else {
     __pyx_t_2 = __pyx_t_4;
@@ -12248,9 +12441,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_Field__set_state(struct 
   if (__pyx_t_2) {
 
     /* "(tree fragment)":14
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):
- *         __pyx_result.__dict__.update(__pyx_state[7])             # <<<<<<<<<<<<<<
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
+ *         __pyx_result.__dict__.update(__pyx_state[8])             # <<<<<<<<<<<<<<
  */
     __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v___pyx_result), __pyx_n_s_dict); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
@@ -12261,7 +12454,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_Field__set_state(struct 
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
       __PYX_ERR(1, 14, __pyx_L1_error)
     }
-    __pyx_t_6 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 7, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 8, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_8 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_7))) {
@@ -12283,9 +12476,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_Field__set_state(struct 
 
     /* "(tree fragment)":13
  * cdef __pyx_unpickle_Field__set_state(Field __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
- *         __pyx_result.__dict__.update(__pyx_state[7])
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
+ *         __pyx_result.__dict__.update(__pyx_state[8])
  */
   }
 
@@ -12293,8 +12486,8 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_Field__set_state(struct 
  *         __pyx_unpickle_Field__set_state(<Field> __pyx_result, __pyx_state)
  *     return __pyx_result
  * cdef __pyx_unpickle_Field__set_state(Field __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
  */
 
   /* function exit code */
@@ -12414,22 +12607,22 @@ static PyObject *__pyx_pf_6nyoibo_6fields_2__pyx_unpickle_StrField(CYTHON_UNUSED
   /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0x183421a, 0xbba6a62, 0x4b7ca24):             # <<<<<<<<<<<<<<
+ *     if __pyx_checksum not in (0x1a1bf8a, 0xaeb7d82, 0x9c0431c):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x183421a, 0xbba6a62, 0x4b7ca24) = (alias, choices, default_value, max_length, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x1a1bf8a, 0xaeb7d82, 0x9c0431c) = (alias, choices, default_value, max_length, model, mutable, name, private, required))" % __pyx_checksum)
  */
   __pyx_t_1 = __Pyx_PyInt_From_long(__pyx_v___pyx_checksum); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = (__Pyx_PySequence_ContainsTF(__pyx_t_1, __pyx_tuple__8, Py_NE)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 4, __pyx_L1_error)
+  __pyx_t_2 = (__Pyx_PySequence_ContainsTF(__pyx_t_1, __pyx_tuple__9, Py_NE)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 4, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_3 = (__pyx_t_2 != 0);
   if (__pyx_t_3) {
 
     /* "(tree fragment)":5
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0x183421a, 0xbba6a62, 0x4b7ca24):
+ *     if __pyx_checksum not in (0x1a1bf8a, 0xaeb7d82, 0x9c0431c):
  *         from pickle import PickleError as __pyx_PickleError             # <<<<<<<<<<<<<<
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x183421a, 0xbba6a62, 0x4b7ca24) = (alias, choices, default_value, max_length, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x1a1bf8a, 0xaeb7d82, 0x9c0431c) = (alias, choices, default_value, max_length, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = StrField.__new__(__pyx_type)
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 5, __pyx_L1_error)
@@ -12448,9 +12641,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_2__pyx_unpickle_StrField(CYTHON_UNUSED
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "(tree fragment)":6
- *     if __pyx_checksum not in (0x183421a, 0xbba6a62, 0x4b7ca24):
+ *     if __pyx_checksum not in (0x1a1bf8a, 0xaeb7d82, 0x9c0431c):
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x183421a, 0xbba6a62, 0x4b7ca24) = (alias, choices, default_value, max_length, mutable, name, private, required))" % __pyx_checksum)             # <<<<<<<<<<<<<<
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x1a1bf8a, 0xaeb7d82, 0x9c0431c) = (alias, choices, default_value, max_length, model, mutable, name, private, required))" % __pyx_checksum)             # <<<<<<<<<<<<<<
  *     __pyx_result = StrField.__new__(__pyx_type)
  *     if __pyx_state is not None:
  */
@@ -12483,15 +12676,15 @@ static PyObject *__pyx_pf_6nyoibo_6fields_2__pyx_unpickle_StrField(CYTHON_UNUSED
     /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0x183421a, 0xbba6a62, 0x4b7ca24):             # <<<<<<<<<<<<<<
+ *     if __pyx_checksum not in (0x1a1bf8a, 0xaeb7d82, 0x9c0431c):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x183421a, 0xbba6a62, 0x4b7ca24) = (alias, choices, default_value, max_length, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x1a1bf8a, 0xaeb7d82, 0x9c0431c) = (alias, choices, default_value, max_length, model, mutable, name, private, required))" % __pyx_checksum)
  */
   }
 
   /* "(tree fragment)":7
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x183421a, 0xbba6a62, 0x4b7ca24) = (alias, choices, default_value, max_length, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x1a1bf8a, 0xaeb7d82, 0x9c0431c) = (alias, choices, default_value, max_length, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = StrField.__new__(__pyx_type)             # <<<<<<<<<<<<<<
  *     if __pyx_state is not None:
  *         __pyx_unpickle_StrField__set_state(<StrField> __pyx_result, __pyx_state)
@@ -12517,7 +12710,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_2__pyx_unpickle_StrField(CYTHON_UNUSED
   __pyx_t_4 = 0;
 
   /* "(tree fragment)":8
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x183421a, 0xbba6a62, 0x4b7ca24) = (alias, choices, default_value, max_length, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x1a1bf8a, 0xaeb7d82, 0x9c0431c) = (alias, choices, default_value, max_length, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = StrField.__new__(__pyx_type)
  *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_StrField__set_state(<StrField> __pyx_result, __pyx_state)
@@ -12540,7 +12733,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_2__pyx_unpickle_StrField(CYTHON_UNUSED
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "(tree fragment)":8
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x183421a, 0xbba6a62, 0x4b7ca24) = (alias, choices, default_value, max_length, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x1a1bf8a, 0xaeb7d82, 0x9c0431c) = (alias, choices, default_value, max_length, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = StrField.__new__(__pyx_type)
  *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_StrField__set_state(<StrField> __pyx_result, __pyx_state)
@@ -12553,7 +12746,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_2__pyx_unpickle_StrField(CYTHON_UNUSED
  *         __pyx_unpickle_StrField__set_state(<StrField> __pyx_result, __pyx_state)
  *     return __pyx_result             # <<<<<<<<<<<<<<
  * cdef __pyx_unpickle_StrField__set_state(StrField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.max_length = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.max_length = __pyx_state[3]; __pyx_result.model = __pyx_state[4]; __pyx_result.mutable = __pyx_state[5]; __pyx_result.name = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v___pyx_result);
@@ -12586,8 +12779,8 @@ static PyObject *__pyx_pf_6nyoibo_6fields_2__pyx_unpickle_StrField(CYTHON_UNUSED
  *         __pyx_unpickle_StrField__set_state(<StrField> __pyx_result, __pyx_state)
  *     return __pyx_result
  * cdef __pyx_unpickle_StrField__set_state(StrField __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.max_length = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
- *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.max_length = __pyx_state[3]; __pyx_result.model = __pyx_state[4]; __pyx_result.mutable = __pyx_state[5]; __pyx_result.name = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]
+ *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):
  */
 
 static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_StrField__set_state(struct __pyx_obj_6nyoibo_6fields_StrField *__pyx_v___pyx_result, PyObject *__pyx_v___pyx_state) {
@@ -12610,9 +12803,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_StrField__set_state(stru
   /* "(tree fragment)":12
  *     return __pyx_result
  * cdef __pyx_unpickle_StrField__set_state(StrField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.max_length = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]             # <<<<<<<<<<<<<<
- *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
- *         __pyx_result.__dict__.update(__pyx_state[8])
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.max_length = __pyx_state[3]; __pyx_result.model = __pyx_state[4]; __pyx_result.mutable = __pyx_state[5]; __pyx_result.name = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]             # <<<<<<<<<<<<<<
+ *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):
+ *         __pyx_result.__dict__.update(__pyx_state[9])
  */
   if (unlikely(__pyx_v___pyx_state == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
@@ -12663,6 +12856,17 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_StrField__set_state(stru
   __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 4, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
+  __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.model);
+  __Pyx_DECREF(__pyx_v___pyx_result->__pyx_base.model);
+  __pyx_v___pyx_result->__pyx_base.model = __pyx_t_1;
+  __pyx_t_1 = 0;
+  if (unlikely(__pyx_v___pyx_state == Py_None)) {
+    PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
+    __PYX_ERR(1, 12, __pyx_L1_error)
+  }
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 5, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_GIVEREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.mutable);
   __Pyx_DECREF(__pyx_v___pyx_result->__pyx_base.mutable);
   __pyx_v___pyx_result->__pyx_base.mutable = __pyx_t_1;
@@ -12671,7 +12875,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_StrField__set_state(stru
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 5, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 6, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (!(likely(PyUnicode_CheckExact(__pyx_t_1))||((__pyx_t_1) == Py_None)||((void)PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "unicode", Py_TYPE(__pyx_t_1)->tp_name), 0))) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GIVEREF(__pyx_t_1);
@@ -12683,7 +12887,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_StrField__set_state(stru
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 6, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 7, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.private);
@@ -12694,7 +12898,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_StrField__set_state(stru
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 7, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 8, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely((__pyx_t_3 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -12702,16 +12906,16 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_StrField__set_state(stru
 
   /* "(tree fragment)":13
  * cdef __pyx_unpickle_StrField__set_state(StrField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.max_length = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
- *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
- *         __pyx_result.__dict__.update(__pyx_state[8])
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.max_length = __pyx_state[3]; __pyx_result.model = __pyx_state[4]; __pyx_result.mutable = __pyx_state[5]; __pyx_result.name = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]
+ *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
+ *         __pyx_result.__dict__.update(__pyx_state[9])
  */
   if (unlikely(__pyx_v___pyx_state == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "object of type 'NoneType' has no len()");
     __PYX_ERR(1, 13, __pyx_L1_error)
   }
   __pyx_t_4 = PyTuple_GET_SIZE(__pyx_v___pyx_state); if (unlikely(__pyx_t_4 == ((Py_ssize_t)-1))) __PYX_ERR(1, 13, __pyx_L1_error)
-  __pyx_t_5 = ((__pyx_t_4 > 8) != 0);
+  __pyx_t_5 = ((__pyx_t_4 > 9) != 0);
   if (__pyx_t_5) {
   } else {
     __pyx_t_3 = __pyx_t_5;
@@ -12724,9 +12928,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_StrField__set_state(stru
   if (__pyx_t_3) {
 
     /* "(tree fragment)":14
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.max_length = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
- *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
- *         __pyx_result.__dict__.update(__pyx_state[8])             # <<<<<<<<<<<<<<
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.max_length = __pyx_state[3]; __pyx_result.model = __pyx_state[4]; __pyx_result.mutable = __pyx_state[5]; __pyx_result.name = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]
+ *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):
+ *         __pyx_result.__dict__.update(__pyx_state[9])             # <<<<<<<<<<<<<<
  */
     __pyx_t_7 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v___pyx_result), __pyx_n_s_dict); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 14, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
@@ -12737,7 +12941,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_StrField__set_state(stru
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
       __PYX_ERR(1, 14, __pyx_L1_error)
     }
-    __pyx_t_7 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 8, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 14, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 9, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 14, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __pyx_t_9 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_8))) {
@@ -12759,9 +12963,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_StrField__set_state(stru
 
     /* "(tree fragment)":13
  * cdef __pyx_unpickle_StrField__set_state(StrField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.max_length = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
- *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
- *         __pyx_result.__dict__.update(__pyx_state[8])
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.max_length = __pyx_state[3]; __pyx_result.model = __pyx_state[4]; __pyx_result.mutable = __pyx_state[5]; __pyx_result.name = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]
+ *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
+ *         __pyx_result.__dict__.update(__pyx_state[9])
  */
   }
 
@@ -12769,8 +12973,8 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_StrField__set_state(stru
  *         __pyx_unpickle_StrField__set_state(<StrField> __pyx_result, __pyx_state)
  *     return __pyx_result
  * cdef __pyx_unpickle_StrField__set_state(StrField __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.max_length = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
- *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.max_length = __pyx_state[3]; __pyx_result.model = __pyx_state[4]; __pyx_result.mutable = __pyx_state[5]; __pyx_result.name = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]
+ *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):
  */
 
   /* function exit code */
@@ -12890,22 +13094,22 @@ static PyObject *__pyx_pf_6nyoibo_6fields_4__pyx_unpickle_IntField(CYTHON_UNUSED
   /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0xeb6285d, 0xd90bcf0, 0xe59ef32):             # <<<<<<<<<<<<<<
+ *     if __pyx_checksum not in (0xc2d2ae1, 0xf2369da, 0x3d9631f):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xeb6285d, 0xd90bcf0, 0xe59ef32) = (alias, choices, default_value, max_value, min_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xc2d2ae1, 0xf2369da, 0x3d9631f) = (alias, choices, default_value, max_value, min_value, model, mutable, name, private, required))" % __pyx_checksum)
  */
   __pyx_t_1 = __Pyx_PyInt_From_long(__pyx_v___pyx_checksum); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = (__Pyx_PySequence_ContainsTF(__pyx_t_1, __pyx_tuple__9, Py_NE)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 4, __pyx_L1_error)
+  __pyx_t_2 = (__Pyx_PySequence_ContainsTF(__pyx_t_1, __pyx_tuple__10, Py_NE)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 4, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_3 = (__pyx_t_2 != 0);
   if (__pyx_t_3) {
 
     /* "(tree fragment)":5
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0xeb6285d, 0xd90bcf0, 0xe59ef32):
+ *     if __pyx_checksum not in (0xc2d2ae1, 0xf2369da, 0x3d9631f):
  *         from pickle import PickleError as __pyx_PickleError             # <<<<<<<<<<<<<<
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xeb6285d, 0xd90bcf0, 0xe59ef32) = (alias, choices, default_value, max_value, min_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xc2d2ae1, 0xf2369da, 0x3d9631f) = (alias, choices, default_value, max_value, min_value, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = IntField.__new__(__pyx_type)
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 5, __pyx_L1_error)
@@ -12924,9 +13128,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_4__pyx_unpickle_IntField(CYTHON_UNUSED
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "(tree fragment)":6
- *     if __pyx_checksum not in (0xeb6285d, 0xd90bcf0, 0xe59ef32):
+ *     if __pyx_checksum not in (0xc2d2ae1, 0xf2369da, 0x3d9631f):
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xeb6285d, 0xd90bcf0, 0xe59ef32) = (alias, choices, default_value, max_value, min_value, mutable, name, private, required))" % __pyx_checksum)             # <<<<<<<<<<<<<<
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xc2d2ae1, 0xf2369da, 0x3d9631f) = (alias, choices, default_value, max_value, min_value, model, mutable, name, private, required))" % __pyx_checksum)             # <<<<<<<<<<<<<<
  *     __pyx_result = IntField.__new__(__pyx_type)
  *     if __pyx_state is not None:
  */
@@ -12959,15 +13163,15 @@ static PyObject *__pyx_pf_6nyoibo_6fields_4__pyx_unpickle_IntField(CYTHON_UNUSED
     /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0xeb6285d, 0xd90bcf0, 0xe59ef32):             # <<<<<<<<<<<<<<
+ *     if __pyx_checksum not in (0xc2d2ae1, 0xf2369da, 0x3d9631f):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xeb6285d, 0xd90bcf0, 0xe59ef32) = (alias, choices, default_value, max_value, min_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xc2d2ae1, 0xf2369da, 0x3d9631f) = (alias, choices, default_value, max_value, min_value, model, mutable, name, private, required))" % __pyx_checksum)
  */
   }
 
   /* "(tree fragment)":7
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xeb6285d, 0xd90bcf0, 0xe59ef32) = (alias, choices, default_value, max_value, min_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xc2d2ae1, 0xf2369da, 0x3d9631f) = (alias, choices, default_value, max_value, min_value, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = IntField.__new__(__pyx_type)             # <<<<<<<<<<<<<<
  *     if __pyx_state is not None:
  *         __pyx_unpickle_IntField__set_state(<IntField> __pyx_result, __pyx_state)
@@ -12993,7 +13197,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_4__pyx_unpickle_IntField(CYTHON_UNUSED
   __pyx_t_4 = 0;
 
   /* "(tree fragment)":8
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xeb6285d, 0xd90bcf0, 0xe59ef32) = (alias, choices, default_value, max_value, min_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xc2d2ae1, 0xf2369da, 0x3d9631f) = (alias, choices, default_value, max_value, min_value, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = IntField.__new__(__pyx_type)
  *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_IntField__set_state(<IntField> __pyx_result, __pyx_state)
@@ -13016,7 +13220,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_4__pyx_unpickle_IntField(CYTHON_UNUSED
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "(tree fragment)":8
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xeb6285d, 0xd90bcf0, 0xe59ef32) = (alias, choices, default_value, max_value, min_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xc2d2ae1, 0xf2369da, 0x3d9631f) = (alias, choices, default_value, max_value, min_value, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = IntField.__new__(__pyx_type)
  *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_IntField__set_state(<IntField> __pyx_result, __pyx_state)
@@ -13029,7 +13233,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_4__pyx_unpickle_IntField(CYTHON_UNUSED
  *         __pyx_unpickle_IntField__set_state(<IntField> __pyx_result, __pyx_state)
  *     return __pyx_result             # <<<<<<<<<<<<<<
  * cdef __pyx_unpickle_IntField__set_state(IntField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.max_value = __pyx_state[3]; __pyx_result.min_value = __pyx_state[4]; __pyx_result.mutable = __pyx_state[5]; __pyx_result.name = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.max_value = __pyx_state[3]; __pyx_result.min_value = __pyx_state[4]; __pyx_result.model = __pyx_state[5]; __pyx_result.mutable = __pyx_state[6]; __pyx_result.name = __pyx_state[7]; __pyx_result.private = __pyx_state[8]; __pyx_result.required = __pyx_state[9]
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v___pyx_result);
@@ -13062,8 +13266,8 @@ static PyObject *__pyx_pf_6nyoibo_6fields_4__pyx_unpickle_IntField(CYTHON_UNUSED
  *         __pyx_unpickle_IntField__set_state(<IntField> __pyx_result, __pyx_state)
  *     return __pyx_result
  * cdef __pyx_unpickle_IntField__set_state(IntField __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.max_value = __pyx_state[3]; __pyx_result.min_value = __pyx_state[4]; __pyx_result.mutable = __pyx_state[5]; __pyx_result.name = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]
- *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.max_value = __pyx_state[3]; __pyx_result.min_value = __pyx_state[4]; __pyx_result.model = __pyx_state[5]; __pyx_result.mutable = __pyx_state[6]; __pyx_result.name = __pyx_state[7]; __pyx_result.private = __pyx_state[8]; __pyx_result.required = __pyx_state[9]
+ *     if len(__pyx_state) > 10 and hasattr(__pyx_result, '__dict__'):
  */
 
 static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_IntField__set_state(struct __pyx_obj_6nyoibo_6fields_IntField *__pyx_v___pyx_result, PyObject *__pyx_v___pyx_state) {
@@ -13085,9 +13289,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_IntField__set_state(stru
   /* "(tree fragment)":12
  *     return __pyx_result
  * cdef __pyx_unpickle_IntField__set_state(IntField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.max_value = __pyx_state[3]; __pyx_result.min_value = __pyx_state[4]; __pyx_result.mutable = __pyx_state[5]; __pyx_result.name = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]             # <<<<<<<<<<<<<<
- *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):
- *         __pyx_result.__dict__.update(__pyx_state[9])
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.max_value = __pyx_state[3]; __pyx_result.min_value = __pyx_state[4]; __pyx_result.model = __pyx_state[5]; __pyx_result.mutable = __pyx_state[6]; __pyx_result.name = __pyx_state[7]; __pyx_result.private = __pyx_state[8]; __pyx_result.required = __pyx_state[9]             # <<<<<<<<<<<<<<
+ *     if len(__pyx_state) > 10 and hasattr(__pyx_result, '__dict__'):
+ *         __pyx_result.__dict__.update(__pyx_state[10])
  */
   if (unlikely(__pyx_v___pyx_state == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
@@ -13151,6 +13355,17 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_IntField__set_state(stru
   __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 5, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
+  __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.model);
+  __Pyx_DECREF(__pyx_v___pyx_result->__pyx_base.model);
+  __pyx_v___pyx_result->__pyx_base.model = __pyx_t_1;
+  __pyx_t_1 = 0;
+  if (unlikely(__pyx_v___pyx_state == Py_None)) {
+    PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
+    __PYX_ERR(1, 12, __pyx_L1_error)
+  }
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 6, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_GIVEREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.mutable);
   __Pyx_DECREF(__pyx_v___pyx_result->__pyx_base.mutable);
   __pyx_v___pyx_result->__pyx_base.mutable = __pyx_t_1;
@@ -13159,7 +13374,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_IntField__set_state(stru
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 6, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 7, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (!(likely(PyUnicode_CheckExact(__pyx_t_1))||((__pyx_t_1) == Py_None)||((void)PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "unicode", Py_TYPE(__pyx_t_1)->tp_name), 0))) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GIVEREF(__pyx_t_1);
@@ -13171,7 +13386,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_IntField__set_state(stru
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 7, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 8, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.private);
@@ -13182,7 +13397,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_IntField__set_state(stru
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 8, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 9, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely((__pyx_t_2 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -13190,16 +13405,16 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_IntField__set_state(stru
 
   /* "(tree fragment)":13
  * cdef __pyx_unpickle_IntField__set_state(IntField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.max_value = __pyx_state[3]; __pyx_result.min_value = __pyx_state[4]; __pyx_result.mutable = __pyx_state[5]; __pyx_result.name = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]
- *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
- *         __pyx_result.__dict__.update(__pyx_state[9])
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.max_value = __pyx_state[3]; __pyx_result.min_value = __pyx_state[4]; __pyx_result.model = __pyx_state[5]; __pyx_result.mutable = __pyx_state[6]; __pyx_result.name = __pyx_state[7]; __pyx_result.private = __pyx_state[8]; __pyx_result.required = __pyx_state[9]
+ *     if len(__pyx_state) > 10 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
+ *         __pyx_result.__dict__.update(__pyx_state[10])
  */
   if (unlikely(__pyx_v___pyx_state == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "object of type 'NoneType' has no len()");
     __PYX_ERR(1, 13, __pyx_L1_error)
   }
   __pyx_t_3 = PyTuple_GET_SIZE(__pyx_v___pyx_state); if (unlikely(__pyx_t_3 == ((Py_ssize_t)-1))) __PYX_ERR(1, 13, __pyx_L1_error)
-  __pyx_t_4 = ((__pyx_t_3 > 9) != 0);
+  __pyx_t_4 = ((__pyx_t_3 > 10) != 0);
   if (__pyx_t_4) {
   } else {
     __pyx_t_2 = __pyx_t_4;
@@ -13212,9 +13427,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_IntField__set_state(stru
   if (__pyx_t_2) {
 
     /* "(tree fragment)":14
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.max_value = __pyx_state[3]; __pyx_result.min_value = __pyx_state[4]; __pyx_result.mutable = __pyx_state[5]; __pyx_result.name = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]
- *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):
- *         __pyx_result.__dict__.update(__pyx_state[9])             # <<<<<<<<<<<<<<
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.max_value = __pyx_state[3]; __pyx_result.min_value = __pyx_state[4]; __pyx_result.model = __pyx_state[5]; __pyx_result.mutable = __pyx_state[6]; __pyx_result.name = __pyx_state[7]; __pyx_result.private = __pyx_state[8]; __pyx_result.required = __pyx_state[9]
+ *     if len(__pyx_state) > 10 and hasattr(__pyx_result, '__dict__'):
+ *         __pyx_result.__dict__.update(__pyx_state[10])             # <<<<<<<<<<<<<<
  */
     __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v___pyx_result), __pyx_n_s_dict); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
@@ -13225,7 +13440,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_IntField__set_state(stru
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
       __PYX_ERR(1, 14, __pyx_L1_error)
     }
-    __pyx_t_6 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 9, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 10, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_8 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_7))) {
@@ -13247,9 +13462,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_IntField__set_state(stru
 
     /* "(tree fragment)":13
  * cdef __pyx_unpickle_IntField__set_state(IntField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.max_value = __pyx_state[3]; __pyx_result.min_value = __pyx_state[4]; __pyx_result.mutable = __pyx_state[5]; __pyx_result.name = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]
- *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
- *         __pyx_result.__dict__.update(__pyx_state[9])
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.max_value = __pyx_state[3]; __pyx_result.min_value = __pyx_state[4]; __pyx_result.model = __pyx_state[5]; __pyx_result.mutable = __pyx_state[6]; __pyx_result.name = __pyx_state[7]; __pyx_result.private = __pyx_state[8]; __pyx_result.required = __pyx_state[9]
+ *     if len(__pyx_state) > 10 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
+ *         __pyx_result.__dict__.update(__pyx_state[10])
  */
   }
 
@@ -13257,8 +13472,8 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_IntField__set_state(stru
  *         __pyx_unpickle_IntField__set_state(<IntField> __pyx_result, __pyx_state)
  *     return __pyx_result
  * cdef __pyx_unpickle_IntField__set_state(IntField __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.max_value = __pyx_state[3]; __pyx_result.min_value = __pyx_state[4]; __pyx_result.mutable = __pyx_state[5]; __pyx_result.name = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]
- *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.max_value = __pyx_state[3]; __pyx_result.min_value = __pyx_state[4]; __pyx_result.model = __pyx_state[5]; __pyx_result.mutable = __pyx_state[6]; __pyx_result.name = __pyx_state[7]; __pyx_result.private = __pyx_state[8]; __pyx_result.required = __pyx_state[9]
+ *     if len(__pyx_state) > 10 and hasattr(__pyx_result, '__dict__'):
  */
 
   /* function exit code */
@@ -13378,22 +13593,22 @@ static PyObject *__pyx_pf_6nyoibo_6fields_6__pyx_unpickle_BoolField(CYTHON_UNUSE
   /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0xefd9ffe, 0x0618b14, 0xe30f371):             # <<<<<<<<<<<<<<
+ *     if __pyx_checksum not in (0xb3dbdb0, 0x3a9047b, 0xbb4eb42):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  */
   __pyx_t_1 = __Pyx_PyInt_From_long(__pyx_v___pyx_checksum); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = (__Pyx_PySequence_ContainsTF(__pyx_t_1, __pyx_tuple__7, Py_NE)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 4, __pyx_L1_error)
+  __pyx_t_2 = (__Pyx_PySequence_ContainsTF(__pyx_t_1, __pyx_tuple__8, Py_NE)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 4, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_3 = (__pyx_t_2 != 0);
   if (__pyx_t_3) {
 
     /* "(tree fragment)":5
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0xefd9ffe, 0x0618b14, 0xe30f371):
+ *     if __pyx_checksum not in (0xb3dbdb0, 0x3a9047b, 0xbb4eb42):
  *         from pickle import PickleError as __pyx_PickleError             # <<<<<<<<<<<<<<
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = BoolField.__new__(__pyx_type)
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 5, __pyx_L1_error)
@@ -13412,9 +13627,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_6__pyx_unpickle_BoolField(CYTHON_UNUSE
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "(tree fragment)":6
- *     if __pyx_checksum not in (0xefd9ffe, 0x0618b14, 0xe30f371):
+ *     if __pyx_checksum not in (0xb3dbdb0, 0x3a9047b, 0xbb4eb42):
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)             # <<<<<<<<<<<<<<
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)             # <<<<<<<<<<<<<<
  *     __pyx_result = BoolField.__new__(__pyx_type)
  *     if __pyx_state is not None:
  */
@@ -13447,15 +13662,15 @@ static PyObject *__pyx_pf_6nyoibo_6fields_6__pyx_unpickle_BoolField(CYTHON_UNUSE
     /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0xefd9ffe, 0x0618b14, 0xe30f371):             # <<<<<<<<<<<<<<
+ *     if __pyx_checksum not in (0xb3dbdb0, 0x3a9047b, 0xbb4eb42):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  */
   }
 
   /* "(tree fragment)":7
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = BoolField.__new__(__pyx_type)             # <<<<<<<<<<<<<<
  *     if __pyx_state is not None:
  *         __pyx_unpickle_BoolField__set_state(<BoolField> __pyx_result, __pyx_state)
@@ -13481,7 +13696,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_6__pyx_unpickle_BoolField(CYTHON_UNUSE
   __pyx_t_4 = 0;
 
   /* "(tree fragment)":8
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = BoolField.__new__(__pyx_type)
  *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_BoolField__set_state(<BoolField> __pyx_result, __pyx_state)
@@ -13504,7 +13719,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_6__pyx_unpickle_BoolField(CYTHON_UNUSE
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "(tree fragment)":8
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = BoolField.__new__(__pyx_type)
  *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_BoolField__set_state(<BoolField> __pyx_result, __pyx_state)
@@ -13517,7 +13732,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_6__pyx_unpickle_BoolField(CYTHON_UNUSE
  *         __pyx_unpickle_BoolField__set_state(<BoolField> __pyx_result, __pyx_state)
  *     return __pyx_result             # <<<<<<<<<<<<<<
  * cdef __pyx_unpickle_BoolField__set_state(BoolField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v___pyx_result);
@@ -13550,8 +13765,8 @@ static PyObject *__pyx_pf_6nyoibo_6fields_6__pyx_unpickle_BoolField(CYTHON_UNUSE
  *         __pyx_unpickle_BoolField__set_state(<BoolField> __pyx_result, __pyx_state)
  *     return __pyx_result
  * cdef __pyx_unpickle_BoolField__set_state(BoolField __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
  */
 
 static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_BoolField__set_state(struct __pyx_obj_6nyoibo_6fields_BoolField *__pyx_v___pyx_result, PyObject *__pyx_v___pyx_state) {
@@ -13573,9 +13788,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_BoolField__set_state(str
   /* "(tree fragment)":12
  *     return __pyx_result
  * cdef __pyx_unpickle_BoolField__set_state(BoolField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]             # <<<<<<<<<<<<<<
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):
- *         __pyx_result.__dict__.update(__pyx_state[7])
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]             # <<<<<<<<<<<<<<
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
+ *         __pyx_result.__dict__.update(__pyx_state[8])
  */
   if (unlikely(__pyx_v___pyx_state == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
@@ -13617,6 +13832,17 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_BoolField__set_state(str
   __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 3, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
+  __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.model);
+  __Pyx_DECREF(__pyx_v___pyx_result->__pyx_base.model);
+  __pyx_v___pyx_result->__pyx_base.model = __pyx_t_1;
+  __pyx_t_1 = 0;
+  if (unlikely(__pyx_v___pyx_state == Py_None)) {
+    PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
+    __PYX_ERR(1, 12, __pyx_L1_error)
+  }
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 4, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_GIVEREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.mutable);
   __Pyx_DECREF(__pyx_v___pyx_result->__pyx_base.mutable);
   __pyx_v___pyx_result->__pyx_base.mutable = __pyx_t_1;
@@ -13625,7 +13851,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_BoolField__set_state(str
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 4, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 5, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (!(likely(PyUnicode_CheckExact(__pyx_t_1))||((__pyx_t_1) == Py_None)||((void)PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "unicode", Py_TYPE(__pyx_t_1)->tp_name), 0))) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GIVEREF(__pyx_t_1);
@@ -13637,7 +13863,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_BoolField__set_state(str
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 5, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 6, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.private);
@@ -13648,7 +13874,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_BoolField__set_state(str
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 6, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 7, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely((__pyx_t_2 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -13656,16 +13882,16 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_BoolField__set_state(str
 
   /* "(tree fragment)":13
  * cdef __pyx_unpickle_BoolField__set_state(BoolField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
- *         __pyx_result.__dict__.update(__pyx_state[7])
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
+ *         __pyx_result.__dict__.update(__pyx_state[8])
  */
   if (unlikely(__pyx_v___pyx_state == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "object of type 'NoneType' has no len()");
     __PYX_ERR(1, 13, __pyx_L1_error)
   }
   __pyx_t_3 = PyTuple_GET_SIZE(__pyx_v___pyx_state); if (unlikely(__pyx_t_3 == ((Py_ssize_t)-1))) __PYX_ERR(1, 13, __pyx_L1_error)
-  __pyx_t_4 = ((__pyx_t_3 > 7) != 0);
+  __pyx_t_4 = ((__pyx_t_3 > 8) != 0);
   if (__pyx_t_4) {
   } else {
     __pyx_t_2 = __pyx_t_4;
@@ -13678,9 +13904,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_BoolField__set_state(str
   if (__pyx_t_2) {
 
     /* "(tree fragment)":14
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):
- *         __pyx_result.__dict__.update(__pyx_state[7])             # <<<<<<<<<<<<<<
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
+ *         __pyx_result.__dict__.update(__pyx_state[8])             # <<<<<<<<<<<<<<
  */
     __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v___pyx_result), __pyx_n_s_dict); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
@@ -13691,7 +13917,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_BoolField__set_state(str
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
       __PYX_ERR(1, 14, __pyx_L1_error)
     }
-    __pyx_t_6 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 7, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 8, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_8 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_7))) {
@@ -13713,9 +13939,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_BoolField__set_state(str
 
     /* "(tree fragment)":13
  * cdef __pyx_unpickle_BoolField__set_state(BoolField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
- *         __pyx_result.__dict__.update(__pyx_state[7])
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
+ *         __pyx_result.__dict__.update(__pyx_state[8])
  */
   }
 
@@ -13723,8 +13949,8 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_BoolField__set_state(str
  *         __pyx_unpickle_BoolField__set_state(<BoolField> __pyx_result, __pyx_state)
  *     return __pyx_result
  * cdef __pyx_unpickle_BoolField__set_state(BoolField __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
  */
 
   /* function exit code */
@@ -13844,22 +14070,22 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8__pyx_unpickle_DateField(CYTHON_UNUSE
   /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0x25200a7, 0x79498e6, 0xc726fc2):             # <<<<<<<<<<<<<<
+ *     if __pyx_checksum not in (0xd8dea5d, 0x1be7fe4, 0x2e44485):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x25200a7, 0x79498e6, 0xc726fc2) = (_formats, alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xd8dea5d, 0x1be7fe4, 0x2e44485) = (_formats, alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  */
   __pyx_t_1 = __Pyx_PyInt_From_long(__pyx_v___pyx_checksum); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = (__Pyx_PySequence_ContainsTF(__pyx_t_1, __pyx_tuple__10, Py_NE)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 4, __pyx_L1_error)
+  __pyx_t_2 = (__Pyx_PySequence_ContainsTF(__pyx_t_1, __pyx_tuple__11, Py_NE)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 4, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_3 = (__pyx_t_2 != 0);
   if (__pyx_t_3) {
 
     /* "(tree fragment)":5
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0x25200a7, 0x79498e6, 0xc726fc2):
+ *     if __pyx_checksum not in (0xd8dea5d, 0x1be7fe4, 0x2e44485):
  *         from pickle import PickleError as __pyx_PickleError             # <<<<<<<<<<<<<<
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x25200a7, 0x79498e6, 0xc726fc2) = (_formats, alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xd8dea5d, 0x1be7fe4, 0x2e44485) = (_formats, alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = DateField.__new__(__pyx_type)
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 5, __pyx_L1_error)
@@ -13878,9 +14104,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8__pyx_unpickle_DateField(CYTHON_UNUSE
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "(tree fragment)":6
- *     if __pyx_checksum not in (0x25200a7, 0x79498e6, 0xc726fc2):
+ *     if __pyx_checksum not in (0xd8dea5d, 0x1be7fe4, 0x2e44485):
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x25200a7, 0x79498e6, 0xc726fc2) = (_formats, alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)             # <<<<<<<<<<<<<<
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xd8dea5d, 0x1be7fe4, 0x2e44485) = (_formats, alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)             # <<<<<<<<<<<<<<
  *     __pyx_result = DateField.__new__(__pyx_type)
  *     if __pyx_state is not None:
  */
@@ -13913,15 +14139,15 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8__pyx_unpickle_DateField(CYTHON_UNUSE
     /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0x25200a7, 0x79498e6, 0xc726fc2):             # <<<<<<<<<<<<<<
+ *     if __pyx_checksum not in (0xd8dea5d, 0x1be7fe4, 0x2e44485):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x25200a7, 0x79498e6, 0xc726fc2) = (_formats, alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xd8dea5d, 0x1be7fe4, 0x2e44485) = (_formats, alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  */
   }
 
   /* "(tree fragment)":7
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x25200a7, 0x79498e6, 0xc726fc2) = (_formats, alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xd8dea5d, 0x1be7fe4, 0x2e44485) = (_formats, alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = DateField.__new__(__pyx_type)             # <<<<<<<<<<<<<<
  *     if __pyx_state is not None:
  *         __pyx_unpickle_DateField__set_state(<DateField> __pyx_result, __pyx_state)
@@ -13947,7 +14173,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8__pyx_unpickle_DateField(CYTHON_UNUSE
   __pyx_t_4 = 0;
 
   /* "(tree fragment)":8
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x25200a7, 0x79498e6, 0xc726fc2) = (_formats, alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xd8dea5d, 0x1be7fe4, 0x2e44485) = (_formats, alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = DateField.__new__(__pyx_type)
  *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_DateField__set_state(<DateField> __pyx_result, __pyx_state)
@@ -13970,7 +14196,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8__pyx_unpickle_DateField(CYTHON_UNUSE
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "(tree fragment)":8
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x25200a7, 0x79498e6, 0xc726fc2) = (_formats, alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xd8dea5d, 0x1be7fe4, 0x2e44485) = (_formats, alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = DateField.__new__(__pyx_type)
  *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_DateField__set_state(<DateField> __pyx_result, __pyx_state)
@@ -13983,7 +14209,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8__pyx_unpickle_DateField(CYTHON_UNUSE
  *         __pyx_unpickle_DateField__set_state(<DateField> __pyx_result, __pyx_state)
  *     return __pyx_result             # <<<<<<<<<<<<<<
  * cdef __pyx_unpickle_DateField__set_state(DateField __pyx_result, tuple __pyx_state):
- *     __pyx_result._formats = __pyx_state[0]; __pyx_result.alias = __pyx_state[1]; __pyx_result.choices = __pyx_state[2]; __pyx_result.default_value = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
+ *     __pyx_result._formats = __pyx_state[0]; __pyx_result.alias = __pyx_state[1]; __pyx_result.choices = __pyx_state[2]; __pyx_result.default_value = __pyx_state[3]; __pyx_result.model = __pyx_state[4]; __pyx_result.mutable = __pyx_state[5]; __pyx_result.name = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v___pyx_result);
@@ -14016,8 +14242,8 @@ static PyObject *__pyx_pf_6nyoibo_6fields_8__pyx_unpickle_DateField(CYTHON_UNUSE
  *         __pyx_unpickle_DateField__set_state(<DateField> __pyx_result, __pyx_state)
  *     return __pyx_result
  * cdef __pyx_unpickle_DateField__set_state(DateField __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_result._formats = __pyx_state[0]; __pyx_result.alias = __pyx_state[1]; __pyx_result.choices = __pyx_state[2]; __pyx_result.default_value = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
- *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
+ *     __pyx_result._formats = __pyx_state[0]; __pyx_result.alias = __pyx_state[1]; __pyx_result.choices = __pyx_state[2]; __pyx_result.default_value = __pyx_state[3]; __pyx_result.model = __pyx_state[4]; __pyx_result.mutable = __pyx_state[5]; __pyx_result.name = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]
+ *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):
  */
 
 static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DateField__set_state(struct __pyx_obj_6nyoibo_6fields_DateField *__pyx_v___pyx_result, PyObject *__pyx_v___pyx_state) {
@@ -14039,9 +14265,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DateField__set_state(str
   /* "(tree fragment)":12
  *     return __pyx_result
  * cdef __pyx_unpickle_DateField__set_state(DateField __pyx_result, tuple __pyx_state):
- *     __pyx_result._formats = __pyx_state[0]; __pyx_result.alias = __pyx_state[1]; __pyx_result.choices = __pyx_state[2]; __pyx_result.default_value = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]             # <<<<<<<<<<<<<<
- *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
- *         __pyx_result.__dict__.update(__pyx_state[8])
+ *     __pyx_result._formats = __pyx_state[0]; __pyx_result.alias = __pyx_state[1]; __pyx_result.choices = __pyx_state[2]; __pyx_result.default_value = __pyx_state[3]; __pyx_result.model = __pyx_state[4]; __pyx_result.mutable = __pyx_state[5]; __pyx_result.name = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]             # <<<<<<<<<<<<<<
+ *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):
+ *         __pyx_result.__dict__.update(__pyx_state[9])
  */
   if (unlikely(__pyx_v___pyx_state == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
@@ -14094,6 +14320,17 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DateField__set_state(str
   __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 4, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
+  __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.model);
+  __Pyx_DECREF(__pyx_v___pyx_result->__pyx_base.model);
+  __pyx_v___pyx_result->__pyx_base.model = __pyx_t_1;
+  __pyx_t_1 = 0;
+  if (unlikely(__pyx_v___pyx_state == Py_None)) {
+    PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
+    __PYX_ERR(1, 12, __pyx_L1_error)
+  }
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 5, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_GIVEREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.mutable);
   __Pyx_DECREF(__pyx_v___pyx_result->__pyx_base.mutable);
   __pyx_v___pyx_result->__pyx_base.mutable = __pyx_t_1;
@@ -14102,7 +14339,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DateField__set_state(str
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 5, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 6, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (!(likely(PyUnicode_CheckExact(__pyx_t_1))||((__pyx_t_1) == Py_None)||((void)PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "unicode", Py_TYPE(__pyx_t_1)->tp_name), 0))) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GIVEREF(__pyx_t_1);
@@ -14114,7 +14351,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DateField__set_state(str
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 6, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 7, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.private);
@@ -14125,7 +14362,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DateField__set_state(str
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 7, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 8, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely((__pyx_t_2 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -14133,16 +14370,16 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DateField__set_state(str
 
   /* "(tree fragment)":13
  * cdef __pyx_unpickle_DateField__set_state(DateField __pyx_result, tuple __pyx_state):
- *     __pyx_result._formats = __pyx_state[0]; __pyx_result.alias = __pyx_state[1]; __pyx_result.choices = __pyx_state[2]; __pyx_result.default_value = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
- *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
- *         __pyx_result.__dict__.update(__pyx_state[8])
+ *     __pyx_result._formats = __pyx_state[0]; __pyx_result.alias = __pyx_state[1]; __pyx_result.choices = __pyx_state[2]; __pyx_result.default_value = __pyx_state[3]; __pyx_result.model = __pyx_state[4]; __pyx_result.mutable = __pyx_state[5]; __pyx_result.name = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]
+ *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
+ *         __pyx_result.__dict__.update(__pyx_state[9])
  */
   if (unlikely(__pyx_v___pyx_state == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "object of type 'NoneType' has no len()");
     __PYX_ERR(1, 13, __pyx_L1_error)
   }
   __pyx_t_3 = PyTuple_GET_SIZE(__pyx_v___pyx_state); if (unlikely(__pyx_t_3 == ((Py_ssize_t)-1))) __PYX_ERR(1, 13, __pyx_L1_error)
-  __pyx_t_4 = ((__pyx_t_3 > 8) != 0);
+  __pyx_t_4 = ((__pyx_t_3 > 9) != 0);
   if (__pyx_t_4) {
   } else {
     __pyx_t_2 = __pyx_t_4;
@@ -14155,9 +14392,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DateField__set_state(str
   if (__pyx_t_2) {
 
     /* "(tree fragment)":14
- *     __pyx_result._formats = __pyx_state[0]; __pyx_result.alias = __pyx_state[1]; __pyx_result.choices = __pyx_state[2]; __pyx_result.default_value = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
- *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
- *         __pyx_result.__dict__.update(__pyx_state[8])             # <<<<<<<<<<<<<<
+ *     __pyx_result._formats = __pyx_state[0]; __pyx_result.alias = __pyx_state[1]; __pyx_result.choices = __pyx_state[2]; __pyx_result.default_value = __pyx_state[3]; __pyx_result.model = __pyx_state[4]; __pyx_result.mutable = __pyx_state[5]; __pyx_result.name = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]
+ *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):
+ *         __pyx_result.__dict__.update(__pyx_state[9])             # <<<<<<<<<<<<<<
  */
     __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v___pyx_result), __pyx_n_s_dict); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
@@ -14168,7 +14405,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DateField__set_state(str
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
       __PYX_ERR(1, 14, __pyx_L1_error)
     }
-    __pyx_t_6 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 8, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 9, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_8 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_7))) {
@@ -14190,9 +14427,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DateField__set_state(str
 
     /* "(tree fragment)":13
  * cdef __pyx_unpickle_DateField__set_state(DateField __pyx_result, tuple __pyx_state):
- *     __pyx_result._formats = __pyx_state[0]; __pyx_result.alias = __pyx_state[1]; __pyx_result.choices = __pyx_state[2]; __pyx_result.default_value = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
- *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
- *         __pyx_result.__dict__.update(__pyx_state[8])
+ *     __pyx_result._formats = __pyx_state[0]; __pyx_result.alias = __pyx_state[1]; __pyx_result.choices = __pyx_state[2]; __pyx_result.default_value = __pyx_state[3]; __pyx_result.model = __pyx_state[4]; __pyx_result.mutable = __pyx_state[5]; __pyx_result.name = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]
+ *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
+ *         __pyx_result.__dict__.update(__pyx_state[9])
  */
   }
 
@@ -14200,8 +14437,8 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DateField__set_state(str
  *         __pyx_unpickle_DateField__set_state(<DateField> __pyx_result, __pyx_state)
  *     return __pyx_result
  * cdef __pyx_unpickle_DateField__set_state(DateField __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_result._formats = __pyx_state[0]; __pyx_result.alias = __pyx_state[1]; __pyx_result.choices = __pyx_state[2]; __pyx_result.default_value = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
- *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
+ *     __pyx_result._formats = __pyx_state[0]; __pyx_result.alias = __pyx_state[1]; __pyx_result.choices = __pyx_state[2]; __pyx_result.default_value = __pyx_state[3]; __pyx_result.model = __pyx_state[4]; __pyx_result.mutable = __pyx_state[5]; __pyx_result.name = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]
+ *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):
  */
 
   /* function exit code */
@@ -14321,22 +14558,22 @@ static PyObject *__pyx_pf_6nyoibo_6fields_10__pyx_unpickle_DatetimeField(CYTHON_
   /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0x25200a7, 0x79498e6, 0xc726fc2):             # <<<<<<<<<<<<<<
+ *     if __pyx_checksum not in (0xd8dea5d, 0x1be7fe4, 0x2e44485):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x25200a7, 0x79498e6, 0xc726fc2) = (_formats, alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xd8dea5d, 0x1be7fe4, 0x2e44485) = (_formats, alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  */
   __pyx_t_1 = __Pyx_PyInt_From_long(__pyx_v___pyx_checksum); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = (__Pyx_PySequence_ContainsTF(__pyx_t_1, __pyx_tuple__10, Py_NE)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 4, __pyx_L1_error)
+  __pyx_t_2 = (__Pyx_PySequence_ContainsTF(__pyx_t_1, __pyx_tuple__11, Py_NE)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 4, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_3 = (__pyx_t_2 != 0);
   if (__pyx_t_3) {
 
     /* "(tree fragment)":5
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0x25200a7, 0x79498e6, 0xc726fc2):
+ *     if __pyx_checksum not in (0xd8dea5d, 0x1be7fe4, 0x2e44485):
  *         from pickle import PickleError as __pyx_PickleError             # <<<<<<<<<<<<<<
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x25200a7, 0x79498e6, 0xc726fc2) = (_formats, alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xd8dea5d, 0x1be7fe4, 0x2e44485) = (_formats, alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = DatetimeField.__new__(__pyx_type)
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 5, __pyx_L1_error)
@@ -14355,9 +14592,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_10__pyx_unpickle_DatetimeField(CYTHON_
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "(tree fragment)":6
- *     if __pyx_checksum not in (0x25200a7, 0x79498e6, 0xc726fc2):
+ *     if __pyx_checksum not in (0xd8dea5d, 0x1be7fe4, 0x2e44485):
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x25200a7, 0x79498e6, 0xc726fc2) = (_formats, alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)             # <<<<<<<<<<<<<<
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xd8dea5d, 0x1be7fe4, 0x2e44485) = (_formats, alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)             # <<<<<<<<<<<<<<
  *     __pyx_result = DatetimeField.__new__(__pyx_type)
  *     if __pyx_state is not None:
  */
@@ -14390,15 +14627,15 @@ static PyObject *__pyx_pf_6nyoibo_6fields_10__pyx_unpickle_DatetimeField(CYTHON_
     /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0x25200a7, 0x79498e6, 0xc726fc2):             # <<<<<<<<<<<<<<
+ *     if __pyx_checksum not in (0xd8dea5d, 0x1be7fe4, 0x2e44485):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x25200a7, 0x79498e6, 0xc726fc2) = (_formats, alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xd8dea5d, 0x1be7fe4, 0x2e44485) = (_formats, alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  */
   }
 
   /* "(tree fragment)":7
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x25200a7, 0x79498e6, 0xc726fc2) = (_formats, alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xd8dea5d, 0x1be7fe4, 0x2e44485) = (_formats, alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = DatetimeField.__new__(__pyx_type)             # <<<<<<<<<<<<<<
  *     if __pyx_state is not None:
  *         __pyx_unpickle_DatetimeField__set_state(<DatetimeField> __pyx_result, __pyx_state)
@@ -14424,7 +14661,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_10__pyx_unpickle_DatetimeField(CYTHON_
   __pyx_t_4 = 0;
 
   /* "(tree fragment)":8
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x25200a7, 0x79498e6, 0xc726fc2) = (_formats, alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xd8dea5d, 0x1be7fe4, 0x2e44485) = (_formats, alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = DatetimeField.__new__(__pyx_type)
  *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_DatetimeField__set_state(<DatetimeField> __pyx_result, __pyx_state)
@@ -14447,7 +14684,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_10__pyx_unpickle_DatetimeField(CYTHON_
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "(tree fragment)":8
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x25200a7, 0x79498e6, 0xc726fc2) = (_formats, alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xd8dea5d, 0x1be7fe4, 0x2e44485) = (_formats, alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = DatetimeField.__new__(__pyx_type)
  *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_DatetimeField__set_state(<DatetimeField> __pyx_result, __pyx_state)
@@ -14460,7 +14697,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_10__pyx_unpickle_DatetimeField(CYTHON_
  *         __pyx_unpickle_DatetimeField__set_state(<DatetimeField> __pyx_result, __pyx_state)
  *     return __pyx_result             # <<<<<<<<<<<<<<
  * cdef __pyx_unpickle_DatetimeField__set_state(DatetimeField __pyx_result, tuple __pyx_state):
- *     __pyx_result._formats = __pyx_state[0]; __pyx_result.alias = __pyx_state[1]; __pyx_result.choices = __pyx_state[2]; __pyx_result.default_value = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
+ *     __pyx_result._formats = __pyx_state[0]; __pyx_result.alias = __pyx_state[1]; __pyx_result.choices = __pyx_state[2]; __pyx_result.default_value = __pyx_state[3]; __pyx_result.model = __pyx_state[4]; __pyx_result.mutable = __pyx_state[5]; __pyx_result.name = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v___pyx_result);
@@ -14493,8 +14730,8 @@ static PyObject *__pyx_pf_6nyoibo_6fields_10__pyx_unpickle_DatetimeField(CYTHON_
  *         __pyx_unpickle_DatetimeField__set_state(<DatetimeField> __pyx_result, __pyx_state)
  *     return __pyx_result
  * cdef __pyx_unpickle_DatetimeField__set_state(DatetimeField __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_result._formats = __pyx_state[0]; __pyx_result.alias = __pyx_state[1]; __pyx_result.choices = __pyx_state[2]; __pyx_result.default_value = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
- *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
+ *     __pyx_result._formats = __pyx_state[0]; __pyx_result.alias = __pyx_state[1]; __pyx_result.choices = __pyx_state[2]; __pyx_result.default_value = __pyx_state[3]; __pyx_result.model = __pyx_state[4]; __pyx_result.mutable = __pyx_state[5]; __pyx_result.name = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]
+ *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):
  */
 
 static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DatetimeField__set_state(struct __pyx_obj_6nyoibo_6fields_DatetimeField *__pyx_v___pyx_result, PyObject *__pyx_v___pyx_state) {
@@ -14516,9 +14753,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DatetimeField__set_state
   /* "(tree fragment)":12
  *     return __pyx_result
  * cdef __pyx_unpickle_DatetimeField__set_state(DatetimeField __pyx_result, tuple __pyx_state):
- *     __pyx_result._formats = __pyx_state[0]; __pyx_result.alias = __pyx_state[1]; __pyx_result.choices = __pyx_state[2]; __pyx_result.default_value = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]             # <<<<<<<<<<<<<<
- *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
- *         __pyx_result.__dict__.update(__pyx_state[8])
+ *     __pyx_result._formats = __pyx_state[0]; __pyx_result.alias = __pyx_state[1]; __pyx_result.choices = __pyx_state[2]; __pyx_result.default_value = __pyx_state[3]; __pyx_result.model = __pyx_state[4]; __pyx_result.mutable = __pyx_state[5]; __pyx_result.name = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]             # <<<<<<<<<<<<<<
+ *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):
+ *         __pyx_result.__dict__.update(__pyx_state[9])
  */
   if (unlikely(__pyx_v___pyx_state == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
@@ -14571,6 +14808,17 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DatetimeField__set_state
   __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 4, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
+  __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.model);
+  __Pyx_DECREF(__pyx_v___pyx_result->__pyx_base.model);
+  __pyx_v___pyx_result->__pyx_base.model = __pyx_t_1;
+  __pyx_t_1 = 0;
+  if (unlikely(__pyx_v___pyx_state == Py_None)) {
+    PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
+    __PYX_ERR(1, 12, __pyx_L1_error)
+  }
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 5, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_GIVEREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.mutable);
   __Pyx_DECREF(__pyx_v___pyx_result->__pyx_base.mutable);
   __pyx_v___pyx_result->__pyx_base.mutable = __pyx_t_1;
@@ -14579,7 +14827,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DatetimeField__set_state
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 5, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 6, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (!(likely(PyUnicode_CheckExact(__pyx_t_1))||((__pyx_t_1) == Py_None)||((void)PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "unicode", Py_TYPE(__pyx_t_1)->tp_name), 0))) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GIVEREF(__pyx_t_1);
@@ -14591,7 +14839,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DatetimeField__set_state
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 6, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 7, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.private);
@@ -14602,7 +14850,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DatetimeField__set_state
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 7, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 8, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely((__pyx_t_2 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -14610,16 +14858,16 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DatetimeField__set_state
 
   /* "(tree fragment)":13
  * cdef __pyx_unpickle_DatetimeField__set_state(DatetimeField __pyx_result, tuple __pyx_state):
- *     __pyx_result._formats = __pyx_state[0]; __pyx_result.alias = __pyx_state[1]; __pyx_result.choices = __pyx_state[2]; __pyx_result.default_value = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
- *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
- *         __pyx_result.__dict__.update(__pyx_state[8])
+ *     __pyx_result._formats = __pyx_state[0]; __pyx_result.alias = __pyx_state[1]; __pyx_result.choices = __pyx_state[2]; __pyx_result.default_value = __pyx_state[3]; __pyx_result.model = __pyx_state[4]; __pyx_result.mutable = __pyx_state[5]; __pyx_result.name = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]
+ *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
+ *         __pyx_result.__dict__.update(__pyx_state[9])
  */
   if (unlikely(__pyx_v___pyx_state == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "object of type 'NoneType' has no len()");
     __PYX_ERR(1, 13, __pyx_L1_error)
   }
   __pyx_t_3 = PyTuple_GET_SIZE(__pyx_v___pyx_state); if (unlikely(__pyx_t_3 == ((Py_ssize_t)-1))) __PYX_ERR(1, 13, __pyx_L1_error)
-  __pyx_t_4 = ((__pyx_t_3 > 8) != 0);
+  __pyx_t_4 = ((__pyx_t_3 > 9) != 0);
   if (__pyx_t_4) {
   } else {
     __pyx_t_2 = __pyx_t_4;
@@ -14632,9 +14880,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DatetimeField__set_state
   if (__pyx_t_2) {
 
     /* "(tree fragment)":14
- *     __pyx_result._formats = __pyx_state[0]; __pyx_result.alias = __pyx_state[1]; __pyx_result.choices = __pyx_state[2]; __pyx_result.default_value = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
- *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
- *         __pyx_result.__dict__.update(__pyx_state[8])             # <<<<<<<<<<<<<<
+ *     __pyx_result._formats = __pyx_state[0]; __pyx_result.alias = __pyx_state[1]; __pyx_result.choices = __pyx_state[2]; __pyx_result.default_value = __pyx_state[3]; __pyx_result.model = __pyx_state[4]; __pyx_result.mutable = __pyx_state[5]; __pyx_result.name = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]
+ *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):
+ *         __pyx_result.__dict__.update(__pyx_state[9])             # <<<<<<<<<<<<<<
  */
     __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v___pyx_result), __pyx_n_s_dict); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
@@ -14645,7 +14893,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DatetimeField__set_state
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
       __PYX_ERR(1, 14, __pyx_L1_error)
     }
-    __pyx_t_6 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 8, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 9, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_8 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_7))) {
@@ -14667,9 +14915,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DatetimeField__set_state
 
     /* "(tree fragment)":13
  * cdef __pyx_unpickle_DatetimeField__set_state(DatetimeField __pyx_result, tuple __pyx_state):
- *     __pyx_result._formats = __pyx_state[0]; __pyx_result.alias = __pyx_state[1]; __pyx_result.choices = __pyx_state[2]; __pyx_result.default_value = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
- *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
- *         __pyx_result.__dict__.update(__pyx_state[8])
+ *     __pyx_result._formats = __pyx_state[0]; __pyx_result.alias = __pyx_state[1]; __pyx_result.choices = __pyx_state[2]; __pyx_result.default_value = __pyx_state[3]; __pyx_result.model = __pyx_state[4]; __pyx_result.mutable = __pyx_state[5]; __pyx_result.name = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]
+ *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
+ *         __pyx_result.__dict__.update(__pyx_state[9])
  */
   }
 
@@ -14677,8 +14925,8 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DatetimeField__set_state
  *         __pyx_unpickle_DatetimeField__set_state(<DatetimeField> __pyx_result, __pyx_state)
  *     return __pyx_result
  * cdef __pyx_unpickle_DatetimeField__set_state(DatetimeField __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_result._formats = __pyx_state[0]; __pyx_result.alias = __pyx_state[1]; __pyx_result.choices = __pyx_state[2]; __pyx_result.default_value = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
- *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
+ *     __pyx_result._formats = __pyx_state[0]; __pyx_result.alias = __pyx_state[1]; __pyx_result.choices = __pyx_state[2]; __pyx_result.default_value = __pyx_state[3]; __pyx_result.model = __pyx_state[4]; __pyx_result.mutable = __pyx_state[5]; __pyx_result.name = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]
+ *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):
  */
 
   /* function exit code */
@@ -14798,22 +15046,22 @@ static PyObject *__pyx_pf_6nyoibo_6fields_12__pyx_unpickle_FloatField(CYTHON_UNU
   /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0xefd9ffe, 0x0618b14, 0xe30f371):             # <<<<<<<<<<<<<<
+ *     if __pyx_checksum not in (0xb3dbdb0, 0x3a9047b, 0xbb4eb42):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  */
   __pyx_t_1 = __Pyx_PyInt_From_long(__pyx_v___pyx_checksum); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = (__Pyx_PySequence_ContainsTF(__pyx_t_1, __pyx_tuple__7, Py_NE)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 4, __pyx_L1_error)
+  __pyx_t_2 = (__Pyx_PySequence_ContainsTF(__pyx_t_1, __pyx_tuple__8, Py_NE)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 4, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_3 = (__pyx_t_2 != 0);
   if (__pyx_t_3) {
 
     /* "(tree fragment)":5
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0xefd9ffe, 0x0618b14, 0xe30f371):
+ *     if __pyx_checksum not in (0xb3dbdb0, 0x3a9047b, 0xbb4eb42):
  *         from pickle import PickleError as __pyx_PickleError             # <<<<<<<<<<<<<<
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = FloatField.__new__(__pyx_type)
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 5, __pyx_L1_error)
@@ -14832,9 +15080,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_12__pyx_unpickle_FloatField(CYTHON_UNU
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "(tree fragment)":6
- *     if __pyx_checksum not in (0xefd9ffe, 0x0618b14, 0xe30f371):
+ *     if __pyx_checksum not in (0xb3dbdb0, 0x3a9047b, 0xbb4eb42):
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)             # <<<<<<<<<<<<<<
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)             # <<<<<<<<<<<<<<
  *     __pyx_result = FloatField.__new__(__pyx_type)
  *     if __pyx_state is not None:
  */
@@ -14867,15 +15115,15 @@ static PyObject *__pyx_pf_6nyoibo_6fields_12__pyx_unpickle_FloatField(CYTHON_UNU
     /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0xefd9ffe, 0x0618b14, 0xe30f371):             # <<<<<<<<<<<<<<
+ *     if __pyx_checksum not in (0xb3dbdb0, 0x3a9047b, 0xbb4eb42):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  */
   }
 
   /* "(tree fragment)":7
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = FloatField.__new__(__pyx_type)             # <<<<<<<<<<<<<<
  *     if __pyx_state is not None:
  *         __pyx_unpickle_FloatField__set_state(<FloatField> __pyx_result, __pyx_state)
@@ -14901,7 +15149,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_12__pyx_unpickle_FloatField(CYTHON_UNU
   __pyx_t_4 = 0;
 
   /* "(tree fragment)":8
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = FloatField.__new__(__pyx_type)
  *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_FloatField__set_state(<FloatField> __pyx_result, __pyx_state)
@@ -14924,7 +15172,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_12__pyx_unpickle_FloatField(CYTHON_UNU
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "(tree fragment)":8
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = FloatField.__new__(__pyx_type)
  *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_FloatField__set_state(<FloatField> __pyx_result, __pyx_state)
@@ -14937,7 +15185,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_12__pyx_unpickle_FloatField(CYTHON_UNU
  *         __pyx_unpickle_FloatField__set_state(<FloatField> __pyx_result, __pyx_state)
  *     return __pyx_result             # <<<<<<<<<<<<<<
  * cdef __pyx_unpickle_FloatField__set_state(FloatField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v___pyx_result);
@@ -14970,8 +15218,8 @@ static PyObject *__pyx_pf_6nyoibo_6fields_12__pyx_unpickle_FloatField(CYTHON_UNU
  *         __pyx_unpickle_FloatField__set_state(<FloatField> __pyx_result, __pyx_state)
  *     return __pyx_result
  * cdef __pyx_unpickle_FloatField__set_state(FloatField __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
  */
 
 static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_FloatField__set_state(struct __pyx_obj_6nyoibo_6fields_FloatField *__pyx_v___pyx_result, PyObject *__pyx_v___pyx_state) {
@@ -14993,9 +15241,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_FloatField__set_state(st
   /* "(tree fragment)":12
  *     return __pyx_result
  * cdef __pyx_unpickle_FloatField__set_state(FloatField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]             # <<<<<<<<<<<<<<
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):
- *         __pyx_result.__dict__.update(__pyx_state[7])
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]             # <<<<<<<<<<<<<<
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
+ *         __pyx_result.__dict__.update(__pyx_state[8])
  */
   if (unlikely(__pyx_v___pyx_state == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
@@ -15037,6 +15285,17 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_FloatField__set_state(st
   __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 3, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
+  __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.model);
+  __Pyx_DECREF(__pyx_v___pyx_result->__pyx_base.model);
+  __pyx_v___pyx_result->__pyx_base.model = __pyx_t_1;
+  __pyx_t_1 = 0;
+  if (unlikely(__pyx_v___pyx_state == Py_None)) {
+    PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
+    __PYX_ERR(1, 12, __pyx_L1_error)
+  }
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 4, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_GIVEREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.mutable);
   __Pyx_DECREF(__pyx_v___pyx_result->__pyx_base.mutable);
   __pyx_v___pyx_result->__pyx_base.mutable = __pyx_t_1;
@@ -15045,7 +15304,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_FloatField__set_state(st
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 4, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 5, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (!(likely(PyUnicode_CheckExact(__pyx_t_1))||((__pyx_t_1) == Py_None)||((void)PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "unicode", Py_TYPE(__pyx_t_1)->tp_name), 0))) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GIVEREF(__pyx_t_1);
@@ -15057,7 +15316,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_FloatField__set_state(st
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 5, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 6, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.private);
@@ -15068,7 +15327,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_FloatField__set_state(st
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 6, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 7, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely((__pyx_t_2 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -15076,16 +15335,16 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_FloatField__set_state(st
 
   /* "(tree fragment)":13
  * cdef __pyx_unpickle_FloatField__set_state(FloatField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
- *         __pyx_result.__dict__.update(__pyx_state[7])
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
+ *         __pyx_result.__dict__.update(__pyx_state[8])
  */
   if (unlikely(__pyx_v___pyx_state == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "object of type 'NoneType' has no len()");
     __PYX_ERR(1, 13, __pyx_L1_error)
   }
   __pyx_t_3 = PyTuple_GET_SIZE(__pyx_v___pyx_state); if (unlikely(__pyx_t_3 == ((Py_ssize_t)-1))) __PYX_ERR(1, 13, __pyx_L1_error)
-  __pyx_t_4 = ((__pyx_t_3 > 7) != 0);
+  __pyx_t_4 = ((__pyx_t_3 > 8) != 0);
   if (__pyx_t_4) {
   } else {
     __pyx_t_2 = __pyx_t_4;
@@ -15098,9 +15357,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_FloatField__set_state(st
   if (__pyx_t_2) {
 
     /* "(tree fragment)":14
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):
- *         __pyx_result.__dict__.update(__pyx_state[7])             # <<<<<<<<<<<<<<
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
+ *         __pyx_result.__dict__.update(__pyx_state[8])             # <<<<<<<<<<<<<<
  */
     __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v___pyx_result), __pyx_n_s_dict); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
@@ -15111,7 +15370,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_FloatField__set_state(st
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
       __PYX_ERR(1, 14, __pyx_L1_error)
     }
-    __pyx_t_6 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 7, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 8, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_8 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_7))) {
@@ -15133,9 +15392,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_FloatField__set_state(st
 
     /* "(tree fragment)":13
  * cdef __pyx_unpickle_FloatField__set_state(FloatField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
- *         __pyx_result.__dict__.update(__pyx_state[7])
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
+ *         __pyx_result.__dict__.update(__pyx_state[8])
  */
   }
 
@@ -15143,8 +15402,8 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_FloatField__set_state(st
  *         __pyx_unpickle_FloatField__set_state(<FloatField> __pyx_result, __pyx_state)
  *     return __pyx_result
  * cdef __pyx_unpickle_FloatField__set_state(FloatField __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
  */
 
   /* function exit code */
@@ -15264,22 +15523,22 @@ static PyObject *__pyx_pf_6nyoibo_6fields_14__pyx_unpickle_DecimalField(CYTHON_U
   /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0xefd9ffe, 0x0618b14, 0xe30f371):             # <<<<<<<<<<<<<<
+ *     if __pyx_checksum not in (0xb3dbdb0, 0x3a9047b, 0xbb4eb42):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  */
   __pyx_t_1 = __Pyx_PyInt_From_long(__pyx_v___pyx_checksum); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = (__Pyx_PySequence_ContainsTF(__pyx_t_1, __pyx_tuple__7, Py_NE)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 4, __pyx_L1_error)
+  __pyx_t_2 = (__Pyx_PySequence_ContainsTF(__pyx_t_1, __pyx_tuple__8, Py_NE)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 4, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_3 = (__pyx_t_2 != 0);
   if (__pyx_t_3) {
 
     /* "(tree fragment)":5
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0xefd9ffe, 0x0618b14, 0xe30f371):
+ *     if __pyx_checksum not in (0xb3dbdb0, 0x3a9047b, 0xbb4eb42):
  *         from pickle import PickleError as __pyx_PickleError             # <<<<<<<<<<<<<<
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = DecimalField.__new__(__pyx_type)
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 5, __pyx_L1_error)
@@ -15298,9 +15557,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_14__pyx_unpickle_DecimalField(CYTHON_U
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "(tree fragment)":6
- *     if __pyx_checksum not in (0xefd9ffe, 0x0618b14, 0xe30f371):
+ *     if __pyx_checksum not in (0xb3dbdb0, 0x3a9047b, 0xbb4eb42):
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)             # <<<<<<<<<<<<<<
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)             # <<<<<<<<<<<<<<
  *     __pyx_result = DecimalField.__new__(__pyx_type)
  *     if __pyx_state is not None:
  */
@@ -15333,15 +15592,15 @@ static PyObject *__pyx_pf_6nyoibo_6fields_14__pyx_unpickle_DecimalField(CYTHON_U
     /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0xefd9ffe, 0x0618b14, 0xe30f371):             # <<<<<<<<<<<<<<
+ *     if __pyx_checksum not in (0xb3dbdb0, 0x3a9047b, 0xbb4eb42):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  */
   }
 
   /* "(tree fragment)":7
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = DecimalField.__new__(__pyx_type)             # <<<<<<<<<<<<<<
  *     if __pyx_state is not None:
  *         __pyx_unpickle_DecimalField__set_state(<DecimalField> __pyx_result, __pyx_state)
@@ -15367,7 +15626,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_14__pyx_unpickle_DecimalField(CYTHON_U
   __pyx_t_4 = 0;
 
   /* "(tree fragment)":8
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = DecimalField.__new__(__pyx_type)
  *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_DecimalField__set_state(<DecimalField> __pyx_result, __pyx_state)
@@ -15390,7 +15649,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_14__pyx_unpickle_DecimalField(CYTHON_U
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "(tree fragment)":8
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = DecimalField.__new__(__pyx_type)
  *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_DecimalField__set_state(<DecimalField> __pyx_result, __pyx_state)
@@ -15403,7 +15662,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_14__pyx_unpickle_DecimalField(CYTHON_U
  *         __pyx_unpickle_DecimalField__set_state(<DecimalField> __pyx_result, __pyx_state)
  *     return __pyx_result             # <<<<<<<<<<<<<<
  * cdef __pyx_unpickle_DecimalField__set_state(DecimalField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v___pyx_result);
@@ -15436,8 +15695,8 @@ static PyObject *__pyx_pf_6nyoibo_6fields_14__pyx_unpickle_DecimalField(CYTHON_U
  *         __pyx_unpickle_DecimalField__set_state(<DecimalField> __pyx_result, __pyx_state)
  *     return __pyx_result
  * cdef __pyx_unpickle_DecimalField__set_state(DecimalField __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
  */
 
 static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DecimalField__set_state(struct __pyx_obj_6nyoibo_6fields_DecimalField *__pyx_v___pyx_result, PyObject *__pyx_v___pyx_state) {
@@ -15459,9 +15718,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DecimalField__set_state(
   /* "(tree fragment)":12
  *     return __pyx_result
  * cdef __pyx_unpickle_DecimalField__set_state(DecimalField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]             # <<<<<<<<<<<<<<
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):
- *         __pyx_result.__dict__.update(__pyx_state[7])
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]             # <<<<<<<<<<<<<<
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
+ *         __pyx_result.__dict__.update(__pyx_state[8])
  */
   if (unlikely(__pyx_v___pyx_state == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
@@ -15503,6 +15762,17 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DecimalField__set_state(
   __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 3, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
+  __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.model);
+  __Pyx_DECREF(__pyx_v___pyx_result->__pyx_base.model);
+  __pyx_v___pyx_result->__pyx_base.model = __pyx_t_1;
+  __pyx_t_1 = 0;
+  if (unlikely(__pyx_v___pyx_state == Py_None)) {
+    PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
+    __PYX_ERR(1, 12, __pyx_L1_error)
+  }
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 4, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_GIVEREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.mutable);
   __Pyx_DECREF(__pyx_v___pyx_result->__pyx_base.mutable);
   __pyx_v___pyx_result->__pyx_base.mutable = __pyx_t_1;
@@ -15511,7 +15781,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DecimalField__set_state(
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 4, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 5, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (!(likely(PyUnicode_CheckExact(__pyx_t_1))||((__pyx_t_1) == Py_None)||((void)PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "unicode", Py_TYPE(__pyx_t_1)->tp_name), 0))) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GIVEREF(__pyx_t_1);
@@ -15523,7 +15793,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DecimalField__set_state(
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 5, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 6, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.private);
@@ -15534,7 +15804,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DecimalField__set_state(
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 6, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 7, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely((__pyx_t_2 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -15542,16 +15812,16 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DecimalField__set_state(
 
   /* "(tree fragment)":13
  * cdef __pyx_unpickle_DecimalField__set_state(DecimalField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
- *         __pyx_result.__dict__.update(__pyx_state[7])
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
+ *         __pyx_result.__dict__.update(__pyx_state[8])
  */
   if (unlikely(__pyx_v___pyx_state == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "object of type 'NoneType' has no len()");
     __PYX_ERR(1, 13, __pyx_L1_error)
   }
   __pyx_t_3 = PyTuple_GET_SIZE(__pyx_v___pyx_state); if (unlikely(__pyx_t_3 == ((Py_ssize_t)-1))) __PYX_ERR(1, 13, __pyx_L1_error)
-  __pyx_t_4 = ((__pyx_t_3 > 7) != 0);
+  __pyx_t_4 = ((__pyx_t_3 > 8) != 0);
   if (__pyx_t_4) {
   } else {
     __pyx_t_2 = __pyx_t_4;
@@ -15564,9 +15834,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DecimalField__set_state(
   if (__pyx_t_2) {
 
     /* "(tree fragment)":14
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):
- *         __pyx_result.__dict__.update(__pyx_state[7])             # <<<<<<<<<<<<<<
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
+ *         __pyx_result.__dict__.update(__pyx_state[8])             # <<<<<<<<<<<<<<
  */
     __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v___pyx_result), __pyx_n_s_dict); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
@@ -15577,7 +15847,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DecimalField__set_state(
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
       __PYX_ERR(1, 14, __pyx_L1_error)
     }
-    __pyx_t_6 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 7, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 8, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_8 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_7))) {
@@ -15599,9 +15869,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DecimalField__set_state(
 
     /* "(tree fragment)":13
  * cdef __pyx_unpickle_DecimalField__set_state(DecimalField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
- *         __pyx_result.__dict__.update(__pyx_state[7])
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
+ *         __pyx_result.__dict__.update(__pyx_state[8])
  */
   }
 
@@ -15609,8 +15879,8 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DecimalField__set_state(
  *         __pyx_unpickle_DecimalField__set_state(<DecimalField> __pyx_result, __pyx_state)
  *     return __pyx_result
  * cdef __pyx_unpickle_DecimalField__set_state(DecimalField __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
  */
 
   /* function exit code */
@@ -15730,22 +16000,22 @@ static PyObject *__pyx_pf_6nyoibo_6fields_16__pyx_unpickle_LinkField(CYTHON_UNUS
   /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0x3ae680a, 0xfc4edf3, 0x1f6ee0f):             # <<<<<<<<<<<<<<
+ *     if __pyx_checksum not in (0x8502f27, 0xfd47d72, 0xad82ae7):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x3ae680a, 0xfc4edf3, 0x1f6ee0f) = (alias, choices, default_value, mutable, name, private, required, to))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x8502f27, 0xfd47d72, 0xad82ae7) = (alias, choices, default_value, model, mutable, name, private, required, to))" % __pyx_checksum)
  */
   __pyx_t_1 = __Pyx_PyInt_From_long(__pyx_v___pyx_checksum); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = (__Pyx_PySequence_ContainsTF(__pyx_t_1, __pyx_tuple__11, Py_NE)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 4, __pyx_L1_error)
+  __pyx_t_2 = (__Pyx_PySequence_ContainsTF(__pyx_t_1, __pyx_tuple__12, Py_NE)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 4, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_3 = (__pyx_t_2 != 0);
   if (__pyx_t_3) {
 
     /* "(tree fragment)":5
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0x3ae680a, 0xfc4edf3, 0x1f6ee0f):
+ *     if __pyx_checksum not in (0x8502f27, 0xfd47d72, 0xad82ae7):
  *         from pickle import PickleError as __pyx_PickleError             # <<<<<<<<<<<<<<
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x3ae680a, 0xfc4edf3, 0x1f6ee0f) = (alias, choices, default_value, mutable, name, private, required, to))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x8502f27, 0xfd47d72, 0xad82ae7) = (alias, choices, default_value, model, mutable, name, private, required, to))" % __pyx_checksum)
  *     __pyx_result = LinkField.__new__(__pyx_type)
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 5, __pyx_L1_error)
@@ -15764,9 +16034,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_16__pyx_unpickle_LinkField(CYTHON_UNUS
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "(tree fragment)":6
- *     if __pyx_checksum not in (0x3ae680a, 0xfc4edf3, 0x1f6ee0f):
+ *     if __pyx_checksum not in (0x8502f27, 0xfd47d72, 0xad82ae7):
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x3ae680a, 0xfc4edf3, 0x1f6ee0f) = (alias, choices, default_value, mutable, name, private, required, to))" % __pyx_checksum)             # <<<<<<<<<<<<<<
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x8502f27, 0xfd47d72, 0xad82ae7) = (alias, choices, default_value, model, mutable, name, private, required, to))" % __pyx_checksum)             # <<<<<<<<<<<<<<
  *     __pyx_result = LinkField.__new__(__pyx_type)
  *     if __pyx_state is not None:
  */
@@ -15799,15 +16069,15 @@ static PyObject *__pyx_pf_6nyoibo_6fields_16__pyx_unpickle_LinkField(CYTHON_UNUS
     /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0x3ae680a, 0xfc4edf3, 0x1f6ee0f):             # <<<<<<<<<<<<<<
+ *     if __pyx_checksum not in (0x8502f27, 0xfd47d72, 0xad82ae7):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x3ae680a, 0xfc4edf3, 0x1f6ee0f) = (alias, choices, default_value, mutable, name, private, required, to))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x8502f27, 0xfd47d72, 0xad82ae7) = (alias, choices, default_value, model, mutable, name, private, required, to))" % __pyx_checksum)
  */
   }
 
   /* "(tree fragment)":7
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x3ae680a, 0xfc4edf3, 0x1f6ee0f) = (alias, choices, default_value, mutable, name, private, required, to))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x8502f27, 0xfd47d72, 0xad82ae7) = (alias, choices, default_value, model, mutable, name, private, required, to))" % __pyx_checksum)
  *     __pyx_result = LinkField.__new__(__pyx_type)             # <<<<<<<<<<<<<<
  *     if __pyx_state is not None:
  *         __pyx_unpickle_LinkField__set_state(<LinkField> __pyx_result, __pyx_state)
@@ -15833,7 +16103,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_16__pyx_unpickle_LinkField(CYTHON_UNUS
   __pyx_t_4 = 0;
 
   /* "(tree fragment)":8
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x3ae680a, 0xfc4edf3, 0x1f6ee0f) = (alias, choices, default_value, mutable, name, private, required, to))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x8502f27, 0xfd47d72, 0xad82ae7) = (alias, choices, default_value, model, mutable, name, private, required, to))" % __pyx_checksum)
  *     __pyx_result = LinkField.__new__(__pyx_type)
  *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_LinkField__set_state(<LinkField> __pyx_result, __pyx_state)
@@ -15856,7 +16126,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_16__pyx_unpickle_LinkField(CYTHON_UNUS
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "(tree fragment)":8
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x3ae680a, 0xfc4edf3, 0x1f6ee0f) = (alias, choices, default_value, mutable, name, private, required, to))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x8502f27, 0xfd47d72, 0xad82ae7) = (alias, choices, default_value, model, mutable, name, private, required, to))" % __pyx_checksum)
  *     __pyx_result = LinkField.__new__(__pyx_type)
  *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_LinkField__set_state(<LinkField> __pyx_result, __pyx_state)
@@ -15869,7 +16139,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_16__pyx_unpickle_LinkField(CYTHON_UNUS
  *         __pyx_unpickle_LinkField__set_state(<LinkField> __pyx_result, __pyx_state)
  *     return __pyx_result             # <<<<<<<<<<<<<<
  * cdef __pyx_unpickle_LinkField__set_state(LinkField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]; __pyx_result.to = __pyx_state[7]
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]; __pyx_result.to = __pyx_state[8]
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v___pyx_result);
@@ -15902,8 +16172,8 @@ static PyObject *__pyx_pf_6nyoibo_6fields_16__pyx_unpickle_LinkField(CYTHON_UNUS
  *         __pyx_unpickle_LinkField__set_state(<LinkField> __pyx_result, __pyx_state)
  *     return __pyx_result
  * cdef __pyx_unpickle_LinkField__set_state(LinkField __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]; __pyx_result.to = __pyx_state[7]
- *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]; __pyx_result.to = __pyx_state[8]
+ *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):
  */
 
 static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_LinkField__set_state(struct __pyx_obj_6nyoibo_6fields_LinkField *__pyx_v___pyx_result, PyObject *__pyx_v___pyx_state) {
@@ -15925,9 +16195,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_LinkField__set_state(str
   /* "(tree fragment)":12
  *     return __pyx_result
  * cdef __pyx_unpickle_LinkField__set_state(LinkField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]; __pyx_result.to = __pyx_state[7]             # <<<<<<<<<<<<<<
- *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
- *         __pyx_result.__dict__.update(__pyx_state[8])
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]; __pyx_result.to = __pyx_state[8]             # <<<<<<<<<<<<<<
+ *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):
+ *         __pyx_result.__dict__.update(__pyx_state[9])
  */
   if (unlikely(__pyx_v___pyx_state == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
@@ -15969,6 +16239,17 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_LinkField__set_state(str
   __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 3, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
+  __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.model);
+  __Pyx_DECREF(__pyx_v___pyx_result->__pyx_base.model);
+  __pyx_v___pyx_result->__pyx_base.model = __pyx_t_1;
+  __pyx_t_1 = 0;
+  if (unlikely(__pyx_v___pyx_state == Py_None)) {
+    PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
+    __PYX_ERR(1, 12, __pyx_L1_error)
+  }
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 4, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_GIVEREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.mutable);
   __Pyx_DECREF(__pyx_v___pyx_result->__pyx_base.mutable);
   __pyx_v___pyx_result->__pyx_base.mutable = __pyx_t_1;
@@ -15977,7 +16258,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_LinkField__set_state(str
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 4, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 5, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (!(likely(PyUnicode_CheckExact(__pyx_t_1))||((__pyx_t_1) == Py_None)||((void)PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "unicode", Py_TYPE(__pyx_t_1)->tp_name), 0))) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GIVEREF(__pyx_t_1);
@@ -15989,7 +16270,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_LinkField__set_state(str
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 5, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 6, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.private);
@@ -16000,7 +16281,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_LinkField__set_state(str
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 6, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 7, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely((__pyx_t_2 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -16009,7 +16290,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_LinkField__set_state(str
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 7, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 8, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_v___pyx_result->to);
@@ -16019,16 +16300,16 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_LinkField__set_state(str
 
   /* "(tree fragment)":13
  * cdef __pyx_unpickle_LinkField__set_state(LinkField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]; __pyx_result.to = __pyx_state[7]
- *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
- *         __pyx_result.__dict__.update(__pyx_state[8])
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]; __pyx_result.to = __pyx_state[8]
+ *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
+ *         __pyx_result.__dict__.update(__pyx_state[9])
  */
   if (unlikely(__pyx_v___pyx_state == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "object of type 'NoneType' has no len()");
     __PYX_ERR(1, 13, __pyx_L1_error)
   }
   __pyx_t_3 = PyTuple_GET_SIZE(__pyx_v___pyx_state); if (unlikely(__pyx_t_3 == ((Py_ssize_t)-1))) __PYX_ERR(1, 13, __pyx_L1_error)
-  __pyx_t_4 = ((__pyx_t_3 > 8) != 0);
+  __pyx_t_4 = ((__pyx_t_3 > 9) != 0);
   if (__pyx_t_4) {
   } else {
     __pyx_t_2 = __pyx_t_4;
@@ -16041,9 +16322,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_LinkField__set_state(str
   if (__pyx_t_2) {
 
     /* "(tree fragment)":14
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]; __pyx_result.to = __pyx_state[7]
- *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
- *         __pyx_result.__dict__.update(__pyx_state[8])             # <<<<<<<<<<<<<<
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]; __pyx_result.to = __pyx_state[8]
+ *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):
+ *         __pyx_result.__dict__.update(__pyx_state[9])             # <<<<<<<<<<<<<<
  */
     __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v___pyx_result), __pyx_n_s_dict); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
@@ -16054,7 +16335,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_LinkField__set_state(str
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
       __PYX_ERR(1, 14, __pyx_L1_error)
     }
-    __pyx_t_6 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 8, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 9, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_8 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_7))) {
@@ -16076,9 +16357,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_LinkField__set_state(str
 
     /* "(tree fragment)":13
  * cdef __pyx_unpickle_LinkField__set_state(LinkField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]; __pyx_result.to = __pyx_state[7]
- *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
- *         __pyx_result.__dict__.update(__pyx_state[8])
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]; __pyx_result.to = __pyx_state[8]
+ *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
+ *         __pyx_result.__dict__.update(__pyx_state[9])
  */
   }
 
@@ -16086,8 +16367,8 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_LinkField__set_state(str
  *         __pyx_unpickle_LinkField__set_state(<LinkField> __pyx_result, __pyx_state)
  *     return __pyx_result
  * cdef __pyx_unpickle_LinkField__set_state(LinkField __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]; __pyx_result.to = __pyx_state[7]
- *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]; __pyx_result.to = __pyx_state[8]
+ *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):
  */
 
   /* function exit code */
@@ -16207,22 +16488,22 @@ static PyObject *__pyx_pf_6nyoibo_6fields_18__pyx_unpickle_DictField(CYTHON_UNUS
   /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0xefd9ffe, 0x0618b14, 0xe30f371):             # <<<<<<<<<<<<<<
+ *     if __pyx_checksum not in (0xb3dbdb0, 0x3a9047b, 0xbb4eb42):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  */
   __pyx_t_1 = __Pyx_PyInt_From_long(__pyx_v___pyx_checksum); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = (__Pyx_PySequence_ContainsTF(__pyx_t_1, __pyx_tuple__7, Py_NE)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 4, __pyx_L1_error)
+  __pyx_t_2 = (__Pyx_PySequence_ContainsTF(__pyx_t_1, __pyx_tuple__8, Py_NE)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 4, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_3 = (__pyx_t_2 != 0);
   if (__pyx_t_3) {
 
     /* "(tree fragment)":5
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0xefd9ffe, 0x0618b14, 0xe30f371):
+ *     if __pyx_checksum not in (0xb3dbdb0, 0x3a9047b, 0xbb4eb42):
  *         from pickle import PickleError as __pyx_PickleError             # <<<<<<<<<<<<<<
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = DictField.__new__(__pyx_type)
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 5, __pyx_L1_error)
@@ -16241,9 +16522,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_18__pyx_unpickle_DictField(CYTHON_UNUS
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "(tree fragment)":6
- *     if __pyx_checksum not in (0xefd9ffe, 0x0618b14, 0xe30f371):
+ *     if __pyx_checksum not in (0xb3dbdb0, 0x3a9047b, 0xbb4eb42):
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)             # <<<<<<<<<<<<<<
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)             # <<<<<<<<<<<<<<
  *     __pyx_result = DictField.__new__(__pyx_type)
  *     if __pyx_state is not None:
  */
@@ -16276,15 +16557,15 @@ static PyObject *__pyx_pf_6nyoibo_6fields_18__pyx_unpickle_DictField(CYTHON_UNUS
     /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0xefd9ffe, 0x0618b14, 0xe30f371):             # <<<<<<<<<<<<<<
+ *     if __pyx_checksum not in (0xb3dbdb0, 0x3a9047b, 0xbb4eb42):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  */
   }
 
   /* "(tree fragment)":7
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = DictField.__new__(__pyx_type)             # <<<<<<<<<<<<<<
  *     if __pyx_state is not None:
  *         __pyx_unpickle_DictField__set_state(<DictField> __pyx_result, __pyx_state)
@@ -16310,7 +16591,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_18__pyx_unpickle_DictField(CYTHON_UNUS
   __pyx_t_4 = 0;
 
   /* "(tree fragment)":8
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = DictField.__new__(__pyx_type)
  *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_DictField__set_state(<DictField> __pyx_result, __pyx_state)
@@ -16333,7 +16614,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_18__pyx_unpickle_DictField(CYTHON_UNUS
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "(tree fragment)":8
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = DictField.__new__(__pyx_type)
  *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_DictField__set_state(<DictField> __pyx_result, __pyx_state)
@@ -16346,7 +16627,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_18__pyx_unpickle_DictField(CYTHON_UNUS
  *         __pyx_unpickle_DictField__set_state(<DictField> __pyx_result, __pyx_state)
  *     return __pyx_result             # <<<<<<<<<<<<<<
  * cdef __pyx_unpickle_DictField__set_state(DictField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v___pyx_result);
@@ -16379,8 +16660,8 @@ static PyObject *__pyx_pf_6nyoibo_6fields_18__pyx_unpickle_DictField(CYTHON_UNUS
  *         __pyx_unpickle_DictField__set_state(<DictField> __pyx_result, __pyx_state)
  *     return __pyx_result
  * cdef __pyx_unpickle_DictField__set_state(DictField __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
  */
 
 static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DictField__set_state(struct __pyx_obj_6nyoibo_6fields_DictField *__pyx_v___pyx_result, PyObject *__pyx_v___pyx_state) {
@@ -16402,9 +16683,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DictField__set_state(str
   /* "(tree fragment)":12
  *     return __pyx_result
  * cdef __pyx_unpickle_DictField__set_state(DictField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]             # <<<<<<<<<<<<<<
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):
- *         __pyx_result.__dict__.update(__pyx_state[7])
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]             # <<<<<<<<<<<<<<
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
+ *         __pyx_result.__dict__.update(__pyx_state[8])
  */
   if (unlikely(__pyx_v___pyx_state == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
@@ -16446,6 +16727,17 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DictField__set_state(str
   __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 3, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
+  __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.model);
+  __Pyx_DECREF(__pyx_v___pyx_result->__pyx_base.model);
+  __pyx_v___pyx_result->__pyx_base.model = __pyx_t_1;
+  __pyx_t_1 = 0;
+  if (unlikely(__pyx_v___pyx_state == Py_None)) {
+    PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
+    __PYX_ERR(1, 12, __pyx_L1_error)
+  }
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 4, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_GIVEREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.mutable);
   __Pyx_DECREF(__pyx_v___pyx_result->__pyx_base.mutable);
   __pyx_v___pyx_result->__pyx_base.mutable = __pyx_t_1;
@@ -16454,7 +16746,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DictField__set_state(str
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 4, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 5, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (!(likely(PyUnicode_CheckExact(__pyx_t_1))||((__pyx_t_1) == Py_None)||((void)PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "unicode", Py_TYPE(__pyx_t_1)->tp_name), 0))) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GIVEREF(__pyx_t_1);
@@ -16466,7 +16758,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DictField__set_state(str
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 5, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 6, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.private);
@@ -16477,7 +16769,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DictField__set_state(str
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 6, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 7, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely((__pyx_t_2 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -16485,16 +16777,16 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DictField__set_state(str
 
   /* "(tree fragment)":13
  * cdef __pyx_unpickle_DictField__set_state(DictField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
- *         __pyx_result.__dict__.update(__pyx_state[7])
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
+ *         __pyx_result.__dict__.update(__pyx_state[8])
  */
   if (unlikely(__pyx_v___pyx_state == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "object of type 'NoneType' has no len()");
     __PYX_ERR(1, 13, __pyx_L1_error)
   }
   __pyx_t_3 = PyTuple_GET_SIZE(__pyx_v___pyx_state); if (unlikely(__pyx_t_3 == ((Py_ssize_t)-1))) __PYX_ERR(1, 13, __pyx_L1_error)
-  __pyx_t_4 = ((__pyx_t_3 > 7) != 0);
+  __pyx_t_4 = ((__pyx_t_3 > 8) != 0);
   if (__pyx_t_4) {
   } else {
     __pyx_t_2 = __pyx_t_4;
@@ -16507,9 +16799,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DictField__set_state(str
   if (__pyx_t_2) {
 
     /* "(tree fragment)":14
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):
- *         __pyx_result.__dict__.update(__pyx_state[7])             # <<<<<<<<<<<<<<
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
+ *         __pyx_result.__dict__.update(__pyx_state[8])             # <<<<<<<<<<<<<<
  */
     __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v___pyx_result), __pyx_n_s_dict); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
@@ -16520,7 +16812,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DictField__set_state(str
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
       __PYX_ERR(1, 14, __pyx_L1_error)
     }
-    __pyx_t_6 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 7, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 8, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_8 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_7))) {
@@ -16542,9 +16834,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DictField__set_state(str
 
     /* "(tree fragment)":13
  * cdef __pyx_unpickle_DictField__set_state(DictField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
- *         __pyx_result.__dict__.update(__pyx_state[7])
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
+ *         __pyx_result.__dict__.update(__pyx_state[8])
  */
   }
 
@@ -16552,8 +16844,8 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_DictField__set_state(str
  *         __pyx_unpickle_DictField__set_state(<DictField> __pyx_result, __pyx_state)
  *     return __pyx_result
  * cdef __pyx_unpickle_DictField__set_state(DictField __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
  */
 
   /* function exit code */
@@ -16673,22 +16965,22 @@ static PyObject *__pyx_pf_6nyoibo_6fields_20__pyx_unpickle_JSONField(CYTHON_UNUS
   /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0xefd9ffe, 0x0618b14, 0xe30f371):             # <<<<<<<<<<<<<<
+ *     if __pyx_checksum not in (0xb3dbdb0, 0x3a9047b, 0xbb4eb42):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  */
   __pyx_t_1 = __Pyx_PyInt_From_long(__pyx_v___pyx_checksum); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = (__Pyx_PySequence_ContainsTF(__pyx_t_1, __pyx_tuple__7, Py_NE)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 4, __pyx_L1_error)
+  __pyx_t_2 = (__Pyx_PySequence_ContainsTF(__pyx_t_1, __pyx_tuple__8, Py_NE)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 4, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_3 = (__pyx_t_2 != 0);
   if (__pyx_t_3) {
 
     /* "(tree fragment)":5
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0xefd9ffe, 0x0618b14, 0xe30f371):
+ *     if __pyx_checksum not in (0xb3dbdb0, 0x3a9047b, 0xbb4eb42):
  *         from pickle import PickleError as __pyx_PickleError             # <<<<<<<<<<<<<<
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = JSONField.__new__(__pyx_type)
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 5, __pyx_L1_error)
@@ -16707,9 +16999,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_20__pyx_unpickle_JSONField(CYTHON_UNUS
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "(tree fragment)":6
- *     if __pyx_checksum not in (0xefd9ffe, 0x0618b14, 0xe30f371):
+ *     if __pyx_checksum not in (0xb3dbdb0, 0x3a9047b, 0xbb4eb42):
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)             # <<<<<<<<<<<<<<
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)             # <<<<<<<<<<<<<<
  *     __pyx_result = JSONField.__new__(__pyx_type)
  *     if __pyx_state is not None:
  */
@@ -16742,15 +17034,15 @@ static PyObject *__pyx_pf_6nyoibo_6fields_20__pyx_unpickle_JSONField(CYTHON_UNUS
     /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0xefd9ffe, 0x0618b14, 0xe30f371):             # <<<<<<<<<<<<<<
+ *     if __pyx_checksum not in (0xb3dbdb0, 0x3a9047b, 0xbb4eb42):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  */
   }
 
   /* "(tree fragment)":7
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = JSONField.__new__(__pyx_type)             # <<<<<<<<<<<<<<
  *     if __pyx_state is not None:
  *         __pyx_unpickle_JSONField__set_state(<JSONField> __pyx_result, __pyx_state)
@@ -16776,7 +17068,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_20__pyx_unpickle_JSONField(CYTHON_UNUS
   __pyx_t_4 = 0;
 
   /* "(tree fragment)":8
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = JSONField.__new__(__pyx_type)
  *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_JSONField__set_state(<JSONField> __pyx_result, __pyx_state)
@@ -16799,7 +17091,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_20__pyx_unpickle_JSONField(CYTHON_UNUS
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "(tree fragment)":8
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  *     __pyx_result = JSONField.__new__(__pyx_type)
  *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_JSONField__set_state(<JSONField> __pyx_result, __pyx_state)
@@ -16812,7 +17104,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_20__pyx_unpickle_JSONField(CYTHON_UNUS
  *         __pyx_unpickle_JSONField__set_state(<JSONField> __pyx_result, __pyx_state)
  *     return __pyx_result             # <<<<<<<<<<<<<<
  * cdef __pyx_unpickle_JSONField__set_state(JSONField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v___pyx_result);
@@ -16845,8 +17137,8 @@ static PyObject *__pyx_pf_6nyoibo_6fields_20__pyx_unpickle_JSONField(CYTHON_UNUS
  *         __pyx_unpickle_JSONField__set_state(<JSONField> __pyx_result, __pyx_state)
  *     return __pyx_result
  * cdef __pyx_unpickle_JSONField__set_state(JSONField __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
  */
 
 static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_JSONField__set_state(struct __pyx_obj_6nyoibo_6fields_JSONField *__pyx_v___pyx_result, PyObject *__pyx_v___pyx_state) {
@@ -16868,9 +17160,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_JSONField__set_state(str
   /* "(tree fragment)":12
  *     return __pyx_result
  * cdef __pyx_unpickle_JSONField__set_state(JSONField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]             # <<<<<<<<<<<<<<
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):
- *         __pyx_result.__dict__.update(__pyx_state[7])
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]             # <<<<<<<<<<<<<<
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
+ *         __pyx_result.__dict__.update(__pyx_state[8])
  */
   if (unlikely(__pyx_v___pyx_state == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
@@ -16912,6 +17204,17 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_JSONField__set_state(str
   __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 3, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
+  __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.model);
+  __Pyx_DECREF(__pyx_v___pyx_result->__pyx_base.model);
+  __pyx_v___pyx_result->__pyx_base.model = __pyx_t_1;
+  __pyx_t_1 = 0;
+  if (unlikely(__pyx_v___pyx_state == Py_None)) {
+    PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
+    __PYX_ERR(1, 12, __pyx_L1_error)
+  }
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 4, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_GIVEREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.mutable);
   __Pyx_DECREF(__pyx_v___pyx_result->__pyx_base.mutable);
   __pyx_v___pyx_result->__pyx_base.mutable = __pyx_t_1;
@@ -16920,7 +17223,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_JSONField__set_state(str
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 4, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 5, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (!(likely(PyUnicode_CheckExact(__pyx_t_1))||((__pyx_t_1) == Py_None)||((void)PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "unicode", Py_TYPE(__pyx_t_1)->tp_name), 0))) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GIVEREF(__pyx_t_1);
@@ -16932,7 +17235,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_JSONField__set_state(str
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 5, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 6, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.private);
@@ -16943,7 +17246,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_JSONField__set_state(str
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 6, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 7, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely((__pyx_t_2 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -16951,16 +17254,16 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_JSONField__set_state(str
 
   /* "(tree fragment)":13
  * cdef __pyx_unpickle_JSONField__set_state(JSONField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
- *         __pyx_result.__dict__.update(__pyx_state[7])
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
+ *         __pyx_result.__dict__.update(__pyx_state[8])
  */
   if (unlikely(__pyx_v___pyx_state == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "object of type 'NoneType' has no len()");
     __PYX_ERR(1, 13, __pyx_L1_error)
   }
   __pyx_t_3 = PyTuple_GET_SIZE(__pyx_v___pyx_state); if (unlikely(__pyx_t_3 == ((Py_ssize_t)-1))) __PYX_ERR(1, 13, __pyx_L1_error)
-  __pyx_t_4 = ((__pyx_t_3 > 7) != 0);
+  __pyx_t_4 = ((__pyx_t_3 > 8) != 0);
   if (__pyx_t_4) {
   } else {
     __pyx_t_2 = __pyx_t_4;
@@ -16973,9 +17276,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_JSONField__set_state(str
   if (__pyx_t_2) {
 
     /* "(tree fragment)":14
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):
- *         __pyx_result.__dict__.update(__pyx_state[7])             # <<<<<<<<<<<<<<
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
+ *         __pyx_result.__dict__.update(__pyx_state[8])             # <<<<<<<<<<<<<<
  */
     __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v___pyx_result), __pyx_n_s_dict); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
@@ -16986,7 +17289,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_JSONField__set_state(str
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
       __PYX_ERR(1, 14, __pyx_L1_error)
     }
-    __pyx_t_6 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 7, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 8, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_8 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_7))) {
@@ -17008,9 +17311,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_JSONField__set_state(str
 
     /* "(tree fragment)":13
  * cdef __pyx_unpickle_JSONField__set_state(JSONField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
- *         __pyx_result.__dict__.update(__pyx_state[7])
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
+ *         __pyx_result.__dict__.update(__pyx_state[8])
  */
   }
 
@@ -17018,8 +17321,8 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_JSONField__set_state(str
  *         __pyx_unpickle_JSONField__set_state(<JSONField> __pyx_result, __pyx_state)
  *     return __pyx_result
  * cdef __pyx_unpickle_JSONField__set_state(JSONField __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
  */
 
   /* function exit code */
@@ -17139,22 +17442,22 @@ static PyObject *__pyx_pf_6nyoibo_6fields_22__pyx_unpickle_TupleField(CYTHON_UNU
   /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0x9deea8c, 0x68ca3e8, 0xe3b8e6d):             # <<<<<<<<<<<<<<
+ *     if __pyx_checksum not in (0x3051edc, 0x1755c25, 0xb2c47fc):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x9deea8c, 0x68ca3e8, 0xe3b8e6d) = (alias, choices, default_value, mutable, name, of, private, required, reverse_relationship))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x3051edc, 0x1755c25, 0xb2c47fc) = (alias, choices, default_value, model, mutable, name, of, private, required, reverse_relationship))" % __pyx_checksum)
  */
   __pyx_t_1 = __Pyx_PyInt_From_long(__pyx_v___pyx_checksum); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = (__Pyx_PySequence_ContainsTF(__pyx_t_1, __pyx_tuple__12, Py_NE)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 4, __pyx_L1_error)
+  __pyx_t_2 = (__Pyx_PySequence_ContainsTF(__pyx_t_1, __pyx_tuple__13, Py_NE)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 4, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_3 = (__pyx_t_2 != 0);
   if (__pyx_t_3) {
 
     /* "(tree fragment)":5
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0x9deea8c, 0x68ca3e8, 0xe3b8e6d):
+ *     if __pyx_checksum not in (0x3051edc, 0x1755c25, 0xb2c47fc):
  *         from pickle import PickleError as __pyx_PickleError             # <<<<<<<<<<<<<<
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x9deea8c, 0x68ca3e8, 0xe3b8e6d) = (alias, choices, default_value, mutable, name, of, private, required, reverse_relationship))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x3051edc, 0x1755c25, 0xb2c47fc) = (alias, choices, default_value, model, mutable, name, of, private, required, reverse_relationship))" % __pyx_checksum)
  *     __pyx_result = TupleField.__new__(__pyx_type)
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 5, __pyx_L1_error)
@@ -17173,9 +17476,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_22__pyx_unpickle_TupleField(CYTHON_UNU
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "(tree fragment)":6
- *     if __pyx_checksum not in (0x9deea8c, 0x68ca3e8, 0xe3b8e6d):
+ *     if __pyx_checksum not in (0x3051edc, 0x1755c25, 0xb2c47fc):
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x9deea8c, 0x68ca3e8, 0xe3b8e6d) = (alias, choices, default_value, mutable, name, of, private, required, reverse_relationship))" % __pyx_checksum)             # <<<<<<<<<<<<<<
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x3051edc, 0x1755c25, 0xb2c47fc) = (alias, choices, default_value, model, mutable, name, of, private, required, reverse_relationship))" % __pyx_checksum)             # <<<<<<<<<<<<<<
  *     __pyx_result = TupleField.__new__(__pyx_type)
  *     if __pyx_state is not None:
  */
@@ -17208,15 +17511,15 @@ static PyObject *__pyx_pf_6nyoibo_6fields_22__pyx_unpickle_TupleField(CYTHON_UNU
     /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0x9deea8c, 0x68ca3e8, 0xe3b8e6d):             # <<<<<<<<<<<<<<
+ *     if __pyx_checksum not in (0x3051edc, 0x1755c25, 0xb2c47fc):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x9deea8c, 0x68ca3e8, 0xe3b8e6d) = (alias, choices, default_value, mutable, name, of, private, required, reverse_relationship))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x3051edc, 0x1755c25, 0xb2c47fc) = (alias, choices, default_value, model, mutable, name, of, private, required, reverse_relationship))" % __pyx_checksum)
  */
   }
 
   /* "(tree fragment)":7
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x9deea8c, 0x68ca3e8, 0xe3b8e6d) = (alias, choices, default_value, mutable, name, of, private, required, reverse_relationship))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x3051edc, 0x1755c25, 0xb2c47fc) = (alias, choices, default_value, model, mutable, name, of, private, required, reverse_relationship))" % __pyx_checksum)
  *     __pyx_result = TupleField.__new__(__pyx_type)             # <<<<<<<<<<<<<<
  *     if __pyx_state is not None:
  *         __pyx_unpickle_TupleField__set_state(<TupleField> __pyx_result, __pyx_state)
@@ -17242,7 +17545,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_22__pyx_unpickle_TupleField(CYTHON_UNU
   __pyx_t_4 = 0;
 
   /* "(tree fragment)":8
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x9deea8c, 0x68ca3e8, 0xe3b8e6d) = (alias, choices, default_value, mutable, name, of, private, required, reverse_relationship))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x3051edc, 0x1755c25, 0xb2c47fc) = (alias, choices, default_value, model, mutable, name, of, private, required, reverse_relationship))" % __pyx_checksum)
  *     __pyx_result = TupleField.__new__(__pyx_type)
  *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_TupleField__set_state(<TupleField> __pyx_result, __pyx_state)
@@ -17265,7 +17568,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_22__pyx_unpickle_TupleField(CYTHON_UNU
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "(tree fragment)":8
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x9deea8c, 0x68ca3e8, 0xe3b8e6d) = (alias, choices, default_value, mutable, name, of, private, required, reverse_relationship))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x3051edc, 0x1755c25, 0xb2c47fc) = (alias, choices, default_value, model, mutable, name, of, private, required, reverse_relationship))" % __pyx_checksum)
  *     __pyx_result = TupleField.__new__(__pyx_type)
  *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_TupleField__set_state(<TupleField> __pyx_result, __pyx_state)
@@ -17278,7 +17581,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_22__pyx_unpickle_TupleField(CYTHON_UNU
  *         __pyx_unpickle_TupleField__set_state(<TupleField> __pyx_result, __pyx_state)
  *     return __pyx_result             # <<<<<<<<<<<<<<
  * cdef __pyx_unpickle_TupleField__set_state(TupleField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.of = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]; __pyx_result.reverse_relationship = __pyx_state[8]
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.of = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]; __pyx_result.reverse_relationship = __pyx_state[9]
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v___pyx_result);
@@ -17311,8 +17614,8 @@ static PyObject *__pyx_pf_6nyoibo_6fields_22__pyx_unpickle_TupleField(CYTHON_UNU
  *         __pyx_unpickle_TupleField__set_state(<TupleField> __pyx_result, __pyx_state)
  *     return __pyx_result
  * cdef __pyx_unpickle_TupleField__set_state(TupleField __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.of = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]; __pyx_result.reverse_relationship = __pyx_state[8]
- *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.of = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]; __pyx_result.reverse_relationship = __pyx_state[9]
+ *     if len(__pyx_state) > 10 and hasattr(__pyx_result, '__dict__'):
  */
 
 static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_TupleField__set_state(struct __pyx_obj_6nyoibo_6fields_TupleField *__pyx_v___pyx_result, PyObject *__pyx_v___pyx_state) {
@@ -17334,9 +17637,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_TupleField__set_state(st
   /* "(tree fragment)":12
  *     return __pyx_result
  * cdef __pyx_unpickle_TupleField__set_state(TupleField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.of = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]; __pyx_result.reverse_relationship = __pyx_state[8]             # <<<<<<<<<<<<<<
- *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):
- *         __pyx_result.__dict__.update(__pyx_state[9])
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.of = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]; __pyx_result.reverse_relationship = __pyx_state[9]             # <<<<<<<<<<<<<<
+ *     if len(__pyx_state) > 10 and hasattr(__pyx_result, '__dict__'):
+ *         __pyx_result.__dict__.update(__pyx_state[10])
  */
   if (unlikely(__pyx_v___pyx_state == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
@@ -17378,6 +17681,17 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_TupleField__set_state(st
   __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 3, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
+  __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.model);
+  __Pyx_DECREF(__pyx_v___pyx_result->__pyx_base.model);
+  __pyx_v___pyx_result->__pyx_base.model = __pyx_t_1;
+  __pyx_t_1 = 0;
+  if (unlikely(__pyx_v___pyx_state == Py_None)) {
+    PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
+    __PYX_ERR(1, 12, __pyx_L1_error)
+  }
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 4, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_GIVEREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.mutable);
   __Pyx_DECREF(__pyx_v___pyx_result->__pyx_base.mutable);
   __pyx_v___pyx_result->__pyx_base.mutable = __pyx_t_1;
@@ -17386,7 +17700,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_TupleField__set_state(st
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 4, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 5, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (!(likely(PyUnicode_CheckExact(__pyx_t_1))||((__pyx_t_1) == Py_None)||((void)PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "unicode", Py_TYPE(__pyx_t_1)->tp_name), 0))) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GIVEREF(__pyx_t_1);
@@ -17398,7 +17712,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_TupleField__set_state(st
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 5, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 6, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_v___pyx_result->of);
@@ -17409,7 +17723,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_TupleField__set_state(st
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 6, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 7, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.private);
@@ -17420,7 +17734,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_TupleField__set_state(st
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 7, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 8, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely((__pyx_t_2 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -17429,7 +17743,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_TupleField__set_state(st
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 8, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 9, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_v___pyx_result->reverse_relationship);
@@ -17439,16 +17753,16 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_TupleField__set_state(st
 
   /* "(tree fragment)":13
  * cdef __pyx_unpickle_TupleField__set_state(TupleField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.of = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]; __pyx_result.reverse_relationship = __pyx_state[8]
- *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
- *         __pyx_result.__dict__.update(__pyx_state[9])
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.of = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]; __pyx_result.reverse_relationship = __pyx_state[9]
+ *     if len(__pyx_state) > 10 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
+ *         __pyx_result.__dict__.update(__pyx_state[10])
  */
   if (unlikely(__pyx_v___pyx_state == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "object of type 'NoneType' has no len()");
     __PYX_ERR(1, 13, __pyx_L1_error)
   }
   __pyx_t_3 = PyTuple_GET_SIZE(__pyx_v___pyx_state); if (unlikely(__pyx_t_3 == ((Py_ssize_t)-1))) __PYX_ERR(1, 13, __pyx_L1_error)
-  __pyx_t_4 = ((__pyx_t_3 > 9) != 0);
+  __pyx_t_4 = ((__pyx_t_3 > 10) != 0);
   if (__pyx_t_4) {
   } else {
     __pyx_t_2 = __pyx_t_4;
@@ -17461,9 +17775,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_TupleField__set_state(st
   if (__pyx_t_2) {
 
     /* "(tree fragment)":14
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.of = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]; __pyx_result.reverse_relationship = __pyx_state[8]
- *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):
- *         __pyx_result.__dict__.update(__pyx_state[9])             # <<<<<<<<<<<<<<
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.of = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]; __pyx_result.reverse_relationship = __pyx_state[9]
+ *     if len(__pyx_state) > 10 and hasattr(__pyx_result, '__dict__'):
+ *         __pyx_result.__dict__.update(__pyx_state[10])             # <<<<<<<<<<<<<<
  */
     __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v___pyx_result), __pyx_n_s_dict); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
@@ -17474,7 +17788,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_TupleField__set_state(st
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
       __PYX_ERR(1, 14, __pyx_L1_error)
     }
-    __pyx_t_6 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 9, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 10, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_8 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_7))) {
@@ -17496,9 +17810,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_TupleField__set_state(st
 
     /* "(tree fragment)":13
  * cdef __pyx_unpickle_TupleField__set_state(TupleField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.of = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]; __pyx_result.reverse_relationship = __pyx_state[8]
- *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
- *         __pyx_result.__dict__.update(__pyx_state[9])
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.of = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]; __pyx_result.reverse_relationship = __pyx_state[9]
+ *     if len(__pyx_state) > 10 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
+ *         __pyx_result.__dict__.update(__pyx_state[10])
  */
   }
 
@@ -17506,8 +17820,8 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_TupleField__set_state(st
  *         __pyx_unpickle_TupleField__set_state(<TupleField> __pyx_result, __pyx_state)
  *     return __pyx_result
  * cdef __pyx_unpickle_TupleField__set_state(TupleField __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.of = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]; __pyx_result.reverse_relationship = __pyx_state[8]
- *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.of = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]; __pyx_result.reverse_relationship = __pyx_state[9]
+ *     if len(__pyx_state) > 10 and hasattr(__pyx_result, '__dict__'):
  */
 
   /* function exit code */
@@ -17627,22 +17941,22 @@ static PyObject *__pyx_pf_6nyoibo_6fields_24__pyx_unpickle_ListField(CYTHON_UNUS
   /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0x9deea8c, 0x68ca3e8, 0xe3b8e6d):             # <<<<<<<<<<<<<<
+ *     if __pyx_checksum not in (0x3051edc, 0x1755c25, 0xb2c47fc):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x9deea8c, 0x68ca3e8, 0xe3b8e6d) = (alias, choices, default_value, mutable, name, of, private, required, reverse_relationship))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x3051edc, 0x1755c25, 0xb2c47fc) = (alias, choices, default_value, model, mutable, name, of, private, required, reverse_relationship))" % __pyx_checksum)
  */
   __pyx_t_1 = __Pyx_PyInt_From_long(__pyx_v___pyx_checksum); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = (__Pyx_PySequence_ContainsTF(__pyx_t_1, __pyx_tuple__12, Py_NE)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 4, __pyx_L1_error)
+  __pyx_t_2 = (__Pyx_PySequence_ContainsTF(__pyx_t_1, __pyx_tuple__13, Py_NE)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 4, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_3 = (__pyx_t_2 != 0);
   if (__pyx_t_3) {
 
     /* "(tree fragment)":5
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0x9deea8c, 0x68ca3e8, 0xe3b8e6d):
+ *     if __pyx_checksum not in (0x3051edc, 0x1755c25, 0xb2c47fc):
  *         from pickle import PickleError as __pyx_PickleError             # <<<<<<<<<<<<<<
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x9deea8c, 0x68ca3e8, 0xe3b8e6d) = (alias, choices, default_value, mutable, name, of, private, required, reverse_relationship))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x3051edc, 0x1755c25, 0xb2c47fc) = (alias, choices, default_value, model, mutable, name, of, private, required, reverse_relationship))" % __pyx_checksum)
  *     __pyx_result = ListField.__new__(__pyx_type)
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 5, __pyx_L1_error)
@@ -17661,9 +17975,9 @@ static PyObject *__pyx_pf_6nyoibo_6fields_24__pyx_unpickle_ListField(CYTHON_UNUS
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "(tree fragment)":6
- *     if __pyx_checksum not in (0x9deea8c, 0x68ca3e8, 0xe3b8e6d):
+ *     if __pyx_checksum not in (0x3051edc, 0x1755c25, 0xb2c47fc):
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x9deea8c, 0x68ca3e8, 0xe3b8e6d) = (alias, choices, default_value, mutable, name, of, private, required, reverse_relationship))" % __pyx_checksum)             # <<<<<<<<<<<<<<
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x3051edc, 0x1755c25, 0xb2c47fc) = (alias, choices, default_value, model, mutable, name, of, private, required, reverse_relationship))" % __pyx_checksum)             # <<<<<<<<<<<<<<
  *     __pyx_result = ListField.__new__(__pyx_type)
  *     if __pyx_state is not None:
  */
@@ -17696,15 +18010,15 @@ static PyObject *__pyx_pf_6nyoibo_6fields_24__pyx_unpickle_ListField(CYTHON_UNUS
     /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0x9deea8c, 0x68ca3e8, 0xe3b8e6d):             # <<<<<<<<<<<<<<
+ *     if __pyx_checksum not in (0x3051edc, 0x1755c25, 0xb2c47fc):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x9deea8c, 0x68ca3e8, 0xe3b8e6d) = (alias, choices, default_value, mutable, name, of, private, required, reverse_relationship))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x3051edc, 0x1755c25, 0xb2c47fc) = (alias, choices, default_value, model, mutable, name, of, private, required, reverse_relationship))" % __pyx_checksum)
  */
   }
 
   /* "(tree fragment)":7
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x9deea8c, 0x68ca3e8, 0xe3b8e6d) = (alias, choices, default_value, mutable, name, of, private, required, reverse_relationship))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x3051edc, 0x1755c25, 0xb2c47fc) = (alias, choices, default_value, model, mutable, name, of, private, required, reverse_relationship))" % __pyx_checksum)
  *     __pyx_result = ListField.__new__(__pyx_type)             # <<<<<<<<<<<<<<
  *     if __pyx_state is not None:
  *         __pyx_unpickle_ListField__set_state(<ListField> __pyx_result, __pyx_state)
@@ -17730,7 +18044,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_24__pyx_unpickle_ListField(CYTHON_UNUS
   __pyx_t_4 = 0;
 
   /* "(tree fragment)":8
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x9deea8c, 0x68ca3e8, 0xe3b8e6d) = (alias, choices, default_value, mutable, name, of, private, required, reverse_relationship))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x3051edc, 0x1755c25, 0xb2c47fc) = (alias, choices, default_value, model, mutable, name, of, private, required, reverse_relationship))" % __pyx_checksum)
  *     __pyx_result = ListField.__new__(__pyx_type)
  *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_ListField__set_state(<ListField> __pyx_result, __pyx_state)
@@ -17753,7 +18067,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_24__pyx_unpickle_ListField(CYTHON_UNUS
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "(tree fragment)":8
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x9deea8c, 0x68ca3e8, 0xe3b8e6d) = (alias, choices, default_value, mutable, name, of, private, required, reverse_relationship))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0x3051edc, 0x1755c25, 0xb2c47fc) = (alias, choices, default_value, model, mutable, name, of, private, required, reverse_relationship))" % __pyx_checksum)
  *     __pyx_result = ListField.__new__(__pyx_type)
  *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
  *         __pyx_unpickle_ListField__set_state(<ListField> __pyx_result, __pyx_state)
@@ -17766,7 +18080,7 @@ static PyObject *__pyx_pf_6nyoibo_6fields_24__pyx_unpickle_ListField(CYTHON_UNUS
  *         __pyx_unpickle_ListField__set_state(<ListField> __pyx_result, __pyx_state)
  *     return __pyx_result             # <<<<<<<<<<<<<<
  * cdef __pyx_unpickle_ListField__set_state(ListField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.of = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]; __pyx_result.reverse_relationship = __pyx_state[8]
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.of = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]; __pyx_result.reverse_relationship = __pyx_state[9]
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v___pyx_result);
@@ -17799,8 +18113,8 @@ static PyObject *__pyx_pf_6nyoibo_6fields_24__pyx_unpickle_ListField(CYTHON_UNUS
  *         __pyx_unpickle_ListField__set_state(<ListField> __pyx_result, __pyx_state)
  *     return __pyx_result
  * cdef __pyx_unpickle_ListField__set_state(ListField __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.of = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]; __pyx_result.reverse_relationship = __pyx_state[8]
- *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.of = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]; __pyx_result.reverse_relationship = __pyx_state[9]
+ *     if len(__pyx_state) > 10 and hasattr(__pyx_result, '__dict__'):
  */
 
 static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_ListField__set_state(struct __pyx_obj_6nyoibo_6fields_ListField *__pyx_v___pyx_result, PyObject *__pyx_v___pyx_state) {
@@ -17822,9 +18136,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_ListField__set_state(str
   /* "(tree fragment)":12
  *     return __pyx_result
  * cdef __pyx_unpickle_ListField__set_state(ListField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.of = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]; __pyx_result.reverse_relationship = __pyx_state[8]             # <<<<<<<<<<<<<<
- *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):
- *         __pyx_result.__dict__.update(__pyx_state[9])
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.of = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]; __pyx_result.reverse_relationship = __pyx_state[9]             # <<<<<<<<<<<<<<
+ *     if len(__pyx_state) > 10 and hasattr(__pyx_result, '__dict__'):
+ *         __pyx_result.__dict__.update(__pyx_state[10])
  */
   if (unlikely(__pyx_v___pyx_state == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
@@ -17866,6 +18180,17 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_ListField__set_state(str
   __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 3, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
+  __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.__pyx_base.model);
+  __Pyx_DECREF(__pyx_v___pyx_result->__pyx_base.__pyx_base.model);
+  __pyx_v___pyx_result->__pyx_base.__pyx_base.model = __pyx_t_1;
+  __pyx_t_1 = 0;
+  if (unlikely(__pyx_v___pyx_state == Py_None)) {
+    PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
+    __PYX_ERR(1, 12, __pyx_L1_error)
+  }
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 4, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_GIVEREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.__pyx_base.mutable);
   __Pyx_DECREF(__pyx_v___pyx_result->__pyx_base.__pyx_base.mutable);
   __pyx_v___pyx_result->__pyx_base.__pyx_base.mutable = __pyx_t_1;
@@ -17874,7 +18199,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_ListField__set_state(str
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 4, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 5, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (!(likely(PyUnicode_CheckExact(__pyx_t_1))||((__pyx_t_1) == Py_None)||((void)PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "unicode", Py_TYPE(__pyx_t_1)->tp_name), 0))) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GIVEREF(__pyx_t_1);
@@ -17886,7 +18211,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_ListField__set_state(str
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 5, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 6, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.of);
@@ -17897,7 +18222,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_ListField__set_state(str
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 6, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 7, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.__pyx_base.private);
@@ -17908,7 +18233,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_ListField__set_state(str
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 7, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 8, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely((__pyx_t_2 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -17917,7 +18242,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_ListField__set_state(str
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
     __PYX_ERR(1, 12, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 8, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 9, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_v___pyx_result->__pyx_base.reverse_relationship);
@@ -17927,16 +18252,16 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_ListField__set_state(str
 
   /* "(tree fragment)":13
  * cdef __pyx_unpickle_ListField__set_state(ListField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.of = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]; __pyx_result.reverse_relationship = __pyx_state[8]
- *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
- *         __pyx_result.__dict__.update(__pyx_state[9])
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.of = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]; __pyx_result.reverse_relationship = __pyx_state[9]
+ *     if len(__pyx_state) > 10 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
+ *         __pyx_result.__dict__.update(__pyx_state[10])
  */
   if (unlikely(__pyx_v___pyx_state == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "object of type 'NoneType' has no len()");
     __PYX_ERR(1, 13, __pyx_L1_error)
   }
   __pyx_t_3 = PyTuple_GET_SIZE(__pyx_v___pyx_state); if (unlikely(__pyx_t_3 == ((Py_ssize_t)-1))) __PYX_ERR(1, 13, __pyx_L1_error)
-  __pyx_t_4 = ((__pyx_t_3 > 9) != 0);
+  __pyx_t_4 = ((__pyx_t_3 > 10) != 0);
   if (__pyx_t_4) {
   } else {
     __pyx_t_2 = __pyx_t_4;
@@ -17949,9 +18274,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_ListField__set_state(str
   if (__pyx_t_2) {
 
     /* "(tree fragment)":14
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.of = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]; __pyx_result.reverse_relationship = __pyx_state[8]
- *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):
- *         __pyx_result.__dict__.update(__pyx_state[9])             # <<<<<<<<<<<<<<
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.of = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]; __pyx_result.reverse_relationship = __pyx_state[9]
+ *     if len(__pyx_state) > 10 and hasattr(__pyx_result, '__dict__'):
+ *         __pyx_result.__dict__.update(__pyx_state[10])             # <<<<<<<<<<<<<<
  */
     __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v___pyx_result), __pyx_n_s_dict); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
@@ -17962,7 +18287,7 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_ListField__set_state(str
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
       __PYX_ERR(1, 14, __pyx_L1_error)
     }
-    __pyx_t_6 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 9, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_GetItemInt_Tuple(__pyx_v___pyx_state, 10, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_8 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_7))) {
@@ -17984,9 +18309,9 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_ListField__set_state(str
 
     /* "(tree fragment)":13
  * cdef __pyx_unpickle_ListField__set_state(ListField __pyx_result, tuple __pyx_state):
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.of = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]; __pyx_result.reverse_relationship = __pyx_state[8]
- *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
- *         __pyx_result.__dict__.update(__pyx_state[9])
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.of = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]; __pyx_result.reverse_relationship = __pyx_state[9]
+ *     if len(__pyx_state) > 10 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
+ *         __pyx_result.__dict__.update(__pyx_state[10])
  */
   }
 
@@ -17994,8 +18319,8 @@ static PyObject *__pyx_f_6nyoibo_6fields___pyx_unpickle_ListField__set_state(str
  *         __pyx_unpickle_ListField__set_state(<ListField> __pyx_result, __pyx_state)
  *     return __pyx_result
  * cdef __pyx_unpickle_ListField__set_state(ListField __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.of = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]; __pyx_result.reverse_relationship = __pyx_state[8]
- *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.of = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]; __pyx_result.reverse_relationship = __pyx_state[9]
+ *     if len(__pyx_state) > 10 and hasattr(__pyx_result, '__dict__'):
  */
 
   /* function exit code */
@@ -18032,6 +18357,7 @@ static PyObject *__pyx_tp_new_6nyoibo_6fields_Field(PyTypeObject *t, CYTHON_UNUS
   p->choices = Py_None; Py_INCREF(Py_None);
   p->alias = Py_None; Py_INCREF(Py_None);
   p->name = ((PyObject*)Py_None); Py_INCREF(Py_None);
+  p->model = Py_None; Py_INCREF(Py_None);
   return o;
 }
 
@@ -18049,6 +18375,7 @@ static void __pyx_tp_dealloc_6nyoibo_6fields_Field(PyObject *o) {
   Py_CLEAR(p->choices);
   Py_CLEAR(p->alias);
   Py_CLEAR(p->name);
+  Py_CLEAR(p->model);
   (*Py_TYPE(o)->tp_free)(o);
 }
 
@@ -18070,6 +18397,9 @@ static int __pyx_tp_traverse_6nyoibo_6fields_Field(PyObject *o, visitproc v, voi
   if (p->alias) {
     e = (*v)(p->alias, a); if (e) return e;
   }
+  if (p->model) {
+    e = (*v)(p->model, a); if (e) return e;
+  }
   return 0;
 }
 
@@ -18090,6 +18420,9 @@ static int __pyx_tp_clear_6nyoibo_6fields_Field(PyObject *o) {
   Py_XDECREF(tmp);
   tmp = ((PyObject*)p->alias);
   p->alias = Py_None; Py_INCREF(Py_None);
+  Py_XDECREF(tmp);
+  tmp = ((PyObject*)p->model);
+  p->model = Py_None; Py_INCREF(Py_None);
   Py_XDECREF(tmp);
   return 0;
 }
@@ -19594,6 +19927,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_ValueError, __pyx_k_ValueError, sizeof(__pyx_k_ValueError), 0, 0, 1, 1},
   {&__pyx_n_u__2, __pyx_k__2, sizeof(__pyx_k__2), 0, 1, 0, 1},
   {&__pyx_kp_u__4, __pyx_k__4, sizeof(__pyx_k__4), 0, 1, 0, 0},
+  {&__pyx_kp_u__5, __pyx_k__5, sizeof(__pyx_k__5), 0, 1, 0, 0},
   {&__pyx_n_s_alias, __pyx_k_alias, sizeof(__pyx_k_alias), 0, 0, 1, 1},
   {&__pyx_n_s_choices, __pyx_k_choices, sizeof(__pyx_k_choices), 0, 0, 1, 1},
   {&__pyx_n_s_class, __pyx_k_class, sizeof(__pyx_k_class), 0, 0, 1, 1},
@@ -19607,7 +19941,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_dumps, __pyx_k_dumps, sizeof(__pyx_k_dumps), 0, 0, 1, 1},
   {&__pyx_n_s_exceptions, __pyx_k_exceptions, sizeof(__pyx_k_exceptions), 0, 0, 1, 1},
   {&__pyx_n_u_false, __pyx_k_false, sizeof(__pyx_k_false), 0, 1, 0, 1},
-  {&__pyx_kp_u_field, __pyx_k_field, sizeof(__pyx_k_field), 0, 1, 0, 0},
+  {&__pyx_kp_u_field_in_model, __pyx_k_field_in_model, sizeof(__pyx_k_field_in_model), 0, 1, 0, 0},
   {&__pyx_n_s_formats, __pyx_k_formats, sizeof(__pyx_k_formats), 0, 0, 1, 1},
   {&__pyx_n_s_fromisoformat, __pyx_k_fromisoformat, sizeof(__pyx_k_fromisoformat), 0, 0, 1, 1},
   {&__pyx_n_s_getstate, __pyx_k_getstate, sizeof(__pyx_k_getstate), 0, 0, 1, 1},
@@ -19687,7 +20021,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
 static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
   __pyx_builtin_TypeError = __Pyx_GetBuiltinName(__pyx_n_s_TypeError); if (!__pyx_builtin_TypeError) __PYX_ERR(0, 33, __pyx_L1_error)
   __pyx_builtin_ValueError = __Pyx_GetBuiltinName(__pyx_n_s_ValueError); if (!__pyx_builtin_ValueError) __PYX_ERR(0, 33, __pyx_L1_error)
-  __pyx_builtin_super = __Pyx_GetBuiltinName(__pyx_n_s_super); if (!__pyx_builtin_super) __PYX_ERR(0, 108, __pyx_L1_error)
+  __pyx_builtin_super = __Pyx_GetBuiltinName(__pyx_n_s_super); if (!__pyx_builtin_super) __PYX_ERR(0, 112, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
   return -1;
@@ -19697,64 +20031,64 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "nyoibo/fields.pyx":46
+  /* "nyoibo/fields.pyx":47
  * 
  *     def __set_name__(self, owner, name):
  *         self.name = name.replace('_', '', 1)             # <<<<<<<<<<<<<<
+ *         self.model = owner
  * 
- *     cpdef public parse(self, value):
  */
-  __pyx_tuple__3 = PyTuple_Pack(3, __pyx_n_u__2, __pyx_kp_u_, __pyx_int_1); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 46, __pyx_L1_error)
+  __pyx_tuple__3 = PyTuple_Pack(3, __pyx_n_u__2, __pyx_kp_u_, __pyx_int_1); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 47, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
   __Pyx_GIVEREF(__pyx_tuple__3);
 
-  /* "nyoibo/fields.pyx":272
+  /* "nyoibo/fields.pyx":276
  *     def __init__(self, to, *args, **kwargs):
  *         if issubclass(type(to), MetaEntity) is False:
  *             raise ValueError('to must be an Entity subclass')             # <<<<<<<<<<<<<<
  *         super(LinkField, self).__init__(*args, **kwargs)
  *         self.to = to
  */
-  __pyx_tuple__5 = PyTuple_Pack(1, __pyx_kp_u_to_must_be_an_Entity_subclass); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 272, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__5);
-  __Pyx_GIVEREF(__pyx_tuple__5);
+  __pyx_tuple__6 = PyTuple_Pack(1, __pyx_kp_u_to_must_be_an_Entity_subclass); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(0, 276, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__6);
+  __Pyx_GIVEREF(__pyx_tuple__6);
 
-  /* "nyoibo/fields.pyx":327
+  /* "nyoibo/fields.pyx":331
  *     def __init__(self, of=None, reverse_relationship=False, *args, **kwargs):
  *         if reverse_relationship and of is None:
  *             raise ValueError('to make a reverse relationship, `of` parameter must to be set')             # <<<<<<<<<<<<<<
  *         super().__init__(*args, **kwargs)
  *         self.of = of
  */
-  __pyx_tuple__6 = PyTuple_Pack(1, __pyx_kp_u_to_make_a_reverse_relationship_o); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(0, 327, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__6);
-  __Pyx_GIVEREF(__pyx_tuple__6);
+  __pyx_tuple__7 = PyTuple_Pack(1, __pyx_kp_u_to_make_a_reverse_relationship_o); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 331, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__7);
+  __Pyx_GIVEREF(__pyx_tuple__7);
 
   /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
- *     if __pyx_checksum not in (0xefd9ffe, 0x0618b14, 0xe30f371):             # <<<<<<<<<<<<<<
+ *     if __pyx_checksum not in (0xb3dbdb0, 0x3a9047b, 0xbb4eb42):             # <<<<<<<<<<<<<<
  *         from pickle import PickleError as __pyx_PickleError
- *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xefd9ffe, 0x0618b14, 0xe30f371) = (alias, choices, default_value, mutable, name, private, required))" % __pyx_checksum)
+ *         raise __pyx_PickleError("Incompatible checksums (0x%x vs (0xb3dbdb0, 0x3a9047b, 0xbb4eb42) = (alias, choices, default_value, model, mutable, name, private, required))" % __pyx_checksum)
  */
-  __pyx_tuple__7 = PyTuple_Pack(3, __pyx_int_251502590, __pyx_int_6392596, __pyx_int_238089073); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(1, 4, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__7);
-  __Pyx_GIVEREF(__pyx_tuple__7);
-  __pyx_tuple__8 = PyTuple_Pack(3, __pyx_int_25379354, __pyx_int_196766306, __pyx_int_79153700); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(1, 4, __pyx_L1_error)
+  __pyx_tuple__8 = PyTuple_Pack(3, __pyx_int_188595632, __pyx_int_61408379, __pyx_int_196406082); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(1, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__8);
   __Pyx_GIVEREF(__pyx_tuple__8);
-  __pyx_tuple__9 = PyTuple_Pack(3, __pyx_int_246818909, __pyx_int_227589360, __pyx_int_240774962); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(1, 4, __pyx_L1_error)
+  __pyx_tuple__9 = PyTuple_Pack(3, __pyx_int_27377546, __pyx_int_183205250, __pyx_int_163595036); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(1, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__9);
   __Pyx_GIVEREF(__pyx_tuple__9);
-  __pyx_tuple__10 = PyTuple_Pack(3, __pyx_int_38928551, __pyx_int_127178982, __pyx_int_208826306); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(1, 4, __pyx_L1_error)
+  __pyx_tuple__10 = PyTuple_Pack(3, __pyx_int_204286689, __pyx_int_253979098, __pyx_int_64578335); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(1, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__10);
   __Pyx_GIVEREF(__pyx_tuple__10);
-  __pyx_tuple__11 = PyTuple_Pack(3, __pyx_int_61761546, __pyx_int_264564211, __pyx_int_32960015); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(1, 4, __pyx_L1_error)
+  __pyx_tuple__11 = PyTuple_Pack(3, __pyx_int_227404381, __pyx_int_29261796, __pyx_int_48514181); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(1, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__11);
   __Pyx_GIVEREF(__pyx_tuple__11);
-  __pyx_tuple__12 = PyTuple_Pack(3, __pyx_int_165603980, __pyx_int_109880296, __pyx_int_238784109); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(1, 4, __pyx_L1_error)
+  __pyx_tuple__12 = PyTuple_Pack(3, __pyx_int_139472679, __pyx_int_265583986, __pyx_int_181938919); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(1, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__12);
   __Pyx_GIVEREF(__pyx_tuple__12);
+  __pyx_tuple__13 = PyTuple_Pack(3, __pyx_int_50667228, __pyx_int_24468517, __pyx_int_187451388); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(1, 4, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__13);
+  __Pyx_GIVEREF(__pyx_tuple__13);
 
   /* "nyoibo/fields.pyx":33
  * 
@@ -19763,67 +20097,67 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  * 
  *     def __init__(self, private=False, mutable=False, default_value=None,
  */
-  __pyx_tuple__13 = PyTuple_Pack(2, __pyx_builtin_TypeError, __pyx_builtin_ValueError); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(0, 33, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__13);
-  __Pyx_GIVEREF(__pyx_tuple__13);
+  __pyx_tuple__14 = PyTuple_Pack(2, __pyx_builtin_TypeError, __pyx_builtin_ValueError); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 33, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__14);
+  __Pyx_GIVEREF(__pyx_tuple__14);
 
   /* "(tree fragment)":1
  * def __pyx_unpickle_Field(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
  */
-  __pyx_tuple__14 = PyTuple_Pack(5, __pyx_n_s_pyx_type, __pyx_n_s_pyx_checksum, __pyx_n_s_pyx_state, __pyx_n_s_pyx_PickleError, __pyx_n_s_pyx_result); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(1, 1, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__14);
-  __Pyx_GIVEREF(__pyx_tuple__14);
-  __pyx_codeobj__15 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__14, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_Field, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__15)) __PYX_ERR(1, 1, __pyx_L1_error)
-  __pyx_tuple__16 = PyTuple_Pack(5, __pyx_n_s_pyx_type, __pyx_n_s_pyx_checksum, __pyx_n_s_pyx_state, __pyx_n_s_pyx_PickleError, __pyx_n_s_pyx_result); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(1, 1, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__16);
-  __Pyx_GIVEREF(__pyx_tuple__16);
-  __pyx_codeobj__17 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__16, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_StrField, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__17)) __PYX_ERR(1, 1, __pyx_L1_error)
-  __pyx_tuple__18 = PyTuple_Pack(5, __pyx_n_s_pyx_type, __pyx_n_s_pyx_checksum, __pyx_n_s_pyx_state, __pyx_n_s_pyx_PickleError, __pyx_n_s_pyx_result); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(1, 1, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__18);
-  __Pyx_GIVEREF(__pyx_tuple__18);
-  __pyx_codeobj__19 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__18, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_IntField, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__19)) __PYX_ERR(1, 1, __pyx_L1_error)
-  __pyx_tuple__20 = PyTuple_Pack(5, __pyx_n_s_pyx_type, __pyx_n_s_pyx_checksum, __pyx_n_s_pyx_state, __pyx_n_s_pyx_PickleError, __pyx_n_s_pyx_result); if (unlikely(!__pyx_tuple__20)) __PYX_ERR(1, 1, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__20);
-  __Pyx_GIVEREF(__pyx_tuple__20);
-  __pyx_codeobj__21 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__20, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_BoolField, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__21)) __PYX_ERR(1, 1, __pyx_L1_error)
-  __pyx_tuple__22 = PyTuple_Pack(5, __pyx_n_s_pyx_type, __pyx_n_s_pyx_checksum, __pyx_n_s_pyx_state, __pyx_n_s_pyx_PickleError, __pyx_n_s_pyx_result); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(1, 1, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__22);
-  __Pyx_GIVEREF(__pyx_tuple__22);
-  __pyx_codeobj__23 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__22, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_DateField, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__23)) __PYX_ERR(1, 1, __pyx_L1_error)
-  __pyx_tuple__24 = PyTuple_Pack(5, __pyx_n_s_pyx_type, __pyx_n_s_pyx_checksum, __pyx_n_s_pyx_state, __pyx_n_s_pyx_PickleError, __pyx_n_s_pyx_result); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(1, 1, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__24);
-  __Pyx_GIVEREF(__pyx_tuple__24);
-  __pyx_codeobj__25 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__24, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_DatetimeField, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__25)) __PYX_ERR(1, 1, __pyx_L1_error)
-  __pyx_tuple__26 = PyTuple_Pack(5, __pyx_n_s_pyx_type, __pyx_n_s_pyx_checksum, __pyx_n_s_pyx_state, __pyx_n_s_pyx_PickleError, __pyx_n_s_pyx_result); if (unlikely(!__pyx_tuple__26)) __PYX_ERR(1, 1, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__26);
-  __Pyx_GIVEREF(__pyx_tuple__26);
-  __pyx_codeobj__27 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__26, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_FloatField, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__27)) __PYX_ERR(1, 1, __pyx_L1_error)
-  __pyx_tuple__28 = PyTuple_Pack(5, __pyx_n_s_pyx_type, __pyx_n_s_pyx_checksum, __pyx_n_s_pyx_state, __pyx_n_s_pyx_PickleError, __pyx_n_s_pyx_result); if (unlikely(!__pyx_tuple__28)) __PYX_ERR(1, 1, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__28);
-  __Pyx_GIVEREF(__pyx_tuple__28);
-  __pyx_codeobj__29 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__28, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_DecimalField, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__29)) __PYX_ERR(1, 1, __pyx_L1_error)
-  __pyx_tuple__30 = PyTuple_Pack(5, __pyx_n_s_pyx_type, __pyx_n_s_pyx_checksum, __pyx_n_s_pyx_state, __pyx_n_s_pyx_PickleError, __pyx_n_s_pyx_result); if (unlikely(!__pyx_tuple__30)) __PYX_ERR(1, 1, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__30);
-  __Pyx_GIVEREF(__pyx_tuple__30);
-  __pyx_codeobj__31 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__30, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_LinkField, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__31)) __PYX_ERR(1, 1, __pyx_L1_error)
-  __pyx_tuple__32 = PyTuple_Pack(5, __pyx_n_s_pyx_type, __pyx_n_s_pyx_checksum, __pyx_n_s_pyx_state, __pyx_n_s_pyx_PickleError, __pyx_n_s_pyx_result); if (unlikely(!__pyx_tuple__32)) __PYX_ERR(1, 1, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__32);
-  __Pyx_GIVEREF(__pyx_tuple__32);
-  __pyx_codeobj__33 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__32, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_DictField, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__33)) __PYX_ERR(1, 1, __pyx_L1_error)
-  __pyx_tuple__34 = PyTuple_Pack(5, __pyx_n_s_pyx_type, __pyx_n_s_pyx_checksum, __pyx_n_s_pyx_state, __pyx_n_s_pyx_PickleError, __pyx_n_s_pyx_result); if (unlikely(!__pyx_tuple__34)) __PYX_ERR(1, 1, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__34);
-  __Pyx_GIVEREF(__pyx_tuple__34);
-  __pyx_codeobj__35 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__34, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_JSONField, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__35)) __PYX_ERR(1, 1, __pyx_L1_error)
-  __pyx_tuple__36 = PyTuple_Pack(5, __pyx_n_s_pyx_type, __pyx_n_s_pyx_checksum, __pyx_n_s_pyx_state, __pyx_n_s_pyx_PickleError, __pyx_n_s_pyx_result); if (unlikely(!__pyx_tuple__36)) __PYX_ERR(1, 1, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__36);
-  __Pyx_GIVEREF(__pyx_tuple__36);
-  __pyx_codeobj__37 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__36, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_TupleField, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__37)) __PYX_ERR(1, 1, __pyx_L1_error)
-  __pyx_tuple__38 = PyTuple_Pack(5, __pyx_n_s_pyx_type, __pyx_n_s_pyx_checksum, __pyx_n_s_pyx_state, __pyx_n_s_pyx_PickleError, __pyx_n_s_pyx_result); if (unlikely(!__pyx_tuple__38)) __PYX_ERR(1, 1, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__38);
-  __Pyx_GIVEREF(__pyx_tuple__38);
-  __pyx_codeobj__39 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__38, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_ListField, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__39)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __pyx_tuple__15 = PyTuple_Pack(5, __pyx_n_s_pyx_type, __pyx_n_s_pyx_checksum, __pyx_n_s_pyx_state, __pyx_n_s_pyx_PickleError, __pyx_n_s_pyx_result); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__15);
+  __Pyx_GIVEREF(__pyx_tuple__15);
+  __pyx_codeobj__16 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__15, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_Field, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__16)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __pyx_tuple__17 = PyTuple_Pack(5, __pyx_n_s_pyx_type, __pyx_n_s_pyx_checksum, __pyx_n_s_pyx_state, __pyx_n_s_pyx_PickleError, __pyx_n_s_pyx_result); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__17);
+  __Pyx_GIVEREF(__pyx_tuple__17);
+  __pyx_codeobj__18 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__17, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_StrField, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__18)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __pyx_tuple__19 = PyTuple_Pack(5, __pyx_n_s_pyx_type, __pyx_n_s_pyx_checksum, __pyx_n_s_pyx_state, __pyx_n_s_pyx_PickleError, __pyx_n_s_pyx_result); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__19);
+  __Pyx_GIVEREF(__pyx_tuple__19);
+  __pyx_codeobj__20 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__19, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_IntField, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__20)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __pyx_tuple__21 = PyTuple_Pack(5, __pyx_n_s_pyx_type, __pyx_n_s_pyx_checksum, __pyx_n_s_pyx_state, __pyx_n_s_pyx_PickleError, __pyx_n_s_pyx_result); if (unlikely(!__pyx_tuple__21)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__21);
+  __Pyx_GIVEREF(__pyx_tuple__21);
+  __pyx_codeobj__22 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__21, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_BoolField, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__22)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __pyx_tuple__23 = PyTuple_Pack(5, __pyx_n_s_pyx_type, __pyx_n_s_pyx_checksum, __pyx_n_s_pyx_state, __pyx_n_s_pyx_PickleError, __pyx_n_s_pyx_result); if (unlikely(!__pyx_tuple__23)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__23);
+  __Pyx_GIVEREF(__pyx_tuple__23);
+  __pyx_codeobj__24 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__23, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_DateField, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__24)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __pyx_tuple__25 = PyTuple_Pack(5, __pyx_n_s_pyx_type, __pyx_n_s_pyx_checksum, __pyx_n_s_pyx_state, __pyx_n_s_pyx_PickleError, __pyx_n_s_pyx_result); if (unlikely(!__pyx_tuple__25)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__25);
+  __Pyx_GIVEREF(__pyx_tuple__25);
+  __pyx_codeobj__26 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__25, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_DatetimeField, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__26)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __pyx_tuple__27 = PyTuple_Pack(5, __pyx_n_s_pyx_type, __pyx_n_s_pyx_checksum, __pyx_n_s_pyx_state, __pyx_n_s_pyx_PickleError, __pyx_n_s_pyx_result); if (unlikely(!__pyx_tuple__27)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__27);
+  __Pyx_GIVEREF(__pyx_tuple__27);
+  __pyx_codeobj__28 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__27, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_FloatField, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__28)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __pyx_tuple__29 = PyTuple_Pack(5, __pyx_n_s_pyx_type, __pyx_n_s_pyx_checksum, __pyx_n_s_pyx_state, __pyx_n_s_pyx_PickleError, __pyx_n_s_pyx_result); if (unlikely(!__pyx_tuple__29)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__29);
+  __Pyx_GIVEREF(__pyx_tuple__29);
+  __pyx_codeobj__30 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__29, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_DecimalField, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__30)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __pyx_tuple__31 = PyTuple_Pack(5, __pyx_n_s_pyx_type, __pyx_n_s_pyx_checksum, __pyx_n_s_pyx_state, __pyx_n_s_pyx_PickleError, __pyx_n_s_pyx_result); if (unlikely(!__pyx_tuple__31)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__31);
+  __Pyx_GIVEREF(__pyx_tuple__31);
+  __pyx_codeobj__32 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__31, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_LinkField, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__32)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __pyx_tuple__33 = PyTuple_Pack(5, __pyx_n_s_pyx_type, __pyx_n_s_pyx_checksum, __pyx_n_s_pyx_state, __pyx_n_s_pyx_PickleError, __pyx_n_s_pyx_result); if (unlikely(!__pyx_tuple__33)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__33);
+  __Pyx_GIVEREF(__pyx_tuple__33);
+  __pyx_codeobj__34 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__33, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_DictField, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__34)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __pyx_tuple__35 = PyTuple_Pack(5, __pyx_n_s_pyx_type, __pyx_n_s_pyx_checksum, __pyx_n_s_pyx_state, __pyx_n_s_pyx_PickleError, __pyx_n_s_pyx_result); if (unlikely(!__pyx_tuple__35)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__35);
+  __Pyx_GIVEREF(__pyx_tuple__35);
+  __pyx_codeobj__36 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__35, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_JSONField, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__36)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __pyx_tuple__37 = PyTuple_Pack(5, __pyx_n_s_pyx_type, __pyx_n_s_pyx_checksum, __pyx_n_s_pyx_state, __pyx_n_s_pyx_PickleError, __pyx_n_s_pyx_result); if (unlikely(!__pyx_tuple__37)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__37);
+  __Pyx_GIVEREF(__pyx_tuple__37);
+  __pyx_codeobj__38 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__37, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_TupleField, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__38)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __pyx_tuple__39 = PyTuple_Pack(5, __pyx_n_s_pyx_type, __pyx_n_s_pyx_checksum, __pyx_n_s_pyx_state, __pyx_n_s_pyx_PickleError, __pyx_n_s_pyx_result); if (unlikely(!__pyx_tuple__39)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__39);
+  __Pyx_GIVEREF(__pyx_tuple__39);
+  __pyx_codeobj__40 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__39, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_ListField, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__40)) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -19834,24 +20168,24 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 static CYTHON_SMALL_CODE int __Pyx_InitGlobals(void) {
   if (__Pyx_InitStrings(__pyx_string_tab) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __pyx_int_1 = PyInt_FromLong(1); if (unlikely(!__pyx_int_1)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_int_6392596 = PyInt_FromLong(6392596L); if (unlikely(!__pyx_int_6392596)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_int_25379354 = PyInt_FromLong(25379354L); if (unlikely(!__pyx_int_25379354)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_int_32960015 = PyInt_FromLong(32960015L); if (unlikely(!__pyx_int_32960015)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_int_38928551 = PyInt_FromLong(38928551L); if (unlikely(!__pyx_int_38928551)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_int_61761546 = PyInt_FromLong(61761546L); if (unlikely(!__pyx_int_61761546)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_int_79153700 = PyInt_FromLong(79153700L); if (unlikely(!__pyx_int_79153700)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_int_109880296 = PyInt_FromLong(109880296L); if (unlikely(!__pyx_int_109880296)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_int_127178982 = PyInt_FromLong(127178982L); if (unlikely(!__pyx_int_127178982)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_int_165603980 = PyInt_FromLong(165603980L); if (unlikely(!__pyx_int_165603980)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_int_196766306 = PyInt_FromLong(196766306L); if (unlikely(!__pyx_int_196766306)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_int_208826306 = PyInt_FromLong(208826306L); if (unlikely(!__pyx_int_208826306)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_int_227589360 = PyInt_FromLong(227589360L); if (unlikely(!__pyx_int_227589360)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_int_238089073 = PyInt_FromLong(238089073L); if (unlikely(!__pyx_int_238089073)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_int_238784109 = PyInt_FromLong(238784109L); if (unlikely(!__pyx_int_238784109)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_int_240774962 = PyInt_FromLong(240774962L); if (unlikely(!__pyx_int_240774962)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_int_246818909 = PyInt_FromLong(246818909L); if (unlikely(!__pyx_int_246818909)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_int_251502590 = PyInt_FromLong(251502590L); if (unlikely(!__pyx_int_251502590)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_int_264564211 = PyInt_FromLong(264564211L); if (unlikely(!__pyx_int_264564211)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_int_24468517 = PyInt_FromLong(24468517L); if (unlikely(!__pyx_int_24468517)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_int_27377546 = PyInt_FromLong(27377546L); if (unlikely(!__pyx_int_27377546)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_int_29261796 = PyInt_FromLong(29261796L); if (unlikely(!__pyx_int_29261796)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_int_48514181 = PyInt_FromLong(48514181L); if (unlikely(!__pyx_int_48514181)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_int_50667228 = PyInt_FromLong(50667228L); if (unlikely(!__pyx_int_50667228)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_int_61408379 = PyInt_FromLong(61408379L); if (unlikely(!__pyx_int_61408379)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_int_64578335 = PyInt_FromLong(64578335L); if (unlikely(!__pyx_int_64578335)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_int_139472679 = PyInt_FromLong(139472679L); if (unlikely(!__pyx_int_139472679)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_int_163595036 = PyInt_FromLong(163595036L); if (unlikely(!__pyx_int_163595036)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_int_181938919 = PyInt_FromLong(181938919L); if (unlikely(!__pyx_int_181938919)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_int_183205250 = PyInt_FromLong(183205250L); if (unlikely(!__pyx_int_183205250)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_int_187451388 = PyInt_FromLong(187451388L); if (unlikely(!__pyx_int_187451388)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_int_188595632 = PyInt_FromLong(188595632L); if (unlikely(!__pyx_int_188595632)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_int_196406082 = PyInt_FromLong(196406082L); if (unlikely(!__pyx_int_196406082)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_int_204286689 = PyInt_FromLong(204286689L); if (unlikely(!__pyx_int_204286689)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_int_227404381 = PyInt_FromLong(227404381L); if (unlikely(!__pyx_int_227404381)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_int_253979098 = PyInt_FromLong(253979098L); if (unlikely(!__pyx_int_253979098)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_int_265583986 = PyInt_FromLong(265583986L); if (unlikely(!__pyx_int_265583986)) __PYX_ERR(0, 1, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
   return -1;
@@ -19914,178 +20248,178 @@ static int __Pyx_modinit_type_init_code(void) {
   __pyx_vtable_6nyoibo_6fields_StrField.__pyx_base = *__pyx_vtabptr_6nyoibo_6fields_Field;
   __pyx_vtable_6nyoibo_6fields_StrField.__pyx_base._parse = (PyObject *(*)(struct __pyx_obj_6nyoibo_6fields_Field *, PyObject *))__pyx_f_6nyoibo_6fields_8StrField__parse;
   __pyx_type_6nyoibo_6fields_StrField.tp_base = __pyx_ptype_6nyoibo_6fields_Field;
-  if (PyType_Ready(&__pyx_type_6nyoibo_6fields_StrField) < 0) __PYX_ERR(0, 93, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_6nyoibo_6fields_StrField) < 0) __PYX_ERR(0, 97, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
   __pyx_type_6nyoibo_6fields_StrField.tp_print = 0;
   #endif
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_6nyoibo_6fields_StrField.tp_dictoffset && __pyx_type_6nyoibo_6fields_StrField.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_6nyoibo_6fields_StrField.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_6nyoibo_6fields_StrField.tp_dict, __pyx_vtabptr_6nyoibo_6fields_StrField) < 0) __PYX_ERR(0, 93, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_StrField, (PyObject *)&__pyx_type_6nyoibo_6fields_StrField) < 0) __PYX_ERR(0, 93, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_6nyoibo_6fields_StrField) < 0) __PYX_ERR(0, 93, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_6nyoibo_6fields_StrField.tp_dict, __pyx_vtabptr_6nyoibo_6fields_StrField) < 0) __PYX_ERR(0, 97, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_StrField, (PyObject *)&__pyx_type_6nyoibo_6fields_StrField) < 0) __PYX_ERR(0, 97, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_6nyoibo_6fields_StrField) < 0) __PYX_ERR(0, 97, __pyx_L1_error)
   __pyx_ptype_6nyoibo_6fields_StrField = &__pyx_type_6nyoibo_6fields_StrField;
   __pyx_vtabptr_6nyoibo_6fields_IntField = &__pyx_vtable_6nyoibo_6fields_IntField;
   __pyx_vtable_6nyoibo_6fields_IntField.__pyx_base = *__pyx_vtabptr_6nyoibo_6fields_Field;
   __pyx_vtable_6nyoibo_6fields_IntField.__pyx_base.parse = (PyObject *(*)(struct __pyx_obj_6nyoibo_6fields_Field *, PyObject *, int __pyx_skip_dispatch))__pyx_f_6nyoibo_6fields_8IntField_parse;
   __pyx_vtable_6nyoibo_6fields_IntField.__pyx_base._parse = (PyObject *(*)(struct __pyx_obj_6nyoibo_6fields_Field *, PyObject *))__pyx_f_6nyoibo_6fields_8IntField__parse;
   __pyx_type_6nyoibo_6fields_IntField.tp_base = __pyx_ptype_6nyoibo_6fields_Field;
-  if (PyType_Ready(&__pyx_type_6nyoibo_6fields_IntField) < 0) __PYX_ERR(0, 128, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_6nyoibo_6fields_IntField) < 0) __PYX_ERR(0, 132, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
   __pyx_type_6nyoibo_6fields_IntField.tp_print = 0;
   #endif
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_6nyoibo_6fields_IntField.tp_dictoffset && __pyx_type_6nyoibo_6fields_IntField.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_6nyoibo_6fields_IntField.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_6nyoibo_6fields_IntField.tp_dict, __pyx_vtabptr_6nyoibo_6fields_IntField) < 0) __PYX_ERR(0, 128, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_IntField, (PyObject *)&__pyx_type_6nyoibo_6fields_IntField) < 0) __PYX_ERR(0, 128, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_6nyoibo_6fields_IntField) < 0) __PYX_ERR(0, 128, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_6nyoibo_6fields_IntField.tp_dict, __pyx_vtabptr_6nyoibo_6fields_IntField) < 0) __PYX_ERR(0, 132, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_IntField, (PyObject *)&__pyx_type_6nyoibo_6fields_IntField) < 0) __PYX_ERR(0, 132, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_6nyoibo_6fields_IntField) < 0) __PYX_ERR(0, 132, __pyx_L1_error)
   __pyx_ptype_6nyoibo_6fields_IntField = &__pyx_type_6nyoibo_6fields_IntField;
   __pyx_vtabptr_6nyoibo_6fields_LinkField = &__pyx_vtable_6nyoibo_6fields_LinkField;
   __pyx_vtable_6nyoibo_6fields_LinkField.__pyx_base = *__pyx_vtabptr_6nyoibo_6fields_Field;
   __pyx_vtable_6nyoibo_6fields_LinkField.__pyx_base.parse = (PyObject *(*)(struct __pyx_obj_6nyoibo_6fields_Field *, PyObject *, int __pyx_skip_dispatch))__pyx_f_6nyoibo_6fields_9LinkField_parse;
   __pyx_type_6nyoibo_6fields_LinkField.tp_base = __pyx_ptype_6nyoibo_6fields_Field;
-  if (PyType_Ready(&__pyx_type_6nyoibo_6fields_LinkField) < 0) __PYX_ERR(0, 260, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_6nyoibo_6fields_LinkField) < 0) __PYX_ERR(0, 264, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
   __pyx_type_6nyoibo_6fields_LinkField.tp_print = 0;
   #endif
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_6nyoibo_6fields_LinkField.tp_dictoffset && __pyx_type_6nyoibo_6fields_LinkField.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_6nyoibo_6fields_LinkField.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_6nyoibo_6fields_LinkField.tp_dict, __pyx_vtabptr_6nyoibo_6fields_LinkField) < 0) __PYX_ERR(0, 260, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_LinkField, (PyObject *)&__pyx_type_6nyoibo_6fields_LinkField) < 0) __PYX_ERR(0, 260, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_6nyoibo_6fields_LinkField) < 0) __PYX_ERR(0, 260, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_6nyoibo_6fields_LinkField.tp_dict, __pyx_vtabptr_6nyoibo_6fields_LinkField) < 0) __PYX_ERR(0, 264, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_LinkField, (PyObject *)&__pyx_type_6nyoibo_6fields_LinkField) < 0) __PYX_ERR(0, 264, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_6nyoibo_6fields_LinkField) < 0) __PYX_ERR(0, 264, __pyx_L1_error)
   __pyx_ptype_6nyoibo_6fields_LinkField = &__pyx_type_6nyoibo_6fields_LinkField;
   __pyx_vtabptr_6nyoibo_6fields_TupleField = &__pyx_vtable_6nyoibo_6fields_TupleField;
   __pyx_vtable_6nyoibo_6fields_TupleField.__pyx_base = *__pyx_vtabptr_6nyoibo_6fields_Field;
   __pyx_vtable_6nyoibo_6fields_TupleField.__pyx_base._parse = (PyObject *(*)(struct __pyx_obj_6nyoibo_6fields_Field *, PyObject *))__pyx_f_6nyoibo_6fields_10TupleField__parse;
   __pyx_type_6nyoibo_6fields_TupleField.tp_base = __pyx_ptype_6nyoibo_6fields_Field;
-  if (PyType_Ready(&__pyx_type_6nyoibo_6fields_TupleField) < 0) __PYX_ERR(0, 311, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_6nyoibo_6fields_TupleField) < 0) __PYX_ERR(0, 315, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
   __pyx_type_6nyoibo_6fields_TupleField.tp_print = 0;
   #endif
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_6nyoibo_6fields_TupleField.tp_dictoffset && __pyx_type_6nyoibo_6fields_TupleField.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_6nyoibo_6fields_TupleField.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_6nyoibo_6fields_TupleField.tp_dict, __pyx_vtabptr_6nyoibo_6fields_TupleField) < 0) __PYX_ERR(0, 311, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_TupleField, (PyObject *)&__pyx_type_6nyoibo_6fields_TupleField) < 0) __PYX_ERR(0, 311, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_6nyoibo_6fields_TupleField) < 0) __PYX_ERR(0, 311, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_6nyoibo_6fields_TupleField.tp_dict, __pyx_vtabptr_6nyoibo_6fields_TupleField) < 0) __PYX_ERR(0, 315, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_TupleField, (PyObject *)&__pyx_type_6nyoibo_6fields_TupleField) < 0) __PYX_ERR(0, 315, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_6nyoibo_6fields_TupleField) < 0) __PYX_ERR(0, 315, __pyx_L1_error)
   __pyx_ptype_6nyoibo_6fields_TupleField = &__pyx_type_6nyoibo_6fields_TupleField;
   __pyx_vtabptr_6nyoibo_6fields_DateField = &__pyx_vtable_6nyoibo_6fields_DateField;
   __pyx_vtable_6nyoibo_6fields_DateField.__pyx_base = *__pyx_vtabptr_6nyoibo_6fields_Field;
   __pyx_vtable_6nyoibo_6fields_DateField.__pyx_base._parse = (PyObject *(*)(struct __pyx_obj_6nyoibo_6fields_Field *, PyObject *))__pyx_f_6nyoibo_6fields_9DateField__parse;
   __pyx_type_6nyoibo_6fields_DateField.tp_base = __pyx_ptype_6nyoibo_6fields_Field;
-  if (PyType_Ready(&__pyx_type_6nyoibo_6fields_DateField) < 0) __PYX_ERR(0, 187, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_6nyoibo_6fields_DateField) < 0) __PYX_ERR(0, 191, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
   __pyx_type_6nyoibo_6fields_DateField.tp_print = 0;
   #endif
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_6nyoibo_6fields_DateField.tp_dictoffset && __pyx_type_6nyoibo_6fields_DateField.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_6nyoibo_6fields_DateField.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_6nyoibo_6fields_DateField.tp_dict, __pyx_vtabptr_6nyoibo_6fields_DateField) < 0) __PYX_ERR(0, 187, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_DateField, (PyObject *)&__pyx_type_6nyoibo_6fields_DateField) < 0) __PYX_ERR(0, 187, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_6nyoibo_6fields_DateField) < 0) __PYX_ERR(0, 187, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_6nyoibo_6fields_DateField.tp_dict, __pyx_vtabptr_6nyoibo_6fields_DateField) < 0) __PYX_ERR(0, 191, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_DateField, (PyObject *)&__pyx_type_6nyoibo_6fields_DateField) < 0) __PYX_ERR(0, 191, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_6nyoibo_6fields_DateField) < 0) __PYX_ERR(0, 191, __pyx_L1_error)
   __pyx_ptype_6nyoibo_6fields_DateField = &__pyx_type_6nyoibo_6fields_DateField;
   __pyx_vtabptr_6nyoibo_6fields_DatetimeField = &__pyx_vtable_6nyoibo_6fields_DatetimeField;
   __pyx_vtable_6nyoibo_6fields_DatetimeField.__pyx_base = *__pyx_vtabptr_6nyoibo_6fields_Field;
   __pyx_vtable_6nyoibo_6fields_DatetimeField.__pyx_base._parse = (PyObject *(*)(struct __pyx_obj_6nyoibo_6fields_Field *, PyObject *))__pyx_f_6nyoibo_6fields_13DatetimeField__parse;
   __pyx_type_6nyoibo_6fields_DatetimeField.tp_base = __pyx_ptype_6nyoibo_6fields_Field;
-  if (PyType_Ready(&__pyx_type_6nyoibo_6fields_DatetimeField) < 0) __PYX_ERR(0, 217, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_6nyoibo_6fields_DatetimeField) < 0) __PYX_ERR(0, 221, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
   __pyx_type_6nyoibo_6fields_DatetimeField.tp_print = 0;
   #endif
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_6nyoibo_6fields_DatetimeField.tp_dictoffset && __pyx_type_6nyoibo_6fields_DatetimeField.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_6nyoibo_6fields_DatetimeField.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_6nyoibo_6fields_DatetimeField.tp_dict, __pyx_vtabptr_6nyoibo_6fields_DatetimeField) < 0) __PYX_ERR(0, 217, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_DatetimeField, (PyObject *)&__pyx_type_6nyoibo_6fields_DatetimeField) < 0) __PYX_ERR(0, 217, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_6nyoibo_6fields_DatetimeField) < 0) __PYX_ERR(0, 217, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_6nyoibo_6fields_DatetimeField.tp_dict, __pyx_vtabptr_6nyoibo_6fields_DatetimeField) < 0) __PYX_ERR(0, 221, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_DatetimeField, (PyObject *)&__pyx_type_6nyoibo_6fields_DatetimeField) < 0) __PYX_ERR(0, 221, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_6nyoibo_6fields_DatetimeField) < 0) __PYX_ERR(0, 221, __pyx_L1_error)
   __pyx_ptype_6nyoibo_6fields_DatetimeField = &__pyx_type_6nyoibo_6fields_DatetimeField;
   __pyx_vtabptr_6nyoibo_6fields_BoolField = &__pyx_vtable_6nyoibo_6fields_BoolField;
   __pyx_vtable_6nyoibo_6fields_BoolField.__pyx_base = *__pyx_vtabptr_6nyoibo_6fields_Field;
   __pyx_vtable_6nyoibo_6fields_BoolField.__pyx_base._parse = (PyObject *(*)(struct __pyx_obj_6nyoibo_6fields_Field *, PyObject *))__pyx_f_6nyoibo_6fields_9BoolField__parse;
   __pyx_type_6nyoibo_6fields_BoolField.tp_base = __pyx_ptype_6nyoibo_6fields_Field;
-  if (PyType_Ready(&__pyx_type_6nyoibo_6fields_BoolField) < 0) __PYX_ERR(0, 175, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_6nyoibo_6fields_BoolField) < 0) __PYX_ERR(0, 179, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
   __pyx_type_6nyoibo_6fields_BoolField.tp_print = 0;
   #endif
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_6nyoibo_6fields_BoolField.tp_dictoffset && __pyx_type_6nyoibo_6fields_BoolField.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_6nyoibo_6fields_BoolField.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_6nyoibo_6fields_BoolField.tp_dict, __pyx_vtabptr_6nyoibo_6fields_BoolField) < 0) __PYX_ERR(0, 175, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_BoolField, (PyObject *)&__pyx_type_6nyoibo_6fields_BoolField) < 0) __PYX_ERR(0, 175, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_6nyoibo_6fields_BoolField) < 0) __PYX_ERR(0, 175, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_6nyoibo_6fields_BoolField.tp_dict, __pyx_vtabptr_6nyoibo_6fields_BoolField) < 0) __PYX_ERR(0, 179, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_BoolField, (PyObject *)&__pyx_type_6nyoibo_6fields_BoolField) < 0) __PYX_ERR(0, 179, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_6nyoibo_6fields_BoolField) < 0) __PYX_ERR(0, 179, __pyx_L1_error)
   __pyx_ptype_6nyoibo_6fields_BoolField = &__pyx_type_6nyoibo_6fields_BoolField;
   __pyx_vtabptr_6nyoibo_6fields_FloatField = &__pyx_vtable_6nyoibo_6fields_FloatField;
   __pyx_vtable_6nyoibo_6fields_FloatField.__pyx_base = *__pyx_vtabptr_6nyoibo_6fields_Field;
   __pyx_type_6nyoibo_6fields_FloatField.tp_base = __pyx_ptype_6nyoibo_6fields_Field;
-  if (PyType_Ready(&__pyx_type_6nyoibo_6fields_FloatField) < 0) __PYX_ERR(0, 245, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_6nyoibo_6fields_FloatField) < 0) __PYX_ERR(0, 249, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
   __pyx_type_6nyoibo_6fields_FloatField.tp_print = 0;
   #endif
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_6nyoibo_6fields_FloatField.tp_dictoffset && __pyx_type_6nyoibo_6fields_FloatField.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_6nyoibo_6fields_FloatField.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_6nyoibo_6fields_FloatField.tp_dict, __pyx_vtabptr_6nyoibo_6fields_FloatField) < 0) __PYX_ERR(0, 245, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_FloatField, (PyObject *)&__pyx_type_6nyoibo_6fields_FloatField) < 0) __PYX_ERR(0, 245, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_6nyoibo_6fields_FloatField) < 0) __PYX_ERR(0, 245, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_6nyoibo_6fields_FloatField.tp_dict, __pyx_vtabptr_6nyoibo_6fields_FloatField) < 0) __PYX_ERR(0, 249, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_FloatField, (PyObject *)&__pyx_type_6nyoibo_6fields_FloatField) < 0) __PYX_ERR(0, 249, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_6nyoibo_6fields_FloatField) < 0) __PYX_ERR(0, 249, __pyx_L1_error)
   __pyx_ptype_6nyoibo_6fields_FloatField = &__pyx_type_6nyoibo_6fields_FloatField;
   __pyx_vtabptr_6nyoibo_6fields_DecimalField = &__pyx_vtable_6nyoibo_6fields_DecimalField;
   __pyx_vtable_6nyoibo_6fields_DecimalField.__pyx_base = *__pyx_vtabptr_6nyoibo_6fields_Field;
   __pyx_type_6nyoibo_6fields_DecimalField.tp_base = __pyx_ptype_6nyoibo_6fields_Field;
-  if (PyType_Ready(&__pyx_type_6nyoibo_6fields_DecimalField) < 0) __PYX_ERR(0, 252, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_6nyoibo_6fields_DecimalField) < 0) __PYX_ERR(0, 256, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
   __pyx_type_6nyoibo_6fields_DecimalField.tp_print = 0;
   #endif
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_6nyoibo_6fields_DecimalField.tp_dictoffset && __pyx_type_6nyoibo_6fields_DecimalField.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_6nyoibo_6fields_DecimalField.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_6nyoibo_6fields_DecimalField.tp_dict, __pyx_vtabptr_6nyoibo_6fields_DecimalField) < 0) __PYX_ERR(0, 252, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_DecimalField, (PyObject *)&__pyx_type_6nyoibo_6fields_DecimalField) < 0) __PYX_ERR(0, 252, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_6nyoibo_6fields_DecimalField) < 0) __PYX_ERR(0, 252, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_6nyoibo_6fields_DecimalField.tp_dict, __pyx_vtabptr_6nyoibo_6fields_DecimalField) < 0) __PYX_ERR(0, 256, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_DecimalField, (PyObject *)&__pyx_type_6nyoibo_6fields_DecimalField) < 0) __PYX_ERR(0, 256, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_6nyoibo_6fields_DecimalField) < 0) __PYX_ERR(0, 256, __pyx_L1_error)
   __pyx_ptype_6nyoibo_6fields_DecimalField = &__pyx_type_6nyoibo_6fields_DecimalField;
   __pyx_vtabptr_6nyoibo_6fields_DictField = &__pyx_vtable_6nyoibo_6fields_DictField;
   __pyx_vtable_6nyoibo_6fields_DictField.__pyx_base = *__pyx_vtabptr_6nyoibo_6fields_Field;
   __pyx_type_6nyoibo_6fields_DictField.tp_base = __pyx_ptype_6nyoibo_6fields_Field;
-  if (PyType_Ready(&__pyx_type_6nyoibo_6fields_DictField) < 0) __PYX_ERR(0, 291, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_6nyoibo_6fields_DictField) < 0) __PYX_ERR(0, 295, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
   __pyx_type_6nyoibo_6fields_DictField.tp_print = 0;
   #endif
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_6nyoibo_6fields_DictField.tp_dictoffset && __pyx_type_6nyoibo_6fields_DictField.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_6nyoibo_6fields_DictField.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_6nyoibo_6fields_DictField.tp_dict, __pyx_vtabptr_6nyoibo_6fields_DictField) < 0) __PYX_ERR(0, 291, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_DictField, (PyObject *)&__pyx_type_6nyoibo_6fields_DictField) < 0) __PYX_ERR(0, 291, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_6nyoibo_6fields_DictField) < 0) __PYX_ERR(0, 291, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_6nyoibo_6fields_DictField.tp_dict, __pyx_vtabptr_6nyoibo_6fields_DictField) < 0) __PYX_ERR(0, 295, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_DictField, (PyObject *)&__pyx_type_6nyoibo_6fields_DictField) < 0) __PYX_ERR(0, 295, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_6nyoibo_6fields_DictField) < 0) __PYX_ERR(0, 295, __pyx_L1_error)
   __pyx_ptype_6nyoibo_6fields_DictField = &__pyx_type_6nyoibo_6fields_DictField;
   __pyx_vtabptr_6nyoibo_6fields_JSONField = &__pyx_vtable_6nyoibo_6fields_JSONField;
   __pyx_vtable_6nyoibo_6fields_JSONField.__pyx_base = *__pyx_vtabptr_6nyoibo_6fields_Field;
   __pyx_vtable_6nyoibo_6fields_JSONField.__pyx_base._parse = (PyObject *(*)(struct __pyx_obj_6nyoibo_6fields_Field *, PyObject *))__pyx_f_6nyoibo_6fields_9JSONField__parse;
   __pyx_type_6nyoibo_6fields_JSONField.tp_base = __pyx_ptype_6nyoibo_6fields_Field;
-  if (PyType_Ready(&__pyx_type_6nyoibo_6fields_JSONField) < 0) __PYX_ERR(0, 298, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_6nyoibo_6fields_JSONField) < 0) __PYX_ERR(0, 302, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
   __pyx_type_6nyoibo_6fields_JSONField.tp_print = 0;
   #endif
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_6nyoibo_6fields_JSONField.tp_dictoffset && __pyx_type_6nyoibo_6fields_JSONField.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_6nyoibo_6fields_JSONField.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_6nyoibo_6fields_JSONField.tp_dict, __pyx_vtabptr_6nyoibo_6fields_JSONField) < 0) __PYX_ERR(0, 298, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_JSONField, (PyObject *)&__pyx_type_6nyoibo_6fields_JSONField) < 0) __PYX_ERR(0, 298, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_6nyoibo_6fields_JSONField) < 0) __PYX_ERR(0, 298, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_6nyoibo_6fields_JSONField.tp_dict, __pyx_vtabptr_6nyoibo_6fields_JSONField) < 0) __PYX_ERR(0, 302, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_JSONField, (PyObject *)&__pyx_type_6nyoibo_6fields_JSONField) < 0) __PYX_ERR(0, 302, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_6nyoibo_6fields_JSONField) < 0) __PYX_ERR(0, 302, __pyx_L1_error)
   __pyx_ptype_6nyoibo_6fields_JSONField = &__pyx_type_6nyoibo_6fields_JSONField;
   __pyx_vtabptr_6nyoibo_6fields_ListField = &__pyx_vtable_6nyoibo_6fields_ListField;
   __pyx_vtable_6nyoibo_6fields_ListField.__pyx_base = *__pyx_vtabptr_6nyoibo_6fields_TupleField;
   __pyx_type_6nyoibo_6fields_ListField.tp_base = __pyx_ptype_6nyoibo_6fields_TupleField;
-  if (PyType_Ready(&__pyx_type_6nyoibo_6fields_ListField) < 0) __PYX_ERR(0, 350, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_6nyoibo_6fields_ListField) < 0) __PYX_ERR(0, 354, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
   __pyx_type_6nyoibo_6fields_ListField.tp_print = 0;
   #endif
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_6nyoibo_6fields_ListField.tp_dictoffset && __pyx_type_6nyoibo_6fields_ListField.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_6nyoibo_6fields_ListField.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_6nyoibo_6fields_ListField.tp_dict, __pyx_vtabptr_6nyoibo_6fields_ListField) < 0) __PYX_ERR(0, 350, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_ListField, (PyObject *)&__pyx_type_6nyoibo_6fields_ListField) < 0) __PYX_ERR(0, 350, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_6nyoibo_6fields_ListField) < 0) __PYX_ERR(0, 350, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_6nyoibo_6fields_ListField.tp_dict, __pyx_vtabptr_6nyoibo_6fields_ListField) < 0) __PYX_ERR(0, 354, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_ListField, (PyObject *)&__pyx_type_6nyoibo_6fields_ListField) < 0) __PYX_ERR(0, 354, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_6nyoibo_6fields_ListField) < 0) __PYX_ERR(0, 354, __pyx_L1_error)
   __pyx_ptype_6nyoibo_6fields_ListField = &__pyx_type_6nyoibo_6fields_ListField;
   __Pyx_RefNannyFinishContext();
   return 0;
@@ -20476,104 +20810,104 @@ if (!__Pyx_RefNanny) {
  * 
  *     def __init__(self, private=False, mutable=False, default_value=None,
  */
-  if (PyDict_SetItem((PyObject *)__pyx_ptype_6nyoibo_6fields_Field->tp_dict, __pyx_n_s_exceptions, __pyx_tuple__13) < 0) __PYX_ERR(0, 33, __pyx_L1_error)
+  if (PyDict_SetItem((PyObject *)__pyx_ptype_6nyoibo_6fields_Field->tp_dict, __pyx_n_s_exceptions, __pyx_tuple__14) < 0) __PYX_ERR(0, 33, __pyx_L1_error)
   PyType_Modified(__pyx_ptype_6nyoibo_6fields_Field);
 
-  /* "nyoibo/fields.pyx":103
+  /* "nyoibo/fields.pyx":107
  *     """
  * 
  *     _internal_type = str             # <<<<<<<<<<<<<<
  * 
  *     def __init__(self, int max_length=0, *args, **kwargs):
  */
-  if (PyDict_SetItem((PyObject *)__pyx_ptype_6nyoibo_6fields_StrField->tp_dict, __pyx_n_s_internal_type, ((PyObject *)(&PyUnicode_Type))) < 0) __PYX_ERR(0, 103, __pyx_L1_error)
+  if (PyDict_SetItem((PyObject *)__pyx_ptype_6nyoibo_6fields_StrField->tp_dict, __pyx_n_s_internal_type, ((PyObject *)(&PyUnicode_Type))) < 0) __PYX_ERR(0, 107, __pyx_L1_error)
   PyType_Modified(__pyx_ptype_6nyoibo_6fields_StrField);
 
-  /* "nyoibo/fields.pyx":139
+  /* "nyoibo/fields.pyx":143
  *     """
  * 
  *     _internal_type = int             # <<<<<<<<<<<<<<
  * 
  *     def __init__(self, min_value=None, max_value=None, *args, **kwargs):
  */
-  if (PyDict_SetItem((PyObject *)__pyx_ptype_6nyoibo_6fields_IntField->tp_dict, __pyx_n_s_internal_type, ((PyObject *)(&PyInt_Type))) < 0) __PYX_ERR(0, 139, __pyx_L1_error)
+  if (PyDict_SetItem((PyObject *)__pyx_ptype_6nyoibo_6fields_IntField->tp_dict, __pyx_n_s_internal_type, ((PyObject *)(&PyInt_Type))) < 0) __PYX_ERR(0, 143, __pyx_L1_error)
   PyType_Modified(__pyx_ptype_6nyoibo_6fields_IntField);
 
-  /* "nyoibo/fields.pyx":179
+  /* "nyoibo/fields.pyx":183
  *     """
  * 
  *     _internal_type = bool             # <<<<<<<<<<<<<<
  * 
  *     cdef _parse(self, value):
  */
-  if (PyDict_SetItem((PyObject *)__pyx_ptype_6nyoibo_6fields_BoolField->tp_dict, __pyx_n_s_internal_type, ((PyObject*)&PyBool_Type)) < 0) __PYX_ERR(0, 179, __pyx_L1_error)
+  if (PyDict_SetItem((PyObject *)__pyx_ptype_6nyoibo_6fields_BoolField->tp_dict, __pyx_n_s_internal_type, ((PyObject*)&PyBool_Type)) < 0) __PYX_ERR(0, 183, __pyx_L1_error)
   PyType_Modified(__pyx_ptype_6nyoibo_6fields_BoolField);
 
-  /* "nyoibo/fields.pyx":198
+  /* "nyoibo/fields.pyx":202
  *     """
  * 
  *     _internal_type = datetime.date             # <<<<<<<<<<<<<<
  * 
  *     def __init__(self, formats: Iterable[str, ...] = (), **kwargs):
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_datetime); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 198, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_datetime); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 202, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_date); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 198, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_date); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 202, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (PyDict_SetItem((PyObject *)__pyx_ptype_6nyoibo_6fields_DateField->tp_dict, __pyx_n_s_internal_type, __pyx_t_2) < 0) __PYX_ERR(0, 198, __pyx_L1_error)
+  if (PyDict_SetItem((PyObject *)__pyx_ptype_6nyoibo_6fields_DateField->tp_dict, __pyx_n_s_internal_type, __pyx_t_2) < 0) __PYX_ERR(0, 202, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   PyType_Modified(__pyx_ptype_6nyoibo_6fields_DateField);
 
-  /* "nyoibo/fields.pyx":228
+  /* "nyoibo/fields.pyx":232
  *     """
  * 
  *     _internal_type = datetime.datetime             # <<<<<<<<<<<<<<
  * 
  *     def __init__(self, formats: Iterable[str, ...] = (), **kwargs):
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_datetime); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 228, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_datetime); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 232, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_datetime); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 228, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_datetime); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 232, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (PyDict_SetItem((PyObject *)__pyx_ptype_6nyoibo_6fields_DatetimeField->tp_dict, __pyx_n_s_internal_type, __pyx_t_1) < 0) __PYX_ERR(0, 228, __pyx_L1_error)
+  if (PyDict_SetItem((PyObject *)__pyx_ptype_6nyoibo_6fields_DatetimeField->tp_dict, __pyx_n_s_internal_type, __pyx_t_1) < 0) __PYX_ERR(0, 232, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   PyType_Modified(__pyx_ptype_6nyoibo_6fields_DatetimeField);
 
-  /* "nyoibo/fields.pyx":249
+  /* "nyoibo/fields.pyx":253
  *     """
  * 
  *     _internal_type = float             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  if (PyDict_SetItem((PyObject *)__pyx_ptype_6nyoibo_6fields_FloatField->tp_dict, __pyx_n_s_internal_type, ((PyObject *)(&PyFloat_Type))) < 0) __PYX_ERR(0, 249, __pyx_L1_error)
+  if (PyDict_SetItem((PyObject *)__pyx_ptype_6nyoibo_6fields_FloatField->tp_dict, __pyx_n_s_internal_type, ((PyObject *)(&PyFloat_Type))) < 0) __PYX_ERR(0, 253, __pyx_L1_error)
   PyType_Modified(__pyx_ptype_6nyoibo_6fields_FloatField);
 
-  /* "nyoibo/fields.pyx":256
+  /* "nyoibo/fields.pyx":260
  *     """
  * 
  *     _internal_type = Decimal             # <<<<<<<<<<<<<<
  *     _exceptions = (TypeError, InvalidOperation)
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Decimal); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 256, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Decimal); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 260, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem((PyObject *)__pyx_ptype_6nyoibo_6fields_DecimalField->tp_dict, __pyx_n_s_internal_type, __pyx_t_1) < 0) __PYX_ERR(0, 256, __pyx_L1_error)
+  if (PyDict_SetItem((PyObject *)__pyx_ptype_6nyoibo_6fields_DecimalField->tp_dict, __pyx_n_s_internal_type, __pyx_t_1) < 0) __PYX_ERR(0, 260, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   PyType_Modified(__pyx_ptype_6nyoibo_6fields_DecimalField);
 
-  /* "nyoibo/fields.pyx":257
+  /* "nyoibo/fields.pyx":261
  * 
  *     _internal_type = Decimal
  *     _exceptions = (TypeError, InvalidOperation)             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_InvalidOperation); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 257, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_InvalidOperation); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 261, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 257, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 261, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_builtin_TypeError);
   __Pyx_GIVEREF(__pyx_builtin_TypeError);
@@ -20581,46 +20915,46 @@ if (!__Pyx_RefNanny) {
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_1);
   __pyx_t_1 = 0;
-  if (PyDict_SetItem((PyObject *)__pyx_ptype_6nyoibo_6fields_DecimalField->tp_dict, __pyx_n_s_exceptions, __pyx_t_2) < 0) __PYX_ERR(0, 257, __pyx_L1_error)
+  if (PyDict_SetItem((PyObject *)__pyx_ptype_6nyoibo_6fields_DecimalField->tp_dict, __pyx_n_s_exceptions, __pyx_t_2) < 0) __PYX_ERR(0, 261, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   PyType_Modified(__pyx_ptype_6nyoibo_6fields_DecimalField);
 
-  /* "nyoibo/fields.pyx":295
+  /* "nyoibo/fields.pyx":299
  *     """
  * 
  *     _internal_type = dict             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  if (PyDict_SetItem((PyObject *)__pyx_ptype_6nyoibo_6fields_DictField->tp_dict, __pyx_n_s_internal_type, ((PyObject *)(&PyDict_Type))) < 0) __PYX_ERR(0, 295, __pyx_L1_error)
+  if (PyDict_SetItem((PyObject *)__pyx_ptype_6nyoibo_6fields_DictField->tp_dict, __pyx_n_s_internal_type, ((PyObject *)(&PyDict_Type))) < 0) __PYX_ERR(0, 299, __pyx_L1_error)
   PyType_Modified(__pyx_ptype_6nyoibo_6fields_DictField);
 
-  /* "nyoibo/fields.pyx":302
+  /* "nyoibo/fields.pyx":306
  *     """
  * 
  *     _internal_type = str             # <<<<<<<<<<<<<<
  * 
  *     cdef _parse(self, value):
  */
-  if (PyDict_SetItem((PyObject *)__pyx_ptype_6nyoibo_6fields_JSONField->tp_dict, __pyx_n_s_internal_type, ((PyObject *)(&PyUnicode_Type))) < 0) __PYX_ERR(0, 302, __pyx_L1_error)
+  if (PyDict_SetItem((PyObject *)__pyx_ptype_6nyoibo_6fields_JSONField->tp_dict, __pyx_n_s_internal_type, ((PyObject *)(&PyUnicode_Type))) < 0) __PYX_ERR(0, 306, __pyx_L1_error)
   PyType_Modified(__pyx_ptype_6nyoibo_6fields_JSONField);
 
-  /* "nyoibo/fields.pyx":323
+  /* "nyoibo/fields.pyx":327
  *     """
  * 
  *     _internal_type = tuple             # <<<<<<<<<<<<<<
  * 
  *     def __init__(self, of=None, reverse_relationship=False, *args, **kwargs):
  */
-  if (PyDict_SetItem((PyObject *)__pyx_ptype_6nyoibo_6fields_TupleField->tp_dict, __pyx_n_s_internal_type, ((PyObject *)(&PyTuple_Type))) < 0) __PYX_ERR(0, 323, __pyx_L1_error)
+  if (PyDict_SetItem((PyObject *)__pyx_ptype_6nyoibo_6fields_TupleField->tp_dict, __pyx_n_s_internal_type, ((PyObject *)(&PyTuple_Type))) < 0) __PYX_ERR(0, 327, __pyx_L1_error)
   PyType_Modified(__pyx_ptype_6nyoibo_6fields_TupleField);
 
-  /* "nyoibo/fields.pyx":362
+  /* "nyoibo/fields.pyx":366
  *     """
  * 
  *     _internal_type = list             # <<<<<<<<<<<<<<
  */
-  if (PyDict_SetItem((PyObject *)__pyx_ptype_6nyoibo_6fields_ListField->tp_dict, __pyx_n_s_internal_type, ((PyObject *)(&PyList_Type))) < 0) __PYX_ERR(0, 362, __pyx_L1_error)
+  if (PyDict_SetItem((PyObject *)__pyx_ptype_6nyoibo_6fields_ListField->tp_dict, __pyx_n_s_internal_type, ((PyObject *)(&PyList_Type))) < 0) __PYX_ERR(0, 366, __pyx_L1_error)
   PyType_Modified(__pyx_ptype_6nyoibo_6fields_ListField);
 
   /* "(tree fragment)":1
@@ -20637,8 +20971,8 @@ if (!__Pyx_RefNanny) {
  *         __pyx_unpickle_Field__set_state(<Field> __pyx_result, __pyx_state)
  *     return __pyx_result
  * cdef __pyx_unpickle_Field__set_state(Field __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
  */
   __pyx_t_2 = PyCFunction_NewEx(&__pyx_mdef_6nyoibo_6fields_3__pyx_unpickle_StrField, NULL, __pyx_n_s_nyoibo_fields); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -20659,8 +20993,8 @@ if (!__Pyx_RefNanny) {
  *         __pyx_unpickle_IntField__set_state(<IntField> __pyx_result, __pyx_state)
  *     return __pyx_result
  * cdef __pyx_unpickle_IntField__set_state(IntField __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.max_value = __pyx_state[3]; __pyx_result.min_value = __pyx_state[4]; __pyx_result.mutable = __pyx_state[5]; __pyx_result.name = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]
- *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.max_value = __pyx_state[3]; __pyx_result.min_value = __pyx_state[4]; __pyx_result.model = __pyx_state[5]; __pyx_result.mutable = __pyx_state[6]; __pyx_result.name = __pyx_state[7]; __pyx_result.private = __pyx_state[8]; __pyx_result.required = __pyx_state[9]
+ *     if len(__pyx_state) > 10 and hasattr(__pyx_result, '__dict__'):
  */
   __pyx_t_2 = PyCFunction_NewEx(&__pyx_mdef_6nyoibo_6fields_7__pyx_unpickle_BoolField, NULL, __pyx_n_s_nyoibo_fields); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -20681,8 +21015,8 @@ if (!__Pyx_RefNanny) {
  *         __pyx_unpickle_DateField__set_state(<DateField> __pyx_result, __pyx_state)
  *     return __pyx_result
  * cdef __pyx_unpickle_DateField__set_state(DateField __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_result._formats = __pyx_state[0]; __pyx_result.alias = __pyx_state[1]; __pyx_result.choices = __pyx_state[2]; __pyx_result.default_value = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
- *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
+ *     __pyx_result._formats = __pyx_state[0]; __pyx_result.alias = __pyx_state[1]; __pyx_result.choices = __pyx_state[2]; __pyx_result.default_value = __pyx_state[3]; __pyx_result.model = __pyx_state[4]; __pyx_result.mutable = __pyx_state[5]; __pyx_result.name = __pyx_state[6]; __pyx_result.private = __pyx_state[7]; __pyx_result.required = __pyx_state[8]
+ *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):
  */
   __pyx_t_2 = PyCFunction_NewEx(&__pyx_mdef_6nyoibo_6fields_11__pyx_unpickle_DatetimeField, NULL, __pyx_n_s_nyoibo_fields); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -20703,8 +21037,8 @@ if (!__Pyx_RefNanny) {
  *         __pyx_unpickle_FloatField__set_state(<FloatField> __pyx_result, __pyx_state)
  *     return __pyx_result
  * cdef __pyx_unpickle_FloatField__set_state(FloatField __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
  */
   __pyx_t_2 = PyCFunction_NewEx(&__pyx_mdef_6nyoibo_6fields_15__pyx_unpickle_DecimalField, NULL, __pyx_n_s_nyoibo_fields); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -20725,8 +21059,8 @@ if (!__Pyx_RefNanny) {
  *         __pyx_unpickle_LinkField__set_state(<LinkField> __pyx_result, __pyx_state)
  *     return __pyx_result
  * cdef __pyx_unpickle_LinkField__set_state(LinkField __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]; __pyx_result.to = __pyx_state[7]
- *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]; __pyx_result.to = __pyx_state[8]
+ *     if len(__pyx_state) > 9 and hasattr(__pyx_result, '__dict__'):
  */
   __pyx_t_2 = PyCFunction_NewEx(&__pyx_mdef_6nyoibo_6fields_19__pyx_unpickle_DictField, NULL, __pyx_n_s_nyoibo_fields); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -20747,8 +21081,8 @@ if (!__Pyx_RefNanny) {
  *         __pyx_unpickle_JSONField__set_state(<JSONField> __pyx_result, __pyx_state)
  *     return __pyx_result
  * cdef __pyx_unpickle_JSONField__set_state(JSONField __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.mutable = __pyx_state[3]; __pyx_result.name = __pyx_state[4]; __pyx_result.private = __pyx_state[5]; __pyx_result.required = __pyx_state[6]
- *     if len(__pyx_state) > 7 and hasattr(__pyx_result, '__dict__'):
+ *     __pyx_result.alias = __pyx_state[0]; __pyx_result.choices = __pyx_state[1]; __pyx_result.default_value = __pyx_state[2]; __pyx_result.model = __pyx_state[3]; __pyx_result.mutable = __pyx_state[4]; __pyx_result.name = __pyx_state[5]; __pyx_result.private = __pyx_state[6]; __pyx_result.required = __pyx_state[7]
+ *     if len(__pyx_state) > 8 and hasattr(__pyx_result, '__dict__'):
  */
   __pyx_t_2 = PyCFunction_NewEx(&__pyx_mdef_6nyoibo_6fields_23__pyx_unpickle_TupleField, NULL, __pyx_n_s_nyoibo_fields); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);

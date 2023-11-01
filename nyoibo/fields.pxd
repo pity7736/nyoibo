@@ -7,6 +7,7 @@ cdef class Field:
     cdef readonly alias
     cdef bint required
     cdef str name
+    cdef model
     cpdef public parse(self, value)
     cdef _parse(self, value)
 
