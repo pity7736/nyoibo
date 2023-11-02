@@ -1,10 +1,32 @@
 <!-- insertion marker -->
-<a name="v0.5.0"></a>
+<a name="v0.6.0"></a>
 
-## [v0.5.0](https://github.com/pity7736/nyoibo/compare/v0.4.1...v0.5.0) (2023-05-25)
+## [v0.6.0](https://github.com/pity7736/nyoibo/compare/v0.5.0...v0.6.0) (2023-11-01)
 
 ### Features
 
+- set model in field to improve error messages ([d5a5280](https://github.com/pity7736/nyoibo/commit/d5a5280305f729b373b6acfedf4bbd2f2a21d9f1))
+- add formats param to date and datetime fields ([6a74289](https://github.com/pity7736/nyoibo/commit/6a74289b4f5304d7305af3181f4ec0274761c839))
+- improve required error message with field name ([b25edde](https://github.com/pity7736/nyoibo/commit/b25eddea926740280f3aed921902e459fdd49f22))
+- create a reverse relationship with `TupleField` ([72eb582](https://github.com/pity7736/nyoibo/commit/72eb582d812e8083fe7283d93c83f4b09bd07aa9))
+- instance `Entity` from dict with tuple field ([ea73553](https://github.com/pity7736/nyoibo/commit/ea735539736b8ea4a9ee49e2ce75eddf2e987dca))
+
+### Bug Fixes
+
+- instance model with none value in list field with rever relationship ([442ed26](https://github.com/pity7736/nyoibo/commit/442ed26e47fe6d80891d0c479b8f9e89ea79005c))
+
+### Docs
+
+- upgrade requirements and readthedocs build config ([fdf19cd](https://github.com/pity7736/nyoibo/commit/fdf19cdffbd82294c115d5aebc6a1c94a2497a7b))
+- upgrade python version in readthedocs config ([0268ef3](https://github.com/pity7736/nyoibo/commit/0268ef35ad2f91d7f736f64e156602ecf10c5071))
+
+<a name="v0.5.0"></a>
+
+## [v0.5.0](https://github.com/pity7736/nyoibo/compare/v0.4.1...v0.5.0) (2023-05-26)
+
+### Features
+
+- add `of` param to `TupleField` and make `ListField` a `TupleField` subclass ([4eb39c7](https://github.com/pity7736/nyoibo/commit/4eb39c75db5cfbeee6cb7fd5cd502eb5ce3e3491))
 - removed `_valid_values` attribute from `LinkField` ([b7f59e7](https://github.com/pity7736/nyoibo/commit/b7f59e7cd05b318bc718939d47ad194e554f1031))
 - inherit parent fields ([68a64f0](https://github.com/pity7736/nyoibo/commit/68a64f08de636c60624c35d8b2795a125cfbda70))
 - add alias param to fields ([d07a3b9](https://github.com/pity7736/nyoibo/commit/d07a3b93564e74530a25d1b9d59f44e6c2ccd663))
